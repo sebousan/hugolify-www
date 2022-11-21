@@ -1,0 +1,15 @@
+## THEME
+theme: hugolify-theme
+
+## LANGUAGE
+defaultContentLanguage: en
+languageCode: en
+
+## ADVANCED
+paginate: 9
+enableRobotsTXT: true
+
+## STATIC
+staticDir:
+  - static1
+  - static2

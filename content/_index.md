@@ -16,18 +16,20 @@ blocks:
   - type: alert
     text: "November 2022: Hugolify template is under development"
     state: warning
-  - type: paragraph
+  - type: infos
+    column: 3
     title: Hugolify?
-    text: >-
-      Is a Github template for build easily a fast, accessible friendly and
+    text: Is a Github template for build easily a fast, accessible friendly and
       clean website!
-
-
-      * [Hugo](https://gohugo.io/): open-source static site generators
-
-      * [Bootstrap](https://getbootstrap.com/): open-source front-end framework
-
-      * [Netlify CMS](https://www.netlifycms.org/): open-source content management
+    items:
+      - title: Hugo
+        text: Open-source static site generators
+      - title: Bootstrap
+        text: Open-source front-end framework
+      - title: Netlify CMS
+        text: Open-source content management
+        image:
+          src: /images/uploads/netlify.svg
   - type: paragraph
     title: Repositories
     text: >-

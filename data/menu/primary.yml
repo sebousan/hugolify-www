@@ -1,11 +1,1 @@
-links:
-  - title: News
-    url: /news
-  - title: Projects
-    url: /projects
-  - blank: false
-    title: Case studies
-    url: /case-studies
-  - blank: false
-    title: Publications
-    url: /publications
+

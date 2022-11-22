@@ -27,7 +27,7 @@ module.exports = {
                     /^term-/,
                     /^section-/,
                     /-page$/,
-                    /^items-/
+                    /^block-/
                 ]
             }
         }

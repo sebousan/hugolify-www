@@ -1,7 +1,7 @@
 {
-  "name": "hugolify-template",
+  "name": "hugolify-www",
   "version": "1.0.0",
-  "repository": "https://github.com/sebousan/hugolify-template",
+  "repository": "https://github.com/sebousan/hugolify-www",
   "author": {
     "name": "Sébastien Moulène",
     "url": "https://www.sebousan.com/"

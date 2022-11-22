@@ -14,6 +14,9 @@ module.exports = {
                 standard: [
                     'show',
                     'fade',
+                    'alert-light',
+                    'alert-warning',
+                    'alert-danger',
                     /^is-/,
                     /^has-/,
                     /^js-/,

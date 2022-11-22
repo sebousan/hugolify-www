@@ -13,17 +13,20 @@ hero:
     text: Discover github template
     blank: true
 blocks:
-  - type: alert
-    text: "November 2022: Hugolify template is under development"
-    state: warning
-  - type: pushes
-    column: 3
+  - type: paragraph
     title: Hugolify?
     text: Is a Github template for build easily a fast, accessible friendly and
       low carbon website!
+  - type: cta
+    text: Documention Hugolify
+    url: 'https://github.com/sebousan/hugolify-template/wiki'
+    blank: true
+  - type: pushes
+    column: 3
+    title: 3 open-sources solutions in Hugolify
     items:
       - title: Hugo
-        text: Open-source static site generators
+        text: One of the most popular open-source static site generators
         cta:
           url: https://gohugo.io
           blank: true
@@ -31,7 +34,7 @@ blocks:
         image:
           src: /images/uploads/hugo-logo-wide.svg
       - title: Bootstrap
-        text: Open-source front-end framework
+        text: The most popular open-source front-end framework
         image:
           src: /images/uploads/bootstrap-5-1.svg
         cta:
@@ -39,7 +42,7 @@ blocks:
           text: Discover Bootstrap
           blank: true
       - title: Netlify CMS
-        text: Open-source content management
+        text: Open-source content management for your Git workflow
         image:
           src: /images/uploads/netlify.svg
         cta:
@@ -49,7 +52,7 @@ blocks:
   - type: paragraph
     title: Repositories
     text: >-
-      [H﻿ugolify template](https://github.com/sebousan/hugolify-template) i﻿s
+      [Hugolify template](https://github.com/sebousan/hugolify-template) is
       available on Github,\
 
       he relies on two submodules:
@@ -58,9 +61,6 @@ blocks:
       * [Hugolify theme](https://github.com/sebousan/hugolify-theme): hugo theme for Hugolify
 
       * [Hugolify Netlify CMS](https://github.com/sebousan/hugolify-netlify-cms-template): Netlify CMS template for Hugolify
-  - type: paragraph
-    title: Documentation
-    text: Soon
   - type: paragraph
     title: License
     text: Hugolify is free for personal or commercial projects (MIT license).

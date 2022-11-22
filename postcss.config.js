@@ -23,7 +23,8 @@ module.exports = {
                     /^page-/,
                     /^term-/,
                     /^section-/,
-                    /-page$/
+                    /-page$/,
+                    /^items-/
                 ]
             }
         }

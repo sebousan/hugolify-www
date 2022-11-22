@@ -18,10 +18,10 @@ module.exports = {
                     'alert-warning',
                     'alert-danger',
                     /^items-/,
-                    /-backdrop$/
+                    /-backdrop$/,
                     /^is-/,
                     /^has-/,
-                    /^js-/,
+                    /^js-/
                 ],
                 deep: [
                     /^page-/,

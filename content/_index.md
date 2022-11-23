@@ -18,8 +18,8 @@ blocks:
     text: Is a Github template for build easily a fast, accessible friendly and
       low carbon website!
   - type: cta
-    text: Documention Hugolify
-    url: 'https://github.com/sebousan/hugolify-template/wiki'
+    text: Hugolify documention
+    url: https://github.com/sebousan/hugolify-template/wiki
     blank: true
   - type: pushes
     column: 3
@@ -32,11 +32,11 @@ blocks:
           blank: true
           text: Discover Hugo
         image:
-          src: /images/uploads/hugo-logo-wide.svg
+          src: /images/uploads/logo-hugo-wide.svg
       - title: Bootstrap
         text: The most popular open-source front-end framework
         image:
-          src: /images/uploads/bootstrap-5-1.svg
+          src: /images/uploads/logo-bootstrap-5.svg
         cta:
           url: https://getbootstrap.com/
           text: Discover Bootstrap
@@ -44,11 +44,39 @@ blocks:
       - title: Netlify CMS
         text: Open-source content management for your Git workflow
         image:
-          src: /images/uploads/netlify.svg
+          src: /images/uploads/logo-netlify.svg
         cta:
           url: https://www.netlifycms.org/
           text: Discover Netlify CMS
           blank: true
+  - type: editorial
+    direction: ltr
+    cta:
+      blank: true
+      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.com
+      text: Discover the report
+    background: false
+    title: Google PageSpeed Insights
+    text: PageSpeed Insights is an online synthetic benchmark tool which helps in identifying performance best practices on any single URL, provides suggestions on a webpage's optimizations, and suggests overall ideas of how to make a website faster. Per URL request, it grades webpage performance on a scale from 1 to 100 and provides a report on suggested optimizations, divided into categories of high, medium, and low priorities.
+    image:
+      src: /images/uploads/logo-google-pagespeed-insights.svg
+  - type: gauges
+    title: Hugolify template demo report
+    column: 4
+    show_color: true
+    items:
+      - value: 100
+        suffix: '%'
+        title: Performance
+      - value: 100
+        suffix: '%'
+        title: Accessibility
+      - value: 100
+        suffix: '%'
+        title: Best practices
+      - value: 100
+        suffix: '%'
+        title: SEO
   - type: paragraph
     title: Repositories
     text: >-

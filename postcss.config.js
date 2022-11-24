@@ -1,9 +1,4 @@
 /* eslint-disable no-undef */
-let attributes = [
-    '[class*="block-"]',
-    'a[target="_blank"]'
-];
-
 module.exports = {
     plugins: {
         autoprefixer: {},
@@ -34,34 +29,6 @@ module.exports = {
                     return els;
                 }
             }
-            // defaultExtractor: (content) => {
-            //     let els = JSON.parse(content).htmlElements;
-            //     return els.tags.concat(els.classes, els.ids, attributes);
-            // },
-            // content: [
-            //     './themes/**/*.html',
-            //     'layouts/**/*.html'
-            // ],
-            // safelist: {
-            //     standard: [
-            //         'show',
-            //         'fade',
-            //         'alert-light',
-            //         'alert-warning',
-            //         'alert-danger',
-            //         /-backdrop$/,
-            //         /^is-/,
-            //         /^has-/,
-            //         /^js-/
-            //     ],
-            //     deep: [
-            //         /^page-/,
-            //         /^term-/,
-            //         /^section-/,
-            //         /-page$/,
-            //         /^block-/
-            //     ]
-            // }
         }
     }
 };

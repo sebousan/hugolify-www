@@ -1,5 +1,9 @@
 .block-pushes
     text-align: center
+    @include media-breakpoint-only(md)
+        .items
+            > *
+                width: 33.33333333%
     .media
         @extend .ratio
         @extend .ratio-1x1

@@ -10,24 +10,14 @@ module.exports = {
             content: ['./hugo_stats.json'],
             safelist: {
                 standard: [
-                    /[target=_blank]/,
                     'show',
-                    'fade',
-                    /-backdrop$/,
-                    /^is-/,
-                    /^has-/,
-                    /^js-/
-                ],
-                deep: [
-                    /class*=block-/
+                    'fade'
                 ]
             },
-            options: {
-                defaultExtractor: (content) => {
-                    let els = JSON.parse(content).htmlElements;
-                    els = els.tags.concat(els.classes, els.ids);
-                    return els;
-                }
+            defaultExtractor: (content) => {
+                let els = JSON.parse(content).htmlElements;
+                els = els.tags.concat(els.classes, els.ids);
+                return els;
             }
         }
     }

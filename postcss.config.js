@@ -8,15 +8,23 @@ module.exports = {
         '@fullhuman/postcss-purgecss': {
             mode: 'all',
             content: ['./hugo_stats.json'],
-            // safelist: {
-            //     standard: [
-            //         'show',
-            //         'fade'
-            //     ]
-            // },
+            safelist: {
+                standard: [
+                    'show',
+                    'fade',
+                    /-backdrop$/,
+                    /^is-/,
+                    /^has-/,
+                    /^js-/
+                ],
+                greedy: [
+                    /^itemprop$/,
+                    /^role$/
+                ]
+            },
             defaultExtractor: (content) => {
                 let els = JSON.parse(content).htmlElements;
-                els = els.tags.concat(els.classes, els.ids);
+                els = els.tags.concat(els.classes);
                 return els;
             }
         }

@@ -67,7 +67,7 @@ blocks:
     image:
       src: /images/uploads/logo-google-pagespeed-insights.svg
   - type: gauges
-    title: Hugolify template demo report
+    title: ""
     column: 4
     show_color: true
     items:
@@ -102,6 +102,16 @@ blocks:
       throughout the web design industry.
     image:
       src: /images/uploads/websitecarbon.jpg
+  - type: gauges
+    column: 5
+    show_color: true
+    background: false
+    items:
+      - limit: 100
+        suffix: "%"
+        value: 92
+        title: Cleaner
+        text: This web page is cleaner than 92 % of web pages tested
   - type: paragraph
     title: Repositories
     text: >-

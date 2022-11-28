@@ -44,10 +44,23 @@ blocks:
           url: https://www.netlifycms.org/
           text: Discover Netlify CMS
           blank: true
+  - type: infos
+    column: 4
+    title: 4 types of content available
+    items:
+      - title: Post
+        icon: 1-square
+      - title: Project
+        icon: 2-square
+      - title: Case study
+        icon: 3-square
+      - title: Publication
+        icon: 4-square
+
   - type: editorial
     direction: ltr
     title: Documentation
-    text: The documentation is currently being written
+    text: The documentation is currently being written.
     cta:
       text: Hugolify documention
       url: https://github.com/sebousan/hugolify-template/wiki

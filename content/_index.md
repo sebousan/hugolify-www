@@ -100,6 +100,8 @@ blocks:
       methodology for this purpose. Our hope is that this will help raise
       awareness and encourage more eco-friendly approaches to be adopted
       throughout the web design industry.
+    image:
+      src: /images/uploads/websitecarbon.jpg
   - type: paragraph
     title: Repositories
     text: >-

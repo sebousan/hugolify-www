@@ -3,7 +3,10 @@ index: true
 title: Home
 hero:
   title: Hugolify
-  text: Hugo + Bootstrap + Netlify CMS
+  text: >-
+    Hugo + Bootstrap + Netlify CMS\
+
+    Is a Github template for build easily a fast, accessible friendly and low carbon website!
   cta:
     url: https://demo.hugolify.com
     text: Discover demo

@@ -57,7 +57,13 @@ blocks:
       text: Discover the report
     background: false
     title: Google PageSpeed Insights
-    text: PageSpeed Insights is an online synthetic benchmark tool which helps in identifying performance best practices on any single URL, provides suggestions on a webpage's optimizations, and suggests overall ideas of how to make a website faster. Per URL request, it grades webpage performance on a scale from 1 to 100 and provides a report on suggested optimizations, divided into categories of high, medium, and low priorities.
+    text: PageSpeed Insights is an online synthetic benchmark tool which helps in
+      identifying performance best practices on any single URL, provides
+      suggestions on a webpage's optimizations, and suggests overall ideas of
+      how to make a website faster. Per URL request, it grades webpage
+      performance on a scale from 1 to 100 and provides a report on suggested
+      optimizations, divided into categories of high, medium, and low
+      priorities.
     image:
       src: /images/uploads/logo-google-pagespeed-insights.svg
   - type: gauges
@@ -66,17 +72,34 @@ blocks:
     show_color: true
     items:
       - value: 100
-        suffix: '%'
+        suffix: "%"
         title: Performance
+        limit: 100
       - value: 100
-        suffix: '%'
+        suffix: "%"
         title: Accessibility
+        limit: 100
       - value: 100
-        suffix: '%'
+        suffix: "%"
         title: Best practices
+        limit: 100
       - value: 100
-        suffix: '%'
+        suffix: "%"
         title: SEO
+        limit: 100
+  - type: editorial
+    direction: rtl
+    cta:
+      blank: true
+      url: https://www.websitecarbon.com/website/demo-hugolify-com/
+      text: Discovert report
+    background: false
+    title: Website carbon calculator
+    text: Calculating the carbon emissions of website is somewhat of a challenge,
+      but we have been working for many years to develop and refine a
+      methodology for this purpose. Our hope is that this will help raise
+      awareness and encourage more eco-friendly approaches to be adopted
+      throughout the web design industry.
   - type: paragraph
     title: Repositories
     text: >-

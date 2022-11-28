@@ -46,9 +46,8 @@ blocks:
           blank: true
   - type: editorial
     direction: ltr
-    title: Hugolify?
-    text: Is a Github template for build easily a fast, accessible friendly and
-      low carbon website!
+    title: Documentation
+    text: The documentation is currently being written
     cta:
       text: Hugolify documention
       url: https://github.com/sebousan/hugolify-template/wiki

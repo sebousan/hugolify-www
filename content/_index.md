@@ -61,7 +61,7 @@ blocks:
         icon: 4-square
         text: Archiving of press releases
   - type: pushes
-    column: 4
+    column: 3
     background: false
     items:
       - cta:

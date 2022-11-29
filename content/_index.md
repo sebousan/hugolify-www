@@ -68,7 +68,7 @@ blocks:
           blank: false
           text: Discover report
           url: google-pagespeed-demo-reports
-        title: Performance and best practices
+        title: Performance
         text: with Google PageSpeed
         image:
           src: /images/uploads/logo-google-pagespeed-insights.svg

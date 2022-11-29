@@ -60,6 +60,27 @@ blocks:
       - title: Publication
         icon: 4-square
         text: Archiving of press releases
+  - type: pushes
+    column: 4
+    background: false
+    items:
+      - cta:
+          blank: false
+          text: Discover report
+          url: google-pagespeed-demo-reports
+        title: Performance and best practices
+        text: with Google PageSpeed
+        image:
+          src: /images/uploads/logo-google-pagespeed-insights.svg
+      - cta:
+          blank: false
+          text: Discover report
+          url: website-carbon-demo-reports
+        title: Ecological impact
+        text: with website carbon calculator
+        image:
+          src: /images/uploads/websitecarbon.jpg
+    title: Analyzes and reports
   - type: editorial
     direction: ltr
     title: Documentation

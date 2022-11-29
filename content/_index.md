@@ -50,13 +50,16 @@ blocks:
     items:
       - title: Post
         icon: 1-square
+        text: News about your business
       - title: Project
         icon: 2-square
+        text: Your projects with image list and data list
       - title: Case study
         icon: 3-square
+        text: Present case studies with component management
       - title: Publication
         icon: 4-square
-
+        text: Archiving of press releases
   - type: editorial
     direction: ltr
     title: Documentation

@@ -1,1 +1,10 @@
-
+links:
+  - title: Demo
+    url: https://demo.hugolify.com/
+    blank: true
+  - title: Github
+    url: https://github.com/sebousan/hugolify-template/
+    blank: true
+  - title: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki
+    blank: true

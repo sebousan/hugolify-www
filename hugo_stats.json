@@ -38,9 +38,6 @@
     ],
     "classes": [
       "404-page",
-      "alert",
-      "alert-warning",
-      "b-0",
       "block-editorial",
       "block-editorial-ltr",
       "block-gauges",
@@ -50,6 +47,7 @@
       "bottom-links",
       "breadcrumb-wrapper",
       "btn",
+      "btn-menu",
       "btn-primary",
       "card",
       "circle",
@@ -77,12 +75,12 @@
       "items-4",
       "items-5",
       "logo",
-      "mb-0",
       "media",
       "name",
       "nav",
       "nav-accessibility",
       "nav-legal",
+      "nav-primary",
       "nav-social",
       "offcanvas",
       "page",
@@ -91,15 +89,18 @@
       "row",
       "section-pages",
       "sidebar",
-      "text-center",
       "title",
-      "toc"
+      "toc",
+      "top",
+      "top-warning"
     ],
     "ids": [
       "TableOfContents",
       "footer",
       "hosting",
       "main",
+      "navigation",
+      "offcanvasNavbarLabel",
       "toc",
       "tocLabel"
     ]

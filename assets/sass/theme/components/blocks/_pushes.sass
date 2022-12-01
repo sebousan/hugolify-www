@@ -1,20 +1,7 @@
 .block-pushes
-    text-align: center
-    @include media-breakpoint-only(md)
-        .items
-            > *
-                width: 33.33333333%
-    .media
-        @extend .ratio
-        @extend .ratio-1x1
-        @extend .bg-light
-        margin-bottom: $grid-gutter-width
-    picture
-        align-items: center
-        display: flex
-        justify-content: center
-    img
-        height: auto
-        width: 60%
-    .btn
-        @extend .btn-link
+    .card
+        .content
+            .btn
+                @extend .btn-link
+                &:hover
+                    background-color: transparent

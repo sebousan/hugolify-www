@@ -28,10 +28,12 @@ blocks:
           text: Discover Hugo
         image:
           src: /images/uploads/logo-hugo-wide.svg
+          logo: true
       - title: Bootstrap
         text: The most popular open-source front-end framework
         image:
           src: /images/uploads/logo-bootstrap-5.svg
+          logo: true
         cta:
           url: https://getbootstrap.com/
           text: Discover Bootstrap
@@ -40,6 +42,7 @@ blocks:
         text: Open-source content management for your Git workflow
         image:
           src: /images/uploads/logo-netlify.svg
+          logo: true
         cta:
           url: https://www.netlifycms.org/
           text: Discover Netlify CMS

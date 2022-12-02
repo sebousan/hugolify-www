@@ -38,6 +38,7 @@
     ],
     "classes": [
       "404-page",
+      "block-cta",
       "block-editorial",
       "block-editorial-ltr",
       "block-gauges",
@@ -47,7 +48,6 @@
       "bottom-links",
       "breadcrumb-wrapper",
       "btn",
-      "btn-menu",
       "btn-primary",
       "card",
       "circle",
@@ -80,7 +80,6 @@
       "nav",
       "nav-accessibility",
       "nav-legal",
-      "nav-primary",
       "nav-social",
       "offcanvas",
       "page",
@@ -99,8 +98,6 @@
       "footer",
       "hosting",
       "main",
-      "navigation",
-      "offcanvasNavbarLabel",
       "toc",
       "tocLabel"
     ]

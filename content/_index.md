@@ -75,6 +75,7 @@ blocks:
         text: with Google PageSpeed
         image:
           src: /images/uploads/logo-google-pagespeed-insights.svg
+          logo: true
       - cta:
           blank: false
           text: Discover report
@@ -83,9 +84,9 @@ blocks:
         text: with website carbon calculator
         image:
           src: /images/uploads/websitecarbon.jpg
+          logo: true
     title: Analyzes and reports
-  - type: editorial
-    direction: ltr
+  - type: cta
     title: Documentation
     text: The documentation is currently being written.
     cta:

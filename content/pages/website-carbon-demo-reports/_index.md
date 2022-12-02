@@ -20,9 +20,10 @@ blocks:
       throughout the web design industry.
     image:
       src: /images/uploads/websitecarbon.jpg
-  - type: gauges
+  - type: datas
     column: 5
     show_color: true
+    show_gauge: true
     background: false
     items:
       - limit: 100

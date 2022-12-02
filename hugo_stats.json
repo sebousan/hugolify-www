@@ -39,9 +39,9 @@
     "classes": [
       "404-page",
       "block-cta",
+      "block-datas",
       "block-editorial",
       "block-editorial-ltr",
-      "block-gauges",
       "block-infos",
       "block-paragraph",
       "block-pushes",

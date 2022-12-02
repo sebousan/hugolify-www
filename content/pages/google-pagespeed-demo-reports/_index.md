@@ -22,10 +22,11 @@ blocks:
       priorities.
     image:
       src: /images/uploads/logo-google-pagespeed-insights.svg
-  - type: gauges
+  - type: datas
     title: ""
     column: 4
     show_color: true
+    show_gauge: true
     items:
       - value: 100
         suffix: "%"

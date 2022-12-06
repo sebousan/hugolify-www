@@ -17,7 +17,7 @@ hero:
     blank: true
 blocks:
   - type: pushes
-    column: 3
+    column: 4
     title: 3 open-sources solutions in Hugolify
     items:
       - title: Hugo

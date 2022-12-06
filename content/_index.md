@@ -120,6 +120,15 @@ blocks:
         text: Add title section
         icon: type-h2
     text: Modular content for pages and case studies
+  - type: title
+    background: true
+    title: Very simple content managment
+  - type: figure
+    grid: large
+    background: true
+    figure:
+      src: /images/uploads/admin-home.png
+      legend: Homepage
   - type: pushes
     column: 3
     background: false
@@ -165,4 +174,5 @@ blocks:
   - type: paragraph
     title: License
     text: Hugolify is free for personal or commercial projects (MIT license).
+    background: false
 ---

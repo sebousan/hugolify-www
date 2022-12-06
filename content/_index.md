@@ -113,6 +113,7 @@ blocks:
       - title: Title
         text: Add title section
         icon: type-h2
+    text: Modular content for pages and case studies
   - type: pushes
     column: 3
     background: false

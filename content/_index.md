@@ -67,9 +67,9 @@ blocks:
         icon: 5-square
         text: Archiving of press releases
   - type: infos
-    column: 5
+    column: 4
     background: false
-    title: 15 blocks of content available
+    title: 16 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -104,6 +104,9 @@ blocks:
       - title: Paragraph
         text: Add title and some text
         icon: text-paragraph
+      - title: Map
+        text: Add simple map
+        icon: geo-alt
       - title: Push
         text: Add some cards push with image and button in column.
         icon: credit-card-2-front

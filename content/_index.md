@@ -64,7 +64,7 @@ blocks:
         icon: 4-square
         text: Archiving of press releases
   - type: infos
-    column: 6
+    column: 4
     background: false
     title: 15 blocks of content available
     items:
@@ -86,6 +86,15 @@ blocks:
       - title: Figure
         text: Add image block with legend and credits, 3 widths available
         icon: card-image
+      - title: Gallery
+        icon: grid-3x2-gap
+        text: Add image gallery in grid
+      - title: Images list
+        text: Add image list in one or two columns
+        icon: list
+      - title: Informations
+        text: Add some cards informations with icon in column.
+        icon: card-heading
   - type: pushes
     column: 3
     background: false

@@ -6,7 +6,7 @@ hero:
   text: >-
     Hugo + Bootstrap + Netlify CMS\
 
-    Jamstack solution for build easily a fast, accessible friendly and low carbon website!
+    Jamstack solution for building easily a fast, as accessible as possible and low carbon website!
   cta:
     url: https://demo.hugolify.com
     text: Discover demo

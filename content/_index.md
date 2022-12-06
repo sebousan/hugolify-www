@@ -48,20 +48,23 @@ blocks:
           text: Discover Netlify CMS
           blank: true
   - type: infos
-    column: 4
-    title: 4 types of content available
+    column: 5
+    title: 5 types of content available
     items:
+      - icon: 1-square
+        title: Pages
+        text: Nested pages
       - title: Post
-        icon: 1-square
+        icon: 2-square
         text: News about your business
       - title: Project
-        icon: 2-square
+        icon: 3-square
         text: Your projects with image list and data list
       - title: Case study
-        icon: 3-square
+        icon: 4-square
         text: Present case studies with component management
       - title: Publication
-        icon: 4-square
+        icon: 5-square
         text: Archiving of press releases
   - type: infos
     column: 5

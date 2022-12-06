@@ -95,6 +95,24 @@ blocks:
       - title: Informations
         text: Add some cards informations with icon in column.
         icon: card-heading
+      - title: Latest
+        text: Add latest items from posts, projects, publications or casestudies.
+        icon: clock-history
+      - title: Paragraph
+        text: Add title and some text
+        icon: text-paragraph
+      - title: Push
+        text: Add some cards push with image and button in column.
+        icon: credit-card-2-front
+      - title: Quote
+        text: Add quote and author
+        icon: blockquote-left
+      - title: Selected
+        text: Add selected items from posts, projects, publications or casestudies.
+        icon: check-all
+      - title: Title
+        text: Add title section
+        icon: type-h2
   - type: pushes
     column: 3
     background: false

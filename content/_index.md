@@ -64,7 +64,7 @@ blocks:
         icon: 4-square
         text: Archiving of press releases
   - type: infos
-    column: 4
+    column: 5
     background: false
     title: 15 blocks of content available
     items:

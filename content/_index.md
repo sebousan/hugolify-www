@@ -63,6 +63,29 @@ blocks:
       - title: Publication
         icon: 4-square
         text: Archiving of press releases
+  - type: infos
+    column: 6
+    background: false
+    title: 15 blocks of content available
+    items:
+      - title: Alert
+        icon: exclamation-octagon
+        text: Add alert section with state
+      - icon: link
+        title: Call to action
+        text: Add button with link
+      - title: Datas
+        icon: percent
+        text: Add some datas in columns (with gauge or not)
+      - title: Editorial
+        icon: postcard
+        text: Add section with content and media
+      - icon: camera-video
+        title: Embed
+        text: Add embed like video youtube
+      - title: Figure
+        text: Add image block with legend and credits, 3 widths available
+        icon: card-image
   - type: pushes
     column: 3
     background: false

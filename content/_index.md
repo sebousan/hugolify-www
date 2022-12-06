@@ -130,7 +130,7 @@ blocks:
       src: /images/uploads/admin-home.png
       legend: Homepage
   - type: pushes
-    column: 3
+    column: 4
     background: false
     items:
       - cta:

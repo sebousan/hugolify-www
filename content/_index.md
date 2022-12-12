@@ -16,44 +16,13 @@ hero:
     text: Discover github template
     blank: true
 blocks:
-  - type: pushes
-    column: 4
-    title: 3 open-sources solutions in Hugolify
-    items:
-      - title: Hugo
-        text: One of the most popular open-source static site generators
-        cta:
-          url: https://gohugo.io
-          blank: true
-          text: Discover Hugo
-        image:
-          src: /images/uploads/logo-hugo-wide.svg
-          logo: true
-      - title: Bootstrap
-        text: The most popular open-source front-end framework
-        image:
-          src: /images/uploads/logo-bootstrap-5.svg
-          logo: true
-        cta:
-          url: https://getbootstrap.com/
-          text: Discover Bootstrap
-          blank: true
-      - title: Netlify CMS
-        text: Open-source content management for your Git workflow
-        image:
-          src: /images/uploads/logo-netlify.svg
-          logo: true
-        cta:
-          url: https://www.netlifycms.org/
-          text: Discover Netlify CMS
-          blank: true
-  - type: infos
+  - type: informations
     column: 5
     title: 5 types of content available
     items:
       - icon: 1-square
         title: Pages
-        text: Nested pages
+        text: Nested pages with blocks of content
       - title: Post
         icon: 2-square
         text: News about your business
@@ -62,11 +31,11 @@ blocks:
         text: Your projects with image list and data list
       - title: Case study
         icon: 4-square
-        text: Present case studies with component management
+        text: Present case studies with blocks of content
       - title: Publication
         icon: 5-square
         text: Archiving of press releases
-  - type: infos
+  - type: informations
     column: 4
     background: false
     title: 16 blocks of content available
@@ -96,7 +65,7 @@ blocks:
         text: Add image list in one or two columns
         icon: list
       - title: Informations
-        text: Add some cards informations with icon in column.
+        text: Add some cards informations with icon or image in column.
         icon: card-heading
       - title: Latest
         text: Add latest items from posts, projects, publications or casestudies.
@@ -108,7 +77,7 @@ blocks:
         text: Add simple map
         icon: geo-alt
       - title: Push
-        text: Add some cards push with image and button in column.
+        text: Add some image cards push with button in one or two column.
         icon: credit-card-2-front
       - title: Quote
         text: Add quote and author
@@ -129,7 +98,38 @@ blocks:
     figure:
       src: /images/uploads/admin-home.png
       legend: Homepage
-  - type: pushes
+  - type: informations
+    column: 4
+    title: 3 open-sources solutions in Hugolify
+    items:
+      - title: Hugo
+        text: One of the most popular open-source static site generators
+        cta:
+          url: https://gohugo.io
+          blank: true
+          text: Discover Hugo
+        image:
+          src: /images/uploads/logo-hugo-wide.svg
+          isLogo: true
+      - title: Bootstrap
+        text: The most popular open-source front-end framework
+        image:
+          src: /images/uploads/logo-bootstrap-5.svg
+          isLogo: true
+        cta:
+          url: https://getbootstrap.com/
+          text: Discover Bootstrap
+          blank: true
+      - title: Netlify CMS
+        text: Open-source content management for your Git workflow
+        image:
+          src: /images/uploads/logo-netlify.svg
+          isLogo: true
+        cta:
+          url: https://www.netlifycms.org/
+          text: Discover Netlify CMS
+          blank: true
+  - type: informations
     column: 4
     background: false
     items:
@@ -141,7 +141,7 @@ blocks:
         text: with Google PageSpeed
         image:
           src: /images/uploads/logo-google-pagespeed-insights.svg
-          logo: true
+          isLogo: true
       - cta:
           blank: false
           text: Discover report
@@ -150,27 +150,42 @@ blocks:
         text: with website carbon calculator
         image:
           src: /images/uploads/websitecarbon.jpg
-          logo: true
+          isLogo: true
     title: Analyzes and reports
   - type: cta
     title: Documentation
-    text: The documentation is currently being written.
+    background: true
     cta:
       text: Hugolify documention
       url: https://github.com/sebousan/hugolify-template/wiki
       blank: true
-  - type: paragraph
-    title: Repositories
-    text: >-
-      [Hugolify template](https://github.com/sebousan/hugolify-template) is
-      available on Github,\
-
-      he relies on two submodules:
-
-
-      * [Hugolify theme](https://github.com/sebousan/hugolify-theme): hugo theme for Hugolify
-
-      * [Hugolify Netlify CMS](https://github.com/sebousan/hugolify-netlify-cms-template): Netlify CMS template for Hugolify
+  - type: informations
+    column: 3
+    title: 3 Github repositories
+    text: Hugolify is available on Github, template relies on two submodules.
+    background: false
+    items:
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/sebousan/hugolify-template
+        title: hugolify-template
+        text: Github template with content demo
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/sebousan/hugolify-theme
+        title: hugolify-theme
+        text: Hugo theme for Hugolify
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/sebousan/hugolify-netlify-cms-template
+        title: hugolify-netlify-cms-template
+        text: Netlify CMS template for Hugolify
+        icon: git
   - type: paragraph
     title: License
     text: Hugolify is free for personal or commercial projects (MIT license).

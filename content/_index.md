@@ -63,7 +63,7 @@ blocks:
         text: Add image gallery in grid
       - title: Images list
         text: Add image list in one or two columns
-        icon: list
+        icon: images
       - title: Informations
         text: Add some cards informations with icon or image in column.
         icon: card-heading

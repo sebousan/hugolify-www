@@ -103,7 +103,7 @@ blocks:
     title: 3 open-sources solutions in Hugolify
     items:
       - title: Hugo
-        text: One of the most popular open-source static site generators
+        text: One of the most popular open-source static site generators.
         cta:
           url: https://gohugo.io
           blank: true
@@ -122,7 +122,7 @@ blocks:
           text: Discover Bootstrap
           blank: true
       - title: Netlify CMS
-        text: Open-source content management for your Git workflow
+        text: Open-source content management for your Git workflow.
         image:
           src: /images/uploads/logo-netlify.svg
           isLogo: true

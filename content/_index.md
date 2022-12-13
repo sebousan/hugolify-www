@@ -112,7 +112,8 @@ blocks:
           src: /images/uploads/logo-hugo-wide.svg
           isLogo: true
       - title: Bootstrap
-        text: The most popular open-source front-end framework
+        text: The most famous front-end framework for developing responsive and mobile
+          first projects.
         image:
           src: /images/uploads/logo-bootstrap-5.svg
           isLogo: true
@@ -190,4 +191,6 @@ blocks:
     title: License
     text: Hugolify is free for personal or commercial projects (MIT license).
     background: false
+    grid: large
+    align: start
 ---

@@ -52,9 +52,9 @@ blocks:
       - title: Editorial
         icon: postcard
         text: Add section with content and media
-      - icon: camera-video
+      - icon: code-slash
         title: Embed
-        text: Add embed like video youtube
+        text: Add embed like video Youtube or Cal form
       - title: Figure
         text: Add image block with legend and credits, 3 widths available
         icon: card-image

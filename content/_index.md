@@ -20,20 +20,20 @@ blocks:
     column: 5
     title: 5 types of content available
     items:
-      - icon: 1-square
+      - icon: file-earmark
         title: Pages
         text: Nested pages with blocks of content
       - title: Post
-        icon: 2-square
+        icon: file-earmark-text
         text: News about your business
       - title: Project
-        icon: 3-square
+        icon: file-earmark-richtext
         text: Your projects with image list and data list
       - title: Case study
-        icon: 4-square
+        icon: book
         text: Present case studies with blocks of content
       - title: Publication
-        icon: 5-square
+        icon: newspaper
         text: Archiving of press releases
   - type: informations
     column: 4

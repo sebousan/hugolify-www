@@ -44,9 +44,13 @@ blocks:
         suffix: "%"
         title: SEO
         limit: 100
+  - type: title
+    background: false
+    title: Analysis of the homepage of the demo site
   - type: figure
-    grid: large
+    grid: medium
     background: false
     figure:
       src: /images/uploads/demo.hugolify.com.png
+      legend: Homepage
 ---

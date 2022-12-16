@@ -2,7 +2,7 @@
 layout: blocks
 title: Google PageSpeed demo reports
 url: google-pagespeed-demo-reports
-hero: 
+hero:
   title: Google PageSpeed demo reports
 blocks:
   - type: editorial
@@ -44,4 +44,9 @@ blocks:
         suffix: "%"
         title: SEO
         limit: 100
+  - type: figure
+    grid: large
+    background: false
+    figure:
+      src: /images/uploads/demo.hugolify.com.png
 ---

@@ -2,7 +2,7 @@
 layout: blocks
 title: Website Carbon demo reports
 url: website-carbon-demo-reports
-hero: 
+hero:
   title: Website Carbon demo reports
 blocks:
   - type: editorial
@@ -31,4 +31,12 @@ blocks:
         value: 92
         title: Cleaner
         text: This web page is cleaner than 92 % of web pages tested
+  - type: title
+    background: false
+    title: Analysis of the homepage of the demo site
+  - type: figure
+    grid: small
+    background: false
+    figure:
+      src: /images/uploads/demo.hugolify.com.png
 ---

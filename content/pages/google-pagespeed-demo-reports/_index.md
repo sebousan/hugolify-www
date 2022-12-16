@@ -48,8 +48,8 @@ blocks:
     background: false
     title: Analysis of the homepage of the demo site
   - type: figure
-    grid: medium
-    background: false
+    grid: small
+    background: true
     figure:
       src: /images/uploads/demo.hugolify.com.png
       legend: Homepage

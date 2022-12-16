@@ -36,7 +36,7 @@ blocks:
     title: Analysis of the homepage of the demo site
   - type: figure
     grid: small
-    background: false
+    background: true
     figure:
       src: /images/uploads/demo.hugolify.com.png
 ---

@@ -1,7 +1,6 @@
 ---
-layout: blocks
+isPage: true
 title: Website Carbon demo reports
-url: website-carbon-demo-reports
 hero:
   title: Website Carbon demo reports
 blocks:

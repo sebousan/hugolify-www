@@ -1,7 +1,6 @@
 ---
-layout: blocks
+isPage: true
 title: Google PageSpeed demo reports
-url: google-pagespeed-demo-reports
 hero:
   title: Google PageSpeed demo reports
 blocks:

@@ -183,9 +183,9 @@ blocks:
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/sebousan/hugolify-netlify-cms-template
-        title: hugolify-netlify-cms-template
-        text: Netlify CMS template for Hugolify
+          url: https://github.com/sebousan/hugolify-netlify-cms
+        title: hugolify-netlify-cms
+        text: Admin Netlify CMS for Hugolify
         icon: git
   - type: paragraph
     title: License

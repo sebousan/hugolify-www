@@ -2,7 +2,6 @@
   "htmlElements": {
     "tags": [
       "a",
-      "article",
       "body",
       "br",
       "button",
@@ -55,6 +54,7 @@
       "circle",
       "circle-bg",
       "col-md-10",
+      "col-md-6",
       "container",
       "content",
       "content-body",
@@ -69,11 +69,6 @@
       "home-page",
       "hugolify",
       "icon",
-      "icon-1-square",
-      "icon-2-square",
-      "icon-3-square",
-      "icon-4-square",
-      "icon-5-square",
       "icon-blockquote-left",
       "icon-book",
       "icon-card-heading",
@@ -91,7 +86,6 @@
       "icon-grid-3x2-gap",
       "icon-images",
       "icon-link",
-      "icon-newsletter",
       "icon-newspaper",
       "icon-percent",
       "icon-postcard",
@@ -113,11 +107,12 @@
       "nav-social",
       "offcanvas",
       "offset-md-1",
-      "page",
-      "pages",
+      "offset-md-3",
       "pass",
       "row",
-      "section-pages",
+      "section-google-pagespeed-demo-reports",
+      "section-legal-mentions",
+      "section-website-carbon-demo-reports",
       "social-github",
       "social-twitter",
       "title",
@@ -125,11 +120,14 @@
     ],
     "ids": [
       "TableOfContents",
+      "conception",
+      "editor",
       "footer",
       "hosting",
       "main",
       "toc",
-      "tocLabel"
+      "tocLabel",
+      "welcome-to-wwwhugolifycom"
     ]
   }
 }

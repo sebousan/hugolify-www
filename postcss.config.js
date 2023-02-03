@@ -17,6 +17,9 @@ module.exports = {
                     /^has-/,
                     /^js-/
                 ],
+                deep: [
+                    /^tobii/
+                ],
                 greedy: [
                     /^aria-current$/,
                     /^role$/

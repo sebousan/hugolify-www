@@ -162,30 +162,71 @@ blocks:
       blank: true
   - type: informations
     column: 3
-    title: 3 Github repositories
+    title: 3 main github repositories
     text: Hugolify is available on Github, template relies on two submodules.
     background: false
     items:
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/sebousan/hugolify-template
+          url: https://github.com/hugolify/hugolify-template
         title: hugolify-template
         text: Github template with content demo
         icon: git
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/sebousan/hugolify-theme
+          url: https://github.com/hugolify/hugolify-theme
         title: hugolify-theme
-        text: Hugo theme for Hugolify
+        text: Hugo theme base for Hugolify
         icon: git
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/sebousan/hugolify-netlify-cms
+          url: https://github.com/hugolify/hugolify-netlify-cms
         title: hugolify-netlify-cms
         text: Admin Netlify CMS for Hugolify
+        icon: git
+  - type: informations
+    column: 3
+    title: 5 Hugo modules
+    text: Hugolify is available with 5 independants modules.
+    background: false
+    items:
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/hugolify/hugolify-theme-casestudies
+        title: hugolify-theme-casestudies
+        text: Case studies sections
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/hugolify/hugolify-theme-persons
+        title: hugolify-theme-persons
+        text: Persons section
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/hugolify/hugolify-theme-posts
+        title: hugolify-theme-posts
+        text: Posts, authors, categories and tags sections
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/hugolify/hugolify-theme-projects
+        title: hugolify-theme-projects
+        text: Projects and types sections
+        icon: git
+      - cta:
+          blank: true
+          text: Discover repository
+          url: https://github.com/hugolify/hugolify-theme-publications
+        title: hugolify-theme-publications
+        text: Publications and concerned sections
         icon: git
   - type: paragraph
     title: License

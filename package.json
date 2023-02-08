@@ -1,6 +1,6 @@
 {
   "name": "hugolify-www",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": "https://github.com/sebousan/hugolify-www",
   "author": {
     "name": "Sébastien Moulène",
@@ -18,8 +18,8 @@
   },
   "scripts": {
     "watch": "hugo server",
-    "build": "hugo --minify --environment production",
-    "update": "git pull --recurse-submodules --depth 1 && git submodule update --remote",
+    "build": "hugo --gc --minify",
+    "update": "hugo mod get -u",
     "cms": "npx netlify-cms-proxy-server"
   }
 }

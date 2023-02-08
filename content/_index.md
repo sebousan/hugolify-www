@@ -12,7 +12,7 @@ hero:
     text: Discover demo
     blank: true
   cta_second:
-    url: https://github.com/sebousan/hugolify-template
+    url: https://github.com/hugolify/hugolify-template
     text: Discover github template
     blank: true
 blocks:
@@ -38,7 +38,7 @@ blocks:
   - type: informations
     column: 4
     background: false
-    title: 16 blocks of content available
+    title: 18 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -55,6 +55,9 @@ blocks:
       - icon: code-slash
         title: Embed
         text: Add embed like video Youtube or Cal form
+      - title: FAQ
+        text: Add some frequently asked questions
+        icon: patch-question
       - title: Figure
         text: Add image block with legend and credits, 3 widths available
         icon: card-image
@@ -67,6 +70,9 @@ blocks:
       - title: Informations
         text: Add some cards informations with icon or image in column.
         icon: card-heading
+      - title: Instagram
+        text: Add an instagram feed
+        icon: instagram
       - title: Latest
         text: Add latest items from posts, projects, publications or casestudies.
         icon: clock-history
@@ -158,7 +164,7 @@ blocks:
     background: true
     cta:
       text: Hugolify documention
-      url: https://github.com/sebousan/hugolify-template/wiki
+      url: https://github.com/hugolify/hugolify-template/wiki
       blank: true
   - type: informations
     column: 3
@@ -187,47 +193,13 @@ blocks:
         title: hugolify-netlify-cms
         text: Admin Netlify CMS for Hugolify
         icon: git
-  - type: informations
-    column: 3
-    title: 5 Hugo modules
-    text: Hugolify is available with 5 independants modules.
-    background: false
-    items:
-      - cta:
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-casestudies
-        title: hugolify-theme-casestudies
-        text: Case studies sections
-        icon: git
-      - cta:
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-persons
-        title: hugolify-theme-persons
-        text: Persons section
-        icon: git
-      - cta:
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-posts
-        title: hugolify-theme-posts
-        text: Posts, authors, categories and tags sections
-        icon: git
-      - cta:
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-projects
-        title: hugolify-theme-projects
-        text: Projects and types sections
-        icon: git
-      - cta:
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-publications
-        title: hugolify-theme-publications
-        text: Publications and concerned sections
-        icon: git
+  - type: cta
+    title: All Hugolify repositories 
+    background: true
+    cta:
+      text: Discover on Github
+      url: https://github.com/hugolify/
+      blank: true
   - type: paragraph
     title: License
     text: Hugolify is free for personal or commercial projects (MIT license).

@@ -3,8 +3,8 @@ links:
     url: https://demo.hugolify.com/
     blank: true
   - title: Github
-    url: https://github.com/sebousan/hugolify-template/
+    url: https://github.com/hugolify
     blank: true
   - title: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki
+    url: https://github.com/hugolify/hugolify-template/wiki
     blank: true

@@ -7,8 +7,3 @@ paginate: 9
 enableRobotsTXT: true
 build:
   writeStats: true
-
-## STATIC
-staticDir:
-  - static1
-  - static2

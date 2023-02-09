@@ -1,7 +1,9 @@
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.2.6 h1:rJbU9+w20LDSmb1UB0FzbWA8oEBPyJ208V4ymCBWBJY=
-github.com/hugolify/hugolify-theme v1.2.6/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-netlify-cms v1.1.2 h1:7dYZIEJZxNKve4Tm4W1BW1I6b99qt4hXZ/jBY9ZSBDM=
+github.com/hugolify/hugolify-netlify-cms v1.1.2/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-theme v1.2.9 h1:csXnvp88VN/kXvTP6fJOgAoQzubvEeLMIwpzF+il37s=
+github.com/hugolify/hugolify-theme v1.2.9/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/stevenschobert/instafeed.js v2.0.0+incompatible h1:tvOY5SNBTCSh9EbQjgWP4V32lohmplbri1bxqw11z1k=
 github.com/stevenschobert/instafeed.js v2.0.0+incompatible/go.mod h1:m/fWLGP3tyQSNuvytL5b7NfA6oGlSAvXNkTHHv4gRLc=
 github.com/twbs/bootstrap v5.2.3+incompatible h1:lOmsJx587qfF7/gE7Vv4FxEofegyJlEACeVV+Mt7cgc=

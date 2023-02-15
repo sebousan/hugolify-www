@@ -1,4 +1,4 @@
 _merge: deep
 imports:
-- path: github.com/hugolify/hugolify-theme
 - path: github.com/hugolify/hugolify-netlify-cms
+- path: github.com/hugolify/hugolify-theme

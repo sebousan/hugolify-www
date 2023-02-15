@@ -10,14 +10,12 @@ By using this site, you acknowledge having read the provisions below and you agr
 
 ## Editor
 
-The www.hugolify.com website is the property of Sébastien Moulène.
+The hugolify.com website is the property of {{< blank_link link="https://www.uncinq.dev" text="Un Cinq" >}}..
 
-* Find me on twitter: https://twitter.com/sebousan
-* Reach me by email: sebousan@gmail.com
 
 ## Hosting
 
-The site www.hugolify.com is hosted at:
+The site hugolify.com is hosted at:
 
 Netlify,\
 2325 3rd Street, \

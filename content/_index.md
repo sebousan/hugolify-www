@@ -17,21 +17,30 @@ hero:
     blank: true
 blocks:
   - type: informations
-    column: 5
-    title: 5 types of content available
+    column: 4
+    title: 8 types of content available
     items:
+      - title: Case study
+        icon: book
+        text: Present case studies with blocks of content
+      - title: Expertise
+        icon: mortarboard
+        text: Skills of a firm or a person
+      - title: Office
+        icon: buildings
+        text: Places of your firm
       - icon: file-earmark
-        title: Pages
+        title: Page
         text: Nested pages with blocks of content
+      - title: Person
+        icon: people
+        text: Authors, concerned and persons 
       - title: Post
         icon: file-earmark-text
         text: News about your business
       - title: Project
         icon: file-earmark-richtext
         text: Your projects with image list and data list
-      - title: Case study
-        icon: book
-        text: Present case studies with blocks of content
       - title: Publication
         icon: newspaper
         text: Archiving of press releases
@@ -95,9 +104,14 @@ blocks:
         text: Add title section
         icon: type-h2
     text: Modular content for pages and case studies
+  - type: newsletter
+    background: true
+    title: Newsletter
+    platform: mailchimp
+    url: "mailchimp"
   - type: title
     background: true
-    title: Very simple content managment
+    title: Very simple content manager
   - type: figure
     grid: large
     background: true

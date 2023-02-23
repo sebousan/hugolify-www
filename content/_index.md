@@ -104,11 +104,6 @@ blocks:
         text: Add title section
         icon: type-h2
     text: Modular content for pages and case studies
-  - type: newsletter
-    background: true
-    title: Newsletter
-    platform: mailchimp
-    url: "mailchimp"
   - type: title
     background: true
     title: Very simple content manager

@@ -8,7 +8,7 @@ hero:
 
     Jamstack solution for building easily a fast, as accessible as possible and low carbon website!
   cta:
-    url: https://demo.hugolify.com
+    url: https://demo.hugolify.io
     text: Discover demo
     blank: true
   cta_second:

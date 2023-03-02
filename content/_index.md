@@ -12,8 +12,8 @@ hero:
     text: Discover demo
     blank: true
   cta_second:
-    url: https://github.com/hugolify/hugolify-template
-    text: Discover github template
+    url: https://github.com/hugolify/
+    text: Discover on github
     blank: true
 blocks:
   - type: informations
@@ -47,7 +47,7 @@ blocks:
   - type: informations
     column: 4
     background: false
-    title: 18 blocks of content available
+    title: 19 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -55,6 +55,9 @@ blocks:
       - icon: link
         title: Call to action
         text: Add button with link
+      - icon: bar-chart
+        title: Chart
+        text: Add different charts
       - title: Datas
         icon: percent
         text: Add some datas in columns (with gauge or not)
@@ -109,6 +112,7 @@ blocks:
     title: Very simple content manager
   - type: figure
     grid: large
+    offset: center
     background: true
     figure:
       src: /images/uploads/admin-home.png
@@ -204,6 +208,7 @@ blocks:
         icon: git
   - type: cta
     title: All Hugolify repositories 
+    text: More twenty-five repositories with template, theme, modules…
     background: true
     cta:
       text: Discover on Github

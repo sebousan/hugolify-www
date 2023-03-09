@@ -3,6 +3,7 @@ isIndex: true
 title: Home
 hero:
   title: Hugolify
+  align: center
   text: >-
     Hugo + Bootstrap + Netlify CMS\
 
@@ -13,12 +14,13 @@ hero:
     blank: true
   cta_second:
     url: https://github.com/hugolify/
-    text: Discover on github
+    text: Discover on Github
     blank: true
 blocks:
   - type: informations
     column: 4
     title: 8 types of content available
+    text: And taxonomies like categories, tags, authors…
     items:
       - title: Case study
         icon: book
@@ -47,7 +49,7 @@ blocks:
   - type: informations
     column: 4
     background: false
-    title: 19 blocks of content available
+    title: 22 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -73,6 +75,9 @@ blocks:
       - title: Figure
         text: Add image block with legend and credits, 3 widths available
         icon: card-image
+      - title: Form
+        text: Add form block with netlify
+        icon: input-cursor-text
       - title: Gallery
         icon: grid-3x2-gap
         text: Add image gallery in grid
@@ -94,6 +99,9 @@ blocks:
       - title: Map
         text: Add simple map
         icon: geo-alt
+      - title: Newsletter
+        text: Add newsletter submit form with mailchimp or sendinblue
+        icon: envelope-plus
       - title: Push
         text: Add some image cards push with button in one or two column.
         icon: credit-card-2-front
@@ -103,10 +111,13 @@ blocks:
       - title: Selected
         text: Add selected items from posts, projects, publications or casestudies.
         icon: check-all
+      - title: Testimonials
+        text: Add some testimonials.
+        icon: quote
       - title: Title
         text: Add title section
         icon: type-h2
-    text: Modular content for pages and case studies
+    text: Modular content for pages pages, offices and case studies
   - type: title
     background: true
     title: Very simple content manager

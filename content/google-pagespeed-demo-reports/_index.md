@@ -26,6 +26,7 @@ blocks:
     column: 4
     show_color: true
     show_gauge: true
+    background: true
     items:
       - value: 100
         suffix: "%"
@@ -43,12 +44,12 @@ blocks:
         suffix: "%"
         title: SEO
         limit: 100
-  - type: title
-    background: false
-    title: Analysis of the homepage of the demo site
   - type: figure
+    background: false
+    heading:
+      title: Analysis of the homepage of the demo site
     grid: small
-    background: true
+    offset: center
     figure:
       src: /images/uploads/demo.hugolify.com.png
       legend: Homepage

@@ -23,19 +23,19 @@ blocks:
     column: 5
     show_color: true
     show_gauge: true
-    background: false
+    background: true
     items:
       - limit: 100
         suffix: "%"
         value: 92
         title: Cleaner
         text: This web page is cleaner than 92 % of web pages tested
-  - type: title
-    background: false
-    title: Analysis of the homepage of the demo site
   - type: figure
+    heading:
+      title: Analysis of the homepage of the demo site
     grid: small
-    background: true
+    offset: center
+    background: false
     figure:
       src: /images/uploads/demo.hugolify.com.png
 ---

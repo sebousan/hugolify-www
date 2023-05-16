@@ -5,9 +5,9 @@ hero:
   title: Hugolify
   align: center
   text: >-
-    Hugo + Bootstrap + Netlify CMS\
+    Hugo + Bootstrap + Decap CMS\
 
-    Jamstack solution for building easily a fast, as accessible as possible and low carbon website!
+    Jamstack solution for building easily a fast, as accessible as possible and low carbon website.
   cta:
     url: https://demo.hugolify.io
     text: Discover demo
@@ -19,8 +19,9 @@ hero:
 blocks:
   - type: informations
     column: 4
-    title: 8 types of content available
-    text: And taxonomies like categories, tags, authors…
+    heading:
+      title: 8 types of content available
+      text: And taxonomies like categories, tags, authors…
     items:
       - title: Case study
         icon: book
@@ -49,7 +50,8 @@ blocks:
   - type: informations
     column: 4
     background: false
-    title: 22 blocks of content available
+    heading:
+      title: 22 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -120,7 +122,8 @@ blocks:
     text: Modular content for pages pages, offices and case studies
   - type: title
     background: true
-    title: Very simple content manager
+    heading:
+      title: Very simple content manager
   - type: figure
     grid: large
     offset: center
@@ -130,7 +133,8 @@ blocks:
       legend: Homepage
   - type: informations
     column: 4
-    title: 3 open-sources solutions in Hugolify
+    heading:
+      title: 3 open-sources solutions in Hugolify
     items:
       - title: Hugo
         text: One of the most popular open-source static site generators.
@@ -151,14 +155,14 @@ blocks:
           url: https://getbootstrap.com/
           text: Discover Bootstrap
           blank: true
-      - title: Netlify CMS
+      - title: Decap CMS (ex Netlify CMS)
         text: Open-source content management for your Git workflow.
         image:
-          src: /images/uploads/logo-netlify.svg
+          src: /images/uploads/logo-decap.svg
           isLogo: true
         cta:
-          url: https://www.netlifycms.org/
-          text: Discover Netlify CMS
+          url: https://www.decapcms.org/
+          text: Discover Decap CMS 
           blank: true
   - type: informations
     column: 4
@@ -182,9 +186,11 @@ blocks:
         image:
           src: /images/uploads/websitecarbon.jpg
           isLogo: true
-    title: Analyzes and reports
+    heading:
+      title: Analyzes and reports
   - type: cta
-    title: Documentation
+    heading:
+      title: Documentation
     background: true
     cta:
       text: Hugolify documention
@@ -192,8 +198,9 @@ blocks:
       blank: true
   - type: informations
     column: 3
-    title: 3 main github repositories
-    text: Hugolify is available on Github, template relies on two submodules.
+    heading:
+      title: 3 main github repositories
+      text: Hugolify is available on Github, template relies on two submodules.
     background: false
     items:
       - cta:
@@ -218,8 +225,9 @@ blocks:
         text: Admin Netlify CMS for Hugolify
         icon: git
   - type: cta
-    title: All Hugolify repositories 
-    text: More twenty-five repositories with template, theme, modules…
+    heading:
+      title: All Hugolify repositories 
+      text: More twenty-five repositories with template, theme, modules…
     background: true
     cta:
       text: Discover on Github
@@ -230,5 +238,6 @@ blocks:
     text: Hugolify is free for personal or commercial projects (MIT license).
     background: false
     grid: large
-    align: start
+    offset: center
+    align: center
 ---

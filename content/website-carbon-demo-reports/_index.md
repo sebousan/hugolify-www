@@ -8,7 +8,7 @@ blocks:
     direction: ltr
     cta:
       blank: true
-      url: https://www.websitecarbon.com/website/demo-hugolify-com/
+      url: https://www.websitecarbon.com/website/demo-hugolify-io/
       text: Discovert report
     background: false
     title: Website carbon calculator

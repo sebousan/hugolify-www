@@ -8,7 +8,7 @@ blocks:
     direction: ltr
     cta:
       blank: true
-      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.com
+      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
       text: Discover the report
     background: false
     title: Google PageSpeed Insights
@@ -22,7 +22,6 @@ blocks:
     image:
       src: /images/uploads/logo-google-pagespeed-insights.svg
   - type: datas
-    title: ""
     column: 4
     show_color: true
     show_gauge: true

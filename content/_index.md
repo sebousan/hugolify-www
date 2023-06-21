@@ -164,30 +164,73 @@ blocks:
           url: https://www.decapcms.org/
           text: Discover Decap CMS 
           blank: true
-  - type: informations
+
+  - type: editorial
+    background: true
+    direction: ltr
+    cta:
+      blank: true
+      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
+      text: Discover the report
+    title: Google PageSpeed Insights
+    text: PageSpeed Insights is an online synthetic benchmark tool which helps in
+      identifying performance best practices on any single URL, provides
+      suggestions on a webpage's optimizations, and suggests overall ideas of
+      how to make a website faster. Per URL request, it grades webpage
+      performance on a scale from 1 to 100 and provides a report on suggested
+      optimizations, divided into categories of high, medium, and low
+      priorities.
+    image:
+      src: /images/uploads/logo-google-pagespeed-insights.svg
+  - type: datas
     column: 4
+    show_color: true
+    show_gauge: true
+    background: true
+    items:
+      - value: 100
+        suffix: "%"
+        title: Performance
+        limit: 100
+      - value: 100
+        suffix: "%"
+        title: Accessibility
+        limit: 100
+      - value: 100
+        suffix: "%"
+        title: Best practices
+        limit: 100
+      - value: 100
+        suffix: "%"
+        title: SEO
+        limit: 100
+  - type: editorial
+    direction: rtl
+    cta:
+      blank: true
+      url: https://www.websitecarbon.com/website/demo-hugolify-io/
+      text: Discovert report
+    background: false
+    title: Website carbon calculator
+    text: Calculating the carbon emissions of website is somewhat of a challenge,
+      but we have been working for many years to develop and refine a
+      methodology for this purpose. Our hope is that this will help raise
+      awareness and encourage more eco-friendly approaches to be adopted
+      throughout the web design industry.
+    image:
+      src: /images/uploads/websitecarbon.jpg
+  - type: datas
+    column: 5
+    show_color: true
+    show_gauge: true
     background: false
     items:
-      - cta:
-          blank: false
-          text: Discover report
-          url: google-pagespeed-demo-reports
-        title: Performance
-        text: with Google PageSpeed
-        image:
-          src: /images/uploads/logo-google-pagespeed-insights.svg
-          isLogo: true
-      - cta:
-          blank: false
-          text: Discover report
-          url: website-carbon-demo-reports
-        title: Ecological impact
-        text: with website carbon calculator
-        image:
-          src: /images/uploads/websitecarbon.jpg
-          isLogo: true
-    heading:
-      title: Analyzes and reports
+      - limit: 100
+        suffix: "%"
+        value: 92
+        title: Cleaner
+        text: This web page is cleaner than 92 % of web pages tested
+  
   - type: cta
     heading:
       title: Documentation
@@ -201,7 +244,7 @@ blocks:
     heading:
       title: 3 main github repositories
       text: Hugolify is available on Github, template relies on two submodules.
-    background: false
+    background: true
     items:
       - cta:
           blank: true

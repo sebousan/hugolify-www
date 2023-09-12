@@ -24,29 +24,29 @@ blocks:
       text: And taxonomies like categories, tags, authors…
     items:
       - title: Case study
-        icon: book
         text: Present case studies with blocks of content
+        icon: book
       - title: Expertise
-        icon: mortarboard
         text: Skills of a firm or a person
-      - title: Office
-        icon: buildings
-        text: Places of your firm
-      - icon: file-earmark
-        title: Page
+        icon: mortarboard
+      - title: Page
         text: Nested pages with blocks of content
+        icon: file-earmark
+      - title: Place
+        text: Places of your firm
+        icon: buildings
       - title: Person
-        icon: people
         text: Authors, concerned and persons 
+        icon: people
       - title: Post
-        icon: file-earmark-text
         text: News about your business
+        icon: file-earmark-text
       - title: Project
-        icon: file-earmark-richtext
         text: Your projects with image list and data list
+        icon: file-earmark-richtext
       - title: Publication
-        icon: newspaper
         text: Archiving of press releases
+        icon: newspaper
   - type: informations
     column: 4
     background: false
@@ -120,17 +120,15 @@ blocks:
         text: Add title section
         icon: type-h2
     text: Modular content for pages pages, offices and case studies
-  - type: title
-    background: true
-    heading:
-      title: Very simple content manager
   - type: figure
     grid: large
     offset: center
     background: true
+    heading:
+      title: Very simple content manager with Decap CMS
     figure:
       src: /images/uploads/admin-home.png
-      legend: Homepage
+      alt: Homepage screenshot of Hugolify Admin
   - type: informations
     column: 4
     heading:

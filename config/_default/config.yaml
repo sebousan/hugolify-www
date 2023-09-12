@@ -3,7 +3,15 @@ defaultContentLanguage: en
 languageCode: en
 
 ## ADVANCED
-paginate: 9
-enableRobotsTXT: true
 build:
   writeStats: true
+enableRobotsTXT: true
+imaging:
+  quality: 75
+markup:
+  tableOfContents:
+    ordered: true
+paginate: 9
+removePathAccents: true
+disableHugoGeneratorInject: true
+timeout: 100000

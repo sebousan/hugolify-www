@@ -270,8 +270,8 @@ blocks:
         icon: git
   - type: cta
     heading:
-      title: All Hugolify repositories 
-      text: More twenty-five repositories with template, theme, modules…
+      title: More thirty Hugolify repositories 
+      text: Templates, themes, modules…
     background: true
     cta:
       text: Discover on Github

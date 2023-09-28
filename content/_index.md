@@ -18,10 +18,10 @@ hero:
     blank: true
 blocks:
   - type: informations
-    column: 4
+    column: 3
     heading:
-      title: 8 types of content available
-      text: And taxonomies like categories, tags, authors…
+      title: 9 types of content available
+      text: And taxonomies like categories, tags, types, authors…
     items:
       - title: Case study
         text: Present case studies with blocks of content
@@ -32,12 +32,12 @@ blocks:
       - title: Page
         text: Nested pages with blocks of content
         icon: file-earmark
+      - title: Person
+        text: Authors, concerned people and persons 
+        icon: people
       - title: Place
         text: Places of your firm
-        icon: buildings
-      - title: Person
-        text: Authors, concerned and persons 
-        icon: people
+        icon: shop
       - title: Post
         text: News about your business
         icon: file-earmark-text
@@ -47,6 +47,9 @@ blocks:
       - title: Publication
         text: Archiving of press releases
         icon: newspaper
+      - title: Real estate
+        text: Ads, auctions
+        icon: house-add
   - type: informations
     column: 4
     background: false

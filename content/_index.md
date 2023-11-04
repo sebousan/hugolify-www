@@ -18,9 +18,9 @@ hero:
     blank: true
 blocks:
   - type: informations
-    column: 3
+    column: 5
     heading:
-      title: 9 types of content available
+      title: 10 types of content available
       text: And taxonomies like categories, tags, types, authors…
     items:
       - title: Case study
@@ -50,6 +50,9 @@ blocks:
       - title: Real estate
         text: Ads, auctions
         icon: house-add
+      - title: Service
+        text: Service of your company or person
+        icon: briefcase
   - type: informations
     column: 4
     background: false

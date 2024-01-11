@@ -48,6 +48,7 @@
       "bottom",
       "breadcrumb-wrapper",
       "btn",
+      "btn-menu",
       "btn-primary",
       "circle",
       "circle-bg",
@@ -73,8 +74,10 @@
       "icon-bar-chart",
       "icon-blockquote-left",
       "icon-book",
+      "icon-box-seam",
       "icon-briefcase",
-      "icon-calendar2-check",
+      "icon-calendar-event",
+      "icon-card-checklist",
       "icon-card-heading",
       "icon-card-image",
       "icon-check-all",
@@ -120,6 +123,7 @@
       "nav",
       "nav-accessibility",
       "nav-legal",
+      "nav-primary",
       "nav-social",
       "offcanvas",
       "offset-md-1",
@@ -133,7 +137,9 @@
       "text-center",
       "title",
       "toc",
-      "twitter"
+      "top",
+      "twitter",
+      "value"
     ],
     "ids": [
       "TableOfContents",
@@ -142,6 +148,8 @@
       "footer",
       "hosting",
       "main",
+      "navigation",
+      "navigationLabel",
       "toc",
       "tocLabel",
       "welcome-to-wwwhugolifyio"

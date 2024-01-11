@@ -20,6 +20,8 @@
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --gc --minify",
+    "clean": "hugo mod clean",
+    "tidy": "hugo mod tidy",
     "update": "hugo mod get -u",
     "cms": "npx netlify-cms-proxy-server"
   }

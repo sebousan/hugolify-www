@@ -5,7 +5,7 @@ hero:
   title: Hugolify
   align: center
   text: >-
-    Hugo + Bootstrap + Decap CMS\
+    Framework Hugo with Bootstrap\
 
     Jamstack solution for building easily a fast, as accessible as possible and low carbon website.
   cta:
@@ -17,6 +17,16 @@ hero:
     text: Discover on Github
     blank: true
 blocks:
+  - type: datas
+    column: 3
+    show_color: false
+    show_gauge: false
+    items:
+      - value: 10
+        title: Types of content available
+      - value: 22
+        title: Blocks of content available
+
   - type: informations
     column: 5
     heading:
@@ -33,7 +43,7 @@ blocks:
         text: Nested pages with blocks of content
         icon: file-earmark
       - title: Person
-        text: Authors, concerned people and persons 
+        text: Authors, concerned people and persons
         icon: people
       - title: Place
         text: Places of your firm
@@ -53,6 +63,22 @@ blocks:
       - title: Service
         text: Service of your company or person
         icon: briefcase
+
+  - type: informations
+    column: 5
+    heading:
+      title: 3 types in our roadmap in 2024
+    items:
+      - title: Career
+        text: Ads, job description
+        icon: card-checklist
+      - title: Event
+        text: Futures and pasts events
+        icon: calendar-event
+      - title: Product
+        text: Description, price, variants
+        icon: box-seam
+
   - type: informations
     column: 4
     background: false
@@ -150,7 +176,8 @@ blocks:
           src: /images/uploads/logo-hugo-wide.svg
           isLogo: true
       - title: Bootstrap
-        text: The most famous front-end framework for developing responsive and mobile
+        text:
+          The most famous front-end framework for developing responsive and mobile
           first projects.
         image:
           src: /images/uploads/logo-bootstrap-5.svg
@@ -166,7 +193,7 @@ blocks:
           isLogo: true
         cta:
           url: https://www.decapcms.org/
-          text: Discover Decap CMS 
+          text: Discover Decap CMS
           blank: true
 
   - type: editorial
@@ -177,7 +204,8 @@ blocks:
       url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
       text: Discover the report
     title: Google PageSpeed Insights
-    text: PageSpeed Insights is an online synthetic benchmark tool which helps in
+    text:
+      PageSpeed Insights is an online synthetic benchmark tool which helps in
       identifying performance best practices on any single URL, provides
       suggestions on a webpage's optimizations, and suggests overall ideas of
       how to make a website faster. Per URL request, it grades webpage
@@ -216,7 +244,8 @@ blocks:
       text: Discovert report
     background: false
     title: Website carbon calculator
-    text: Calculating the carbon emissions of website is somewhat of a challenge,
+    text:
+      Calculating the carbon emissions of website is somewhat of a challenge,
       but we have been working for many years to develop and refine a
       methodology for this purpose. Our hope is that this will help raise
       awareness and encourage more eco-friendly approaches to be adopted
@@ -231,10 +260,10 @@ blocks:
     items:
       - limit: 100
         suffix: "%"
-        value: 92
+        value: 91
         title: Cleaner
-        text: This web page is cleaner than 92 % of web pages tested
-  
+        text: This web page is cleaner than 91% of web pages tested
+
   - type: cta
     heading:
       title: Documentation
@@ -273,7 +302,7 @@ blocks:
         icon: git
   - type: cta
     heading:
-      title: More thirty Hugolify repositories 
+      title: More fifty Hugolify repositories
       text: Templates, themes, modules…
     background: true
     cta:

@@ -1,10 +1,10 @@
 links:
+  - title: Documentation
+    url: https://github.com/hugolify/hugolify-template/wiki
+    blank: true
   - title: Demo
     url: https://demo.hugolify.io/
     blank: true
   - title: Github
     url: https://github.com/hugolify
-    blank: true
-  - title: Documentation
-    url: https://github.com/hugolify/hugolify-template/wiki
     blank: true

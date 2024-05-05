@@ -22,15 +22,15 @@ blocks:
     show_color: false
     show_gauge: false
     items:
-      - value: 10
+      - value: 11
         title: Types of content available
       - value: 22
         title: Blocks of content available
 
   - type: informations
-    column: 5
+    column: 4
     heading:
-      title: 10 types of content available
+      title: 11 types of content available
       text: And taxonomies like categories, tags, types, authors…
     items:
       - title: Case study
@@ -51,6 +51,9 @@ blocks:
       - title: Post
         text: News about your business
         icon: file-earmark-text
+      - title: Product
+        text: Catalog products list
+        icon: bag
       - title: Project
         text: Your projects with image list and data list
         icon: file-earmark-richtext
@@ -83,7 +86,7 @@ blocks:
     column: 4
     background: false
     heading:
-      title: 22 blocks of content available
+      title: 23 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -151,6 +154,9 @@ blocks:
       - title: Title
         text: Add title section
         icon: type-h2
+      - title: Video
+        text: Add video MP4/WEBM section
+        icon: play-btn
     text: Modular content for pages pages, offices and case studies
   - type: figure
     grid: large

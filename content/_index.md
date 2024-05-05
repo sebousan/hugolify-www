@@ -52,8 +52,8 @@ blocks:
         text: News about your business
         icon: file-earmark-text
       - title: Product
-        text: Catalog products list
-        icon: bag
+        text: Description, price, variants
+        icon: box-seam
       - title: Project
         text: Your projects with image list and data list
         icon: file-earmark-richtext
@@ -68,9 +68,9 @@ blocks:
         icon: briefcase
 
   - type: informations
-    column: 5
+    column: 4
     heading:
-      title: 3 types in our roadmap in 2024
+      title: 2 types in our roadmap in 2024
     items:
       - title: Career
         text: Ads, job description
@@ -78,9 +78,6 @@ blocks:
       - title: Event
         text: Futures and pasts events
         icon: calendar-event
-      - title: Product
-        text: Description, price, variants
-        icon: box-seam
 
   - type: informations
     column: 4

@@ -24,7 +24,7 @@ blocks:
     items:
       - value: 11
         title: Types of content available
-      - value: 22
+      - value: 23
         title: Blocks of content available
 
   - type: informations

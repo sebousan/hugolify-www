@@ -299,9 +299,9 @@ blocks:
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/hugolify/hugolify-netlify-cms
-        title: hugolify-netlify-cms
-        text: Admin Netlify CMS for Hugolify
+          url: https://github.com/hugolify/hugolify-decap-cms
+        title: hugolify-decap-cms
+        text: Admin Decap CMS for Hugolify
         icon: git
   - type: cta
     heading:

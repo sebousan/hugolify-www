@@ -22,15 +22,15 @@ blocks:
     show_color: false
     show_gauge: false
     items:
-      - value: 10
+      - value: 11
         title: Types of content available
-      - value: 22
+      - value: 23
         title: Blocks of content available
 
   - type: informations
-    column: 5
+    column: 4
     heading:
-      title: 10 types of content available
+      title: 11 types of content available
       text: And taxonomies like categories, tags, types, authors…
     items:
       - title: Case study
@@ -51,6 +51,9 @@ blocks:
       - title: Post
         text: News about your business
         icon: file-earmark-text
+      - title: Product
+        text: Catalog products list
+        icon: bag
       - title: Project
         text: Your projects with image list and data list
         icon: file-earmark-richtext
@@ -83,7 +86,7 @@ blocks:
     column: 4
     background: false
     heading:
-      title: 22 blocks of content available
+      title: 23 blocks of content available
     items:
       - title: Alert
         icon: exclamation-octagon
@@ -127,15 +130,15 @@ blocks:
       - title: Latest
         text: Add latest items from posts, projects, publications or casestudies.
         icon: clock-history
-      - title: Paragraph
-        text: Add title and some text
-        icon: text-paragraph
       - title: Map
         text: Add simple map
         icon: geo-alt
       - title: Newsletter
         text: Add newsletter submit form with mailchimp or sendinblue
         icon: envelope-plus
+      - title: Paragraph
+        text: Add title and some text
+        icon: text-paragraph
       - title: Push
         text: Add some image cards push with button in one or two column.
         icon: credit-card-2-front
@@ -151,6 +154,9 @@ blocks:
       - title: Title
         text: Add title section
         icon: type-h2
+      - title: Video
+        text: Add video MP4/WEBM section with transcription
+        icon: play-btn
     text: Modular content for pages pages, offices and case studies
   - type: figure
     grid: large

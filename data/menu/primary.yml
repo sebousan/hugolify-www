@@ -1,7 +1,6 @@
 links:
   - title: Documentation
-    url: https://github.com/hugolify/hugolify-template/wiki
-    blank: true
+    url: /docs/
   - title: Demo
     url: https://demo.hugolify.io/
     blank: true

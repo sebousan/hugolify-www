@@ -13,9 +13,8 @@ hero:
     text: Discover demo
     blank: true
   cta_second:
-    url: https://github.com/hugolify/
-    text: Discover on Github
-    blank: true
+    url: /docs/
+    text: See documentation
 blocks:
   - type: datas
     column: 3

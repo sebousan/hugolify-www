@@ -1,46 +1,38 @@
 ---
-title: Latest block
-linkTitle: Latest
+title: Latest
 description: Displays latest items from posts, projects…
 ---
 
-## HTML
+# Latest block
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/latest.html
-
-## SASS
-
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_latest.sass
+Displays latest items from posts, projects…
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: latest
-    heading: ""
-      surtitle: ""
-      title: ""
-      text: ""
-    section: ""
-    count: ""
-    show_more: true
-    background: false
+    heading:
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
+    section: '' // [posts, publications, products…]
+    count: 4 // number
+    show_more: true // boolean
+    background: false // boolean
 ```
 
-## Netlify CMS
+## Examples
 
-- Latest `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - section `select` (from availableTypeSection)
-    - posts
-    - projects
-    - casestudies
-    - persons
-    - publications
-    - …
-  - count `number` [1…]
-  - show_more `boolean`
-  - background `boolean`
+- {{< blank_link link="https://demo.hugolify.io/blocks/latest/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/latest/_index.md" text="Demo content file on Github" >}}
+
+## Files
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/latest.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_latest.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/latest.js" text="Decap CMS file" >}}
+
+## Decap CMS
+
+{{< alert text="Available" state="success" >}}

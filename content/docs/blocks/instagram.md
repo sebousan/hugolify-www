@@ -1,50 +1,48 @@
 ---
-title: Instagram block
-linkTitle: Instagram
-description: Displays an instagram feed (you need an Instagram access_token)
+title: Instagram
+description: Displays an instagram feed with your latest posts.
 ---
+
+# Instagram
+
+Displays an instagram feed with your latest posts.
+
+{{< alert text="Instagram access_token is required" state="warning" >}}
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: instagram
-    title: ''
-    text: ''
-    token: ''
-    limit: 5
+    token: '' // string
+    limit: 5 // number
+    heading:
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
     cta:
-      text: ''
-      url: ''
-      blank: false
-    background: false
+      text: '' // string
+      url: '' // string
+      blank: false // boolean
+    background: false // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/instagram.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/latest/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/latest/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_instagram.sass
-
-## JS
-
-https://github.com/hugolify/hugolify-theme/blob/main/assets/js/blocks/instagram.js
-
-## Instafeed documentation
-
-https://github.com/stevenschobert/instafeed.js
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/instagram.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_instagram.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/js/blocks/instagram.js" text="JS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/instagram.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Instagram `object`
-  - title `string`
-  - text `string`
-  - token `string`
-  - limit `number` [2…6]
-  - button `object`
-    - text `string`
-    - url `string`
-    - blank `boolean`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}
+
+## Related link
+
+- {{< blank_link link="https://instafeedjs.com/" text="Instafeed.js documentation" >}}

@@ -1,9 +1,11 @@
 ---
-title: Pushes block
-linkTitle: Pushes
-description:
-  Displays some images cards in column. Alignment and button are available
+title: Pushes
+description: Displays some images cards in column. Alignment and button are available
 ---
+
+# Pushes block
+
+Displays some images cards in column. Alignment and button are available
 
 ## Frontmatter
 
@@ -11,53 +13,38 @@ description:
 blocks:
   - type: pushes
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
-    column: ''
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
+    column: '' // [1…2]
     items:
+      title: '' // string
+      text: '' // string
       image:
-        src: ''
-        alt: ''
-      align: ''
-      title: ''
-      text: ''
+        src: '' // string
+        alt: '' // string
+        isLogo: false // boolean
+      offset: '' // [start, end, center]
+      background_color: '' // color
+      color: '' // color
       cta:
-        text: ''
-        url: ''
-        blank: false
-    background: false
+        text: '' // string
+        url: '' // string
+        blank: false // boolean
+    background: false // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/pushes.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/pushes/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/pushes/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_pushes.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/pushes.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_pushes.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/pushes.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Pushes `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - column `number` [1…2]
-  - items `list`
-    - image `object`
-      - src `image`
-      - alt `string`
-      - isLogo `boolean`
-    - align `select`
-      - start
-      - end
-      - center
-    - title `string`
-    - text `string`
-    - cta `object`
-      - text `string`
-      - url `string`
-      - blank `boolean`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}

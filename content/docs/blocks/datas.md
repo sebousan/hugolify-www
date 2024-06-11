@@ -1,8 +1,11 @@
 ---
-title: Datas block
-linkTitle: Datas
+title: Datas
 description: Displays datas with gauges or not in column.
 ---
+
+# Datas block
+
+Displays datas with gauges or not in column.
 
 ## Frontmatter
 
@@ -28,14 +31,15 @@ blocks:
 
 ## Examples
 
-https://demo.hugolify.io/blocks/datas/
+- {{< blank_link link="https://demo.hugolify.io/blocks/datas/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/datas/_index.md" text="Demo content file on Github" >}}
 
-## Decap CMS
-
-{{< alert text="Available" state="success" >}}
-
-## Related links
+## Files
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/datas.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_datas.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/datas.js" text="Decap CMS file" >}}
+
+## Decap CMS
+
+{{< alert text="Available" state="success" >}}

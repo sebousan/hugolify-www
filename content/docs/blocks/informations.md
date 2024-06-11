@@ -1,62 +1,55 @@
 ---
-title: Informations block
-linkTitle: Informations
+title: Informations
 description:
   Displays some cards informations in column. Icon, images and button are
   available
 ---
+
+# Informations block
+
+Displays some cards informations in column. Icon, images and button are
+available
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: informations
-    heading:
-      surtitle: ''
-      title: ''
-      text: ''
     column: ''
+    heading:
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
     items:
-      icon: ''
+      icon: '' // string (bootstrap icon)
       image:
-        src: ''
-        alt: ''
+        src: '' // string
+        alt: '' // string
         isLogo: false
-      title: ''
-      text: ''
+      title: '' // string
+      text: '' // string
       cta:
-        text: ''
-        url: ''
-        blank: false
-    background: false
+        text: '' // string
+        url: '' // string
+        blank: false '' // boolean
+    background: false '' // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/informations.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/informations/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/informations/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_informations.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/informations.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_informations.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/informations.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Informations `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - column `number` [2…6]
-  - items `list`
-    - icon `string`
-    - image `object`
-      - src `image`
-      - alt `string`
-      - isLogo `boolean`
-    - title `string`
-    - text `string`
-    - cta `object`
-      - text `string`
-      - url `string`
-      - blank `boolean`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}
+
+## Related link
+
+- {{< blank_link link="https://icons.getbootstrap.com/" text="Icon list" >}}

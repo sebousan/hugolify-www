@@ -1,8 +1,11 @@
 ---
-title: Title block
-linkTitle: Title
+title: Title
 description: Displays a heading title with surtitle and text.
 ---
+
+# Title block
+
+Displays a heading title with surtitle and text.
 
 ## Frontmatter
 
@@ -10,30 +13,23 @@ description: Displays a heading title with surtitle and text.
 blocks:
   - type: title
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
-    background: false
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
+    background: false // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/title.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/title/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/title/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-`.block-title`
-
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_title.sass
-
-## Example
-
-https://demo.hugolify.io/blocks/title/
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/title.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_title.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/title.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- title `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}

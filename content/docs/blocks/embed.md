@@ -1,8 +1,11 @@
 ---
-title: Embed block
-linkTitle: Embed
+title: Embed
 description: Displays a centered embed
 ---
+
+# Embed block
+
+Displays a centered embed
 
 ## Frontmatter
 
@@ -10,27 +13,24 @@ description: Displays a centered embed
 blocks:
   - type: embed
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
-    embed: ''
+      surtitle: ""
+      title: ""
+      text: ""
+    embed: ""
     background: false
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/embed.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/embed/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/embed/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_embed.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/embed.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_embed.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/embed.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Embed `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - embed `text`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}

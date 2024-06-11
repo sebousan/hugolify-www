@@ -1,8 +1,11 @@
 ---
-title: Testimonials block
-linkTitle: Testimonials
-description: Displays some testimonials
+title: Testimonials
+description: Displays some testimonials in grid or carousel.
 ---
+
+# Testimonials block
+
+Displays some testimonials in grid or carousel.
 
 ## Frontmatter
 
@@ -10,43 +13,38 @@ description: Displays some testimonials
 blocks:
   - type: testimonials
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
     items:
-      quote: ''
+      quote: '' // string
       author:
-        title: ''
-        text: ''
+        title: '' // string
+        text: '' // string
         image:
-    background: false
+          src: '' // string
+          alt: '' // string
+    layout: '' // [grid, carousel]
+    carousel: {} // object
+    background: false // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/testimonials.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/testimonials/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/testimonials/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_testimonials.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/testimonials.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_testimonials.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/carousel.js" text="JS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/testimonials.js" text="Decap CMS file" >}}
 
-## Example
+## Decap CMS
 
-https://demo.hugolify.io/blocks/testimonials/
+{{< alert text="Available" state="success" >}}
 
-## Netlify CMS
+## Related link
 
-- testimonials `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - items `object`
-    - quote `string`
-    - author `object`
-      - title `string`
-      - text `string`
-      - image `object`
-        - src `image`
-        - alt `string`
-  - background `boolean`
+- {{< blank_link link="https://splidejs.com/" text="Splide JS" >}}

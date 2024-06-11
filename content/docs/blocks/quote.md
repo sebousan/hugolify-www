@@ -1,38 +1,37 @@
 ---
-title: Quote block
-linkTitle: Quote
+title: Quote
 description: Displays a quote and its author
 ---
+
+# Quote block
+
+Displays a quote and its author
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: quote
-    quote: ''
+    quote: '' // string
     author:
-      title: ''
-      text: ''
+      title: '' // string
+      text: '' // string
       image:
-        src: ''
-        alt: ''
+        src: '' // string
+        alt: '' // string
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/quote.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/quote/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/quote/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_quote.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/quote.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_quote.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/quote.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Quote `object`
-  - quote `string`
-  - author `object`
-    - title `string`
-    - text `string`
-    - image `object`
-      - src `image`
-      - alt `string`
+{{< alert text="Available" state="success" >}}

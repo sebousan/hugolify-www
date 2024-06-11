@@ -1,8 +1,11 @@
 ---
-title: Figure block
-linkTitle: Figure
-description: Displays a centered figure image with legend and credit
+title: Figure
+description: Displays a centered figure image with legend and credit.
 ---
+
+# Figure block
+
+Displays a centered figure image with legend and credit.
 
 ## Frontmatter
 
@@ -10,33 +13,26 @@ description: Displays a centered figure image with legend and credit
 blocks:
   - type: figure
     figure:
-      src: ''
-      alt: ''
-      legend: ''
-      credit: ''
-    grid: ''
-    background: false
+      src: '' // string
+      alt: '' // string
+      legend: '' // string
+      credit: '' // markdown
+    grid: '' // [small, medium, large, full]
+    offset: '' // [start, end, center]
+    background: false '' // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/figure.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/figure/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/figure/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_figure.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/figure.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_figure.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/figure.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Figure `object`
-  - figure `object`
-    - src `image`
-    - alt `string`
-    - legend `string`
-    - credit `markdown`
-  - grid `select`
-    - small
-    - medium
-    - large
-    - full
-  - background `boolean`
+{{< alert text="Available" state="success" >}}

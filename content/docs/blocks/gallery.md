@@ -1,8 +1,11 @@
 ---
-title: Gallery block
-linkTitle: Gallery
-description: Displays an images gallery
+title: Gallery
+description: Displays an images gallery with accessible lightbox.
 ---
+
+# Gallery block
+
+Displays an images gallery with accessible lightbox.
 
 ## Frontmatter
 
@@ -10,39 +13,35 @@ description: Displays an images gallery
 blocks:
   - type: gallery
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
-    column: ''
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
+    column: 4 // number
     gallery:
       image:
-        src: ''
-        alt: ''
-        legend: ''
-        credit: ''
-    background: false
+        src: '' // string
+        alt: '' // string
+        legend: '' // string
+        credit: '' // markdown
+    background: false '' // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/gallery.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/gallery/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/gallery/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_gallery.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/gallery.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_gallery.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/gallery.js" text="JS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/gallery.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Gallery `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - column `number` [3…6]
-  - gallery `list`
-    - image `object`
-      - src `image`
-      - alt `string`
-      - legend `string`
-      - credit `markdown`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}
+
+## Related link
+
+- {{< blank_link link="https://midzer.github.io/tobii" text="Tobii JS library" >}}

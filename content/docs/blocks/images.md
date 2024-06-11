@@ -1,8 +1,11 @@
 ---
-title: Images block
-linkTitle: Images
-description: Displays an images list
+title: Images
+description: Displays an images list in one or two columns.
 ---
+
+# Images block
+
+Displays an images list in one or two columns.
 
 ## Frontmatter
 
@@ -10,39 +13,30 @@ description: Displays an images list
 blocks:
   - type: images
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
     items:
       image:
-        src: ''
-        alt: ''
-        legend: ''
-        credit: ''
-        half: false
-    background: false
+        src: '' // string
+        alt: '' // string
+        legend: '' // string
+        credit: '' // markdown
+        half: false '' // boolean
+    background: false '' // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/images.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/images/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/images/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_images.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/images.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_images.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/images.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Images `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - items `list`
-    - figure `object`
-      - src `image`
-      - alt `string`
-      - legend `string`
-      - credit `markdown`
-      - half `boolean`
-  - background `boolean`
+{{< alert text="Available" state="success" >}}

@@ -1,45 +1,39 @@
 ---
-title: Selected block
-linkTitle: Testimonials
-description: Displays a selection of items
+title: Selected
+description: Displays a selection of items sections
 ---
+
+# Selected sections block
+
+Displays a selection of items sections.
 
 ## Frontmatter
 
 ```yml
 blocks:
-  - type: selected-*
-    section: *
+  - type: selected-*  // [selected-posts, selected-publications, selected-products…]
+    section: * // [posts, publications, products…]
     heading:
-      surtitle: ""
-      title: ""
-      text: ""
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
     items:
-    show_more: false
-    background: false
+      - // list of slugs
+    show_more: false // boolean
+    background: false // boolean
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/selected.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/selected/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/selected/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_selected.sass
-
-## Example
-
-https://demo.hugolify.io/blocks/selected/
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/selected.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_selected.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/selected-posts.js" text="Decap CMS file (e.g. posts)" >}}
 
 ## Decap CMS
 
-- selected-\* `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - items `select` (multiple)
-  - show_more `boolean`
-  - background `boolean`
-
-"\*" = posts, projects, casestudies, persons, publications…
+{{< alert text="Available" state="success" >}}

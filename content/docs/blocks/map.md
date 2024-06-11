@@ -1,8 +1,13 @@
 ---
-title: Map block
-linkTitle: Map
-description: Displays a simple map with one marker
+title: Map
+description: Displays a simple map with one marker.
 ---
+
+# Map block
+
+Displays a simple map with one marker.
+
+{{< alert text="RGPD compliant" state="info" >}}
 
 ## Frontmatter
 
@@ -10,29 +15,31 @@ description: Displays a simple map with one marker
 blocks:
   - type: map
     heading:
-      surtitle: ''
-      title: ''
-      text: ''
-    location: {}
-    zoom: 13
+      surtitle: '' // string
+      title: '' // string
+      text: '' // markdown
+    location: {}  // map
+    zoom: 13 // [1…20]
     background: false
 ```
 
-## HTML
+## Examples
 
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/map.html
+- {{< blank_link link="https://demo.hugolify.io/blocks/map/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/map/_index.md" text="Demo content file on Github" >}}
 
-## SASS
+## Files
 
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_map.sass
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/map.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_map.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/map.js" text="JS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/map.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- Map `object`
-  - heading `object`
-    - surtitle `string`
-    - title `string`
-    - text `string`
-  - location `map`
-  - zoom `number` [1…20]
-  - background `boolean`
+{{< alert text="Available" state="success" >}}
+
+## Related links
+
+- {{< blank_link link="https://www.openstreetmap.org/" text="Open street map" >}}
+- {{< blank_link link="https://leafletjs.com/" text="leafletjs documentation" >}}

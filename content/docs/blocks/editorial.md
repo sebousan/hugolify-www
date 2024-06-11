@@ -7,6 +7,9 @@ description:
 
 # Editorial block
 
+Displays a block with content (title, text, button) on the left and image on
+the right (possible to reverse the direction). In mobile the image is first.
+
 ## Frontmatter
 
 ```yml
@@ -24,14 +27,6 @@ blocks:
       alt: ""
 ```
 
-## HTML
-
-https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/editorial.html
-
-## SASS
-
-https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_editorial.sass
-
 ## Params
 
 Image size
@@ -46,20 +41,15 @@ params:
 
 ## Examples
 
-https://demo.hugolify.io/blocks/editorial/
+- {{< blank_link link="https://demo.hugolify.io/blocks/editorial/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/editorial/_index.md" text="Demo content file on Github" >}}
+
+## Files
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/editorial.html" text="HTML file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_editorial.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/editorial.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-- editorial `object`
-  - direction `select`
-    - ltr
-    - rtl
-  - title `string`
-  - text `markdown`
-  - button `object`
-    - text `string`
-    - url `string`
-    - blank `boolean`
-  - image `object`
-    - src `image`
-    - alt `string`
+{{< alert text="Available" state="success" >}}

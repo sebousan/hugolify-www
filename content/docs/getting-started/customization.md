@@ -2,7 +2,7 @@
 title: Customization
 description: To replace or add style, structure, content…
 weight: 7
-icon: palette
+icon: tools
 ---
 
 ## Override file

@@ -7,6 +7,7 @@ icon: window-fullscreen
 
 - {{< blank_link link="https://www.jcbiver.com" text="Biver" >}}
 - {{< blank_link link="https://www.fj-habitat.com" text="FJ Habitat" >}}
+- {{< blank_link link="https://guilhemgranier.fr/" text="Guilhem Granier" >}}
 - {{< blank_link link="https://www.lawyerify.io" text="Lawyerify" >}} - {{< blank_link link="https://github.com/sebousan/lawyerify-www" text="repository" >}}
 - {{< blank_link link="https://www.le52-avocats.com" text="Le 52" >}} - {{< blank_link link="https://github.com/sebousan/le52-avocats" text="repository" >}}
 - {{< blank_link link="https://www.miriamlasserre.com" text="Miriam Lasserre" >}} - {{< blank_link link="https://github.com/sebousan/miriamlasserre" text="repository" >}}

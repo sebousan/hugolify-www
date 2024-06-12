@@ -11,5 +11,5 @@ icon: window-fullscreen
 - {{< blank_link link="https://www.le52-avocats.com" text="Le 52" >}} - {{< blank_link link="https://github.com/sebousan/le52-avocats" text="repository" >}}
 - {{< blank_link link="https://www.miriamlasserre.com" text="Miriam Lasserre" >}} - {{< blank_link link="https://github.com/sebousan/miriamlasserre" text="repository" >}}
 - {{< blank_link link="https://www.sebousan.com" text="Sébastien Moulène" >}} - {{< blank_link link="https://github.com/sebousan/sebastienmoulene" text="repository" >}}
-- {{< blank_link link="https://www.tdesignarchitecture.com" text="Tdesign Architecture" >}} - {{< blank_link link="https://github.com/sebousan/tdesignarchitecture" text="repository" >}}
+- {{< blank_link link="https://www.tdesignarchitecture.com" text="Tdesign Architecture" >}} - {{< blank_link link="https://github.com/sebousan/tdesign-architecture" text="repository" >}}
 - {{< blank_link link="https://www.venn-capital.com" text="Venn Capital" >}} - {{< blank_link link="https://github.com/sebousan/venn-capital" text="repository" >}}

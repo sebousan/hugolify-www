@@ -18,7 +18,7 @@ blocks:
     column: 4
     heading:
       surtitle: Ethical
-      title: A sustainable Hugo framework
+      title: A sustainable open-source  Hugo framework
     items:
       - title: Accessible first
         text: Code ready, keyboard navigation…
@@ -80,67 +80,32 @@ blocks:
       - sections
       - blocks
 
-  # - type: editorial
-  #   surtitle: Reports
-  #   title: Discover Web performance reports
-  #   text: Google PageSpeed Insights and Website carbon reports.
-  #   image:
-  #     src: /images/uploads/384.Up-Trend.svg
-  #   cta:
-  #     text: Discover reports
-  #     url: /web-performance/
+  - type: editorial
+    surtitle: Web performance
+    title: Discover performance and  carbon emissions reports
+    text: Google PageSpeed Insights and Website carbon reports.
+    image:
+      src: /images/uploads/384.Up-Trend.svg
+    cta:
+      text: Discover reports
+      url: /web-performance/
 
-  # - type: editorial
-  #   direction: rtl
-  #   surtitle: Showcase
-  #   title: Examples of website using Hugolify
-  #   text: Discover website and repositories.
-  #   image:
-  #     src: /images/uploads/160.Movie-Time.svg
-  #   cta:
-  #     text: Discover showcase
-  #     url: /showcase/
-
-  # - type: informations
-  #   column: 4
-  #   heading:
-  #     title: 3 open-sources solutions in Hugolify
-  #   items:
-  #     - title: Hugo
-  #       text: One of the most popular open-source static site generators.
-  #       cta:
-  #         url: https://gohugo.io
-  #         blank: true
-  #         text: Discover Hugo
-  #       image:
-  #         src: /images/uploads/logo-hugo-wide.svg
-  #         isLogo: true
-  #     - title: Bootstrap
-  #       text:
-  #         The most famous front-end framework for developing responsive and mobile
-  #         first projects.
-  #       image:
-  #         src: /images/uploads/logo-bootstrap-5.svg
-  #         isLogo: true
-  #       cta:
-  #         url: https://getbootstrap.com/
-  #         text: Discover Bootstrap
-  #         blank: true
-  #     - title: Decap CMS (ex Netlify CMS)
-  #       text: Open-source content management for your Git workflow.
-  #       image:
-  #         src: /images/uploads/logo-decap.svg
-  #         isLogo: true
-  #       cta:
-  #         url: https://www.decapcms.org/
-  #         text: Discover Decap CMS
-  #         blank: true
+  - type: editorial
+    direction: rtl
+    surtitle: Showcase
+    title: Examples of website using Hugolify
+    text: Discover website and repositories.
+    image:
+      src: /images/uploads/160.Movie-Time.svg
+    cta:
+      text: Discover showcase
+      url: /docs/showcase/
 
   - type: informations
     column: 3
     heading:
-      surtitle: Github
-      title: 3 main github repositories
+      surtitle: Repositories
+      title: 3 main Github repositories
       text: Hugolify is available on Github, template relies on two submodules.
     background: true
     items:
@@ -168,6 +133,7 @@ blocks:
 
   - type: cta
     heading:
+      surtitle: MIT license
       title: And more fifty Hugolify repositories
       text: Templates, themes, modules…
     background: true
@@ -175,12 +141,4 @@ blocks:
       text: Discover on Github
       url: https://github.com/hugolify/
       blank: true
-
-  # - type: paragraph
-  #   title: License
-  #   text: Hugolify is free for personal or commercial projects (MIT license).
-  #   background: true
-  #   grid: large
-  #   offset: center
-  #   align: center
 ---

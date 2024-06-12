@@ -10,22 +10,13 @@ hero:
     performance on a scale from 1 to 100 and provides a report on suggested
     optimizations, divided into categories of high, medium, and low
     priorities.
+image:
+  src: /images/uploads/logo-google-pagespeed-insights.svg
 blocks:
-  - type: editorial
-    direction: ltr
-    cta:
-      blank: true
-      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
-      text: Discover the report
-    background: false
-    title: Google PageSpeed Insights
-    image:
-      src: /images/uploads/logo-google-pagespeed-insights.svg
   - type: datas
     column: 4
     show_color: true
     show_gauge: true
-    background: true
     items:
       - value: 100
         suffix: "%"
@@ -43,6 +34,11 @@ blocks:
         suffix: "%"
         title: SEO
         limit: 100
+  - type: cta
+    cta:
+      blank: true
+      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
+      text: Discover the report
   - type: figure
     background: false
     heading:

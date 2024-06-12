@@ -1,9 +1,17 @@
 links:
   - title: Documentation
     url: /docs/
-  - title: Demo
-    url: https://demo.hugolify.io/
-    blank: true
-  - title: Github
-    url: https://github.com/hugolify
+    links:
+      - title: Getting started
+        url: /docs/getting-started/
+      - title: Codes
+        url: /docs/codes/
+      - title: Sections
+        url: /docs/sections/
+      - title: Blocks
+        url: /docs/blocks/
+      - title: Shortcodes
+        url: /docs/shortcodes/
+  - title: Use Github template
+    url: https://github.com/hugolify/hugolify-template/generate
     blank: true

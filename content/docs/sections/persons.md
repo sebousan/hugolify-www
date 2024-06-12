@@ -24,6 +24,23 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Taxonomies
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-persons-expertises" text="Expertises" >}} _Theme expertises required_
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-persons-places" text="Places" >}} _Theme places required_
+
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```go-html-template
+imports:
+  - path: github.com/hugolify/hugolify-theme-persons-expertises
+  - path: github.com/hugolify/hugolify-theme-persons-places
+  - path: github.com/hugolify/hugolify-theme-persons
+  - path: github.com/hugolify/hugolify-theme
+```
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme-persons/tree/main/layouts/partials/persons" text="HTML partials" >}}

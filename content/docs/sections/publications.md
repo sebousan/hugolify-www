@@ -27,8 +27,8 @@ imports:
 ## Taxonomies
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-categories" text="Categories" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-expertises" text="Expertises" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-persons" text="Persons" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-expertises" text="Expertises" >}} _Theme expertises required_
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-persons" text="Persons" >}} _Theme persons required_
 
 **Setup**
 

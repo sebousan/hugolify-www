@@ -9,7 +9,8 @@ icon: gear
 ### Use template
 
 Create your repository with Hugolify template
-https://github.com/hugolify/hugolify-template/generate
+
+{{< button url="https://github.com/hugolify/hugolify-template/generate" blank="true" text="Use Github template" >}}
 
 ### Or clone repository
 

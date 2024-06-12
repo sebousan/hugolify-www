@@ -19,6 +19,23 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Taxonomies
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-categories" text="Categories" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-tags" text="Tags" >}}
+
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```go-html-template
+imports:
+  - path: github.com/hugolify/hugolify-theme-products-categories
+  - path: github.com/hugolify/hugolify-theme-products-tags
+  - path: github.com/hugolify/hugolify-theme-products
+  - path: github.com/hugolify/hugolify-theme
+```
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme-products/tree/main/layouts/partials/products" text="HTML partials" >}}

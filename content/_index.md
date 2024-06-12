@@ -14,27 +14,6 @@ hero:
     url: /docs/
     text: See documentation
 blocks:
-  # - type: informations
-  #   column: 4
-  #   heading:
-  #     surtitle: Main features
-  #     title: Content
-  #   items:
-  #     - title: 12 types of content
-  #       text: Pages, persons, posts, projects… And taxonomies like categories, tags, types, authors…
-  #       image:
-  #         src: /images/uploads/150.Cubes.svg
-  #       cta:
-  #         text: Discover all types of content in docs
-  #         url: /docs/sections/
-  #     - title: 25 blocks of content
-  #       text: Collection of most famous components for making an exiting website.
-  #       image:
-  #         src: /images/uploads/264.Teaming-Up.svg
-  #       cta:
-  #         text: Discover all blocks in docs
-  #         url: /docs/blocks/
-
   - type: informations
     column: 4
     heading:
@@ -42,7 +21,7 @@ blocks:
       title: A sustainable Hugo framework
     items:
       - title: Accessible first
-        text: Hugolify…
+        text: Code ready, keyboard navigation…
         image:
           src: /images/uploads/264.Teaming-Up.svg
       - title: RGPD compliant

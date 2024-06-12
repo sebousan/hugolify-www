@@ -2,8 +2,8 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.12.1 h1:uz87W5yK1kCynYxPC1bqfczWIy2I4H62Gxubujvf3pA=
-github.com/hugolify/hugolify-theme v1.12.1/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme v1.13.0 h1:MMEWT5+vYH1RL9wEzK3K5VXP56sH9d311+SmzrgYpI4=
+github.com/hugolify/hugolify-theme v1.13.0/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20240612085855-839d9e9c3171 h1:Q4rn/XnZ/R90vgXl4IqlyM5WeVYnMHLNVYMbXGcSObc=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20240612085855-839d9e9c3171/go.mod h1:gcGqAdSQGECDxmLeS5BD0FxXeyNwvYblI7qZP7iWQ8k=
 github.com/midzer/tobii v2.5.0+incompatible h1:Gg3r5Zp0M6shS70NVGHALUgfw0sPtk3YHRjfYHbOUbo=

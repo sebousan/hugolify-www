@@ -11,6 +11,7 @@
       "code",
       "details",
       "div",
+      "em",
       "figcaption",
       "figure",
       "footer",
@@ -78,6 +79,9 @@
       "description",
       "doc",
       "docs",
+      "dropdown",
+      "dropdown-menu",
+      "dropdown-toggle",
       "gauge",
       "github",
       "grid",
@@ -162,6 +166,7 @@
       "nav-accessibility",
       "nav-legal",
       "nav-primary",
+      "nav-secondary",
       "nav-social",
       "next",
       "offcanvas",
@@ -187,7 +192,8 @@
       "title",
       "toc",
       "top",
-      "twitter"
+      "twitter",
+      "visually-hidden"
     ],
     "ids": [
       "TableOfContents",
@@ -235,7 +241,6 @@
       "related-link",
       "related-links",
       "sass",
-      "setup",
       "taxonomies",
       "testimonials-block",
       "toc",

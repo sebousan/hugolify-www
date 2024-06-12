@@ -26,9 +26,10 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-authors" text="Authors" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-categories" text="Categories" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-tags" text="Tags" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-authors" text="Authors" >}} _Theme persons required_
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-categories" text="Categories" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-expertises" text="Expertises" >}} _Theme expertises required_
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-tags" text="Tags" >}}
 
 **Setup**
 
@@ -36,9 +37,10 @@ imports:
 
 ```go-html-template
 imports:
-  - path: github.com/hugolify/hugolify-theme-authors
-  - path: github.com/hugolify/hugolify-theme-categories
-  - path: github.com/hugolify/hugolify-theme-tags
+  - path: github.com/hugolify/hugolify-theme-posts-authors
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+  - path: github.com/hugolify/hugolify-theme-posts-expertises
+  - path: github.com/hugolify/hugolify-theme-posts-tags
   - path: github.com/hugolify/hugolify-theme-posts
   - path: github.com/hugolify/hugolify-theme
 ```

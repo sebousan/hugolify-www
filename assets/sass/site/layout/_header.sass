@@ -1,0 +1,94 @@
+header[role="banner"]
+    .nav
+        .active
+            --bs-nav-link-color: #{$primary}
+            text-decoration: none
+       
+    .nav-primary
+        &:last-child
+            margin-right: 0
+        > li:last-child
+            @include media-breakpoint-down(lg)
+                margin-top: var(--bs-nav-link-padding-y)
+            @include media-breakpoint-up(lg)
+                margin-left: var(--bs-nav-link-padding-x)
+            a
+                background-color: $primary
+                border-radius: $border-radius
+                color: white
+                text-decoration: none
+                &:hover
+                    background-color: shade-color($primary, $btn-hover-bg-shade-amount)
+
+    .dropdown-menu
+        --bs-dropdown-padding-x: 0
+        --bs-dropdown-padding-y: 0
+        li
+            border-radius: var(--bs-dropdown-border-radius)
+            padding: var(--bs-dropdown-item-padding-x)
+            position: relative
+        a
+            @extend .stretched-link
+            --bs-nav-link-font-size: 1rem
+            font-weight: $font-weight-bold
+            padding: 0
+        p
+            color: $gray-800
+            font-size: px2rem(14)
+            margin-bottom: 0
+            
+    @if variable-exists(bootstrap-icons-map)
+        .dropdown-toggle
+            &::after
+                @include icon("chevron-down")
+                font-size: px2rem(14)
+                font-weight: 700
+                border: 0
+
+    @include media-breakpoint-up(md)
+        .dropdown:has(.show)
+            background: white
+            border-radius: 1rem
+        .dropdown-toggle::before
+            content: ''
+            inset: 0
+            position: absolute
+        .dropdown-menu
+            --bs-dropdown-border-color: #{$gray-300}
+            --bs-dropdown-border-radius: 1rem
+            --bs-dropdown-padding-x: .5rem
+            --bs-dropdown-padding-y: .5rem
+            box-shadow: 0px 30px 30px -30px rgba(30,41,59,.1),0px 2px 4px 0px rgba(30,41,59,.05),0px -2px 5px 0px rgba(30,41,59,.05)
+            min-width: 340px
+            animation: .2s slideup
+            @keyframes slideup
+                from
+                    top: 1rem
+                to
+                    top: 0
+            li:hover
+                background-color: $light
+
+    @include media-breakpoint-down(md)
+        .nav
+            align-items: flex-start
+            text-align: left
+        .offcanvas
+            .header
+                --bs-offcanvas-padding-x: calc(var(--bs-gutter-x) * .5)
+        .dropdown
+            display: block
+            width: 100%
+        .dropdown-toggle
+            display: none
+        .dropdown-menu
+            --bs-dropdown-border-width: 0
+            display: block
+            margin-bottom: px2rem(20)
+            position: static
+            li
+                padding-bottom: var(--bs-dropdown-item-padding-y)
+                padding-top: var(--bs-dropdown-item-padding-y)
+                background-color: $light
+            
+        

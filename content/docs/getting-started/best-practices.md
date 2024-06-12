@@ -53,7 +53,21 @@ We use {{< blank_link link="https://prettier.io/" text="prettier" >}} to keep sa
 
 If you use Vs Code, you will need to install the {{< blank_link link="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" text="prettier extension" >}}.
 
-Then, in settings :
+Then, in settings:
 
 - Select Prettier as default formater
 - Enable "Format on save"
+
+Create files: 
+
+{{< alert text="`/.prettierrc`" state="light" >}}
+
+```shell
+"@hugolify/prettier-config"
+```
+
+{{< alert text="`/.prettierignore`" state="light" >}}
+
+```shell
+**/*.html
+```

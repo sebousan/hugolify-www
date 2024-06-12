@@ -49,7 +49,7 @@ blocks:
 
   - type: editorial
     direction: rtl
-    surtitle: Atomic content
+    surtitle: Modulable
     title: 25 blocks of content available
     text: Collection of most famous components for making an exiting website.
     image:

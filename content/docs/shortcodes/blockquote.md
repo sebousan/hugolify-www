@@ -1,11 +1,8 @@
 ---
 title: Blockquote
 description: Displays a blockquote in your body markdown.
+icon: blockquote-left
 ---
-
-# Blockquote shortcode
-
-Displays a blockquote in your body markdown.
 
 ## Example
 

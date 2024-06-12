@@ -1,9 +1,8 @@
 ---
 title: Install
 weight: 2
+icon: gear
 ---
-
-# Install
 
 ## Github template
 

@@ -1,25 +1,16 @@
 ---
 title: CTA
 description: Displays a centered call to action.
+icon: link
 ---
-
-# CTA block
-
-Displays a centered call to action.
 
 ## Frontmatter usage
 
 ```yml
 blocks:
   - type: cta
-    heading:
-      surtitle: ""
-      title: ""
-      text: ""
-    cta:
-      text: ""
-      url: ""
-      blank: false
+    heading: {}
+    cta: {}
     background: false
 ```
 

@@ -1,21 +1,15 @@
 ---
 title: Images
 description: Displays an images list in one or two columns.
+icon: images
 ---
-
-# Images block
-
-Displays an images list in one or two columns.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: images
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     items:
       image:
         src: '' // string

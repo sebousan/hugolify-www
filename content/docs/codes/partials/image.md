@@ -1,11 +1,8 @@
 ---
 title: Image
 description: Displays a responsive image with srcset, type, retina, lazy loading…
+icon: card-image
 ---
-
-# Image
-
-Displays a responsive image with srcset, type, retina, lazy loading…
 
 ## Available for
 
@@ -36,6 +33,8 @@ image:
   src: ""
   alt: ""
 lazy: true
+class: ""
+itemprop: ""
 ```
 
 ## Related link

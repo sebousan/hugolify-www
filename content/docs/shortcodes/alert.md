@@ -1,11 +1,8 @@
 ---
 title: Alert
 description: Displays an alert with different state in your body markdown.
+icon: exclamation-octagon
 ---
-
-# Alert shortcode
-
-Displays an alert with different state in your body markdown.
 
 ## Example
 

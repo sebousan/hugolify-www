@@ -1,9 +1,8 @@
 ---
 title: Paragraph
-description: Displays a simple paragraph
+description: Displays a simple paragraph.
+icon: text-paragraph
 ---
-
-# Paragraph
 
 ## Frontmatter
 
@@ -12,9 +11,9 @@ blocks:
   - type: paragraph
     title: '' // string
     text: '' // markdown
-    grid: '' // [small, medium, large, full]
-    offset: '' // [start, end, center]
-    align: '' // [start, end, center]
+    grid: ''
+    offset: ''
+    align: ''
     background: false
 ```
 

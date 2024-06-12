@@ -1,11 +1,8 @@
 ---
 title: Button
 description: Displays a button link in your body markdown.
+icon: hand-index
 ---
-
-# Button shortcode
-
-Displays a button link in your body markdown.
 
 ## Example
 

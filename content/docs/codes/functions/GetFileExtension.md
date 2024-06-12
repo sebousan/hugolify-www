@@ -3,10 +3,6 @@ title: GetFileExtension
 description: Get file extension from file (string) and display correctly file extension with abbr HTML tag.
 ---
 
-# GetFileExtension
-
-Get file extension from file (string) and display correctly file extension with abbr HTML tag.
-
 ## Usage
 
 ```go-html-template

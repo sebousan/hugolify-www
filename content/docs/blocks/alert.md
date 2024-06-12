@@ -1,19 +1,16 @@
 ---
 title: Alert
 description: Displays an alert message with 3 different statutes.
+icon: exclamation-octagon
 ---
-
-# Alert block
-
-Displays an alert message with 3 different statutes.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: alert
-    text: ""
-    state: ""
+    text: '' // string
+    state: '' [danger, dark, light, infos, success, warning]
     background: false
 ```
 

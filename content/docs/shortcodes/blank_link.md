@@ -1,11 +1,8 @@
 ---
 title: Blank link
 description: Displays a blank target link in your body markdown.
+icon: box-arrow-up-right
 ---
-
-# Blank link shortcode
-
-Displays an alert with different state in your body markdown.
 
 ## Example
 

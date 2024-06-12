@@ -1,11 +1,8 @@
 ---
 title: Map
 description: Displays a simple map with one marker.
+icon: geo-alt
 ---
-
-# Map block
-
-Displays a simple map with one marker.
 
 {{< alert text="RGPD compliant" state="info" >}}
 
@@ -14,11 +11,8 @@ Displays a simple map with one marker.
 ```yml
 blocks:
   - type: map
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
-    location: {}  // map
+    heading: {}
+    location: {} // map
     zoom: 13 // [1…20]
     background: false
 ```

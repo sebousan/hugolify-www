@@ -1,6 +1,7 @@
 ---
 title: Logos
 description: Displays a logos list.
+icon: grip-horizontal
 ---
 
 # Logos block
@@ -12,14 +13,11 @@ Displays a video element.
 ```yml
 blocks:
   - type: logos
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     items: {}
     layout: '' // [grid, carousel]
     carousel: {} // object
-    background: false // boolean
+    background: false
 ```
 
 ## Examples

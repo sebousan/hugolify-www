@@ -1,5 +1,6 @@
 ---
 title: Getting Started
-description: What does your user need to know to try your project?
+description: How to install and setup Hugolify.
 weight: 1
+icon: 1-square
 ---

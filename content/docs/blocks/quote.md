@@ -1,6 +1,7 @@
 ---
 title: Quote
 description: Displays a quote and its author
+icon: blockquote-left
 ---
 
 # Quote block

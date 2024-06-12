@@ -1,11 +1,8 @@
 ---
 title: Instagram
 description: Displays an instagram feed with your latest posts.
+icon: instagram
 ---
-
-# Instagram
-
-Displays an instagram feed with your latest posts.
 
 {{< alert text="Instagram access_token is required" state="warning" >}}
 
@@ -16,15 +13,9 @@ blocks:
   - type: instagram
     token: '' // string
     limit: 5 // number
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
-    cta:
-      text: '' // string
-      url: '' // string
-      blank: false // boolean
-    background: false // boolean
+    heading: {}
+    cta: {}
+    background: false
 ```
 
 ## Examples

@@ -1,23 +1,17 @@
 ---
 title: Timeline
 description: Displays a timeline element.
+icon: list-ol
 ---
-
-# Timeline block
-
-Displays a video element.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: timeline
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     items: {}
-    background: false // boolean
+    background: false
 ```
 
 ## Examples

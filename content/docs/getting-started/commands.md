@@ -1,16 +1,43 @@
 ---
 title: Commands
 weight: 3
+icon: terminal
 ---
-
-# Commands
 
 ## Launch
 
-To launch Hugo project with livereload: `yarn watch` in this URL: http://localhost:1313/
+To launch Hugo project with livereload, available here: `http://localhost:1313/`
 
-To launch Decap CMS in localhost (in a second terminal): `yarn cms` in this URL: http://localhost:1313/admin/
+```shell
+yarn watch
+```
+
+To launch Decap CMS in localhost (in a second terminal), available here: `http://localhost:1313/admin/`
+
+```shell
+yarn cms
+```
 
 ## Build
 
-To build the project: `yarn build`
+To build the project
+
+```shell
+yarn build
+```
+
+## Update
+
+### Modules of your project
+
+```shell
+yarn update
+```
+
+### Hugolify template
+
+```shell
+git remote add template git@github.com:hugolify/hugolify-template.git
+git fetch --all
+git merge template/main --allow-unrelated-histories
+```

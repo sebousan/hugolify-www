@@ -1,24 +1,26 @@
 ---
 title: Video
 description: Displays a video element.
+icon: camera-video
 ---
-
-# Video block
-
-Displays a video element.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: video
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
-    video: {}
-    grid: '' // [small, medium, large, full]
-    background: false // boolean
+    heading: {}
+    video:
+      mp4: ''
+      webm: ''
+      controls: false // boolean
+      autoplay: false // boolean
+      loop: false // boolean
+      screenshot: false // boolean
+      legend: '' // string
+      transcription: '' // string
+    grid: ''
+    background: false
 ```
 
 ## Examples

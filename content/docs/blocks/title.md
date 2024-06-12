@@ -1,22 +1,16 @@
 ---
 title: Title
 description: Displays a heading title with surtitle and text.
+icon: type-h2
 ---
-
-# Title block
-
-Displays a heading title with surtitle and text.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: title
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
-    background: false // boolean
+    heading: {}
+    background: false
 ```
 
 ## Examples

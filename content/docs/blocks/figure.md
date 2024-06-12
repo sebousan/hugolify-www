@@ -1,25 +1,23 @@
 ---
 title: Figure
 description: Displays a centered figure image with legend and credit.
+icon: card-image
 ---
-
-# Figure block
-
-Displays a centered figure image with legend and credit.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: figure
+    heading: {}
     figure:
       src: '' // string
       alt: '' // string
       legend: '' // string
       credit: '' // markdown
-    grid: '' // [small, medium, large, full]
-    offset: '' // [start, end, center]
-    background: false '' // boolean
+    grid: ''
+    offset: ''
+    background: false
 ```
 
 ## Examples

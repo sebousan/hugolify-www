@@ -1,21 +1,15 @@
 ---
 title: Embed
 description: Displays a centered embed
+icon: code-slash
 ---
-
-# Embed block
-
-Displays a centered embed
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: embed
-    heading:
-      surtitle: ""
-      title: ""
-      text: ""
+    heading: {}
     embed: ""
     background: false
 ```

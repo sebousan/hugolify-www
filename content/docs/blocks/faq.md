@@ -1,20 +1,15 @@
 ---
 title: FAQ
 description: Displays some images cards in column. Alignment and button are available.
+icon: patch-question
 ---
-
-# FAQ block
-
-Displays some images cards in column. Alignment and button are available.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: faq
-    heading:
-      title: ""
-      text: ""
+    heading: {}
     items:
       title: ""
       text: ""

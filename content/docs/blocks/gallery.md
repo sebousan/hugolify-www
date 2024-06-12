@@ -1,29 +1,19 @@
 ---
 title: Gallery
 description: Displays an images gallery with accessible lightbox.
+icon: grid-3x2-gap
 ---
-
-# Gallery block
-
-Displays an images gallery with accessible lightbox.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: gallery
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     column: 4 // number
     gallery:
-      image:
-        src: '' // string
-        alt: '' // string
-        legend: '' // string
-        credit: '' // markdown
-    background: false '' // boolean
+      image: {}
+    background: false
 ```
 
 ## Examples

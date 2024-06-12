@@ -1,11 +1,8 @@
 ---
 title: Map
 description: Displays a map with one or multiples markers in your body markdown.
+icon: geo-alt
 ---
-
-# Map shortcode
-
-Displays a map with one or multiples markers in your body markdown.
 
 ## Example
 

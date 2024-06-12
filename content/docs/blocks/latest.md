@@ -1,25 +1,19 @@
 ---
 title: Latest
 description: Displays latest items from posts, projects…
+icon: clock-history
 ---
-
-# Latest block
-
-Displays latest items from posts, projects…
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: latest
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     section: '' // [posts, publications, products…]
     count: 4 // number
     show_more: true // boolean
-    background: false // boolean
+    background: false
 ```
 
 ## Examples

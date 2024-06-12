@@ -1,11 +1,8 @@
 ---
 title: Details
 description: Displays a details HTML markup in your body markdown.
+icon: caret-down
 ---
-
-# Details shortcode
-
-Displays a details HTML markup in your body markdown.
 
 ## Example
 

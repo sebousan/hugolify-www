@@ -3,6 +3,11 @@ isPage: true
 title: Website Carbon demo reports
 hero:
   title: Website Carbon demo reports
+  text: Calculating the carbon emissions of website is somewhat of a challenge,
+    but we have been working for many years to develop and refine a
+    methodology for this purpose. Our hope is that this will help raise
+    awareness and encourage more eco-friendly approaches to be adopted
+    throughout the web design industry.
 blocks:
   - type: editorial
     direction: ltr
@@ -12,11 +17,6 @@ blocks:
       text: Discovert report
     background: false
     title: Website carbon calculator
-    text: Calculating the carbon emissions of website is somewhat of a challenge,
-      but we have been working for many years to develop and refine a
-      methodology for this purpose. Our hope is that this will help raise
-      awareness and encourage more eco-friendly approaches to be adopted
-      throughout the web design industry.
     image:
       src: /images/uploads/websitecarbon.jpg
   - type: datas
@@ -38,4 +38,5 @@ blocks:
     background: false
     figure:
       src: /images/uploads/demo.hugolify.com.png
+      screenshot: true
 ---

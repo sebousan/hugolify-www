@@ -1,23 +1,17 @@
 ---
 title: Newsletter
 description: Displays a newsletter signup form.
+icon: envelope
 ---
-
-# Newsletter block
-
-Displays a newsletter signup form.
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: newsletter
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     form: {}
-    grid: '' // [small, medium, large, full]
+    grid: ""
     background: false
 ```
 

@@ -1,6 +1,7 @@
 ---
 title: Testimonials
 description: Displays some testimonials in grid or carousel.
+icon: chat-square-quote
 ---
 
 # Testimonials block
@@ -12,10 +13,7 @@ Displays some testimonials in grid or carousel.
 ```yml
 blocks:
   - type: testimonials
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     items:
       quote: '' // string
       author:
@@ -26,7 +24,7 @@ blocks:
           alt: '' // string
     layout: '' // [grid, carousel]
     carousel: {} // object
-    background: false // boolean
+    background: false
 ```
 
 ## Examples

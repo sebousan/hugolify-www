@@ -3,10 +3,6 @@ title: PrepareHTML
 description: Secures the display of a string.
 ---
 
-# PrepareHTML
-
-Secures the display of a string.
-
 ## Actions
 
 - safeHTML

@@ -1,21 +1,15 @@
 ---
 title: Pushes
 description: Displays some images cards in column. Alignment and button are available
+icon: credit-card-2-front
 ---
-
-# Pushes block
-
-Displays some images cards in column. Alignment and button are available
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: pushes
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     column: '' // [1…2]
     items:
       title: '' // string
@@ -27,11 +21,8 @@ blocks:
       offset: '' // [start, end, center]
       background_color: '' // color
       color: '' // color
-      cta:
-        text: '' // string
-        url: '' // string
-        blank: false // boolean
-    background: false // boolean
+      cta: {}
+    background: false
 ```
 
 ## Examples

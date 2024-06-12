@@ -1,21 +1,15 @@
 ---
 title: Chart
 description: Displays a chart.
+icon: bar-chart
 ---
-
-# Chart block
-
-Displays a chart with Chart JS
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: chart
-    heading: ""
-      surtitle: ""
-      title: ""
-      text: ""
+    heading: {}
     grid: ""
     chart:
       type: ""

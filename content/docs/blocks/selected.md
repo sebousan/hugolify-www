@@ -1,11 +1,8 @@
 ---
 title: Selected
 description: Displays a selection of items sections
+icon: check-all
 ---
-
-# Selected sections block
-
-Displays a selection of items sections.
 
 ## Frontmatter
 
@@ -13,14 +10,11 @@ Displays a selection of items sections.
 blocks:
   - type: selected-*  // [selected-posts, selected-publications, selected-products…]
     section: * // [posts, publications, products…]
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    heading: {}
     items:
       - // list of slugs
     show_more: false // boolean
-    background: false // boolean
+    background: false
 ```
 
 ## Examples

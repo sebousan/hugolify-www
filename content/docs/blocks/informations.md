@@ -3,23 +3,16 @@ title: Informations
 description:
   Displays some cards informations in column. Icon, images and button are
   available
+icon: card-heading
 ---
-
-# Informations block
-
-Displays some cards informations in column. Icon, images and button are
-available
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: informations
-    column: ''
-    heading:
-      surtitle: '' // string
-      title: '' // string
-      text: '' // markdown
+    column: '' // number
+    heading: {}
     items:
       icon: '' // string (bootstrap icon)
       image:
@@ -28,11 +21,8 @@ blocks:
         isLogo: false
       title: '' // string
       text: '' // string
-      cta:
-        text: '' // string
-        url: '' // string
-        blank: false '' // boolean
-    background: false '' // boolean
+      cta: {}
+    background: false
 ```
 
 ## Examples

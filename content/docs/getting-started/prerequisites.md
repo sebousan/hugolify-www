@@ -1,9 +1,8 @@
 ---
 title: Prerequisites
 weight: 1
+icon: check2-circle
 ---
-
-# Prerequisites
 
 ## Hugo
 

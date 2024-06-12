@@ -42,6 +42,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme-posts-expertises
   - path: github.com/hugolify/hugolify-theme-posts-tags
   - path: github.com/hugolify/hugolify-theme-posts
+  - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme
 ```
 

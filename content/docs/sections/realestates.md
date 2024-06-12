@@ -21,7 +21,7 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-realestates-persons" text="Places" >}} _Theme persons required_
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-realestates-persons" text="Persons" >}} _Theme persons required_
 
 **Setup**
 
@@ -31,6 +31,7 @@ imports:
 imports:
   - path: github.com/hugolify/hugolify-theme-realestates-persons
   - path: github.com/hugolify/hugolify-theme-realestates
+  - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme
 ```
 

@@ -40,6 +40,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme-publications-expertises
   - path: github.com/hugolify/hugolify-theme-publications-persons
   - path: github.com/hugolify/hugolify-theme-publications
+  - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme
 ```
 

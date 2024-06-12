@@ -19,6 +19,21 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Taxonomies
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-realestates-persons" text="Places" >}} _Theme persons required_
+
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```go-html-template
+imports:
+  - path: github.com/hugolify/hugolify-theme-realestates-persons
+  - path: github.com/hugolify/hugolify-theme-realestates
+  - path: github.com/hugolify/hugolify-theme
+```
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme-realestates/tree/main/layouts/partials/realestates" text="HTML partials" >}}

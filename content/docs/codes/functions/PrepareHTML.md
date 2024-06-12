@@ -17,4 +17,4 @@ description: Secures the display of a string.
 
 ## Related links
 
-- [Func file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/PrepareHTML)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/PrepareHTML" text="Func file" >}}

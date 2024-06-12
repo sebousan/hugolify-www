@@ -14,6 +14,10 @@ icon: newspaper
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications" text="Hugolify theme publications" >}}
 
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
 ```go-html-template
 imports:
   - path: github.com/hugolify/hugolify-theme-publications
@@ -25,6 +29,10 @@ imports:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-categories" text="Categories" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-expertises" text="Expertises" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-persons" text="Persons" >}}
+
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
 ```go-html-template
 imports:

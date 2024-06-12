@@ -14,6 +14,10 @@ icon: file-earmark-richtext
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects" text="Hugolify theme projects" >}}
 
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
 ```go-html-template
 imports:
   - path: github.com/hugolify/hugolify-theme-projects
@@ -24,6 +28,10 @@ imports:
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects-tags" text="Tags" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects-types" text="Types" >}}
+
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
 ```go-html-template
 imports:

@@ -13,6 +13,15 @@ icon: file-earmark
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
 
+**Setup**
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```go-html-template
+imports:
+  - path: github.com/hugolify/hugolify-theme
+```
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/partials/pages" text="HTML partials" >}}

@@ -1,5 +1,6 @@
 ---
 title: Commands
+description: Basics commands lines
 weight: 3
 icon: terminal
 ---

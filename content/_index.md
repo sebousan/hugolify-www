@@ -149,7 +149,7 @@ blocks:
           text: Discover repository
           url: https://github.com/hugolify/hugolify-template
         title: hugolify-template
-        text: Github template with content demo
+        text: Github template to start your project
         icon: git
       - cta:
           blank: true

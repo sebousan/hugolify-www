@@ -1,7 +1,7 @@
 ---
 title: Customization
 description: To replace or add style, structure, content…
-weight: 6
+weight: 7
 icon: palette
 ---
 

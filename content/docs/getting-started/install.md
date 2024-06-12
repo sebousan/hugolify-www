@@ -1,5 +1,6 @@
 ---
 title: Install
+description: Easy to install
 weight: 2
 icon: gear
 ---

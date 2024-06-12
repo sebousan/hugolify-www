@@ -1,7 +1,7 @@
 ---
 title: Best practices
 description: To lighten and make the code more semantic and readable.
-weight: 6
+weight: 7
 icon: hand-thumbs-up
 ---
 
@@ -41,7 +41,7 @@ Hugolify SASS for posts grid
   @extend .row-cols-lg-3
 ```
 
-## SASS Guidelines
+## SASS
 
 Styleguide for writing sane, maintainable and scalable Sass.
 
@@ -49,4 +49,11 @@ Styleguide for writing sane, maintainable and scalable Sass.
 
 ## Prettier
 
-{{< blank_link link="https://prettier.io/" text="https://prettier.io/" >}}
+We use {{< blank_link link="https://prettier.io/" text="prettier" >}} to keep same codestyle everywhere.
+
+If you use Vs Code, you will need to install the {{< blank_link link="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" text="prettier extension" >}}.
+
+Then, in settings :
+
+- Select Prettier as default formater
+- Enable "Format on save"

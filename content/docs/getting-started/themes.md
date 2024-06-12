@@ -1,7 +1,7 @@
 ---
 title: Themes
 description: Available Hugolify themes…
-weight: 8
+weight: 9
 icon: palette
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Netlify
 description: Identity, Git gateway…
-weight: 5
+weight: 6
 icon: database
 ---
 

@@ -14,7 +14,7 @@ Displays a video element.
 blocks:
   - type: logos
     heading: {}
-    items: {}
+    items: []
     layout: '' // [grid, carousel]
     carousel: {} // object
     background: false

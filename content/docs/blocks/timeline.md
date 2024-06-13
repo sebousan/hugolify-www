@@ -10,7 +10,7 @@ icon: list-ol
 blocks:
   - type: timeline
     heading: {}
-    items: {}
+    items: []
     background: false
 ```
 

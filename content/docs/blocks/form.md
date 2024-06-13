@@ -16,7 +16,15 @@ blocks:
     offset: ''
     name: '' // string
     submit: '' // string
-    items: {}
+    items: []
+      label: '' // string
+      type: '' [email, select, tel, text, textarea]
+      options: [] // if select
+        title: '' // string
+        value: '' // string
+      required: false // boolean
+      full: false // boolean
+      autocomplete: '' // autocomplete value like postal-code, email…
     background: false
 ```
 

@@ -11,9 +11,9 @@ icon: card-heading
 ```yml
 blocks:
   - type: informations
-    column: '' // number
     heading: {}
-    items:
+    column: '' // number
+    items: []
       icon: '' // string (bootstrap icon)
       image:
         src: '' // string

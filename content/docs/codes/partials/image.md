@@ -3,7 +3,9 @@ title: Image
 description: Displays a responsive image with srcset, type, retina, lazy loading…
 icon: card-image
 ---
-## Usage
+## Example
+
+### Usage
 
 ```go-html-template
 {{ $image := (dict
@@ -15,7 +17,7 @@ icon: card-image
 {{ partial "commons/image" $image }}
 ```
 
-## HTML rendered
+### HTML rendered
 
 ```html
 <picture>

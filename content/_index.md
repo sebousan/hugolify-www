@@ -25,7 +25,7 @@ blocks:
         image:
           src: /images/uploads/342.Take-Care.svg
       - title: Web performance
-        text: PurgeCSS, defer javascript…
+        text: PageSpeed, defer javascript…
         image:
           src: /images/uploads/384.Up-Trend.svg
       - title: Low carbon
@@ -83,7 +83,7 @@ blocks:
   - type: editorial
     surtitle: Web performance
     title: Discover performance and  carbon emissions reports
-    text: Google PageSpeed Insights and Website carbon reports.
+    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon reports.
     image:
       src: /images/uploads/384.Up-Trend.svg
     cta:

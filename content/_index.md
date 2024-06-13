@@ -82,7 +82,7 @@ blocks:
 
   - type: editorial
     surtitle: Web performance
-    title: Discover performance and  carbon emissions reports
+    title: Discover performance and carbon emissions reports
     text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon reports.
     image:
       src: /images/uploads/384.Up-Trend.svg
@@ -93,8 +93,8 @@ blocks:
   - type: editorial
     direction: rtl
     surtitle: Showcase
-    title: Examples of website using Hugolify
-    text: Discover website and repositories.
+    title: Examples of websites using Hugolify
+    text: Discover websites and repositories.
     image:
       src: /images/uploads/160.Movie-Time.svg
     cta:
@@ -104,9 +104,9 @@ blocks:
   - type: informations
     column: 3
     heading:
-      surtitle: Repositories
+      surtitle: open-source
       title: 3 main Github repositories
-      text: Hugolify is available on Github, template relies on two submodules.
+      text: Hugolify is available on Github, template relies on two modules.
     background: true
     items:
       - cta:
@@ -114,26 +114,26 @@ blocks:
           text: Discover repository
           url: https://github.com/hugolify/hugolify-template
         title: hugolify-template
-        text: Github template to start your project
+        text: Github template to start your Hugolify project
         icon: git
       - cta:
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-theme
         title: hugolify-theme
-        text: Hugo theme base for Hugolify
+        text: Module core theme for Hugolify
         icon: git
       - cta:
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-decap-cms
         title: hugolify-decap-cms
-        text: Admin Decap CMS for Hugolify
+        text: Module Decap CMS for Hugolify
         icon: git
 
   - type: cta
     heading:
-      surtitle: MIT license
+      surtitle: repositories
       title: And more fifty Hugolify repositories
       text: Templates, themes, modules…
     background: true

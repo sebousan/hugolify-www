@@ -44,5 +44,5 @@ class: "" // Not in Decap CMS
 
 ## Related links
 
-- [Decap CMS file — hugolify-decap-cms](https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/editor/shortcodes/button.js)
-- [Shortcode file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/button.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/button.html" text="Shortcode file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/editor/shortcodes/button.js" text="Decap CMS file — hugolify-decap-cms" >}}

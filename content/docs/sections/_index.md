@@ -1,6 +1,6 @@
 ---
 title: Sections
 description: All sections available.
-weight: 3
+weight: 2
 icon: collection
 ---

@@ -1,7 +1,7 @@
 ---
 title: Blocks
 description: More than twenty blocks available.
-weight: 4
+weight: 3
 icon: puzzle
 ---
 

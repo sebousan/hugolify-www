@@ -51,5 +51,5 @@ state:
 
 ## Related links
 
-- [Shortcode file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/alert.html)
-- [Boostrap component](https://getbootstrap.com/docs/5.3/components/alerts/)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/alert.html" text="Shortcode file — hugolify-theme" >}}
+- {{< blank_link link="https://getbootstrap.com/docs/5.3/components/alerts/" text="Boostrap component" >}}

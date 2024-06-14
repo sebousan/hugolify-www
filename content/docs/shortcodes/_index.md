@@ -1,7 +1,7 @@
 ---
 title: Shortcodes
 description: Hugolify shortcodes available.
-weight: 5
+weight: 4
 icon: braces-asterisk
 ---
 

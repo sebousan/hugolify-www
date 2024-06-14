@@ -42,4 +42,4 @@ text: ""
 
 ## Related link
 
-- [Shortcode file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/details.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/details.html" text="Shortcode file — hugolify-theme" >}}

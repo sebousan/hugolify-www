@@ -1,6 +1,6 @@
 ---
 title: Codes
 description: Functions, partials…
-weight: 2
+weight: 5
 icon: code
 ---

@@ -8,8 +8,9 @@ icon: geo-alt
 
 ### Markdown usage
 
+
 ```go-html-template
-{{</* map zoom="14" markers="[-0.5737107,44.8425666]" */>}}
+{{</* map markers="{"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}" */>}}
 ```
 
 ### HTML rendered
@@ -17,26 +18,27 @@ icon: geo-alt
 ```html
 <div
   class="map js-map"
-  data-markers="[-0.5737107,44.8425666]"
-  data-zoom="14"
+  data-markers="[{&quot;coordinates&quot;:[44.8425666,-0.5737107]},{&quot;coordinates&quot;:[45.8425666,1.5937107]},{&quot;coordinates&quot;:[46.8425666,-0.5737107]}]"
 ></div>
 ```
 
 ### Visual renderer
 
-{{< map zoom="12" markers="[-0.5737107,44.8425666]" >}}
+{{< map markers=`{"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}` >}}
+
 
 ## Datas
 
 ```yml
-zoom: "" // [1…20]
 markers: []
+zoom: "" // [1…20] if only one marker
 ```
 
 ## Decap CMS
 
 {{< alert text="Not available" state="warning" >}}
 
-## Related link
+## Related links
 
-- [Shortcode file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/map.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/map.html" text="Shortcode file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/map.js" text="JS file — hugolify-theme" >}}

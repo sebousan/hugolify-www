@@ -42,3 +42,4 @@ text: ""
 ## Related link
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/blank_link.html" text="Shortcode file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/editor/shortcodes/blank_link.js" text="Decap CMS file — hugolify-decap-cms" >}}

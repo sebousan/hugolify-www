@@ -9,8 +9,9 @@ icon: clock
 
 ```go-html-template
 {{ $args := (dict
-    "date" 2006-01-02T15:04:05Z07:00
+    "date" "2006-01-02T15:04:05Z07:00"
     "format" "2006"
+    "itemprop" "datePublished"
     ) }}
 {{ partial "commons/time" $args }}
 ```
@@ -25,7 +26,8 @@ icon: clock
 
 ```yml
 date: ""
-format: "2006" // https://gohugo.io/functions/time/format/
+format: "" // default is 2006, https://gohugo.io/functions/time/format/
+itemprop: false // or https://schema.org/Date
 ```
 
 ## Related link

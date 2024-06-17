@@ -8,13 +8,13 @@ icon: card-image
 ### Usage
 
 ```go-html-template
-{{ $image := (dict
+{{ $args := (dict
         "src" $src_image
         "alt" $alt_text
         "desktop" $desktop_size
         "mobile" $mobile_size
         ) }}
-{{ partial "commons/image" $image }}
+{{ partial "commons/image" $args }}
 ```
 
 ### HTML rendered
@@ -48,4 +48,4 @@ itemprop: "" // add a Schema.org information
 
 ## Related link
 
-- [Commons file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image.html" text="Commons file — hugolify-theme" >}}

@@ -8,12 +8,12 @@ icon: link-45deg
 ### Usage
 
 ```go-html-template
-{{ $cta := (dict
+{{ $args := (dict
         "url" "https://www.hugolify.io/"
         "text" "Hugolify button"
         "blank" true
         ) }}
-{{ partial "commons/cta" $cta }}
+{{ partial "commons/cta" $args }}
 ```
 
 ### HTML rendered
@@ -33,4 +33,4 @@ class: "" // Add additional class
 
 ## Related link
 
-- [Commons file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/cta.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/cta.html" text="Commons file — hugolify-theme" >}}

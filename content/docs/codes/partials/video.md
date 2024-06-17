@@ -8,12 +8,12 @@ icon: camera-video
 ### Usage
 
 ```go-html-template
-{{ $video := (dict
+{{ $args := (dict
         "mp4" $src_mp4_video
         "webm" $src_webm_video
         "controls" true
         ) }}
-{{ partial "commons/video" $video }}
+{{ partial "commons/video" $args }}
 ```
 
 ### HTML rendered
@@ -37,4 +37,4 @@ loop: false // to set loop video or not
 
 ## Related link
 
-- [Commons file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/video.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/video.html" text="Commons file — hugolify-theme" >}}

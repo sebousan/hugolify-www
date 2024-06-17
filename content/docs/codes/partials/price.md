@@ -8,12 +8,12 @@ icon: currency-euro
 ### Usage
 
 ```go-html-template
-{{ $price := (dict
+{{ $args := (dict
         "price" 100
         "discount" "10%"
         "frenquency" "/month"
         ) }}
-{{ partial "commons/price" $price }}
+{{ partial "commons/price" $args }}
 ```
 
 ### HTML rendered
@@ -33,4 +33,4 @@ itemprop: false // boolean to add itemprop="price" content="{price}"
 
 ## Related link
 
-- [Commons file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/price.html)
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/price.html" text="Commons file — hugolify-theme" >}}

@@ -132,14 +132,13 @@ blocks:
         text: Module Decap CMS for Hugolify
         icon: git
 
-  - type: cta
+  - type: embed
     heading:
       surtitle: repositories
       title: And more fifty Hugolify repositories
       text: Templates, themes, modules…
     background: true
-    cta:
-      text: Discover on Github
-      url: https://github.com/hugolify/
-      blank: true
+    embed: >-
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+      <a class="github-button" href="https://github.com/hugolify/hugolify-template" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star hugolify/hugolify-template on GitHub">Star</a>
 ---

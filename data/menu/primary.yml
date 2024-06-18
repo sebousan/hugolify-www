@@ -12,6 +12,10 @@ links:
         url: /docs/shortcodes/
       - title: Codes
         url: /docs/codes/
+      - title: CMS
+        url: /docs/cms/
+      # - title: Showcase
+      #   url: /docs/showcase/
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true

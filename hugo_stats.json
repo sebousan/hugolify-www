@@ -2,7 +2,9 @@
   "htmlElements": {
     "tags": [
       "a",
+      "abbr",
       "article",
+      "b",
       "blockquote",
       "body",
       "br",
@@ -20,6 +22,7 @@
       "h3",
       "head",
       "header",
+      "hr",
       "html",
       "i",
       "img",
@@ -84,6 +87,7 @@
       "dropdown-menu",
       "dropdown-toggle",
       "embed",
+      "file",
       "gauge",
       "github",
       "github-button",

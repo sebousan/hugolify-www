@@ -2,11 +2,19 @@
 title: Decap CMS
 description: Open-source content management Git-based.
 weight: 1
+image:
+  src: /images/uploads/logo-decap-picto.png
 ---
 
-## Documentions
 
-{{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
+## Setup
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```yml
+imports:
+  - path: github.com/hugolify/hugolify-decap-cms
+```
 
 ## Configuration
 
@@ -84,3 +92,10 @@ Create a `locale.js` file in your config directory.
 ```js
 export const locale = "fr"; // or 'en'
 ```
+
+## Documention
+
+- {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
+
+## Module
+- {{< blank_link link="https://github.com/hugolify/hugolify-decap-cms" text="Hugolify Decap CMS" >}}

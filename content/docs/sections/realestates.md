@@ -13,7 +13,7 @@ icon: house-add
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-realestates
   - path: github.com/hugolify/hugolify-theme

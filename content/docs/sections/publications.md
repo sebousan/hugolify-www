@@ -18,7 +18,7 @@ icon: newspaper
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-publications
   - path: github.com/hugolify/hugolify-theme

@@ -13,10 +13,23 @@ icon: file-earmark-code
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-docs
   - path: github.com/hugolify/hugolify-theme
+```
+
+**Params**
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+docs:
+  thumbnail:
+    desktop: '38x38'
+    desktop_large: '100x100'
+    mobile: '38x38'
+    scrollsnap: '38x38'
 ```
 
 ## Files

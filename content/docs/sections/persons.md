@@ -18,7 +18,7 @@ icon: people
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme

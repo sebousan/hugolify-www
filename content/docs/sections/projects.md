@@ -18,7 +18,7 @@ icon: file-earmark-richtext
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-projects
   - path: github.com/hugolify/hugolify-theme

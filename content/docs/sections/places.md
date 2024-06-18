@@ -13,7 +13,7 @@ icon: shop
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-places
   - path: github.com/hugolify/hugolify-theme

@@ -13,7 +13,7 @@ icon: briefcase
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-services
   - path: github.com/hugolify/hugolify-theme

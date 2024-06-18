@@ -13,7 +13,7 @@ icon: mortarboard
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-expertises
   - path: github.com/hugolify/hugolify-theme

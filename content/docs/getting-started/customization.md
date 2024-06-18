@@ -13,7 +13,7 @@ In Hugo you can override files. If you add the same file name in the same direct
 
 ### Variables
 
-A variables file in the abstracts folder allows to add bootstrap variables. [Boostrap 5 variables available list on Github](https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss).
+A variables file in the abstracts folder allows to add bootstrap variables. {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss" text="Boostrap 5 variables available list on Github" >}}.
 
 ```shell
 abstract
@@ -84,4 +84,35 @@ static
     app
       content
         …
+```
+
+
+## Icons
+
+**Favicons**
+
+{{< alert text="`/assets/images/favicons/`" state="light" >}}
+
+- apple-touch-icon.png `180x180px`
+- favicon-32x32.png `32x32px`
+- favicon-16x16.png `16x16px`
+- favicon.ico
+- favicon.png
+- favicon.svg
+- safari-pinned-tab.svg
+
+**Files**
+
+{{< alert text="`/`" state="light" >}}
+
+- site.webmanifest
+  
+## SEO
+
+{{< alert text="`/data/seo.yml`" state="light" >}}
+
+```yml
+color: "#000000" // theme-color, msapplication-TileColor, mask-icon
+title: "" // Global meta title
+description: "" // Global meta description
 ```

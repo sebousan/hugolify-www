@@ -1,0 +1,37 @@
+---
+title: Theme 2
+description: Second available theme
+weight: 2
+icon: 2-circle
+---
+
+## Demo
+
+{{< figure src="/images/uploads/theme-2.png" alt="Screenshot of Theme 2" screenshot=true legend="Homepage" >}}
+
+{{< button url="https://theme-2--hugolify-demo.netlify.app/" text="Explore demo" blank=true >}}
+
+## Setup
+
+### Import module
+
+{{< alert text="`/config/_default/module.yaml`" state="light" >}}
+
+```yml
+imports:
+  - path: github.com/hugolify/hugolify-theme-2
+  - path: github.com/hugolify/hugolify-theme
+```
+
+### Import sass
+
+{{< alert text="`/assets/sass/main.sass`" state="light" >}}
+
+```sass
+// Theme
+@import "hugolify-theme-2"
+```
+
+## Repository
+
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-2" text="Hugolify theme 2" >}}

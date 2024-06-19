@@ -3,6 +3,7 @@
     @extend .badge
     background-color: rgba($primary, .1)
     letter-spacing: .05em
+    margin-bottom: .5rem
     text-transform: uppercase
     .back
         letter-spacing: 0
@@ -11,6 +12,8 @@
         align-self: flex-start
     .next &
         align-self: flex-end
+    .heading &
+        margin-bottom: .5rem
     @include media-breakpoint-down(md)
         .heading &
             align-self: flex-start

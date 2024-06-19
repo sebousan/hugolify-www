@@ -25,7 +25,9 @@ imports:
 
 ### Add modules
 
-### Examples
+Adds modules according to your needs.
+
+#### Example 1
 
 In this example, I have a website with a blog and portfolio to show my projects.
 
@@ -43,6 +45,8 @@ imports:
 # CMS
 - path: github.com/hugolify/hugolify-netlify-cms
 ```
+
+#### Example 2
 
 In this example, I have a website for to propose services and I would like to show my press publications.
 

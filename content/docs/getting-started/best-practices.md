@@ -62,12 +62,12 @@ Create files:
 
 {{< alert text="`/.prettierrc`" state="light" >}}
 
-```shell
+```yml
 "@hugolify/prettier-config"
 ```
 
 {{< alert text="`/.prettierignore`" state="light" >}}
 
-```shell
+```yml
 **/*.html
 ```

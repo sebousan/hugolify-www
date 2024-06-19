@@ -35,7 +35,7 @@ To connect Netlify CMS to the Github API, it must be activated.
 
 create .gitattributes
 
-```shell
+```yml
 assets/images/upload/** filter=lfs diff=lfs merge=lfs -text
 ```
 
@@ -43,18 +43,18 @@ assets/images/upload/** filter=lfs diff=lfs merge=lfs -text
 
 1/ Login to Netlify:
 
-```shell
+```yml
 netlify login
 ```
 
 2/ Link your local repository to your site on Netlify:
 
-```shell
+```yml
 netlify link
 ```
 
 3/ Run the following command for Large Media:
 
-```shell
+```yml
 netlify lm:setup
 ```

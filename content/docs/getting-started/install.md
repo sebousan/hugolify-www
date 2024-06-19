@@ -15,7 +15,7 @@ Create your repository with Hugolify template
 
 ### Or clone repository
 
-```shell
+```yml
 git clone git@github.com:hugolify/hugolify-template.git
 ```
 
@@ -23,12 +23,12 @@ git clone git@github.com:hugolify/hugolify-template.git
 
 With yarn
 
-```shell
+```yml
 yarn
 ```
 
 With npm
 
-```shell
+```yml
 npm install
 ```

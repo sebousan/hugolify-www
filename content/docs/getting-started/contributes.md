@@ -19,7 +19,7 @@ Then (if you have rights), publish version on Github by clicking on the link pro
 
 Config:
 
-```shell
+```yml
 create commit : true
 push : true
 create tag : true

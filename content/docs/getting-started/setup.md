@@ -13,7 +13,7 @@ Edit config file
 
 ### Required modules
 
-```shell
+```yml
 imports:
 
 # Core theme required
@@ -29,7 +29,7 @@ imports:
 
 In this example, I have a website with a blog and portfolio to show my projects.
 
-```shell
+```yml
 imports:
 
 # Content
@@ -46,7 +46,7 @@ imports:
 
 In this example, I have a website for to propose services and I would like to show my press publications.
 
-```shell
+```yml
 imports:
 
 # Content

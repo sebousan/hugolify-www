@@ -15,7 +15,7 @@ In Hugo you can override files. If you add the same file name in the same direct
 
 A variables file in the abstracts folder allows to add bootstrap variables. {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss" text="Boostrap 5 variables available list on Github" >}}.
 
-```shell
+```yml
 abstract
   _variables.sass
 ```
@@ -24,7 +24,7 @@ abstract
 
 The sass files override is possible by keeping the same tree structure and allows to overwrite the style of the theme to replace it with a specific style.
 
-```shell
+```yml
 components
   _author.sass
 ```
@@ -33,7 +33,7 @@ components
 
 The SASS files merge allows you to add style to that of the theme. To merge SASS files, it is necessary to reproduce the same tree structure in a folder called `site` and to indicate the files in main.sass.
 
-```shell
+```yml
 site
   components
     _author.sass
@@ -44,7 +44,7 @@ main.sass
 
 The HTML files override is possible by keeping the same tree structure.
 
-```shell
+```yml
 layout
   partial
     posts
@@ -55,7 +55,7 @@ layout
 
 4 settings files are available to customize admin. See originals settings files here:
 
-```shell
+```yml
 static
   admin
     app
@@ -68,7 +68,7 @@ static
 
 You could add some specifics blocks.
 
-```shell
+```yml
 static
   admin
     app
@@ -78,7 +78,7 @@ static
 
 Or specifics collections.
 
-```shell
+```yml
 static
   admin
     app

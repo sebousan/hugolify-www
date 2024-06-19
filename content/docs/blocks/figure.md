@@ -15,6 +15,8 @@ blocks:
       alt: '' // string
       legend: '' // string
       credit: '' // markdown
+      linear: false // Set true for linear filter compression
+      screenshot: false // Set true you want add fake browser around your picture (and linear filter compression)
     grid: ''
     offset: ''
     background: false

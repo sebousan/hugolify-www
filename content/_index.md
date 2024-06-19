@@ -67,6 +67,7 @@ blocks:
       surtitle: CMS
       title: Very simple content manager with Decap CMS
     figure:
+      screenshot: true
       src: /images/uploads/admin-home.png
       alt: Homepage screenshot of Hugolify Admin
 

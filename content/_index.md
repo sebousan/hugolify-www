@@ -19,7 +19,7 @@ blocks:
     column: 4
     heading:
       surtitle: Ethical
-      title: A sustainable open-source  Hugo framework
+      title: A sustainable open-source framework for websites
     items:
       - title: Accessible first
         text: Code ready, keyboard navigation…

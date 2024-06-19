@@ -77,9 +77,9 @@ blocks:
       title: Discover how to implement easily Hugolify for your project
     items:
       - getting-started
-      - codes
       - sections
       - blocks
+      - shortcodes
 
   - type: editorial
     surtitle: Web performance

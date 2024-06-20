@@ -79,7 +79,7 @@ screenshot: false // Set true you want add fake browser around your picture (and
 
 {{< alert text="Available" state="success" >}}
 
-## Related link
+## Related links
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/shortcodes/figure.html" text="Shortcode file — hugolify-theme" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/editor/shortcodes/figure.js" text="Decap CMS file — hugolify-decap-cms" >}}

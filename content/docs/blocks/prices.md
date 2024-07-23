@@ -33,7 +33,8 @@ blocks:
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/prices.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_prices.sass" text="SASS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/prices.js" text="Decap CMS file" >}}
 
 ## Decap CMS
 
-{{< alert text="Not available" state="danger" >}}
+{{< alert text="Available" state="success" >}}

@@ -6,7 +6,7 @@ image:
   src: /images/uploads/logo-netlify-cms.png
 ---
 
-{{< alert text="`Deprecated" state="light" >}}
+{{< alert text="Deprecated CMS" state="warning" >}}
 
 ## Setup
 

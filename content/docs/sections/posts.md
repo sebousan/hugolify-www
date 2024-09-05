@@ -4,10 +4,9 @@ description: News about your business.
 icon: file-earmark-text
 ---
 
-## Examples
+## Example
 
 - {{< blank_link link="https://demo.hugolify.io/news/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/posts/" text="Demo content file on Github" >}}
 
 ## Modules required
 

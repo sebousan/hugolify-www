@@ -4,10 +4,9 @@ description: Archiving of press releases.
 icon: newspaper
 ---
 
-## Examples
+## Example
 
 - {{< blank_link link="https://demo.hugolify.io/publications/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/publications/" text="Demo content file on Github" >}}
 
 ## Modules required
 

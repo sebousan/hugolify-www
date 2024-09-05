@@ -4,10 +4,9 @@ description: Authors, concerned people and persons.
 icon: people
 ---
 
-## Examples
+## Example
 
 - {{< blank_link link="https://demo.hugolify.io/team/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/persons/" text="Demo content file on Github" >}}
 
 ## Modules required
 

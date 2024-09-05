@@ -4,10 +4,9 @@ description: Your projects with image list and data list.
 icon: file-earmark-richtext
 ---
 
-## Examples
+## Example
 
 - {{< blank_link link="https://demo.hugolify.io/projects/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/projects/" text="Demo content file on Github" >}}
 
 ## Modules required
 

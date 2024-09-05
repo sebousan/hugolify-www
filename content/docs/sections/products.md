@@ -4,6 +4,10 @@ description: Description, price, variants.
 icon: box
 ---
 
+## Example
+
+- {{< blank_link link="https://demo-products--hugolify-demo.netlify.app/" text="Demo visual renderer" >}}
+
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -35,9 +39,6 @@ imports:
   - path: github.com/hugolify/hugolify-theme-products
   - path: github.com/hugolify/hugolify-theme
 ```
-
-## Demo
-- {{< blank_link link="https://demo-products--hugolify-demo.netlify.app/" text="Products website demo" >}}
 
 ## Files
 

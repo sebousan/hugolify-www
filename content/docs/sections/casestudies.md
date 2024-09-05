@@ -4,10 +4,9 @@ description: Present case studies with blocks of content.
 icon: book
 ---
 
-## Examples
+## Example
 
 - {{< blank_link link="https://demo.hugolify.io/case-studies/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/casestudies/" text="Demo content file on Github" >}}
 
 ## Modules required
 

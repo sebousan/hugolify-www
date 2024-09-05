@@ -36,6 +36,9 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Demo
+- {{< blank_link link="https://demo-products--hugolify-demo.netlify.app/" text="Products website demo" >}}
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme-products/tree/main/layouts/partials/products" text="HTML partials" >}}

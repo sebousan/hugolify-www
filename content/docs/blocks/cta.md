@@ -1,5 +1,6 @@
 ---
-title: CTA
+title: Call to action
+url: cta
 description: Displays a centered call to action.
 icon: link
 ---
@@ -16,8 +17,8 @@ blocks:
 
 ## Examples
 
-- {{< blank_link link="https://demo.hugolify.io/blocks/cta/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/cta/_index.md" text="Demo content file on Github" >}}
+- {{< blank_link link="https://demo.hugolify.io/blocks/call-to-action/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/call-to-action/_index.md" text="Demo content file on Github" >}}
 
 ## Files
 

@@ -6,13 +6,12 @@ hero:
   title: Framework Hugo with Bootstrap and Decap CMS
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website.
-  cta_second:
-    url: https://demo.hugolify.io
-    text: Discover demo
-    blank: true
-  cta:
-    url: /docs/
-    text: See documentation
+  ctas:
+    - url: /docs/
+      text: See documentation
+    - url: https://demo.hugolify.io
+      text: Discover demo
+      blank: true
 blocks:
 
   - type: informations

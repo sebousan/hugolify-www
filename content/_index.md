@@ -24,18 +24,22 @@ blocks:
         text: Code ready, keyboard navigation…
         image:
           src: /images/uploads/342.Take-Care.svg
+          isLogo: true
       - title: Web performance
         text: PageSpeed, defer javascript…
         image:
           src: /images/uploads/384.Up-Trend.svg
+          isLogo: true
       - title: Low carbon
         text: Responsive images, lazy loading…
         image:
           src: /images/uploads/179.Planet.svg
+          isLogo: true
       - title: RGPD compliant
         text: Cookie less, Google less…
         image:
           src: /images/uploads/403.Lawyer.svg
+          isLogo: true
 
   - type: editorial
     surtitle: Content

@@ -1,12 +1,9 @@
-// Chrome bug fix firing
-window.addEventListener('load', () => {
-    document.body.classList.remove('preload');
-  });
+// Utils
+import './utils/global';
 
 // Vendors
 import './vendors/bootstrap';
 
 // Components
-import './components/map';
 import './components/menu';
-import './components/video';
+// import './components/video';

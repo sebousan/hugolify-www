@@ -31,7 +31,7 @@ blocks:
 ## Examples
 
 - {{< blank_link link="https://demo.hugolify.io/blocks/form/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/blocks/form/_index.md" text="Demo content file on Github" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/form/_index.md" text="Demo content file on Github" >}}
 
 ## Files
 

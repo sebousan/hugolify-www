@@ -22,6 +22,7 @@ blocks:
             icon: '' // string (bootstrap icon)
             text: '' // string
         cta: {}
+        is_primary: false
     background: false
 ```
 

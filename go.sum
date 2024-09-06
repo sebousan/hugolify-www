@@ -1,8 +1,0 @@
-github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
-github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.16.1 h1:pscOgBWc/hMKN4h30FjJqRmKaYXcIDa7PckwY7ty/Ew=
-github.com/hugolify/hugolify-theme v1.16.1/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20240618084955-5a972b7792f6 h1:WdcsWuhSJG1fi1UhXlkG/X2+Do3a1HVQ4DebOsvrAcU=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20240618084955-5a972b7792f6/go.mod h1:gcGqAdSQGECDxmLeS5BD0FxXeyNwvYblI7qZP7iWQ8k=
-github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
-github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

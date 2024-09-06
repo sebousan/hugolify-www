@@ -1,3 +1,4 @@
 imports:
+  - path: github.com/sebousan/hugolify-theme-uncinqify
   - path: github.com/hugolify/hugolify-theme-docs
   - path: github.com/hugolify/hugolify-theme

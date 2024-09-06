@@ -7,7 +7,7 @@ icon: file-earmark
 ## Examples
 
 - {{< blank_link link="https://demo.hugolify.io/legal-mentions/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/legal-mentions/_index.md" text="Demo content file on Github" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/legal-mentions.md" text="Demo content file on Github" >}}
 
 ## Modules required
 

@@ -28,7 +28,7 @@ blocks:
 ## Examples
 
 - {{< blank_link link="https://demo.hugolify.io/blocks/pushes/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/pushes/_index.md" text="Demo content file on Github" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/pushes.md" text="Demo content file on Github" >}}
 
 ## Files
 

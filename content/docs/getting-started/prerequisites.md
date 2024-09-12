@@ -15,6 +15,8 @@ In macOS with brew
 brew install hugo
 ```
 
+{{< alert text="Minimum version 0.124" state="warning" >}}
+
 ## Bootstrap
 
 Bootstrap in version 5.3 is used to support the theme.

@@ -8,7 +8,7 @@ require (
 	github.com/hugolify/hugolify-theme v1.16.6 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20240906134046-99c247bbff6a // indirect
 	github.com/midzer/tobii v2.5.0+incompatible // indirect
-	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20240912085236-82dcc1df1d18 // indirect
+	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20240912093158-19fef9dc2cf4 // indirect
 	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )

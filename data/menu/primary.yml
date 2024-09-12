@@ -19,3 +19,4 @@ links:
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true
+    is_highlighted: true

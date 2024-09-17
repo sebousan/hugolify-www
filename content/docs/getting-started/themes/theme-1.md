@@ -20,7 +20,7 @@ icon: 1-circle
 ```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-1
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme # Core theme
 ```
 
 ## Customize sass?

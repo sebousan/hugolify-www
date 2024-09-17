@@ -23,13 +23,21 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Customize sass?
+
 ### Import sass
 
 {{< alert text="`/assets/sass/main.sass`" state="light" >}}
 
 ```sass
+// Core Theme
+@import "hugolify-theme"
+
 // Theme
 @import "hugolify-theme-2"
+
+// Site
+// Your sass files import
 ```
 
 ## Repository

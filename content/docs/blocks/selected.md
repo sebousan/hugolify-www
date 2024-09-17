@@ -10,6 +10,7 @@ icon: check-all
 blocks:
   - type: selected-*  // [selected-posts, selected-publications, selected-products…]
     section: * // [posts, publications, products…]
+    layout: '' // grid (default) or list
     heading: {}
     items: [] // list of slugs
     show_more: false // boolean

@@ -10,7 +10,6 @@ icon: credit-card-2-front
 blocks:
   - type: pushes
     heading: {}
-    layout: '' // grid (default) or carousel
     column: '' // [1…2]
     items:
       title: '' // string
@@ -23,6 +22,8 @@ blocks:
       background_color: '' // color
       color: '' // color
       cta: {}
+    layout: '' // grid (default) or carousel
+    carousel: {} // object (only if carousel layout)
     background: false
 ```
 

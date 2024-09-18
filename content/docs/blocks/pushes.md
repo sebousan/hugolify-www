@@ -10,6 +10,7 @@ icon: credit-card-2-front
 blocks:
   - type: pushes
     heading: {}
+    layout: '' // grid (default) or carousel
     column: '' // [1…2]
     items:
       title: '' // string

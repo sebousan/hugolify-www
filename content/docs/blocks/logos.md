@@ -23,7 +23,8 @@ blocks:
 
 ## Examples
 
-{{< alert text="Not available" state="danger" >}}
+- {{< blank_link link="https://demo.hugolify.io/blocks/logos/" text="Demo visual renderer" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/logos.md" text="Demo content file on Github" >}}
 
 ## Files
 

@@ -22,8 +22,8 @@ blocks:
         image:
           src: '' // string
           alt: '' // string
-    layout: '' // [grid, carousel]
-    carousel: {} // object
+    layout: '' // grid (default) or carousel
+    carousel: {} // object (only if carousel layout)
     background: false
 ```
 

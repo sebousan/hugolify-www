@@ -16,8 +16,8 @@ blocks:
     heading: {}
     layout: '' // grid (default) or carousel
     items: []
-    layout: '' // [grid, carousel]
-    carousel: {} // object
+    layout: '' // grid (default) or carousel
+    carousel: {} // object (only if carousel layout)
     background: false
 ```
 

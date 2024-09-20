@@ -13,11 +13,13 @@ In Hugo you can override files. If you add the same file name in the same direct
 
 ### Variables
 
-A variables file in the abstracts folder allows to add bootstrap variables. {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss" text="Boostrap 5 variables available list on Github" >}}.
+Variables files in the abstracts folder allows to add custom variables or bootstrap variables. {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss" text="Boostrap 5 variables available list on Github" >}}.
 
 ```yml
 abstract
-  _variables.sass
+  _variables.sass # bootstrap variables override for Hugolify
+  _variables-site.sass # specific for your website
+  _variables.default.sass # Hugolify core variables, do not override it
 ```
 
 ### File override

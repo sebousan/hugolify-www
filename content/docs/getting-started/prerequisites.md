@@ -22,11 +22,3 @@ brew install hugo
 Bootstrap in version 5.3 is used to support the theme.
 
 {{< blank_link link="https://www.getbootstrap.com/" text="https://www.getbootstrap.com" >}}
-
-## Decap CMS
-
-{{< blank_link link="https://www.decapcms.com/" text="https://www.decapcms.com" >}}
-
-## Netlify
-
-{{< blank_link link="https://www.netlify.com/" text="https://www.netlify.com" >}}

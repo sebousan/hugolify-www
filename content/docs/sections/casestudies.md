@@ -4,10 +4,6 @@ description: Present case studies with blocks of content.
 icon: book
 ---
 
-## Example
-
-- {{< blank_link link="https://demo.hugolify.io/case-studies/" text="Demo visual renderer" >}}
-
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -36,3 +32,7 @@ imports:
 ## Decap CMS
 
 {{< alert text="Available" state="success" >}}
+
+## Example
+
+- {{< blank_link link="https://demo.hugolify.io/case-studies/" text="Demo visual renderer" >}}

@@ -43,7 +43,7 @@ blocks:
 
   - type: editorial
     surtitle: Content
-    title: 12 types of content available
+    title: +10 types of content available
     text: Pages, persons, posts, projects… And taxonomies like categories, tags, types, authors…
     image:
       src: /images/uploads/150.Cubes.svg
@@ -54,7 +54,7 @@ blocks:
   - type: editorial
     direction: rtl
     surtitle: Modular
-    title: 25 blocks of content available
+    title: +25 blocks of content available
     text: Collection of most famous components for making an exiting website.
     image:
       src: /images/uploads/264.Teaming-Up.svg

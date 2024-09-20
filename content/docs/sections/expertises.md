@@ -32,3 +32,7 @@ imports:
 ## Decap CMS
 
 {{< alert text="Available" state="success" >}}
+
+## Example
+
+- {{< blank_link link="https://demo.lawyerify.io/expertises/" text="Demo visual renderer (on lawyerify in french)" >}}

@@ -21,13 +21,13 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-realestates-persons" text="Persons" >}} _Theme persons required_
+- [Persons](/docs/taxonomies/realestates-persons/)
 
-**Setup**
+**Setup with taxonomies example**
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-realestates-persons
   - path: github.com/hugolify/hugolify-theme-realestates

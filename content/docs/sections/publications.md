@@ -4,10 +4,6 @@ description: Archiving of press releases.
 icon: newspaper
 ---
 
-## Example
-
-- {{< blank_link link="https://demo.hugolify.io/publications/" text="Demo visual renderer" >}}
-
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -25,21 +21,22 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-categories" text="Categories" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-expertises" text="Expertises" >}} _Theme expertises required_
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-publications-persons" text="Persons" >}} _Theme persons required_
+- [Categories](/docs/taxonomies/publications-categories/)
+- [Expertises](/docs/taxonomies/publications-expertises/)
+- [Persons](/docs/taxonomies/publications-persons/)
 
-**Setup**
+**Setup with multiple taxonomies example**
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-publications-categories
   - path: github.com/hugolify/hugolify-theme-publications-expertises
   - path: github.com/hugolify/hugolify-theme-publications-persons
   - path: github.com/hugolify/hugolify-theme-publications
   - path: github.com/hugolify/hugolify-theme-persons
+  - path: github.com/hugolify/hugolify-theme-expertises
   - path: github.com/hugolify/hugolify-theme
 ```
 
@@ -56,3 +53,7 @@ imports:
 ## Decap CMS
 
 {{< alert text="Available" state="success" >}}
+
+## Example
+
+- {{< blank_link link="https://demo.hugolify.io/publications/" text="Demo visual renderer" >}}

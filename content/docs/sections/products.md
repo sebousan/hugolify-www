@@ -4,10 +4,6 @@ description: Description, price, variants.
 icon: box
 ---
 
-## Example
-
-- {{< blank_link link="https://demo-products--hugolify-demo.netlify.app/" text="Demo visual renderer" >}}
-
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -25,14 +21,14 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-categories" text="Categories" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-tags" text="Tags" >}}
+- [Categories](/docs/taxonomies/products-categories/)
+- [Tags](/docs/taxonomies/products-tags/)
 
-**Setup**
+**Setup with multiple taxonomies example**
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-products-categories
   - path: github.com/hugolify/hugolify-theme-products-tags
@@ -53,3 +49,7 @@ imports:
 ## Decap CMS
 
 {{< alert text="Available" state="success" >}}
+
+## Example
+
+- {{< blank_link link="https://demo-products--hugolify-demo.netlify.app/" text="Demo visual renderer" >}}

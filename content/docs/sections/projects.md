@@ -25,14 +25,14 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects-tags" text="Tags" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects-types" text="Types" >}}
+- [Tags](/docs/taxonomies/projects-tags/)
+- [Types](/docs/taxonomies/projects-types/)
 
-**Setup**
+**Setup with multiple taxonomies example**
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-projects-tags
   - path: github.com/hugolify/hugolify-theme-projects-types

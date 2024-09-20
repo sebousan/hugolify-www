@@ -4,10 +4,6 @@ description: News about your business.
 icon: file-earmark-text
 ---
 
-## Example
-
-- {{< blank_link link="https://demo.hugolify.io/news/" text="Demo visual renderer" >}}
-
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -25,20 +21,19 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-authors" text="Authors" >}} _Theme persons required_
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-categories" text="Categories" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-expertises" text="Expertises" >}} _Theme expertises required_
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-posts-tags" text="Tags" >}}
+- [Authors](/docs/taxonomies/posts-authors/)
+- [Categories](/docs/taxonomies/posts-categories/)
+- [Expertises](/docs/taxonomies/posts-expertises/)
+- [Tags](/docs/taxonomies/posts-tags/)
 
-**Setup**
+**Setup with multiple taxonomies example**
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
-```go-html-template
+```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-posts-authors
   - path: github.com/hugolify/hugolify-theme-posts-categories
-  - path: github.com/hugolify/hugolify-theme-posts-expertises
   - path: github.com/hugolify/hugolify-theme-posts-tags
   - path: github.com/hugolify/hugolify-theme-posts
   - path: github.com/hugolify/hugolify-theme-persons
@@ -58,3 +53,7 @@ imports:
 ## Decap CMS
 
 {{< alert text="Available" state="success" >}}
+
+## Example
+
+- {{< blank_link link="https://demo.hugolify.io/news/" text="Demo visual renderer" >}}

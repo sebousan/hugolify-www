@@ -1,6 +1,6 @@
 ---
 title: Setup
-description: How add content and modules.
+description: How to add content and modules.
 weight: 4
 icon: sliders
 ---
@@ -20,7 +20,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-netlify-cms
+- path: github.com/hugolify/hugolify-decap-cms
 ```
 
 ### Add modules
@@ -43,7 +43,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-netlify-cms
+- path: github.com/hugolify/hugolify-decap-cms
 ```
 
 #### Example 2
@@ -61,7 +61,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-netlify-cms
+- path: github.com/hugolify/hugolify-decap-cms
 ```
 
 ## Content

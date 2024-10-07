@@ -10,14 +10,14 @@ icon: images
 blocks:
   - type: images
     heading: {}
-    items:
-      image:
-        src: '' // string
+    images: []
+      - src: '' // string
         alt: '' // string
         legend: '' // string
         credit: '' // markdown
-        half: false '' // boolean
-    background: false '' // boolean
+        screenshot: false // boolean
+        half: false // boolean
+    background: false // boolean
 ```
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 title: Selected
-description: Displays a selection of items sections
+description: Displays a selection of items from a sections
 icon: check-all
 ---
 

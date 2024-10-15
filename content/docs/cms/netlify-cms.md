@@ -1,7 +1,7 @@
 ---
 title: Netlify CMS
 description: Open-source content management Git-based.
-weight: 1
+weight: 3
 image:
   src: /images/uploads/logo-netlify-cms.png
 ---

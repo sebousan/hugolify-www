@@ -1,7 +1,7 @@
 ---
 title: Sveltia CMS
 description: Open-source content management Git-based.
-weight: 2
+weight: 4
 image:
   src: /images/uploads/logo-sveltia-picto.png
 ---

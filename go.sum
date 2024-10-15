@@ -4,8 +4,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-theme v1.18.1 h1:AgoZvI76i+/VK9taVB+M8AlgNqUvHEKtu0ir8Ll3oGw=
 github.com/hugolify/hugolify-theme v1.18.1/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20241009104536-37f9ff9d8d0e h1:uWPHdg+uzFGcT+/PIuCZ3DvizascfoHo5rdy1SPZHZ0=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20241009104536-37f9ff9d8d0e/go.mod h1:gcGqAdSQGECDxmLeS5BD0FxXeyNwvYblI7qZP7iWQ8k=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20241015155727-a0c7caf91553 h1:cSROCLDr4Sra4jrQnGoMSpWswLEbBaG9EliBVvFBLwM=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20241015155727-a0c7caf91553/go.mod h1:gcGqAdSQGECDxmLeS5BD0FxXeyNwvYblI7qZP7iWQ8k=
 github.com/midzer/tobii v2.5.0+incompatible h1:Gg3r5Zp0M6shS70NVGHALUgfw0sPtk3YHRjfYHbOUbo=
 github.com/midzer/tobii v2.5.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20241015071607-632de2451ac0 h1:7dbJqI22DhkZpAXgJW7jUWJK9H7x3asuX1XOSQRWleg=

@@ -41,6 +41,9 @@ docs:
   - {{< blank_link link="https://github.com/hugolify/hugolify-theme-docs/blob/main/assets/sass/components/_doc.sass" text="Item component" >}}
   - {{< blank_link link="https://github.com/hugolify/hugolify-theme-docs/blob/main/assets/sass/components/_docs.sass" text="Items component" >}}
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="danger" >}}
+- Hugolify Admin {{< badge text="Available" state="success" >}}
+- Hugolify Decap CMS {{< badge text="Not available" state="danger" >}}
+- Hugolify Netlify CMS {{< badge text="Not available" state="danger" >}}
+- Hugolify Sveltia CMS {{< badge text="Not available" state="danger" >}}

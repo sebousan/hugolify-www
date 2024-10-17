@@ -23,6 +23,9 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/timeline.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_timeline.sass" text="SASS file" >}}
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="danger" >}}
+- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
+- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Not available" state="danger" >}}
+- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Not available" state="danger" >}}
+- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Not available" state="danger" >}}

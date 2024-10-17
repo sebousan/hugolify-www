@@ -14,7 +14,6 @@ Displays a video element.
 blocks:
   - type: logos
     heading: {}
-    layout: '' // grid (default) or carousel
     items: []
     layout: '' // grid (default) or carousel
     carousel: {} // object (only if carousel layout)
@@ -32,10 +31,13 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_logos.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/carousel.js" text="JS file" >}}
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="danger" >}}
+- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
+- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Not available" state="danger" >}}
+- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Not available" state="danger" >}}
+- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Not available" state="danger" >}}
 
-## Related link
+## Carousel documentation
 
 - {{< blank_link link="https://splidejs.com/" text="Splide JS" >}}

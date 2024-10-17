@@ -30,9 +30,12 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/js/blocks/instagram.js" text="JS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/instagram.js" text="Decap CMS file" >}}
 
-## Decap CMS
+## CMS
 
-{{< alert text="Available" state="success" >}}
+- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
+- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Available" state="success" >}}
+- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
+- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}
 
 ## Related link
 

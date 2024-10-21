@@ -47,8 +47,8 @@ main.sass
 The HTML files override is possible by keeping the same tree structure.
 
 ```yml
-layout
-  partial
+layouts
+  partials
     posts
       item.html
 ```

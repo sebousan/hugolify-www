@@ -14,14 +14,12 @@ blocks:
     items:
       title: '' // string
       text: '' // string
-      image:
-        src: '' // string
-        alt: '' // string
-        isLogo: false // boolean
+      cta: {}
+      image: {}
       offset: '' // [start, end, center]
+      card: false // boolean
       background_color: '' // color
       color: '' // color
-      cta: {}
     layout: '' // grid (default) or carousel
     carousel: {} // object (only if carousel layout)
     background: false

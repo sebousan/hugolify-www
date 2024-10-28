@@ -5,6 +5,10 @@ weight: 3
 icon: puzzle
 ---
 
+## List of Hugolify blocks
+
+{{< button text="See Hugolify blocks on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/blocks" blank="true" >}}
+
 ## Add or remove blocks
 
 All blocks are available by default but if you want hide or add your blocks, you can do it:
@@ -19,8 +23,6 @@ params:
         - chart
         # …
 ```
-
-{{< button text="List of Hugolify blocks" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/blocks" blank="true" >}}
 
 
 ## Add or remove fields in blocks

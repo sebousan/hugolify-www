@@ -5,6 +5,10 @@ weight: 4
 icon: input-cursor-text
 ---
 
+## List of Hugolify fields 
+
+{{< button text="See list of Hugolify fields on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}
+
 ## Add or remove fields in blocks
 
 ```yml
@@ -17,8 +21,6 @@ params:
         - title
         - text_markdown
 ```
-
-{{< button text="List of Hugolify fields" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}
 
 ## Create or override a field
 

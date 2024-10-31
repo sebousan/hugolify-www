@@ -20,7 +20,7 @@ blocks:
       surtitle: Ethical
       title: A sustainable open-source framework for websites
     items:
-      - title: Accessible first
+      - title: Accessibility first
         text: Code ready, keyboard navigation…
         image:
           src: /images/uploads/342.Take-Care.svg

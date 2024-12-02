@@ -4,9 +4,11 @@ description: Open-source content management Git-based.
 weight: 3
 image:
   src: /images/uploads/logo-netlify-cms.png
+status:
+  text: Deprecated CMS
+  state: warning
 ---
-
-{{< alert text="Deprecated CMS" state="warning" >}}
+{{< badge text="Deprecated CMS" state="warning" >}}
 
 ## Setup
 

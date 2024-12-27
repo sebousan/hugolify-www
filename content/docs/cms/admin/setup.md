@@ -24,20 +24,31 @@ imports:
 ```yml
 # Default params
 admin:
+  branch: main # optional, default "main"
   cms: decapcms # [decapcms, sveltiacms, staticcms, netlifycms] 
   config:
-    id: true # use ID for dir/name files and relation 
+    id: true # use ID for dir/name files and relation
+  git: git-gateway # optional, default "git-gateway"
   i18n:
     default_locale: en # master lang for an i18n website 
     locales: false # "[en,fr]" for an i18n website
   media:
+    # Optional cloud settings [start]
+    cloud:
+      name: cloudinary # or uploadcare
+      cloud_name: # your cloudinary cloud name
+      api_key: # your cloudinary api key
+      publicKey: # your uploadcare public api key
+    # Optional cloud settings [end] 
     max_file_size: 700000 # 700ko
     video_max_file_size: 5000000 # 5Mo
   nested:
-    depth: 10 # set minimum 2
+    depth: 2 # set minimum 2 
   netlify:
     identity: true # Add Netlify identity script
   preview: false
+  repo: # optional
+
 ```
 
 ## CMS language

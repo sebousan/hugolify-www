@@ -18,9 +18,10 @@ params:
   admin:
     blocks:
       # Array of available blocks
-      available:
+      enable:
         - alert
-        - chart
+        - cta
+        - editorial
         # …
 ```
 
@@ -36,6 +37,7 @@ params:
       paragraph:
         - title
         - text_markdown
+        # …
 ```
 
 {{< button text="List of Hugolify fields" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}

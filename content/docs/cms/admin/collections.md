@@ -21,6 +21,7 @@ admin:
     # e.g. set to false to disable posts even if you load hugolify-theme-posts
     posts:
       enable: false
+    # …
 ```
 
 ## Override fields avalaible for a collection
@@ -37,7 +38,7 @@ admin:
         - description
         - featured_image
         - body
-        […]
+        # …
 ```
 
 ## Create or override a collection

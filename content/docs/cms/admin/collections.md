@@ -7,17 +7,37 @@ icon: collection
 
 Collections are automatically added based on Hugolify modules added ([Sections](/docs/sections/)) or ([Taxonomies](/docs/taxonomies/))
 
-## Add or remove collections
+## Enable or disable collections
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 admin:
   collections:
-    indexes: true
-    pages: true
+    indexes:
+      enable: true
+    pages:
+      enable: true
     # e.g. set to false to disable posts even if you load hugolify-theme-posts
-    posts: false 
+    posts:
+      enable: false
+```
+
+## Override fields avalaible for a collection
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      fields:
+        - is_draft
+        - title_page
+        - description
+        - featured_image
+        - body
+        […]
 ```
 
 ## Create or override a collection

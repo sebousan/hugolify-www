@@ -25,15 +25,15 @@ imports:
 # Default params
 admin:
   branch: main # optional, default "main"
-  cms: decapcms # [decapcms, sveltiacms, staticcms, netlifycms] 
+  cms: decapcms # optional, [decapcms, sveltiacms, staticcms, netlifycms] 
   config:
     id: true # use ID for dir/name files and relation
-  git: git-gateway # optional, default "git-gateway"
+  git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
   i18n:
     default_locale: en # master lang for an i18n website 
     locales: false # "[en,fr]" for an i18n website
   media:
-    # Optional cloud settings [start]
+    # Optional cloud settings [start], not supported for Sveltia CMS
     cloud:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
@@ -43,10 +43,11 @@ admin:
     max_file_size: 700000 # 700ko
     video_max_file_size: 5000000 # 5Mo
   nested:
-    depth: 2 # set minimum 2 
+    depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
   netlify:
     identity: true # Add Netlify identity script
   preview: false
+  publish_mode: simple # optional, default "simple"
   repo: # optional
 
 ```

@@ -41,6 +41,7 @@ admin:
       publicKey: # your uploadcare public api key
     # Optional cloud settings [end] 
     max_file_size: 700000 # 700ko
+    specific_filter: false # set true to add a selected filter by image
     video_max_file_size: 5000000 # 5Mo
   nested:
     depth: 2 # optional, set minimum 2, not supported for Sveltia CMS

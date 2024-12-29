@@ -3,7 +3,7 @@ title: Decap CMS
 description: Open-source content management Git-based.
 weight: 2
 image:
-  src: /images/uploads/logo-decap-picto.png
+  src: /images/uploads/logo-decap-cms.png
 ---
 
 

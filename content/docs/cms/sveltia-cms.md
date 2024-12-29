@@ -3,7 +3,7 @@ title: Sveltia CMS
 description: Open-source content management Git-based.
 weight: 4
 image:
-  src: /images/uploads/logo-sveltia-picto.png
+  src: /images/uploads/logo-sveltia-cms.png
 ---
 
 Sveltia CMS is a Git-based lightweight headless CMS under active development as a modern, quick replacement for Decap CMS. 

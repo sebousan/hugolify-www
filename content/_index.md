@@ -3,7 +3,7 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify
-  title: Framework Hugo with Bootstrap and Decap CMS
+  title: Framework Hugo with Bootstrap and Decap/Sveltia CMS
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website.
   ctas:

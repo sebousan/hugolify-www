@@ -5,9 +5,6 @@ weight: 1
 icon: sliders
 ---
 
-{{< alert text="**Beta, still under development**" state="danger" >}}
-
-
 ## Install
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
@@ -27,7 +24,7 @@ admin:
   branch: main # optional, default "main"
   cms: decapcms # optional, [decapcms, sveltiacms, staticcms, netlifycms] 
   config:
-    id: true # use ID for dir/name files and relation
+    id: false # use ID for dir/name files and relation
   git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
   i18n:
     default_locale: en # master lang for an i18n website 

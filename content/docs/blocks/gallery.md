@@ -10,7 +10,8 @@ icon: grid-3x2-gap
 blocks:
   - type: gallery
     heading: {}
-    column: 4 // number
+    column: 4 // number, columns by row in desktop
+    ratio: 1 // number, ratio of thumbnails format
     gallery:
       image: {}
     background: false
@@ -39,9 +40,9 @@ blocks:
 
 - {{< blank_link link="https://midzer.github.io/tobii" text="Tobii JS library" >}}
 
-## PosCSS
+## PostCSS
 
-Add tobii class in deep safelist of {{< blank_link link="https://github.com/Hugolify/hugolify-template/blob/main/postcss.config.js text="postcss.config.js" >}}.
+Add tobii class in deep safelist of {{< blank_link link="https://github.com/Hugolify/hugolify-template/blob/main/postcss.config.js" text="postcss.config.js" >}}.
 
 ```js
 safelist: {

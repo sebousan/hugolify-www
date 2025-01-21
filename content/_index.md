@@ -131,9 +131,9 @@ blocks:
       - cta:
           blank: true
           text: Discover repository
-          url: https://github.com/hugolify/hugolify-decap-cms
-        title: hugolify-decap-cms
-        text: Module Decap CMS for Hugolify
+          url: https://github.com/hugolify/hugolify-admin
+        title: hugolify-admin
+        text: Module Admin (Decap/Sveltia CMS) for Hugolify
         icon: git
 
   - type: embed

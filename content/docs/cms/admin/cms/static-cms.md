@@ -12,6 +12,10 @@ status:
 
 ## Setup
 
+- [Hugolify-admin](../setup/)
+
+## Enable Static CMS
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml

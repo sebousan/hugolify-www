@@ -5,11 +5,9 @@ weight: 4
 image:
   src: /images/uploads/logo-sveltia-cms.png
 ---
+{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Sveltia CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/sveltia-cms/)" state="danger" >}}
 
-Sveltia CMS is a Git-based lightweight headless CMS under active development as a modern, quick replacement for Decap CMS. 
-
-
-{{< alert text="[Hugolify Sveltia CMS is a Hugolify Decap CMS based](../decap-cms)" state="warning" >}}
+Sveltia CMS is a Git-based lightweight headless CMS under active development as a modern, quick replacement for Decap CMS. [Hugolify Sveltia CMS is a Hugolify Decap CMS based](../decap-cms).
 
 ## Setup
 
@@ -24,11 +22,10 @@ imports:
 
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="https://github.com/sveltia/sveltia-cms" >}}
 
-
 ## Not supported featured
 
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#current-limitations" text="Current limitations" >}}
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#features-not-to-be-implemented" text="Features not to be implemented" >}}
 
 ## Module
-- {{< blank_link link="https://github.com/hugolify/hugolify-sveltia-cms" text="Hugolify Sveltia CMS" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-sveltia-cms" text="Hugolify Sveltia CMS" >}} {{< alert text="Archived repository" state="warning" >}}

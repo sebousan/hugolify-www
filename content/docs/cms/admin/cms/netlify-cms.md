@@ -18,3 +18,7 @@ status:
 admin:
   cms: netlifycms
 ```
+
+## Documention
+
+- {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}

@@ -8,6 +8,9 @@ status:
   text: Deprecated CMS
   state: warning
 ---
+{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Netlify CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/netlify-cms/)" state="danger" >}}
+
+
 {{< badge text="Deprecated CMS" state="warning" >}}
 
 ## Setup
@@ -19,5 +22,12 @@ imports:
   - path: github.com/hugolify/hugolify-netlify-cms
 ```
 
+## Documention
+
+- {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}
+
 ## Module
+
+{{< badge text="Archived repository" state="warning" >}}
+
 - {{< blank_link link="https://github.com/hugolify/hugolify-netlify-cms" text="Hugolify Netlify CMS" >}}

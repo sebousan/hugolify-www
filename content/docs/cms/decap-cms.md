@@ -5,6 +5,7 @@ weight: 2
 image:
   src: /images/uploads/logo-decap-cms.png
 ---
+{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Decap CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/decap-cms/)" state="danger" >}}
 
 
 ## Setup
@@ -98,4 +99,4 @@ export const locale = "fr"; // or 'en'
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
 
 ## Module
-- {{< blank_link link="https://github.com/hugolify/hugolify-decap-cms" text="Hugolify Decap CMS" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-decap-cms" text="Hugolify Decap CMS" >}} {{< badge text="Archived repository" state="warning" >}}

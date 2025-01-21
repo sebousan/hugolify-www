@@ -8,6 +8,11 @@ image:
 
 ## Setup
 
+- [Hugolify-admin](../setup/)
+
+## Enable Decap CMS
+
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml

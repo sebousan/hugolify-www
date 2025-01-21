@@ -38,3 +38,13 @@ blocks:
 ## Related link
 
 - {{< blank_link link="https://midzer.github.io/tobii" text="Tobii JS library" >}}
+
+## PosCSS
+
+Add tobii class in deep safelist of {{< blank_link link="https://github.com/Hugolify/hugolify-template/blob/main/postcss.config.js text="postcss.config.js" >}}.
+
+```js
+safelist: {
+  deep: [/^tobii/]
+}
+```

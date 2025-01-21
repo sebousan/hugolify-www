@@ -8,6 +8,7 @@ status:
   text: Deprecated CMS
   state: warning
 ---
+{{< badge text="Deprecated CMS" state="warning" >}}
 
 ## Setup
 

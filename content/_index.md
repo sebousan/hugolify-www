@@ -109,9 +109,11 @@ blocks:
   - type: informations
     column: 3
     heading:
-      surtitle: open-source
-      title: 3 main Github repositories
-      text: Hugolify is available on Github, template relies on two modules.
+      surtitle: Github
+      title: 3 main repositories
+      text: |-
+        Hugolify is available on Github, template relies on two modules.\
+        And more sixty Hugolify repositories…
     background: true
     items:
       - cta:
@@ -136,13 +138,17 @@ blocks:
         text: Module Admin (Decap/Sveltia CMS) for Hugolify
         icon: git
 
-  - type: embed
-    heading:
-      surtitle: repositories
-      title: And more fifty Hugolify repositories
-      text: Templates, themes, modules…
+  - type: cta
     background: true
-    embed: >-
-      <script async defer src="https://buttons.github.io/buttons.js"></script>
-      <a class="github-button" href="https://github.com/hugolify/hugolify-template" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star hugolify/hugolify-template on GitHub">Star</a>
+    heading:
+      surtitle: Open-source
+      title: Support Us
+      text: Support our work and help us improve this project by becoming a sponsor or giving us a star on our GitHub repositories.
+    ctas:
+      - text: Become a sponsor
+        url: https://github.com/sponsors/sebousan
+        blank: true
+      - text: Star on GitHub
+        url: https://github.com/Hugolify/hugolify-template
+        blank: true
 ---

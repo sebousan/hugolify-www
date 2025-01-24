@@ -16,7 +16,10 @@ icon: window-fullscreen
 | Lawyerify | {{< blank_link link="https://www.lawyerify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/lawyerify-www" text="repository" >}} |
 | Le 52 | {{< blank_link link="https://www.le52-avocats.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/le52-avocats" text="repository" >}} |
 | Le Noailles | {{< blank_link link="https://www.lenoailles.fr" text="website" >}} | {{< blank_link link="https://github.com/sebousan/lenoailles" text="repository" >}} |
+| Medicalify | {{< blank_link link="https://www.medicalify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/medicalify-www" text="repository" >}} |
 | Miriam Lasserre | {{< blank_link link="https://www.miriamlasserre.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/miriamlasserre" text="repository" >}} |
+| Nicolas Gaillot | {{< blank_link link="https://www.nicolasgaillot.fr" text="website" >}} | |
+| Realestatify | {{< blank_link link="https://www.realestatify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/realestatify-www" text="repository" >}} |
 | Sébastien Moulène | {{< blank_link link="https://www.sebousan.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/sebastienmoulene" text="repository" >}} |
 | Tdesign Architecture | {{< blank_link link="https://www.tdesignarchitecture.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/tdesign-architecture" text="repository" >}} |
 | Un Cinq | {{< blank_link link="https://uncinq.dev" text="website" >}} | {{< blank_link link="https://github.com/sebousan/uncinq.dev" text="repository" >}} |

@@ -19,6 +19,14 @@ Create your repository with Hugolify template
 git clone git@github.com:hugolify/hugolify-template.git
 ```
 
+## Rename module
+{{< alert text="`/go.mod`" state="light" >}}
+
+```yml
+# rename github.com/hugolify/hugolify-template to your repository
+module github.com/hugolify/hugolify-template
+```
+
 ## Packages install
 
 With yarn

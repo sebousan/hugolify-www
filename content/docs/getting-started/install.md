@@ -5,15 +5,13 @@ weight: 2
 icon: gear
 ---
 
-## Github template
+## Use Github template
 
-### Use template
-
-Create your repository with Hugolify template
+Create your repository with Hugolify template **(recommended)**
 
 {{< button url="https://github.com/hugolify/hugolify-template/generate" blank="true" text="Use Github template" >}}
 
-### Or clone repository
+Or clone repository
 
 ```yml
 git clone git@github.com:hugolify/hugolify-template.git

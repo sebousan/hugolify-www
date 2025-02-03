@@ -10,6 +10,11 @@ icon: database
 To create user accounts for Netlify CMS you must activate the Identify Netlify.
 {{< alert text="`Site settings > Identity > Enable`" state="light" >}}
 
+## Git Gateway
+
+To connect Netlify CMS to the Github API, it must be activated.
+{{< alert text="`Site settings > Identity > Services > Enable Git Gateway`" state="light" >}}
+
 ## Emails notifications
 
 To redirect each email template to those in the repository.
@@ -21,40 +26,3 @@ Then modify the path:
 - Confirmation template: `/admin/emails/confirmation.html`
 - Recovery template: `/admin/emails/recovery.html`
 - Email change template: `/admin/emails/email-change.html`
-
-## Git Gateway
-
-To connect Netlify CMS to the Github API, it must be activated.
-{{< alert text="`Site settings > Identity > Services > Enable Git Gateway`" state="light" >}}
-
-## Large Media
-
-{{< alert text="Netlify LM doesn’t support WebP" state="danger" >}}
-
-### Git Attributes
-
-create .gitattributes
-
-```yml
-assets/images/upload/** filter=lfs diff=lfs merge=lfs -text
-```
-
-### Large Media setup
-
-1/ Login to Netlify:
-
-```yml
-netlify login
-```
-
-2/ Link your local repository to your site on Netlify:
-
-```yml
-netlify link
-```
-
-3/ Run the following command for Large Media:
-
-```yml
-netlify lm:setup
-```

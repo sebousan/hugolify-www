@@ -18,6 +18,7 @@ blocks:
       image: {}
       offset: '' // [start, end, center]
       card: false // boolean
+      darken: false // boolean
       background_color: '' // color
       color: '' // color
     layout: '' // grid (default) or carousel

@@ -3,6 +3,23 @@ title: Address
 description: Displays an formating address.
 icon: map
 ---
+## Arguments
+
+**card** {{< badge state="light" text="Boolean" >}}\
+Set true to add card class
+
+**direction** {{< badge state="light" text="Boolean" >}}\
+Set true to add a direction link to Google Map
+
+**address** {{< badge state="light" text="Map" >}}\
+Object of address values
+
+## Usage
+
+```go-html-template
+{{ partial "commons/address" $map }}
+```
+
 ## Example
 
 ### Usage
@@ -33,18 +50,6 @@ icon: map
     <a class="direction" href="https://www.google.fr/maps/dir//24 Rue de Commandant Guilbaud 75016 Paris France" target="_blank" title="How to go? - external link">How to go?</a>
   </div>
 </address>
-```
-
-## Datas
-
-```yml
-card: false // Display this component with like a card
-direction: false // Add a direction Google Map link 
-address:
-  street: ""
-  zipcode: ""
-  city: ""
-  country: ""
 ```
 
 ## Related link

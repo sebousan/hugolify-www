@@ -1,7 +1,7 @@
 ---
 title: Contributes
 description: Help us to improve Hugolify.
-weight: 10
+weight: 12
 icon: people
 ---
 

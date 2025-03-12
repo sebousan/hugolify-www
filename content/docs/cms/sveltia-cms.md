@@ -28,4 +28,4 @@ imports:
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#features-not-to-be-implemented" text="Features not to be implemented" >}}
 
 ## Module
-- {{< blank_link link="https://github.com/hugolify/hugolify-sveltia-cms" text="Hugolify Sveltia CMS" >}} {{< alert text="Archived repository" state="warning" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-sveltia-cms" text="Hugolify Sveltia CMS" >}} {{< badge text="Deprecated repository" state="warning" >}}

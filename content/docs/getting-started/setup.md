@@ -20,7 +20,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-decap-cms
+- path: github.com/hugolify/hugolify-admin
 ```
 
 ### Add modules
@@ -43,7 +43,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-decap-cms
+- path: github.com/hugolify/hugolify-admin
 ```
 
 #### Example 2
@@ -61,7 +61,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
-- path: github.com/hugolify/hugolify-decap-cms
+- path: github.com/hugolify/hugolify-admin
 ```
 
 ## Content

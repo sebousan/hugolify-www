@@ -1,7 +1,7 @@
 ---
 title: Customization
 description: To replace or add style, structure, content…
-weight: 8
+weight: 10
 icon: tools
 ---
 

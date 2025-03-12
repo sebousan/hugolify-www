@@ -7,7 +7,7 @@ description: Secures the display of a string.
 
 - safeHTML
 - chomp
-- [CorrectPunctuation](../correctpunctuation/) `hugolify`
+- [CorrectPunctuation](../correctpunctuation/) {{< badge state="light" text="Hugolify" >}}
 
 ## Usage
 

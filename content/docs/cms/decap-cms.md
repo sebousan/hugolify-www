@@ -99,4 +99,4 @@ export const locale = "fr"; // or 'en'
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
 
 ## Module
-- {{< blank_link link="https://github.com/hugolify/hugolify-decap-cms" text="Hugolify Decap CMS" >}} {{< badge text="Archived repository" state="warning" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-decap-cms" text="Hugolify Decap CMS" >}} {{< badge text="Deprecated repository" state="warning" >}}

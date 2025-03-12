@@ -1,7 +1,7 @@
 ---
 title: Modules
 description: List of Hugolify modules.
-weight: 4
+weight: 5
 icon: git
 ---
 These Hugo modules allow you to structure the data correctly to have a dedicated CMS and a display corresponding to the type of content.
@@ -12,6 +12,7 @@ These Hugo modules allow you to structure the data correctly to have a dedicated
 * Docs: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-docs" text="hugolify-theme-docs" >}}
 * Events: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events" text="hugolify-theme-events" >}}
 * Expertises: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-expertises" text="hugolify-theme-expertises" >}}
+* Jobs: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-jobs" text="hugolify-theme-jobs" >}}
 * Pages: *in core theme*
 * Persons: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-persons" text="hugolify-theme-persons" >}}
 * Places: {{< blank_link link="https://github.com/Hugolify/hugolify-theme-places" text="hugolify-theme-places" >}}
@@ -42,4 +43,6 @@ These Hugo modules allow you to structure the data correctly to have a dedicated
 * Tags (projects): {{< blank_link link="https://github.com/Hugolify/hugolify-theme-projects-tags" text="hugolify-theme-projects-tags" >}}
 * Types (projects): {{< blank_link link="https://github.com/Hugolify/hugolify-theme-projects-types" text="hugolify-theme-projects-types" >}}
 
-{{< alert text="Check [setup page](/docs/getting-started/setup/) to how to use them" state="light" >}}
+## How to use 
+
+Check [setup page](/docs/getting-started/setup/) to how to use them.

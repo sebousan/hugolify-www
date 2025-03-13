@@ -1,7 +1,6 @@
 ---
 title: Static CMS
 description: Open-source content management Git-based.
-weight: 3
 image:
   src: /images/uploads/logo-static-cms.png
 status:

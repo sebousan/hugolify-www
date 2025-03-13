@@ -69,6 +69,7 @@ blocks:
     heading:
       surtitle: CMS
       title: Very simple content manager with Decap CMS
+      text: And Netlify CMS, Pages CMS, Static CMS and Sveltia CMS.
     figure:
       screenshot: true
       src: /images/uploads/admin-home.png
@@ -135,7 +136,7 @@ blocks:
           text: Discover repository
           url: https://github.com/hugolify/hugolify-admin
         title: hugolify-admin
-        text: Module Admin (Decap/Sveltia CMS) for Hugolify
+        text: Module Admin for Hugolify with the CMS of your choice
         icon: git
 
   - type: cta

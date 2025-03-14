@@ -1,8 +1,10 @@
 ---
 title: Netlify
 description: Identity, Git gateway…
-weight: 7
-icon: database
+image:
+  src: /images/uploads/logo-netlify-cms.png
+aliases:
+- /docs/getting-started/netlify/
 ---
 
 ## Identity

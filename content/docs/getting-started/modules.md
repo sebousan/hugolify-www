@@ -2,7 +2,7 @@
 title: Modules
 description: List of Hugolify modules.
 weight: 5
-icon: git
+icon: database-add
 ---
 These Hugo modules allow you to structure the data correctly to have a dedicated CMS and a display corresponding to the type of content.
 

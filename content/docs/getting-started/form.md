@@ -12,9 +12,7 @@ icon: input-cursor
 ```yml
 form:
   netlify: true # Set false to disable Netlify forms
-  fabform: false # Replace by the fabform id
-  formspree: false # Replace by the formspree id
-  kwes: false # Replace by the kwes id
+  action: false # Replace by URL from formspree, fabform, kwes…
 ```
 
 ## Services available

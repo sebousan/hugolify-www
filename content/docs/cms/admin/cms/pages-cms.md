@@ -1,6 +1,6 @@
 ---
 title: Pages CMS
-description: Open-source app for GitHub.
+description: Open-source content management Git-based (GitHub only).
 image:
   src: /images/uploads/logo-pages-cms.png
 ---

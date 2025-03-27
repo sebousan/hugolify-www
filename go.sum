@@ -4,12 +4,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.20.6 h1:b0Xxx+klazztVc6QX9T9d9KwkndMN7KXmA0W0vSQO+w=
-github.com/hugolify/hugolify-theme v1.20.6/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
-github.com/hugolify/hugolify-theme v1.20.7 h1:MIUba+PlcfmmwhpAdNFbExev8Uv2hYY5TGAoJO6Ucx0=
-github.com/hugolify/hugolify-theme v1.20.7/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20250317092718-0a7a255ddf31 h1:6NUf2ucvkcJC6qF16rIOgGgRPdM0Bj3ntjlClHlsvlc=
-github.com/hugolify/hugolify-theme-docs v0.0.0-20250317092718-0a7a255ddf31/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
+github.com/hugolify/hugolify-theme v1.20.8 h1:8Bx2FRsgmk0Tb/6aYhzDhGT7pUdPxINay/Uwu2nyV9I=
+github.com/hugolify/hugolify-theme v1.20.8/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20250327091916-48c0e122b3f6 h1:+PFYNYjOgS722sWjXHi5SMDXzSUnHW0hsX80CQwiUW0=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20250327091916-48c0e122b3f6/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
 github.com/midzer/tobii v2.7.3+incompatible h1:sGqThnLuckyPFKciIhQ66bG0joNTPXKKiovXlDo4pV8=
 github.com/midzer/tobii v2.7.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=

@@ -69,7 +69,7 @@ blocks:
     heading:
       surtitle: CMS
       title: Very simple content manager with Decap CMS
-      text: And Netlify CMS, Pages CMS, Static CMS and Sveltia CMS.
+      text: And Netlify CMS, Pages CMS, Static CMS, Sveltia CMS or Tina CMS.
     figure:
       screenshot: true
       src: /images/uploads/admin-home.png

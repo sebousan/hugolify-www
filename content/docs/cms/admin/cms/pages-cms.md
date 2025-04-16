@@ -21,9 +21,20 @@ admin:
   cms: pagescms
 ```
 
-## Documention
+## Build your `.pages.yml`
 
-- {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}
+Build a `config.yml`
+
+```
+yarn build
+```
+
+Then copy it
+
+{{< alert text="`/public/admin/config.yml`" state="light" >}}
+
+Create a `.pages.yml` to the root and commit it.
+
 
 ## Not supported featured
 
@@ -31,3 +42,8 @@ admin:
 - Cloud assets
 - i18n structure
 - Map Widget
+
+
+## Documention
+
+- {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}

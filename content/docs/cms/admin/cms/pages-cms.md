@@ -21,9 +21,9 @@ admin:
   cms: pagescms
 ```
 
-## Build your `.pages.yml`
+## Build your .pages.yml
 
-Build a `config.yml`
+Build a config.yml file
 
 ```bash
 yarn build
@@ -33,7 +33,9 @@ Then copy it
 
 {{< alert text="`/public/admin/config.yml`" state="light" >}}
 
-Create a `.pages.yml` to the root and commit it.
+Create a .pages.yml file to the root, paste config content and commit it.
+
+{{< alert text="`/.pages.yml`" state="light" >}}
 
 
 ## Not supported featured

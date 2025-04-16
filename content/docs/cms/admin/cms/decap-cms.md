@@ -14,7 +14,7 @@ image:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
-```yml
+```yaml
 admin:
   cms: decapcms
 ```

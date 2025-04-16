@@ -25,7 +25,7 @@ admin:
 
 Build a `config.yml`
 
-```
+```console
 yarn build
 ```
 

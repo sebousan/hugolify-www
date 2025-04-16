@@ -11,7 +11,7 @@ Check the Hugo documentation {{< blank_link link="https://gohugo.io/installation
 
 In macOS with brew
 
-```console
+```bash
 brew install hugo
 ```
 

@@ -13,14 +13,14 @@ Create your repository with Hugolify template **(recommended)**
 
 Or clone repository
 
-```yml
+```bash
 git clone git@github.com:hugolify/hugolify-template.git
 ```
 
 ## Rename module
 {{< alert text="`/go.mod`" state="light" >}}
 
-```yml
+```yaml
 # rename github.com/hugolify/hugolify-template to your repository
 module github.com/hugolify/hugolify-template
 ```
@@ -29,12 +29,12 @@ module github.com/hugolify/hugolify-template
 
 With yarn
 
-```yml
+```bash
 yarn
 ```
 
 With npm
 
-```yml
+```bash
 npm install
 ```

@@ -9,13 +9,13 @@ icon: terminal
 
 To launch Hugo project with livereload, available here: `http://localhost:1313/`
 
-```yml
+```bash
 yarn watch
 ```
 
 To launch Netlify/Decap CMS in localhost (in a second terminal), available here: `http://localhost:1313/admin/`
 
-```yml
+```bash
 yarn cms
 ```
 
@@ -23,7 +23,7 @@ yarn cms
 
 To build the project
 
-```yml
+```bash
 yarn build
 ```
 
@@ -31,13 +31,13 @@ yarn build
 
 ### Modules of your project
 
-```yml
+```bash
 yarn update
 ```
 
 ### Hugolify template
 
-```yml
+```bash
 git remote add template git@github.com:hugolify/hugolify-template.git
 git fetch --all
 git merge template/main --allow-unrelated-histories
@@ -47,6 +47,6 @@ git merge template/main --allow-unrelated-histories
 
 To clean modules of your project
 
-```yml
+```bash
 yarn clean
 ```

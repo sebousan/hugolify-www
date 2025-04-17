@@ -83,11 +83,17 @@ blocks:
       text: Decap CMS, Sveltia CMS, Pages CMS, Static CMS, Netlify CMS or Tina CMS.
     items:
       - src: /images/uploads/logo-decap-cms.svg
+        title: Decap CMS
       - src: /images/uploads/logo-sveltia-cms.png
+        title: Sveltia CMS
       - src: /images/uploads/logo-pages-cms.svg
+        title: Pages CMS
       - src: /images/uploads/logo-static-cms.svg
+        title: Static CMS
       - src: /images/uploads/logo-netlify.svg
+        title: Netlify CMS
       - src: /images/uploads/logo-tina-cms.png
+        title: Tina CMS
 
   - type: selected-docs
     section: docs

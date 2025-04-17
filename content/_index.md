@@ -84,16 +84,22 @@ blocks:
     items:
       - src: /images/uploads/logo-decap-cms.svg
         title: Decap CMS
+        url: /docs/cms/admin/cms/decap-cms/
       - src: /images/uploads/logo-sveltia-cms.png
         title: Sveltia CMS
+        url: /docs/cms/admin/cms/sveltia-cms/
       - src: /images/uploads/logo-pages-cms.svg
         title: Pages CMS
+        url: /docs/cms/admin/cms/pages-cms/
       - src: /images/uploads/logo-static-cms.svg
         title: Static CMS
+        url: /docs/cms/admin/cms/static-cms/
       - src: /images/uploads/logo-netlify.svg
         title: Netlify CMS
+        url: /docs/cms/admin/cms/netlify-cms/
       - src: /images/uploads/logo-tina-cms.png
         title: Tina CMS
+        url: /docs/cms/admin/cms/tina-cms/
 
   - type: selected-docs
     section: docs

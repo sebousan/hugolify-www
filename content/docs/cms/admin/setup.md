@@ -21,8 +21,10 @@ imports:
 ```yml
 # Default params
 admin:
+  auth:
+    netlify_identity: true # Add Netlify identity script
   branch: main # optional, default "main"
-  cms: decapcms # optional, [decapcms, sveltiacms, staticcms, netlifycms] 
+  cms: decapcms # optional, [decapcms, sveltiacms, pagescms, staticcms, netlifycms] 
   config:
     id: false # use ID for dir/name files and relation
   git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
@@ -30,6 +32,13 @@ admin:
     default_locale: en # master lang for an i18n website 
     locales: false # "[en,fr]" for an i18n website
   media:
+    media_folder: 'assets/images/uploads'
+    public_folder: '/images/uploads'
+    audio_max_file_size: 700000 # 700ko
+    max_file_size: 700000 # 700ko
+    pdf_max_file_size: 5000000 # 5Mo
+    specific_filter: false # set true to add a selected filter by image
+    video_max_file_size: 5000000 # 5Mo
     # Optional cloud settings [start], not supported for Sveltia CMS
     cloud:
       name: cloudinary # or uploadcare
@@ -37,17 +46,11 @@ admin:
       api_key: # your cloudinary api key
       publicKey: # your uploadcare public api key
     # Optional cloud settings [end] 
-    max_file_size: 700000 # 700ko
-    specific_filter: false # set true to add a selected filter by image
-    video_max_file_size: 5000000 # 5Mo
   nested:
     depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
-  netlify:
-    identity: true # Add Netlify identity script
   preview: false
   publish_mode: simple # optional, default "simple"
-  repo: # optional
-
+  repo: # optional, e.g "hugolify/hugolify-template"
 ```
 
 ## CMS language

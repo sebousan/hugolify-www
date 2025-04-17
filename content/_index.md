@@ -69,11 +69,25 @@ blocks:
     heading:
       surtitle: CMS
       title: Very simple content manager with Decap CMS
-      text: And Netlify CMS, Pages CMS, Static CMS, Sveltia CMS or Tina CMS.
+      text: Easy to customize and dedicated to site content.
     figure:
       screenshot: true
       src: /images/uploads/admin-home.png
       alt: Homepage screenshot of Hugolify Admin
+
+  - type: logos
+    background: true
+    column: 8
+    heading:
+      title: Available CMS for Hugo
+      text: Decap CMS, Sveltia CMS, Pages CMS, Static CMS, Netlify CMS or Tina CMS.
+    items:
+      - src: /images/uploads/logo-decap-cms.svg
+      - src: /images/uploads/logo-sveltia-cms.png
+      - src: /images/uploads/logo-pages-cms.svg
+      - src: /images/uploads/logo-static-cms.svg
+      - src: /images/uploads/logo-netlify.svg
+      - src: /images/uploads/logo-tina-cms.png
 
   - type: selected-docs
     section: docs

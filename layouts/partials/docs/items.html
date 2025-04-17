@@ -1,0 +1,11 @@
+{{- $pages := . -}}
+{{- if reflect.IsMap . -}}
+  {{- $pages = .pages -}}
+{{- end -}}
+<div class="docs">
+  {{ range $pages }}
+    <div {{- if .Params.large }} class="large"{{ end }}>
+      {{ partial "docs/item.html" . }}
+    </div>
+  {{ end }}
+</div>

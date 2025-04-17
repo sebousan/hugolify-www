@@ -2,7 +2,7 @@
 title: Netlify CMS
 description: Open-source content management Git-based.
 image:
-  src: /images/uploads/logo-netlify-cms.png
+  src: /images/uploads/logo-netlify-cms.svg
 status:
   text: Deprecated CMS
   state: warning

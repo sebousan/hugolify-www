@@ -2,7 +2,7 @@
 title: Pages CMS
 description: Open-source content management Git-based (GitHub only).
 image:
-  src: /images/uploads/logo-pages-cms.png
+  src: /images/uploads/logo-pages-cms.svg
 ---
 
 {{< alert text="Currently: we work on Pages CMS compatibility" state="danger" >}}
@@ -38,12 +38,16 @@ Create a .pages.yml file to the root, paste config content and commit it.
 {{< alert text="`/.pages.yml`" state="light" >}}
 
 
+## Beta supported
+- Blocks [(Not yet in production)](https://github.com/pages-cms/pages-cms/issues/200#issuecomment-2811807542)
+
+
 ## Not supported featured
 
-- Blocks [`wip`](https://github.com/pages-cms/pages-cms/issues/200#issuecomment-2811807542)
 - Cloud assets
 - i18n structure
 - Map Widget
+- Nested
 
 
 ## Documention

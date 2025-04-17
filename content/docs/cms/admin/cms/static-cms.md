@@ -2,7 +2,7 @@
 title: Static CMS
 description: Open-source content management Git-based.
 image:
-  src: /images/uploads/logo-static-cms.png
+  src: /images/uploads/logo-static-cms.svg
 status:
   text: Deprecated CMS
   state: warning

@@ -40,7 +40,7 @@ Create a .pages.yml file to the root, paste config content and commit it.
 
 ## Not supported featured
 
-- Blocks
+- Blocks `[wip](https://github.com/pages-cms/pages-cms/issues/200#issuecomment-2811807542)`
 - Cloud assets
 - i18n structure
 - Map Widget

@@ -7,6 +7,8 @@ aliases:
 - /docs/getting-started/netlify/
 ---
 
+{{< alert text="Only for Decap/Netlify/Static CMS" state="light" >}}
+
 ## Identity
 
 To create user accounts for Netlify CMS you must activate the Identify Netlify.

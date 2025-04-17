@@ -7,7 +7,7 @@ aliases:
 - /docs/getting-started/netlify/
 ---
 
-{{< alert text="Only for Decap/Netlify/Static CMS" state="light" >}}
+{{< alert text="Only for Decap/Netlify/Static CMS" state="warning" >}}
 
 ## Identity
 

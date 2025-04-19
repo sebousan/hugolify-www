@@ -112,6 +112,15 @@ blocks:
       - blocks
       - shortcodes
 
+  - type: selected-docs
+    section: docs
+    heading:
+      surtitle: docs
+      title: Thanks to our tutorials
+    items:
+      - tutorials/create-a-blog-with-hugolify
+      - tutorials/create-a-portfolio-with-hugolify
+
   - type: editorial
     surtitle: Web performance
     title: Discover performance and carbon emissions reports

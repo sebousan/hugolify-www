@@ -10,14 +10,10 @@ links:
         url: /docs/taxonomies/
       - title: Blocks
         url: /docs/blocks/
-      - title: Shortcodes
-        url: /docs/shortcodes/
-      - title: Codes
-        url: /docs/codes/
       - title: CMS
         url: /docs/cms/admin/
-      # - title: Showcase
-      #   url: /docs/showcase/
+      - title: Tutorials
+        url: /docs/tutorials/
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true

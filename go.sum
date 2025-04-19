@@ -6,6 +6,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-theme v1.22.3 h1:bfdsX9iv/W1hfqGLx3ltiaAL84nk5DQt9NQQvTiHtus=
 github.com/hugolify/hugolify-theme v1.22.3/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
+github.com/hugolify/hugolify-theme-casestudies v1.0.14 h1:WiT2LYFhtVq//7zXUt+vHTpbMfIZM3YfnygLHCROTmA=
+github.com/hugolify/hugolify-theme-casestudies v1.0.14/go.mod h1:onu4oRPTkQh3Up05X3V0urIaN0JyAx9NFijp6G3gs+M=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250414110621-6ca0d35be68d h1:xXqdS5OXxXuch95FD5y1oxAwF3Dvtj63MAk0e3/Lrgs=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250414110621-6ca0d35be68d/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
 github.com/midzer/tobii v2.7.3+incompatible h1:sGqThnLuckyPFKciIhQ66bG0joNTPXKKiovXlDo4pV8=

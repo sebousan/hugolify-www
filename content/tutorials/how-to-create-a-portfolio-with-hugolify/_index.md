@@ -1,8 +1,15 @@
 ---
 isPage: true
 draft: false
-title: Create a portfolio with Hugolify
-description: How to create a portfolio with projects and categories.
+title: How to create a portfolio with Hugolify
+description: Portfolio with projects and categories.
+image:
+  src: /images/uploads/307.Writing.svg
+hero:
+  title: How to create a portfolio with categories with Hugo
+  surtitle: Tutorial
+  image:
+    src: /images/uploads/307.Writing.svg
 ---
 
 ## Prerequisites
@@ -16,11 +23,21 @@ description: How to create a portfolio with projects and categories.
 
 ```yaml
 imports:
+  # projects modules
   - path: github.com/hugolify/hugolify-theme-projects-types
   - path: github.com/hugolify/hugolify-theme-projects
+  # Required modules
   - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
 ```
+
+You have additional module like projects-tags
+
+```yaml
+  - path: github.com/hugolify/hugolify-theme-projects-tags
+```
+
+{{< alert text="Section module (hugolify-theme-projects) need be always after taxonomies in this list." state="warning" >}}
 
 ## Launch project
 
@@ -56,6 +73,8 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
-## Repository demo
+{{< figure src="/images/uploads/screenshot-hugolify-home-portfolio.png" alt="screenshot of Hugolify website" legend="Your locally website" screenshot=true >}}
 
-{{< blank_link link="https://github.com/sebousan/hugolify-demo-portfolio/" text="Check Hugolify demo portfolio repository" >}}
+## Github repository 
+
+{{< button url="https://github.com/hugolify/hugolify-demo-portfolio/" blank="true" text="Check hugolify-demo-portfolio repository" >}}

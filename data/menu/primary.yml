@@ -13,7 +13,7 @@ links:
       - title: CMS
         url: /docs/cms/admin/
       - title: Tutorials
-        url: /docs/tutorials/
+        url: /tutorials/
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true

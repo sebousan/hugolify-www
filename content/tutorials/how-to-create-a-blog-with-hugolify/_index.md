@@ -1,8 +1,15 @@
 ---
 isPage: true
 draft: false
-title: Create a blog with Hugolify
-description: How to create a blog with categories and tags.
+title: How to create a blog with Hugolify
+description: Blog with categories and tags.
+image:
+  src: /images/uploads/361.Reading-The-News.svg
+hero:
+  title: How to create a blog with categories and tags with Hugo
+  surtitle: Tutorial
+  image:
+    src: /images/uploads/361.Reading-The-News.svg
 ---
 
 ## Prerequisites
@@ -16,12 +23,23 @@ description: How to create a blog with categories and tags.
 
 ```yaml
 imports:
+  # posts modules
   - path: github.com/hugolify/hugolify-theme-posts-tags
   - path: github.com/hugolify/hugolify-theme-posts-categories
   - path: github.com/hugolify/hugolify-theme-posts
+  # Required modules
   - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
 ```
+
+You have additional modules:
+
+```yaml
+  - path: github.com/hugolify/hugolify-theme-posts-authors
+  - path: github.com/hugolify/hugolify-theme-posts-expertises
+```
+
+{{< alert text="Section module (hugolify-theme-posts) need be always after taxonomies in this list." state="warning" >}}
 
 ## Launch project
 
@@ -62,4 +80,4 @@ See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
 ## Repository demo
 
-{{< blank_link link="https://github.com/sebousan/hugolify-demo-blog/" text="Check Hugolify demo blog repository" >}}
+{{< button url="https://github.com/hugolify/hugolify-demo-blog/" blank="true" text="Check hugolify-demo-blog repository" >}}

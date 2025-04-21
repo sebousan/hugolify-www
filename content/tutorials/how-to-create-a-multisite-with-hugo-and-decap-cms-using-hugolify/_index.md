@@ -29,7 +29,7 @@ We need to create a config file for each websites.
 
 ### Site A config
 
-Create a specific site_a config file.
+Create a specific site_a config file:
 
 {{< alert text="`/config/_default/site_a.yaml`" state="light" >}}
 
@@ -80,7 +80,7 @@ module:
       target: 'assets'
 ```
 
-Now add Hugolify admin params in same file
+Now add Hugolify admin params in same file:
 
 ```yaml
 # Set admin params
@@ -105,9 +105,18 @@ params:
         enable: true
 ```
 
+Add specific config production file:
+
+{{< alert text="`/config/production/site_a.yaml`" state="light" >}}
+
+```yaml
+baseURL: https://www.site_a.com/
+```
+
+
 ### Site B config
 
-Create a specific site_b config file.
+Create a specific site_b config file:
 
 {{< alert text="`/config/_default/site_b.yaml`" state="light" >}}
 
@@ -155,6 +164,14 @@ module:
       target: 'assets'
 ```
 
+Add specific config production file:
+
+{{< alert text="`/config/production/site_b.yaml`" state="light" >}}
+
+```yaml
+baseURL: https://www.site_b.com/
+```
+
 ## Create specific commands
 
 ```json
@@ -169,9 +186,58 @@ module:
 }
 ```
 
+## Prepare your directories
+
+### Content
+
+Common and specific content:
+
+```txt
+content/
+├── posts/
+├── site_a/
+├── site_b/
+├── sitemap
+```
+
+### Data
+
+Specific menus by websites:
+
+```txt
+data/
+├── site_a/
+│   └── menu/
+│       └── legal.yml
+│       └── primary.yml
+│       └── secondary.yml
+│       └── social.yml
+├── site_b/
+│   └── menu/
+│       └── legal.yml
+│       └── primary.yml
+│       └── secondary.yml
+│       └── social.yml
+```
+
+### Static
+
+Example: your website specific image share
+
+```txt
+static/
+├── site_a/
+│   └── assets/
+│       └── images/
+│           └── share.png
+├── site_b/
+│   └── assets/
+│       └── images/
+│           └── share.png
+```
+
 
 ## Launch project
-
 
 ### Site A
 

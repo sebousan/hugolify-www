@@ -118,7 +118,7 @@ blocks:
       surtitle: How to
       title: Thanks to our tutorials
     items:
-      - title: How to create a blog with categories and tags.
+      - title: How to create a blog with Hugo and Decap CMS
         surtitle: Tutorial
         text: Blog with categories and tags.
         image:
@@ -127,7 +127,7 @@ blocks:
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify
-      - title: How to create a portfolio with projects and categories.
+      - title: How to create a portfolio with Hugo and Decap CMS
         surtitle: Tutorial
         text: Portfolio with projects and categories.
         image:

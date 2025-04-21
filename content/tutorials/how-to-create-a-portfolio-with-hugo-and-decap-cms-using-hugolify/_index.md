@@ -1,12 +1,12 @@
 ---
-isPage: true
 draft: false
-title: How to create a portfolio with Hugolify
+title: How to create a portfolio with Hugo and Decap CMS using Hugolify
 description: Portfolio with projects and categories.
 image:
   src: /images/uploads/307.Writing.svg
 hero:
-  title: How to create a portfolio with categories with Hugo
+  title: How to create a portfolio with Hugo and Decap CMS using Hugolify
+  text: Portfolio with projects and categories.
   surtitle: Tutorial
   image:
     src: /images/uploads/307.Writing.svg
@@ -61,8 +61,8 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 ### Create content
 
-* Add new types [http://localhost:1313/admin/#/collections/projects_types/new](http://localhost:1313/admin/#/collections/projects_types/new)
-* Add new projects [http://localhost:1313/admin/#/collections/projects/new](http://localhost:1313/admin/#/collections/projects/new)
+* [Add new types (localhost link)](http://localhost:1313/admin/#/collections/projects_types/new)
+* [Add new projects (localhost link)](http://localhost:1313/admin/#/collections/projects/new)
 
 ### Your first project
 

@@ -1,12 +1,12 @@
 ---
-isPage: true
 draft: false
-title: How to create a blog with Hugolify
+title: How to create a blog with Hugo and Decap CMS using Hugolify
 description: Blog with categories and tags.
 image:
   src: /images/uploads/361.Reading-The-News.svg
 hero:
-  title: How to create a blog with categories and tags with Hugo
+  title: How to create a blog with Hugo and Decap CMS using Hugolify
+  text: Blog with categories and tags.
   surtitle: Tutorial
   image:
     src: /images/uploads/361.Reading-The-News.svg
@@ -63,9 +63,9 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 ### Create content
 
-* Add new categories [http://localhost:1313/admin/#/collections/categories/new](http://localhost:1313/admin/#/collections/categories/new)
-* Add new tags [http://localhost:1313/admin/#/collections/tags/new](http://localhost:1313/admin/#/collections/tags/new)
-* Add new posts [http://localhost:1313/admin/#/collections/posts/new](http://localhost:1313/admin/#/collections/posts/new)
+* [Add new categories (localhost link)](http://localhost:1313/admin/#/collections/categories/new)
+* [Add new tags (localhost link)](http://localhost:1313/admin/#/collections/tags/new)
+* [Add new posts (localhost link)](http://localhost:1313/admin/#/collections/posts/new)
 
 ### Your first post
 

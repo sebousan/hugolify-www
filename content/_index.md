@@ -126,7 +126,7 @@ blocks:
           isLogo: true
         cta:
           text: See tutorial
-          url: /tutorials/how-to-create-a-blog-with-hugolify
+          url: /tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify
       - title: How to create a portfolio with projects and categories.
         surtitle: Tutorial
         text: Portfolio with projects and categories.
@@ -135,7 +135,7 @@ blocks:
           isLogo: true
         cta:
           text: See tutorial
-          url: /tutorials/how-to-create-a-portfolio-with-hugolify
+          url: /tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify
 
   - type: editorial
     surtitle: Web performance

@@ -5,9 +5,6 @@ weight: 3
 icon: puzzle
 ---
 
-## List of Hugolify blocks
-
-{{< button text="See Hugolify blocks on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/blocks" blank="true" >}}
 
 ## Add or remove blocks
 
@@ -39,18 +36,54 @@ params:
         - text_markdown
         # …
 ```
+{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" text="See Hugolify fields in repository" >}}
 
-{{< button text="List of Hugolify fields" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}
+## Create a block
 
-## Create or override a block
+### Create file
 
-Add a yml block file
+Add a yml block file in blocks directory.
 
-```yml
-layouts
-  partials
-    admin
-      blocks
+```txt
+layouts/
+├── partials/
+│   └── admin/
+│       └── blocks/
 ```
 
+### Add content
+
+#### Set fields block
+
+```yml
+{{- $fields := slice 
+  "heading" 
+  "background" -}}
+{{- $fields = partial "admin/func/get_fields.html" (dict "block" . "fields" $fields) -}}
+```
+
+#### Add config field
+
+```yml
+{
+  label: '',
+  hint: '',
+  name: '',
+  widget: '',
+  required: false,
+  i18n: true,
+  collapsed: false,
+  summary: '{{`{{heading.title}}`}}',
+  {{ partial "admin/fields/_fields.yml" $fields }}
+}
+```
+
+And add it in enable blocks: [see above](#add-or-remove-blocks)
+
+### Examples
+
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/blocks" text="See examples in repository" >}}
+
+## List of Hugolify blocks
+
+{{< button text="Hugolify blocks" url="/docs/blocks/" >}}

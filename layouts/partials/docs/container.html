@@ -1,0 +1,25 @@
+{{- if or (.Pages) (.Content) }}
+  {{- $isAside := site.Params.docs.sidebarmenu | default true -}}
+  <div class="container">
+    {{- if $isAside -}}
+    <div class="row">
+      {{ partial "docs/sidebarmenu.html" . }}
+      <div>
+    {{- end -}}
+
+    {{ partial "docs/heading.html" . }}
+    {{ partial "docs/children.html" . }}
+    {{ partial "blocks/list.html" . }}
+    {{- if .Content }}
+      <div class="row">
+        {{ partial "docs/content.html" . }}
+        {{ partial "docs/sidebar.html" . }}
+      </div>
+    {{ end -}}
+
+    {{- if $isAside -}}
+      </div>
+    </div>
+    {{- end -}}
+  </div>
+{{ end -}}

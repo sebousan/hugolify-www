@@ -41,16 +41,16 @@ admin:
         # …
 ```
 
-## Create or override a collection
+## Create a collection
 
 Add a yml collection file
 
-```yml
-layouts
-  partials
-    admin
-      collections
-        types
+```txt
+layouts/
+├── partials/
+│   └── admin/
+│       └── collections/
+│           └── types/
 ```
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/collections/types" text="See examples in repository" >}}

@@ -5,20 +5,22 @@ weight: 1
 icon: check2-circle
 ---
 
+## Git
+
+{{< blank_link text="https://git-scm.com/" url="https://git-scm.com/" >}}
+
+## Go
+
+{{< blank_link text="https://go.dev/" url="https://go.dev/" >}}
+
 ## Hugo
 
-Check the Hugo documentation {{< blank_link link="https://gohugo.io/installation/" text="https://gohugo.io/installation/" >}}
+{{< alert text="Minimum version 0.141" state="warning" >}}
 
-In macOS with brew
+**Example in macOS with brew**
 
 ```bash
 brew install hugo
 ```
 
-{{< alert text="Minimum version 0.124" state="warning" >}}
-
-## Bootstrap
-
-Bootstrap in version 5.3 is used to support the theme.
-
-{{< blank_link link="https://www.getbootstrap.com/" text="https://www.getbootstrap.com" >}}
+{{< button url="https://gohugo.io/installation/" text="Check full documentation" blank=true >}}

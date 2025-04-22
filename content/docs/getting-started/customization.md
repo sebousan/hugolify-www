@@ -5,6 +5,12 @@ weight: 10
 icon: tools
 ---
 
+## Bootstrap
+
+Bootstrap in version 5.3 is used to support the theme.
+
+{{< blank_link link="https://www.getbootstrap.com/" text="https://www.getbootstrap.com" >}}
+
 ## Override file
 
 In Hugo you can override files. If you add the same file name in the same directory in your project you override it.

@@ -4,6 +4,8 @@ description: Open-source content management Git-based.
 image:
   src: /images/uploads/logo-sveltia-cms.png
 ---
+{{< badge text="Available in production" state="success" >}}
+{{< badge text="Maintened CMS" state="success" >}}
 
 ## Setup
 

@@ -4,6 +4,8 @@ description: Open-source content management Git-based.
 image:
   src: /images/uploads/logo-decap-cms.svg
 ---
+{{< badge text="Available in production" state="success" >}}
+{{< badge text="Maintened CMS" state="success" >}}
 
 ## Setup
 

@@ -14,7 +14,7 @@ hero:
 
 ## Prerequisites
 
-* Hugo installed - {{< blank_link link="https://gohugo.io/installation/" text="See Hugo documentation" >}}
+* Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
 * Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/) 
 
 

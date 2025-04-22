@@ -4,9 +4,9 @@ description: Open-source content management Git-based (GitHub only).
 image:
   src: /images/uploads/logo-pages-cms.svg
 ---
-
-{{< alert text="Currently: we work on Pages CMS compatibility" state="danger" >}}
-
+{{< badge text="Available in production" state="success" >}}
+{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Compatibility WIP" state="warning" >}}
 
 ## Setup
 

@@ -3,10 +3,13 @@ title: Tina CMS
 description: Open-source content management Git-based and API driven.
 image:
   src: /images/uploads/logo-tina-cms.png
+status:
+  text: WIP
+  state: danger
 ---
-
-{{< alert text="Currently: we work on Tina CMS compatibility" state="danger" >}}
-
+{{< badge text="Not available in production" state="danger" >}}
+{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Compatibility WIP" state="danger" >}}
 
 ## Setup
 

@@ -2,7 +2,7 @@
 title: Netlify
 description: Identity, Git gateway…
 image:
-  src: /images/uploads/logo-netlify-cms.png
+  src: /images/uploads/logo-netlify-cms.svg
 aliases:
 - /docs/getting-started/netlify/
 ---

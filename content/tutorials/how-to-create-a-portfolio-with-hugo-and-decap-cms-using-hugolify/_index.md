@@ -68,13 +68,16 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 {{< figure src="/images/uploads/screenshot-hugolify-admin-new-projects-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first project" screenshot=true >}}
 
-
 ## Front
 
 See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
 {{< figure src="/images/uploads/screenshot-hugolify-home-portfolio.png" alt="screenshot of Hugolify website" legend="Your locally website" screenshot=true >}}
 
-## Github repository 
+## Hosting
+
+[Host your website on Netlify or others hosters.](/docs/getting-started/hosting/)
+
+## Github repository
 
 {{< button url="https://github.com/hugolify/hugolify-demo-portfolio/" blank="true" text="Check hugolify-demo-portfolio repository" >}}

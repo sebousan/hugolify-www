@@ -1,7 +1,7 @@
 ---
 title: Form
 description: Use Netlify form or another services
-weight: 6
+weight: 7
 icon: input-cursor
 ---
 

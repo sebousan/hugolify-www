@@ -36,7 +36,7 @@ You have additional modules:
 
 ```yaml
   - path: github.com/hugolify/hugolify-theme-posts-authors
-  - path: github.com/hugolify/hugolify-theme-posts-expertises
+  - path: github.com/hugolify/hugolify-theme-posts-expertises # need hugolify-theme-expertises too
 ```
 
 {{< alert text="Section module (hugolify-theme-posts) need be always after taxonomies in this list." state="warning" >}}
@@ -71,12 +71,15 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 {{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first post" screenshot=true >}}
 
-
 ## Front
 
 See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
 {{< figure src="/images/uploads/screenshot-hugolify-home-blog.png" alt="screenshot of Hugolify website" legend="Your locally website" screenshot=true >}}
+
+## Hosting
+
+[Host your website on Netlify or others hosters.](/docs/getting-started/hosting/)
 
 ## Repository demo
 

@@ -196,7 +196,11 @@ Common and specific content:
 content/
 ├── posts/
 ├── site_a/
+│   └── _index.md
+│   └── posts.md
 ├── site_b/
+│   └── _index.md
+│   └── posts.md
 ├── sitemap
 ```
 
@@ -277,7 +281,10 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 {{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot=true >}}
 
+## Hosting
 
-## Github repository 
+[Host your website on Netlify.](/docs/getting-started/hosting/netlify/)
+
+## Github repository
 
 {{< button url="https://github.com/hugolify/hugolify-demo-multisite/" blank="true" text="Check hugolify-demo-multisite repository" >}}

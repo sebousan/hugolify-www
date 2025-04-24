@@ -68,8 +68,8 @@ image: ""
 
 ## CMS
 
-- Hugolify admin {{< alert text="Available" state="success" >}}
-- Decap CMS {{< alert text="Not available" state="danger" >}}
+- Hugolify admin {{< badge text="Available" state="success" >}} {{< badge text="without image" state="warning" >}}
+- Decap CMS {{< badge text="Not available" state="danger" >}}
 
 ## Related links
 

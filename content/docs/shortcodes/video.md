@@ -53,8 +53,8 @@ screenshot: false // Set true you want add fake browser around your picture
 
 ## CMS
 
-- Hugolify admin {{< alert text="Not available" state="danger" >}}
-- Decap CMS {{< alert text="Not available" state="danger" >}}
+- Hugolify admin {{< badge text="Not available" state="danger" >}}
+- Decap CMS {{< badge text="Not available" state="danger" >}}
 
 ## Related link
 

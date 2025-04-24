@@ -37,8 +37,8 @@ text: ""
 
 ## CMS
 
-- Hugolify admin {{< alert text="Available" state="success" >}}
-- Decap CMS {{< alert text="Available" state="success" >}}
+- Hugolify admin {{< badge text="Available" state="success" >}}
+- Decap CMS {{< badge text="Available" state="success" >}}
 
 ## Related link
 

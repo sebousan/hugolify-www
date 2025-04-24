@@ -10,7 +10,7 @@ icon: geo-alt
 
 
 ```go-html-template
-{{</* map markers="{"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}" */>}}
+{{</* map markers=`{"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}` */>}}
 ```
 
 ### HTML rendered
@@ -30,13 +30,14 @@ icon: geo-alt
 ## Datas
 
 ```yml
-markers: []
+markers: ""
 zoom: "" // [1…20] if only one marker
 ```
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="warning" >}}
+- Hugolify admin {{< alert text="Available" state="success" >}}
+- Decap CMS {{< alert text="Not available" state="danger" >}}
 
 ## Related links
 

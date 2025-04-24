@@ -45,9 +45,10 @@ state:
   ]
 ```
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="warning" >}}
+- Hugolify admin {{< alert text="Available" state="success" >}}
+- Decap CMS {{< alert text="Not available" state="danger" >}}
 
 ## Related links
 

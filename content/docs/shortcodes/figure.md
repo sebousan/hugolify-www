@@ -75,9 +75,10 @@ credit: "" // Markdown accept
 screenshot: false // Set true you want add fake browser around your picture (and linear filter compression)
 ```
 
-## Decap CMS
+## CMS
 
-{{< alert text="Available" state="success" >}}
+- Hugolify admin {{< alert text="Not available" state="danger" >}}
+- Decap CMS {{< alert text="Not available" state="danger" >}}
 
 ## Related links
 

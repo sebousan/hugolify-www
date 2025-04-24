@@ -51,9 +51,10 @@ credit: "" // markdown
 screenshot: false // Set true you want add fake browser around your picture
 ```
 
-## Decap CMS
+## CMS
 
-{{< alert text="Not available" state="danger" >}}
+- Hugolify admin {{< alert text="Not available" state="danger" >}}
+- Decap CMS {{< alert text="Not available" state="danger" >}}
 
 ## Related link
 

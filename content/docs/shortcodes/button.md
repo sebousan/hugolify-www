@@ -38,9 +38,10 @@ blank: false
 class: "" // Not in Decap CMS
 ```
 
-## Decap CMS
+## CMS
 
-{{< alert text="Available" state="success" >}}
+- Hugolify admin {{< alert text="Available" state="success" >}}
+- Decap CMS {{< alert text="Available" state="success" >}}
 
 ## Related links
 

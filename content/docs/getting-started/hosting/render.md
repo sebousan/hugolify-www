@@ -18,4 +18,4 @@ A complete documentation of how to host is available on Hugo website.
 
 Learn more about the host and sign up.
 
-{{< button url="https://pages.github.com/" text="pages.github.com" blank=true >}}
+{{< button url="https://www.render.com/" text="www.render.com" blank=true >}}

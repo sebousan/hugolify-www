@@ -4,7 +4,7 @@ description: The most compatible and easy-to-use hosting with Hugolify.
 large: true
 weight: 1
 image:
-  src: /images/uploads/logo-netlify-cms.svg
+  src: /images/uploads/logo-netlify.svg
 ---
 
 ## Available
@@ -22,4 +22,4 @@ A complete documentation of how to host is available on Hugo website.
 
 Learn more about the host and sign up.
 
-{{< button url="https://www.render.com/" text="www.render.com" blank=true >}}
+{{< button url="https://www.netlify.com/" text="www.netlify.com" blank=true >}}

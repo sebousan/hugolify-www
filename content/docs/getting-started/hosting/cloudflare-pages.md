@@ -1,13 +1,25 @@
 ---
-title: Cloudflare
+title: Cloudflare Pages
 icon: cloudflare
 image:
   src: /images/uploads/logo-cloudflare.png
+aliases:
+- /docs/getting-started/hosting/cloudflare
 ---
 ## Not available
 
 - Form: Netlify form
 - [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
+
+## Use a specific Hugo version
+
+higher of `0.141.0` and `extended`
+
+{{< alert text="`Pages project > Settings > Variables and Secrets`" state="light" >}}
+
+```bash
+HUGO_VERSION 0.146.4
+```
 
 ## Documentation
 

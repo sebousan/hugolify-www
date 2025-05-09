@@ -1,6 +1,8 @@
 ---
 isPage: true
 title: Google PageSpeed demo reports
+aliases:
+- /google-pagespeed-demo-reports/
 hero:
   title: Google PageSpeed demo reports
   text: PageSpeed Insights is an online synthetic benchmark tool which helps in

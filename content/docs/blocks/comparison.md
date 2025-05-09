@@ -2,6 +2,8 @@
 title: Comparison
 description: Displays comparison block.
 icon: layout-three-columns
+aliases:
+- /docs/blocks/prices/
 ---
 
 ## Frontmatter

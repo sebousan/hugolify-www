@@ -1,6 +1,6 @@
 ---
 title: Call to action
-url: cta
+slug: cta
 description: Displays a centered call to action.
 icon: link
 ---

@@ -1,6 +1,8 @@
 ---
 isPage: true
 title: Website Carbon demo reports
+aliases:
+- /website-carbon-demo-reports/
 hero:
   title: Website Carbon demo reports
   text: Calculating the carbon emissions of website is somewhat of a challenge,

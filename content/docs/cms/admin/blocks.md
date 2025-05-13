@@ -8,6 +8,8 @@ icon: puzzle
 
 ## Add or remove blocks
 
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
 All blocks are available by default but if you want hide or add your blocks, you can do it:
 
 ```yml
@@ -24,6 +26,8 @@ params:
 
 
 ## Add or remove fields in blocks
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 params:
@@ -46,9 +50,9 @@ Add a yml block file in blocks directory.
 
 ```txt
 layouts/
-├── partials/
-│   └── admin/
-│       └── blocks/
+└── partials/
+    └── admin/
+        └── blocks/
 ```
 
 ### Add content

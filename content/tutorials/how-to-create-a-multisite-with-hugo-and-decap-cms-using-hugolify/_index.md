@@ -12,6 +12,10 @@ hero:
     src: /images/uploads/303.Apps.svg
 ---
 
+## Introduction
+
+We'll be creating two websites, each with shared and different content, on a single Hugo instance and hosted by Netlify. They'll be managed from a single location via Decap CMS.
+
 ## Prerequisites
 
 * Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)

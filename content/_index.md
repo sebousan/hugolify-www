@@ -113,7 +113,7 @@ blocks:
       - shortcodes
 
   - type: informations
-    column: 2
+    column: 3
     heading:
       surtitle: How to
       title: Thanks to our tutorials

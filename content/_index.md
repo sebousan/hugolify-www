@@ -118,6 +118,15 @@ blocks:
       surtitle: How to
       title: Thanks to our tutorials
     items:
+      - title: How to create a multisite with Hugo and Decap CMS using Hugolify
+        surtitle: Tutorial
+        text: With common and different content.
+        image:
+          src: /images/uploads/303.Apps.svg
+          isLogo: true
+        cta:
+          text: See tutorial
+          url: /tutorials/how-to-create-a-multisite-with-hugo-and-decap-cms-using-hugolify
       - title: How to create a blog with Hugo and Decap CMS
         surtitle: Tutorial
         text: Blog with categories and tags.
@@ -136,7 +145,7 @@ blocks:
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify
-
+      
   - type: editorial
     surtitle: Web performance
     title: Discover performance and carbon emissions reports

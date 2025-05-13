@@ -175,21 +175,17 @@ Add specific config production file:
 baseURL: https://www.site_b.com/
 ```
 
-## Create specific commands
-
-```json
-{
-  "scripts": {
-    "build": "hugo --noChmod --gc --minify",
-    "build-site_a": "hugo --config config/_default/site_a.yaml,config/production/site_a.yaml --noChmod --gc --minify",
-    "build-site_b": "hugo --config config/_default/site_b.yaml,config/production/site_b.yaml --noChmod --gc --minify",
-    "watch-site_a": "hugo server --config config/_default/site_a.yaml",
-    "watch-site_b": "hugo server --config config/_default/site_b.yaml",
-  }
-}
-```
-
 ## Prepare your directories
+
+### SASS
+
+```txt
+assets/
+└── sass/
+    └── abstracts/
+        └── _variables-site-a.sass
+        └── _variables-site-b.sass
+```
 
 ### Content
 
@@ -257,6 +253,20 @@ static/
         └── logo_site-b.svg
         └── share_site-a.png
         └── share_site-b.png
+```
+
+## Create specific commands
+
+```json
+{
+  "scripts": {
+    "build": "hugo --noChmod --gc --minify",
+    "build-site_a": "hugo --config config/_default/site_a.yaml,config/production/site_a.yaml --noChmod --gc --minify",
+    "build-site_b": "hugo --config config/_default/site_b.yaml,config/production/site_b.yaml --noChmod --gc --minify",
+    "watch-site_a": "hugo server --config config/_default/site_a.yaml",
+    "watch-site_b": "hugo server --config config/_default/site_b.yaml",
+  }
+}
 ```
 
 ## Launch project

@@ -66,9 +66,9 @@ module:
     - source: 'content/site_a'
       target: 'content'
 
-    # Menu
-    - source: 'data/menu/site_a'
-      target: 'data/menu'
+    # Data
+    - source: 'data/site_a'
+      target: 'data'
 
     # SASS Variables
     - source: 'assets/sass/abstracts/_variables-site-a.sass'
@@ -158,17 +158,13 @@ module:
     - source: 'content/site_b'
       target: 'content'
 
-    # Menu
-    - source: 'data/menu/site_b'
-      target: 'data/menu'
+    # Data
+    - source: 'data/site_b'
+      target: 'data'
 
-    # Static
-    - source: 'static/site_b'
-      target: 'static'
-
-    # Assets
-    - source: 'assets'
-      target: 'assets'
+    # SASS Variables
+    - source: 'assets/sass/abstracts/_variables-site-b.sass'
+      target: 'assets/sass/abstracts/_variables-site.sass'
 ```
 
 Add specific config production file:

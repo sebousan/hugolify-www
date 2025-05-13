@@ -93,10 +93,13 @@ Now add Hugolify admin params in same file and same params:
 ```yaml
   # Admin
   admin:
+    
+    # Disable nested pages
+    nested:
+      depth: 1
+    
     collections:
       # Disable collections originals
-      config:
-        enable: false
       indexes:
         enable: false
       pages:
@@ -201,10 +204,24 @@ content/
 ├── posts/
 ├── site_a/
 │   └── _index.md
-│   └── posts.md
+│   ├── about/
+│   │   └── _index.md
+│   ├── legal-mentions/
+│   │   └── _index.md
+│   ├── posts/
+│   │   └── _index.md
+│   └── privacy-policy/
+│       └── _index.md
 ├── site_b/
 │   └── _index.md
-│   └── posts.md
+│   ├── about/
+│   │   └── _index.md
+│   ├── legal-mentions/
+│   │   └── _index.md
+│   ├── posts/
+│   │   └── _index.md
+│   └── privacy-policy/
+│       └── _index.md
 └── sitemap
 ```
 
@@ -215,12 +232,16 @@ Specific menus by websites:
 ```txt
 data/
 ├── site_a/
+│   ├── banner.yml
+│   ├── footer.yml
 │   └── menu/
 │       └── legal.yml
 │       └── primary.yml
 │       └── secondary.yml
 │       └── social.yml
 └── site_b/
+    ├── banner.yml
+    ├── footer.yml
     └── menu/
         └── legal.yml
         └── primary.yml
@@ -241,7 +262,6 @@ static/
         └── share_site-a.png
         └── share_site-b.png
 ```
-
 
 ## Launch project
 
@@ -270,7 +290,6 @@ yarn watch-site_b
 ```
 
 {{< figure src="/images/uploads/screenshot-multisite-home-site-b.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
-
 
 ## Admin
 

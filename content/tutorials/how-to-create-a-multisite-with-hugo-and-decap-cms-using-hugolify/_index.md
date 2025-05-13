@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: How to create a multisite with Hugo and Decap CMS using Hugolify
 description: With common and different content.
 image:
@@ -15,8 +15,7 @@ hero:
 ## Prerequisites
 
 * Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
-* Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/) 
-
+* Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/)
 
 
 ## Edit and create specific config files
@@ -71,22 +70,27 @@ module:
     - source: 'data/menu/site_a'
       target: 'data/menu'
 
-    # Static
-    - source: 'static/site_a'
-      target: 'static'
-
-    # Assets
-    - source: 'assets'
-      target: 'assets'
+    # SASS Variables
+    - source: 'assets/sass/abstracts/_variables-site-a.sass'
+      target: 'assets/sass/abstracts/_variables-site.sass'
 ```
 
-Now add Hugolify admin params in same file:
+Now add specific site params in same file:
 
 ```yaml
-# Set admin params
+# Set site param
 params:
   _merge: deep
+  site: site_a
+  logo:
+    header: '/assets/images/logo_site-a.svg'
+    footer: '/assets/images/logo_site-a.svg'
+  share: '/assets/images/share_site-a.png'
+```
 
+Now add Hugolify admin params in same file and same params:
+
+```yaml
   # Admin
   admin:
     collections:
@@ -201,7 +205,7 @@ content/
 ├── site_b/
 │   └── _index.md
 │   └── posts.md
-├── sitemap
+└── sitemap
 ```
 
 ### Data
@@ -216,12 +220,12 @@ data/
 │       └── primary.yml
 │       └── secondary.yml
 │       └── social.yml
-├── site_b/
-│   └── menu/
-│       └── legal.yml
-│       └── primary.yml
-│       └── secondary.yml
-│       └── social.yml
+└── site_b/
+    └── menu/
+        └── legal.yml
+        └── primary.yml
+        └── secondary.yml
+        └── social.yml
 ```
 
 ### Static
@@ -230,14 +234,12 @@ Example: your website specific image share
 
 ```txt
 static/
-├── site_a/
-│   └── assets/
-│       └── images/
-│           └── share.png
-├── site_b/
-│   └── assets/
-│       └── images/
-│           └── share.png
+└── assets/
+    └── images/
+        └── logo_site-a.svg
+        └── logo_site-b.svg
+        └── share_site-a.png
+        └── share_site-b.png
 ```
 
 

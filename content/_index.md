@@ -79,7 +79,7 @@ blocks:
     background: true
     column: 8
     heading:
-      title: All available CMS for Hugo
+      title: Available CMS for Hugolify
       text: Decap CMS, Sveltia CMS, Pages CMS, Static CMS, Netlify CMS or Tina CMS.
     items:
       - src: /images/uploads/logo-decap-cms.svg

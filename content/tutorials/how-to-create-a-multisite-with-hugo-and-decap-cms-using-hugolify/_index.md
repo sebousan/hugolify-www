@@ -253,6 +253,8 @@ To launch Hugo project with livereload.
 yarn watch-site_a
 ```
 
+{{< figure src="/images/uploads/screenshot-multisite-home-site-a.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+
 And in a second terminal, launch Decap CMS in localhost.
 
 ```bash
@@ -267,11 +269,14 @@ To launch Hugo project with livereload.
 yarn watch-site_b
 ```
 
+{{< figure src="/images/uploads/screenshot-multisite-home-site-b.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+
+
 ## Admin
 
 Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/admin/).
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-multisite-decapcms.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="/images/uploads/screenshot-multisite-hugolify-admin-site-a.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
 
 ### Create content
 

@@ -1,5 +1,6 @@
 ---
 draft: false
+date: 2025-05-13T09:00:00Z
 title: How to create a portfolio with Hugo and Decap CMS using Hugolify
 description: Portfolio with projects and categories.
 image:

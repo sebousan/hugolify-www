@@ -127,7 +127,7 @@ blocks:
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-multisite-with-hugo-and-decap-cms-using-hugolify
-      - title: How to create a blog with Hugo and Decap CMS
+      - title: How to create a blog with Hugo and Decap CMS using Hugolify
         surtitle: Tutorial
         text: Blog with categories and tags.
         image:
@@ -136,7 +136,7 @@ blocks:
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify
-      - title: How to create a portfolio with Hugo and Decap CMS
+      - title: How to create a portfolio with Hugo and Decap CMS using Hugolify
         surtitle: Tutorial
         text: Portfolio with projects and categories.
         image:

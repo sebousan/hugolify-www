@@ -1,9 +1,12 @@
 ---
 draft: false
+date: 2025-05-14T09:00:00Z
 title: How to create a multisite with Hugo and Decap CMS using Hugolify
 description: With common and different content.
 image:
   src: /images/uploads/303.Apps.svg
+seo:
+  image: /images/uploads/share-how-to-multisite.png
 hero:
   title: How to create a multisite with Hugo and Decap CMS using Hugolify
   text: With common and different content.

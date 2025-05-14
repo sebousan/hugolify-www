@@ -1,9 +1,12 @@
 ---
 draft: false
+date: 2025-05-12T09:00:00Z
 title: How to create a blog with Hugo and Decap CMS using Hugolify
 description: Blog with categories and tags.
 image:
   src: /images/uploads/361.Reading-The-News.svg
+seo:
+  image: /images/uploads/share-how-to-blog.png
 hero:
   title: How to create a blog with Hugo and Decap CMS using Hugolify
   text: Blog with categories and tags.

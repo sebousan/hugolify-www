@@ -5,6 +5,8 @@ title: How to create a portfolio with Hugo and Decap CMS using Hugolify
 description: Portfolio with projects and categories.
 image:
   src: /images/uploads/307.Writing.svg
+seo:
+  image: /images/uploads/share-how-to-portfolio.png
 hero:
   title: How to create a portfolio with Hugo and Decap CMS using Hugolify
   text: Portfolio with projects and categories.

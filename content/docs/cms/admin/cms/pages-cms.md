@@ -50,7 +50,6 @@ Create a .pages.yml file to the root, paste config content and commit it.
 - Map Widget
 - Nested pages
 
-
 ## Documention
 
 - {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}

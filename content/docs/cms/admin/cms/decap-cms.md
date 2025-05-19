@@ -21,6 +21,10 @@ admin:
   cms: decapcms
 ```
 
+## Icon library
+
+Bootstraop Icons (via CSS)
+
 ## Documention
 
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}

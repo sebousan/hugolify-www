@@ -23,6 +23,10 @@ admin:
   cms: netlifycms
 ```
 
+## Icon library
+
+Bootstraop Icons (via CSS)
+
 ## Documention
 
 - {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}

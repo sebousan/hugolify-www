@@ -44,7 +44,6 @@ Create a .pages.yml file to the root, paste config content and commit it.
 
 ## Not supported featured
 
-- Config files
 - Cloud assets
 - i18n structure
 - Map Widget

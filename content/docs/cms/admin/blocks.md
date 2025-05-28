@@ -40,6 +40,7 @@ params:
         - text_markdown
         # …
 ```
+
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" text="See Hugolify fields in repository" >}}
 
 ## Create a block

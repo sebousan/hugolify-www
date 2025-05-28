@@ -324,6 +324,12 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 [Host your website on Netlify.](/docs/getting-started/hosting/netlify/)
 
+## Customization
+
+* [Add an available Hugolify theme](/docs/getting-started/themes/)
+* [How to customize design](/docs/getting-started/customization/)
+* [How to customize admin fields](/docs/cms/admin/fields/)
+
 ## Github repository
 
 {{< button url="https://github.com/hugolify/hugolify-demo-multisite/" blank="true" text="Check hugolify-demo-multisite repository" >}}

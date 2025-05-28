@@ -81,6 +81,12 @@ See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
 [Host your website on Netlify or others hosters.](/docs/getting-started/hosting/)
 
+## Customization
+
+* [Add an available Hugolify theme](/docs/getting-started/themes/)
+* [How to customize design](/docs/getting-started/customization/)
+* [How to customize admin fields](/docs/cms/admin/fields/)
+
 ## Github repository
 
 {{< button url="https://github.com/hugolify/hugolify-demo-portfolio/" blank="true" text="Check hugolify-demo-portfolio repository" >}}

@@ -47,10 +47,10 @@ Add a yml collection file
 
 ```txt
 layouts/
-├── partials/
-│   └── admin/
-│       └── collections/
-│           └── types/
+└── partials/
+    └── admin/
+        └── collections/
+            └── types/
 ```
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/collections/types" text="See examples in repository" >}}

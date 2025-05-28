@@ -5,7 +5,9 @@ weight: 8
 icon: hand-thumbs-up
 ---
 
-## Code
+## Bootstrap
+
+{{< blank_link link="https://www.getbootstrap.com/" text="Bootstrap" >}} in version 5.3 is used to support the theme.
 
 To lighten and make the code more semantic and readable, as well as to facilitate site customizations, `@extend` of class are preferred.
 

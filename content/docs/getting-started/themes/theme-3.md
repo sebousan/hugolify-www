@@ -42,4 +42,4 @@ imports:
 
 ## Repository
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-3" text="Hugolify theme 3" >}}
+{{< button url="https://github.com/hugolify/hugolify-theme-3" blank="true" text="Hugolify theme 3" >}}

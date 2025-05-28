@@ -28,10 +28,16 @@ imports:
 {{< alert text="`/assets/sass/main.sass`" state="light" >}}
 
 ```sass
+// Core Theme
+@import "hugolify-theme"
+
 // Theme
 @import "hugolify-theme-4"
+
+// Site
+// Your sass files import
 ```
 
 ## Repository
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-4" text="Hugolify theme 4" >}}
+{{< button url="https://github.com/hugolify/hugolify-theme-4" blank="true" text="Hugolify theme 4" >}}

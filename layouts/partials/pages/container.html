@@ -1,9 +1,9 @@
-{{ if or (.Pages) (.Content) }}
+{{- if or .Pages .Content }}
   <div class="container">
-    {{ with .Pages }}
+    {{- with .Pages }}
       {{ partial "pages/items.html" . }}
-    {{ else }}
+    {{- else }}
       {{ partial "pages/grid.html" . }}
-    {{ end }}
+    {{- end }}
   </div>
-{{ end }}
+{{- end }}

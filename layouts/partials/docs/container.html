@@ -1,4 +1,4 @@
-{{- if or (.Pages) (.Content) }}
+{{- if or .Pages .Content }}
   {{- $isAside := site.Params.docs.sidebarmenu | default true -}}
   <div class="container">
     {{- if $isAside -}}

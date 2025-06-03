@@ -320,15 +320,15 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 {{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot=true >}}
 
-## Hosting
-
-[Host your website on Netlify.](/docs/getting-started/hosting/netlify/)
-
 ## Customization
 
 * [Add an available Hugolify theme](/docs/getting-started/themes/)
 * [How to customize design](/docs/getting-started/customization/)
 * [How to customize admin fields](/docs/cms/admin/fields/)
+
+## Hosting
+
+[Host your website on Netlify.](/docs/getting-started/hosting/netlify/)
 
 ## Github repository
 

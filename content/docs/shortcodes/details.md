@@ -9,7 +9,9 @@ icon: caret-down
 ### Markdown usage
 
 ```go-html-template
-{{</* details title="This is a question" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." */>}}
+{{</* details summary="This is a question" */>}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus.
+{{</* /details */>}}
 ```
 
 ### HTML rendered
@@ -27,13 +29,14 @@ icon: caret-down
 
 ### Visual renderer
 
-{{< details title="This is a question" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." >}}
+{{< details summary="This is a question" >}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus.
+{{< /details >}}
 
 ## Datas
 
 ```yml
-title: ""
-text: ""
+summary: "" // string
 ```
 
 ## CMS

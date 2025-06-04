@@ -10,6 +10,8 @@ links:
         url: /docs/taxonomies/
       - title: Blocks
         url: /docs/blocks/
+      - title: Shortcodes
+        url: /docs/shortcodes/
       - title: CMS
         url: /docs/cms/admin/
       - title: Tutorials

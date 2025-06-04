@@ -31,11 +31,13 @@ In your terminal and where you want to install the repository.
 git clone git@github.com:hugolify/hugolify-template.git
 ```
 
-## Rename to your repository name
+## Rename to your informations
 
 ### Module
 
 {{< alert text="`/go.mod`" state="light" >}}
+
+This part needs modify (use your repository name):
 
 ```yaml
 module github.com/hugolify/hugolify-template
@@ -44,6 +46,8 @@ module github.com/hugolify/hugolify-template
 ### Package
 
 {{< alert text="`/package.json`" state="light" >}}
+
+This part needs modify with your informations:
 
 ```json
 {

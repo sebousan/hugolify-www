@@ -24,6 +24,24 @@ hero:
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
+### Add required modules:
+
+```yaml
+imports:
+  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-admin
+```
+
+### Add posts modules (section and taxonomies):
+
+```yaml
+  - path: github.com/hugolify/hugolify-theme-posts-tags
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+  - path: github.com/hugolify/hugolify-theme-posts
+```
+
+### You have something like that:
+
 ```yaml
 imports:
   # posts modules
@@ -35,14 +53,8 @@ imports:
   - path: github.com/hugolify/hugolify-admin
 ```
 
-You have additional modules:
-
-```yaml
-  - path: github.com/hugolify/hugolify-theme-posts-authors
-  - path: github.com/hugolify/hugolify-theme-posts-expertises # need hugolify-theme-expertises too
-```
-
-{{< alert text="Section module (hugolify-theme-posts) need be always after taxonomies in this list." state="warning" >}}
+{{< alert text="Section module (hugolify-theme-posts) needs be always after taxonomies in this list." state="warning" >}}
+{{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
 ## Launch project
 

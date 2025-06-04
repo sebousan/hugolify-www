@@ -24,9 +24,27 @@ hero:
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
+
+### Add required modules:
+
 ```yaml
 imports:
-  # projects modules
+  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-admin
+```
+
+### Add projects modules (section and taxonomies):
+
+```yaml
+  - path: github.com/hugolify/hugolify-theme-projects-types
+  - path: github.com/hugolify/hugolify-theme-projects
+```
+
+### You have something like that:
+
+```yaml
+imports:
+  # Projects modules
   - path: github.com/hugolify/hugolify-theme-projects-types
   - path: github.com/hugolify/hugolify-theme-projects
   # Required modules
@@ -34,13 +52,8 @@ imports:
   - path: github.com/hugolify/hugolify-admin
 ```
 
-You have additional module like projects-tags
-
-```yaml
-  - path: github.com/hugolify/hugolify-theme-projects-tags
-```
-
-{{< alert text="Section module (hugolify-theme-projects) need be always after taxonomies in this list." state="warning" >}}
+{{< alert text="Section module (hugolify-theme-projects) needs be always after taxonomies in this list." state="warning" >}}
+{{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
 ## Launch project
 

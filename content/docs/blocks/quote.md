@@ -4,10 +4,6 @@ description: Displays a quote and its author
 icon: blockquote-left
 ---
 
-# Quote block
-
-Displays a quote and its author
-
 ## Frontmatter
 
 ```yml

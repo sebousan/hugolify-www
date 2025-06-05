@@ -17,7 +17,7 @@ hero:
 
 ## Prerequisites
 
-* Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
+* Git, Go and Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
 * Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/) 
 
 ## Choose the necessary Hugolify modules

@@ -21,7 +21,7 @@ We'll be creating two websites, each with shared and different content, on a sin
 
 ## Prerequisites
 
-* Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
+* Git, Go and Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
 * Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/)
 
 

@@ -2,14 +2,14 @@
 draft: false
 date: 2025-05-12T09:00:00Z
 title: How to create a blog with Hugo and Decap CMS using Hugolify
-description: Blog with categories and tags.
+description: This tutorial guides you through creating a blog featuring categories and tags using Hugolify.
 image:
   src: /images/uploads/361.Reading-The-News.svg
 seo:
   image: /images/uploads/share-how-to-blog.png
 hero:
   title: How to create a blog with Hugo and Decap CMS using Hugolify
-  text: Blog with categories and tags.
+  text: This tutorial guides you through creating a blog featuring categories and tags using Hugolify.
   surtitle: Tutorial
   image:
     src: /images/uploads/361.Reading-The-News.svg
@@ -53,7 +53,7 @@ imports:
   - path: github.com/hugolify/hugolify-admin
 ```
 
-{{< alert text="Section module (hugolify-theme-posts) needs be always after taxonomies in this list." state="warning" >}}
+{{< alert text="The section module (hugolify-theme-posts) should always be listed after taxonomies in this configuration." state="warning" >}}
 {{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
 ## Launch project
@@ -90,7 +90,7 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 See locally your website in [http://localhost:1313/](http://localhost:1313/).
 
-{{< figure src="/images/uploads/screenshot-hugolify-home-blog.png" alt="screenshot of Hugolify website" legend="Your locally website" screenshot=true >}}
+{{< figure src="/images/uploads/screenshot-hugolify-home-blog.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
 
 ## Customization
 

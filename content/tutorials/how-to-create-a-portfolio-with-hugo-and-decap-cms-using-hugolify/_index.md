@@ -25,7 +25,7 @@ hero:
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
 
 
-### Add required modules:
+### Add required modules
 
 ```yaml
 imports:
@@ -33,14 +33,14 @@ imports:
   - path: github.com/hugolify/hugolify-admin
 ```
 
-### Add projects modules (section and taxonomies):
+### Add projects modules (section and taxonomies)
 
 ```yaml
   - path: github.com/hugolify/hugolify-theme-projects-types
   - path: github.com/hugolify/hugolify-theme-projects
 ```
 
-### You have something like that:
+### You should be to have
 
 ```yaml
 imports:

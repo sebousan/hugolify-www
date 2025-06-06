@@ -20,10 +20,13 @@ module.exports = {
           'showing',
           'hide',
           'fade',
+          'form input[type=text]',
           /-backdrop$/,
           /^is-/
         ],
-        deep: [/^pagefind-ui/]
+        deep: [
+          /^pagefind-ui/
+        ]
       },
       defaultExtractor: (content) => {
         let els = JSON.parse(content).htmlElements;

@@ -1,4 +1,6 @@
 links:
+  - title: Documentation
+    url: /docs/
   - title: Demo
     url: https://demo.hugolify.io/
     blank: true

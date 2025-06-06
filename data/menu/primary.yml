@@ -14,8 +14,8 @@ links:
         url: /docs/shortcodes/
       - title: CMS
         url: /docs/cms/admin/
-      - title: Tutorials
-        url: /tutorials/
+  - title: Tutorials
+    url: /tutorials/
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true

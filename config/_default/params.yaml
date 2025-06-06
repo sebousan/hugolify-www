@@ -1,3 +1,6 @@
 _merge: deep
+search:
+  enable: true
+  sort: true
 docs:
   sidebarmenu: true

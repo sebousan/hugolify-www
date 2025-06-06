@@ -17,6 +17,9 @@ module.exports = {
           'fade',
           /-backdrop$/,
           /^is-/
+        ],
+        greedy: [
+          'pagefind-ui'
         ]
       },
       defaultExtractor: (content) => {

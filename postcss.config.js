@@ -8,7 +8,12 @@ module.exports = {
     '@fullhuman/postcss-purgecss': {
       mode: 'all',
       content: ['./hugo_stats.json'],
-      dynamicAttributes: ['aria-current', 'aria-hidden', 'role', 'type'],
+      dynamicAttributes: [
+        'aria-current', 
+        'aria-hidden', 
+        'role', 
+        'type'
+      ],
       safelist: {
         standard: [
           'show',
@@ -18,7 +23,7 @@ module.exports = {
           /-backdrop$/,
           /^is-/
         ],
-        greedy: [
+        deep: [
           'pagefind-ui'
         ]
       },

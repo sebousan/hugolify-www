@@ -24,7 +24,7 @@ blocks:
 
 ## CMS
 
-- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Not available" state="warning" >}}
+- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
 - [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Not available" state="warning" >}}
 - [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Not available" state="warning" >}}
 - [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Not available" state="warning" >}}

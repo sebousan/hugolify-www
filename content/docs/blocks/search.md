@@ -4,12 +4,17 @@ description: Displays a pagefind search
 icon: search
 ---
 
+## Enable
+
+[Check how to enable search on your website](/docs/getting-started/search/)
+
 ## Frontmatter
 
 ```yml
 blocks:
   - type: search
     heading: {}
+    background: false
 ```
 
 <!-- ## Examples

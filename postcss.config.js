@@ -20,7 +20,6 @@ module.exports = {
           'showing',
           'hide',
           'fade',
-          'form input[type=text]',
           /-backdrop$/,
           /^is-/
         ],

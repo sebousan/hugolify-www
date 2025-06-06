@@ -6,8 +6,8 @@ require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-theme v1.23.0 // indirect
-	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606113931-4482f1b4287b // indirect
+	github.com/hugolify/hugolify-theme v1.23.2 // indirect
+	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d // indirect
 	github.com/midzer/tobii v2.8.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20250124102848-4d2f31ab9243 // indirect

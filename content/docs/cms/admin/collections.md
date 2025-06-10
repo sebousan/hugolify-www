@@ -41,6 +41,68 @@ admin:
         # …
 ```
 
+## Add filter
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      filter:
+        - field: isPage
+          value: true
+```
+
+## Add summary
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      summary: "{{title}}"
+```
+
+## Add sortable
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      sortable: "['title']"
+```
+
+## Add view filters
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      view_filters:
+        - label: 'Posts published in 2020'
+          field: date
+          pattern: '2020'
+```
+
+## Add view groups
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      view_groups:
+        - label: 'Draft'
+          field: draft
+```
+
 ## Create a collection
 
 Add a yml collection file

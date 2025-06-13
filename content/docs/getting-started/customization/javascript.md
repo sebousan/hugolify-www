@@ -94,6 +94,8 @@ Files from enabled blocks are automatically added. The name of the javascript fi
 carousel: true # default true, Set false to disable 
 ```
 
+{{< blank_link link="https://splidejs.com/" text="Splide JS" >}}
+
 ### Map (Leaflet)
 
 {{< alert text="`/config/default/params.yaml`" state="light" >}}
@@ -101,6 +103,8 @@ carousel: true # default true, Set false to disable
 ```yml
 map: true # default true, Set false to disable
 ```
+
+{{< blank_link link="https://leafletjs.com/" text="leafletjs documentation" >}}
 
 ### Parallax (Rellax)
 
@@ -110,3 +114,5 @@ map: true # default true, Set false to disable
 parallax: 
   enable: false # default false, Set true to enable
 ```
+
+{{< blank_link link="https://dixonandmoe.com/rellax/" text="Rellax" >}}

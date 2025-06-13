@@ -97,7 +97,7 @@ carousel: true # default true, Set false to disable
 map: true # default true, Set false to disable
 ```
 
-{{< blank_link link="https://leafletjs.com/" text="leafletjs documentation" >}}
+{{< blank_link link="https://leafletjs.com/" text="Leaflet JS" >}}
 
 ### Parallax (Rellax)
 

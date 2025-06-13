@@ -1,4 +1,7 @@
 _merge: deep
+bootstrap:
+  modal: false
+  tooltip: false
 search:
   enable: true
   sort: true

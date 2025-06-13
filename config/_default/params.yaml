@@ -2,6 +2,7 @@ _merge: deep
 bootstrap:
   modal: false
   tooltip: false
+carousel: false
 search:
   enable: true
   sort: true

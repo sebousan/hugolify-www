@@ -76,7 +76,12 @@ bootstrap:
 
 ### Blocks
 
-Files from enabled blocks are automatically added. The name of the javascript file is the same as the block name and must be in the blocks directory `/assets/js/blocks/`
+Files from enabled blocks (w/ Hugolify admin) are automatically added. The name of the javascript file is the same as the block name and must be in the blocks directory `/assets/js/blocks/`.
+
+
+If you do not use Hugolify admin, blocks files are fallback in this file:
+
+{{< alert text="`/assets/js/blocks/index.js`" state="light" >}}
 
 
 ### Carousel (SplideJS)

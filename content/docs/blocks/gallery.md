@@ -28,6 +28,7 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_gallery.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/components/gallery.js" text="JS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/gallery.js" text="Decap CMS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/gallery.yml" text="Hugolify admin file" >}}
 
 ## CMS
 

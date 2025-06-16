@@ -45,6 +45,7 @@ params:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/editorial.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_editorial.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/editorial.js" text="Decap CMS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/editorial.yml" text="Hugolify admin file" >}}
 
 ## CMS
 

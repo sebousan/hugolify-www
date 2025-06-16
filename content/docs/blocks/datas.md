@@ -33,6 +33,7 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/datas.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_datas.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/datas.js" text="Decap CMS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/datas.yml" text="Hugolify admin file" >}}
 
 ## CMS
 

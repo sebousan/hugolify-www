@@ -11,6 +11,7 @@ blocks:
   - type: latest
     heading: {}
     section: '' // [posts, publications, products…]
+    layout: '' // grid (default) or list
     count: 4 // number
     show_more: true // boolean
     background: false
@@ -26,6 +27,7 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/latest.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_latest.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/latest.js" text="Decap CMS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/latest.yml" text="Hugolify admin file" >}}
 
 ## CMS
 

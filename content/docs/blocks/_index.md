@@ -3,24 +3,37 @@ title: Blocks
 description: More than twenty blocks available.
 weight: 3
 icon: puzzle
-blocks:
-  - type: cta
-    heading:
-      title: How to customize with Hugolify-admin
-    ctas:
-      - text: Blocks
-        url: /docs/cms/admin/blocks/
-      - text: Fields
-        url: /docs/cms/admin/fields/
 ---
+
+# CMS
+
+## Blocks
+
+
+List of available blocks ({{< blank_link text="See all Hugolify-admin fields on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/blocks" >}}):
+
+{{< alert text="`/layouts/partials/admin/blocks/`" state="light" >}}
+
+{{< button url="/docs/cms/admin/blocks/" text="How to edit blocks with Hugolify admin" >}}
 
 ## Fields
 
 Each block is composed of one or more fields, they can be common between blocks or unique. A field can also contain one or more fields.
 
-### Fields
+List of available fields ({{< blank_link text="See all Hugolify-admin fields on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" >}}):
 
-Example of common fields:
+{{< alert text="`/layouts/partials/admin/fields/`" state="light" >}}
+
+
+
+{{< button url="/docs/cms/admin/fields/" text="How to edit fields with Hugolify admin" >}}
+
+
+## Common fields
+
+### Simple fields
+
+Example of simple fields:
 
 {{< alert text="`/layouts/partials/admin/fields/align.yml`" state="light" >}}
 
@@ -85,11 +98,3 @@ image:
   legend: '' // string (optional)
   credit: '' // markdown (optional)
 ```
-
-### All fields
-
-List of available fields:
-
-{{< alert text="`/layouts/partials/admin/fields/`" state="light" >}}
-
-{{< button text="See all Hugolify-admin fields on Github" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}

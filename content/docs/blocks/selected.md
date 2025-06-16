@@ -27,8 +27,9 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/selected.html" text="HTML file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_selected.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/selected-posts.js" text="Decap CMS file (e.g. posts)" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/selected.yml" text="Hugolify admin file" >}}
 
-## Decap CMS
+## CMS
 
 - [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
 - [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Available" state="success" >}}

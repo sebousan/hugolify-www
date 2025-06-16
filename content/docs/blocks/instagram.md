@@ -29,6 +29,7 @@ blocks:
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_instagram.sass" text="SASS file" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/js/blocks/instagram.js" text="JS file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/instagram.js" text="Decap CMS file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/instagram.yml" text="Hugolify admin file" >}}
 
 ## CMS
 

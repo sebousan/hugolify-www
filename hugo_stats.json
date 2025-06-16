@@ -59,6 +59,7 @@
       "alert-danger",
       "alert-info",
       "alert-light",
+      "alert-succes",
       "alert-success",
       "alert-warning",
       "badge",

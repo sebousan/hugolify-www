@@ -28,6 +28,11 @@ assets/
         └── custom.js
 ```
 
+If you want override basic import components:
+
+{{< alert text="`/assets/js/components/index.js`" state="light" >}}
+
+
 ### Features
 
 ```txt

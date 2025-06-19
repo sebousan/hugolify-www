@@ -3,6 +3,7 @@ bootstrap:
   modal: false
   tooltip: false
 carousel: false
+map: true
 search:
   enable: true
   sort: true

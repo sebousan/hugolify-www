@@ -26,6 +26,14 @@ Use specific command to build and index
 yarn build:search
 ```
 
+### PostCSS
+
+```js
+safelist: {
+  deep: [/^pagefind-ui/]
+}
+```
+
 ## Documentation
 
 A complete documentation of how to use Pagefind.

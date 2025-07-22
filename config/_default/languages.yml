@@ -1,9 +1,5 @@
-# fr:
-#   languageName: Français
-#   title: Demo Hugolify
-#   weight: 2
-
 en:
+  languageCode: en
   languageName: English
   title: Hugolify
   weight: 1

@@ -9,7 +9,7 @@ icon: window-fullscreen
 |----------|-|-|
 | Architectify | {{< blank_link link="https://www.architectify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/architectify-www" text="repository" >}} |
 | Biver | {{< blank_link link="https://www.jcbiver.com" text="website" >}} | |
-| Eco-conception site Web | {{< blank_link link="https://www.eco-conception-site-web.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/eco-conception-site-web" text="repository" >}} |
+| Eco-conception site Web | {{< blank_link link="https://www.eco-conception-site-web.fr" text="website" >}} | {{< blank_link link="https://github.com/sebousan/eco-conception-site-web" text="repository" >}} |
 | FJ Habitat | {{< blank_link link="https://www.fj-habitat.com" text="website" >}} | |
 | Guilhem Granier | {{< blank_link link="https://www.guilhemgranier.fr" text="website" >}} | {{< blank_link link="https://github.com/arthaud-proust-pro/guilhemgranier.fr" text="repository" >}} |
 | Hugolify | {{< blank_link link="https://www.hugolify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/hugolify-www" text="repository" >}} |
@@ -25,4 +25,5 @@ icon: window-fullscreen
 | Tdesign Architecture | {{< blank_link link="https://www.tdesignarchitecture.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/tdesign-architecture" text="repository" >}} |
 | Un Cinq | {{< blank_link link="https://uncinq.dev" text="website" >}} | {{< blank_link link="https://github.com/sebousan/uncinq.dev" text="repository" >}} |
 | Un mois au Japon | {{< blank_link link="https://www.unmoisaujapon.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/unmoisaujapon" text="repository" >}} |
+| Villagers | {{< blank_link link="https://www.villagers.ch" text="website" >}} | {{< blank_link link="https://github.com/sebousan/villagers" text="repository" >}} |
 | Venn Capital | {{< blank_link link="https://venn-capital.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/venn-capital" text="repository" >}} |

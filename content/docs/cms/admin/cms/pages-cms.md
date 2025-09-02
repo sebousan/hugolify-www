@@ -38,10 +38,6 @@ Create a .pages.yml file to the root, paste config content and commit it.
 {{< alert text="`/.pages.yml`" state="light" >}}
 
 
-## Beta supported
-- Blocks [(Not yet in production)](https://github.com/pages-cms/pages-cms/issues/200#issuecomment-2811807542)
-
-
 ## Not supported featured
 
 - Cloud assets

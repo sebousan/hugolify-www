@@ -2,7 +2,7 @@
 title: Pages CMS
 description: Open-source content management Git-based (GitHub only).
 image:
-  src: /images/uploads/logo-pages-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}

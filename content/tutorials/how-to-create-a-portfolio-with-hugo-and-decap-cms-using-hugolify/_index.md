@@ -1,20 +1,21 @@
 ---
 draft: false
-date: 2025-05-13T09:00:00Z
+date: 2025-05-13T09:00:00.000Z
 title: How to create a portfolio with Hugo and Decap CMS using Hugolify
-description: This tutorial guides you through creating a portfolio featuring categories using Hugolify.
+description: This tutorial guides you through creating a portfolio featuring
+  categories using Hugolify.
 image:
-  src: /images/uploads/307.Writing.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
 seo:
   image: /images/uploads/share-how-to-portfolio.png
 hero:
   title: How to create a portfolio with Hugo and Decap CMS using Hugolify
-  text: This tutorial guides you through creating a portfolio featuring categories using Hugolify.
+  text: This tutorial guides you through creating a portfolio featuring categories
+    using Hugolify.
   surtitle: Tutorial
   image:
-    src: /images/uploads/307.Writing.svg
+    src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
 ---
-
 ## Prerequisites
 
 * Git, Go and Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
@@ -23,7 +24,6 @@ hero:
 ## Choose the necessary Hugolify modules
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}
-
 
 ### Add required modules
 
@@ -53,6 +53,7 @@ imports:
 ```
 
 {{< alert text="The section module (hugolify-theme-projects) should always be listed after taxonomies in this configuration." state="warning" >}}
+
 {{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
 ## Launch project
@@ -71,7 +72,7 @@ yarn cms
 
 ## Admin
 
-Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/admin/).
+Edit all your content in <http://localhost:1313/admin/>.
 
 {{< figure src="/images/uploads/screenshot-hugolify-admin-portfolio-decapcms.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
 
@@ -86,7 +87,7 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 ## Front
 
-See locally your website in [http://localhost:1313/](http://localhost:1313/).
+See locally your website in <http://localhost:1313/>.
 
 {{< figure src="/images/uploads/screenshot-hugolify-home-portfolio.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
 

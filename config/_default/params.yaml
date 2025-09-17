@@ -9,3 +9,18 @@ search:
   sort: true
 docs:
   sidebarmenu: true
+
+
+# Admin
+admin:
+  media:
+    cloud:
+      name: cloudinary 
+      cloud_name: uncinq
+      api_key: 733153572642938
+  collections:
+    docs:
+      nested:
+        depth: 10
+    tutorials:
+      enable: true

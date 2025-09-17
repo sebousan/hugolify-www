@@ -2,16 +2,16 @@
 isPage: true
 title: Website Carbon demo reports
 aliases:
-- /website-carbon-demo-reports/
+  - /website-carbon-demo-reports/
+image:
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758128673/logo-websitecarbon_lgmelc.jpg
 hero:
   title: Website Carbon demo reports
   text: Calculating the carbon emissions of website is somewhat of a challenge,
-    but we have been working for many years to develop and refine a
-    methodology for this purpose. Our hope is that this will help raise
-    awareness and encourage more eco-friendly approaches to be adopted
-    throughout the web design industry.
-image:
-  src: /images/uploads/websitecarbon.jpg
+    but we have been working for many years to develop and refine a methodology
+    for this purpose. Our hope is that this will help raise awareness and
+    encourage more eco-friendly approaches to be adopted throughout the web
+    design industry.
 blocks:
   - type: datas
     column: 5
@@ -37,7 +37,7 @@ blocks:
     offset: center
     background: false
     figure:
-      src: /images/uploads/demo.hugolify.com.png
+      src: https://res.cloudinary.com/uncinq/image/upload/v1758128791/screenshot-demo.hugolify.com_ci8unb.png
       legend: Homepage
       screenshot: true
 ---

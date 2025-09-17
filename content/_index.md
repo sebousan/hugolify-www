@@ -5,7 +5,8 @@ hero:
   surtitle: Hugolify
   title: Framework Hugo with Bootstrap and Decap/Sveltia CMS
   align: center
-  text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website.
+  text: Open-source Jamstack solution for building easily a fast, as accessible as
+    possible and low carbon website.
   ctas:
     - url: /docs/
       text: See documentation
@@ -13,7 +14,6 @@ hero:
       text: Discover demo
       blank: true
 blocks:
-
   - type: informations
     column: 4
     heading:
@@ -23,45 +23,44 @@ blocks:
       - title: Accessibility first
         text: Code ready, keyboard navigation…
         image:
-          src: /images/uploads/342.Take-Care.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116872/342.Take-Care_jzhfyu.svg
           isLogo: true
       - title: Web performance
         text: PageSpeed, defer javascript…
         image:
-          src: /images/uploads/384.Up-Trend.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116886/384.Up-Trend_d1rcgi.svg
           isLogo: true
       - title: Low carbon
         text: Responsive images, lazy loading…
         image:
-          src: /images/uploads/179.Planet.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116598/179.Planet_kydicb.svg
           isLogo: true
       - title: RGPD compliant
         text: Cookie less, Google less…
         image:
-          src: /images/uploads/403.Lawyer.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116906/403.Lawyer_h8jf76.svg
           isLogo: true
-
   - type: editorial
     surtitle: Content
     title: +10 types of content available
-    text: Pages, persons, posts, projects… And taxonomies like categories, tags, types, authors…
+    text: Pages, persons, posts, projects… And taxonomies like categories, tags,
+      types, authors…
     image:
-      src: /images/uploads/150.Cubes.svg
+      src: https://res.cloudinary.com/uncinq/image/upload/v1758116481/150.Cubes_llpfto.svg
     cta:
       text: Discover all types of content in docs
       url: /docs/sections/
-
+    direction: ltr
   - type: editorial
     direction: rtl
     surtitle: Modular
     title: +25 blocks of content available
     text: Collection of most famous components for making an exiting website.
     image:
-      src: /images/uploads/264.Teaming-Up.svg
+      src: https://res.cloudinary.com/uncinq/image/upload/v1758116671/264.Teaming-Up_tqtwat.svg
     cta:
       text: Discover all blocks in docs
       url: /docs/blocks/
-
   - type: figure
     grid: large
     offset: center
@@ -72,9 +71,8 @@ blocks:
       text: Easy to customize and dedicated to site content.
     figure:
       screenshot: true
-      src: /images/uploads/admin-home.png
+      src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png
       alt: Homepage screenshot of Hugolify Admin
-
   - type: logos
     background: true
     column: 8
@@ -82,25 +80,24 @@ blocks:
       title: Available CMS for Hugolify
       text: Decap CMS, Sveltia CMS, Pages CMS, Static CMS, Netlify CMS or Tina CMS.
     items:
-      - src: /images/uploads/logo-decap-cms.svg
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
         title: Decap CMS
         url: /docs/cms/admin/cms/decap-cms/
-      - src: /images/uploads/logo-sveltia-cms.png
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
         title: Sveltia CMS
         url: /docs/cms/admin/cms/sveltia-cms/
-      - src: /images/uploads/logo-pages-cms.svg
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
         title: Pages CMS
         url: /docs/cms/admin/cms/pages-cms/
-      - src: /images/uploads/logo-static-cms.svg
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
         title: Static CMS
         url: /docs/cms/admin/cms/static-cms/
-      - src: /images/uploads/logo-netlify.svg
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
         title: Netlify CMS
         url: /docs/cms/admin/cms/netlify-cms/
-      - src: /images/uploads/logo-tina-cms.png
+      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126092/logo-tina-cms_vnznv4.png
         title: Tina CMS
         url: /docs/cms/admin/cms/tina-cms/
-
   - type: selected-docs
     section: docs
     heading:
@@ -111,7 +108,6 @@ blocks:
       - sections
       - blocks
       - shortcodes
-
   - type: informations
     column: 3
     heading:
@@ -122,7 +118,7 @@ blocks:
         surtitle: Tutorial
         text: With common and different content.
         image:
-          src: /images/uploads/303.Apps.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
           isLogo: true
         cta:
           text: See tutorial
@@ -131,7 +127,7 @@ blocks:
         surtitle: Tutorial
         text: Blog with categories and tags.
         image:
-          src: /images/uploads/361.Reading-The-News.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
           isLogo: true
         cta:
           text: See tutorial
@@ -140,33 +136,21 @@ blocks:
         surtitle: Tutorial
         text: Portfolio with projects and categories.
         image:
-          src: /images/uploads/307.Writing.svg
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
           isLogo: true
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify
-      
   - type: editorial
     surtitle: Web performance
     title: Discover performance and carbon emissions reports
-    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon reports.
+    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon
+      reports.
     image:
-      src: /images/uploads/384.Up-Trend.svg
+      src: https://res.cloudinary.com/uncinq/image/upload/v1758116886/384.Up-Trend_d1rcgi.svg
     cta:
       text: Discover reports
       url: /web-performance/
-
-  # - type: editorial
-  #   direction: rtl
-  #   surtitle: Showcase
-  #   title: Examples of websites using Hugolify
-  #   text: Discover websites and repositories.
-  #   image:
-  #     src: /images/uploads/160.Movie-Time.svg
-  #   cta:
-  #     text: Discover showcase
-  #     url: /docs/showcase/
-
   - type: informations
     column: 3
     heading:
@@ -198,13 +182,13 @@ blocks:
         title: hugolify-admin
         text: Module Admin for Hugolify with the CMS of your choice.
         icon: git
-
   - type: cta
     background: true
     heading:
       surtitle: Open-source
       title: Support Us
-      text: Support our work and help us improve this project by becoming a sponsor or giving us a star on our GitHub repositories.
+      text: Support our work and help us improve this project by becoming a sponsor or
+        giving us a star on our GitHub repositories.
     ctas:
       - text: Become a sponsor
         url: https://github.com/sponsors/sebousan

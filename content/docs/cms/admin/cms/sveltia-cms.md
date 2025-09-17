@@ -2,7 +2,7 @@
 title: Sveltia CMS
 description: Open-source content management Git-based.
 image:
-  src: /images/uploads/logo-sveltia-cms.png
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}

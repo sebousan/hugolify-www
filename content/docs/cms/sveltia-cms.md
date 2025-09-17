@@ -3,7 +3,7 @@ title: Sveltia CMS
 description: Open-source content management Git-based.
 weight: 4
 image:
-  src: /images/uploads/logo-sveltia-cms.png
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
 ---
 {{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Sveltia CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/sveltia-cms/)" state="danger" >}}
 

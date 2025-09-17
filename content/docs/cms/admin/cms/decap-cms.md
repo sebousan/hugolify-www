@@ -2,7 +2,7 @@
 title: Decap CMS
 description: Open-source content management Git-based.
 image:
-  src: /images/uploads/logo-decap-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}

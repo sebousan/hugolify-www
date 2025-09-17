@@ -2,7 +2,7 @@
 title: Static CMS
 description: Open-source content management Git-based.
 image:
-  src: /images/uploads/logo-static-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
 status:
   text: Deprecated CMS
   state: warning

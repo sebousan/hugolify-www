@@ -3,7 +3,7 @@ title: Netlify CMS
 description: Open-source content management Git-based.
 weight: 3
 image:
-  src: /images/uploads/logo-netlify-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
 status:
   text: Deprecated CMS
   state: warning

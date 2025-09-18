@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Details
 description: Displays a details HTML markup in your body markdown.
 icon: caret-down
@@ -35,8 +36,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisi
 
 ## Datas
 
-```yml
-summary: "" // string
+```yaml
+name: "" # string
+title: "" # string
+summary: "" # string
+contents: "" # markdown
 ```
 
 ## CMS

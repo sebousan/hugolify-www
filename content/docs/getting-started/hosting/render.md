@@ -1,7 +1,8 @@
 ---
+isIndex: false
 title: Render
 image:
-  src: /images/uploads/logo-render.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758128551/logo-render_kqedol.svg
 ---
 ## Not available
 

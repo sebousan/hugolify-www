@@ -23,4 +23,4 @@ icon: check2-circle
 brew install hugo
 ```
 
-{{< button url="https://gohugo.io/installation/" text="Check full documentation" blank=true >}}
+{{< blank_link url="https://gohugo.io/installation/" text="Check full documentation" >}}

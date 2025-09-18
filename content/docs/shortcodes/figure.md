@@ -9,7 +9,7 @@ icon: image
 ### Markdown usage
 
 ```go-html-template
-{{</* figure src="/images/uploads/test.jpg" alt="" legend="Lorem ipsum" credit="Unsplash" */>}}
+{{</* figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204688/test_pfae0v.jpg" alt="" legend="Lorem ipsum" credit="Unsplash" */>}}
 ```
 
 ### HTML rendered
@@ -20,7 +20,7 @@ icon: image
     <source srcset="" type="image/webp" media="(min-width: 577px)" />
     <source srcset="" type="image/webp" media="(max-width: 576px)" />
     <source srcset="" type="image/jpg" media="(max-width: 576px)" />
-    <img src="" alt="" width="" loading="lazy" height="" decoding="async" />
+    <img src="https://res.cloudinary.com/uncinq/image/upload/v1758204688/test_pfae0v.jpg" alt="" width="" loading="lazy" height="" decoding="async" />
   </picture>
   <figcaption>
     <p>Lorem ipsum</p>
@@ -31,14 +31,14 @@ icon: image
 
 ### Visual renderer
 
-{{< figure src="/images/uploads/test.jpg" alt="" legend="Lorem ipsum" credit="Unsplash" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204688/test_pfae0v.jpg" alt="" legend="Lorem ipsum" credit="Unsplash" >}}
 
 ## Example 2
 
 ### Markdown usage
 
 ```go-html-template
-{{</* figure src="/images/uploads/admin-home.png" alt="" legend="Screenshot" screenshot=true */>}}
+{{</* figure src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" alt="Screensot of Hugolify admin with Decap CMS" legend="Screenshot" screenshot="true" */>}}
 ```
 ### HTML rendered
 
@@ -50,7 +50,7 @@ icon: image
       <source srcset="" type="image/webp" media="(min-width: 577px)" />
       <source srcset="" type="image/webp" media="(max-width: 576px)" />
       <source srcset="" type="image/jpg" media="(max-width: 576px)" />
-      <img src="" alt="" width="" loading="lazy" height="" decoding="async" />
+      <img src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" alt="Screensot of Hugolify admin with Decap CMS" width="" loading="lazy" height="" decoding="async" />
     </picture>
     <figcaption>
       <p>Screenshot</p>
@@ -62,22 +62,22 @@ icon: image
 
 ### Visual renderer
 
-{{< figure src="/images/uploads/admin-home.png" alt="" legend="Screenshot" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" alt="Screensot of Hugolify admin with Decap CMS" legend="Screenshot" screenshot="true" >}}
 
 
 ## Datas
 
-```yml
-src: ""
-alt: ""
-legend: ""
-credit: "" // Markdown accept
-screenshot: false // Set true you want add fake browser around your picture (and linear filter compression)
+```yaml
+src: "" # image
+alt: "" # string
+legend: "" # string
+credit: "" # markdown
+screenshot: false # boolean (set true if you want add a fake browser around your picture and linear filter compression)
 ```
 
 ## CMS
 
-- Hugolify admin {{< badge text="Not available" state="danger" >}}
+- Hugolify admin {{< badge text="Available" state="success" >}} {{< badge text="Works only with cloud assets" state="warning" >}}
 - Decap CMS {{< badge text="Not available" state="danger" >}}
 
 ## Related links

@@ -25,9 +25,9 @@ In accessibility, it is necessary to identify words corresponding to a language 
 
 ## Datas
 
-```yml
-text: ""
-lang: ""
+```yaml
+text: "" # string
+lang: "" # string (e.g: de)
 ```
 
 ## CMS

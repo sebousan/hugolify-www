@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Pages CMS
 description: Open-source content management Git-based (GitHub only).
 image:

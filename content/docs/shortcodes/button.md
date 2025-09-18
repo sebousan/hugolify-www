@@ -31,11 +31,11 @@ icon: hand-index
 
 ## Datas
 
-```yml
-text: ""
-url: ""
-blank: false
-class: "" // Not in Decap CMS
+```yaml
+text: "" # string
+url: "" # string
+blank: false # boolean
+class: "" # string
 ```
 
 ## CMS

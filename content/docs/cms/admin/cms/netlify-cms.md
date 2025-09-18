@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Netlify CMS
 description: Open-source content management Git-based.
 image:

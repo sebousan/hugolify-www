@@ -1,12 +1,12 @@
 ---
+isIndex: false
 title: Netlify
 description: Identity, Git gateway…
 image:
-  src: /images/uploads/logo-netlify-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758128557/logo-netlify_r7ywd6.svg
 aliases:
-- /docs/getting-started/netlify/
+  - /docs/getting-started/netlify/
 ---
-
 {{< alert text="Only for Decap/Netlify/Static CMS" state="warning" >}}
 
 ## Identity
@@ -26,7 +26,7 @@ To redirect each email template to those in the repository.
 
 Then modify the path:
 
-- Invitation template: `/admin/emails/invitation.html`
-- Confirmation template: `/admin/emails/confirmation.html`
-- Recovery template: `/admin/emails/recovery.html`
-- Email change template: `/admin/emails/email-change.html`
+* Invitation template: `/admin/emails/invitation.html`
+* Confirmation template: `/admin/emails/confirmation.html`
+* Recovery template: `/admin/emails/recovery.html`
+* Email change template: `/admin/emails/email-change.html`

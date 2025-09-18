@@ -1,32 +1,32 @@
 ---
+isIndex: false
 title: Install
 description: Easy to install
 weight: 2
 icon: gear
 ---
-
 ## Use Github template
 
 Go to our {{< blank_link link="https://github.com/Hugolify/hugolify-template" text="Github template repository" >}} and click to *use this template* button then *create a new repository*.
 
-{{< figure src="/images/uploads/screenshot-use-template.png" alt="screenshot of hugolify-template repository" legend="Hugolify template on Github" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758200696/screenshot-use-template_ppvywy.png" alt="screenshot of hugolify-template repository" legend="Hugolify template on Github" screenshot=true >}}
 
-{{< button url="https://github.com/hugolify/hugolify-template/generate" blank="true" text="Use Github template" >}}
-
+{{< button text="Use Github template" url="https://github.com/hugolify/hugolify-template/generate" blank="true" >}}
 
 ## Create a new repository
 
-{{< figure src="/images/uploads/screenshot-create-a-new-repository.png" alt="screenshot of Github" legend="Create a new repository on Github" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758200666/screenshot-create-a-new-repository-blog_gvl2z7.png" alt="screenshot of Github" legend="Create a new repository on Github" screenshot=true >}}
 
 ## Clone repository localy
 
 In your repository, click on *code* button and copy SSH git url.
 
-{{< figure src="/images/uploads/screenshot-clone-repository-blog.png" alt="screenshot of Github" legend="Clone repository" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758200666/screenshot-clone-repository-blog_ye7kiz.png" alt="screenshot of Github" legend="Clone repository" screenshot=true >}}
 
 ### Command
 
 In your terminal and where you want to install the repository.
+
 ```bash
 git clone git@github.com:hugolify/hugolify-template.git
 ```

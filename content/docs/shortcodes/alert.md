@@ -30,8 +30,8 @@ icon: exclamation-octagon
 
 ## Datas
 
-```yml
-text: ""
+```yaml
+text: "" # string
 state:
   [
     "danger",
@@ -42,7 +42,7 @@ state:
     "secondary",
     "success",
     "warning",
-  ]
+  ] # select
 ```
 
 ## CMS

@@ -7,7 +7,7 @@ description: This tutorial guides you through creating a portfolio featuring
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
 seo:
-  image: /images/uploads/share-how-to-portfolio.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1758206688/share-how-to-portfolio_gknhww.png
 hero:
   title: How to create a portfolio with Hugo and Decap CMS using Hugolify
   text: This tutorial guides you through creating a portfolio featuring categories
@@ -74,7 +74,7 @@ yarn cms
 
 Edit all your content in <http://localhost:1313/admin/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-portfolio-decapcms.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205507/screenshot-hugolify-decapcms-portfolio_q0tl39.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot="true" >}}
 
 ### Create content
 
@@ -83,13 +83,13 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 ### Your first project
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-new-projects-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first project" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205505/screenshot-hugolify-decapcms-new-projects_tarhxw.png" alt="screenshot of Hugolify admin" legend="Create your first project" screenshot="true" >}}
 
 ## Front
 
 See locally your website in <http://localhost:1313/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-home-portfolio.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206166/screenshot-hugolify-home-portfolio_sgn7ep.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot="true" >}}
 
 ## Customization
 
@@ -103,4 +103,4 @@ See locally your website in <http://localhost:1313/>.
 
 ## Github repository
 
-{{< button url="https://github.com/hugolify/hugolify-demo-portfolio/" blank="true" text="Check hugolify-demo-portfolio repository" >}}
+{{< button text="Check hugolify-demo-portfolio repository" url="https://github.com/hugolify/hugolify-demo-portfolio/" blank="true" >}}

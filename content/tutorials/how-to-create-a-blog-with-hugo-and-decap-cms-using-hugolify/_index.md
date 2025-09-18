@@ -7,7 +7,7 @@ description: This tutorial guides you through creating a blog featuring
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
 seo:
-  image: /images/uploads/share-how-to-blog.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1758206690/share-how-to-blog_vwsz97.png
 hero:
   title: How to create a blog with Hugo and Decap CMS using Hugolify
   text: This tutorial guides you through creating a blog featuring categories and
@@ -76,7 +76,7 @@ yarn cms
 
 Edit all your content in <http://localhost:1313/admin/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-blog-decapcms.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205906/screenshot-hugolify-decapcms-blog_m0sx1y.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
 
 ### Create content
 
@@ -86,13 +86,13 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 ### Your first post
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first post" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205504/screenshot-hugolify-decapcms-new-posts_zjfqan.png" alt="screenshot of Hugolify admin" legend="Create your first post" screenshot=true >}}
 
 ## Front
 
 See locally your website in <http://localhost:1313/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-home-blog.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206165/screenshot-hugolify-home-blog_rtyfdr.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
 
 ## Customization
 

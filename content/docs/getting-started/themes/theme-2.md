@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Theme 2
 description: Second available theme
 weight: 2
@@ -7,9 +8,9 @@ icon: 2-circle
 
 ## Demo
 
-{{< figure src="/images/uploads/theme-2.png" alt="Screenshot of Theme 2" screenshot=true legend="Homepage" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204772/screenshot-hugolify-theme-2_w3wa4c.png" alt="Screenshot of Theme 2" screenshot="true" legend="Homepage" >}}
 
-{{< button url="https://theme-2--hugolify-demo.netlify.app/" text="Explore demo" blank=true >}}
+{{< button url="https://theme-2--hugolify-demo.netlify.app/" text="Explore demo" blank="true" >}}
 
 ## Setup
 

@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Tina CMS
 description: Open-source content management Git-based and API driven.
 image:

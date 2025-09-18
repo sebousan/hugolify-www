@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: CMS
 description: Choose your CMS.
 weight: 2

@@ -29,9 +29,9 @@ icon: geo-alt
 
 ## Datas
 
-```yml
-markers: ""
-zoom: "" // [1…20] if only one marker
+```yaml
+markers: "" # object
+zoom: "" # [1…20] if only one marker
 ```
 
 ## CMS

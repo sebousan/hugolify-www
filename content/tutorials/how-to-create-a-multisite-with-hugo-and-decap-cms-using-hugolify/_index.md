@@ -6,7 +6,7 @@ description: With common and different content.
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 seo:
-  image: /images/uploads/share-how-to-multisite.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1758206687/share-how-to-multisite_offqdn.png
 hero:
   title: How to create a multisite with Hugo and Decap CMS using Hugolify
   text: With common and different content.
@@ -283,7 +283,7 @@ To launch Hugo project with livereload.
 yarn watch-site_a
 ```
 
-{{< figure src="/images/uploads/screenshot-multisite-home-site-a.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206913/screenshot-hugolify-multisite-home-site-a_x50ier.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot="true" >}}
 
 And in a second terminal, launch Decap CMS in localhost.
 
@@ -299,13 +299,13 @@ To launch Hugo project with livereload.
 yarn watch-site_b
 ```
 
-{{< figure src="/images/uploads/screenshot-multisite-home-site-b.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206916/screenshot-hugolify-multisite-home-site-b_psgtvn.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot="true" >}}
 
 ## Admin
 
 Edit all your content in <http://localhost:1313/admin/>.
 
-{{< figure src="/images/uploads/screenshot-multisite-hugolify-admin-site-a.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206911/screenshot-hugolify-multisite-decapcms-site-a_rrb39q.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot="true" >}}
 
 ### Create content
 
@@ -315,7 +315,7 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 ### Your first posts
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205504/screenshot-hugolify-decapcms-new-posts_zjfqan.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot="true" >}}
 
 ## Customization
 

@@ -6,10 +6,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-admin v0.0.0-20250909095408-8a0f297ae5ab h1:/2v6IB1s2oUltX/+bJjq19wbDVM/IvNkFGdRuCUuVaQ=
-github.com/hugolify/hugolify-admin v0.0.0-20250909095408-8a0f297ae5ab/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
-github.com/hugolify/hugolify-theme v1.26.0 h1:tI2StpVreSiGeSt9gxMyYBArPf5npNHI21TqCZXRsUw=
-github.com/hugolify/hugolify-theme v1.26.0/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-admin v0.0.0-20250918124836-3538e8c482a8 h1:76DuqDv47CBmLUqRwOaMZxyv02nsJvZv5R2cpoC0luA=
+github.com/hugolify/hugolify-admin v0.0.0-20250918124836-3538e8c482a8/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
+github.com/hugolify/hugolify-theme v1.26.1 h1:NbeGDr7FwSJ9rP1s4fhr0TCEno6s1AuuJ0gR/1AYe7Q=
+github.com/hugolify/hugolify-theme v1.26.1/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d h1:tzOZcj/5X6WI7zJa0IEju4KE31z8TJrUJfMHEo2fG7k=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
 github.com/midzer/tobii v3.0.0+incompatible h1:cccjAG0fN1u/kdnquWm/FLYffjX53Dj4kSbWFQSlKLc=
@@ -18,6 +18,7 @@ github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9u
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20250802070322-d574b6222a1b h1:UfyG4UZik7IsT1+qHc7jdcT620xDi1HBSOQEqpYwZMs=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20250802070322-d574b6222a1b/go.mod h1:yUc+GkvQkafMqFMGqXWLTutcRJ5+MIoP3uCoWUixQXg=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.13.1 h1:6bmNXvoeIbvjFWjfbjXg5JGbelLD1haIsMaEIzE9UZI=

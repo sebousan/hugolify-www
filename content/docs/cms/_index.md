@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: CMS
 description: Available CMS for Hugolify.
 weight: 6

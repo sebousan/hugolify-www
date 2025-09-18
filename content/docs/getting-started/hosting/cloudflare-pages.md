@@ -1,15 +1,15 @@
 ---
+isIndex: false
 title: Cloudflare Pages
-icon: cloudflare
 image:
-  src: /images/uploads/logo-cloudflare.png
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758128572/logo-cloudflare_zbmu79.png
 aliases:
-- /docs/getting-started/hosting/cloudflare
+  - /docs/getting-started/hosting/cloudflare
 ---
 ## Not available
 
-- Form: Netlify form
-- [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
+* Form: Netlify form
+* [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
 
 ## Use a specific Hugo version
 
@@ -25,10 +25,10 @@ HUGO_VERSION 0.146.4
 
 A complete documentation of how to host is available on Cloudflare website.
 
-{{< button url="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/#deploy-with-cloudflare-pages" text="See documentation" blank=true >}}
+{{< button text="See documentation" url="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/#deploy-with-cloudflare-pages" blank="true" >}}
 
 ## Website
 
 Learn more about the host and sign up.
 
-{{< button url="https://www.cloudflare.com" text="www.cloudflare.com" blank=true >}}
+{{< button text="www.cloudflare.com" url="https://www.cloudflare.com" blank="true" >}}

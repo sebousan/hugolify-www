@@ -1,20 +1,21 @@
 ---
 draft: false
-date: 2025-05-12T09:00:00Z
+date: 2025-05-12T09:00:00.000Z
 title: How to create a blog with Hugo and Decap CMS using Hugolify
-description: This tutorial guides you through creating a blog featuring categories and tags using Hugolify.
+description: This tutorial guides you through creating a blog featuring
+  categories and tags using Hugolify.
 image:
-  src: /images/uploads/361.Reading-The-News.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
 seo:
-  image: /images/uploads/share-how-to-blog.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1758206690/share-how-to-blog_vwsz97.png
 hero:
   title: How to create a blog with Hugo and Decap CMS using Hugolify
-  text: This tutorial guides you through creating a blog featuring categories and tags using Hugolify.
+  text: This tutorial guides you through creating a blog featuring categories and
+    tags using Hugolify.
   surtitle: Tutorial
   image:
-    src: /images/uploads/361.Reading-The-News.svg
+    src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
 ---
-
 ## Prerequisites
 
 * Git, Go and Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
@@ -54,6 +55,7 @@ imports:
 ```
 
 {{< alert text="The section module (hugolify-theme-posts) should always be listed after taxonomies in this configuration." state="warning" >}}
+
 {{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
 ## Launch project
@@ -72,9 +74,9 @@ yarn cms
 
 ## Admin
 
-Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/admin/).
+Edit all your content in <http://localhost:1313/admin/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-blog-decapcms.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205906/screenshot-hugolify-decapcms-blog_m0sx1y.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
 
 ### Create content
 
@@ -84,13 +86,13 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 ### Your first post
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first post" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205504/screenshot-hugolify-decapcms-new-posts_zjfqan.png" alt="screenshot of Hugolify admin" legend="Create your first post" screenshot=true >}}
 
 ## Front
 
-See locally your website in [http://localhost:1313/](http://localhost:1313/).
+See locally your website in <http://localhost:1313/>.
 
-{{< figure src="/images/uploads/screenshot-hugolify-home-blog.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206165/screenshot-hugolify-home-blog_rtyfdr.png" alt="screenshot of Hugolify website" legend="Your local website" screenshot=true >}}
 
 ## Customization
 

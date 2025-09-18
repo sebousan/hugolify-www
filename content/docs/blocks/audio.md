@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Audio
 description: Displays a audio element.
 icon: soundwave

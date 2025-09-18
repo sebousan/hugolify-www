@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Comparison
 description: Displays comparison block.
 icon: layout-three-columns
@@ -30,15 +31,15 @@ blocks:
 
 ## Examples
 
-- {{< blank_link link="https://demo.hugolify.io/blocks/comparison/" text="Demo visual renderer" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/comparison.md" text="Demo content file on Github" >}}
+- {{< blank_link text="Demo visual renderer" link="https://demo.hugolify.io/blocks/comparison/" >}}
+- {{< blank_link text="Demo content file on Github" link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/comparison.md" >}}
 
 ## Files
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/comparison.html" text="HTML file" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_comparison.sass" text="SASS file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/comparison.js" text="Decap CMS file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/comparison.yml" text="Hugolify admin file" >}}
+- {{< blank_link text="HTML file" link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/comparison.html" >}}
+- {{< blank_link text="SASS file" link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_comparison.sass" >}}
+- {{< blank_link text="Decap CMS file" link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/comparison.js" >}}
+- {{< blank_link text="Hugolify admin file" link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/comparison.yml" >}}
 
 ## CMS
 

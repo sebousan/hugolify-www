@@ -30,9 +30,9 @@ icon: box-arrow-up-right
 
 ## Datas
 
-```yml
-link: ""
-text: ""
+```yaml
+link: "" # string
+text: "" # string
 ```
 
 ## CMS

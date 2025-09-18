@@ -9,3 +9,34 @@ search:
   sort: true
 docs:
   sidebarmenu: true
+
+
+# Admin
+admin:
+
+  # Cloud
+  media:
+    cloud:
+      name: cloudinary 
+      cloud_name: uncinq
+      api_key: 733153572642938
+  
+  # Collections
+  collections:
+    docs:
+      nested:
+        depth: 10
+    tutorials:
+      enable: true
+
+  # Shortcodes
+  shortcodes:
+    enable:
+      - alert
+      - badge
+      - blank_link
+      - blockquote
+      - button
+      - details
+      - figure
+      - youtube

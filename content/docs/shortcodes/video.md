@@ -40,15 +40,15 @@ icon: camera-video
 
 ## Datas
 
-```yml
-mp4: ""
-webm: ""
-controls: false // boolean
-autoplay: false // boolean
-loop: false // boolean
-legend: "" // string
-credit: "" // markdown
-screenshot: false // Set true you want add fake browser around your picture
+```yaml
+mp4: "" # string
+webm: "" # string
+controls: false # boolean
+autoplay: false # boolean
+loop: false # boolean
+legend: "" # string
+credit: "" # markdown
+screenshot: false # boolean (set true if you want add a fake browser around your picture)
 ```
 
 ## CMS

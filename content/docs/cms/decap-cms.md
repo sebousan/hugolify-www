@@ -3,7 +3,7 @@ title: Decap CMS
 description: Open-source content management Git-based.
 weight: 2
 image:
-  src: /images/uploads/logo-decap-cms.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
 ---
 {{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Decap CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/decap-cms/)" state="danger" >}}
 

@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Shortcodes
 description: Add/modify shortcodes
 weight: 5

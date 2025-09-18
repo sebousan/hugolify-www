@@ -4,7 +4,7 @@ description: The most compatible and easy-to-use hosting with Hugolify.
 large: true
 weight: 1
 image:
-  src: /images/uploads/logo-netlify.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758128557/logo-netlify_r7ywd6.svg
 ---
 
 ## Available

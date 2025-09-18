@@ -1,20 +1,19 @@
 ---
 draft: false
-date: 2025-05-14T09:00:00Z
+date: 2025-05-14T09:00:00.000Z
 title: How to create a multisite with Hugo and Decap CMS using Hugolify
 description: With common and different content.
 image:
-  src: /images/uploads/303.Apps.svg
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 seo:
-  image: /images/uploads/share-how-to-multisite.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1758206687/share-how-to-multisite_offqdn.png
 hero:
   title: How to create a multisite with Hugo and Decap CMS using Hugolify
   text: With common and different content.
   surtitle: Tutorial
   image:
-    src: /images/uploads/303.Apps.svg
+    src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 ---
-
 ## Introduction
 
 We'll be creating two websites, each with shared and different content, on a single Hugo instance and hosted by Netlify. They'll be managed from a single location via Decap CMS.
@@ -23,7 +22,6 @@ We'll be creating two websites, each with shared and different content, on a sin
 
 * Git, Go and Hugo installed - [See Hugolify documentation](/docs/getting-started/prerequisites/)
 * Use Hugolify template - [See Hugolify documentation](/docs/getting-started/install/)
-
 
 ## Edit and create specific config files
 
@@ -126,7 +124,6 @@ Add specific config production file:
 ```yaml
 baseURL: https://www.site_a.com/
 ```
-
 
 ### Site B config
 
@@ -286,7 +283,7 @@ To launch Hugo project with livereload.
 yarn watch-site_a
 ```
 
-{{< figure src="/images/uploads/screenshot-multisite-home-site-a.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206913/screenshot-hugolify-multisite-home-site-a_x50ier.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot="true" >}}
 
 And in a second terminal, launch Decap CMS in localhost.
 
@@ -302,13 +299,13 @@ To launch Hugo project with livereload.
 yarn watch-site_b
 ```
 
-{{< figure src="/images/uploads/screenshot-multisite-home-site-b.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206916/screenshot-hugolify-multisite-home-site-b_psgtvn.png" alt="screenshot of homepage of site A" legend="Homepage of Site A" screenshot="true" >}}
 
 ## Admin
 
-Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/admin/).
+Edit all your content in <http://localhost:1313/admin/>.
 
-{{< figure src="/images/uploads/screenshot-multisite-hugolify-admin-site-a.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758206911/screenshot-hugolify-multisite-decapcms-site-a_rrb39q.png" alt="screenshot of Hugolify admin" legend="Hugolify admin with Decap CMS" screenshot="true" >}}
 
 ### Create content
 
@@ -318,7 +315,7 @@ Edit all your content in [http://localhost:1313/admin/](http://localhost:1313/ad
 
 ### Your first posts
 
-{{< figure src="/images/uploads/screenshot-hugolify-admin-new-posts-decapcms.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot=true >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758205504/screenshot-hugolify-decapcms-new-posts_zjfqan.png" alt="screenshot of Hugolify admin" legend="Create your first posts" screenshot="true" >}}
 
 ## Customization
 

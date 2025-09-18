@@ -1,8 +1,9 @@
 ---
+isIndex: false
 title: Tina CMS
 description: Open-source content management Git-based and API driven.
 image:
-  src: /images/uploads/logo-tina-cms.png
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758126092/logo-tina-cms_vnznv4.png
 status:
   text: WIP
   state: danger

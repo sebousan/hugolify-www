@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Theme 1
 description: First available theme
 weight: 1
@@ -7,9 +8,9 @@ icon: 1-circle
 
 ## Demo
 
-{{< figure src="/images/uploads/theme-1.png" alt="Screenshot of Theme 1" screenshot=true legend="Homepage" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204771/screenshot-hugolify-theme-1_vtrxel.png" alt="Screenshot of Theme 1" screenshot="true" legend="Homepage" >}}
 
-{{< button url="https://theme-1--hugolify-demo.netlify.app/" text="Explore demo" blank=true >}}
+{{< button url="https://theme-1--hugolify-demo.netlify.app/" text="Explore demo" blank="true" >}}
 
 ## Setup
 

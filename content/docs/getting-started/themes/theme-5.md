@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Theme 5
 description: Fith available theme
 weight: 5
@@ -7,9 +8,9 @@ icon: 5-circle
 
 ## Demo
 
-{{< figure src="/images/uploads/theme-5.png" alt="Screenshot of Theme 5" screenshot=true legend="Homepage" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204784/screenshot-hugolify-theme-5_zj6k7p.png" alt="Screenshot of Theme 5" screenshot="true" legend="Homepage" >}}
 
-{{< button url="https://theme-5--hugolify-demo.netlify.app/" text="Explore demo" blank=true >}}
+{{< button url="https://theme-5--hugolify-demo.netlify.app/" text="Explore demo" blank="true" >}}
 
 ## Setup
 

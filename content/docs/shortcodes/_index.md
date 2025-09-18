@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Shortcodes
 description: Hugolify shortcodes available.
 weight: 4

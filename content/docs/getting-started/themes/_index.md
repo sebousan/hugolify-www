@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Themes
 description: Available Hugolify themes…
 weight: 11

@@ -9,7 +9,7 @@ icon: blockquote-left
 ### Markdown usage
 
 ```go-html-template
-{{</* blockquote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." title="John Doe" text="Founder" image="/images/uploads/sebastien-moulene.jpg" */>}}
+{{</* blockquote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." title="John Doe" text="Founder" image="https://res.cloudinary.com/uncinq/image/upload/v1758205367/sebastien-moulene_ft0yg7.jpg" */>}}
 ```
 
 ### HTML rendered
@@ -55,15 +55,15 @@ icon: blockquote-left
 
 ### Visual renderer
 
-{{< blockquote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." title="John Doe" text="Founder" image="/images/uploads/sebastien-moulene.jpg" >}}
+{{< blockquote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum facilisis gravida. Nam diam ipsum, tempus vitae posuere at, mattis non lacus." title="John Doe" text="Founder" image="https://res.cloudinary.com/uncinq/image/upload/v1758205367/sebastien-moulene_ft0yg7.jpg" >}}
 
 ## Datas
 
-```yml
-quote: ""
-title: ""
-text: ""
-image: ""
+```yaml
+quote: "" # markdown
+title: "" # string
+text: "" # string
+image: "" # image
 ```
 
 ## CMS

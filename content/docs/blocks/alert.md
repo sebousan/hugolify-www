@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Alert
 description: Displays an alert message with 3 different statutes.
 icon: exclamation-octagon

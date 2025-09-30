@@ -17,4 +17,3 @@ markup:
 pagination:
   pagerSize: 9
 removePathAccents: true
-timeout: 100000

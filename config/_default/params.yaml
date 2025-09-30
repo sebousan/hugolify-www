@@ -1,4 +1,6 @@
 _merge: deep
+
+# Website
 bootstrap:
   modal: false
   tooltip: false
@@ -9,7 +11,9 @@ search:
   sort: true
 docs:
   sidebarmenu: true
-
+image:
+  retina:
+    desktop: true
 
 # Admin
 admin:

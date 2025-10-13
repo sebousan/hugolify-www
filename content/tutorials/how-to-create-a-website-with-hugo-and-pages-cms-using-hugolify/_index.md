@@ -72,6 +72,9 @@ admin:
 
 - [About Admin](/docs/cms/admin/setup/)
 - [About Pages CMS](/docs/cms/admin/cms/pages-cms/)
+- [About Collections](/docs/cms/admin/collections/)
+- [About Blocks](/docs/cms/admin/blocks/)
+- [About Fields](/docs/cms/admin/fields/)
 
 
 ## Get Pages CMS config file
@@ -87,6 +90,9 @@ Command to build project and create Pages CMS config file
 ```bash
 yarn build:config:pagescms
 ```
+
+{{< alert text="To modify the config file, it is advisable to do so via the [params](/tutorials/how-to-create-a-website-with-hugo-and-pages-cms-using-hugolify/#more-about-customizations) because this file is compiled to the build command." state="danger" >}}
+
 
 ## Push in Github
 

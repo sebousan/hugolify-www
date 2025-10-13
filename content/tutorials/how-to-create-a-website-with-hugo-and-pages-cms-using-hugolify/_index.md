@@ -42,7 +42,9 @@ Examples:
 * [How to create a blog featuring categories and tags using Hugolify](how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify)
 * [How to create a portfolio featuring categories using Hugolify](how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify)
 
-## Set Pages CMS
+## Configuration
+
+### Set Pages CMS
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -50,6 +52,12 @@ Examples:
 admin:
   cms: pagescms
 ```
+
+### More about customizations
+
+- [About Admin](/docs/cms/admin/setup/)
+- [About Pages CMS](/docs/cms/admin/cms/pages-cms/)
+
 
 ## Get Pages CMS config file
 
@@ -67,8 +75,10 @@ yarn build:config:pagescms
 
 ## Push in Github
 
-Commit and push to Github your changes.\
-Config file `.pages.yml` need to be in your root repository.
+{{< alert text="Config file `.pages.yml` needs to be in your root repository." state="warning" >}}
+
+Commit and push to Github your changes.
+
 
 ## Pages CMS
 

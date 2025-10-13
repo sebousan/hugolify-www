@@ -24,7 +24,13 @@ admin:
 
 ## Build your .pages.yml
 
-Build a config.yml file
+Build a .pages.yml file with NodeJS script
+
+```bash
+yarn build:config:pagescms
+```
+
+Or build a config.yml file
 
 ```bash
 yarn build
@@ -38,6 +44,19 @@ Create a .pages.yml file to the root, paste config content and commit it.
 
 {{< alert text="`/.pages.yml`" state="light" >}}
 
+## Enable/disable media
+
+With media from Pages CMS, you can configure how to handle files you want to upload, attach to or embed in your content.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  media:
+    audio_folders: true
+    pdf_folders: true
+    video_folders: true
+```
 
 ## Not supported featured
 

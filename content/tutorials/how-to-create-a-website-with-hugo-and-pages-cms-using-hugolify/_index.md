@@ -111,6 +111,11 @@ Go to {{< blank_link link="https://app.pagescms.org/" text="https://app.pagescms
 
 {{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760351336/screenshot-pagescms-project_mmadxa.png" alt="screenshot of Pages CMS app project page" legend="Pages CMS, project" screenshot="true" >}}
 
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760364448/screenshot-pagescms-page-home_xwhtbp.png" alt="screenshot of Pages CMS app, edit page home" legend="Pages CMS, page home" screenshot="true" >}}
+
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760364448/screenshot-pagescms-blocks_n758es.png" alt="screenshot of Pages CMS app, blocks list" legend="Pages CMS, blocks" screenshot="true" >}}
+
+
 ## Hosting your project
 
 [Host your website on Netlify or others hosters.](/docs/getting-started/hosting/)

@@ -275,6 +275,12 @@ static/
 
 ## Launch project
 
+Install packages
+
+```bash
+yarn
+```
+
 ### Site A
 
 To launch Hugo project with livereload.

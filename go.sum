@@ -16,6 +16,7 @@ github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9u
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251001100011-79df0961e35e h1:2+PgTrPMR122hOYLA6JG0bnqHPD47no+Xdq/eelx9MI=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251001100011-79df0961e35e/go.mod h1:qB0HiaLtrnRIzzHYL/M64jxKLjfod06wIGOGGrnkMZ0=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.13.1 h1:6bmNXvoeIbvjFWjfbjXg5JGbelLD1haIsMaEIzE9UZI=

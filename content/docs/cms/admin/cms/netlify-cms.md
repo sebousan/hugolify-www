@@ -26,7 +26,7 @@ admin:
 
 ## Icon library
 
-Bootstraop Icons (via CSS)
+- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstraop Icons (via CSS)" >}}
 
 ## Documention
 

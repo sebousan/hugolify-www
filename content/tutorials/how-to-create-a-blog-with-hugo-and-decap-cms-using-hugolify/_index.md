@@ -60,6 +60,12 @@ imports:
 
 ## Launch project
 
+Install packages
+
+```bash
+yarn
+```
+
 To launch Hugo project with livereload.
 
 ```bash

@@ -68,3 +68,8 @@ admin:
 ## Documention
 
 - {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}
+
+## Tutorial
+
+- [How to create a Website with Hugo and Pages CMS using Hugolify](/tutorials/how-to-create-a-website-with-hugo-and-pages-cms-using-hugolify/)
+

@@ -65,6 +65,9 @@ imports:
 admin:
   cms: sveltiacms # set Sveltia CMS as CMS for Hugolify
   repo: Hugolify/hugolify-demo-sveltiacms # set your repository’s url
+  collections:
+    indexes:
+      enable: false # disable unused collection
 ```
 
 ### More about customizations
@@ -95,7 +98,7 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 {{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760429707/screenshot-sveltiacms-signin_xkrpis.png" alt="screenshot of Sveltia CMS, signin page" legend="Sveltia CMS, signin page" screenshot="true" >}}
 
-{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760429329/screenshot-sveltiacms-pages_ac4t2y.png" alt="screenshot of Sveltia CMS, pages list" legend="Sveltia CMS, pages list" screenshot="true" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760473008/screenshot-sveltiacms-pages_oygogh.png" alt="screenshot of Sveltia CMS, pages list" legend="Sveltia CMS, pages list" screenshot="true" >}}
 
 {{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760429329/screenshot-sveltiacms-page-contact_nkxxil.png" alt="screenshot of Sveltia CMS, contact page" legend="Sveltia CMS, contact page" screenshot="true" >}}
 

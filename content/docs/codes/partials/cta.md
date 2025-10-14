@@ -27,8 +27,10 @@ icon: link-45deg
 ```yml
 url: "" // Button href
 text: "" // Button text
-blank: false // boolean, true to add target="_blank"
-class: "" // Add additional class
+blank: false // boolean, true to add target="_blank" (optional)
+class: "" // Add additional class (optional)
+title: "" // Add title attribute (optional)
+hreflang: "" // Add hreflang attribute (optional)
 ```
 
 ## Related link

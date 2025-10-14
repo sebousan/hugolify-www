@@ -43,9 +43,13 @@ itemprop: "" // add a Schema.org information
 ## Available for
 
 - {{< blank_link link="https://gohugo.io/content-management/image-processing/" text="Hugo image processing" >}}
+- {{< blank_link link="https://cloudinary.com/" text="Cloudinary" >}}
 - {{< blank_link link="https://uploadcare.com/" text="Uploadcare" >}}
 
 
 ## Related link
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image.html" text="Commons file — hugolify-theme" >}}
+  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image/cloudinary.html" text="Cloudinary file — hugolify-theme" >}}
+  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image/hugo.html" text="Hugo file — hugolify-theme" >}}
+  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image/uploadcare.html" text="Uploadcare file — hugolify-theme" >}}

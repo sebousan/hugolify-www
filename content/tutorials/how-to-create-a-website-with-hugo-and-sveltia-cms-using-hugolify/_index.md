@@ -40,11 +40,7 @@ Feel free to add some type of content Hugolify modules ([sections](/docs/section
 ```yaml
 imports:
   # Content type modules examples
-  - path: github.com/hugolify/hugolify-theme-posts-authors # taxonomy
-  - path: github.com/hugolify/hugolify-theme-posts-categories # taxonomy
   - path: github.com/hugolify/hugolify-theme-posts # section
-  - path: github.com/hugolify/hugolify-theme-publications # section
-  - path: github.com/hugolify/hugolify-theme-persons # section
   # Required modules
   - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
@@ -54,6 +50,7 @@ imports:
 
 * [How to create a blog featuring categories and tags using Hugolify](how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify)
 * [How to create a portfolio featuring categories using Hugolify](how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify)
+
 
 ## Configuration
 

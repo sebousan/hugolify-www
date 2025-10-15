@@ -56,6 +56,36 @@ imports:
 
 {{< alert text="Required module (hugolify-theme and hugolify-admin) need be always at the end of list." state="danger" >}}
 
+
+## Assets
+
+If you want to host your images through a cloud service like Cloudinary or Uploadcare, here's what to do.
+
+### Cloudinary
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  media:
+    cloud:
+      name: cloudinary
+      cloud_name: # write your cloudinary cloud name
+      api_key: # write your cloudinary api key
+```
+
+### Uploadcare
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  media:
+    cloud:
+      name: uploadcare
+      publicKey: # write your uploadcare public api key
+```
+
 ## Launch project
 
 Install packages

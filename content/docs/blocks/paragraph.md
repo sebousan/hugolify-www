@@ -9,12 +9,12 @@ icon: text-paragraph
 ```yml
 blocks:
   - type: paragraph
-    title: '' // string
-    text: '' // markdown
-    grid: ''
-    offset: ''
-    align: ''
-    background: false
+    title: '' # string (optional)
+    text: '' # markdown (optional)
+    grid: '' # [small, medium, large, container, full] (optional)
+    offset: '' # [start, end, center] (optional)
+    align: '' # [start, end, center] (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

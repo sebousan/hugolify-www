@@ -11,11 +11,18 @@ icon: instagram
 ```yml
 blocks:
   - type: instagram
-    token: '' // string
-    limit: 5 // number
-    heading: {}
-    cta: {}
-    background: false
+    token: '' # string
+    limit: 5 # number (optional)
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    cta: {} # (optional)
+      text: '' # string
+      url: '' # url
+      blank: false # boolean (optional)
+      lang: '' # code lang (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

@@ -8,13 +8,16 @@ icon: check-all
 
 ```yml
 blocks:
-  - type: selected-*  // [selected-posts, selected-publications, selected-products…]
-    section: * // [posts, publications, products…]
-    layout: '' // grid (default) or list
-    heading: {}
-    items: [] // list of slugs
-    show_more: false // boolean
-    background: false
+  - type: selected-*  # [selected-posts, selected-publications, selected-products…]
+    section: '' # [posts, publications, products…]
+    layout: '' # [grid, list] (optional)
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    items: [] # list of slugs
+    show_more: false # boolean (boolean)
+    background: false # boolean (boolean)
 ```
 
 ## Examples

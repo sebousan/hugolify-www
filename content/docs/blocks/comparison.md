@@ -12,21 +12,28 @@ aliases:
 ```yml
 blocks:
   - type: comparison
-    heading: {}
-    column: '' // number
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    column: '' # number, columns by row in desktop
     items: []
-        title: '' // string
-        text: '' // string
+        title: '' # string (optional)
+        text: '' # string (optional)
         offer:
-          price: '' // float
-          discount: '' // string (e.g. 10%)
-          frequency: '' // string
+          price: '' # float
+          discount: '' # string (e.g. 10%)
+          frequency: '' # string
         arguments: []
-            icon: '' // string (bootstrap icon)
-            text: '' // string
-        cta: {}
-        is_primary: false
-    background: false
+            icon: '' # string (bootstrap icon)
+            text: '' # string
+        cta: {} # (optional)
+          text: '' # string
+          url: '' # url
+          blank: false # boolean (optional)
+          lang: '' # code lang (optional)
+        is_primary: false # boolean (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

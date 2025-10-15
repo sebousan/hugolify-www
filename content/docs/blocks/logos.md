@@ -4,20 +4,42 @@ description: Displays a logos list.
 icon: grip-horizontal
 ---
 
-# Logos block
-
-Displays a video element.
-
 ## Frontmatter
 
 ```yml
 blocks:
   - type: logos
-    heading: {}
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
     items: []
-    layout: '' // grid (default) or carousel
-    carousel: {} // object (only if carousel layout)
-    background: false
+      title: # string (optional)
+      url: # url (optional)
+      src: # url (optional)
+    layout: '' # [grid, carousel] (optional)
+    carousel: {} # object only if carousel layout (optional)
+      params: {} # (optional)
+        focus: '' # boolean (optional)
+        autoplay: true # boolean (optional)
+        arrows: true # boolean (optional)
+        pagination: false # boolean (optional)
+        type: '' # [slide, loop, fade] (optional)
+        perPage: '' # number (optional)
+        padding: '' # number (optional)
+        gap: '' # number (optional)
+      responsive: {} # (optional)
+        breakpoints: 640 # number [640, 768, 1024, 1280, 1440]
+        params: {}
+          focus: '' # boolean (optional)
+          autoplay: true # boolean (optional)
+          arrows: true # boolean (optional)
+          pagination: false # boolean (optional)
+          type: '' # [slide, loop, fade] (optional)
+          perPage: '' # number (optional)
+          padding: '' # number (optional)
+          gap: '' # number (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

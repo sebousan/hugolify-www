@@ -11,18 +11,25 @@ icon: card-heading
 ```yml
 blocks:
   - type: informations
-    heading: {}
-    column: '' // number
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    column: '' # number, columns by row in desktop (optional)
     items: []
-      icon: '' // string (bootstrap icon)
-      image:
-        src: '' // string
-        alt: '' // string
-        isLogo: false
-      title: '' // string
-      text: '' // string
-      cta: {}
-    background: false
+      icon: '' # string (bootstrap icon)
+      image: {} # (optional)
+        src: '' # string
+        alt: '' # string (optional)
+        isLogo: false # boolean (optional)
+      title: '' # string (optional)
+      text: '' # string (optional)
+      cta: {} # (optional)
+        text: '' # string
+        url: '' # url
+        blank: false # boolean (optional)
+        lang: '' # code lang (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

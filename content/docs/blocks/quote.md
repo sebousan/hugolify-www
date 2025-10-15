@@ -9,13 +9,14 @@ icon: blockquote-left
 ```yml
 blocks:
   - type: quote
-    quote: '' // string
-    author:
-      title: '' // string
-      text: '' // string
-      image:
-        src: '' // string
-        alt: '' // string
+    quote: '' # string
+    author: {} # (optional)
+      title: '' # string (optional)
+      text: '' # string (optional)
+      image: {}
+        src: '' # url (optional)
+        alt: '' # string (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

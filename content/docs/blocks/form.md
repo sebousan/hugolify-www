@@ -11,21 +11,24 @@ icon: input-cursor-text
 ```yml
 blocks:
   - type: form
-    heading: {}
-    grid: ''
-    offset: ''
-    name: '' // string
-    submit: '' // string
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    grid: '' # [small, medium, large, container, full] (optional)
+    offset: '' # [start, end, center] (optional)
+    name: '' # string
+    submit: '' # string
     items: []
-      label: '' // string
-      type: '' [email, select, tel, text, textarea]
-      options: [] // if select
-        title: '' // string
-        value: '' // string
-      required: false // boolean
-      full: false // boolean
-      autocomplete: '' // autocomplete value like postal-code, email…
-    background: false
+      label: '' # string
+      type: '' # [email, select, tel, text, textarea]
+      options: [] # if select
+        title: '' # string
+        value: '' # string
+      required: false # boolean
+      full: false # boolean
+      autocomplete: '' # autocomplete value like postal-code, email…
+    background: false # boolean (optional)
 ```
 
 ## Examples

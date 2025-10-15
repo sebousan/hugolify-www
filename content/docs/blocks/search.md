@@ -13,8 +13,11 @@ icon: search
 ```yml
 blocks:
   - type: search
-    heading: {}
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    background: false # boolean (optional)
 ```
 
 <!-- ## Examples

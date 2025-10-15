@@ -9,12 +9,15 @@ icon: clock-history
 ```yml
 blocks:
   - type: latest
-    heading: {}
-    section: '' // [posts, publications, products…]
-    layout: '' // grid (default) or list
-    count: 4 // number
-    show_more: true // boolean
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    section: '' # string [posts, publications, products…]
+    layout: '' # [grid, list] (optional)
+    count: 4 # number (optional)
+    show_more: true # boolean (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

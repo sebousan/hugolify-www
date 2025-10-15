@@ -9,11 +9,14 @@ icon: patch-question
 ```yml
 blocks:
   - type: faq
-    heading: {}
-    items:
-      title: ""
-      text: ""
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    items: []
+      title: "" # string (optional)
+      text: "" # string (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

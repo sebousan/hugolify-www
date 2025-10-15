@@ -10,9 +10,16 @@ icon: link
 ```yml
 blocks:
   - type: cta
-    heading: {}
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
     cta: {}
-    background: false
+      text: '' # string
+      url: '' # url
+      blank: false # boolean (optional)
+      lang: '' # code lang (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

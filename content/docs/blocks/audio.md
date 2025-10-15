@@ -10,14 +10,17 @@ icon: soundwave
 ```yml
 blocks:
   - type: audio
-    heading: {}
-    audio:
-      mp3: ''
-      ogg: ''
-      autoplay: false // boolean
-      loop: false // boolean
-      transcription: '' // string
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    audio: {}
+      mp3: '' # url (optional)
+      ogg: '' # url (optional)
+      autoplay: false # boolean
+      loop: false # boolean
+      transcription: '' # string (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

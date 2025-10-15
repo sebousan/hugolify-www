@@ -9,17 +9,20 @@ icon: card-image
 ```yml
 blocks:
   - type: figure
-    heading: {}
-    figure:
-      src: '' // string
-      alt: '' // string
-      legend: '' // string
-      credit: '' // markdown
-      linear: false // Set true for linear filter compression
-      screenshot: false // Set true you want add fake browser around your picture (and linear filter compression)
-    grid: ''
-    offset: ''
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    figure: {}
+      src: '' # url
+      alt: '' # string
+      legend: '' # string
+      credit: '' # markdown
+      linear: false # boolean, set true for linear filter compression
+      screenshot: false # boolean, set true you want add fake browser around your picture (and linear filter compression)
+    grid: '' # [small, medium, large, container, full] (optional)
+    offset: '' # [start, end, center] (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

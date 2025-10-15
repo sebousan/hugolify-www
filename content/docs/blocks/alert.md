@@ -10,9 +10,9 @@ icon: exclamation-octagon
 ```yml
 blocks:
   - type: alert
-    text: '' // string
-    state: '' [danger, dark, light, infos, success, warning]
-    background: false
+    text: '' # string
+    state: '' # [danger, dark, light, infos, success, warning]
+    background: false # boolean (optional)
 ```
 
 ## Examples

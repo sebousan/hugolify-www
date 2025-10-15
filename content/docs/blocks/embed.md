@@ -9,9 +9,12 @@ icon: code-slash
 ```yml
 blocks:
   - type: embed
-    heading: {}
-    embed: ""
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    embed: "" # text
+    background: false # boolean (optional)
 ```
 
 ## Examples

@@ -9,18 +9,22 @@ icon: camera-video
 ```yml
 blocks:
   - type: video
-    heading: {}
-    video:
-      mp4: ''
-      webm: ''
-      controls: false // boolean
-      autoplay: false // boolean
-      loop: false // boolean
-      screenshot: false // boolean
-      legend: '' // string
-      transcription: '' // string
-    grid: ''
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    video: {}
+      mp4: '' # video url (optional)
+      webm: '' # video url (optional)
+      controls: false # boolean (optional)
+      autoplay: false # boolean (optional)
+      loop: false # boolean (optional)
+      screenshot: false # boolean (optional)
+      legend: '' # string (optional)
+      transcription: '' # string (optional)
+      poster: '' # image url (optional)
+    grid: '' # [small, medium, large, container, full] (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

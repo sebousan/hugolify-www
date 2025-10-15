@@ -9,18 +9,21 @@ icon: percent
 ```yml
 blocks:
   - type: datas
-    heading: {}
-    column: ""
-    show_gauge: false
-    show_color: false
-    items:
-      prefix: ""
-      value: ""
-      suffix: ""
-      limit: 100
-      title: ""
-      text: ""
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    column: '' # number, columns by row in desktop
+    show_gauge: false # boolean
+    show_color: false # boolean
+    items: []
+      prefix: "" # string (optional)
+      value: "" # number
+      suffix: "" # string (optional)
+      limit: 100 # number
+      title: "" # string (optional)
+      text: "" # string (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

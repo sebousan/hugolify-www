@@ -11,19 +11,22 @@ icon: bar-chart
 blocks:
   - type: chart
     heading: {}
-    grid: ""
-    chart:
-      type: ""
-      title: ""
-      backgroundColor: ""
-      borderColor: ""
-      items:
-        label: ""
-        value: ""
-        color: ""
-      data:
-        json: ""
-    background: false
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    grid: '' # [small, medium, large, container, full] (optional)
+    chart: {}
+      type: "" # string
+      title: "" # string
+      backgroundColor: "" # string
+      borderColor: "" # string
+      items: []
+        label: "" # string
+        value: "" # string
+        color: "" # string
+      data: # (optional)
+        json: "" # text (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

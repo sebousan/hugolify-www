@@ -9,12 +9,19 @@ icon: grid-3x2-gap
 ```yml
 blocks:
   - type: gallery
-    heading: {}
-    column: 4 // number, columns by row in desktop
-    ratio: 1 // number, ratio of thumbnails format
-    gallery:
-      image: {}
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    column: '' # number, columns by row in desktop (optional)
+    ratio: 1 # number, ratio of thumbnails format
+    gallery: []
+      src: '' # url
+      filter: '' # string (optional)
+      alt: '' # string (optional)
+      legend: '' # string (optional)
+      credit: '' # markdown (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

@@ -11,16 +11,23 @@ icon: postcard
 ```yml
 blocks:
   - type: editorial
-    direction: ""
-    title: ""
-    text: ""
-    cta:
-      text: ""
-      url: ""
-      blank: false
-    image:
-      src: ""
-      alt: ""
+    direction: "" # [rtl, ltr]
+    surtitle: "" # string (optional)
+    title: "" # string (optional)
+    text: "" # string (optional)
+    notes: [] # (optional)
+      text:  # string (optional)
+    ctas: [] # (optional)
+      text: '' # string
+      url: '' # url
+      blank: false # boolean (optional)
+      lang: '' # code lang (optional)
+    image: {} # (optional)
+      src: '' # url
+      filter: '' # string (optional)
+      alt: '' # string (optional)
+      legend: '' # string (optional)
+      credit: '' # markdown (optional)
 ```
 
 ## Params

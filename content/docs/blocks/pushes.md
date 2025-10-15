@@ -9,21 +9,48 @@ icon: credit-card-2-front
 ```yml
 blocks:
   - type: pushes
-    heading: {}
-    column: '' // [1…2]
-    items:
-      title: '' // string
-      text: '' // string
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    column: '' # [1…2]
+    items: []
+      title: '' # string (optional)
+      text: '' # string (optional)
       cta: {}
+        text: '' # string
+        url: '' # url
+        blank: false # boolean (optional)
+        lang: '' # code lang (optional)
       image: {}
-      offset: '' // [start, end, center]
-      card: false // boolean
-      darken: false // boolean
-      background_color: '' // color
-      color: '' // color
-    layout: '' // grid (default) or carousel
-    carousel: {} // object (only if carousel layout)
-    background: false
+      offset: '' # [start, end, center]
+      card: false # boolean (boolean)
+      darken: false # boolean (boolean)
+      background_color: '' # color (boolean)
+      color: '' # color (boolean)
+    layout: '' # [grid, carousel] (optional)
+    carousel: {} # object only if carousel layout (optional)
+      params: {} # (optional)
+        focus: '' # boolean (optional)
+        autoplay: true # boolean (optional)
+        arrows: true # boolean (optional)
+        pagination: false # boolean (optional)
+        type: '' # [slide, loop, fade] (optional)
+        perPage: '' # number (optional)
+        padding: '' # number (optional)
+        gap: '' # number (optional)
+      responsive: {} # (optional)
+        breakpoints: 640 # number [640, 768, 1024, 1280, 1440]
+        params: {}
+          focus: '' # boolean (optional)
+          autoplay: true # boolean (optional)
+          arrows: true # boolean (optional)
+          pagination: false # boolean (optional)
+          type: '' # [slide, loop, fade] (optional)
+          perPage: '' # number (optional)
+          padding: '' # number (optional)
+          gap: '' # number (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

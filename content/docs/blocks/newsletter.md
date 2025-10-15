@@ -9,10 +9,13 @@ icon: envelope
 ```yml
 blocks:
   - type: newsletter
-    heading: {}
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
     form: {}
-    grid: ""
-    background: false
+    grid: '' # [small, medium, large, container, full] (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

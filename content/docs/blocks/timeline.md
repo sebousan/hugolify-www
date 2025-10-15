@@ -9,9 +9,15 @@ icon: list-ol
 ```yml
 blocks:
   - type: timeline
-    heading: {}
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
     items: []
-    background: false
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

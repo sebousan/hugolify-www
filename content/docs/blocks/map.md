@@ -4,18 +4,27 @@ description: Displays a simple map with one marker.
 icon: geo-alt
 ---
 
-{{< alert text="RGPD compliant" state="success" >}}
+{{< badge text="RGPD compliant" state="success" >}}
 
 ## Frontmatter
 
 ```yml
 blocks:
   - type: map
-    heading: {}
-    location: {} // map
-    zoom: 13 // [1…20]
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    show_places: false # boolean (optional *)
+    location: {} # map widget (optional *)
+    coordinates: {} # (optional *)
+      lat: # float
+      lng: # float
+    zoom: 13 # [1…20] (optional)
+    grid: '' # [small, medium, large, container, full] (optional)
+    background: false # boolean (optional)
 ```
+\* use location (map widget from CMS), coordinates (object with lat and lng) or show_places (map with all markers from your places section).
 
 ## Examples
 

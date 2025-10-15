@@ -9,8 +9,11 @@ icon: type-h2
 ```yml
 blocks:
   - type: title
-    heading: {}
-    background: false
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

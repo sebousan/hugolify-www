@@ -9,15 +9,18 @@ icon: images
 ```yml
 blocks:
   - type: images
-    heading: {}
+    heading: {} # (optional)
+      surtitle: '' # string (optional)
+      title: '' # string (optional)
+      text: '' # markdown (optional)
     images: []
-      - src: '' // string
-        alt: '' // string
-        legend: '' // string
-        credit: '' // markdown
-        screenshot: false // boolean
-        half: false // boolean
-    background: false // boolean
+      src: '' # url
+      alt: '' # string (optional)
+      legend: '' # string (optional)
+      credit: '' # markdown (optional)
+      screenshot: false # boolean (optional)
+      half: false # boolean (optional)
+    background: false # boolean (optional)
 ```
 
 ## Examples

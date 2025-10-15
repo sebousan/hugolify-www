@@ -6,7 +6,7 @@ description: This tutorial guides you through creating a Website editable via Sv
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758116925/420.Dual-Monitor_xu2t2k.svg
 seo:
-  image: https://res.cloudinary.com/uncinq/image/upload/v1760354326/share-tuto-pagescms_zpra7q.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1760515765/share-tuto-sveltiacms_vlubyb.png
 hero:
   title: How to create a Website with Hugo and Sveltia CMS using Hugolify
   text: This tutorial guides you through creating a Website editable via Sveltia CMS.

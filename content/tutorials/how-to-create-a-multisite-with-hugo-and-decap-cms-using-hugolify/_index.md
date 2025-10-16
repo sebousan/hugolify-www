@@ -1,19 +1,20 @@
 ---
 draft: false
 date: 2025-05-14T09:00:00.000Z
-title: How to create a multisite with Hugo and Decap CMS using Hugolify
+title: How to create a multisite with Hugo and Decap CMS using Hugolify on Netlify
 description: With common and different content.
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 seo:
   image: https://res.cloudinary.com/uncinq/image/upload/v1758206687/share-how-to-multisite_offqdn.png
 hero:
-  title: How to create a multisite with Hugo and Decap CMS using Hugolify
+  title: How to create a multisite with Hugo and Decap CMS using Hugolify on Netlify
   text: With common and different content.
   surtitle: Tutorial
   image:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 ---
+
 ## Introduction
 
 We'll be creating two websites, each with shared and different content, on a single Hugo instance and hosted by Netlify. They'll be managed from a single location via Decap CMS.

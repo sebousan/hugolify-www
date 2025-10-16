@@ -114,7 +114,7 @@ blocks:
       surtitle: How to
       title: Thanks to our tutorials
     items:
-      - title: How to create a multisite with Hugo and Decap CMS using Hugolify
+      - title: How to create a multisite with Hugo and Decap CMS using Hugolify on Netlify
         surtitle: Tutorial
         text: With common and different content.
         image:

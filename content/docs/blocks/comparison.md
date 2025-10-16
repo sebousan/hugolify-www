@@ -36,21 +36,27 @@ blocks:
     background: false # boolean (optional)
 ```
 
-## Examples
-
-- {{< blank_link text="Demo visual renderer" link="https://demo.hugolify.io/blocks/comparison/" >}}
-- {{< blank_link text="Demo content file on Github" link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/comparison.md" >}}
+{{< button text="Demo visual renderer" url="https://demo.hugolify.io/blocks/comparison/" blank="true" >}}
 
 ## Files
 
 - {{< blank_link text="HTML file" link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/comparison.html" >}}
 - {{< blank_link text="SASS file" link="https://github.com/hugolify/hugolify-theme/blob/main/assets/sass/components/blocks/_comparison.sass" >}}
-- {{< blank_link text="Decap CMS file" link="https://github.com/Hugolify/hugolify-decap-cms/blob/main/admin/app/blocks/comparison.js" >}}
+- {{< blank_link text="Demo content file" link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/comparison.md" >}}
 - {{< blank_link text="Hugolify admin file" link="https://github.com/Hugolify/hugolify-admin/blob/main/layouts/partials/admin/blocks/comparison.yml" >}}
 
-## CMS
+## CMS availability
 
-- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
-- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Available" state="success" >}}
-- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
-- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}
+### Hugolify Admin
+
+- [Hugolify Admin](/docs/cms/admin/)
+  - [Decap CMS](/docs/cms/admin/cms/decap-cms/) {{< badge text="Available" state="success" >}}
+  - [Netlify CMS](/docs/cms/admin/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
+  - [Pages CMS](/docs/cms/admin/cms/pages-cms/) {{< badge text="Available" state="success" >}}
+  - [Sveltia CMS](/docs/cms/admin/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}
+
+### Old repositories 
+
+- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}
+- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}
+- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}

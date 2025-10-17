@@ -35,7 +35,7 @@ blocks:
         image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758116598/179.Planet_kydicb.svg
           isLogo: true
-      - title: RGPD compliant
+      - title: GDPR compliant
         text: Cookie less, Google less…
         image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758116906/403.Lawyer_h8jf76.svg
@@ -66,38 +66,59 @@ blocks:
     offset: center
     background: true
     heading:
-      surtitle: CMS
+      surtitle: Headless CMS
       title: Very simple content manager with Decap CMS
       text: Easy to customize and dedicated to site content.
     figure:
       screenshot: true
       src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png
       alt: Homepage screenshot of Hugolify Admin
-  - type: logos
+  - type: informations
     background: true
-    column: 8
+    column: 5
     heading:
-      title: Available CMS for Hugolify
-      text: Decap CMS, Sveltia CMS, Pages CMS, Static CMS, Netlify CMS or Tina CMS.
+      title: All available CMS for Hugolify
     items:
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
+          isLogo: true
         title: Decap CMS
-        url: /docs/cms/admin/cms/decap-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
-        title: Sveltia CMS
-        url: /docs/cms/admin/cms/sveltia-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
-        title: Pages CMS
-        url: /docs/cms/admin/cms/pages-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
-        title: Static CMS
-        url: /docs/cms/admin/cms/static-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
+        cta:
+          text: Documentation
+          title: How to configure Decap CMS
+          url: /docs/cms/admin/cms/decap-cms/
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
+          isLogo: true
         title: Netlify CMS
-        url: /docs/cms/admin/cms/netlify-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126092/logo-tina-cms_vnznv4.png
-        title: Tina CMS
-        url: /docs/cms/admin/cms/tina-cms/
+        cta:
+          text: Documentation
+          title: How to configure Netlify CMS
+          url: /docs/cms/admin/cms/netlify-cms/
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
+          isLogo: true
+        title: Pages CMS
+        cta:
+          text: Documentation
+          title: How to configure Pages CMS
+          url: /docs/cms/admin/cms/pages-cms/
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
+          isLogo: true
+        title: Static CMS
+        cta:
+          text: Documentation
+          title: How to configure Static CMS
+          url: /docs/cms/admin/cms/static-cms/
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
+          isLogo: true
+        title: Sveltia CMS
+        cta:
+          text: Documentation
+          title: How to configure Sveltia CMS
+          url: /docs/cms/admin/cms/sveltia-cms/
   - type: selected-docs
     section: docs
     heading:

@@ -24,7 +24,7 @@ admin:
 
 ## Build your .pages.yml
 
-Build a .pages.yml file with NodeJS script
+Build a `.pages.yml` file with NodeJS script
 
 ```bash
 yarn build:config:pagescms

@@ -4,7 +4,7 @@ description: Displays a simple map with one marker.
 icon: geo-alt
 ---
 
-{{< badge text="RGPD compliant" state="success" >}}
+{{< badge text="GDPR compliant" state="success" >}}
 
 ## Frontmatter
 

@@ -8,7 +8,9 @@ status:
   text: Deprecated CMS
   state: warning
 ---
-{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Netlify CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/netlify-cms/)" state="danger" >}}
+{{< alert text="Now, you need to use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Netlify CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/netlify-cms/)" state="danger" >}}
+
+{{< badge text="Deprecated repository" state="warning" >}}
 
 
 ## Setup

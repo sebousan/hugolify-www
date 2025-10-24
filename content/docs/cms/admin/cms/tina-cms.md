@@ -10,11 +10,12 @@ status:
 ---
 {{< badge text="Not available in production" state="danger" >}}
 {{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Compatibility WIP" state="danger" >}}
+{{< badge text="Compatibility WIP" state="warning" >}}
 
 ## Setup
 
-- [Hugolify-admin](../setup/)
+- [Hugolify-admin](../setup/) {{< badge text="tinacms branch" state="light" >}}
+
 
 ## Enable Pages CMS
 

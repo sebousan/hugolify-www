@@ -1,0 +1,11 @@
+<svg role="img" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <path class="circle" 
+    stroke-dasharray="100, 100" 
+    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+    fill="none" 
+    stroke="#00CC66"  stroke-width="3"
+    transform="rotate(-90, 18, 18)" />
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="6" font-family="Roboto" font-weight="bold" fill="#00CC66">
+    100%
+  </text>
+</svg>

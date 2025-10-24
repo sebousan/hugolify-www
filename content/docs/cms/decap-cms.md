@@ -5,8 +5,10 @@ weight: 2
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
 ---
-{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Decap CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/decap-cms/)" state="danger" >}}
 
+{{< alert text="Now, you need to use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Decap CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/decap-cms/)" state="danger" >}}
+
+{{< badge text="Deprecated repository" state="warning" >}}
 
 ## Setup
 

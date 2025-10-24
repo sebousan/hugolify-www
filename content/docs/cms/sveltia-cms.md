@@ -5,7 +5,9 @@ weight: 4
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
 ---
-{{< alert text="Now, you can use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Sveltia CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/sveltia-cms/)" state="danger" >}}
+{{< alert text="Now, you need to use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Sveltia CMS. [Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/sveltia-cms/)" state="danger" >}}
+
+{{< badge text="Deprecated repository" state="warning" >}}
 
 Sveltia CMS is a Git-based lightweight headless CMS under active development as a modern, quick replacement for Decap CMS. [Hugolify Sveltia CMS is a Hugolify Decap CMS based](../decap-cms).
 

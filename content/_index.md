@@ -3,10 +3,9 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify
-  title: Framework Hugo with Bootstrap and Decap/Sveltia CMS
+  title: Framework Hugo with Bootstrap and <span><span><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Decap CMS</i></span></span>
   align: center
-  text: Open-source Jamstack solution for building easily a fast, as accessible as
-    possible and low carbon website.
+  text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website with headless CMS.
   ctas:
     - url: /docs/
       text: See documentation
@@ -165,8 +164,7 @@ blocks:
   - type: editorial
     surtitle: Web performance
     title: Discover performance and carbon emissions reports
-    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon
-      reports.
+    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon reports.
     image:
       src: https://res.cloudinary.com/uncinq/image/upload/v1758116886/384.Up-Trend_d1rcgi.svg
     cta:

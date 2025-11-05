@@ -66,8 +66,8 @@ blocks:
     background: true
     heading:
       surtitle: Headless CMS
-      title: Very simple content manager with Decap CMS
-      text: Easy to customize and dedicated to site content.
+      title: Skip the config file creation, Hugolify handles it automatically!
+      text: With the built-in configuration file builder in Hugolify Admin, you no longer need to create this file manually. Customizing fields is also simplified thanks to a dedicated parameters file.
     figure:
       screenshot: true
       src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png

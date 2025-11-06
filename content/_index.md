@@ -72,6 +72,7 @@ blocks:
       screenshot: true
       src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png
       alt: Homepage screenshot of Hugolify Admin
+      legend: Example of content management with Decap CMS
   - type: informations
     background: true
     column: 5

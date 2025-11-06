@@ -24,12 +24,16 @@ admin:
 
 ## Icon library
 
-- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstraop Icons (via CSS)" >}}
+- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons (via CSS)" >}}
+
+## Screenshot
+
+{{< figure alt="Homepage screenshot of Hugolify Admin" src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" screenshot="true" >}}
 
 
 ## Documention
 
-- {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
+- {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/" >}}
 
 ## Tutorials
 

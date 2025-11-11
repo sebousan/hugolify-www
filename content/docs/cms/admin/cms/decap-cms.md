@@ -4,6 +4,8 @@ title: Decap CMS
 description: Open-source content management Git-based.
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
+seo:
+  description: Simplify your Decap CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}

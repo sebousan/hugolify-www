@@ -4,6 +4,8 @@ title: CloudCannon
 description: Content management Git-based.
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1761313828/cloudcannon_yvmrjo.svg
+seo:
+  description: Simplify your CloudCannon CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
   text: WIP
   state: danger

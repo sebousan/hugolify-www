@@ -4,6 +4,8 @@ title: Pages CMS
 description: Open-source content management Git-based (GitHub only).
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
+seo:
+  description: Simplify your Pages CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}

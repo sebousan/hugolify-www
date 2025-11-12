@@ -1,12 +1,12 @@
 links:
+  - title: Chat
+    url: https://github.com/orgs/Hugolify/discussions
+    blank: true
   - title: Github
     url: https://www.github.com/hugolify/
     blank: true
   - title: Linkedin
     url: https://www.linkedin.com/products/un-cinq-hugolify/
-    blank: true
-  - title: Chat
-    url: https://github.com/orgs/Hugolify/discussions
     blank: true
   - title: Twitter
     url: https://twitter.com/hugolify/

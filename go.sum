@@ -6,10 +6,6 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.26.14 h1:zkiY0/19VC8lfxRoDYgf/HuuyfVxaLX0OkBX9Ky8ZP0=
-github.com/hugolify/hugolify-theme v1.26.14/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
-github.com/hugolify/hugolify-theme v1.26.16 h1:3erK0FIDDoH2RLL3ycLdtCH9Fc7BWRjOGAcK3fk5DrQ=
-github.com/hugolify/hugolify-theme v1.26.16/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme v1.26.17 h1:HXOYinyST5ecp4MasOdDnppNui1gk5nEDiFYsX4idqs=
 github.com/hugolify/hugolify-theme v1.26.17/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d h1:tzOZcj/5X6WI7zJa0IEju4KE31z8TJrUJfMHEo2fG7k=
@@ -18,10 +14,8 @@ github.com/midzer/tobii v3.0.0+incompatible h1:cccjAG0fN1u/kdnquWm/FLYffjX53Dj4k
 github.com/midzer/tobii v3.0.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
-github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251001100011-79df0961e35e h1:2+PgTrPMR122hOYLA6JG0bnqHPD47no+Xdq/eelx9MI=
-github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251001100011-79df0961e35e/go.mod h1:qB0HiaLtrnRIzzHYL/M64jxKLjfod06wIGOGGrnkMZ0=
-github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251112134804-98959f838107 h1:xL18Jp6jeOHq35LKLXQrjDfDyMS2bcAAffTWltnsnt0=
-github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251112134804-98959f838107/go.mod h1:qB0HiaLtrnRIzzHYL/M64jxKLjfod06wIGOGGrnkMZ0=
+github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251112155006-658a31fd5a5c h1:nOHUZjvSPkHgknCqcmLxA+1wAPyet5sXA9TOikYldQY=
+github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251112155006-658a31fd5a5c/go.mod h1:qB0HiaLtrnRIzzHYL/M64jxKLjfod06wIGOGGrnkMZ0=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

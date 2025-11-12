@@ -10,6 +10,7 @@ const BOOTSTRAP_ICONS_FONT_DIR = "node_modules/bootstrap-icons/font/fonts";
 const FONT_OUTPUT_DIR = "static/assets/fonts/bootstrap-icons";
 const SCSS_OUTPUT_PATH = "assets/scss/bootstrap-icons/bootstrap-icons.scss";
 const HUGOLIFY_MODULES_BASE = "_vendor/github.com/hugolify";
+const THEME_MODULES_BASE = "_vendor/github.com/sebousan";
 
 // Utility function for logging with emojis
 function log(emoji, message) {
@@ -52,6 +53,34 @@ function getHugolifyModules() {
     
     items.forEach((item) => {
       const modulePath = path.join(HUGOLIFY_MODULES_BASE, item);
+      if (fs.statSync(modulePath).isDirectory()) {
+        modules.push(modulePath);
+      }
+    });
+    
+    if (modules.length > 0) {
+      log("📦", `Found ${modules.length} Hugo modules: ${items.join(", ")}`);
+    }
+    
+    return modules;
+  } catch (err) {
+    console.warn(`⚠️ Could not read Hugo modules: ${err.message}`);
+    return [];
+  }
+}
+
+// Get all theme modules
+function getThemeModules() {
+  if (!fs.existsSync(THEME_MODULES_BASE)) {
+    return [];
+  }
+
+  try {
+    const modules = [];
+    const items = fs.readdirSync(THEME_MODULES_BASE);
+    
+    items.forEach((item) => {
+      const modulePath = path.join(THEME_MODULES_BASE, item);
       if (fs.statSync(modulePath).isDirectory()) {
         modules.push(modulePath);
       }
@@ -131,6 +160,16 @@ function getBootstrapIconsUnicodeMap() {
 // 1. Extract icons from content files (MD/HTML)
 function extractIconsFromContent() {
   const contentDirs = ["content"];
+
+  const modules = getThemeModules();
+  modules.forEach((modulePath) => {
+    const moduleContentPath = path.join(modulePath, "content");
+    if (fs.existsSync(moduleContentPath)) {
+      contentDirs.push(moduleContentPath);
+    }
+  });
+  log("📦", contentDirs);
+
   const icons = new Set();
 
   contentDirs.forEach((dir) => {
@@ -161,7 +200,15 @@ function extractIconsFromSass() {
   const sassDirs = ["assets/sass", "assets/scss"];
   
   // Add Hugolify modules SASS if they exist
-  const modules = getHugolifyModules();
+  let modules = getHugolifyModules();
+  modules.forEach((modulePath) => {
+    const moduleSassPath = path.join(modulePath, "assets/sass");
+    if (fs.existsSync(moduleSassPath)) {
+      sassDirs.push(moduleSassPath);
+    }
+  });
+
+  modules = getThemeModules();
   modules.forEach((modulePath) => {
     const moduleSassPath = path.join(modulePath, "assets/sass");
     if (fs.existsSync(moduleSassPath)) {
@@ -431,19 +478,19 @@ async function main() {
     const unicodeMap = getBootstrapIconsUnicodeMap();
 
     // Extract icons from all sources
-    log("🔍", "Extracting icons from content...");
+    log("🔍", "Extracting icons from content…");
     const iconsFromContent = extractIconsFromContent();
     log("📄", `Found ${iconsFromContent.size} icons in content`);
 
-    log("🔍", "Extracting icons from SASS...");
+    log("🔍", "Extracting icons from SASS…");
     const iconsFromSass = extractIconsFromSass();
     log("🎨", `Found ${iconsFromSass.size} icons in SASS`);
 
-    log("🔍", "Extracting icons from layouts...");
+    log("🔍", "Extracting icons from layouts…");
     const iconsFromLayouts = extractIconsFromLayouts();
     log("📐", `Found ${iconsFromLayouts.size} icons in layouts`);
 
-    log("🔍", "Extracting icons from social menu...");
+    log("🔍", "Extracting icons from social menu…");
     const iconsFromSocial = await extractIconsFromSocialData();
     log("📋", `Found ${iconsFromSocial.size} icons in social menu`);
 

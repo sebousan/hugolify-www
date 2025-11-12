@@ -5,8 +5,8 @@ links:
   - title: Linkedin
     url: https://www.linkedin.com/products/un-cinq-hugolify/
     blank: true
-  - title: Discord
-    url: /chat
+  - title: Chat
+    url: https://github.com/orgs/Hugolify/discussions
     blank: true
   - title: Twitter
     url: https://twitter.com/hugolify/

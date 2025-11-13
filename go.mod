@@ -11,7 +11,7 @@ require (
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d // indirect
 	github.com/midzer/tobii v3.0.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
-	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251112155006-658a31fd5a5c // indirect
+	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20251113105823-09d942b0a387 // indirect
 	github.com/twbs/bootstrap v5.3.8+incompatible // indirect
 	github.com/twbs/icons v1.13.1 // indirect
 )

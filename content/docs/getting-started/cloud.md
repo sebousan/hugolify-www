@@ -38,6 +38,6 @@ admin:
   media:
     cloud:
       name: uploadcare
-      publicKey: # write your uploadcare public api key
+      public_key: # write your uploadcare public api key
 ```
 

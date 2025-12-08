@@ -54,7 +54,7 @@ admin:
           value: true
 ```
 
-## Add summary
+## Add path
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -62,7 +62,18 @@ admin:
 admin:
   collections:
     pages:
-      summary: "{{title}}"
+      path: "{{slug}}"
+```
+
+## Add slug
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      slug: "{{id}}"
 ```
 
 ## Add sortable
@@ -74,6 +85,17 @@ admin:
   collections:
     pages:
       sortable: "['title']"
+```
+
+## Add summary
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      summary: "{{title}}"
 ```
 
 ## Add view filters

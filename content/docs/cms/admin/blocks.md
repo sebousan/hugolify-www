@@ -36,9 +36,10 @@ params:
       # Array of available fields for a block
       # e.g with paragraph block
       paragraph:
-        - title
-        - text_markdown
-        # …
+        fields:
+          - title
+          - text_markdown
+          # …
 ```
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" text="See Hugolify fields in repository" >}}

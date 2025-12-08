@@ -139,8 +139,9 @@ params:
       # Array of available fields for a fields
       # e.g with hero field
       hero:
-        - title
-        - text_markdown
+        fields:
+          - title
+          - text_markdown
 ```
 
 ## List of Hugolify fields

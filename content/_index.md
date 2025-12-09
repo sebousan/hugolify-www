@@ -3,7 +3,7 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify
-  title: Framework Hugo with Bootstrap and <span><span><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Decap CMS</i></span></span>
+  title: Framework Hugo with Bootstrap and <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website with headless CMS.
   ctas:
@@ -75,10 +75,18 @@ blocks:
       legend: Example of content management with Decap CMS
   - type: informations
     background: true
-    column: 5
+    column: 4
     heading:
       title: All available CMS for Hugolify
     items:
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1761313828/cloudcannon_yvmrjo.svg
+          isLogo: true
+        title: CloudCannon
+        cta:
+          text: Documentation
+          title: How to configure CloudCannon
+          url: /docs/cms/admin/cms/cloudcannon-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
           isLogo: true
@@ -119,6 +127,14 @@ blocks:
           text: Documentation
           title: How to configure Sveltia CMS
           url: /docs/cms/admin/cms/sveltia-cms/
+      - image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1765298678/tina-cropped_ozj5qm.svg
+          isLogo: true
+        title: Tina CMS
+        cta:
+          text: Documentation
+          title: How to configure Tina CMS
+          url: /docs/cms/admin/cms/tina-cms/
   - type: selected-docs
     section: docs
     heading:

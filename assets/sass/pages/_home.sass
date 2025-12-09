@@ -1,16 +1,20 @@
 @keyframes animate_cms
     0%
         transform: translateY(0%)
-    20%
-        transform: translateY(-16.6666666667%)
-    40%
-        transform: translateY(-33.3333333334%)
-    60%
+    14.2857%
+        transform: translateY(-12.5%)
+    28.5714%
+        transform: translateY(-25%)
+    42.8571%
+        transform: translateY(-37.5%)
+    57.1429%
         transform: translateY(-50%)
-    80%
-        transform: translateY(-66.6666666667%)
+    71.4286%
+        transform: translateY(-62.5%)
+    85.7143%
+        transform: translateY(-75%)
     100%
-        transform: translateY(-83.3333333334%)
+        transform: translateY(-87.5%)
 
 .home-page
     .hero
@@ -18,6 +22,7 @@
             @include font-size(5rem)
             > span
                 display: inline-block
+                height: 1em
                 height: 1lh
                 overflow: hidden
                 perspective: 600px
@@ -26,7 +31,7 @@
                 animation-duration: 8s
                 animation-iteration-count: infinite
                 animation-name: animate_cms
-                animation-delay: 1s
+                animation-delay: 2s
                 display: inline-flex
                 flex-direction: column
             i

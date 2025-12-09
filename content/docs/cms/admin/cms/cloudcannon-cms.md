@@ -16,16 +16,45 @@ status:
 
 ## Setup
 
-- [Hugolify-admin](../setup/) {{< badge text="cloudcannon branch" state="light" >}}
+- [Hugolify-admin](../setup/)
 
 
-## Enable Pages CMS
+## Enable CloudCannon
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
 admin:
   cms: cloudcannon
+```
+
+## Group collections
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  collection_groups:
+    - heading: Posts
+      collections:
+        - posts
+        - posts_categories
+        - posts_tags
+```
+
+## Card preview collections
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  collections:
+    persons:
+      card_preview:
+        subtext:
+          - key: persons_statutes
+          - key: persons_expertises
+          - key: description
 ```
 
 ## Documention

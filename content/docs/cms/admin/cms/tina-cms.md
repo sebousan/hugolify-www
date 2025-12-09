@@ -3,7 +3,7 @@ isIndex: false
 title: Tina CMS
 description: Open-source content management Git-based and API driven.
 image:
-  src: https://res.cloudinary.com/uncinq/image/upload/v1758126092/logo-tina-cms_vnznv4.png
+  src: https://res.cloudinary.com/uncinq/image/upload/v1765298678/tina-cropped_ozj5qm.svg
 seo:
   description: Simplify your Tina CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
@@ -16,10 +16,10 @@ status:
 
 ## Setup
 
-- [Hugolify-admin](../setup/) {{< badge text="tinacms branch" state="light" >}}
+- [Hugolify-admin](../setup/)
 
 
-## Enable Pages CMS
+## Enable Tina CMS
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 

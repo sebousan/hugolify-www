@@ -83,14 +83,16 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1761313828/cloudcannon_yvmrjo.svg
           isLogo: true
         title: CloudCannon
+        text: Content management Git-based.
         cta:
           text: Documentation
           title: How to configure CloudCannon
-          url: /docs/cms/admin/cms/cloudcannon-cms/
+          url: /docs/cms/admin/cms/cloudcannon/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
           isLogo: true
         title: Decap CMS
+        text: Open-source content management Git-based.
         cta:
           text: Documentation
           title: How to configure Decap CMS
@@ -99,6 +101,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
           isLogo: true
         title: Netlify CMS
+        text: Open-source content management Git-based.
         cta:
           text: Documentation
           title: How to configure Netlify CMS
@@ -107,6 +110,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
           isLogo: true
         title: Pages CMS
+        text: Open-source content management Git-based.
         cta:
           text: Documentation
           title: How to configure Pages CMS
@@ -115,6 +119,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
           isLogo: true
         title: Static CMS
+        text: Open-source content management Git-based.
         cta:
           text: Documentation
           title: How to configure Static CMS
@@ -123,6 +128,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
           isLogo: true
         title: Sveltia CMS
+        text: Open-source content management Git-based.
         cta:
           text: Documentation
           title: How to configure Sveltia CMS
@@ -131,6 +137,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1765298678/tina-cropped_ozj5qm.svg
           isLogo: true
         title: Tina CMS
+        text: Open-source content management Git-based and API driven.
         cta:
           text: Documentation
           title: How to configure Tina CMS

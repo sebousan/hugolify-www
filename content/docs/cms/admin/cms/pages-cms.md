@@ -24,27 +24,13 @@ admin:
   cms: pagescms
 ```
 
-## Build your .pages.yml
+## Build config file
 
-Build a `.pages.yml` file with NodeJS script
+Build a `.pages.yml` file with Hugo and NodeJS script. This file needs to be versioned.
 
 ```bash
 yarn build:config:pagescms
 ```
-
-Or build a config.yml file
-
-```bash
-yarn build
-```
-
-Then copy it
-
-{{< alert text="`/public/admin/config.yml`" state="light" >}}
-
-Create a .pages.yml file to the root, paste config content and commit it.
-
-{{< alert text="`/.pages.yml`" state="light" >}}
 
 ## Enable/disable media
 

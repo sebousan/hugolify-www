@@ -18,7 +18,6 @@ status:
 
 - [Hugolify-admin](../setup/)
 
-
 ## Enable CloudCannon
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -26,6 +25,14 @@ status:
 ```yaml
 admin:
   cms: cloudcannon
+```
+
+## Build config file
+
+Build a `cloudcannon.config.yml` file with Hugo and NodeJS script. This file needs to be versioned.
+
+```bash
+yarn build:config:cloudcannon
 ```
 
 ## Group collections
@@ -56,6 +63,11 @@ admin:
           - key: persons_expertises
           - key: description
 ```
+
+## Not supported featured
+
+- i18n structure
+- Map Widget
 
 ## Documention
 

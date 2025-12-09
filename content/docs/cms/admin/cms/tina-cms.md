@@ -18,7 +18,6 @@ status:
 
 - [Hugolify-admin](../setup/)
 
-
 ## Enable Tina CMS
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -26,6 +25,14 @@ status:
 ```yaml
 admin:
   cms: tinacms
+```
+
+## Build config file
+
+Build a `tina/config.js` file with Hugo and NodeJS script.
+
+```bash
+yarn build:config:tinacms
 ```
 
 ## Documention

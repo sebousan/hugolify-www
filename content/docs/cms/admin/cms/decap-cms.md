@@ -16,7 +16,6 @@ seo:
 
 ## Enable Decap CMS
 
-
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
@@ -31,7 +30,6 @@ admin:
 ## Screenshot
 
 {{< figure alt="Homepage screenshot of Hugolify Admin" src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" screenshot="true" >}}
-
 
 ## Documention
 

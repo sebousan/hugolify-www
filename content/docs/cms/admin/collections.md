@@ -24,6 +24,17 @@ admin:
     # …
 ```
 
+## Enable or disable file creation
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    pages:
+      create: false
+```
+
 ## Override fields avalaible for a collection
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -38,7 +49,6 @@ admin:
         - description
         - featured_image
         - body
-        # …
 ```
 
 ## Add filter
@@ -127,7 +137,24 @@ admin:
 
 ## Create a collection
 
-Add a yml collection file
+Use params to create a collection
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    new_collection:
+      enable: true
+      fields:
+        - draft
+        - title_page
+        - description
+        - featured_image
+        - body
+```
+
+Or add a yml collection file
 
 ```txt
 layouts/

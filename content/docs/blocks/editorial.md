@@ -29,9 +29,12 @@ blocks:
       legend: '' # string (optional)
       credit: '' # markdown (optional)
 ```
+
 {{< button url="https://demo.hugolify.io/blocks/editorial/" blank="true" text="Demo visual renderer" >}}
 
 ## Params
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 Image size
 

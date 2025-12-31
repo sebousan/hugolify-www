@@ -34,6 +34,19 @@ blocks:
 
 {{< button url="https://demo.hugolify.io/blocks/informations/" text="Demo visual renderer" blank="true" >}}
 
+## Params
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+Image size
+
+```yml
+blocks:
+  informations:
+    image:
+      ratio: .5
+```
+
 ## Files
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/informations.html" text="HTML file" >}}

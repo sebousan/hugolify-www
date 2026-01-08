@@ -1,0 +1,15 @@
+{{- with .Params.hero -}}
+  {{- if or (and (.title) (ne .title "")) (and (.text) (ne .text "")) -}}
+    {{- $class := slice "hero" -}}
+    {{- with .align -}}
+      {{- $class = $class | append (printf "hero-%s" .) -}}
+    {{- end -}}
+    <header class="{{ delimit $class ` ` }}" {{- partial "func/SetAnim.html" (dict "element" "hero") }}>
+      <div class="container">
+        <div class="row">
+          {{ partial "home/hero/content.html" . }}
+        </div>
+      </div>
+    </header>
+  {{- end -}}
+{{- end -}}

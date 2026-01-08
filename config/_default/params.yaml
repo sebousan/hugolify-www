@@ -8,6 +8,8 @@ carousel: false
 map: true
 search:
   enable: true
+  layout: offcanvas
+  showImages: false
   sort: true
 docs:
   sidebarmenu: true

@@ -2,6 +2,8 @@
 title: Selected
 description: Displays a selection of items from a sections
 icon: check-all
+seo:
+  title: Block Selected
 ---
 
 ## Frontmatter

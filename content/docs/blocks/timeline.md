@@ -2,6 +2,8 @@
 title: Timeline
 description: Displays a timeline element.
 icon: list-ol
+seo:
+  title: Block Timeline
 ---
 
 ## Frontmatter

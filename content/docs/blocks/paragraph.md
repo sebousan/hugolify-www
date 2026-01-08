@@ -2,6 +2,8 @@
 title: Paragraph
 description: Displays a simple paragraph.
 icon: text-paragraph
+seo:
+  title: Block Paragraph
 ---
 
 ## Frontmatter

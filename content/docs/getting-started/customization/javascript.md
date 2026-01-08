@@ -119,3 +119,19 @@ parallax:
 ```
 
 {{< blank_link link="https://dixonandmoe.com/rellax/" text="Rellax" >}}
+
+### Vimeo API
+
+{{< alert text="`/config/default/params.yaml`" state="light" >}}
+
+```yml
+vimeo: false # default false, Set true to enable
+```
+
+### Youtube API
+
+{{< alert text="`/config/default/params.yaml`" state="light" >}}
+
+```yml
+youtube: false # default false, Set true to enable
+```

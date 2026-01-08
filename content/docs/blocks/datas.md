@@ -2,6 +2,8 @@
 title: Datas
 description: Displays datas with gauges or not in column.
 icon: percent
+seo:
+  title: Block Datas
 ---
 
 ## Frontmatter

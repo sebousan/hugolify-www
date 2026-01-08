@@ -2,6 +2,8 @@
 title: Instagram
 description: Displays an instagram feed with your latest posts.
 icon: instagram
+seo:
+  title: Block Instagram
 ---
 
 {{< alert text="Instagram access_token is required" state="warning" >}}

@@ -2,6 +2,8 @@
 title: Embed
 description: Displays a centered embed
 icon: code-slash
+seo:
+  title: Block Embed
 ---
 
 ## Frontmatter

@@ -2,6 +2,8 @@
 title: Logos
 description: Displays a logos list.
 icon: grip-horizontal
+seo:
+  title: Block Logos
 ---
 
 ## Frontmatter

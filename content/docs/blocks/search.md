@@ -1,7 +1,9 @@
 ---
 title: Search
-description: Displays a pagefind search
+description: Displays a search form
 icon: search
+seo:
+  title: Block Search
 ---
 
 ## Enable

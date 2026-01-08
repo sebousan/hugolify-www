@@ -2,6 +2,8 @@
 title: Video
 description: Displays a video element.
 icon: camera-video
+seo:
+  title: Block Video
 ---
 
 ## Frontmatter

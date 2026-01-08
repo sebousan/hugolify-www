@@ -4,6 +4,8 @@ description:
   Displays some cards informations in column. Icon, images and button are
   available
 icon: card-heading
+seo:
+  title: Block Informations
 ---
 
 ## Frontmatter

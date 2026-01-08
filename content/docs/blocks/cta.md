@@ -3,6 +3,8 @@ title: Call to action
 slug: cta
 description: Displays a centered call to action.
 icon: link
+seo:
+  title: Block Call to action
 ---
 
 ## Frontmatter usage

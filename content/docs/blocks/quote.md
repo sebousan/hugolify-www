@@ -2,6 +2,8 @@
 title: Quote
 description: Displays a quote and its author
 icon: blockquote-left
+seo:
+  title: Block Quote
 ---
 
 ## Frontmatter

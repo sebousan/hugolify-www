@@ -2,6 +2,8 @@
 title: Map
 description: Displays a simple map with one marker.
 icon: geo-alt
+seo:
+  title: Block Map
 ---
 
 {{< badge text="GDPR compliant" state="success" >}}

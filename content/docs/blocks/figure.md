@@ -2,6 +2,8 @@
 title: Figure
 description: Displays a centered figure image with legend and credit.
 icon: card-image
+seo:
+  title: Block Figure
 ---
 
 ## Frontmatter

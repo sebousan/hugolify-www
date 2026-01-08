@@ -2,6 +2,8 @@
 title: Latest
 description: Displays latest items from posts, projects…
 icon: clock-history
+seo:
+  title: Block Latest
 ---
 
 ## Frontmatter

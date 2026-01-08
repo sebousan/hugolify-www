@@ -2,6 +2,8 @@
 title: FAQ
 description: Displays some images cards in column. Alignment and button are available.
 icon: patch-question
+seo:
+  title: Block FAQ
 ---
 
 ## Frontmatter

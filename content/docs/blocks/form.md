@@ -2,6 +2,8 @@
 title: Form
 description: Displays a form.
 icon: input-cursor-text
+seo:
+  title: Block Form
 ---
 
 {{< alert text="Netlify hosting is required or use another default service" state="warning" >}}

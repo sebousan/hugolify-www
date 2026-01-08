@@ -3,6 +3,8 @@ isIndex: false
 title: Audio
 description: Displays a audio element.
 icon: soundwave
+seo:
+  title: Block Audio
 ---
 
 ## Frontmatter

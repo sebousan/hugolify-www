@@ -2,6 +2,8 @@
 title: Newsletter
 description: Displays a newsletter signup form.
 icon: envelope
+seo:
+  title: Block Newsletter
 ---
 
 ## Frontmatter

@@ -2,6 +2,8 @@
 title: Gallery
 description: Displays an images gallery with accessible lightbox.
 icon: grid-3x2-gap
+seo:
+  title: Block Gallery
 ---
 
 ## Frontmatter

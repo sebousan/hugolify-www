@@ -3,6 +3,8 @@ isIndex: false
 title: Chart
 description: Displays a chart.
 icon: bar-chart
+seo:
+  title: Block Chart
 ---
 
 ## Frontmatter

@@ -2,6 +2,8 @@
 title: Images
 description: Displays an images list in one or two columns.
 icon: images
+seo:
+  title: Block Images
 ---
 
 ## Frontmatter

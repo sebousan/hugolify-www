@@ -1,4 +1,10 @@
 links:
+  - title: Legal mentions
+    url: '/legal-mentions/'
+    blank: false
+  - title: Sitemap
+    url: '/sitemap/'
+    blank: false
   - title: Hugolify is developed by Un Cinq
     url: 'https://uncinq.dev'
     blank: true

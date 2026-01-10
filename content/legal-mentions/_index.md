@@ -4,20 +4,19 @@ draft: false
 title: Legal mentions
 description: Legal mentions page
 ---
-## Welcome to www.hugolify.io
 
 By using this site, you acknowledge having read the provisions below and you agree to respect them. The legal notices indicated below may change, we invite you to consult them regularly.
 
 ## Editor
 
-The hugolify.com website is the property of {{< blank_link link="https://www.uncinq.dev" text="Un Cinq" >}}.
+The [hugolify.io](https://www.hugolify.io/) website is the property of {{< blank_link link="https://www.uncinq.dev" text="Un Cinq" >}}.
 
 
 ## Hosting
 
-The site hugolify.com is hosted at:
+The site [hugolify.io](https://www.hugolify.io/) is hosted at:
 
-Netlify,\
+**Netlify**\
 2325 3rd Street, \
 Suite 296, \
 San Francisco, \
@@ -28,8 +27,7 @@ United States
 
 ## Audience measurement
 
-{{< blank_link link="https://plausible.io" text="https://plausible.io" >}}
-
+None
 
 ## Cookie
 

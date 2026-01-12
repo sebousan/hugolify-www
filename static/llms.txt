@@ -1,0 +1,40 @@
+# Hugolify
+
+> Hugolify is an open-source Jamstack solution for building fast, accessible, and low-carbon websites. It combines the Hugo framework with Bootstrap and includes native configuration for 7 headless CMS (including Decap CMS, CloudCannon, and Tina).
+
+## Documentation
+
+- [Getting Started](https://www.hugolify.io/docs/getting-started/)
+  Installation guide, prerequisites, and initial project structure.
+- [Blocks & UI Components](https://www.hugolify.io/docs/blocks/)
+  Complete catalog and technical documentation for the 25+ modular blocks available (Hero, Grids, FAQ, etc.).
+- [Shortcodes](https://www.hugolify.io/docs/shortcodes/)
+  Reference for specific Hugo shortcodes included in the framework (Buttons, responsive images, etc.).
+- [Partials](https://www.hugolify.io/docs/codes/partials/)
+  Commons partials (carousel, image, CTA, date, map…)
+- [Functions](https://www.hugolify.io/docs/codes/functions/)
+  Commons functions (PrepareHTML, GetHumanPrice, GetParamsCarousel, HasMap…)
+- [Content Types (Sections)](https://www.hugolify.io/docs/sections/)
+  Configuration details for available content types: Blog posts, Projects, Authors, Legal pages, and more.
+- [Taxonomies](https://www.hugolify.io/docs/taxonomies/)
+  Configuration details for available taxonomies: Categories, Tags, etc.
+- [CMS](https://www.hugolify.io/docs/cms/admin/)
+  Admin for Hugolify allowing the build of the config file for different Headless (CloudCannon, Decap, Netlify, Pages, Static, Sveltia and Tina CMS)
+- [Showcase](https://www.hugolify.io/docs/showcase/)
+  Selection of websites built with Hugolify.
+
+## Guides & Tutorials
+
+- [Tutorials](https://www.hugolify.io/tutorials/)
+  Step-by-step guides for specific use cases (Creating a portfolio, a blog, or a multi-site setup).
+
+## Source Code
+
+- [GitHub](https://github.com/hugolify/)
+  All repositories of Hugolify project.
+- [GitHub Template](https://github.com/hugolify/hugolify-template)
+  The starter repository to launch a new Hugolify project.
+- [GitHub Theme](https://github.com/hugolify/hugolify-theme)
+  The main theme repository containing the framework logic.
+- [GitHub Admin](https://github.com/hugolify/hugolify-admin)
+  The admin repository containing the admin logic.

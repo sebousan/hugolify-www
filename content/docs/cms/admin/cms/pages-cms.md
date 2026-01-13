@@ -11,6 +11,13 @@ seo:
 {{< badge text="Maintened CMS" state="success" >}}
 {{< badge text="Compatibility WIP" state="warning" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- Cloud assets
+- i18n structure
+- Map Widget
+- Nested pages
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)
@@ -45,13 +52,6 @@ admin:
     pdf_folders: true
     video_folders: true
 ```
-
-## Not supported featured
-
-- Cloud assets
-- i18n structure
-- Map Widget
-- Nested pages
 
 ## Documention
 

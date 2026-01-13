@@ -14,6 +14,12 @@ status:
 {{< badge text="Maintened CMS" state="success" >}}
 {{< badge text="Compatibility WIP" state="warning" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- i18n structure
+- Map Widget
+- Shortcodes
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)
@@ -38,8 +44,3 @@ yarn build:config:tinacms
 ## Documention
 
 - {{< blank_link link="https://tina.io/docs/" text="https://tina.io/docs/" >}}
-
-## Not supported featured
-
-- i18n structure
-- Map Widget

@@ -14,6 +14,12 @@ status:
 {{< badge text="Maintened CMS" state="success" >}}
 {{< badge text="Compatibility WIP" state="warning" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- i18n structure
+- Map Widget
+- Shortcodes
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)
@@ -63,11 +69,6 @@ admin:
           - key: persons_expertises
           - key: description
 ```
-
-## Not supported featured
-
-- i18n structure
-- Map Widget
 
 ## Documention
 

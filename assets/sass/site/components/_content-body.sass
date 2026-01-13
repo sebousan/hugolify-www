@@ -1,0 +1,7 @@
+.content-body
+    h2
+        @include font-size($h3-font-size)
+        &:not(:first-child)
+            @include margin-top($global-spacing-semi)
+    h3
+        @include font-size($h4-font-size)

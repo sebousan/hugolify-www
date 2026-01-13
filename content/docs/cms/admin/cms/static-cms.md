@@ -11,6 +11,11 @@ status:
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Deprecated CMS" state="warning" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- Cloud assets
+- Nested pages
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)

@@ -10,6 +10,15 @@ seo:
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- Git Gateway
+- Nested pages
+- Netlify Identify
+- Shortcodes
+
+See [current limitations](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations) and [features not to be implemented](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented) in Sveltia CMS documentation.
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)
@@ -28,7 +37,7 @@ admin:
 
 ### Including Hugo’s special index file in a folder collection
 
-Disables unnecessary indexes collection ({{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#including-hugos-special-index-file-in-a-folder-collection" text="See more about this on Sveltia’s repository" >}}):
+Disables unnecessary indexes collection ({{< blank_link link="https://sveltiacms.app/en/docs/collections/entries#managing-hugo-s-special-index-file" text="See more about this on Sveltia’s documentation" >}}):
 
 ```yaml
 admin:
@@ -36,11 +45,6 @@ admin:
     indexes:
       enable: false
 ```
-
-## Not supported featured
-
-- {{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#current-limitations" text="Current limitations" >}}
-- {{< blank_link link="https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#features-not-to-be-implemented" text="Features not to be implemented" >}}
 
 ## Icon library
 
@@ -53,4 +57,3 @@ admin:
 ## Tutorial
 
 - [How to create a Website with Hugo and Sveltia CMS using Hugolify](/tutorials/how-to-create-a-website-with-hugo-and-sveltia-cms-using-hugolify/)
-

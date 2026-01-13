@@ -10,6 +10,10 @@ seo:
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}
 
+{{< alert-block title="Warning: Not supported features" state="warning" >}}
+- UUID widget
+{{< /alert-block >}}
+
 ## Setup
 
 - [Hugolify-admin](../setup/)

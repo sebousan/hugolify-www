@@ -47,5 +47,6 @@ admin:
     cloud:
       name: uploadcare
       public_key: # write your uploadcare public api key
+      tabs: "['file', 'url', 'gdrive']" # optional
 ```
 

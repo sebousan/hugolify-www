@@ -16,6 +16,14 @@ These services are supported for seamless media management and optimization in c
 
 * [Hugolify Admin](/docs/cms/admin/setup/)
 
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  media:
+    cloud: # object (Sveltia CMS accept an array)
+```
+
 ### Cloudinary
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}

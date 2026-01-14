@@ -6,9 +6,11 @@ icon: filetype-sass
 
 ## Variables
 
-Variables files in the abstracts folder allows to add custom variables or bootstrap variables. {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.1/scss/_variables.scss" text="Boostrap 5 variables available list on Github" >}}.
+{{< alert-block state="warning" >}}
+Hugolify uses {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.8/scss/_variables.scss" text="Bootstrap variables" >}} and {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/sass/abstracts/_variables.default.sass" text="Hugolify variables" >}}.
+{{< /alert-block >}}
 
-```txt
+```bash
 assets/
 └── sass/
     └── abstract/
@@ -17,11 +19,25 @@ assets/
         └── _variables.default.sass # Hugolify core variables, do not override it
 ```
 
+## Mixins
+
+{{< alert-block state="warning" >}}
+Hugolify uses {{< blank_link link="https://github.com/twbs/bootstrap/blob/v5.3.8/scss/_mixins.scss" text="Bootstrap mixins" >}} and {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/sass/abstracts/_mixins.default.sass" text="Hugolify mixins" >}}.
+{{< /alert-block >}}
+
+```bash
+assets/
+└── sass/
+    └── abstract/
+        ├── _mixins.sass # specific for your website
+        └── _mixins.default.sass # Hugolify core mixins, do not override it
+```
+
 ## File override
 
 The sass files override is possible by keeping the same tree structure and allows to overwrite the style of the theme to replace it with a specific style.
 
-```txt
+```bash
 assets/
 └── sass/
     └── components/
@@ -30,25 +46,22 @@ assets/
 
 ## File merge
 
-The SASS files merge allows you to add style to that of the theme. To merge SASS files, it is necessary to reproduce the same tree structure in a folder called `site` and to indicate the files in `main.sass`.
+The SASS files merge allows you to add style to that of the theme. To merge SASS files, it is necessary to reproduce the same tree structure in a folder called `site` and to indicate the files in `site.sass`.
 
 ### Tree structure
 
-```txt
+```bash
 assets/
 └── sass/
     ├── site/
     │   └── components/
     │       └── _author.sass
-    └── main.sass
+    └── site.sass
 ```
 
-### Main sass file (main.sass)
+### Site SASS file (site.sass)
 
 ```sass
-// Theme
-@import "main-theme"
-
 // Site
 @import "site/components/author"
 ```

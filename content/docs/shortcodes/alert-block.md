@@ -60,6 +60,17 @@ state:
   ] # select
 ```
 
+## Params
+
+{{< alert text="`/config/default/params.yaml`" state="light" >}}
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+
 ## CMS
 
 - Hugolify admin {{< badge text="Not available" state="danger" >}}

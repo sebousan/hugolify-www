@@ -70,15 +70,21 @@ icon: image
 ```yaml
 src: "" # image
 alt: "" # string
-legend: "" # string
+legend: "" # string (or caption)
 credit: "" # markdown
 screenshot: false # boolean (set true if you want add a fake browser around your picture and linear filter compression)
+class: "" # string
+link: "" # string
+target: "" # string
+rel: "" # string
 ```
 
 ## CMS
 
-- Hugolify admin {{< badge text="Available" state="success" >}} {{< badge text="Works only with cloud assets" state="warning" >}}
+- Hugolify admin {{< badge text="Available" state="success" >}}
 - Decap CMS {{< badge text="Not available" state="danger" >}}
+- Netlify CMS {{< badge text="Not available" state="danger" >}}
+- Sveltia CMS {{< badge text="Not available" state="danger" >}}
 
 ## Related links
 

@@ -62,7 +62,7 @@ state:
 
 ## Params
 
-{{< alert text="`/config/default/params.yaml`" state="light" >}}
+{{< alert text="`/config/_default/hugo.yaml`" state="light" >}}
 
 ```yaml
 markup:

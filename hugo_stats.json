@@ -24,6 +24,7 @@
       "header",
       "html",
       "i",
+      "iframe",
       "img",
       "li",
       "link",
@@ -58,6 +59,7 @@
       "alert",
       "alert-danger",
       "alert-heading",
+      "alert-info",
       "alert-light",
       "alert-warning",
       "badge",
@@ -132,6 +134,7 @@
       "icon-browser-chrome",
       "icon-calendar-date",
       "icon-calendar-event",
+      "icon-camera-reels",
       "icon-camera-video",
       "icon-card-heading",
       "icon-card-image",
@@ -208,8 +211,10 @@
       "icon-text-paragraph",
       "icon-tools",
       "icon-translate",
+      "icon-twitch",
       "icon-type-h2",
       "icon-window-fullscreen",
+      "icon-youtube",
       "is-lazy",
       "item",
       "items",
@@ -267,8 +272,6 @@
       "surtitle",
       "text",
       "text-bg-danger",
-      "text-bg-darnger",
-      "text-bg-info",
       "text-bg-light",
       "text-bg-success",
       "text-bg-warning",
@@ -276,7 +279,8 @@
       "toc",
       "top",
       "twitter",
-      "visually-hidden"
+      "visually-hidden",
+      "youtube"
     ],
     "ids": null
   }

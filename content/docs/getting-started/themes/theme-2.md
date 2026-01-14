@@ -8,9 +8,9 @@ icon: 2-circle
 
 ## Demo
 
-{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204772/screenshot-hugolify-theme-2_w3wa4c.png" alt="Screenshot of Theme 2" screenshot="true" legend="Homepage" >}}
-
 {{< button url="https://theme-2--hugolify-demo.netlify.app/" text="Explore demo" blank="true" >}}
+
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204772/screenshot-hugolify-theme-2_w3wa4c.png" alt="Screenshot of Theme 2" screenshot="true" legend="Preview homepage" >}}
 
 ## Setup
 
@@ -24,7 +24,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme # Core theme
 ```
 
-## Customize sass?
+## Custom main.sass?
 
 ### Import sass
 
@@ -38,7 +38,7 @@ imports:
 @import "hugolify-theme-2"
 
 // Site
-// Your sass files import
+@import "site"
 ```
 
 ## Repository

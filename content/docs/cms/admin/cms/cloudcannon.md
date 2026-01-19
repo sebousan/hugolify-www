@@ -70,6 +70,6 @@ admin:
           - key: description
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://cloudcannon.com/documentation/" text="https://cloudcannon.com/documentation/" >}}

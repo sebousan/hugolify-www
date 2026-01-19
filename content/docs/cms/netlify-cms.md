@@ -24,7 +24,7 @@ imports:
   - path: github.com/hugolify/hugolify-netlify-cms
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}} {{< badge text="Deprecated CMS" state="warning" >}}
 

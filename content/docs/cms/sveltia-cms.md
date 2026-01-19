@@ -24,7 +24,7 @@ imports:
   - path: github.com/hugolify/hugolify-sveltia-cms
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="https://github.com/sveltia/sveltia-cms" >}}
 

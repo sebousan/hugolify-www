@@ -53,7 +53,7 @@ admin:
     video_folders: true
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}
 

@@ -29,6 +29,6 @@ admin:
   cms: staticcms
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://staticjscms.netlify.app/" text="https://staticjscms.netlify.app/" >}}

@@ -98,7 +98,7 @@ Create a `locale.js` file in your config directory.
 export const locale = "fr"; // or 'en'
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/intro/" >}}
 

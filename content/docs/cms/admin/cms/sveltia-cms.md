@@ -39,6 +39,8 @@ admin:
 
 Disables unnecessary indexes collection ({{< blank_link link="https://sveltiacms.app/en/docs/collections/entries#managing-hugo-s-special-index-file" text="See more about this on Sveltia’s documentation" >}}):
 
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
 ```yaml
 admin:
   collections:
@@ -50,9 +52,10 @@ admin:
 
 - {{< blank_link link="https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web" text="Material Symbols" >}}
 
-## Documention
+## Documentations
 
-- {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="https://github.com/sveltia/sveltia-cms" >}}
+- {{< blank_link link="https://sveltiacms.app/en/docs/" text="Sveltia CMS documentation" >}}
+- {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="Sveltia CMS repository" >}}
 
 ## Tutorial
 

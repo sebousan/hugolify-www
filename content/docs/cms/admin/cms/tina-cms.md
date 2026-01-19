@@ -41,6 +41,6 @@ Build a `tina/config.js` file with Hugo and NodeJS script.
 yarn build:config:tinacms
 ```
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://tina.io/docs/" text="https://tina.io/docs/" >}}

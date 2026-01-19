@@ -35,7 +35,7 @@ admin:
 
 {{< figure alt="Homepage screenshot of Hugolify Admin" src="https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png" screenshot="true" >}}
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/" >}}
 

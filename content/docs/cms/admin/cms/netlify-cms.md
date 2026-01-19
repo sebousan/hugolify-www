@@ -30,6 +30,6 @@ admin:
 
 - {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstraop Icons (via CSS)" >}}
 
-## Documention
+## Documentation
 
 - {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}

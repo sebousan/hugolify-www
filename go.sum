@@ -6,8 +6,8 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.26.30 h1:LgxVYzPPOKG4o1+9TTj6utNO8mHlPfiiEK4P2D/eUPU=
-github.com/hugolify/hugolify-theme v1.26.30/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-theme v1.26.31 h1:ojyi6j87GMhUyJRilat5jGhNnItaUyOWg6qzxwuUYTg=
+github.com/hugolify/hugolify-theme v1.26.31/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20260108152441-bbe3bb5cff0d h1:0vsWxUqidi30KaEKE7VAakivMNvFTjNdGp2WGYLT3a4=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20260108152441-bbe3bb5cff0d/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
 github.com/midzer/tobii v3.1.1+incompatible h1:L5/7+mmfUgIMU3Bs0nVBNdqwwVUZ5M2CAnjFFb1HKak=

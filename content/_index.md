@@ -3,7 +3,7 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify
-  title: Framework Hugo with Bootstrap and <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
+  title: Framework Hugo with <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website with headless CMS.
   ctas:

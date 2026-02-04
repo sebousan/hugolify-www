@@ -142,9 +142,14 @@ params:
         fields:
           - title
           - text_markdown
+          # e.g with nested fields
+          - image:
+              fields:
+                - image_src
+                - image_alt
 ```
 
 ## List of Hugolify fields
 
 {{< button text="Hugolify fields" url="/docs/fields/" >}}
-{{< button text="See fields in repository" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" >}}
+{{< button text="See fields in repository" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}

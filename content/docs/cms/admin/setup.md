@@ -21,16 +21,33 @@ imports:
 ```yml
 # Default params
 admin:
-  auth:
-    netlify_identity: true # Add Netlify identity script
+
+  cms: decapcms # optional, decapcms by default, list: https://www.hugolify.io/docs/cms/admin/cms/
   branch: main # optional, default "main"
-  cms: decapcms # optional, [decapcms, sveltiacms, pagescms, staticcms, netlifycms] 
+  git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
+  repo: # optional, e.g "hugolify/hugolify-template"
+
   config:
     id: false # use ID for dir/name files and relation
-  git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
+  nested:
+    depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
+  preview: false
+  publish_mode: simple # optional, default "simple"
+
+  # Auth
+  auth:
+    app_id: # The Client ID provided by Gitea/GitLab
+    api_root: # API URL of your Gitea/GitLab instance
+    auth_endpoint: # Auth endpoint of your Gitea/GitLab instance
+    base_url: # Root URL of your Gitea/GitLab instance
+    netlify_identity: true # Add Netlify identity
+
+  # Languages
   i18n:
     default_locale: en # master lang for an i18n website 
     locales: false # "[en,fr]" for an i18n website
+
+  # Assets
   media:
     media_folder: 'assets/images/uploads'
     public_folder: '/images/uploads'
@@ -39,18 +56,16 @@ admin:
     pdf_max_file_size: 5000000 # 5Mo
     specific_filter: false # set true to add a selected filter by image
     video_max_file_size: 5000000 # 5Mo
+
     # Optional cloud settings [start], not supported for Sveltia CMS
     cloud:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
       api_key: # your cloudinary api key
       publicKey: # your uploadcare public api key
-    # Optional cloud settings [end] 
-  nested:
-    depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
-  preview: false
-  publish_mode: simple # optional, default "simple"
-  repo: # optional, e.g "hugolify/hugolify-template"
+    # Optional cloud settings [end]
+
+    providers: # for sveltia-cms
 ```
 
 ## CMS language

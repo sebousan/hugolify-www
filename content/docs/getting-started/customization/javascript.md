@@ -107,7 +107,14 @@ carousel: true # default true, Set false to disable
 map: true # default true, Set false to disable
 ```
 
-{{< blank_link link="https://leafletjs.com/" text="Leaflet JS" >}}
+#### Tiles
+
+```yml
+tile: 1 # default 0, Set 1 to 11 to change tile
+```
+
+* {{< blank_link link="https://leafletjs.com/" text="Leaflet JS" >}}
+* {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/datas/map-tiles.js" text="List of map tiles — hugolify-theme" >}}
 
 ### Parallax (Rellax)
 

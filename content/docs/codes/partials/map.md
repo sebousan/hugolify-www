@@ -31,7 +31,8 @@ marker_hidden: false // boolean (optional)
 zoom: "" // int (optional)
 ```
 
-## Related link
+## Related links
 
+- [Enable / Disable javascript](/docs/getting-started/customization/javascript/#map-leaflet)
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/map.html" text="Map commons file — hugolify-theme" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/features/map.js" text="Map javascript file — hugolify-theme" >}}

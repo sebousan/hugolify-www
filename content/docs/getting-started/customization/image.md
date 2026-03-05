@@ -1,8 +1,18 @@
 ---
 title: Image
-description: Retina, dimensions…
+description: Logo, retina, dimensions…
 icon: file-earmark-image
 ---
+
+## Logo
+
+{{< alert text="`/config/default/params.yaml`" state="light" >}}
+
+```yml
+logo:
+  header: '/assets/images/logo.svg'
+  footer: '/assets/images/logo-footer.svg' # default: /assets/images/logo.svg
+```
 
 ## Retina
 

@@ -152,6 +152,10 @@ blocks:
       - sections
       - blocks
       - shortcodes
+    footing:
+      ctas:
+        - text: "Customize your project"
+          url: /docs/getting-started/customization/
   - type: informations
     column: 3
     heading:

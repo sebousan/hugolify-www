@@ -28,6 +28,8 @@ image:
 
 {{< alert text="`/config/default/params.yaml`" state="light" >}}
 
+### Commons
+
 ```yml
 hero:
   cover: '1600x400'
@@ -48,6 +50,11 @@ thumbnail:
 navigation:
   desktop: '414x200'
   mobile: '300x150'
+```
+
+### Sections
+
+```yml
 pages:
   thumbnail:
     desktop: '414x177'
@@ -58,6 +65,13 @@ pages:
   image:
     desktop: '856x'
     mobile: '360x'
+posts:
+  …
+```
+
+### Blocks
+
+```yml
 blocks:
   editorial:
     desktop: '636x'

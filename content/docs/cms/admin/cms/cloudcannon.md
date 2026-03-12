@@ -17,7 +17,6 @@ status:
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - i18n structure
 - Map Widget
-- Shortcodes
 {{< /alert-block >}}
 
 ## Setup

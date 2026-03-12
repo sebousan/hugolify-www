@@ -14,7 +14,6 @@ seo:
 - Git Gateway
 - Nested pages
 - Netlify Identify
-- Shortcodes
 
 See [current limitations](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations) and [features not to be implemented](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented) in Sveltia CMS documentation.
 {{< /alert-block >}}
@@ -35,6 +34,14 @@ admin:
 
 ## Additional featured
 
+### Disable Netlify identify
+
+```yaml
+admin:
+  auth:
+    netlify_identity: false
+```
+
 ### Including Hugo’s special index file in a folder collection
 
 Disables unnecessary indexes collection ({{< blank_link link="https://sveltiacms.app/en/docs/collections/entries#managing-hugo-s-special-index-file" text="See more about this on Sveltia’s documentation" >}}):
@@ -47,6 +54,10 @@ admin:
     indexes:
       enable: false
 ```
+
+### Shortcodes
+
+Since {{< badge text="hugolify-admin v1.0.0" state="success" >}}
 
 ## Icon library
 

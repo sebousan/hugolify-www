@@ -11,8 +11,8 @@ status:
 {{< badge text="Archived repository" state="warning" >}} 
 
 {{< alert-block title="Warning" state="danger" >}}
-Now, you need to use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Netlify CMS.\
-[Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/netlify-cms/).
+Now, you need to use [Hugolify-admin](/docs/admin/) with Netlify CMS.\
+[Check the setup here](/docs/admin/cms/netlify-cms/).
 {{< /alert-block >}}
 
 ## Setup

@@ -8,8 +8,8 @@ image:
 {{< badge text="Archived repository" state="warning" >}} 
 
 {{< alert-block title="Warning" state="danger" >}}
-Now, you need to use [Hugolify-admin](https://www.hugolify.io/docs/cms/admin/) with Decap CMS.\
-[Check the setup here](https://www.hugolify.io/docs/cms/admin/cms/decap-cms/).
+Now, you need to use [Hugolify-admin](/docs/admin/) with Decap CMS.\
+[Check the setup here](/docs/admin/cms/decap-cms/).
 {{< /alert-block >}}
 
 ## Setup

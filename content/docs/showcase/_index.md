@@ -1,7 +1,7 @@
 ---
 title: Showcase
 description: Some websites work with Hugolify.
-weight: 7
+weight: 6
 icon: window-fullscreen
 ---
 

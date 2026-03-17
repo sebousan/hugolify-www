@@ -3,17 +3,23 @@ links:
     url: /docs/
     links:
       - title: Getting started
+        text: How to install and setup Hugolify.
         url: /docs/getting-started/
+      - title: Customization
+        text: CMS, CSS, Design,HTML, Javascript…
+        url: /docs/customization/
       - title: Sections
+        text: How to add and customize sections.
         url: /docs/sections/
-      - title: Taxonomies
-        url: /docs/taxonomies/
       - title: Blocks
+        text: How to add and customize blocks.
         url: /docs/blocks/
       - title: Shortcodes
+        text: Hugo and Hugolify shortcodes available.
         url: /docs/shortcodes/
-      - title: CMS
-        url: /docs/cms/admin/
+      - title: Admin
+        text: Decap, Netlify, Pages, Sveltia and more.
+        url: /docs/admin/
   - title: Tutorials
     url: /tutorials/
   - title: Use Github template

@@ -5,7 +5,9 @@ weight: 2
 icon: collection
 ---
 
+{{< alert-block title="Info" state="info" >}}
 Collections are automatically added based on Hugolify modules added ([Sections](/docs/sections/)) or ([Taxonomies](/docs/taxonomies/))
+{{< /alert-block >}}
 
 ## Enable or disable collections
 

@@ -15,12 +15,8 @@ seo:
 - Nested pages
 - Netlify Identify
 
-See [current limitations](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations) and [features not to be implemented](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented) in Sveltia CMS documentation.
+See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations" text="Current limitations" >}} and {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented" text="features not to be implemented" >}} in Sveltia CMS documentation.
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Sveltia CMS
 
@@ -65,6 +61,7 @@ Since {{< badge text="hugolify-admin v1.0.0" state="success" >}}
 
 ## Documentations
 
+- [Hugolify Admin setup](../setup/)
 - {{< blank_link link="https://sveltiacms.app/en/docs/" text="Sveltia CMS documentation" >}}
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="Sveltia CMS repository" >}}
 

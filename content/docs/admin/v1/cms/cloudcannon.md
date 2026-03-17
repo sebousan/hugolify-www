@@ -19,10 +19,6 @@ status:
 - Map Widget
 {{< /alert-block >}}
 
-## Setup
-
-- [Hugolify-admin](../setup/)
-
 ## Enable CloudCannon
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -71,4 +67,5 @@ admin:
 
 ## Documentation
 
-- {{< blank_link link="https://cloudcannon.com/documentation/" text="https://cloudcannon.com/documentation/" >}}
+- [Hugolify Admin setup](../setup/)
+- {{< blank_link link="https://cloudcannon.com/documentation/" text="CloudCannon documentation" >}}

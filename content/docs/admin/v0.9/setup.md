@@ -22,7 +22,7 @@ imports:
 # Default params
 admin:
 
-  cms: decapcms # optional, decapcms by default, list: https://www.hugolify.io/docs/cms/admin/cms/
+  cms: decapcms # optional, decapcms by default
   branch: main # optional, default "main"
   git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
   repo: # optional, e.g "hugolify/hugolify-template"
@@ -76,4 +76,4 @@ Language set with **defaultContentLanguage** from Hugo config.
 
 ## Repository
 
-{{< blank_link link="https://github.com/hugolify/hugolify-admin" text="Hugolify Admin" >}}
+{{< blank_link link="https://github.com/hugolify/hugolify-admin/tree/v0.9" text="Hugolify Admin" >}}

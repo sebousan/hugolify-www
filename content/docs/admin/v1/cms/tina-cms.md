@@ -20,10 +20,6 @@ status:
 - Shortcodes
 {{< /alert-block >}}
 
-## Setup
-
-- [Hugolify-admin](../setup/)
-
 ## Enable Tina CMS
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -43,4 +39,6 @@ yarn build:config:tinacms
 
 ## Documentation
 
-- {{< blank_link link="https://tina.io/docs/" text="https://tina.io/docs/" >}}
+- [Hugolify Admin setup](../setup/)
+- {{< blank_link link="https://tina.io/docs/" text="Tina CMS documentation" >}}
+- {{< blank_link link="https://github.com/tinacms/tinacms" text="Tina CMS repository" >}}

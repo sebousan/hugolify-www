@@ -2,12 +2,11 @@
 isIndex: false
 title: Shortcodes
 description: Add/modify shortcodes
-weight: 5
+weight: 6
 icon: braces-asterisk
 ---
 
-{{< alert text="Available for Decap CMS and Netlify CMS" state="warning" >}}
-
+{{< alert text="Available for CloudCannon, Decap CMS, Netlify CMS and Sveltia CMS" state="warning" >}}
 
 ## Add or remove shortcodes
 

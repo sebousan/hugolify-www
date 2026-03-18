@@ -15,7 +15,7 @@ icon: patch-check
 ### HTML rendered
 
 ```html
-<span class="badge text-bg-warning">Lorem</span>
+<span class="badge badge-warning">Lorem</span>
 ```
 
 ### Visual renderer

@@ -6,7 +6,7 @@ icon: list
 
 ## Layout
 
-Offcanvas is default layout
+Offcanvas is the default layout.
 
 ### Modal
 
@@ -20,7 +20,9 @@ header:
     centered: true # default, or false
 ```
 
-{{< alert text="Make sure you have not disabled the loading of the corresponding [JavaScript](/docs/getting-started/customization/javascript/#bootstrap) component" state="warning" >}}
+{{< alert-block state="info" >}}
+Modal layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
+{{< /alert-block >}}
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/modal/" text="Bootstrap modal documentation" >}}
 
@@ -30,18 +32,22 @@ header:
 
 ```yml
 header:
-  layout: offcanvas 
+  layout: offcanvas
   offcanvas:
     position: end # default, or start, top, bottom
 ```
 
-{{< alert text="Make sure you have not disabled the loading of the corresponding [JavaScript](/docs/getting-started/customization/javascript/#bootstrap) component" state="warning" >}}
+{{< alert-block state="info" >}}
+Offcanvas layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
+{{< /alert-block >}}
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/offcanvas/" text="Bootstrap offcanvas documentation" >}}
 
 ## Navbar expand breakpoint
 
-{{< alert text="`/assets/sass/abstracts/_variables-site.sass`" state="light" >}}
+{{< alert-block state="info" >}}
+This variable is provided by `hugolify-theme-bootstrap`. Override it in your project's `_variables.sass`.
+{{< /alert-block >}}
 
 ```sass
 $navbar-expand: lg // false to disable
@@ -49,7 +55,7 @@ $navbar-expand: lg // false to disable
 
 ## Colors
 
-{{< alert text="`/assets/sass/abstracts/_variables-site.sass`" state="light" >}}
+Override menu colors in your project's `_variables.sass` (or `site.sass` for scoped overrides):
 
 ```sass
 $menu-background-color: // $header-background-color !default

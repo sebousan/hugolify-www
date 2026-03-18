@@ -1,6 +1,6 @@
 ---
 title: Customization
-description: CSS, HTML, Javascript, Menus…
+description: Design (CSS, JS), HTML, Menu, Themes…
 weight: 2
 icon: tools
 ---

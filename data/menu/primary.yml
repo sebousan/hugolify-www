@@ -6,7 +6,7 @@ links:
         text: How to install and setup Hugolify.
         url: /docs/getting-started/
       - title: Customization
-        text: CMS, CSS, Design,HTML, Javascript…
+        text: Design (CSS, JS), HTML, Menu, Themes…
         url: /docs/customization/
       - title: Sections
         text: How to add and customize sections.

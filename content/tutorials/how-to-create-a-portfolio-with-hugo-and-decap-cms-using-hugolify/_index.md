@@ -29,6 +29,7 @@ hero:
 
 ```yaml
 imports:
+  # Add hugolify-theme-bootstrap too for hugolify-theme v2
   - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
 ```

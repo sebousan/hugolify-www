@@ -73,6 +73,10 @@ blocks:
       src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png
       alt: Homepage screenshot of Hugolify Admin
       legend: Example of content management with Decap CMS
+    footing:
+      ctas:
+        - text: Hugolify Admin
+          url: /docs/admin/v1/
   - type: informations
     background: true
     column: 4
@@ -87,7 +91,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure CloudCannon
-          url: /docs/cms/admin/cms/cloudcannon/
+          url: /docs/admin/v1/cms/cloudcannon/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
           isLogo: true
@@ -96,7 +100,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Decap CMS
-          url: /docs/cms/admin/cms/decap-cms/
+          url: /docs/admin/v1/cms/decap-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
           isLogo: true
@@ -105,7 +109,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Netlify CMS
-          url: /docs/cms/admin/cms/netlify-cms/
+          url: /docs/admin/v1/cms/netlify-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
           isLogo: true
@@ -114,7 +118,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Pages CMS
-          url: /docs/cms/admin/cms/pages-cms/
+          url: /docs/admin/v1/cms/pages-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
           isLogo: true
@@ -123,7 +127,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Static CMS
-          url: /docs/cms/admin/cms/static-cms/
+          url: /docs/admin/v1/cms/static-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
           isLogo: true
@@ -132,7 +136,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Sveltia CMS
-          url: /docs/cms/admin/cms/sveltia-cms/
+          url: /docs/admin/v1/cms/sveltia-cms/
       - image:
           src: https://res.cloudinary.com/uncinq/image/upload/v1765298678/tina-cropped_ozj5qm.svg
           isLogo: true
@@ -141,7 +145,7 @@ blocks:
         cta:
           text: Documentation
           title: How to configure Tina CMS
-          url: /docs/cms/admin/cms/tina-cms/
+          url: /docs/admin/v1/cms/tina-cms/
   - type: selected-docs
     section: docs
     heading:

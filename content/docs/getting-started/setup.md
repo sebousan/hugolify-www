@@ -16,12 +16,21 @@ Edit config file
 ```yml
 imports:
 
-# Core theme required
+# Styling layer
+- path: github.com/hugolify/hugolify-theme-bootstrap
+
+# Core theme
 - path: github.com/hugolify/hugolify-theme
 
-# CMS
+# Headless CMS
 - path: github.com/hugolify/hugolify-admin
 ```
+
+{{< alert-block text="hugolify-theme" state="warning" >}}
+Since v2, **hugolify-theme** is the agnostic core. It provides templates, functions, layouts and vendors JS. It requires a **styling module** to supply variables, vendors, and framework-specific styles. The default is **hugolify-theme-bootstrap**. See [Design customization](/docs/customization/design/) for alternatives.
+
+In v1, Bootstrap CSS and JS were bundled directly inside **hugolify-theme**.
+{{< /alert-block >}}
 
 ### Add modules
 
@@ -39,7 +48,10 @@ imports:
 - path: github.com/hugolify/hugolify-theme-posts-categories
 - path: github.com/hugolify/hugolify-theme-posts
 
-# Core theme required
+# Styling layer
+- path: github.com/hugolify/hugolify-theme-bootstrap
+
+# Core theme
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
@@ -57,7 +69,10 @@ imports:
 - path: github.com/hugolify/hugolify-theme-services
 - path: github.com/hugolify/hugolify-theme-publications
 
-# Core theme required
+# Styling layer
+- path: github.com/hugolify/hugolify-theme-bootstrap
+
+# Core theme
 - path: github.com/hugolify/hugolify-theme
 
 # CMS
@@ -66,8 +81,6 @@ imports:
 
 ## Content
 
-Use Decap CMS to add content in your website.
-
-Or add it in content directory.
+Use your Headless CMS to add content in your website or add it directly in the content directory.
 
 {{< alert text="`/content/`" state="light" >}}

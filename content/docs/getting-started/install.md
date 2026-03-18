@@ -5,7 +5,21 @@ description: Easy to install
 weight: 2
 icon: gear
 ---
+## Architecture
+
+{{< mermaid >}}
+flowchart TD
+    A[hugolify-template] -->|HTML + Core| B(hugolify-theme)
+    A[hugolify-template] -->|Headless CMS| C(hugolify-admin )
+    A[hugolify-template] -->|Specific modules| X(hugolify-theme-*)
+    B --> |CSS + JS| B1[hugolify-theme-bootstrap]
+    B --> |CSS + JS| B2[hugolify-theme-design-system]
+    style A fill:#A90940,color:#fff,stroke:none
+{{< /mermaid >}}
+
 ## Use Github template
+
+This is the recommended way to install Hugolify. 
 
 Go to our {{< blank_link link="https://github.com/Hugolify/hugolify-template" text="Github template repository" >}} and click to *use this template* button then *create a new repository*.
 

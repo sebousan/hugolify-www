@@ -1,14 +1,13 @@
 ---
 title: Netlify CMS
 description: Open-source content management Git-based.
-weight: 3
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
 status:
-  text: Deprecated CMS
-  state: warning
+  text: Archived repository
+  state: secondary
 ---
-{{< badge text="Archived repository" state="warning" >}} 
+{{< badge text="Archived repository" state="secondary" >}} 
 
 {{< alert-block title="Warning" state="danger" >}}
 Now, you need to use [Hugolify-admin](/docs/admin/) with Netlify CMS.\

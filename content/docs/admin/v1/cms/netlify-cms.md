@@ -7,11 +7,11 @@ image:
 seo:
   description: Simplify your Netlify CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
-  text: Deprecated CMS
-  state: warning
+  text: Deprecated
+  state: secondary
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Deprecated CMS" state="warning" >}}
+{{< badge text="Deprecated CMS" state="secondary" >}}
 
 ## Enable Netlify CMS
 

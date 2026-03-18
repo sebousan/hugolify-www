@@ -1,11 +1,13 @@
 ---
 title: Decap CMS
 description: Open-source content management Git-based.
-weight: 2
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
+status:
+  text: Archived repository
+  state: secondary
 ---
-{{< badge text="Archived repository" state="warning" >}} 
+{{< badge text="Archived repository" state="secondary" >}} 
 
 {{< alert-block title="Warning" state="danger" >}}
 Now, you need to use [Hugolify-admin](/docs/admin/) with Decap CMS.\

@@ -10,4 +10,7 @@ image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758204585/logo-hugolify-picto_i6dlrq.svg
 params:
   large: true
+status:
+  text: V1
+  state: primary
 ---

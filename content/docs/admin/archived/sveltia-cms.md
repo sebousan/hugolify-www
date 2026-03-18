@@ -1,11 +1,13 @@
 ---
 title: Sveltia CMS
 description: Open-source content management Git-based.
-weight: 4
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
+status:
+  text: Archived repository
+  state: secondary
 ---
-{{< badge text="Archived repository" state="warning" >}} 
+{{< badge text="Archived repository" state="secondary" >}} 
 
 {{< alert-block title="Warning" state="danger" >}}
 Now, you need to use [Hugolify-admin](/docs/admin/) with Sveltia CMS.\

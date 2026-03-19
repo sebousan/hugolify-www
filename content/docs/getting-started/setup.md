@@ -16,11 +16,11 @@ Edit config file
 ```yml
 imports:
 
+# Core theme
+- path: github.com/hugolify/hugolify-theme/v2
+
 # Styling layer
 - path: github.com/hugolify/hugolify-theme-bootstrap
-
-# Core theme
-- path: github.com/hugolify/hugolify-theme
 
 # Headless CMS
 - path: github.com/hugolify/hugolify-admin
@@ -48,11 +48,11 @@ imports:
 - path: github.com/hugolify/hugolify-theme-posts-categories
 - path: github.com/hugolify/hugolify-theme-posts
 
+# Core theme
+- path: github.com/hugolify/hugolify-theme/v2
+
 # Styling layer
 - path: github.com/hugolify/hugolify-theme-bootstrap
-
-# Core theme
-- path: github.com/hugolify/hugolify-theme
 
 # CMS
 - path: github.com/hugolify/hugolify-admin
@@ -69,11 +69,11 @@ imports:
 - path: github.com/hugolify/hugolify-theme-services
 - path: github.com/hugolify/hugolify-theme-publications
 
+# Core theme
+- path: github.com/hugolify/hugolify-theme/v2
+
 # Styling layer
 - path: github.com/hugolify/hugolify-theme-bootstrap
-
-# Core theme
-- path: github.com/hugolify/hugolify-theme
 
 # CMS
 - path: github.com/hugolify/hugolify-admin

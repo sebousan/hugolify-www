@@ -34,8 +34,8 @@ It provides Bootstrap 5:
 ```yml
 # /config/_default/module.yaml
 imports:
+  - path: github.com/hugolify/hugolify-theme/v2
   - path: github.com/hugolify/hugolify-theme-bootstrap
-  - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
 ```
 
@@ -58,8 +58,8 @@ In v2, declare `hugolify-theme-bootstrap` explicitly:
 ```yml
 # /config/_default/module.yaml
 imports:
+  - path: github.com/hugolify/hugolify-theme/v2 # add /v2
   - path: github.com/hugolify/hugolify-theme-bootstrap  # add this
-  - path: github.com/hugolify/hugolify-theme
   - path: github.com/hugolify/hugolify-admin
 ```
 

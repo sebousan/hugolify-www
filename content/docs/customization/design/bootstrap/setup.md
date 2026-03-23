@@ -39,16 +39,6 @@ imports:
   - path: github.com/hugolify/hugolify-admin
 ```
 
----
-
-## Color themes
-
-Five color themes are available, defined as SASS variable sets:
-
-{{< button text="See available themes" url="/docs/getting-started/themes/" >}}
-
----
-
 ## Migration from v1
 
 In v1, Bootstrap was bundled directly inside `hugolify-theme`. No styling module needed to be declared.

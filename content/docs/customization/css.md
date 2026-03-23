@@ -8,19 +8,17 @@ icon: filetype-css
 
 {{< alert text="`/config/default/params.yaml`" state="light" >}}
 
-Each design module ships its own PostCSS config. Set the file name in your params:
+Each design module defines a directory where Hugo looks for **postcss.config.js**. This value is set in the theme's own **hugo.yaml**, you don't need to override it in your project params:
 
 ```yaml
+# Set by the theme (e.g. hugolify-theme-bootstrap/hugo.yaml)
 css:
-  postcss: "postcss.config.bootstrap.js"       # hugolify-theme-bootstrap
-  # postcss: "postcss.config.design-system.js" # hugolify-theme-design-system
+  postcss: "postcss/bootstrap"       # hugolify-theme-bootstrap
 ```
 
-The file must exist at the root of your project. If omitted, Hugo falls back to `postcss.config.js`.
+The config file must exist at that path in your project (e.g. **postcss/bootstrap/postcss.config.js**). Each theme ships an example you can copy. If no directory is set, Hugo falls back to **postcss.config.js** at the project root.
 
-{{< button text="Bootstrap PostCSS & PurgeCSS" url="/docs/customization/design/bootstrap/css/#purgecss" >}}
-
----
+{{< button text="PostCSS config example" blank="true" url="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/postcss.config.js" >}}
 
 ## Preload CSS
 
@@ -30,8 +28,6 @@ The file must exist at the root of your project. If omitted, Hugo falls back to 
 css:
   preload: true   # adds <link rel="preload"> for performance
 ```
-
----
 
 ## Print CSS
 

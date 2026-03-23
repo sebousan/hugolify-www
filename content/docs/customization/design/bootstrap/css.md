@@ -164,29 +164,9 @@ Badge classes are generated from Bootstrap's `$theme-colors` map:
 
 Bootstrap generates a large CSS file. PurgeCSS removes unused classes based on the HTML elements Hugo actually renders.
 
-Add `postcss.config.bootstrap.js` at the root of your project:
+Add **postcss.config.js** at the "/postcss/bootstrap" directory of your project:
 
-```js
-module.exports = {
-  plugins: {
-    autoprefixer: {},
-    '@fullhuman/postcss-purgecss': {
-      mode: 'all',
-      content: ['./hugo_stats.json'],
-      dynamicAttributes: ['aria-current', 'aria-hidden', 'aria-expanded', 'href', 'role', 'type'],
-      safelist: {
-        standard: ['show', 'showing', 'hide', 'fade', /-backdrop$/, /^is-/, /^splide_/],
-        deep: [/^tobii/]
-      },
-      defaultExtractor: (content) => {
-        let els = JSON.parse(content).htmlElements;
-        els = els.tags.concat(els.classes);
-        return els;
-      }
-    }
-  }
-};
-```
+{{< button text="PostCSS config example" blank="true" url="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/postcss.config.js" >}}
 
 Enable Hugo stats in your config (required for PurgeCSS):
 
@@ -199,5 +179,5 @@ build:
 Install the required packages:
 
 ```bash
-npm install -D postcss autoprefixer @fullhuman/postcss-purgecss
+hugo mod get && hugo mod npm pack && yarn install
 ```

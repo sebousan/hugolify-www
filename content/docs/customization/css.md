@@ -18,8 +18,6 @@ css:
 
 The config file must exist at that path in your project (e.g. **postcss/bootstrap/postcss.config.js**). Each theme ships an example you can copy. If no directory is set, Hugo falls back to **postcss.config.js** at the project root.
 
-{{< button text="PostCSS config example" blank="true" url="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/postcss.config.js" >}}
-
 ## Preload CSS
 
 {{< alert text="`/config/default/params.yaml`" state="light" >}}

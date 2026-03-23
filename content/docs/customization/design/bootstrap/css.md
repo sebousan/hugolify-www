@@ -3,6 +3,8 @@ title: CSS
 description: Bootstrap variables, mixins and semantic classes
 weight: 2
 icon: filetype-sass
+aliases:
+  - /docs/customization/purgecss/
 ---
 
 ## Variables
@@ -156,4 +158,46 @@ Badge classes are generated from Bootstrap's `$theme-colors` map:
 .badge-primary   // @extend .text-bg-primary
 .badge-secondary // @extend .text-bg-secondary
 // …
+```
+
+## PostCSS and PurgeCSS
+
+Bootstrap generates a large CSS file. PurgeCSS removes unused classes based on the HTML elements Hugo actually renders.
+
+Add `postcss.config.bootstrap.js` at the root of your project:
+
+```js
+module.exports = {
+  plugins: {
+    autoprefixer: {},
+    '@fullhuman/postcss-purgecss': {
+      mode: 'all',
+      content: ['./hugo_stats.json'],
+      dynamicAttributes: ['aria-current', 'aria-hidden', 'aria-expanded', 'href', 'role', 'type'],
+      safelist: {
+        standard: ['show', 'showing', 'hide', 'fade', /-backdrop$/, /^is-/, /^splide_/],
+        deep: [/^tobii/]
+      },
+      defaultExtractor: (content) => {
+        let els = JSON.parse(content).htmlElements;
+        els = els.tags.concat(els.classes);
+        return els;
+      }
+    }
+  }
+};
+```
+
+Enable Hugo stats in your config (required for PurgeCSS):
+
+```yaml
+# hugo.yaml
+build:
+  writeStats: true
+```
+
+Install the required packages:
+
+```bash
+npm install -D postcss autoprefixer @fullhuman/postcss-purgecss
 ```

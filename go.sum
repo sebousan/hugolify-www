@@ -10,8 +10,8 @@ github.com/hugolify/hugolify-theme v1.27.14 h1:Anx5iO6IG1ierj0qbc9LJU0RgvGIqY7a1
 github.com/hugolify/hugolify-theme v1.27.14/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20260327132058-3b3316ee9df1 h1:C+N8bfYUIHYvV6y7ZJAmlPK39rmSNgI1WLnUlq9X6rY=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20260327132058-3b3316ee9df1/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
-github.com/midzer/tobii v3.1.3+incompatible h1:3h2eGycwcHuTWeBLg5bqCLx3EcPSV1rHT1btiu4A3k0=
-github.com/midzer/tobii v3.1.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/midzer/tobii v3.2.0+incompatible h1:+08xCdrQ8dlXrkBIOJFsIUsfgme4Ou1CUfbqDmeX/Hc=
+github.com/midzer/tobii v3.2.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20260212143707-acfa05f78bc4 h1:cro2xM9kqQsSFi6gfoyFTKRr2zK5QXldoZ2ejdAxmTM=

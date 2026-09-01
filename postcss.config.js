@@ -21,7 +21,8 @@ module.exports = {
           'hide',
           'fade',
           /-backdrop$/,
-          /^is-/
+          /^is-/,
+          /^banner/
         ],
         deep: [
           /^pagefind-ui/

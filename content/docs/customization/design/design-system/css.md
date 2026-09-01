@@ -132,29 +132,29 @@ Some component tokens change at breakpoints. The breakpoint logic lives in the *
 }
 ```
 
-## The two entry points
+## Where overrides go
 
-The module ships four empty files, imported last by `main.css`, in this order:
+The module ships four empty files, imported last by `main.css` in this order — tokens first, rules after, and **site after theme** in each pair:
 
-| File | Scope |
-| --- | --- |
-| `assets/css/tokens/theme.css` | token overrides of a **reusable look**, shared by several sites |
-| `assets/css/tokens/site.css` | token overrides of **this site** |
-| `assets/css/theme.css` | rules of a **reusable look** |
-| `assets/css/site.css` | rules of **this site** |
+```text
+tokens/theme.css → tokens/site.css → theme.css → site.css
+```
 
-Tokens come before rules, and **site always wins over theme** — so a project can start from a shared look and adjust it locally without touching it.
+In both pairs the split is the same, and it is about lifespan, not about size: what a second site would want too goes in the `theme` file, typically shipped as a theme module of your own; what only this project needs goes in the `site` file. A project with no shared look uses the `site` files only, and never has to touch the theme ones.
 
-Pick by lifespan, not by size: what a second site would want too goes in the `theme` files (typically shipped as a theme module of your own); what only this project needs goes in the `site` files. A project that has no shared look uses `site.css` only.
-
-The files are empty in the module — create them at the same path in your project and Hugo's asset priority (project > theme > modules) replaces them.
+The four files are empty in the module — create the one you need at the same path in your project, and Hugo's asset priority (project > theme > modules) replaces it.
 
 ## Overriding tokens
 
-Both `tokens/theme.css` and `tokens/site.css` are imported after `tokens/design-system.css`, so they cascade over every default.
+Two entry points, both imported after `tokens/design-system.css`, so they cascade over every default:
+
+| File | Use for |
+| --- | --- |
+| `assets/css/tokens/theme.css` | the tokens that define a **reusable look** — brand colors, typography, radius scale |
+| `assets/css/tokens/site.css` | the tokens **this site alone** changes |
 
 ```css
-/* assets/css/tokens/site.css */
+/* assets/css/tokens/theme.css — the look, reusable across sites */
 @layer tokens {
   :root {
     --color-brand: #e63946;
@@ -163,9 +163,23 @@ Both `tokens/theme.css` and `tokens/site.css` are imported after `tokens/design-
 }
 ```
 
+```css
+/* assets/css/tokens/site.css — this site only, wins over the theme above */
+@layer tokens {
+  :root {
+    --header-height: 72px;
+  }
+}
+```
+
 ## Overriding CSS
 
-For rules that no token covers, write to the same layer as the rule you are overriding, in `assets/css/theme.css` or `assets/css/site.css`.
+Same split for rules that no token covers. Write to the same layer as the rule you are overriding:
+
+| File | Use for |
+| --- | --- |
+| `assets/css/theme.css` | rules that belong to the **reusable look** |
+| `assets/css/site.css` | rules **this site alone** needs |
 
 ```css
 /* assets/css/site.css */

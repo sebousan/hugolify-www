@@ -43,20 +43,28 @@ Replace the tag with the most recent one — prereleases are published often and
 
 ## Compatibility
 
-The admin and the theme are versioned together. Each major of hugolify-admin targets the matching major of hugolify-theme, and mixing them is not supported.
+Pair the majors: a v1 project runs hugolify-admin v1 with hugolify-theme v1, a v2 project runs both in v2. One off-pair combination degrades gracefully, the other does not work at all.
 
 | | hugolify-theme v1 | hugolify-theme v2 |
 | --- | --- | --- |
-| hugolify-admin v1 | **Supported** | Not supported |
-| hugolify-admin v2 | Not supported | **Supported** |
+| hugolify-admin v1 | **Supported** | Partially supported |
+| hugolify-admin v2 | **Not supported** | **Supported** |
 
-The reason is the shape of the front matter. hugolify-theme v2 reads a block's layout and appearance parameters from a `ui` object; hugolify-theme v1 reads them from the root of the block and never looks at `ui`. Admin v2 writes the v2 shape, admin v1 writes the v1 shape.
+### admin v1 on theme v2 — partial
 
-{{< alert-block title="Failures are silent" state="warning" >}}
-A mismatched pair does not raise an error. The values are written where the theme is not reading, so blocks render with their default appearance and every control set from the CMS is quietly ignored.
+The theme resolves a block's appearance through `func/GetBlockUI`, which reads the parameters from the root of the block *and* accepts a nested `ui` object as an override, with a fallback mapping the legacy `background` flag to the `bg` theme. Front matter written by admin v1 is therefore understood, and pages render as intended.
+
+What you lose is reach, not correctness: admin v1 has no field for `ratio` or `scrollsnap`, so those two theme v2 controls cannot be set from the CMS. Every other control — `column`, `align`, `grid`, `layout`, `offset`, `theme` — comes through.
+
+Useful as a transition, when you want to move the theme first and the admin later.
+
+### admin v2 on theme v1 — no
+
+hugolify-theme v1 has no equivalent resolver and never reads `ui`, while admin v2 writes the appearance parameters there only.
+
+{{< alert-block title="This one fails silently" state="warning" >}}
+Nothing errors. The values are written where the theme is not reading, so blocks render with their default appearance and every control set from the CMS is quietly ignored.
 {{< /alert-block >}}
-
-Upgrade both modules in the same change.
 
 {{< button url="/docs/getting-started/migration/" text="See the v1 to v2 migration guide" >}}
 

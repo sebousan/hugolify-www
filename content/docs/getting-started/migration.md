@@ -10,7 +10,7 @@ seo:
 {{< alert-block title="Overview" state="info" >}}
 v2 turns **hugolify-theme** into an agnostic core and moves CSS and JavaScript into a separate **styling module**. With **hugolify-theme-bootstrap** the rendering is identical to v1.
 
-The theme and the admin are versioned together: a v2 project uses **hugolify-theme/v2** with **hugolify-admin/v2**. Mixing majors is not supported.
+The theme and the admin are versioned together: a v2 project uses **hugolify-theme/v2** with **hugolify-admin/v2**. You can move the theme first and keep admin v1 for a while — it still works against the theme v2, without the `ratio` and `scrollsnap` controls — but admin v2 does not work against the theme v1.
 
 Your content, front matter and layouts are unchanged.
 {{< /alert-block >}}
@@ -85,7 +85,7 @@ hugo mod tidy
 
 ## Hugolify Admin
 
-**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too.
+**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too. Staying on admin v1 for a transition is workable — see [Compatibility](/docs/admin/v2/#compatibility).
 
 {{< alert-block title="Admin v2 is a prerelease" state="warning" >}}
 There is no stable **v2.0.0** of hugolify-admin yet, only prerelease tags. Migrating to the theme v2 therefore means running a prerelease admin. If your project cannot take that, stay on v1 for now — theme and admin both.

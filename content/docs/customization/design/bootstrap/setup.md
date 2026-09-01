@@ -18,6 +18,12 @@ It provides Bootstrap 5:
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap" text="hugolify-theme-bootstrap on GitHub" >}}
 
+## Example project
+
+A ready-to-run project: `hugolify-template` on its Bootstrap branch, with `config/_default/module.yaml` and `postcss/bootstrap/postcss.config.js` (PurgeCSS included) already in place.
+
+{{< button url="https://github.com/Hugolify/hugolify-template/tree/hugolify-theme-bootstrap" text="hugolify-template — Bootstrap branch" blank="true" >}}
+
 ## What it provides
 
 - {{< blank_link link="https://getbootstrap.com/" text="Bootstrap 5" >}} (CSS + SASS + JS)

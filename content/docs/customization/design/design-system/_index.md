@@ -5,6 +5,6 @@ weight: 2
 large: true
 icon: palette
 status:
-  text: Preview
-  state: warning
+  text: New
+  state: info
 ---

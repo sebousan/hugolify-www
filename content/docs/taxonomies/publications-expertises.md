@@ -30,12 +30,8 @@ imports:
 
 ## CMS
 
-- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
-- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Available" state="success" >}}
-- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
-- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}
+- [Hugolify Admin](/docs/admin/v1/) {{< badge text="Available" state="success" >}}
 
 ## Example
 
 - {{< blank_link link="https://demo.lawyerify.io/parutions/expertises/droit-penal/" text="Demo visual renderer (on lawyerify in french)" >}}
-

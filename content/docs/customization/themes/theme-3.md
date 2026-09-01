@@ -4,6 +4,9 @@ title: Theme 3
 description: Third available theme
 weight: 3
 icon: 3-circle
+status:
+  text: Bootstrap
+  state: primary
 ---
 
 ## Demo

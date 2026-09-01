@@ -14,7 +14,7 @@ These services are supported for seamless media management and optimization in c
 
 ## Setup
 
-* [Hugolify Admin](/docs/cms/admin/setup/)
+* [Hugolify Admin](/docs/admin/v1/setup/)
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 

@@ -43,7 +43,4 @@ docs:
 
 ## CMS
 
-- [Hugolify Admin](/docs/cms/admin/) {{< badge text="Available" state="success" >}}
-- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Not available" state="danger" >}}
-- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Not available" state="danger" >}}
-- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Not available" state="danger" >}}
+- [Hugolify Admin](/docs/admin/v1/) {{< badge text="Available" state="success" >}}

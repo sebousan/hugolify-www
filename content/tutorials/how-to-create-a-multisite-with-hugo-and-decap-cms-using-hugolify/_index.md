@@ -13,6 +13,9 @@ hero:
   surtitle: Tutorial
   image:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
+status:
+  text: V1
+  state: primary
 ---
 
 ## Introduction
@@ -327,9 +330,9 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 ## Customization
 
-* [Add an available Hugolify theme](/docs/getting-started/themes/)
-* [How to customize design](/docs/getting-started/customization/)
-* [How to customize admin fields](/docs/cms/admin/fields/)
+* [Add an available Hugolify theme](/docs/customization/themes/)
+* [How to customize design](/docs/customization/)
+* [How to customize admin fields](/docs/admin/v1/fields/)
 
 ## Hosting
 

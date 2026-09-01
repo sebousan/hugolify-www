@@ -4,6 +4,9 @@ title: Theme 5
 description: Fith available theme
 weight: 5
 icon: 5-circle
+status:
+  text: Bootstrap
+  state: primary
 ---
 
 ## Demo

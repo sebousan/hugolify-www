@@ -13,6 +13,9 @@ hero:
   surtitle: Tutorial
   image:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758117389/554.Urban-Puzzle_lwreua.svg
+status:
+  text: V1
+  state: primary
 ---
 ## Prerequisites
 
@@ -71,11 +74,11 @@ admin:
 
 ### More about customizations
 
-- [About Admin](/docs/cms/admin/setup/)
-- [About Pages CMS](/docs/cms/admin/cms/pages-cms/)
-- [About Collections](/docs/cms/admin/collections/)
-- [About Blocks](/docs/cms/admin/blocks/)
-- [About Fields](/docs/cms/admin/fields/)
+- [About Admin](/docs/admin/v1/setup/)
+- [About Pages CMS](/docs/admin/v1/cms/pages-cms/)
+- [About Collections](/docs/admin/v1/collections/)
+- [About Blocks](/docs/admin/v1/blocks/)
+- [About Fields](/docs/admin/v1/fields/)
 
 
 ## Get Pages CMS config file

@@ -4,6 +4,9 @@ title: Theme 4
 description: Fourth available theme
 weight: 4
 icon: 4-circle
+status:
+  text: Bootstrap
+  state: primary
 ---
 
 ## Demo

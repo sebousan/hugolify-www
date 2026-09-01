@@ -15,6 +15,9 @@ hero:
   surtitle: Tutorial
   image:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
+status:
+  text: V1
+  state: primary
 ---
 ## Prerequisites
 
@@ -130,9 +133,9 @@ See locally your website in <http://localhost:1313/>.
 
 ## Customization
 
-* [Add an available Hugolify theme](/docs/getting-started/themes/)
-* [How to customize design](/docs/getting-started/customization/)
-* [How to customize admin fields](/docs/cms/admin/fields/)
+* [Add an available Hugolify theme](/docs/customization/themes/)
+* [How to customize design](/docs/customization/)
+* [How to customize admin fields](/docs/admin/v1/fields/)
 
 ## Hosting
 

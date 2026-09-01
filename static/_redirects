@@ -1,11 +1,17 @@
 /chat   https://discord.gg/QtrQNdXA 301
 
+
+# Hugolify v1 URLs -> their v2 equivalent on this site
+
+/docs/cms/                              /docs/admin/    301
 /docs/cms/admin/                        /docs/admin/v1/    301
 /docs/cms/admin/setup/                  /docs/admin/v1/setup/    301
 /docs/cms/admin/blocks/                 /docs/admin/v1/blocks/    301
 /docs/cms/admin/collections/            /docs/admin/v1/collections/    301
 /docs/cms/admin/fields/                 /docs/admin/v1/fields/    301
 /docs/cms/admin/shortcodes/             /docs/admin/v1/shortcodes/    301
+/docs/cms/admin/cms/                    /docs/admin/v1/cms/    301
+/docs/cms/admin/cms/cloudcannon/        /docs/admin/v1/cms/cloudcannon/    301
 /docs/cms/admin/cms/cloudcannon-cms/    /docs/admin/v1/cms/cloudcannon/    301
 /docs/cms/admin/cms/decap-cms/          /docs/admin/v1/cms/decap-cms/    301
 /docs/cms/admin/cms/netlify-cms/        /docs/admin/v1/cms/netlify-cms/    301
@@ -14,19 +20,24 @@
 /docs/cms/admin/cms/sveltia-cms/        /docs/admin/v1/cms/sveltia-cms/    301
 /docs/cms/admin/cms/tina-cms/           /docs/admin/v1/cms/tina-cms/    301
 
-/docs/cms/decap-cms/                    /docs/admin/archived/decap-cms/    301
-/docs/cms/netlify-cms/                  /docs/admin/archived/netlify-cms/    301
-/docs/cms/sveltia-cms/                  /docs/admin/archived/sveltia-cms/    301
-
-
 /docs/getting-started/customization/    /docs/customization/    301
-/docs/getting-started/customization/cms/    /docs/customization/cms/    301
+/docs/getting-started/customization/cms/    /docs/admin/    301
 /docs/getting-started/customization/css/    /docs/customization/css/    301
 /docs/getting-started/customization/favicons/    /docs/customization/favicons/    301
 /docs/getting-started/customization/html/    /docs/customization/html/    301
-/docs/getting-started/customization/icons/    /docs/customization/icons/    301
+/docs/getting-started/customization/icons/    /docs/customization/design/bootstrap/icons/    301
 /docs/getting-started/customization/image/    /docs/customization/image/    301
-/docs/getting-started/customization/javascript/    /docs/customization/javascript/    301
+/docs/getting-started/customization/javascript/    /docs/customization/design/bootstrap/javascript/    301
 /docs/getting-started/customization/menu/    /docs/customization/menu/    301
 /docs/getting-started/customization/seo/    /docs/customization/seo/    301
-/docs/getting-started/themes/    /docs/customization/themes/    301
+/docs/getting-started/themes/           /docs/customization/themes/    301
+/docs/getting-started/themes/*          /docs/customization/themes/:splat    301
+
+
+# Sections archived to the v1 documentation site
+
+/docs/cms/decap-cms/                    https://v1.hugolify.io/docs/cms/decap-cms/    301
+/docs/cms/netlify-cms/                  https://v1.hugolify.io/docs/cms/netlify-cms/    301
+/docs/cms/sveltia-cms/                  https://v1.hugolify.io/docs/cms/sveltia-cms/    301
+/docs/admin/archived/*                  https://v1.hugolify.io/docs/cms/:splat    301
+/docs/admin/v0.9/*                      https://v1.hugolify.io/docs/cms/admin/:splat    301

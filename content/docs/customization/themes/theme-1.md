@@ -4,6 +4,9 @@ title: Theme 1
 description: First available theme
 weight: 1
 icon: 1-circle
+status:
+  text: Bootstrap
+  state: primary
 ---
 
 ## Demo

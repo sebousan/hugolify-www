@@ -6,7 +6,7 @@ image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
 status:
   text: Deprecated
-  state: secondary
+  state: warning
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Deprecated CMS" state="secondary" >}}

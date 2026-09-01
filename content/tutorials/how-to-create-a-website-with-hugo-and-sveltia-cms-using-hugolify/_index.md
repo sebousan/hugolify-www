@@ -13,6 +13,9 @@ hero:
   surtitle: Tutorial
   image:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116925/420.Dual-Monitor_xu2t2k.svg
+status:
+  text: V1
+  state: primary
 ---
 ## Prerequisites
 
@@ -70,11 +73,11 @@ admin:
 
 ### More about customizations
 
-- [About Admin](/docs/cms/admin/setup/)
-- [About Sveltia CMS](/docs/cms/admin/cms/sveltia-cms/)
-- [About Collections](/docs/cms/admin/collections/)
-- [About Blocks](/docs/cms/admin/blocks/)
-- [About Fields](/docs/cms/admin/fields/)
+- [About Admin](/docs/admin/v1/setup/)
+- [About Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/)
+- [About Collections](/docs/admin/v1/collections/)
+- [About Blocks](/docs/admin/v1/blocks/)
+- [About Fields](/docs/admin/v1/fields/)
 
 ## Launch project
 

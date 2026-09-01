@@ -41,7 +41,7 @@ blocks:
 
 ## Related links
 
-- [Enable / Disable javascript](/docs/getting-started/customization/javascript/#map-leaflet)
+- [Enable / Disable javascript](/docs/customization/design/bootstrap/javascript/#map-leaflet)
 - {{< blank_link link="https://www.openstreetmap.org/" text="Open street map" >}}
 - {{< blank_link link="https://leafletjs.com/" text="leafletjs documentation" >}}
 
@@ -49,14 +49,8 @@ blocks:
 
 ### Hugolify Admin
 
-- [Hugolify Admin](/docs/cms/admin/)
-  - [Decap CMS](/docs/cms/admin/cms/decap-cms/) {{< badge text="Available" state="success" >}}
-  - [Netlify CMS](/docs/cms/admin/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
-  - [Pages CMS](/docs/cms/admin/cms/pages-cms/) {{< badge text="Available" state="success" >}} {{< badge text="Not with map widget" state="warning" >}}
-  - [Sveltia CMS](/docs/cms/admin/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}
-
-### Old repositories 
-
-- [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}
-- [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}
-- [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Deprecated" state="warning" >}} {{< badge text="Available" state="success" >}}
+- [Hugolify Admin](/docs/admin/v1/)
+  - [Decap CMS](/docs/admin/v1/cms/decap-cms/) {{< badge text="Available" state="success" >}}
+  - [Netlify CMS](/docs/admin/v1/cms/netlify-cms/) {{< badge text="Available" state="success" >}}
+  - [Pages CMS](/docs/admin/v1/cms/pages-cms/) {{< badge text="Available" state="success" >}} {{< badge text="Not with map widget" state="warning" >}}
+  - [Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/) {{< badge text="Available" state="success" >}}

@@ -4,4 +4,7 @@ description: Framework-free design system module for hugolify-theme with hugolif
 weight: 2
 large: true
 icon: palette
+status:
+  text: Preview
+  state: warning
 ---

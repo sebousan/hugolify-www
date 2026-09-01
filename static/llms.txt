@@ -1,40 +1,80 @@
 # Hugolify
 
-> Hugolify is an open-source Jamstack solution for building fast, accessible, and low-carbon websites. It combines the Hugo framework with Bootstrap and includes native configuration for 7 headless CMS (including Decap CMS, CloudCannon, and Tina).
+> Hugolify is an open-source Jamstack solution for building fast, accessible and low-carbon websites. It builds on the Hugo framework as a set of composable modules, and ships native configuration for 7 headless CMS (CloudCannon, Decap, Netlify, Pages, Static, Sveltia and Tina).
 
-## Documentation
+Since v2, hugolify-theme is an agnostic core — templates, layouts, functions and vendored JS — and the styling lives in a separate module: hugolify-theme-bootstrap (Bootstrap 5, the default) or hugolify-theme-design-system (framework-free, preview). In v1, Bootstrap CSS and JS were bundled inside hugolify-theme.
+
+This site documents v2. The v1 documentation is archived at https://v1.hugolify.io/
+
+## Getting started
 
 - [Getting Started](https://www.hugolify.io/docs/getting-started/)
-  Installation guide, prerequisites, and initial project structure.
-- [Blocks & UI Components](https://www.hugolify.io/docs/blocks/)
-  Complete catalog and technical documentation for the 25+ modular blocks available (Hero, Grids, FAQ, etc.).
-- [Shortcodes](https://www.hugolify.io/docs/shortcodes/)
-  Reference for specific Hugo shortcodes included in the framework (Buttons, responsive images, etc.).
-- [Partials](https://www.hugolify.io/docs/codes/partials/)
-  Commons partials (carousel, image, CTA, date, map…)
-- [Functions](https://www.hugolify.io/docs/codes/functions/)
-  Commons functions (PrepareHTML, GetHumanPrice, GetParamsCarousel, HasMap…)
-- [Content Types (Sections)](https://www.hugolify.io/docs/sections/)
-  Configuration details for available content types: Blog posts, Projects, Authors, Legal pages, and more.
-- [Taxonomies](https://www.hugolify.io/docs/taxonomies/)
-  Configuration details for available taxonomies: Categories, Tags, etc.
-- [CMS](https://www.hugolify.io/docs/cms/admin/)
-  Admin for Hugolify allowing the build of the config file for different Headless (CloudCannon, Decap, Netlify, Pages, Static, Sveltia and Tina CMS)
-- [Showcase](https://www.hugolify.io/docs/showcase/)
-  Selection of websites built with Hugolify.
+  Prerequisites, installation, project structure and commands.
+- [Setup](https://www.hugolify.io/docs/getting-started/setup/)
+  Declaring modules in config/_default/module.yaml.
+- [Migration from v1](https://www.hugolify.io/docs/getting-started/migration/)
+  Breaking changes from v1 to v2 and the steps to upgrade.
 
-## Guides & Tutorials
+## Customization
+
+- [Customization](https://www.hugolify.io/docs/customization/)
+  CSS, HTML, images, menu, SEO, favicons and themes.
+- [Design](https://www.hugolify.io/docs/customization/design/)
+  The styling layer, and how to choose between the two design modules.
+- [Bootstrap module](https://www.hugolify.io/docs/customization/design/bootstrap/)
+  hugolify-theme-bootstrap: Bootstrap 5 CSS, SASS variables, Bootstrap Icons and JS components.
+- [Design System module](https://www.hugolify.io/docs/customization/design/design-system/)
+  hugolify-theme-design-system: framework-free styling built on CSS custom properties. Preview.
+
+## Content and components
+
+- [Blocks & UI Components](https://www.hugolify.io/docs/blocks/)
+  Catalog and reference for the 25+ modular blocks (hero, grids, FAQ, gallery…).
+- [Shortcodes](https://www.hugolify.io/docs/shortcodes/)
+  Shortcodes included in the framework (buttons, responsive images, alerts…).
+- [Content Types (Sections)](https://www.hugolify.io/docs/sections/)
+  Available content types: posts, projects, persons, services, publications and more.
+- [Taxonomies](https://www.hugolify.io/docs/taxonomies/)
+  Available taxonomies: categories, tags, authors, types…
+- [Partials](https://www.hugolify.io/docs/codes/partials/)
+  Common partials (carousel, image, CTA, date, map…).
+- [Functions](https://www.hugolify.io/docs/codes/functions/)
+  Common functions (PrepareHTML, GetHumanPrice, GetParamsCarousel, HasMap…).
+
+## Headless CMS
+
+- [Hugolify Admin](https://www.hugolify.io/docs/admin/)
+  Builds the CMS configuration file for the supported headless CMS.
+- [Hugolify Admin v1](https://www.hugolify.io/docs/admin/v1/)
+  Current stable release. Pairs with hugolify-theme v1.
+- [Hugolify Admin v2](https://www.hugolify.io/docs/admin/v2/)
+  Prerelease. Pairs with hugolify-theme v2, and documents the ui object and the compatibility matrix.
+
+## Guides and showcase
 
 - [Tutorials](https://www.hugolify.io/tutorials/)
-  Step-by-step guides for specific use cases (Creating a portfolio, a blog, or a multi-site setup).
+  Step-by-step guides: portfolio, blog, multi-site setup.
+- [Showcase](https://www.hugolify.io/docs/showcase/)
+  A selection of websites built with Hugolify.
 
-## Source Code
+## Source code
 
 - [GitHub](https://github.com/hugolify/)
-  All repositories of Hugolify project.
-- [GitHub Template](https://github.com/hugolify/hugolify-template)
-  The starter repository to launch a new Hugolify project.
-- [GitHub Theme](https://github.com/hugolify/hugolify-theme)
-  The main theme repository containing the framework logic.
-- [GitHub Admin](https://github.com/hugolify/hugolify-admin)
-  The admin repository containing the admin logic.
+  All repositories of the Hugolify project.
+- [hugolify-template](https://github.com/hugolify/hugolify-template)
+  Starter repository for a new Hugolify project.
+- [hugolify-theme](https://github.com/hugolify/hugolify-theme)
+  Agnostic core theme. The v2 module path is github.com/hugolify/hugolify-theme/v2
+- [hugolify-theme-bootstrap](https://github.com/hugolify/hugolify-theme-bootstrap)
+  Default styling module, Bootstrap 5.
+- [hugolify-theme-design-system](https://github.com/hugolify/hugolify-theme-design-system)
+  Framework-free styling module. Preview.
+- [hugolify-admin](https://github.com/hugolify/hugolify-admin)
+  Headless CMS configuration builder.
+
+## Optional
+
+- [Full documentation](https://www.hugolify.io/llms-full.txt)
+  Every documentation and tutorial page, inlined as plain text.
+- [Hugolify v1 documentation](https://v1.hugolify.io/)
+  Archived, no longer updated.

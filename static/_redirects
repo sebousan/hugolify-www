@@ -20,6 +20,9 @@
 /docs/cms/admin/cms/sveltia-cms/        /docs/admin/v1/cms/sveltia-cms/    301
 /docs/cms/admin/cms/tina-cms/           /docs/admin/v1/cms/tina-cms/    301
 
+# Removed page that was published
+/docs/admin/v1/migration/             /docs/admin/v1/    301
+
 /docs/getting-started/customization/    /docs/customization/    301
 /docs/getting-started/customization/cms/    /docs/admin/    301
 /docs/getting-started/customization/css/    /docs/customization/css/    301

@@ -9,6 +9,17 @@ build:
     disableTags: false
     enable: true
 enableRobotsTXT: true
+outputFormats:
+  llms:
+    baseName: llms-full
+    isPlainText: true
+    mediaType: text/plain
+    notAlternative: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - llms
 imaging:
   quality: 75
 markup:

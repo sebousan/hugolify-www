@@ -1,0 +1,30 @@
+{{- $pages := where site.Pages "Section" "in" (slice "docs" "tutorials") -}}
+# Hugolify
+
+> {{ site.Data.seo.description }}
+
+Since v2, hugolify-theme is an agnostic core and the styling lives in a separate
+module: hugolify-theme-bootstrap (Bootstrap 5, the default) or
+hugolify-theme-design-system (framework-free, preview). In v1, Bootstrap CSS and JS
+were bundled inside hugolify-theme.
+
+This file inlines every documentation and tutorial page as plain text.
+The v1 documentation is archived at https://v1.hugolify.io/
+
+Index: {{ "llms.txt" | absURL }}
+Generated: {{ now.Format "2006-01-02" }}
+{{ range sort $pages "RelPermalink" }}
+{{- $body := trim .Plain " \n\t" -}}
+{{- if $body }}
+
+---
+
+# {{ .Title }}
+
+Source: {{ .Permalink }}
+{{ with .Description }}
+{{ . }}
+{{ end }}
+{{ $body }}
+{{ end -}}
+{{- end }}

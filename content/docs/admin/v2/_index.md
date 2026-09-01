@@ -18,7 +18,7 @@ status:
 {{< alert-block title="Prerelease" state="warning" >}}
 v2 is published as prerelease tags only — the latest is **v2.0.0-11**. Go resolves stable versions by default, so `hugo mod get` will keep you on **v1** unless you pin a prerelease explicitly.
 
-v2 also requires **hugolify-theme v2**: the `ui` field reads its configuration from the theme params.
+v2 is built for **hugolify-theme v2**. There is no hard dependency — the module is self-contained and will build against v1 — but it writes the layout and appearance parameters inside a `ui` object, and hugolify-theme v1 never reads that object. Every appearance control set from the CMS would be silently ignored.
 {{< /alert-block >}}
 
 {{< button url="/docs/admin/v1/" text="See the current stable version (v1)" >}}
@@ -42,7 +42,7 @@ hugo mod get github.com/hugolify/hugolify-admin/v2@v2.0.0-11
 | | v1 | v2 |
 | --- | --- | --- |
 | Module path | `hugolify-admin` | `hugolify-admin/v2` |
-| hugolify-theme | v1 or v2 | **v2 required** |
+| hugolify-theme | v1 or v2 | **v2 in practice** |
 | Weight widget | select (10, 20, 30…) | number input (`min: 1`, integer) |
 | Background colour field | `background-color.yml` | `background_color.yml` |
 | UI fields | hardcoded in the module | configurable through params |
@@ -51,9 +51,41 @@ If you relied on the stepped weight select, the previous behaviour is preserved 
 
 {{< alert text="`admin/fields/weight_select.yml`" state="light" >}}
 
-## Configurable UI fields
+## The `ui` object
 
-In v1 the `ui` object was hardcoded to *theme*, *grid* and *offset*. In v2 it is driven by params, so you choose which controls the editor sees and which values they offer.
+A block or a hero has always carried a handful of appearance parameters — how many columns, which grid, how it is aligned. In v1 they sat flat at the root of the block, next to its content, and there were only a few of them.
+
+They are now grouped into a single `ui` object, which separates *what the block says* from *how it looks*, and leaves room to grow without cluttering the block.
+
+{{< alert text="`/content/_index.md`" state="light" >}}
+
+```yaml
+# Before — flat, and only a few parameters
+blocks:
+  - type: informations
+    column: 3
+    ratio: 1
+
+# After — everything under ui
+blocks:
+  - type: informations
+    ui:
+      column: 3
+      ratio: 1
+      grid: large
+      offset: center
+      align: center
+      theme: dark
+      scrollsnap: md
+```
+
+{{< alert-block title="This is a front matter change" state="warning" >}}
+hugolify-theme v2 reads these keys from `ui`, hugolify-theme v1 reads them from the root of the block. Moving to admin v2 therefore means moving to the theme v2 as well, otherwise the values are written where the theme is not looking.
+{{< /alert-block >}}
+
+### Choosing which controls appear
+
+v1 hardcoded the object to *theme*, *grid* and *offset*. In v2 the set is driven by params, so you decide which controls the editor sees and which values they offer.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 

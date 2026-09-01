@@ -8,7 +8,9 @@ seo:
 ---
 
 {{< alert-block title="Overview" state="info" >}}
-v2 turns **hugolify-theme** into an agnostic core and moves CSS and JavaScript into a separate **styling module**. Declaring that module is the only mandatory change — with **hugolify-theme-bootstrap** the rendering is identical to v1.
+v2 turns **hugolify-theme** into an agnostic core and moves CSS and JavaScript into a separate **styling module**. With **hugolify-theme-bootstrap** the rendering is identical to v1.
+
+The theme and the admin are versioned together: a v2 project uses **hugolify-theme/v2** with **hugolify-admin/v2**. Mixing majors is not supported.
 
 Your content, front matter and layouts are unchanged.
 {{< /alert-block >}}
@@ -36,7 +38,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme-bootstrap  # add this
 
 # Headless CMS
-- path: github.com/hugolify/hugolify-admin
+- path: github.com/hugolify/hugolify-admin/v2
 ```
 
 The `/v2` suffix is required: Go modules treat a major version as a distinct module path, so `hugolify-theme` and `hugolify-theme/v2` are two different modules.
@@ -83,9 +85,13 @@ hugo mod tidy
 
 ## Hugolify Admin
 
-**hugolify-admin** stays on **v1** for this migration — it is the current stable release and works with the v2 core. A v2 of the admin module is in prerelease and documented separately.
+**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too.
 
-{{< button url="/docs/admin/v1/" text="See Hugolify Admin v1" >}}
+{{< alert-block title="Admin v2 is a prerelease" state="warning" >}}
+There is no stable **v2.0.0** of hugolify-admin yet, only prerelease tags. Migrating to the theme v2 therefore means running a prerelease admin. If your project cannot take that, stay on v1 for now — theme and admin both.
+{{< /alert-block >}}
+
+{{< button url="/docs/admin/v2/" text="See Hugolify Admin v2" >}}
 
 ## GitHub template
 

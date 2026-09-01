@@ -36,7 +36,7 @@ It provides Bootstrap 5:
 imports:
   - path: github.com/hugolify/hugolify-theme/v2
   - path: github.com/hugolify/hugolify-theme-bootstrap
-  - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin/v2
 ```
 
 ## Migration from v1
@@ -50,7 +50,7 @@ In v2, declare `hugolify-theme-bootstrap` explicitly:
 imports:
   - path: github.com/hugolify/hugolify-theme/v2 # add /v2
   - path: github.com/hugolify/hugolify-theme-bootstrap  # add this
-  - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin/v2
 ```
 
 No template or content changes are required — the rendering is identical to v1.

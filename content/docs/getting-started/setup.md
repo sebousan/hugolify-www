@@ -23,7 +23,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme-bootstrap
 
 # Headless CMS
-- path: github.com/hugolify/hugolify-admin
+- path: github.com/hugolify/hugolify-admin/v2
 ```
 
 {{< alert-block text="hugolify-theme" state="warning" >}}
@@ -55,7 +55,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme-bootstrap
 
 # CMS
-- path: github.com/hugolify/hugolify-admin
+- path: github.com/hugolify/hugolify-admin/v2
 ```
 
 #### Example 2
@@ -76,7 +76,7 @@ imports:
 - path: github.com/hugolify/hugolify-theme-bootstrap
 
 # CMS
-- path: github.com/hugolify/hugolify-admin
+- path: github.com/hugolify/hugolify-admin/v2
 ```
 
 ## Content

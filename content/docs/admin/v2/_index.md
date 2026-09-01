@@ -18,7 +18,7 @@ status:
 {{< alert-block title="Prerelease" state="warning" >}}
 v2 is published as prerelease tags only — the latest is **v2.0.0-11**. Go resolves stable versions by default, so `hugo mod get` will keep you on **v1** unless you pin a prerelease explicitly.
 
-v2 is built for **hugolify-theme v2**. There is no hard dependency — the module is self-contained and will build against v1 — but it writes the layout and appearance parameters inside a `ui` object, and hugolify-theme v1 never reads that object. Every appearance control set from the CMS would be silently ignored. See [Compatibility](#compatibility).
+v2 requires **hugolify-theme v2**. The two are versioned together and a mismatched pair fails silently — see [Compatibility](#compatibility).
 {{< /alert-block >}}
 
 {{< button url="/docs/admin/v1/" text="See the current stable version (v1)" >}}
@@ -43,18 +43,22 @@ Replace the tag with the most recent one — prereleases are published often and
 
 ## Compatibility
 
-The two modules are not interchangeable in both directions.
+The admin and the theme are versioned together. Each major of hugolify-admin targets the matching major of hugolify-theme, and mixing them is not supported.
 
 | | hugolify-theme v1 | hugolify-theme v2 |
 | --- | --- | --- |
-| hugolify-admin v1 | Supported | Supported |
-| hugolify-admin v2 | **Not supported** | Supported |
+| hugolify-admin v1 | **Supported** | Not supported |
+| hugolify-admin v2 | Not supported | **Supported** |
 
-**hugolify-admin v1 with hugolify-theme v2 works.** The theme resolves a block's appearance through `func/GetBlockUI`, which reads the parameters from the root of the block *and* accepts a nested `ui` object as an override, with a fallback mapping the legacy `background` flag to the `bg` theme. Front matter written by admin v1 is therefore understood as-is. Only `ratio` and `scrollsnap` stay out of reach, because admin v1 has no field for them — a missing control, not a broken page.
+The reason is the shape of the front matter. hugolify-theme v2 reads a block's layout and appearance parameters from a `ui` object; hugolify-theme v1 reads them from the root of the block and never looks at `ui`. Admin v2 writes the v2 shape, admin v1 writes the v1 shape.
 
-That makes a staged migration possible: move to the theme v2 first, keep publishing with admin v1, and switch the admin afterwards.
+{{< alert-block title="Failures are silent" state="warning" >}}
+A mismatched pair does not raise an error. The values are written where the theme is not reading, so blocks render with their default appearance and every control set from the CMS is quietly ignored.
+{{< /alert-block >}}
 
-**The reverse does not hold.** hugolify-theme v1 has no equivalent resolver and never reads `ui`, while admin v2 writes appearance parameters there only. Nothing errors — the values are simply written where the theme is not looking.
+Upgrade both modules in the same change.
+
+{{< button url="/docs/getting-started/migration/" text="See the v1 to v2 migration guide" >}}
 
 ## Breaking changes
 

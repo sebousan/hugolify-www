@@ -19,7 +19,7 @@ icon: file-earmark
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

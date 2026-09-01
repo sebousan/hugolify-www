@@ -17,10 +17,10 @@ icon: bookmark-check
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-publications-expertises
-  - path: github.com/hugolify/hugolify-theme-publications
-  - path: github.com/hugolify/hugolify-theme-expertises
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-publications-expertises/v2
+  - path: github.com/hugolify/hugolify-theme-publications/v2
+  - path: github.com/hugolify/hugolify-theme-expertises/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related sections

@@ -16,10 +16,10 @@ icon: person
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-realestates-persons
-  - path: github.com/hugolify/hugolify-theme-realestates
-  - path: github.com/hugolify/hugolify-theme-persons
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-realestates-persons/v2
+  - path: github.com/hugolify/hugolify-theme-realestates/v2
+  - path: github.com/hugolify/hugolify-theme-persons/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related section

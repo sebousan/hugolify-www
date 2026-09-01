@@ -1,15 +1,14 @@
 ---
-title: Persons places
-description: Taxonomy places for persons section.
+title: Persons statutes
+description: Taxonomy statutes for persons section.
 icon: geo-alt
 ---
 
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-places" text="Hugolify theme places" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-persons" text="Hugolify theme persons" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-persons-places" text="Hugolify theme persons places" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-persons-statutes" text="Hugolify theme persons statutes" >}}
 
 **Setup**
 
@@ -17,21 +16,16 @@ icon: geo-alt
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-persons-places/v2
+  - path: github.com/hugolify/hugolify-theme-persons-statutes/v2
   - path: github.com/hugolify/hugolify-theme-persons/v2
-  - path: github.com/hugolify/hugolify-theme-places/v2
   - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related sections
 
 - [Persons](/docs/sections/persons/)
-- [Places](/docs/sections/places/)
 
 ## CMS
 
 - [Hugolify Admin](/docs/admin/v1/) {{< badge text="Available" state="success" >}}
 
-## Example
-
-- {{< blank_link link="https://demo.lawyerify.io/equipe/cabinets/" text="Demo visual renderer (on lawyerify in french)" >}}

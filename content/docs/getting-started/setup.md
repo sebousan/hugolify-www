@@ -45,8 +45,8 @@ imports:
 
 # Content
 - path: github.com/hugolify/hugolify-theme-projects
-- path: github.com/hugolify/hugolify-theme-posts-categories
-- path: github.com/hugolify/hugolify-theme-posts
+- path: github.com/hugolify/hugolify-theme-posts-categories/v2
+- path: github.com/hugolify/hugolify-theme-posts/v2
 
 # Core theme
 - path: github.com/hugolify/hugolify-theme/v2
@@ -67,7 +67,7 @@ imports:
 
 # Content
 - path: github.com/hugolify/hugolify-theme-services
-- path: github.com/hugolify/hugolify-theme-publications
+- path: github.com/hugolify/hugolify-theme-publications/v2
 
 # Core theme
 - path: github.com/hugolify/hugolify-theme/v2

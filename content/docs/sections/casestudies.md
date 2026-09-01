@@ -4,6 +4,10 @@ description: Present case studies with blocks of content.
 icon: book
 ---
 
+{{< alert-block title="Not available in Hugolify v2" state="warning" >}}
+This module has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
+{{< /alert-block >}}
+
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -16,7 +20,7 @@ icon: book
 ```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-casestudies
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

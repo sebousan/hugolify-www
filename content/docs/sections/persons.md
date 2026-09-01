@@ -15,8 +15,8 @@ icon: people
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-persons
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-persons/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
@@ -30,12 +30,12 @@ imports:
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-persons-expertises
-  - path: github.com/hugolify/hugolify-theme-persons-places
-  - path: github.com/hugolify/hugolify-theme-persons
-  - path: github.com/hugolify/hugolify-theme-expertises
-  - path: github.com/hugolify/hugolify-theme-places
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-persons-expertises/v2
+  - path: github.com/hugolify/hugolify-theme-persons-places/v2
+  - path: github.com/hugolify/hugolify-theme-persons/v2
+  - path: github.com/hugolify/hugolify-theme-expertises/v2
+  - path: github.com/hugolify/hugolify-theme-places/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

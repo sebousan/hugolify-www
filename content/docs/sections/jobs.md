@@ -15,8 +15,8 @@ icon: megaphone
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-jobs
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-jobs/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
@@ -32,13 +32,13 @@ imports:
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-jobs-categories
-  - path: github.com/hugolify/hugolify-theme-jobs-expertises
-  - path: github.com/hugolify/hugolify-theme-jobs-places
-  - path: github.com/hugolify/hugolify-theme-jobs
-  - path: github.com/hugolify/hugolify-theme-places
-  - path: github.com/hugolify/hugolify-theme-expertises
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-jobs-categories/v2
+  - path: github.com/hugolify/hugolify-theme-jobs-expertises/v2
+  - path: github.com/hugolify/hugolify-theme-jobs-places/v2
+  - path: github.com/hugolify/hugolify-theme-jobs/v2
+  - path: github.com/hugolify/hugolify-theme-places/v2
+  - path: github.com/hugolify/hugolify-theme-expertises/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

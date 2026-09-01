@@ -16,9 +16,9 @@ icon: tag
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-jobs-tags
-  - path: github.com/hugolify/hugolify-theme-jobs
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-jobs-tags/v2
+  - path: github.com/hugolify/hugolify-theme-jobs/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related section

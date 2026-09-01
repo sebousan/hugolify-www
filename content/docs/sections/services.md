@@ -4,6 +4,10 @@ description: Service of your company or person.
 icon: briefcase
 ---
 
+{{< alert-block title="Not available in Hugolify v2" state="warning" >}}
+This module has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
+{{< /alert-block >}}
+
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -16,12 +20,13 @@ icon: briefcase
 ```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-services
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-services-categories" text="Categories" >}}
+- [Categories](/docs/taxonomies/services-categories/)
+- [Persons](/docs/taxonomies/services-persons/)
 
 **Setup**
 
@@ -31,7 +36,7 @@ imports:
 imports:
   - path: github.com/hugolify/hugolify-theme-services-categories
   - path: github.com/hugolify/hugolify-theme-services
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

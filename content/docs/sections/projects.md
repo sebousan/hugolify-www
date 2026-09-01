@@ -4,6 +4,10 @@ description: Your projects with image list and data list.
 icon: file-earmark-richtext
 ---
 
+{{< alert-block title="Not available in Hugolify v2" state="warning" >}}
+This module has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
+{{< /alert-block >}}
+
 ## Example
 
 - {{< blank_link link="https://demo.hugolify.io/projects/" text="Demo visual renderer" >}}
@@ -20,7 +24,7 @@ icon: file-earmark-richtext
 ```yml
 imports:
   - path: github.com/hugolify/hugolify-theme-projects
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
@@ -37,7 +41,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme-projects-tags
   - path: github.com/hugolify/hugolify-theme-projects-types
   - path: github.com/hugolify/hugolify-theme-projects
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

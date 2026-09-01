@@ -15,8 +15,8 @@ icon: box
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-products
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-products/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
@@ -30,10 +30,10 @@ imports:
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-products-categories
-  - path: github.com/hugolify/hugolify-theme-products-tags
-  - path: github.com/hugolify/hugolify-theme-products
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-products-categories/v2
+  - path: github.com/hugolify/hugolify-theme-products-tags/v2
+  - path: github.com/hugolify/hugolify-theme-products/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

@@ -15,8 +15,8 @@ icon: shop
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-places
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-places/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Files

@@ -16,9 +16,9 @@ icon: bookmark
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-posts-categories
-  - path: github.com/hugolify/hugolify-theme-posts
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-posts-categories/v2
+  - path: github.com/hugolify/hugolify-theme-posts/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related section

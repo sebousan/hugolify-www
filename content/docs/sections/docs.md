@@ -15,8 +15,8 @@ icon: file-earmark-code
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-docs
-  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-docs/v2
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 **Params**

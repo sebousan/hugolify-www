@@ -1,6 +1,6 @@
 ---
-title: Projects types
-description: Taxonomy types for projects section.
+title: Events categories
+description: Taxonomy categories for events section.
 icon: bookmark
 ---
 
@@ -11,8 +11,8 @@ This module has not been migrated to v2 yet — no `/v2` module path is publishe
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects" text="Hugolify theme projects" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-projects-types" text="Hugolify theme projects types" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-events" text="Hugolify theme events" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-events-categories" text="Hugolify theme events categories" >}}
 
 **Setup**
 
@@ -20,19 +20,16 @@ This module has not been migrated to v2 yet — no `/v2` module path is publishe
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-projects-types
-  - path: github.com/hugolify/hugolify-theme-projects
+  - path: github.com/hugolify/hugolify-theme-events-categories
+  - path: github.com/hugolify/hugolify-theme-events
   - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Related section
 
-- [Projects](/docs/sections/projects/)
+- [Events](/docs/sections/events/)
 
 ## CMS
 
 - [Hugolify Admin](/docs/admin/v1/) {{< badge text="Available" state="success" >}}
 
-## Example
-
-- {{< blank_link link="https://demo.hugolify.io/projects/types/" text="Demo visual renderer" >}}

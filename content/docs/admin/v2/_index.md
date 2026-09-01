@@ -47,8 +47,8 @@ Pair the majors: a v1 project runs hugolify-admin v1 with hugolify-theme v1, a v
 
 | | hugolify-theme v1 | hugolify-theme v2 |
 | --- | --- | --- |
-| hugolify-admin v1 | **Supported** | Partially supported |
-| hugolify-admin v2 | **Not supported** | **Supported** |
+| hugolify-admin v1 | {{< badge text="Supported" state="success" >}} | {{< badge text="Partially supported" state="warning" >}} |
+| hugolify-admin v2 | {{< badge text="Not supported" state="danger" >}} | {{< badge text="Supported" state="success" >}} |
 
 ### admin v1 on theme v2 — partial
 
@@ -73,7 +73,7 @@ Nothing errors. The values are written where the theme is not reading, so blocks
 | | v1 | v2 |
 | --- | --- | --- |
 | Module path | `hugolify-admin` | `hugolify-admin/v2` |
-| hugolify-theme | v1 or v2 | **v2 in practice** |
+| hugolify-theme | v1 or v2 | v2 |
 | Weight widget | select (10, 20, 30…) | number input (`min: 1`, integer) |
 | Background colour field | `background-color.yml` | `background_color.yml` |
 | UI fields | hardcoded in the module | configurable through params |

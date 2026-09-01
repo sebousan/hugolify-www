@@ -18,7 +18,7 @@ status:
 {{< alert-block title="Prerelease" state="warning" >}}
 v2 is published as prerelease tags only — the latest is **v2.0.0-11**. Go resolves stable versions by default, so `hugo mod get` will keep you on **v1** unless you pin a prerelease explicitly.
 
-v2 is built for **hugolify-theme v2**. There is no hard dependency — the module is self-contained and will build against v1 — but it writes the layout and appearance parameters inside a `ui` object, and hugolify-theme v1 never reads that object. Every appearance control set from the CMS would be silently ignored.
+v2 is built for **hugolify-theme v2**. There is no hard dependency — the module is self-contained and will build against v1 — but it writes the layout and appearance parameters inside a `ui` object, and hugolify-theme v1 never reads that object. Every appearance control set from the CMS would be silently ignored. See [Compatibility](#compatibility).
 {{< /alert-block >}}
 
 {{< button url="/docs/admin/v1/" text="See the current stable version (v1)" >}}
@@ -41,6 +41,21 @@ Replace the tag with the most recent one — prereleases are published often and
 
 {{< blank_link link="https://github.com/hugolify/hugolify-admin/releases" text="See the latest prereleases" >}}
 
+## Compatibility
+
+The two modules are not interchangeable in both directions.
+
+| | hugolify-theme v1 | hugolify-theme v2 |
+| --- | --- | --- |
+| hugolify-admin v1 | Supported | Supported |
+| hugolify-admin v2 | **Not supported** | Supported |
+
+**hugolify-admin v1 with hugolify-theme v2 works.** The theme resolves a block's appearance through `func/GetBlockUI`, which reads the parameters from the root of the block *and* accepts a nested `ui` object as an override, with a fallback mapping the legacy `background` flag to the `bg` theme. Front matter written by admin v1 is therefore understood as-is. Only `ratio` and `scrollsnap` stay out of reach, because admin v1 has no field for them — a missing control, not a broken page.
+
+That makes a staged migration possible: move to the theme v2 first, keep publishing with admin v1, and switch the admin afterwards.
+
+**The reverse does not hold.** hugolify-theme v1 has no equivalent resolver and never reads `ui`, while admin v2 writes appearance parameters there only. Nothing errors — the values are simply written where the theme is not looking.
+
 ## Breaking changes
 
 | | v1 | v2 |
@@ -55,7 +70,7 @@ If you relied on the stepped weight select, the previous behaviour is preserved 
 
 {{< alert text="`admin/fields/weight_select.yml`" state="light" >}}
 
-## The `ui` object
+## The UI object
 
 A block or a hero has always carried a handful of appearance parameters — how many columns, which grid, how it is aligned. In v1 they sat flat at the root of the block, next to its content, and there were only a few of them.
 
@@ -124,7 +139,7 @@ The footer also accepts blocks, not just an information text.
 | `scrollsnap` | Breakpoints at which items scroll sideways (`none`, `sm`, `md`, `lg`, `xl`, `all`) |
 | `selected_source` | Choose block items manually or by taxonomy |
 | `vertical_align` | Vertical text alignment (`start`, `center`, `end`) |
-| `image.mobile` | Dedicated mobile image, used by the hero |
+| `image.src_mobile` | Dedicated mobile image, used by the hero |
 | `weight_select` | The v1 stepped weight select, kept as an opt-in |
 
 Other additions: a reorder configuration for collections (Sveltia CMS), blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.

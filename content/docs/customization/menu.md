@@ -6,7 +6,7 @@ icon: list
 
 ## Layout
 
-Offcanvas is the default layout.
+Drawer is the default layout.
 
 ### Modal
 
@@ -26,19 +26,19 @@ Modal layout requires `hugolify-theme-bootstrap`. Make sure you have not disable
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/modal/" text="Bootstrap modal documentation" >}}
 
-### Offcanvas
+### Drawer
 
 {{< alert text="`/config/default/params.yaml`" state="light" >}}
 
 ```yml
 header:
-  layout: offcanvas
-  offcanvas:
+  layout: drawer
+  drawer:
     position: end # default, or start, top, bottom
 ```
 
 {{< alert-block state="info" >}}
-Offcanvas layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
+Drawer layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
 {{< /alert-block >}}
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/offcanvas/" text="Bootstrap offcanvas documentation" >}}

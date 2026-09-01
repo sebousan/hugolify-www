@@ -18,7 +18,7 @@ bootstrap:
   collapse: true   # default true
   dropdown: true   # default true
   modal: true      # default true
-  offcanvas: true  # default true
+  offcanvas: true  # default true (drawer)
   carousel: false  # default false
   popover: false   # default false
   scrollspy: false # default false

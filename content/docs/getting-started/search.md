@@ -14,7 +14,7 @@ icon: search
 ```yml
 search:
   enable: false # Set true to enable search
-  layout: raw # Also modal or offcanvas
+  layout: raw # Also modal or drawer
   filter: false # Set true to add filters by type
   sort: false 
 ```

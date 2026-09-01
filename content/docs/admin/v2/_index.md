@@ -1,0 +1,105 @@
+---
+isIndex: false
+title: Prerelease
+url: /docs/admin/v2/
+seo:
+  title: Hugolify Admin v2
+description: Prerelease version (v2) of Hugolify Admin
+weight: 2
+image:
+  src: https://res.cloudinary.com/uncinq/image/upload/v1758204585/logo-hugolify-picto_i6dlrq.svg
+params:
+  large: true
+status:
+  text: V2
+  state: warning
+---
+
+{{< alert-block title="Prerelease" state="warning" >}}
+v2 is published as prerelease tags only — the latest is **v2.0.0-11**. Go resolves stable versions by default, so `hugo mod get` will keep you on **v1** unless you pin a prerelease explicitly.
+
+v2 also requires **hugolify-theme v2**: the `ui` field reads its configuration from the theme params.
+{{< /alert-block >}}
+
+{{< button url="/docs/admin/v1/" text="See the current stable version (v1)" >}}
+
+## Install
+
+```yml
+# /config/_default/module.yaml
+imports:
+- path: github.com/hugolify/hugolify-theme/v2
+- path: github.com/hugolify/hugolify-theme-bootstrap
+- path: github.com/hugolify/hugolify-admin/v2
+```
+
+```bash
+hugo mod get github.com/hugolify/hugolify-admin/v2@v2.0.0-11
+```
+
+## Breaking changes
+
+| | v1 | v2 |
+| --- | --- | --- |
+| Module path | `hugolify-admin` | `hugolify-admin/v2` |
+| hugolify-theme | v1 or v2 | **v2 required** |
+| Weight widget | select (10, 20, 30…) | number input (`min: 1`, integer) |
+| Background colour field | `background-color.yml` | `background_color.yml` |
+| UI fields | hardcoded in the module | configurable through params |
+
+If you relied on the stepped weight select, the previous behaviour is preserved in a separate field:
+
+{{< alert text="`admin/fields/weight_select.yml`" state="light" >}}
+
+## Configurable UI fields
+
+In v1 the `ui` object was hardcoded to *theme*, *grid* and *offset*. In v2 it is driven by params, so you choose which controls the editor sees and which values they offer.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      grid:
+        options: [container, small, medium, large, full]
+      theme:
+        options: [light, dark, accent]
+      ui:
+        fields: [theme, grid, offset, align]
+```
+
+The field is now labelled **Layout & appearance** instead of *UI*.
+
+## Navigation
+
+Header and footer menus each gain three levels, replacing the single menu of v1.
+
+- **Header** — primary, secondary, tertiary
+- **Footer** — primary, secondary, tertiary
+
+The footer also accepts blocks, not just an information text.
+
+## New fields
+
+| Field | Purpose |
+| --- | --- |
+| `ratio` | Media aspect ratio, `1` being square |
+| `scrollsnap` | Breakpoints at which items scroll sideways (`none`, `sm`, `md`, `lg`, `xl`, `all`) |
+| `selected_source` | Choose block items manually or by taxonomy |
+| `vertical_align` | Vertical text alignment (`start`, `center`, `end`) |
+| `image.mobile` | Dedicated mobile image, used by the hero |
+| `weight_select` | The v1 stepped weight select, kept as an opt-in |
+
+Other additions: a reorder configuration for collections (Sveltia CMS), blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
+
+## Not yet in v2
+
+v2 branched before some v1.0.x work, so a few things present in **v1.0.2** have not been carried over yet:
+
+- `is_pinned` is no longer wired into the *events* collection, though the field partial still exists
+- the *events → persons* and *services → persons* relation fields, and their translations
+
+{{< alert-block text="Feedback" state="info" >}}
+These gaps are tracked against the v2 line. Report anything else you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
+{{< /alert-block >}}

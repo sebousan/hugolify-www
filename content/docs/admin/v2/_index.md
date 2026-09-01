@@ -37,6 +37,10 @@ imports:
 hugo mod get github.com/hugolify/hugolify-admin/v2@v2.0.0-11
 ```
 
+Replace the tag with the most recent one — prereleases are published often and Go will not pick them up on its own.
+
+{{< blank_link link="https://github.com/hugolify/hugolify-admin/releases" text="See the latest prereleases" >}}
+
 ## Breaking changes
 
 | | v1 | v2 |
@@ -125,13 +129,6 @@ The footer also accepts blocks, not just an information text.
 
 Other additions: a reorder configuration for collections (Sveltia CMS), blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
 
-## Not yet in v2
-
-v2 branched before some v1.0.x work, so a few things present in **v1.0.2** have not been carried over yet:
-
-- `is_pinned` is no longer wired into the *events* collection, though the field partial still exists
-- the *events → persons* and *services → persons* relation fields, and their translations
-
 {{< alert-block text="Feedback" state="info" >}}
-These gaps are tracked against the v2 line. Report anything else you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
+v2 is still moving. Report anything you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
 {{< /alert-block >}}

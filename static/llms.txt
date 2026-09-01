@@ -2,7 +2,7 @@
 
 > Hugolify is an open-source Jamstack solution for building fast, accessible and low-carbon websites. It builds on the Hugo framework as a set of composable modules, and ships native configuration for 7 headless CMS (CloudCannon, Decap, Netlify, Pages, Static, Sveltia and Tina).
 
-Since v2, hugolify-theme is an agnostic core — templates, layouts, functions and vendored JS — and the styling lives in a separate module: hugolify-theme-bootstrap (Bootstrap 5, the default) or hugolify-theme-design-system (framework-free, preview). In v1, Bootstrap CSS and JS were bundled inside hugolify-theme.
+Since v2, hugolify-theme is an agnostic core — templates, layouts, functions and vendored JS — and the styling lives in a separate module: hugolify-theme-bootstrap (Bootstrap 5, the default) or hugolify-theme-design-system (framework-free, custom properties CSS, tokens). In v1, Bootstrap CSS and JS were bundled inside hugolify-theme.
 
 This site documents v2. The v1 documentation is archived at https://v1.hugolify.io/
 

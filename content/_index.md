@@ -167,8 +167,8 @@ blocks:
     title: Hugolify v2 is rolling out
     text: "v2 moves CSS and JavaScript out of the core theme into a dedicated styling module, so you can stay on Bootstrap or bring your own design system. The GitHub template still ships v1, and the v1 documentation remains available."
     ctas:
-      - text: Read the migration guide
-        url: /docs/getting-started/migration/
+      # - text: Read the migration guide
+      #   url: /docs/getting-started/migration/
       - text: Browse the v1 documentation
         url: https://v1.hugolify.io/
         blank: true

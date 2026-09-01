@@ -23,6 +23,7 @@ imports:
 
 - [Expertises](/docs/taxonomies/persons-expertises/)
 - [Places](/docs/taxonomies/persons-places/)
+- [Statutes](/docs/taxonomies/persons-statutes/)
 
 **Setup with multiple taxonomies example**
 

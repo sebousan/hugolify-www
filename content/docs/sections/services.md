@@ -21,7 +21,7 @@ imports:
 
 ## Taxonomies
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-services-categories" text="Categories" >}}
+- [Categories](/docs/taxonomies/services-categories/)
 
 **Setup**
 

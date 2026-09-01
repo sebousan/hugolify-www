@@ -20,6 +20,11 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 ```
 
+## Taxonomies
+
+- [Categories](/docs/taxonomies/events-categories/)
+- [Persons](/docs/taxonomies/events-persons/)
+
 ## Files
 
 - {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/tree/main/layouts/partials/events" text="HTML partials" >}}

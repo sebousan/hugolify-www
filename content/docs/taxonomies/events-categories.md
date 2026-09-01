@@ -1,14 +1,14 @@
 ---
-title: Jobs tags
-description: Taxonomy tags for jobs section.
-icon: tag
+title: Events categories
+description: Taxonomy categories for events section.
+icon: bookmark
 ---
 
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-jobs" text="Hugolify theme jobs" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-jobs-tags" text="Hugolify theme jobs tags" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-events" text="Hugolify theme events" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-events-categories" text="Hugolify theme events categories" >}}
 
 **Setup**
 
@@ -16,14 +16,14 @@ icon: tag
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-jobs-tags
-  - path: github.com/hugolify/hugolify-theme-jobs
+  - path: github.com/hugolify/hugolify-theme-events-categories
+  - path: github.com/hugolify/hugolify-theme-events
   - path: github.com/hugolify/hugolify-theme
 ```
 
 ## Related section
 
-- [Jobs](/docs/sections/jobs/)
+- [Events](/docs/sections/events/)
 
 ## CMS
 
@@ -31,7 +31,3 @@ imports:
 - [Hugolify Decap CMS](/docs/cms/decap-cms/) {{< badge text="Not available" state="danger" >}}
 - [Hugolify Netlify CMS](/docs/cms/netlify-cms/) {{< badge text="Not available" state="danger" >}}
 - [Hugolify Sveltia CMS](/docs/cms/sveltia-cms/) {{< badge text="Not available" state="danger" >}}
-
-## Example
-
-- {{< blank_link link="https://demo.hugolify.io/jobs/tags/" text="Demo visual renderer" >}}

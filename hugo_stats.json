@@ -63,6 +63,8 @@
       "alert-light",
       "alert-warning",
       "badge",
+      "banner",
+      "banner-warning",
       "block-bg",
       "block-cta",
       "block-datas",

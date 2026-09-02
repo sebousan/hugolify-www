@@ -41,7 +41,7 @@ imports:
 - path: github.com/hugolify/hugolify-admin/v2
 ```
 
-The `/v2` suffix is required: Go modules treat a major version as a distinct module path, so `hugolify-theme` and `hugolify-theme/v2` are two different modules.
+The **/v2** suffix is required: Go modules treat a major version as a distinct module path, so `hugolify-theme` and `hugolify-theme/v2` are two different modules.
 
 Keep your content modules (`hugolify-theme-posts`, `hugolify-theme-projects`…) declared above the core theme, exactly as in v1.
 
@@ -66,7 +66,7 @@ postcss/
 If your project kept `postcss.config.js` at the root, move it into that directory. Each styling module ships an example you can copy.
 
 {{< alert-block text="PurgeCSS" state="warning" >}}
-This is the step most likely to break a build silently: if the file is not found at the expected path, Hugo falls back to the project root, and a stale or missing config produces an unpurged or over-purged stylesheet rather than an error.
+This is the step that most often breaks a v2 build: the styling module declares the path, so if no config sits there Hugo stops with `postcss config "postcss/bootstrap" not found`. It does not fall back to the project root: that fallback only applies when no path is declared at all.
 {{< /alert-block >}}
 
 ## 4. Fetch the modules

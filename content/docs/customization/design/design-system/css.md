@@ -1,7 +1,7 @@
 ---
 title: CSS
 description: CSS custom properties and design tokens
-weight: 2
+weight: 3
 icon: filetype-sass
 ---
 
@@ -17,9 +17,12 @@ The module does not ship its own reset or token system. It composes four framewo
 | {{< blank_link link="https://github.com/uncinq/component-tokens" text="@uncinq/component-tokens" >}} | Component-scoped custom properties (`--btn-*`, `--card-*`, `--container-*`…) | `tokens` |
 | {{< blank_link link="https://github.com/uncinq/css-base" text="@uncinq/css-base" >}} | Reset, native element styles, layout primitives (container, grid, row), `@custom-media` breakpoints | `reset`, `base`, `layouts` |
 | {{< blank_link link="https://github.com/uncinq/css-components" text="@uncinq/css-components" >}} | Generic UI components (alert, badge, button, card, form, nav, panel…) | `components` |
-| **hugolify-theme-design-system** | Hugolify tokens, layouts, components, blocks, pages, utilities | all |
 
-Each package is strictly additive — no package reaches into a lower layer. They are installed by `hugo mod npm pack`, see [Setup](/docs/customization/design/design-system/setup/#command).
+{{< alert text="Each package is strictly additive: no package reaches into a lower layer. They are installed by `hugo mod npm pack`, see [PostCSS](/docs/customization/design/design-system/postcss/#install-the-packages)." state="warning" >}}
+
+**hugolify-theme-design-system** itself is a Hugo module, not an npm package: it is imported through `module.yaml` and brings the Hugolify-specific layer (tokens, layouts, components, blocks, pages and utilities), writing into every layer above.
+
+{{< alert text="Import order matters: `@import '@uncinq/css-base'` must come **before** any `@import` that inlines local CSS in the same file, because `postcss-import` resolves npm package imports only in that position." state="warning" >}}
 
 ## Token architecture
 
@@ -131,6 +134,77 @@ Some component tokens change at breakpoints. The breakpoint logic lives in the *
   @media (--desktop)     { --container-max-width: var(--container-max-width-desktop); }
 }
 ```
+
+## Grid params and image widths
+
+Four site params describe the page grid in **numbers**. They are read only by the Go templates, to compute the pixel width of an image before it is resized. They never produce a single line of CSS.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+column:
+  mobile: 1
+  desktop: 12
+container:
+  desktop: 1440
+  mobile: 375
+gap:
+  desktop: 30
+  mobile: 30
+gutter:
+  desktop: 60
+  mobile: 30
+```
+
+| Param | What it drives |
+| --- | --- |
+| `column.desktop` | The divisor of the grid (12), how wide one column is |
+| `column.mobile` | Same, on mobile (`1` → one column fills the container) |
+| `container.desktop` / `.mobile` | The reference width the gutters are subtracted from |
+| `gap.desktop` | The space between two columns, part of a multi-column span |
+| `gutter.desktop` / `.mobile` | The inside margin of the container, subtracted from the usable width |
+
+A block asking for a 4-column image gets `GetColumnWidth` → `(container − 2 gutters − gaps) / 12 × 4 + gaps`, rounded up, and that number is what Hugo (or your image CDN) resizes to.
+
+{{< alert-block title="Keep them in sync with the CSS" state="warning" >}}
+The **CSS** width of the container comes from tokens (`--container-max-width-desktop`, `--gutter`), not from these params. Change one side without the other and Hugo generates images calibrated for a width the page no longer has: too small, so upscaled and soft.
+
+Each styling module ships the values matching its own grid: `1440 / 30 / 60` for the design system, `1296 / 24 / 30` for Bootstrap.
+{{< /alert-block >}}
+
+## Dark mode
+
+Dark mode is **off by default**. Turning it on hands the choice to the operating system:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+css:
+  darkmode: true # false (default) forces light
+```
+
+| `css.darkmode` | `<meta name="color-scheme">` | Root attribute |
+| --- | --- | --- |
+| `true` | `light dark` | none, the OS decides |
+| `false` | `only light` | `data-color-scheme="light"`, dark tokens suppressed |
+
+The dark values ship with `@uncinq/design-tokens` and reassign the semantic color tokens only: `--color-background`, `--color-text`, `--color-border`… Components follow without a single dark-specific rule.
+
+Your own dark values go under the same guard, so a site switched back to light keeps working:
+
+```css
+/* assets/css/tokens/theme.css */
+@layer tokens {
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-color-scheme="light"]) {
+      --color-brand: oklch(0.7 0.16 22);
+      --header-color-background: var(--color-background);
+    }
+  }
+}
+```
+
+{{< alert text="Write dark overrides against **semantic** tokens, never against a component's own colors: a component that reads `--color-background` flips on its own, while one that hardcodes a value has to be handled twice." state="warning" >}}
 
 ## Where overrides go
 

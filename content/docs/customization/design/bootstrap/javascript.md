@@ -1,7 +1,7 @@
 ---
 title: Javascript
 description: Bootstrap and Vanilla JS
-weight: 3
+weight: 4
 icon: filetype-js
 ---
 

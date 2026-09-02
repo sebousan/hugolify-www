@@ -1,7 +1,7 @@
 ---
 title: Javascript
 description: Vanilla JS
-weight: 3
+weight: 4
 icon: filetype-js
 ---
 
@@ -37,6 +37,8 @@ Always loaded, no param to enable them:
 Panels driven by `dialog.js` (header, filters, sidebar menu, table of contents) switch between inline and overlay at the breakpoint declared in the site params — see [CSS](/docs/customization/design/design-system/css/#breakpoints).
 
 ## Features
+
+### Vendors
 
 Each feature is imported by `main.js` only when its param is true.
 

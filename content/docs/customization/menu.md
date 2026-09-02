@@ -21,7 +21,7 @@ header:
 ```
 
 {{< alert-block state="info" >}}
-Modal layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
+Modal layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/design/bootstrap/javascript/#enabledisable-bootstrap-components).
 {{< /alert-block >}}
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/modal/" text="Bootstrap modal documentation" >}}
@@ -38,7 +38,7 @@ header:
 ```
 
 {{< alert-block state="info" >}}
-Drawer layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/javascript/#bootstrap).
+Drawer layout requires `hugolify-theme-bootstrap`. Make sure you have not disabled the corresponding [Bootstrap JS component](/docs/customization/design/bootstrap/javascript/#enabledisable-bootstrap-components).
 {{< /alert-block >}}
 
 {{< blank_link link="https://getbootstrap.com/docs/5.3/components/offcanvas/" text="Bootstrap offcanvas documentation" >}}

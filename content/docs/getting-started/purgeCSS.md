@@ -20,7 +20,7 @@ build:
 
 ## Configuration
 
-* [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/css/#postcss-and-purgecss)
+* [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/postcss/)
 
 ## Documentations
 

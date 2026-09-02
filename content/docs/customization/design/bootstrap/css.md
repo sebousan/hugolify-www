@@ -1,17 +1,15 @@
 ---
 title: CSS
 description: Bootstrap variables, mixins and semantic classes
-weight: 2
 icon: filetype-sass
-aliases:
-  - /docs/customization/purgecss/
+weight: 3
 ---
 
 ## Variables
 
 Override Bootstrap and Hugolify variables in your project:
 
-```bash
+```txt
 assets/
 └── sass/
     └── abstracts/
@@ -162,22 +160,6 @@ Badge classes are generated from Bootstrap's `$theme-colors` map:
 
 ## PostCSS and PurgeCSS
 
-Bootstrap generates a large CSS file. PurgeCSS removes unused classes based on the HTML elements Hugo actually renders.
+Bootstrap generates a large stylesheet; PurgeCSS removes the classes your site never renders. Both live in the PostCSS config of your project.
 
-Add **postcss.config.js** at the "/postcss/bootstrap" directory of your project:
-
-{{< button text="PostCSS config example" blank="true" url="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/postcss.config.js" >}}
-
-Enable Hugo stats in your config (required for PurgeCSS):
-
-```yaml
-# hugo.yaml
-build:
-  writeStats: true
-```
-
-Install the required packages:
-
-```bash
-hugo mod get && hugo mod npm pack && yarn install
-```
+{{< button url="/docs/customization/design/bootstrap/postcss/" text="PostCSS and PurgeCSS setup" >}}

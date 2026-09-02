@@ -44,46 +44,17 @@ imports:
 
 ### PostCSS
 
-The CSS pipeline needs **postcss-import** (to inline the `@import` of the npm packages) and **postcss-custom-media** (to resolve the `@custom-media` breakpoints).
+The CSS pipeline needs a PostCSS config in your project. The module declares the directory (`postcss/design-system`), the file has to exist there.
 
-The module already declares where to find the config:
-
-```yml
-# provided by the module — no need to repeat it in your project
-params:
-  css:
-    postcss: "postcss/design-system"
-```
-
-Add the config file at that path in your project:
-
-{{< alert text="`/postcss/design-system/postcss.config.js`" state="light" >}}
-
-```js
-module.exports = {
-  plugins: {
-    'postcss-import': {},
-    'postcss-custom-media': {},
-    autoprefixer: {},
-  }
-};
-```
+{{< button url="/docs/customization/design/design-system/postcss/" text="PostCSS setup" >}}
 
 ### Command
-
-Then install the npm packages. `hugo mod npm pack` merges the dependencies declared by each module — the four `@uncinq` packages and the PostCSS plugins — into your project `package.json`:
 
 ```bash
 hugo mod get && hugo mod npm pack && yarn install
 ```
 
-Projects started from {{< blank_link link="https://github.com/Hugolify/hugolify-template/" text="hugolify-template" >}} have it as a script:
-
-```bash
-yarn install:hugolify
-```
-
-Run it again after every `hugo mod get -u`: a module can add or bump an npm dependency.
+Run it again after every `hugo mod get -u`: a module can add or bump an npm dependency, and only this command writes it into your `package.json`. See [PostCSS](/docs/customization/design/design-system/postcss/#install-the-packages).
 
 ## Requirements
 

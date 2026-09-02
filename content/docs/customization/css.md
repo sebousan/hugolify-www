@@ -16,7 +16,10 @@ css:
   postcss: "postcss/bootstrap"       # hugolify-theme-bootstrap
 ```
 
-The config file must exist at that path in your project (e.g. **postcss/bootstrap/postcss.config.js**). Each theme ships an example you can copy. If no directory is set, Hugo falls back to **postcss.config.js** at the project root.
+The config file must exist at that path in your project (e.g. **postcss/bootstrap/postcss.config.js**). Each styling module ships the file at its root, ready to copy. A declared path with no file there is a build error. The fallback to **postcss.config.js** at the project root only applies when no path is declared at all.
+
+* [PostCSS for hugolify-theme-bootstrap](/docs/customization/design/bootstrap/postcss/)
+* [PostCSS for hugolify-theme-design-system](/docs/customization/design/design-system/postcss/)
 
 ## Preload CSS
 

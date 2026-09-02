@@ -1,7 +1,7 @@
 ---
 title: Icons
 description: Bootstrap, Materials, Icomoon icons…
-weight: 4
+weight: 5
 icon: emoji-smile
 ---
 
@@ -27,7 +27,7 @@ You can replace or extend the default icon set by overriding the icons SASS in y
 
 Use {{< blank_link link="https://fonts.google.com/icons" text="Google Material Icons" >}}.
 
-```bash
+```txt
 assets/
 └── sass/
     └── base/

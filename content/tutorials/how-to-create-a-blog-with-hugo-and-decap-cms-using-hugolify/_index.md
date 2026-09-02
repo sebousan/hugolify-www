@@ -17,7 +17,7 @@ hero:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
 status:
   text: V1
-  state: primary
+  state: warning
 ---
 ## Prerequisites
 

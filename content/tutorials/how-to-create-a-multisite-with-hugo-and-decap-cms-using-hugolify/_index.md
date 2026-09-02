@@ -15,7 +15,7 @@ hero:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
 status:
   text: V1
-  state: primary
+  state: warning
 ---
 
 ## Introduction

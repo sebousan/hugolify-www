@@ -15,7 +15,7 @@ hero:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758117389/554.Urban-Puzzle_lwreua.svg
 status:
   text: V1
-  state: primary
+  state: warning
 ---
 ## Prerequisites
 

@@ -15,7 +15,7 @@ hero:
     src: https://res.cloudinary.com/uncinq/image/upload/v1758116925/420.Dual-Monitor_xu2t2k.svg
 status:
   text: V1
-  state: primary
+  state: warning
 ---
 ## Prerequisites
 

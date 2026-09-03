@@ -180,6 +180,16 @@ blocks:
       surtitle: How to
       title: Thanks to our tutorials
     items:
+      - title: How to create your own design system with Hugo and Hugolify
+        surtitle: Tutorial
+        text: Create your own design system.
+        image:
+          src: https://res.cloudinary.com/uncinq/image/upload/v1768396980/597.Collaborative-Work_hdy5p5.svg
+          isLogo: true
+        cta:
+          text: See tutorial
+          url: /tutorials/how-to-create-your-own-design-system-using-hugolify
+
       - title: How to create a multisite with Hugo and Decap CMS using Hugolify on Netlify
         surtitle: Tutorial
         text: With common and different content.
@@ -198,15 +208,6 @@ blocks:
         cta:
           text: See tutorial
           url: /tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify
-      - title: How to create a portfolio with Hugo and Decap CMS using Hugolify
-        surtitle: Tutorial
-        text: Portfolio with projects and categories.
-        image:
-          src: https://res.cloudinary.com/uncinq/image/upload/v1758116855/307.Writing_pxggvn.svg
-          isLogo: true
-        cta:
-          text: See tutorial
-          url: /tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify
   - type: editorial
     surtitle: Web performance
     title: Discover performance and carbon emissions reports

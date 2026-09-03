@@ -18,6 +18,24 @@ For now the module targets **hugolify-theme-design-system** only. **hugolify-the
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-theme-icons" text="hugolify-theme-icons on GitHub" >}}
 
+## Icon sets
+
+Two libraries are imported by the module, each with its own role.
+
+### Lucide
+
+{{< blank_link link="https://lucide.dev/icons/" text="Browse the Lucide icon list" >}}
+
+The UI and content set, and the only one for that role: over 1700 outline icons, drawn on a 24x24 grid and stroked (see [Stroke weight](#stroke-weight)). Mounted on `assets/icons/ui/`, resolved by its Lucide name, as-is: `{{ partial "icon" "map-pin" }}`.
+
+### Simple Icons
+
+{{< blank_link link="https://simpleicons.org/" text="Browse the Simple Icons list" >}}
+
+The brand set: over 3400 logos, solid fills with no stroke, rendered monochrome. Mounted on `assets/icons/brands/`, resolved by its Simple Icons slug prefixed with `brand:`: `{{ partial "icon" "brand:github" }}`. Use the slug shown on the site, not the marketing name (`x`, not `twitter`).
+
+The prefix also disambiguates a name held by both sets: `apple` gives the Lucide fruit, `brand:apple` the Apple logo.
+
 ## Install
 
 {{< alert text="`/config/_default/module.yaml`" state="light" >}}

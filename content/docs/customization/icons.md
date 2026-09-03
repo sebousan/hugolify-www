@@ -76,6 +76,26 @@ Size and color are overridden with the two custom properties:
 
 Brand icons render **monochrome** — the norm for social rows. A colored logo needs an inline SVG instead of a mask.
 
+## Stroke weight
+
+Lucide ships every icon at `stroke-width="2"`, which reads heavy at UI sizes. The module treats stroke weight as a design token and defaults it to `1`. Change it with a single param:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+icons:
+  strokeWidth: 1.5 # default 1, set 2 to restore Lucide's own weight
+```
+
+The unit is viewBox units, not pixels. All Lucide icons are 24x24, so the rendered thickness is `strokeWidth / 24 * --icon-size`: at the default `--icon-size: 1em` (16px), `1` gives 0.67px, `1.5` gives 1px and `2` gives 1.33px. A weight of `1` is genuinely hairline at 16px and depends on the browser antialiasing, so `1.5` is the safer pick for icon-dense interfaces.
+
+Two limits come from the mask rendering described above:
+
+- It is **not** a CSS variable. A mask exposes only its alpha channel, so no runtime custom property can reach the `stroke-width` attribute inside the SVG: the value is substituted into the source before encoding, at build time.
+- It is **site-wide**. A per-component weight would require a second glyph set and would double the stylesheet.
+
+The param only applies to UI icons. Simple Icons brands are solid fills and carry no stroke.
+
 ## Build
 
 There is no project-side build step and no Node script. The subset ships natively:

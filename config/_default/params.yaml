@@ -8,7 +8,7 @@ carousel: false
 map: true
 search:
   enable: true
-  layout: drawer
+  layout: offcanvas
   showImages: false
   sort: true
 docs:

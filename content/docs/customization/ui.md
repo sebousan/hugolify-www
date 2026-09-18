@@ -53,6 +53,41 @@ Available `theme` and `grid` values are declared per project in the admin config
 
 The spans are relative to the active column count, not hardcoded to 12: `@uncinq/css-base` computes them from `--columns`, Bootstrap from `$grid-columns` via `make-col()`.
 
+### Defaults per block
+
+A `ui` value in the front matter belongs to that block alone. To give every block of a type the same look, declare it in the params: the value stays out of the content, so changing it restyles the blocks already written.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+params:
+  blocks:
+    latest:
+      ui:
+        align: center
+        grid: large
+        layout: grid
+        offset: center
+```
+
+{{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} resolves the three levels, from the weakest to the strongest:
+
+1. `params.blocks.<type>.ui` — the look the site gives to the type
+2. the keys at the root of the block — the legacy v1 form
+3. the keys under the block's own `ui` — **they win even when empty**, which is how one block opts out of a default
+
+What an editor picks in the CMS lands in the third level, so it always wins over the params.
+
+Every key of the table above is accepted. `scrollsnap` goes here too, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own — see [scrollsnap](/docs/blocks/#scrollsnap).
+
+{{< alert-block title="Calling a block template by hand" state="warning" >}}
+A partial rendering a block outside the `blocks` list of a page has to name it through `type`, the way `blocks/range.html` does, otherwise the block takes no default and falls back to the generic params.
+{{< /alert-block >}}
+
+```go-html-template
+{{ partial "blocks/templates/latest.html" (dict "type" "latest" "section" "posts") }}
+```
+
 ## Hero
 
 {{< alert text="`hero` object in a page's front matter" state="light" >}}

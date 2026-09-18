@@ -134,6 +134,10 @@ params:
 
 The field is now labelled **Layout & appearance** instead of *UI*.
 
+These params decide which controls the editor **sees**, never what they hold. No `ui` field is prefilled, because a CMS default is saved to the front matter of every entry created after it: the content would carry the site's design decisions, and changing one later would leave the existing entries behind. A look given to a whole block type belongs to the theme, where it stays out of the content.
+
+{{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
+
 ## Navigation
 
 Header and footer menus each gain three levels, replacing the single menu of v1.

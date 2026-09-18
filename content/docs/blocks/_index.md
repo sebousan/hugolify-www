@@ -84,6 +84,10 @@ Everything about how the block looks. The value **is** the CSS class: `theme: da
 | `direction` | `ltr` `rtl` | editorial |
 | `carousel` | object, only with `layout: carousel` | gallery, logos, pushes, selected, testimonials |
 
+Any of these can be set once for a whole block type, under `params.blocks.<type>.ui`. A block of a page overrides it, and drops it by writing the key under its own `ui`, even empty.
+
+{{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
+
 {{< button url="/docs/customization/ui/" text="See the UI reference" >}}
 
 ### scrollsnap
@@ -103,19 +107,24 @@ ui:
     pagination: true # [true, false, pointer] dots
 ```
 
-Each key falls back through the params ladder, most specific first, so a block overrides one without repeating the others:
+Each key falls back through the params ladder, most specific first, so a block overrides one without repeating the others. In the params it goes under `ui`, the same place as in the front matter:
 
 ```yml
 params:
   blocks:
     datas:
-      scrollsnap:
-        breakpoint: lg
+      ui:
+        grid: medium
+        scrollsnap: lg
     scrollsnap:
       nav: pointer
   scrollsnap:
     pagination: true
 ```
+
+The two wider levels are not tied to a block, so they carry the key on their own. Written at a block level itself rather than under its `ui` it is still read — the form the params used before — and `ui` wins when a level carries both.
+
+Unlike the other `ui` keys, `scrollsnap` is resolved by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/func/SetScrollsnap.html" text="func/SetScrollsnap.html" >}} rather than `GetBlockUI`: it does not become a `block-*` class, it puts a utility class on the row of items.
 
 Defaults: breakpoint `md`, `nav: false`, `pagination: false`.
 

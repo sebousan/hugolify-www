@@ -134,9 +134,47 @@ params:
 
 The field is now labelled **Layout & appearance** instead of *UI*.
 
-These params decide which controls the editor **sees**, never what they hold. No `ui` field is prefilled, because a CMS default is saved to the front matter of every entry created after it: the content would carry the site's design decisions, and changing one later would leave the existing entries behind. A look given to a whole block type belongs to the theme, where it stays out of the content.
+These params decide which controls the editor **sees**, never what they hold. No `ui` field is prefilled, because a CMS default is saved to the front matter of every entry created after it: the content would carry the site's design decisions, and changing one later would leave the existing entries behind. A look given to a whole block type belongs outside the content — which is what the next section is for.
+
+### Default appearance per block type
+
+The *config* collection gains a `blocks` file, written to `/data/blocks.yml`, holding the default `ui` of each block type. It is the CMS-editable twin of `params.blocks.<type>.ui`: same shape, read on top of it key by key, so a field left empty falls back to the config instead of erasing it.
+
+Add it to the collection the way you add any config file, by listing it in `files`:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    collections:
+      config:
+        files: [nav-header-primary, nav-footer-primary, nav-legal, banner, footer, credit, blocks, seo]
+```
+
+The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value, so the screen says at a glance which types the site styles.
+
+Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content.
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
+
+## The fields of a config file
+
+Each file of the *config* collection ships its own set of fields. `admin.files.<name>.fields` replaces that set, without touching the `files` list — so changing the fields of one file no longer means restating every other:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    files:
+      footer:
+        fields: [newsletter, cta, blocks]
+      seo:
+        fields: [title, description, image_seo]
+```
+
+Available on `footer`, `seo`, `credit` and `banner`. Left undefined, each keeps the fields the module declares — respectively `title, text_area, cta, blocks`, `title, description, image_seo, twitter`, `text_markdown`, and `text_markdown, state`.
 
 ## Navigation
 
@@ -146,6 +184,39 @@ Header and footer menus each gain three levels, replacing the single menu of v1.
 - **Footer** — primary, secondary, tertiary
 
 The footer also accepts blocks, not just an information text.
+
+## Nested collections
+
+A collection can show its entries as a folder tree and let editors organise them in subfolders. Entries are stored as Hugo branch bundles — an `_index` file in a folder of its own — so a page can carry children and page resources.
+
+Set the depth globally, or per collection when only one of them is a tree:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    nested:
+      depth: 2 # every collection
+    collections:
+      docs:
+        nested:
+          depth: 4 # this one alone, overriding the global
+```
+
+The depth counts path segments below the collection folder, and is what limits how deep an editor may go.
+
+| Depth | Result |
+| --- | --- |
+| `1` | Nothing emitted — a flat collection |
+| `2` | Folder tree, one level of children |
+| `3` and up | Folder tree, plus a **parent** field so an editor picks where a page goes and moves it later |
+
+{{< alert-block title="Sveltia CMS" state="info" >}}
+Nested collections used to be Decap-only. **Sveltia CMS supports them now**, and fixes several long-standing problems of the Decap implementation along the way — entry paths, preview paths, media folders, folder labels and i18n.
+
+The parent field differs between the two: Decap gets a custom Hugolify widget, Sveltia its own folder picker. Hugolify writes the Decap `widget` and `label` either way, and Sveltia accepts both for compatibility and ignores them, so the same config serves the two.
+{{< /alert-block >}}
 
 ## New fields
 

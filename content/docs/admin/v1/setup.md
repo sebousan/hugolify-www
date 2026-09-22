@@ -30,7 +30,7 @@ admin:
   config:
     id: false # use ID for dir/name files and relation
   nested:
-    depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
+    depth: 2 # optional, set minimum 2, overridable per collection
   preview: false
   publish_mode: simple # optional, default "simple"
 

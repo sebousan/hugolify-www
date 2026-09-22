@@ -12,7 +12,6 @@ seo:
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Git Gateway
-- Nested pages
 - Netlify Identify
 
 See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations" text="Current limitations" >}} and {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented" text="features not to be implemented" >}} in Sveltia CMS documentation.

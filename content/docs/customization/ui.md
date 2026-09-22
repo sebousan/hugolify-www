@@ -55,7 +55,11 @@ The spans are relative to the active column count, not hardcoded to 12: `@uncinq
 
 ### Defaults per block
 
-A `ui` value in the front matter belongs to that block alone. To give every block of a type the same look, declare it in the params: the value stays out of the content, so changing it restyles the blocks already written.
+A `ui` value in the front matter belongs to that block alone. To give every block of a type the same look, declare it once outside the content: changing it later restyles the blocks already written, instead of leaving them behind.
+
+Two places take that declaration, and they stack.
+
+#### In the config — what the project ships
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -70,15 +74,41 @@ params:
         offset: center
 ```
 
-{{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} resolves the three levels, from the weakest to the strongest:
+This is the developer's level. It travels with the repository and is not editable from the CMS, which is what you want for a decision the project should not drift away from.
 
-1. `params.blocks.<type>.ui` — the look the site gives to the type
-2. the keys at the root of the block — the legacy v1 form
-3. the keys under the block's own `ui` — **they win even when empty**, which is how one block opts out of a default
+#### In the data — what the CMS can retune
 
-What an editor picks in the CMS lands in the third level, so it always wins over the params.
+`/data/blocks.yml` holds the same thing in the same shape, and hugolify-admin exposes it as a **Blocks** file in the *config* collection. An integrator adjusts a block type there without touching the repository.
 
-Every key of the table above is accepted. `scrollsnap` goes here too, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own — see [scrollsnap](/docs/blocks/#scrollsnap).
+{{< alert text="`/data/blocks.yml`" state="light" >}}
+
+```yml
+latest:
+  ui:
+    align: center
+    grid: large
+    layout: grid
+    offset: center
+```
+
+The form lists every block type the project enables, one collapsible section each, `selected-*` variants included. A section arrives open when it already carries a value, so the screen says at a glance which of the types the site actually styles.
+
+Values are read key by key, so a field left empty in the CMS falls back to the config rather than erasing it. A type can therefore be split between the two: the grid fixed in `params.yaml`, the theme left open to the CMS.
+
+The file is not translated. How a block looks is not language content, so one `/data/blocks.yml` answers for every locale.
+
+#### The ladder
+
+{{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} resolves four levels, from the weakest to the strongest:
+
+1. `params.blocks.<type>.ui` — the look the project ships
+2. `data/blocks.yml` → `<type>.ui` — the look the CMS sets, key by key
+3. the keys at the root of the block — the legacy v1 form
+4. the keys under the block's own `ui` — **they win even when empty**, which is how one block opts out of a default
+
+What an editor picks on a block itself lands in the fourth level, so it always wins over both defaults.
+
+Every key of the table above is accepted. `scrollsnap` goes in either place too, in the same order, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own — see [scrollsnap](/docs/blocks/#scrollsnap).
 
 {{< alert-block title="Calling a block template by hand" state="warning" >}}
 A partial rendering a block outside the `blocks` list of a page has to name it through `type`, the way `blocks/range.html` does, otherwise the block takes no default and falls back to the generic params.

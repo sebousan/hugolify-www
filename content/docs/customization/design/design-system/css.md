@@ -41,15 +41,16 @@ Never skip two levels: a component token should reference a semantic token, not 
 All tokens and styles are assigned to a named layer. The order is declared **once**, at the very top of `assets/css/main.css`, before any `@import` — CSS fixes a layer's position the first time its name is seen.
 
 ```css
-@layer reset, tokens, vendors, base, layouts, components, pages, utilities;
+@layer reset, tokens, libs, base, vendors, layouts, components, pages, utilities;
 ```
 
 | Layer | Content | Provided by |
 | --- | --- | --- |
 | `reset` | CSS reset | `@uncinq/css-base` |
 | `tokens` | All custom properties (primitive, semantic, component) | `@uncinq/design-tokens`, `@uncinq/component-tokens`, module |
-| `vendors` | Third-party libraries (Leaflet, Splide) | module |
+| `libs` | Third-party stylesheets themselves (Leaflet, Splide, Tobii), injected at runtime | module (JS) |
 | `base` | Native element styles (body, headings, links, tables, forms…) | `@uncinq/css-base` |
+| `vendors` | Our overrides of those libraries (Leaflet, Pagefind, Splide) — above `base`, since they often undo native element styles | module |
 | `layouts` | Layout primitives (container, grid, row) + hugolify layouts | `@uncinq/css-base`, module |
 | `components` | UI components (.alert, .btn, .card…) and hugolify components | `@uncinq/css-components`, module |
 | `pages` | Page-specific rules | module |

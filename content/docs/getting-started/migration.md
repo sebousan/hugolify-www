@@ -85,7 +85,7 @@ hugo mod tidy
 
 ## Hugolify Admin
 
-**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too. Staying on admin v1 for a transition is workable — see [Compatibility](/docs/admin/v2/#compatibility).
+**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too. Staying on admin v1 for a transition is workable — see [Compatibility](/docs/admin/v2/migration/#compatibility).
 
 {{< alert-block title="Admin v2 is a prerelease" state="warning" >}}
 There is no stable **v2.0.0** of hugolify-admin yet, only prerelease tags. Migrating to the theme v2 therefore means running a prerelease admin. If your project cannot take that, stay on v1 for now — theme and admin both.

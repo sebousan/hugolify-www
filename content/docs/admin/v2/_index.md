@@ -231,6 +231,41 @@ The parent field differs between the two: Decap gets a custom Hugolify widget, S
 
 Other additions: a reorder configuration for collections (Sveltia CMS), blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
 
+An [`icon` shortcode](/docs/shortcodes/icon/) joins the markdown editor as well, for CloudCannon, Decap, Netlify and Sveltia CMS.
+
+## Computed values
+
+A new `compute` widget builds a read-only field from the other fields of the entry, and refreshes it as they are typed. {{< badge text="Only available with Sveltia CMS" state="warning" >}}
+
+{{< alert text="`admin/widgets/compute.js`" state="light" >}}
+
+It has no equivalent elsewhere, neither in Decap, Netlify and Static CMS nor in Pages CMS, CloudCannon and TinaCMS, so every other CMS emits an empty field and the value stays typed by hand.
+
+A value template references a field with `{{fields.name}}` and accepts a string transformation after a pipe, as in `{{fields.title | slugify}}`. Inside a List, `{{index}}` returns the item position, stored as a number.
+
+{{< blank_link link="https://sveltiacms.app/en/docs/fields/compute" text="See the Sveltia CMS documentation" >}}
+
+### A title built from other fields
+
+`title_page` reads a `compute` template and hands it to the widget. Left undefined, it stays the regular text input, which is also what a project running any other CMS gets.
+
+The *persons* collection does this by default: a person is named after their first and last name, so the page title is derived rather than asked for, and never typed twice.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    collections:
+      persons:
+        fields:
+          - draft
+          - title_page: { i18n: duplicate, compute: '{{fields.firstname}} {{fields.lastname}}' }
+          - firstname
+          - lastname
+          - body
+```
+
 {{< alert-block text="Feedback" state="info" >}}
 v2 is still moving. Report anything you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
 {{< /alert-block >}}

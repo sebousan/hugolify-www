@@ -26,6 +26,8 @@ cookie_banner:
       position: bottom left
 ```
 
+The `analytics` category is what loads Google Analytics and Meta Pixel. See [Analytics](/docs/getting-started/analytics/).
+
 ## Documentation
 
 A complete documentation of how to use CookieConsent.

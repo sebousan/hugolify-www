@@ -16,7 +16,7 @@ blocks:
       title: '' # string (optional)
       text: '' # markdown (optional)
     section: '' # string [posts, publications, products…]
-    count: 4 # number, defaults to 3 (optional)
+    limit: 4 # number, defaults to 3 (optional)
     show_more: true # boolean, adds a link to the section index (optional)
     ui: {} # (optional)
       theme: '' # [accent, black, dark, highlight, light, neutral, white] (optional)
@@ -28,6 +28,8 @@ blocks:
 ```
 
 Pages are ordered pinned first — those with a `weight` — then by date when the section has one, by title otherwise. `section: pages` picks up every page flagged `isPage: true`.
+
+`limit` was called `count` before: a block written with `count` still works.
 
 The block class carries the section, `block-latest-posts`, so a section can be styled on its own.
 

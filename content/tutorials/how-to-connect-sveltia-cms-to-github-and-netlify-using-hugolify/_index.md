@@ -38,7 +38,7 @@ Content is not published on every save. Editors save as often as they want, then
 | 3. Add the OAuth App to Netlify | once per website |
 | 4. Configure the CMS | once per website |
 | 5. Create the Netlify build hook | once per website |
-| 6. Sign in and add the build hook | once per editor and per browser |
+| 6. Sign in to the CMS | once per editor and per browser |
 | 7. Give editors access | once per editor |
 
 ## Prerequisites
@@ -109,7 +109,7 @@ Commit and push. Netlify builds the website with the CMS on `/admin/`.
 
 ## Step 5. Create the Netlify build hook
 
-A build hook is a URL that starts a Netlify build when it is called. Sveltia CMS calls it when an editor clicks **Publish Changes**.
+A build hook is a URL that starts a Netlify build when it is called. It is triggered when an editor clicks **Publish Changes**.
 
 {{< alert text="`Project configuration > Build & deploy > Continuous deployment > Build hooks`" state="light" >}}
 
@@ -119,14 +119,54 @@ Click **Add build hook**, name it `Sveltia CMS`, choose the `main` branch, save,
 Anyone who knows this URL can start builds. Never commit it to the repository, and never put it in the CMS configuration, which is public.
 {{< /alert-block >}}
 
-## Step 6. Sign in and add the build hook
+Sveltia CMS can reach the build hook in two ways:
+
+| | Option A: in the browser | Option B: with a GitHub Action |
+| --- | --- | --- |
+| Where the URL is stored | In each editor's browser | In a GitHub repository secret |
+| What editors do | Paste the URL once per browser (step 6) | Nothing |
+| Setup | None | A secret and a workflow file |
+
+### Option A: in the browser
+
+Nothing more to do here: each editor pastes the URL in the CMS settings at step 6.
+
+### Option B: with a GitHub Action
+
+When no build hook is set in the browser, **Publish Changes** sends a `repository_dispatch` event of type `sveltia-cms-publish` to the GitHub repository. A workflow receives it and calls the build hook, so the URL never leaves GitHub.
+
+1. In the GitHub repository: *Settings > Secrets and variables > Actions > New repository secret*. Name it `NETLIFY_BUILD_HOOK` and paste the build hook URL as its value.
+2. Create the workflow below, then commit and push it to `main`: GitHub only runs `repository_dispatch` workflows from the default branch.
+
+{{< alert text="`/.github/workflows/publish.yml`" state="light" >}}
+
+```yaml
+# Triggered by the "Publish Changes" button of Sveltia CMS
+name: Publish
+
+on:
+  repository_dispatch:
+    types: [sveltia-cms-publish]
+
+jobs:
+  netlify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger the Netlify build hook
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
+```
+
+{{< alert text="A build hook set in the browser takes precedence over the GitHub Action: with option B, leave the deploy hook field empty at step 6." state="info" >}}
+
+## Step 6. Sign in to the CMS
 
 1. Open `https://your-website/admin/`.
 2. Click **Sign In with GitHub**, then **Authorize** in the GitHub window.
-3. In the top right corner, open the account menu, then **Settings > Advanced**.
-4. Paste the build hook URL from step 5 in the deploy hook field.
+3. **Option A only**: in the top right corner, open the account menu, then **Settings > Advanced**, and paste the build hook URL from step 5 in the deploy hook field.
 
-The URL is stored **in the browser**, not in the repository: each editor pastes it once in their own browser. Send it to them over a secure channel.
+With option A, the URL is stored **in the browser**, not in the repository: each editor pastes it once in their own browser. Send it to them over a secure channel. With option B, editors have nothing to paste.
 
 ## Step 7. Give editors access
 
@@ -141,7 +181,7 @@ The URL is stored **in the browser**, not in the repository: each editor pastes 
 | Action in the CMS | Result |
 | --- | --- |
 | **Save** | `[skip ci]` commit, the live website does not change |
-| **Publish Changes** (in the header) | Calls the build hook: Netlify rebuilds the website with all saved content |
+| **Publish Changes** (in the header) | Calls the build hook, directly (option A) or through the GitHub Action (option B): Netlify rebuilds the website with all saved content |
 | Arrow next to **Save > Save and Publish** | Saves and publishes at once |
 | Deleting an entry or a media file | Published right away: deletions are never marked `[skip ci]` |
 
@@ -164,7 +204,8 @@ Open <http://localhost:1313/admin/>, click **Work with Local Repository** (Chrom
 | *Authentication Aborted* on sign-in | A `Cross-Origin-Opener-Policy` header blocks the sign-in window. Set it to `same-origin-allow-popups`, or remove it. |
 | Error or repository not found after sign-in | The GitHub account is not a collaborator of the repository, or has not accepted the invitation (step 7). |
 | No **Publish Changes** button | Check `skip_ci: true` and the hugolify-admin version (v2.0.0-26 or later). |
-| **Publish Changes** does not start a build | The build hook is not set in this browser (step 6). If the website has a CSP, allow `https://api.netlify.com` in `connect-src`. |
+| **Publish Changes** does not start a build (option A) | The build hook is not set in this browser (step 6). If the website has a CSP, allow `https://api.netlify.com` in `connect-src`. |
+| **Publish Changes** does not start a build (option B) | Open the **Actions** tab of the repository: if the *Publish* workflow did not run, check that it is on `main`; if it failed, check the `NETLIFY_BUILD_HOOK` secret. A build hook set in the browser bypasses the workflow. |
 | The website does not change after **Save** | Expected with `skip_ci: true`: click **Publish Changes**. |
 
 ## Going further
@@ -175,3 +216,4 @@ Open <http://localhost:1313/admin/>, click **Work with Local Repository** (Chrom
 * {{< blank_link link="https://sveltiacms.app/en/docs/deployments" text="Deployments in Sveltia CMS documentation" >}}
 * {{< blank_link link="https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/" text="OAuth provider tokens in Netlify documentation" >}}
 * {{< blank_link link="https://docs.netlify.com/build/configure-builds/build-hooks/" text="Build hooks in Netlify documentation" >}}
+* {{< blank_link link="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#repository_dispatch" text="repository_dispatch in GitHub documentation" >}}

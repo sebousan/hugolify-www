@@ -110,12 +110,20 @@ What an editor picks on a block itself lands in the fourth level, so it always w
 
 Every key of the table above is accepted. `scrollsnap` goes in either place too, in the same order, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own — see [scrollsnap](/docs/blocks/#scrollsnap).
 
-{{< alert-block title="Calling a block template by hand" state="warning" >}}
-A partial rendering a block outside the `blocks` list of a page has to name it through `type`, the way `blocks/range.html` does, otherwise the block takes no default and falls back to the generic params.
+{{< alert-block title="Calling a block template by hand" state="info" >}}
+Each template names itself, so a partial rendering a block outside the `blocks` list of a page gets the defaults and the `block-<type>` class without passing anything. Pass `type` only to read the defaults of a more specific type, such as a `selected-*` variant rendered by `selected.html`.
 {{< /alert-block >}}
 
 ```go-html-template
-{{ partial "blocks/templates/latest.html" (dict "type" "latest" "section" "posts") }}
+{{ partial "blocks/templates/latest.html" (dict "section" "posts") }}
+{{ partial "blocks/templates/selected.html" (dict "type" "selected-awards" "section" "awards") }}
+```
+
+A project template does the same, with its own type in both calls. The context is merged over it, so the `type` of the entry still wins when there is one:
+
+```go-html-template
+{{- $ui := partial "func/GetBlockUI" (merge (dict "type" "title-xl") .) -}}
+{{- $blockClass := partial "func/GetBlockClasses" (dict "type" "title-xl" "ui" $ui) -}}
 ```
 
 ## Hero

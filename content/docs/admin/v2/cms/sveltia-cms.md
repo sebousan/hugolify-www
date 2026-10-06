@@ -94,3 +94,4 @@ The `compute` widget builds a read-only field from the other fields of the entry
 ## Tutorial
 
 - [How to create a Website with Hugo and Sveltia CMS using Hugolify](/tutorials/how-to-create-a-website-with-hugo-and-sveltia-cms-using-hugolify/)
+- [How to connect Sveltia CMS to GitHub and Netlify using Hugolify](/tutorials/how-to-connect-sveltia-cms-to-github-and-netlify-using-hugolify/)

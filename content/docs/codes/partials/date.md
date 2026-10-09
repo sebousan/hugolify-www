@@ -25,7 +25,6 @@ icon: calendar-date
 ```yml
 date: ""
 format: "" // default is ":date_full" https://gohugo.io/functions/time/format/
-itemprop: false // or https://schema.org/Date
 ```
 
 ## Related link

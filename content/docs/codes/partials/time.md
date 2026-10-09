@@ -11,7 +11,6 @@ icon: clock
 {{ $args := (dict
     "date" "2006-01-02T15:04:05Z07:00"
     "format" "2006"
-    "itemprop" "datePublished"
     ) }}
 {{ partial "commons/time" $args }}
 ```
@@ -19,7 +18,7 @@ icon: clock
 ### HTML rendered
 
 ```html
-<time datetime="2006-01-02T15:04:05Z07:00" itemprop="datePublished">2006</time>
+<time datetime="2006-01-02T15:04:05Z07:00">2006</time>
 ```
 
 ## Datas
@@ -27,7 +26,6 @@ icon: clock
 ```yml
 date: ""
 format: "" // default is 2006, https://gohugo.io/functions/time/format/
-itemprop: false // or https://schema.org/Date
 ```
 
 ## Related link

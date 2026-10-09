@@ -37,7 +37,6 @@ desktop: "" // width x height of desktop image, required
 mobile: "" // width x height of mobile image
 lazy: true // set false if above the fold, default true
 class: "" // class to <img>
-itemprop: "" // add a Schema.org information
 ```
 
 ## Available for

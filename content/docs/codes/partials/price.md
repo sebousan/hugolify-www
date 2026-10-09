@@ -28,7 +28,6 @@ icon: currency-euro
 price: "" // Float price, required
 discount: "" // Percent or value to discount
 frequency: "" // If you have subscription and you want 
-itemprop: false // boolean to add itemprop="price" content="{price}"
 ```
 
 ## Related link

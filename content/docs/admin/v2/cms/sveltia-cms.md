@@ -73,6 +73,23 @@ admin:
       reorder: true
 ```
 
+### Dividers
+
+{{< badge text="New in v2" state="success" >}}
+
+A divider separates two groups of collections in the sidebar. Out of the box, pages and indexes come first, then the other collections, then config.
+
+```yaml
+admin:
+  collection_groups:
+    - collections: [pages, indexes]
+    - collections: [posts, posts_categories, posts_tags]
+    - collections: ['*']
+    - collections: [config]
+```
+
+{{< button url="../../collections/#order-and-group-collections" text="See order and group collections" >}}
+
 ### Computed fields
 
 {{< badge text="New in v2" state="success" >}}

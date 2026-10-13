@@ -38,6 +38,8 @@ yarn build:config:cloudcannon
 
 ## Group collections
 
+Each group needs a `heading`, and `'*'` stands for every enabled collection that no group names. The same setting orders the collections of the other CMS.
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
@@ -48,7 +50,11 @@ admin:
         - posts
         - posts_categories
         - posts_tags
+    - heading: Other
+      collections: ['*']
 ```
+
+{{< button url="../../collections/#order-and-group-collections" text="See order and group collections" >}}
 
 ## Card preview collections
 

@@ -85,6 +85,7 @@ The params renamed or reshaped in v2 are the ones a project is most likely to ha
 | `admin.media` | Gains a folder pair and a size limit per media type |
 | `admin.fields.ui.fields` | Chooses which appearance controls the editor sees |
 | `admin.files.<name>.fields` | Replaces the fields of one config file |
+| `admin.collection_groups` | Orders the collections of every CMS, not just CloudCannon. Left undefined, pages and indexes come first and config last, where v1 listed them alphabetically |
 
 {{< button url="../setup/" text="See the v2 params" >}}
 

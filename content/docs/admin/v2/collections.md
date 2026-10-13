@@ -26,6 +26,53 @@ admin:
     # …
 ```
 
+## Order and group collections
+
+{{< badge text="New in v2" state="success" >}}
+
+Collections are listed in the order of `collection_groups`: the groups as they come, and the collections of each group as they are listed. `'*'` stands for every enabled collection that no group names, in alphabetical order.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collection_groups:
+    - heading: Content
+      collections: [pages, indexes]
+    - heading: News
+      collections: [posts, posts_categories, posts_tags]
+    - heading: Other
+      collections: ['*']
+    - heading: Settings
+      collections: [config]
+```
+
+Quote the `'*'`: in YAML, a bare `*` starts an alias.
+
+Left undefined, the order is pages and indexes, then every other collection in alphabetical order, then config:
+
+```yml
+admin:
+  collection_groups:
+    - collections: [pages, indexes]
+    - collections: ['*']
+    - collections: [config]
+```
+
+To list every collection in alphabetical order, as v1 did, keep a single group holding `'*'`.
+
+- Without `'*'`, the collections that no group names come last, in a group of their own. A collection never drops out of the list: to hide one, [disable it](#enable-or-disable-collections).
+- A disabled collection is skipped, an unknown name is skipped with a warning, and a collection listed twice keeps its first place.
+
+| CMS | Result |
+| --- | --- |
+| Sveltia CMS | Order, and a divider between two groups |
+| Decap CMS, Netlify CMS, Static CMS | Order |
+| Pages CMS, Tina | Order |
+| CloudCannon | Groups with their heading, once `collection_groups` is set |
+
+The `heading` is read by CloudCannon only. It requires one on each group, so it keeps its own order until `collection_groups` is set. A Sveltia CMS divider is a plain line, without a label.
+
 ## Enable or disable file creation
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}

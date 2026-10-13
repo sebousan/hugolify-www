@@ -17,7 +17,12 @@ blocks:
       text: '' # markdown (optional)
     form: {}
       url: '' # url, the provider endpoint the form posts to
-      button: '' # string, the submit label (optional)
+      submit: '' # string, the submit label (optional)
+      checkboxes: [] # (optional)
+        label: '' # string, HTML allowed
+        name: '' # string, sent as written
+        value: '' # string
+        required: false # boolean (optional)
       hiddens: [] # (optional)
         name: '' # string
         value: '' # string
@@ -29,6 +34,8 @@ blocks:
 ```
 
 The email input, its label and the default button label come from the theme's translations, so the block needs nothing but the endpoint. `hiddens` carries the extra fields a provider expects, such as a list id.
+
+`checkboxes` are shown under the email field and sent only when checked, typically the consent a provider requires: `OPT_IN` with the value `1` for Brevo, `gdpr[ID]` with the value `Y` for Mailchimp. Their `name` is the provider's own and is sent as written.
 
 See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
 

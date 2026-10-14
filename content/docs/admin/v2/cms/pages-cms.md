@@ -49,6 +49,22 @@ admin:
     video_folders: true
 ```
 
+## Settings page
+
+Hugolify hides the Pages CMS settings page, so editors cannot change `.pages.yml` from the interface. Show it again with:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  settings:
+    hide: false
+```
+
+## Raw markdown
+
+The rich-text editor has its own *Editor / Source* switch, so the `minimal`, `modes` and `buttons` params of the markdown fields do not apply. See [Markdown editor](../../fields/#markdown-editor).
+
 ## Documentation
 
 - [Hugolify Admin setup](../setup/)

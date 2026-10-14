@@ -37,6 +37,10 @@ Build a `tina/config.js` file with Hugo and NodeJS script.
 yarn build:config:tinacms
 ```
 
+## Raw markdown
+
+The rich-text toolbar has its own raw markdown button, so the `minimal`, `modes` and `buttons` params of the markdown fields do not apply. See [Markdown editor](../../fields/#markdown-editor).
+
 ## Documentation
 
 - [Hugolify Admin setup](../setup/)

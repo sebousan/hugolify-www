@@ -42,6 +42,26 @@ params:
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" text="See Hugolify fields in repository" >}}
 
+## Notes
+
+The *paragraph*, *paragraph-list* and *editorial* blocks can carry notes, linked to the text by `[*]` markers. The field is hidden by default:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+params:
+  admin:
+    blocks:
+      paragraph:
+        notes: true
+      paragraph-list:
+        notes: true
+      editorial:
+        notes: true
+```
+
+`notes` is ignored when the block's `fields` are overridden: add `notes` to the list instead.
+
 ## Block icon
 
 {{< badge text="New in v2" state="success" >}}

@@ -124,6 +124,22 @@ admin:
       path: "{{slug}}"
 ```
 
+## Media folders of a collection
+
+{{< badge text="Decap CMS and Sveltia CMS" state="warning" >}}
+
+The uploads of a collection go to the global folders. Give the collection folders of its own:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    persons:
+      media_folder: /assets/images/persons
+      public_folder: /images/persons
+```
+
 ## Add slug
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}

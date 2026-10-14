@@ -76,6 +76,102 @@ params:
                 - image_alt
 ```
 
+## Markdown editor
+
+The markdown fields below read their editor settings from params, so a project can enlarge the editor, open the raw markdown or change the toolbar without overriding the field.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      text_markdown:
+        minimal: false
+        modes: "['rich_text', 'raw']"
+        buttons: "['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']"
+```
+
+- `minimal` — `true` keeps the editor compact: Sveltia CMS caps it at 240 px and scrolls past that, Decap CMS shrinks it to the smallest height. `false` lets it grow with the content.
+- `modes` — `rich_text`, `raw`, or both. With both, the toolbar shows a switch, and the editor opens in the first mode listed.
+- `buttons` — the formatting buttons of the rich text toolbar. See the {{< blank_link link="https://sveltiacms.app/en/docs/fields/richtext" text="Sveltia CMS" >}} and {{< blank_link link="https://decapcms.org/docs/widgets/#markdown" text="Decap CMS" >}} documentation for the names.
+
+{{< alert-block title="Write `modes` and `buttons` as a quoted string" state="warning" >}}
+The value is copied as is into the CMS config. A YAML list such as `[rich_text, raw]` comes out as a single, invalid mode named `rich_text raw`.
+{{< /alert-block >}}
+
+| Field | Used by | `minimal` | `buttons` | `modes` |
+| --- | --- | --- | --- | --- |
+| `text_markdown` | The `text` of most blocks, the *banner* and *credit* config files | `true` | `['bold', 'italic', 'link', 'bulleted-list']` | `['rich_text']` |
+| `title_markdown` | Opt-in, a title that takes bold and italic | `true` | `['bold', 'italic']` | `['rich_text']` |
+| `quote` | The *quote* and *testimonials* blocks, the `blockquote` shortcode | `true` | `['bold', 'italic', 'link']` | `['rich_text']` |
+| `credit` | Image credits, the `figure` and `video` shortcodes | `true` | `['link']` | `['rich_text']` |
+| `llms` | Opt-in, the body of an {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} file | `false` | All | `['raw']` |
+
+`body` and `contents` — the inner text of the `details` and `alert-block` shortcodes — keep their own settings and ignore these params.
+
+| CMS | What applies |
+| --- | --- |
+| Decap CMS, Netlify CMS, Static CMS, Sveltia CMS | `minimal`, `modes` and `buttons` |
+| CloudCannon | `minimal` only: `true` gives a resizable editor 150 px high. There is no raw mode. |
+| Pages CMS | None. The rich-text editor has its own *Editor / Source* switch. |
+| TinaCMS | None. The rich-text toolbar has its own raw markdown button. |
+
+## Collapse blocks
+
+The blocks of an entry arrive unfolded. Fold them to their summary, so a long page reads as a list of sections:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      blocks:
+        collapsed: true
+```
+
+## Options of a select field
+
+`options` replaces the values a select field offers. It works on every select field, not only `grid` and `theme`: `align`, `breakpoints`, `direction`, `layout`, `offset`, `scrollsnap`, `vertical_align`…
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      align:
+        options: [start, center]
+```
+
+Written next to the field in a fields list, the options apply to that list only:
+
+```yaml
+params:
+  admin:
+    blocks:
+      cta:
+        fields:
+          - title
+          - ui:
+              - theme: { options: [light, dark] }
+```
+
+## Default map position
+
+The `location` field opens on Paris. Move it with a GeoJSON point — longitude first, then latitude:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    widgets:
+      map:
+        default: '{"type": "Point", "coordinates": [4.8357, 45.7640]}'
+```
+
 ## The fields of a config file
 
 {{< badge text="New in v2" state="success" >}}

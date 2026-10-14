@@ -44,6 +44,11 @@ admin:
   branch: main # optional, default "main"
   git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
   repo: # optional, e.g "hugolify/hugolify-template"
+  version: # optional, CMS script version, see below
+  locale: # optional, language of the CMS interface, the site language by default
+  local_backend: true # Decap, Netlify and Sveltia CMS
+  title: Hugolify CMS # Sveltia CMS only, name shown in the CMS
+  skip_ci: true # Sveltia CMS only, adds [skip ci] to every commit
 
   config:
     id: false # use ID for dir/name files and relation
@@ -72,6 +77,7 @@ admin:
     public_folder: '/images/uploads'
     max_file_size: 700000 # 700ko
     specific_filter: false # set true to add a selected filter by image
+    choose_url: false # set true to insert an image from a URL, e.g. audio_choose_url for the audio
 
     # Audio
     audio_max_file_size: 1000000 # 1Mo
@@ -103,7 +109,7 @@ admin:
     video_media_folder: '/static/assets/videos'
     video_public_folder: '/assets/videos'
 
-    # Optional cloud settings, not supported for Sveltia CMS
+    # Optional cloud settings, for Decap, Netlify and Sveltia CMS
     cloud:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
@@ -143,9 +149,52 @@ Available sets: `bootstrap_icons`, `iconoir`, `lucide`, `material_icons`, `mater
 
 ## CMS language
 
-{{< alert text="`/config/_default/hugo.yaml`" state="light" >}}
+The interface of Decap, Netlify and Sveltia CMS follows the site language, **defaultContentLanguage** from the Hugo config. Set `locale` to show it in another language:
 
-Language set with **defaultContentLanguage** from Hugo config.
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  locale: en
+```
+
+The labels of the Hugolify fields stay in the site language.
+
+## CMS version
+
+The CMS script is loaded from unpkg. Set `version` to pin it, for instance while an upgrade breaks something:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  version: 0.237.0 # a Sveltia CMS release
+```
+
+| CMS | Default |
+| --- | --- |
+| Decap CMS | `^3.0.0` |
+| Netlify CMS | `^2.0.0` |
+| Static CMS | `^4.0.0` |
+| Sveltia CMS | The latest release |
+
+## Deployments
+
+{{< badge text="Only available with Sveltia CMS" state="warning" >}}
+
+`skip_ci` is `true` by default: every commit made by the CMS carries `[skip ci]`, so the host does not build on each save, and editors publish with the **Publish Changes** button. Set it to `false` to build on every commit.
+
+{{< button url="/tutorials/how-to-connect-sveltia-cms-to-github-and-netlify-using-hugolify/" text="See the Sveltia CMS and Netlify tutorial" >}}
+
+## Deprecated keys
+
+These keys are still read, but prefer the new ones:
+
+| Deprecated | Use instead |
+| --- | --- |
+| `name` | `git` |
+| `netlify.identity` | `auth.netlify_identity` |
+| `automatic_deployments: true` | `skip_ci: false` |
 
 ## Repository
 

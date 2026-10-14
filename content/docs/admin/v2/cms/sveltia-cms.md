@@ -54,6 +54,28 @@ admin:
 
 Since {{< badge text="hugolify-admin v1.0.0" state="success" >}}
 
+### Raw markdown and editor height
+
+The markdown fields open in rich text only, in a compact editor. Add the raw mode and let the editor grow:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  fields:
+    text_markdown:
+      minimal: false
+      modes: "['rich_text', 'raw']"
+```
+
+{{< button url="../../fields/#markdown-editor" text="See markdown editor" >}}
+
+### Deployments
+
+`skip_ci` is `true` by default: commits made by the CMS do not trigger a build, and editors publish with the **Publish Changes** button.
+
+{{< button url="../../setup/#deployments" text="See deployments" >}}
+
 ### Nested collections
 
 {{< badge text="New in v2" state="success" >}}

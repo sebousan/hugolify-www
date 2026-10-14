@@ -58,6 +58,16 @@ admin:
 
 ## Card preview collections
 
+The card of an entry reads the options the other CMS share:
+
+| Card | Option | Default |
+| --- | --- | --- |
+| `text` | [`summary`](../../collections/#add-summary), written as a CloudCannon template | `title` |
+| `subtext` | — | `description` |
+| `gallery.image` | [`thumbnail`](../../collections/#add-thumbnail) | `image.src` |
+
+`card_preview` replaces any part of the card, in the [CloudCannon preview](https://cloudcannon.com/documentation/developer-reference/configuration-file/types/preview/) format. It is the only way to set the `subtext`, the `metadata` or the `icon`, which no other CMS has:
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml

@@ -25,6 +25,21 @@ admin:
   cms: staticcms
 ```
 
+## Entry list
+
+The table view shows the columns of [`summary_fields`](../../collections/#add-summary-fields). The list opens sorted by the field carrying `default_sort` in [`sortable_fields`](../../collections/#add-sortable-fields): v1 sorted every list by commit date.
+
+```yaml
+admin:
+  collections:
+    posts:
+      summary_fields: [summary, date, draft]
+      sortable_fields:
+        - field: date
+          default_sort: desc
+        - title
+```
+
 ## Documentation
 
 - [Hugolify Admin setup](../setup/)

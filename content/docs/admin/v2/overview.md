@@ -160,7 +160,7 @@ The parent field differs between the two: Decap gets a custom Hugolify widget, S
 | `image.src_mobile` | Dedicated mobile image, used by the hero |
 | `weight_select` | The v1 stepped weight select, kept as an opt-in |
 
-Other additions: a reorder configuration for collections (Sveltia CMS), a chosen [order for the collections](../collections/#order-and-group-collections), with dividers between groups in Sveltia CMS, blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
+Other additions: a reorder configuration for collections (Sveltia CMS), the [columns of the table view](../collections/#add-summary-fields) (Sveltia CMS, Static CMS and Pages CMS), a [default sort](../collections/#add-sortable-fields) for the entry list, the [image of each entry](../collections/#add-thumbnail) in the list (Sveltia CMS, CloudCannon), collection options written for [every CMS that has an equivalent](../collections/#options-by-cms), a chosen [order for the collections](../collections/#order-and-group-collections), with dividers between groups in Sveltia CMS, blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
 
 An [`icon` shortcode](/docs/shortcodes/icon/) joins the markdown editor as well, for CloudCannon, Decap, Netlify and Sveltia CMS.
 

@@ -9,6 +9,33 @@ icon: collection
 Collections are automatically added based on Hugolify modules added ([Sections](/docs/sections/)) or ([Taxonomies](/docs/taxonomies/))
 {{< /alert-block >}}
 
+## Options by CMS
+
+{{< badge text="New in v2" state="success" >}}
+
+An option has one name, whatever the CMS. Hugolify writes it the way each CMS reads it, and leaves it out where the CMS has no equivalent.
+
+| Option | Decap | Sveltia | Static | Netlify | Pages CMS | CloudCannon | Tina |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [`enable`](#enable-or-disable-collections) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`create`](#enable-or-disable-file-creation) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`fields`](#override-fields-avalaible-for-a-collection) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`filter`](#add-filter) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [`exclude`](../cms/pages-cms/#exclude-files) | – | – | – | – | ✓ | – | – |
+| [`path`](#add-path) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`media_folder`](#media-folders-of-a-collection) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [`slug`](#add-slug) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [`sortable_fields`](#add-sortable-fields) | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
+| [`summary`](#add-summary) | ✓ | ✓ | ✓ | ✓ | – | ✓ | – |
+| [`summary_fields`](#add-summary-fields) | – | ✓ | ✓ | – | ✓ | – | – |
+| [`thumbnail`](#add-thumbnail) | – | ✓ | – | – | – | ✓ | – |
+| [`view_filters`](#add-view-filters) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [`view_groups`](#add-view-groups) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [`reorder`](#add-reorder) | – | ✓ | – | – | – | – | – |
+| [`icon`](#collection-icon) | – | ✓ | – | – | – | ✓ | – |
+| [`nested`](#nested-collections) | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
+| [`card_preview`](../cms/cloudcannon/#card-preview-collections) | – | – | – | – | – | ✓ | – |
+
 ## Enable or disable collections
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -84,6 +111,8 @@ admin:
       create: false
 ```
 
+Pages CMS reads it as `operations.create`, CloudCannon as `disable_add`, Tina as `ui.allowedActions.create`.
+
 ## Override fields avalaible for a collection
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
@@ -126,7 +155,7 @@ admin:
 
 ## Media folders of a collection
 
-{{< badge text="Decap CMS and Sveltia CMS" state="warning" >}}
+{{< badge text="Decap, Sveltia, Static and Netlify CMS" state="warning" >}}
 
 The uploads of a collection go to the global folders. Give the collection folders of its own:
 
@@ -151,16 +180,39 @@ admin:
       slug: "{{id}}"
 ```
 
-## Add sortable
+## Add sortable fields
+
+{{< badge text="New in v2" state="success" >}}
+
+The fields of the Sort menu, in order. It replaces the `sortable` string of v1.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 admin:
   collections:
-    pages:
-      sortable: "['title']"
+    posts:
+      sortable_fields:
+        - field: date
+          default_sort: desc
+        - title
+        - commit_date
 ```
+
+- `default_sort` sorts the list by that field when it opens: `asc` (or `true`) or `desc`. One field takes it.
+- `commit_date` and `commit_author` sort by the last commit, in the CMS that read the Git history.
+- A `label` replaces the label of the field in the Sort menu. Decap CMS alone reads it.
+
+Left undefined, each CMS offers its own defaults, such as the title and the date.
+
+| CMS | Result |
+| --- | --- |
+| Decap CMS | `sortable_fields`, with `default_sort` and `label` on the field |
+| Sveltia CMS | `sortable_fields`, as a `{ fields, default }` object once a field sorts by default |
+| Static CMS | `sortable_fields`, as a `{ fields, default }` object |
+| Netlify CMS | `sortable_fields`, field names alone |
+| Pages CMS | `view.sort`, and `view.default` for the field sorting by default, without `commit_date` and `commit_author` |
+| CloudCannon, Tina | Nothing: CloudCannon keeps its own Sort menu |
 
 ## Add summary
 
@@ -172,6 +224,79 @@ admin:
     pages:
       summary: "{{title}}"
 ```
+
+CloudCannon shows it as the text of the card, the title standing in when it comes out empty. A field is written in its own way, `{{title}} - {{date}}` becoming `{title} - {date}`, and a transformation after a pipe is dropped, as the two CMS do not share their names.
+
+## Add summary fields
+
+{{< badge text="New in v2" state="success" >}} {{< badge text="Sveltia CMS, Static CMS and Pages CMS" state="warning" >}}
+
+The columns of the table view, in order. It replaces the `view.fields` of Pages CMS.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    persons:
+      summary_fields:
+        - summary
+        - lastname
+        - field: contact.email
+          label: Email
+        - draft
+```
+
+- `summary` stands for the entry summary, as in Static CMS.
+- A nested field takes dot notation.
+- A `label` replaces the header the column takes from its field. Sveltia CMS alone reads it.
+
+Left undefined, Sveltia CMS shows the summary followed by the sortable fields, Static CMS the summary alone, Pages CMS every field.
+
+| CMS | Result |
+| --- | --- |
+| Sveltia CMS | `table_columns`, with `summary` written `_summary` |
+| Static CMS | `summary_fields`, without labels |
+| Pages CMS | `view.fields`, with `summary` written `title`, without labels |
+| Decap CMS, Netlify CMS, Tina | Nothing: no table view |
+| CloudCannon | Nothing: see [card preview](../cms/cloudcannon/#card-preview-collections) |
+
+{{< alert-block title="Name a field of the collection" state="warning" >}}
+Sveltia CMS rejects a config whose column names no field of the collection, and shows the error instead of the CMS. Static CMS leaves the column empty, and Pages CMS drops it.
+{{< /alert-block >}}
+
+Sveltia CMS also takes its special keys (`slug`, `commit_date`, `commit_author`) and templates such as `"{{date | date('YYYY-MM-DD')}}"` as columns.
+
+## Add thumbnail
+
+{{< badge text="New in v2" state="success" >}} {{< badge text="Sveltia CMS and CloudCannon" state="warning" >}}
+
+The image shown beside each entry of the list, and in the grid view of Sveltia CMS.
+
+A collection with `featured_image` shows it without a setting: that field is an `image` object holding the file in `src`, which Sveltia CMS would not find on its own, as it only looks for an Image field at the root of the entry. Name another field, or none:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    persons:
+      thumbnail: image.src # the default with featured_image
+    posts:
+      thumbnail: false     # no image
+```
+
+A list tries its fields in turn and shows the first one filled, e.g. `thumbnail: [image.src, logo.src]`.
+
+{{< alert-block title="Name an Image field of the collection" state="warning" >}}
+Sveltia CMS rejects a config whose `thumbnail` names no field of the collection, and shows the error instead of the CMS.
+{{< /alert-block >}}
+
+| CMS | Result |
+| --- | --- |
+| Sveltia CMS | `thumbnail` |
+| CloudCannon | the image of the card, `preview.gallery.image`. A [`card_preview`](../cms/cloudcannon/#card-preview-collections) setting it wins |
+| Other CMS | Nothing: Decap, Netlify and Static CMS guess the image from the field names, Pages CMS shows an Image field as a column of [`summary_fields`](#add-summary-fields) |
 
 ## Add view filters
 
@@ -185,7 +310,12 @@ admin:
         - label: 'Posts published in 2020'
           field: date
           pattern: '2020'
+        - label: 'Drafts'
+          field: draft
+          pattern: true
 ```
+
+A pattern keeps its type: `true` matches a boolean field, `'2020'` a text. Static CMS gets the filters in its own `{ filters }` object, each named after its label.
 
 ## Add view groups
 
@@ -198,7 +328,12 @@ admin:
       view_groups:
         - label: 'Draft'
           field: draft
+        - label: 'Year'
+          field: date
+          pattern: '\d{4}'
 ```
+
+Static CMS gets the groups in its own `{ groups }` object, each named after its label.
 
 ## Add reorder
 
@@ -265,6 +400,10 @@ The depth counts path segments below the collection folder, and is what limits h
 Nested collections used to be Decap-only. **Sveltia CMS supports them now**, and fixes several long-standing problems of the Decap implementation along the way — entry paths, preview paths, media folders, folder labels and i18n.
 
 The parent field differs between the two: Decap gets a custom Hugolify widget, Sveltia its own folder picker. Hugolify writes the Decap `widget` and `label` either way, and Sveltia accepts both for compatibility and ignores them, so the same config serves the two.
+{{< /alert-block >}}
+
+{{< alert-block title="Pages CMS" state="info" >}}
+Pages CMS shows a nested collection in its tree layout, the `_index.md` of each folder standing for the folder. It has no parent field: a page stays in the folder it was created in.
 {{< /alert-block >}}
 
 ## The config collection
@@ -334,4 +473,34 @@ layouts/
             └── types/
 ```
 
-{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/collections/types" text="See examples in repository" >}}
+A collection file reads its options through one partial each, which writes the option for the CMS in use. The file sets its creation, preview, path and slug itself:
+
+```go-html-template
+{{ partial "admin/collections/config/create.yml" . }}
+{{ partial "admin/collections/config/preview.yml" . }}
+{{ partial "admin/collections/config/path.yml" . }}
+{{ partial "admin/collections/config/slug.yml" . }}
+```
+
+Then `admin/collections/types/_default.yml` adds all the others, or the file picks the ones the collection needs:
+
+```go-html-template
+{{ partial "admin/collections/config/icon.yml" . }}
+{{ partial "admin/collections/config/index_file.yml" . }}
+{{ partial "admin/collections/config/filter.yml" . }}
+{{ partial "admin/collections/config/exclude.yml" . }}
+{{ partial "admin/collections/config/reorder.yml" . }}
+{{ partial "admin/collections/config/sortable_fields.yml" . }}
+{{ partial "admin/collections/config/summary.yml" . }}
+{{ partial "admin/collections/config/summary_fields.yml" . }}
+{{ partial "admin/collections/config/thumbnail.yml" . }}
+{{ partial "admin/collections/config/view.yml" . }}
+{{ partial "admin/collections/config/view_filters.yml" . }}
+{{ partial "admin/collections/config/view_groups.yml" . }}
+{{ partial "admin/collections/config/fields.yml" (dict "collection" .) }}
+{{ partial "admin/collections/config/nested.yml" . }}
+```
+
+`view.yml` writes the `view` of Pages CMS, built from `summary_fields`, `sortable_fields` and `nested`. A partial writes nothing for a CMS without the option.
+
+{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/v2/layouts/partials/admin/collections/types" text="See examples in repository" >}}

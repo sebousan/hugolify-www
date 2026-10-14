@@ -95,6 +95,40 @@ admin:
       reorder: true
 ```
 
+### Table view
+
+{{< badge text="New in v2" state="success" >}}
+
+`summary_fields` chooses the columns of the table view, written as `table_columns`.
+
+```yaml
+admin:
+  collections:
+    persons:
+      summary_fields:
+        - summary
+        - lastname
+        - field: contact.email
+          label: Email
+```
+
+{{< button url="../../collections/#add-summary-fields" text="See summary fields" >}}
+
+### Thumbnails
+
+{{< badge text="New in v2" state="success" >}}
+
+A collection with `featured_image` shows that image beside each entry, and in the grid view. Sveltia CMS only looks for an Image field at the root of the entry, while `featured_image` keeps the file in `image.src`, so Hugolify writes the `thumbnail` option. Turn it off, or name another field:
+
+```yaml
+admin:
+  collections:
+    posts:
+      thumbnail: false
+```
+
+{{< button url="../../collections/#add-thumbnail" text="See thumbnail" >}}
+
 ### Dividers
 
 {{< badge text="New in v2" state="success" >}}

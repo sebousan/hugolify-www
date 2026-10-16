@@ -7,7 +7,7 @@ icon: cookie
 
 ## Setup
 
-{{< alert text="`/config/default/params.yaml`" state="light" >}}
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 cookie_banner:
@@ -26,7 +26,12 @@ cookie_banner:
       position: bottom left
 ```
 
-The `analytics` category is what loads Google Analytics and Meta Pixel. See [Analytics](/docs/getting-started/analytics/).
+The `analytics` category is what loads Google Analytics, Meta Pixel and
+Matomo when `matomo.cookies: true`. See [Analytics](/docs/getting-started/analytics/).
+
+Cookieless analytics services — Umami, Plausible, Seline, Fathom, GoatCounter,
+Simple Analytics, Cabin and Matomo with `cookies: false` — load without the
+banner and do not require consent.
 
 ## Documentation
 

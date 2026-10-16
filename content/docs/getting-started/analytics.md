@@ -139,7 +139,7 @@ analytics:
 ```
 
 The legacy format needs no configuration key: `domain` defaults to the
-`baseURL` hostname, and the fails the build if the resolved domain is empty
+`baseURL` hostname, and the build fails if the resolved domain is empty
 (for instance with `baseURL: /`).
 
 #### Generated domain

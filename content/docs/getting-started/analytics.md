@@ -298,13 +298,13 @@ configuration.
 
 ## Documentation
 
-{{< button url="https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
-{{< button url="https://umami.is/docs" text="Umami" blank=true >}}
-{{< button url="https://plausible.io/docs" text="Plausible" blank=true >}}
-{{< button url="https://matomo.org/docs/" text="Matomo" blank=true >}}
-{{< button url="https://seline.com/docs" text="Seline" blank=true >}}
-{{< button url="https://usefathom.com/docs" text="Fathom" blank=true >}}
-{{< button url="https://www.goatcounter.com/help" text="GoatCounter" blank=true >}}
-{{< button url="https://docs.simpleanalytics.com/" text="Simple Analytics" blank=true >}}
-{{< button url="https://docs.withcabin.com/" text="Cabin" blank=true >}}
-{{< button url="https://playground.cookieconsent.orestbida.com/" text="CookieConsent" blank=true >}}
+- {{< blank_link link=https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
+- {{< blank_link link=https://umami.is/docs" text="Umami" blank=true >}}
+- {{< blank_link link=https://plausible.io/docs" text="Plausible" blank=true >}}
+- {{< blank_link link=https://matomo.org/docs/" text="Matomo" blank=true >}}
+- {{< blank_link link=https://seline.com/docs" text="Seline" blank=true >}}
+- {{< blank_link link=https://usefathom.com/docs" text="Fathom" blank=true >}}
+- {{< blank_link link=https://www.goatcounter.com/help" text="GoatCounter" blank=true >}}
+- {{< blank_link link=https://docs.simpleanalytics.com/" text="Simple Analytics" blank=true >}}
+- {{< blank_link link=https://docs.withcabin.com/" text="Cabin" blank=true >}}
+- {{< blank_link link=https://playground.cookieconsent.orestbida.com/" text="CookieConsent" blank=true >}}

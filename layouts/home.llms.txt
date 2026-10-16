@@ -1,7 +1,7 @@
 {{- $pages := where site.Pages "Section" "in" (slice "docs" "tutorials") -}}
 # Hugolify
 
-> {{ site.Data.seo.description }}
+> {{ hugo.Data.seo.description }}
 
 Since v2, hugolify-theme is an agnostic core and the styling lives in a separate
 module: hugolify-theme-bootstrap (Bootstrap 5, the default) or

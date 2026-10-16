@@ -1,11 +1,39 @@
 ---
 title: Analytics
-description: Google Analytics, Plausible and consent
+description: Google Analytics, Meta Pixel and privacy-friendly alternatives
 weight: 7
 icon: graph-up
 ---
 
-Hugolify ships with Google Analytics and Meta Pixel, both wired to the cookie banner. Cookieless services such as Plausible are added with a partial override.
+Hugolify ships with ten analytics services: Google Analytics and Meta Pixel, both wired to the cookie banner, and eight alternatives, most of them cookieless and loaded without consent.
+
+## Which one
+
+| Service | Cookies | License | Hosting | Free plan | Paid from |
+| --- | --- | --- | --- | --- | --- |
+| [Google Analytics](#google-analytics) | Yes | Proprietary | SaaS | Yes | Free |
+| [Meta Pixel](#meta-pixel) | Yes | Proprietary | SaaS | Yes | Free |
+| [Umami](#umami) | No | MIT | SaaS or self-hosted | Cloud Hobby: 1 site, 100k events/month | $20/month |
+| [Plausible](#plausible) | No | AGPL-3.0 | SaaS or self-hosted | Self-hosted only (Community Edition) | $9/month |
+| [Matomo](#matomo) | Optional | GPL-3.0 | SaaS or self-hosted | Self-hosted only (On-Premise) | €29/month |
+| [Seline](#seline) | No | Proprietary | SaaS | No, 7-day trial | $9/month |
+| [Fathom](#fathom) | No | Proprietary | SaaS | No, 7-day trial | $15/month |
+| [GoatCounter](#goatcounter) | No | EUPL-1.2 | SaaS or self-hosted | Yes, for reasonable use | Free, donations |
+| [Simple Analytics](#simple-analytics) | No | Proprietary | SaaS | 5 sites, 30-day history | €20/month |
+| [Cabin](#cabin) | No | Proprietary | SaaS | 1 site, 10k pageviews/month | $14/month |
+
+Self-hosting Umami, Plausible, Matomo and GoatCounter is free: you only pay for the server.
+
+{{< alert text="Prices are the lowest monthly plan, excluding VAT, as of October 2026. Check the vendor's pricing page before choosing." state="warning" >}}
+
+## How it works
+
+- **Production only**: every service, Google Analytics and Meta Pixel included, is rendered when `hugo.IsProduction` is true. `hugo server` and `--environment staging` builds are never tracked.
+- **Consent**: Google Analytics and [Matomo](#matomo) with `cookies: true` wait for the `analytics` category of the [cookie banner](/docs/getting-started/cookie-consent/), Meta Pixel for the `marketing` category. The other services are cookieless and load without consent.
+- **Build checks**: an enabled service with a missing required parameter fails the build. A service whose banner or consent category is disabled is not loaded, and the build warns.
+- **Overrides**: each service has its own partial, `/layouts/partials/footer/analytics/<service>.html`. Override it for options the configuration does not expose (SPA mode, tags, exclusions…).
+
+{{< alert text="A plain `hugo` build runs in production. On Netlify, deploy previews built with `hugo -b $DEPLOY_PRIME_URL` are tracked too, unless the service restricts the hostnames, like Umami `domains`." state="warning" >}}
 
 ## Google Analytics
 
@@ -18,9 +46,9 @@ googleAnalytics:
   id: "G-XXXXXXXXXX"
 ```
 
-This is the native Hugo service configuration. Keep it in `/config/production/services.yml` to avoid tracking your local and staging builds.
+This is the native Hugo service configuration.
 
-{{< alert text="Google Analytics is only loaded when the cookie banner is enabled. Without it, the ID is ignored." state="warning" >}}
+{{< alert text="Google Analytics needs the cookie banner: without it, the build warns and the ID is ignored. In CookieConsent mode, it also needs `cookieconsent.analytics`." state="warning" >}}
 
 ### Enable the banner
 
@@ -55,56 +83,183 @@ In CookieConsent mode, nothing is sent before a choice is made: consent defaults
 
 ## Meta Pixel
 
+Meta Pixel is an advertising tracker, so it waits for the `marketing` category of CookieConsent, not `analytics`.
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
-services:
-  meta: "000000000000000" # Meta Pixel ID
+analytics:
+  meta:
+    pixel_id: "000000000000000" # Required
+cookie_banner:
+  enable: true # Required
+  cookieconsent:
+    enable: true # Required
+    marketing: true # Required to load Meta Pixel
 ```
 
-Loaded under the same `cookieconsent.analytics: true` switch as Google Analytics, and listed as a separate service in the preferences modal.
+It is listed as a separate service in the advertisement section of the preferences modal. The simple banner is not supported: without CookieConsent and the `marketing` category, the build warns and the pixel is not loaded.
+
+There is no `<noscript>` fallback pixel, because it would be sent before any consent.
+
+## Other services
+
+### Configuration
+
+Every other service is configured under `analytics`, like Meta Pixel. A service is enabled by its block, or by `true` when it needs no parameter. An empty block (`{}`) is ignored.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+analytics:
+  umami:
+    website_id: "94db1cb1-74f4-4a40-ad6c-962362670409"
+  cabin: true
+```
+
+Several services can run side by side, for example while comparing two of them.
+
+### Migrating from `scripts.html`
+
+If you added Plausible, or any other service below, in `/layouts/partials/footer/scripts.html` following a previous version of this page, remove it when you enable the service under `analytics`. Otherwise the script loads twice.
+
+## Umami
+
+Open source analytics with a simple dashboard: visits, page views, referrers and events. Umami Cloud is hosted in the US and the EU.
+
+```yml
+analytics:
+  umami:
+    website_id: "94db1cb1-74f4-4a40-ad6c-962362670409" # Required
+    url: "" # Self-hosted script URL, defaults to https://cloud.umami.is/script.js
+    domains: "" # Comma-separated hostnames allowed to send data
+```
+
+`domains` keeps deploy previews and staging hosts out of your statistics, for example `example.com,www.example.com`.
 
 ## Plausible
 
-Plausible is cookieless and collects no personal data, so it needs no consent banner. It has no dedicated parameter: add it through the script partial.
+Lightweight, open source and privacy-first. Plausible Cloud is hosted in the EU.
 
-{{< alert text="`/layouts/partials/footer/scripts.html`" state="light" >}}
-
-```html
-<!-- Privacy-friendly analytics by Plausible -->
-<script defer data-domain="example.com" src="https://plausible.io/js/script.js"></script>
+```yml
+analytics:
+  plausible:
+    script_id: "pa-XXXXXXXX" # Site settings > General > Site installation
+    url: "" # Self-hosted instance URL, defaults to https://plausible.io
 ```
 
-The theme ships this partial empty, as an extension point rendered at the end of `body`. Any third party script that must not go through the banner belongs here.
+`script_id` loads the script Plausible generates for your site. It is the recommended setup since October 2025.
 
-### Generated domain
+### Legacy script
 
-`data-domain` is your site host, so Hugo can fill it from the `baseURL`. Wrapping it in `hugo.IsProduction` also keeps your local builds out of the statistics.
+The previous script, with a `data-domain` attribute, still works but Plausible no longer recommends it. Use it when your instance does not provide a per-site script yet, or to send stats to several dashboards at once. It applies when `script_id` is not set.
 
-{{< alert text="`/layouts/partials/footer/scripts.html`" state="light" >}}
-
-```go-html-template
-{{- if hugo.IsProduction }}
-<script defer data-domain="{{ (urls.Parse site.BaseURL).Hostname }}" src="https://plausible.io/js/script.js"></script>
-{{ end -}}
+```yml
+analytics:
+  plausible:
+    domain: "" # Defaults to the baseURL hostname
+    url: "" # Full script URL, defaults to https://plausible.io/js/script.js
 ```
 
-{{< alert text="The generated value has to match the site registered in Plausible, `www.` included. A `baseURL` of `https://www.example.com/` gives `www.example.com`, not `example.com`. Hardcode the domain when the two differ." state="warning" >}}
+The build fails when the domain resolves to an empty value, for example with a `baseURL` of `/`.
 
-### Self-hosted
+{{< alert text="`domain` has to match the site registered in Plausible, `www.` included. A `baseURL` of `https://www.example.com/` gives `www.example.com`, not `example.com`. Set it explicitly when the two differ." state="warning" >}}
 
-Replace `https://plausible.io` with your own instance. The `data-domain` value stays the site registered in Plausible.
+## Matomo
 
-## Which one
+The most complete service on this page, Cloud or self-hosted. Matomo Cloud is hosted in Frankfurt.
 
-| | Google Analytics | Plausible |
+```yml
+analytics:
+  matomo:
+    url: "https://matomo.example.com" # Required, instance URL
+    site_id: "1" # Required
+    cookies: false # Optional, see below
+```
+
+| | `cookies: false` (default) | `cookies: true` |
 | --- | --- | --- |
-| Cookies | Yes | No |
-| Consent banner | Required | Not required |
-| Setup | Configuration | Partial override |
-| Hosting | Google | SaaS or self-hosted |
+| Cookies | None (`disableCookies`) | `_pk_*` |
+| Consent | Not required | CookieConsent `analytics` category |
+| Loaded | On every page | After consent |
+| On refuse | Nothing to clean | `_pk_*` cookies erased |
+
+With `cookies: true`, Matomo needs the CookieConsent mode of the [cookie banner](/docs/getting-started/cookie-consent/):
+
+```yml
+cookie_banner:
+  enable: true
+  cookieconsent:
+    enable: true
+    analytics: true
+```
+
+Without CookieConsent, with the simple banner or no banner at all, the build warns and Matomo is not loaded.
+
+## Seline
+
+Privacy-first and cookieless, hosted in the EU.
+
+```yml
+analytics:
+  seline:
+    token: "PROJECT_TOKEN" # Required, project settings
+```
+
+## Fathom
+
+Privacy-focused and cookieless, SaaS only, with an EU isolation option.
+
+```yml
+analytics:
+  fathom:
+    site_id: "ABCDEFG" # Required
+```
+
+## GoatCounter
+
+Open source and cookieless. The hosted version is free for personal sites and small businesses, and you can self-host it.
+
+```yml
+analytics:
+  goatcounter:
+    code: "yoursite" # Hosted, https://yoursite.goatcounter.com
+    endpoint: "" # Self-hosted count endpoint, takes precedence over code
+    src: "" # Self-hosted script URL, defaults to https://gc.zgo.at/count.js
+```
+
+`code` or `endpoint` is required. Set `src` too and nothing is loaded from goatcounter.com or zgo.at.
+
+## Simple Analytics
+
+Cookieless and collects no personal data. Hosted in the Netherlands.
+
+```yml
+analytics:
+  simpleanalytics: true
+```
+
+No identifier: declare your domains in the Simple Analytics dashboard. A `<noscript>` pixel is rendered for visitors without JavaScript.
+
+## Cabin
+
+Cookieless, with a lightweight script and carbon reporting. Data is stored in the EU.
+
+```yml
+analytics:
+  cabin: true
+```
+
+No identifier: declare your domain on the Domains page of the Cabin dashboard.
 
 ## Documentation
 
 {{< button url="https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
-{{< button url="https://plausible.io/docs/plausible-script" text="Plausible script" blank=true >}}
+{{< button url="https://docs.umami.is/docs/tracker-configuration" text="Umami" blank=true >}}
+{{< button url="https://plausible.io/docs/plausible-script" text="Plausible" blank=true >}}
+{{< button url="https://developer.matomo.org/guides/tracking-javascript-guide" text="Matomo" blank=true >}}
+{{< button url="https://seline.com/docs/install-seline" text="Seline" blank=true >}}
+{{< button url="https://usefathom.com/docs/script/script-advanced" text="Fathom" blank=true >}}
+{{< button url="https://www.goatcounter.com/help/start" text="GoatCounter" blank=true >}}
+{{< button url="https://docs.simpleanalytics.com/script" text="Simple Analytics" blank=true >}}
+{{< button url="https://docs.withcabin.com/install" text="Cabin" blank=true >}}

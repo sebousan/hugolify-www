@@ -419,7 +419,7 @@ admin:
       files: [nav-header-primary, nav-footer-primary, nav-legal, banner, footer, credit, blocks, seo]
 ```
 
-Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal`, `nav-social`, `banner`, `footer`, `credit` and `seo`.
+Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal`, `nav-social`, `banner`, `footer`, `credit`, `schema`, `seo`, `llms` and `llms-full`.
 
 ### Navigation
 
@@ -443,6 +443,16 @@ The form is generated from `admin.blocks.enable`, one collapsible section per bl
 Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content.
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
+
+### llms.txt
+
+{{< badge text="New in v2" state="success" >}}
+
+`llms` and `llms-full` edit `/data/llms.yml` and `/data/llms-full.yml`, the bodies of the `/llms.txt` and `/llms-full.txt` files the theme writes at the root of the site. A body left empty publishes no file.
+
+Like `blocks`, these files are not translated: agents look for one file at the root, so every language goes in it.
+
+{{< button url="/docs/customization/seo/#llmstxt" text="See llms.txt" >}}
 
 ## Create a collection
 

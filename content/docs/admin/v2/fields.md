@@ -106,7 +106,7 @@ The value is copied as is into the CMS config. A YAML list such as `[rich_text, 
 | `title_markdown` | Opt-in, a title that takes bold and italic | `true` | `['bold', 'italic']` | `['rich_text']` |
 | `quote` | The *quote* and *testimonials* blocks, the `blockquote` shortcode | `true` | `['bold', 'italic', 'link']` | `['rich_text']` |
 | `credit` | Image credits, the `figure` and `video` shortcodes | `true` | `['link']` | `['rich_text']` |
-| `llms` | Opt-in, the body of an {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} file | `false` | All | `['raw']` |
+| `llms` | The body of the {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} and `llms-full.txt` files, in the *config* collection | `false` | All | `['raw']` |
 
 `body` and `contents` — the inner text of the `details` and `alert-block` shortcodes — keep their own settings and ignore these params.
 

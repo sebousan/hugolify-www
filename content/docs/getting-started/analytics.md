@@ -5,10 +5,11 @@ weight: 7
 icon: graph-up
 ---
 
-Hugolify ships with Google Analytics and Meta Pixel, both wired to the cookie
-banner, and supports eight alternative analytics services configured under
-`analytics`: Umami, Plausible, Matomo, Seline, Fathom, GoatCounter, Simple
-Analytics and Cabin.
+Hugolify ships with Google Analytics and supports eight alternative analytics
+services configured under `analytics`: Umami, Plausible, Matomo, Seline,
+Fathom, GoatCounter, Simple Analytics and Cabin. Meta Pixel lives under
+`analytics` too (`analytics.meta`), gated by the `marketing` consent category.
+Google Analytics reads the native Hugo service configuration.
 
 Cookieless services load without a consent banner. Google Analytics, Meta
 Pixel and Matomo (with cookies) require one.
@@ -26,7 +27,7 @@ googleAnalytics:
 
 This is the native Hugo service configuration. Keep it in `/config/production/services.yml` to avoid tracking your local and staging builds.
 
-{{< alert text="Google Analytics is only loaded when the cookie banner is enabled. Without it, the ID is ignored." state="warning" >}}
+{{< alert text="Google Analytics is only loaded when the cookie banner is enabled. Without it, the build emits a warning and the tracker is not loaded." state="warning" >}}
 
 ### Enable the banner
 
@@ -64,11 +65,24 @@ In CookieConsent mode, nothing is sent before a choice is made: consent defaults
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
-services:
-  meta: "000000000000000" # Meta Pixel ID
+analytics:
+  meta:
+    pixel_id: "000000000000000" # Meta Pixel ID
+
+cookie_banner:
+  enable: true
+  cookieconsent:
+    enable: true
+    marketing: true # Required, the pixel is an advertising tracker
 ```
 
-Loaded under the same `cookieconsent.analytics: true` switch as Google Analytics, and listed as a separate service in the preferences modal.
+The pixel is gated by the `marketing` category of CookieConsent — not
+`analytics` — because it is an advertising tracker. It loads only after
+consent, and is listed as a separate service in the preferences modal. There
+is no `<noscript>` fallback: it would fire before any consent.
+
+With the simple banner, the pixel is not supported: the build warns and the
+pixel is skipped.
 
 ## Alternative analytics services
 
@@ -272,7 +286,7 @@ configuration.
 | | Cookies | Consent banner | Hosting |
 | --- | --- | --- | --- |
 | Google Analytics | Yes | Required | Google |
-| Meta Pixel | Yes | Required | Meta |
+| Meta Pixel | Yes | Required (`marketing`) | Meta |
 | Umami | No | Not required | SaaS or self-hosted |
 | Plausible | No | Not required | SaaS or self-hosted |
 | Matomo | By default | Required unless `cookies: false` | SaaS or self-hosted |
@@ -284,13 +298,13 @@ configuration.
 
 ## Documentation
 
-- {{< blank_link link=https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
-- {{< blank_link link=https://umami.is/docs" text="Umami" blank=true >}}
-- {{< blank_link link=https://plausible.io/docs" text="Plausible" blank=true >}}
-- {{< blank_link link=https://matomo.org/docs/" text="Matomo" blank=true >}}
-- {{< blank_link link=https://seline.com/docs" text="Seline" blank=true >}}
-- {{< blank_link link=https://usefathom.com/docs" text="Fathom" blank=true >}}
-- {{< blank_link link=https://www.goatcounter.com/help" text="GoatCounter" blank=true >}}
-- {{< blank_link link=https://docs.simpleanalytics.com/" text="Simple Analytics" blank=true >}}
-- {{< blank_link link=https://docs.withcabin.com/" text="Cabin" blank=true >}}
-- {{< blank_link link=https://playground.cookieconsent.orestbida.com/" text="CookieConsent" blank=true >}}
+{{< button url="https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
+{{< button url="https://umami.is/docs" text="Umami" blank=true >}}
+{{< button url="https://plausible.io/docs" text="Plausible" blank=true >}}
+{{< button url="https://matomo.org/docs/" text="Matomo" blank=true >}}
+{{< button url="https://seline.com/docs" text="Seline" blank=true >}}
+{{< button url="https://usefathom.com/docs" text="Fathom" blank=true >}}
+{{< button url="https://www.goatcounter.com/help" text="GoatCounter" blank=true >}}
+{{< button url="https://docs.simpleanalytics.com/" text="Simple Analytics" blank=true >}}
+{{< button url="https://docs.withcabin.com/" text="Cabin" blank=true >}}
+{{< button url="https://playground.cookieconsent.orestbida.com/" text="CookieConsent" blank=true >}}

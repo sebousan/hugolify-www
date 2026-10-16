@@ -9,22 +9,22 @@ Hugolify ships with ten analytics services: Google Analytics and Meta Pixel, bot
 
 ## Which one
 
-| Service | Cookies | License | Hosting | Free plan | Paid from |
-| --- | --- | --- | --- | --- | --- |
-| [Google Analytics](#google-analytics) | Yes | Proprietary | SaaS | Yes | Free |
-| [Meta Pixel](#meta-pixel) | Yes | Proprietary | SaaS | Yes | Free |
-| [Umami](#umami) | No | MIT | SaaS or self-hosted | Cloud Hobby: 1 site, 100k events/month | $20/month |
-| [Plausible](#plausible) | No | AGPL-3.0 | SaaS or self-hosted | Self-hosted only (Community Edition) | $9/month |
-| [Matomo](#matomo) | Optional | GPL-3.0 | SaaS or self-hosted | Self-hosted only (On-Premise) | €29/month |
-| [Seline](#seline) | No | Proprietary | SaaS | No, 7-day trial | $9/month |
-| [Fathom](#fathom) | No | Proprietary | SaaS | No, 7-day trial | $15/month |
-| [GoatCounter](#goatcounter) | No | EUPL-1.2 | SaaS or self-hosted | Yes, for reasonable use | Free, donations |
-| [Simple Analytics](#simple-analytics) | No | Proprietary | SaaS | 5 sites, 30-day history | €20/month |
-| [Cabin](#cabin) | No | Proprietary | SaaS | 1 site, 10k pageviews/month | $14/month |
+| Service | Cookies | License | Hosting | Free plan |
+| --- | --- | --- | --- | --- |
+| [Google Analytics](#google-analytics) | Yes | Proprietary | SaaS | Yes |
+| [Meta Pixel](#meta-pixel) | Yes | Proprietary | SaaS | Yes |
+| [Umami](#umami) | No | MIT | SaaS or self-hosted | Cloud Hobby: 1 site, 100k events/month |
+| [Plausible](#plausible) | No | AGPL-3.0 | SaaS or self-hosted | Self-hosted only (Community Edition) |
+| [Matomo](#matomo) | Optional | GPL-3.0 | SaaS or self-hosted | Self-hosted only (On-Premise) |
+| [Seline](#seline) | No | Proprietary | SaaS | No, 7-day trial |
+| [Fathom](#fathom) | No | Proprietary | SaaS | No, 7-day trial |
+| [GoatCounter](#goatcounter) | No | EUPL-1.2 | SaaS or self-hosted | Yes, for reasonable use |
+| [Simple Analytics](#simple-analytics) | No | Proprietary | SaaS | 5 sites, 30-day history |
+| [Cabin](#cabin) | No | Proprietary | SaaS | 1 site, 10k pageviews/month |
 
 Self-hosting Umami, Plausible, Matomo and GoatCounter is free: you only pay for the server.
 
-{{< alert text="Prices are the lowest monthly plan, excluding VAT, as of October 2026. Check the vendor's pricing page before choosing." state="warning" >}}
+{{< alert text="Free plans as of October 2026. Check the vendor's pricing page before choosing." state="warning" >}}
 
 ## How it works
 
@@ -254,12 +254,12 @@ No identifier: declare your domain on the Domains page of the Cabin dashboard.
 
 ## Documentation
 
-{{< button url="https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" blank=true >}}
-{{< button url="https://docs.umami.is/docs/tracker-configuration" text="Umami" blank=true >}}
-{{< button url="https://plausible.io/docs/plausible-script" text="Plausible" blank=true >}}
-{{< button url="https://developer.matomo.org/guides/tracking-javascript-guide" text="Matomo" blank=true >}}
-{{< button url="https://seline.com/docs/install-seline" text="Seline" blank=true >}}
-{{< button url="https://usefathom.com/docs/script/script-advanced" text="Fathom" blank=true >}}
-{{< button url="https://www.goatcounter.com/help/start" text="GoatCounter" blank=true >}}
-{{< button url="https://docs.simpleanalytics.com/script" text="Simple Analytics" blank=true >}}
-{{< button url="https://docs.withcabin.com/install" text="Cabin" blank=true >}}
+- {{< blank_link link="https://gohugo.io/configuration/services/#googleanalytics" text="Hugo services" >}}
+- {{< blank_link link="https://docs.umami.is/docs/tracker-configuration" text="Umami" >}}
+- {{< blank_link link="https://plausible.io/docs/plausible-script" text="Plausible" >}}
+- {{< blank_link link="https://developer.matomo.org/guides/tracking-javascript-guide" text="Matomo" >}}
+- {{< blank_link link="https://seline.com/docs/install-seline" text="Seline" >}}
+- {{< blank_link link="https://usefathom.com/docs/script/script-advanced" text="Fathom" >}}
+- {{< blank_link link="https://www.goatcounter.com/help/start" text="GoatCounter" >}}
+- {{< blank_link link="https://docs.simpleanalytics.com/script" text="Simple Analytics" >}}
+- {{< blank_link link="https://docs.withcabin.com/install" text="Cabin" >}}

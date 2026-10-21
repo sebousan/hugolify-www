@@ -162,7 +162,7 @@ A brand color light enough to need dark text has one token to flip:
 ```css
 @layer tokens {
   :root {
-    --color-text-on-brand: var(--color-black);
+    --color-on-brand: var(--color-black);
   }
 }
 ```
@@ -276,7 +276,7 @@ Once the semantic layer is set, most components are already on brand. Component 
     /* Header */
     --header-height: 72px;
     --header-color-background: var(--color-brand);
-    --header-color-link: var(--color-text-on-brand);
+    --header-color-link: var(--color-on-brand);
 
     /* Cards */
     --card-color-background: transparent;

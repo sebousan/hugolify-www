@@ -165,7 +165,7 @@ A value with no CSS is inert, so a project-specific variant only needs a rule in
 @layer components {
   .block-brand {
     --block-color-background: var(--color-brand);
-    --color-text: var(--color-text-on-brand);
+    --color-text: var(--color-on-brand);
   }
 }
 ```

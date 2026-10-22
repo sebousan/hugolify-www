@@ -49,17 +49,19 @@ admin:
   local_backend: true # Decap, Netlify and Sveltia CMS
   title: Hugolify CMS # Sveltia CMS only, name shown in the CMS
   skip_ci: true # Sveltia CMS only, adds [skip ci] to every commit
+  bulk_edit: true # Sveltia CMS only, false under editorial_workflow or preview, overridable per collection
 
   config:
     id: false # use ID for dir/name files and relation
   nested:
     depth: 1 # 1 disables the tree, 2 and up enable it, overridable per collection
   preview: false
-  publish_mode: simple # optional, simple or editorial_workflow
+  publish_mode: simple # optional, simple, editorial_workflow, or preview with Sveltia CMS
 
   # Auth
   auth:
     app_id: # The Client ID provided by Gitea/GitLab
+    auth_type: # pkce for GitLab with app_id, Decap and Sveltia CMS
     api_root: # API URL of your Gitea/GitLab instance
     auth_endpoint: # Auth endpoint of your Gitea/GitLab instance
     base_url: # Root URL of your Gitea/GitLab instance
@@ -117,6 +119,12 @@ admin:
       publicKey: # your uploadcare public api key
 
     providers: # for sveltia-cms
+
+    # Conversion on upload, Sveltia CMS only
+    transformations:
+      heic: # photos from phones, which only Safari displays, become WebP
+        width: 2560
+        height: 2560
 ```
 
 ### Media folders per type

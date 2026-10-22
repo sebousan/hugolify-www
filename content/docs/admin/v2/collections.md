@@ -32,6 +32,7 @@ An option has one name, whatever the CMS. Hugolify writes it the way each CMS re
 | [`view_filters`](#add-view-filters) | ✓ | ✓ | ✓ | ✓ | – | – | – |
 | [`view_groups`](#add-view-groups) | ✓ | ✓ | ✓ | ✓ | – | – | – |
 | [`reorder`](#add-reorder) | – | ✓ | – | – | – | – | – |
+| [`bulk_edit`](#add-bulk-edit) | – | ✓ | – | – | – | – | – |
 | [`icon`](#collection-icon) | – | ✓ | – | – | – | ✓ | – |
 | [`nested`](#nested-collections) | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
 | [`card_preview`](../cms/cloudcannon/#card-preview-collections) | – | – | – | – | – | ✓ | – |
@@ -346,6 +347,32 @@ admin:
   collections:
     pages:
       reorder: true
+```
+
+## Add bulk edit
+
+{{< badge text="New in v2" state="success" >}} {{< badge text="Only available with Sveltia CMS" state="warning" >}}
+
+Edit the simple fields of many entries at once, in a table that works like a spreadsheet, and save them in a single commit: turn `draft` on for a batch of posts, fix titles. Filter the list first to edit some entries only.
+
+It is on for every collection, with every simple top-level field as a column: `draft`, `title`, `date`, `weight`, `slug`, a select… Only Boolean, Color, DateTime, Number, Relation, Select and String fields can be edited in bulk.
+
+{{< alert-block title="Saved on the branch" state="warning" >}}
+Like reordering, a bulk edit is committed to the branch directly. So it is off by default with `publish_mode: editorial_workflow` or `preview`, where it would bypass the review.
+{{< /alert-block >}}
+
+Turn it off, or pick the columns, for every collection or for one. Fields are named as in the front matter:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  bulk_edit: false               # every collection
+  collections:
+    posts:
+      bulk_edit: true            # back on for the posts
+    persons:
+      bulk_edit: [title, draft]  # these columns, in this order
 ```
 
 ## Collection icon

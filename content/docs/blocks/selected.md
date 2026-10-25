@@ -36,7 +36,7 @@ Four ways to fill the block. `source: selection` takes the pages one by one in `
 
 `source: children` and `source: toplevel` are offered to the sections the CMS lets you nest, those whose `nested.depth` is above 1 (see [nested collections](/docs/admin/v2/collections/#nested-collections)). Only the direct children of a parent come out: a deeper level would flatten the tree into a listing mixing an item and its own children.
 
-With every source but `selection`, pages come out pinned first — those with a `weight` — then by date when the section has one, by title otherwise. The `persons` section keeps its own order, by status then by lastname.
+With every source but `selection`, pages come out pinned first — those with a `weight` — then by date when the section has one, by title otherwise. The `persons` section keeps its own order, by status, then by `weight`, then by lastname.
 
 `limit` caps the items shown, whatever the source: the latest posts of a category, the first sub-expertises of an expertise. Left empty, every item comes out.
 

@@ -37,7 +37,7 @@ layouts/
   "street" 
   "zipcode" 
   "city" 
-  "country"
+  "country_code"
   $pin -}}
 
 # This line allows you to modify the fields via the parameters
@@ -158,6 +158,18 @@ params:
               - theme: { options: [light, dark] }
 ```
 
+The languages and the countries offer the whole ISO lists, which come from the theme. `options` narrows them down the same way:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      country_code:
+        options: [FR, BE, CH, LU]
+```
+
 ## Default map position
 
 The `location` field opens on Paris. Move it with a GeoJSON point — longitude first, then latitude:
@@ -204,6 +216,12 @@ Available on `footer`, `seo`, `credit` and `banner`. Left undefined, each keeps 
 | `vertical_align` | Vertical text alignment (`start`, `center`, `end`) |
 | `image.src_mobile` | Dedicated mobile image, used by the hero |
 | `weight_select` | The v1 stepped weight select, kept as an opt-in |
+| `languages` | Languages a person or the organization works in, among the 183 of ISO 639-1, stored as codes |
+| `area_served` | Areas the organization serves, published as typed (`FR`, `Worldwide`) |
+| `number_of_employees` | Headcount of the organization, a number or a range (`150-250`) |
+| `date_founded` | Founding date of the organization, a year or a full date |
+| `date_expiry` | End date of a job offer, stored as `expiryDate` |
+| `alternate_name`, `awards`, `head_office`, `other_places`, `same_as`, `schema_type`, `schema_logo`, `schema_email`, `contact_page`, `slogan`, `vat_id`, `tax_id` | The organization and its structured data, see [Structured data](/docs/customization/structured-data/) |
 
 Other additions: blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
 
@@ -215,10 +233,13 @@ Other additions: blocks on the *persons* and *products* collections, *firstname*
 | Background colour | `background-color.yml` | `background_color.yml` |
 | Weight | select (10, 20, 30…) | number input (`min: 1`, integer) |
 | Appearance | flat at the root of the block | grouped under `ui` |
+| Country of an address | `country`, typed in | `country_code`, a select of the 249 ISO 3166-1 countries, shown in the language of the page |
 
 If you relied on the stepped weight select, the previous behaviour is preserved in a separate field:
 
 {{< alert text="`admin/fields/weight_select.yml`" state="light" >}}
+
+A country typed in before stays on the page as long as the address has no `country_code`.
 
 ## A title built from other fields
 

@@ -435,7 +435,7 @@ Pages CMS shows a nested collection in its tree layout, the `_index.md` of each 
 
 ## The config collection
 
-The *config* collection holds the site files an editor may change — menus, banner, footer, credit, SEO. Pick which ones it shows with `files`:
+The *config* collection holds the site files an editor may change — menus, banner, footer, credit, organization, structured data, SEO. Pick which ones it shows with `files`:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -446,7 +446,7 @@ admin:
       files: [nav-header-primary, nav-footer-primary, nav-legal, banner, footer, credit, blocks, seo]
 ```
 
-Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal`, `nav-social`, `banner`, `footer`, `credit`, `schema`, `seo`, `llms` and `llms-full`.
+Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal`, `nav-social`, `banner`, `footer`, `credit`, `organization`, `schema`, `seo`, `llms` and `llms-full`.
 
 ### Navigation
 
@@ -467,9 +467,21 @@ Add `blocks` to `files` and the collection gains a file written to `/data/blocks
 
 The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value.
 
-Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content.
+Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content. Decap CMS saves it keyed by the default language all the same, which the theme reads as well — see [With Decap CMS](/docs/customization/structured-data/#with-decap-cms).
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
+
+### Organization and structured data
+
+{{< badge text="New in v2" state="success" >}}
+
+`organization` edits `/data/organization.yml`, the identity of the organization behind the site: legal name, other names, founding date, headcount, languages, areas served, head office and other places, awards, identifiers. The rest of the site may show it too, not only the structured data.
+
+`schema` edits `/data/schema.yml`, what only the structured data reads: the schema.org type of the organization, a logo search engines can read, its pages elsewhere, the page listing its offices, and whether email addresses are published.
+
+Like `blocks`, neither file is translated. The slogan of the organization, translated like the description, goes in `seo`.
+
+{{< button url="/docs/customization/structured-data/" text="See structured data" >}}
 
 ### llms.txt
 

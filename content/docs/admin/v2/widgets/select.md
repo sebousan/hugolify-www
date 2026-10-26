@@ -20,7 +20,7 @@ description: Dropdown select field.
 | `hidden` | boolean | — | Hide from the editor |
 | `hint` | string | — | Help text |
 | `i18n` | boolean or string | — | i18n mode |
-| `label_options` | string | — | i18n key prefix for option labels |
+| `label_options` | string or map | — | i18n key prefix for option labels, or the labels themselves, keyed by option |
 | `multiple` | boolean | — | Allow multiple selections |
 | `nameOverride` | string | — | Override the name in output |
 | `required` | boolean | — | Mark as required |

@@ -13,9 +13,14 @@ icon: binoculars
 color: "#000000" # theme-color, msapplication-TileColor, mask-icon
 title: "" # Global meta title
 description: "" # Global meta description
+slogan: "" # Slogan of the organization, in the structured data
 ```
 
 {{< alert text="Editable in Hugolify admin." state="info" >}}
+
+The description and the slogan also describe the organization in the structured data, in each language.
+
+{{< button url="/docs/customization/structured-data/" text="See structured data" >}}
 
 ## Specific
 

@@ -12,7 +12,7 @@ Set true to add card class
 Set true to add a direction link to Google Map
 
 **address** {{< badge state="light" text="Map" >}}\
-Object of address values
+Object of address values: `street`, `zipcode`, `city` and `country_code`, an ISO 3166-1 code shown under its name in the language of the page. A `country` typed in by hand is shown when there is no code.
 
 ## Usage
 
@@ -29,7 +29,7 @@ Object of address values
         "street" "24 Rue de Commandant Guilbaud"
         "zipcode" "75016"
         "city" "Paris"
-        "country" "France"
+        "country_code" "FR"
         ) }}
 {{ $args := (dict
     "card" true

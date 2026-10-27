@@ -62,24 +62,8 @@ body: |
 
 {{< alert text="Editable in Hugolify admin." state="info" >}}
 
-There is one file for every language, at the root, where agents look for it, even when the default language lives in a subdirectory: on a multilingual site, write one section per language in the same file. Only the body of the default language is published; one written under another language key is ignored, with a build warning (`llms-language`).
+There is one file for every language, at the root, where agents look for it, even when the default language lives in a subdirectory: fill it in the default language only, and on a multilingual site let the same text cover every language. Decap CMS nests the body under the default language; one written under another language key is ignored.
 
-The theme provides the `llms_txt` and `llms_full_txt` output formats and their layouts. A page of the site turns them on: hugolify-template ships it, along with both data files. On a site started before, add it:
-
-{{< alert text="`/content/llms.md`" state="light" >}}
-
-```yml
----
-type: llms
-url: /
-sitemap:
-  disable: true
-build:
-  list: never
-outputs:
-  - llms_txt
-  - llms_full_txt
----
-```
+There is nothing else to set up: the theme publishes both files straight from the data, with no page or output format to turn on.
 
 A site that serves its own `/static/llms.txt`, or builds one with an output format of its own, leaves the matching data file empty.

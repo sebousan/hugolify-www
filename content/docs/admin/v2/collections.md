@@ -72,19 +72,19 @@ admin:
     - heading: Other
       collections: ['*']
     - heading: Settings
-      collections: [config]
+      collections: [menus, config]
 ```
 
 Quote the `'*'`: in YAML, a bare `*` starts an alias.
 
-Left undefined, the order is pages and indexes, then every other collection in alphabetical order, then config:
+Left undefined, the order is pages and indexes, then every other collection in alphabetical order, then menus and config:
 
 ```yml
 admin:
   collection_groups:
     - collections: [pages, indexes]
     - collections: ['*']
-    - collections: [config]
+    - collections: [menus, config]
 ```
 
 To list every collection in alphabetical order, as v1 did, keep a single group holding `'*'`.
@@ -433,9 +433,35 @@ The parent field differs between the two: Decap gets a custom Hugolify widget, S
 Pages CMS shows a nested collection in its tree layout, the `_index.md` of each folder standing for the folder. It has no parent field: a page stays in the folder it was created in.
 {{< /alert-block >}}
 
+## The menus collection
+
+{{< badge text="New in v2" state="success" >}}
+
+The *menus* collection holds the navigation files, written to `/data/menu/`. Pick which ones it shows with `files`:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    menus:
+      files: [nav-header-primary, nav-footer-primary, nav-legal, nav-social]
+```
+
+Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal` and `nav-social`.
+
+Header and footer menus each gain three levels, replacing the single menu of v1. Add `nav-header-tertiary` and `nav-footer-tertiary` to `files` to reach the third one.
+
+- **Header** — primary, secondary, tertiary
+- **Footer** — primary, secondary, tertiary
+
+{{< alert-block title="Menus listed in config" state="warning" >}}
+The menus used to be files of the *config* collection. A project that lists `nav-*` files in `config.files` moves them to `menus.files`: left there, a menu shows in both collections. A project that sets `collection_groups` names `menus` next to `config`, or the collection joins `'*'`.
+{{< /alert-block >}}
+
 ## The config collection
 
-The *config* collection holds the site files an editor may change — menus, banner, footer, credit, organization, structured data, SEO. Pick which ones it shows with `files`:
+The *config* collection holds the other site files an editor may change — banner, footer, credit, organization, structured data, SEO, llms.txt. Pick which ones it shows with `files`:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -443,21 +469,12 @@ The *config* collection holds the site files an editor may change — menus, ban
 admin:
   collections:
     config:
-      files: [nav-header-primary, nav-footer-primary, nav-legal, banner, footer, credit, blocks, seo]
+      files: [banner, footer, credit, blocks, seo]
 ```
 
-Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal`, `nav-social`, `banner`, `footer`, `credit`, `organization`, `schema`, `seo`, `llms` and `llms-full`.
+Left undefined, the collection ships `banner`, `footer`, `credit`, `organization`, `schema`, `seo`, `llms` and `llms-full`.
 
-### Navigation
-
-{{< badge text="New in v2" state="success" >}}
-
-Header and footer menus each gain three levels, replacing the single menu of v1. Add `nav-header-tertiary` and `nav-footer-tertiary` to `files` to reach the third one.
-
-- **Header** — primary, secondary, tertiary
-- **Footer** — primary, secondary, tertiary
-
-The footer also accepts blocks, not just an information text.
+The footer accepts blocks, not just an information text.
 
 ### Default appearance per block type
 

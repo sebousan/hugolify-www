@@ -204,7 +204,7 @@ The menu of the Add button shows a line under each block, such as “Questions w
 
 {{< badge text="New in v2" state="success" >}}
 
-A divider separates two groups of collections in the sidebar. Out of the box, pages and indexes come first, then the other collections, then config.
+A divider separates two groups of collections in the sidebar. Out of the box, pages and indexes come first, then the other collections, then menus and config.
 
 ```yaml
 admin:
@@ -212,7 +212,7 @@ admin:
     - collections: [pages, indexes]
     - collections: [posts, posts_categories, posts_tags]
     - collections: ['*']
-    - collections: [config]
+    - collections: [menus, config]
 ```
 
 {{< button url="../../collections/#order-and-group-collections" text="See order and group collections" >}}

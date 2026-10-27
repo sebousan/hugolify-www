@@ -50,6 +50,7 @@ Nothing errors. The values are written where the theme is not reading, so blocks
 | UI fields | hardcoded in the module | configurable through params |
 | Appearance in front matter | flat at the root of the block | grouped under `ui` |
 | Sort menu partial of a custom collection type | `admin/collections/config/sortable.yml` | `admin/collections/config/sortable_fields.yml` |
+| Menus | files of the *config* collection | *menus* collection |
 
 If you relied on the stepped weight select, the previous behaviour is preserved in a separate field:
 
@@ -86,7 +87,8 @@ The params renamed or reshaped in v2 are the ones a project is most likely to ha
 | `admin.media` | Gains a folder pair and a size limit per media type |
 | `admin.fields.ui.fields` | Chooses which appearance controls the editor sees |
 | `admin.files.<name>.fields` | Replaces the fields of one config file |
-| `admin.collection_groups` | Orders the collections of every CMS, not just CloudCannon. Left undefined, pages and indexes come first and config last, where v1 listed them alphabetically |
+| `admin.collection_groups` | Orders the collections of every CMS, not just CloudCannon. Left undefined, pages and indexes come first, menus and config last, where v1 listed them alphabetically. Once set, name `menus` in it too, or the collection joins `'*'` |
+| `admin.collections.config.files` | The `nav-*` files move to [`admin.collections.menus.files`](../collections/#the-menus-collection). Left in `config`, a menu shows in both collections |
 | `admin.collections.<name>.sortable` | Replaced by [`sortable_fields`](../collections/#add-sortable-fields), a list instead of a string, which can set the default sort |
 | `admin.collections.<name>.view` | Removed. Pages CMS builds its `view` from [`summary_fields`](../collections/#add-summary-fields), [`sortable_fields`](../collections/#add-sortable-fields) and [`nested`](../collections/#nested-collections), the options the other CMS read too |
 

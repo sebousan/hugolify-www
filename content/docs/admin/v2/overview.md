@@ -80,7 +80,7 @@ params:
   admin:
     collections:
       config:
-        files: [nav-header-primary, nav-footer-primary, nav-legal, banner, footer, credit, blocks, seo]
+        files: [banner, footer, credit, blocks, seo]
 ```
 
 The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value, so the screen says at a glance which types the site styles.
@@ -109,12 +109,14 @@ Available on `footer`, `seo`, `credit` and `banner`. Left undefined, each keeps 
 
 ## Navigation
 
-Header and footer menus each gain three levels, replacing the single menu of v1.
+The menus leave the *config* collection for a collection of their own, *menus*, listed just before it. Header and footer menus each gain three levels, replacing the single menu of v1.
 
 - **Header** — primary, secondary, tertiary
 - **Footer** — primary, secondary, tertiary
 
 The footer also accepts blocks, not just an information text.
+
+{{< button url="../collections/#the-menus-collection" text="See the menus collection" >}}
 
 ## Nested collections
 

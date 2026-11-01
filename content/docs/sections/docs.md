@@ -27,7 +27,6 @@ imports:
 docs:
   thumbnail:
     desktop: '38x38'
-    desktop_large: '100x100'
     mobile: '38x38'
     scrollsnap: '38x38'
 ```

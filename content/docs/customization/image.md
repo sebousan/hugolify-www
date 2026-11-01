@@ -52,14 +52,26 @@ navigation:
   mobile: '300x150'
 ```
 
+### Hero cover (v2)
+
+The cover fills a box whose shape changes with the viewport: below 576px, the image gets its own crop, `mobile`, even without a dedicated mobile image. The home hero, taller with the design system (`--hero-home-height`), can have crops of its own.
+
+```yml
+hero:
+  cover:
+    desktop: '1600x400'
+    mobile: '360x400'
+    home: # optional
+      desktop: '1600x800'
+      mobile: '360x480'
+```
+
 ### Sections
 
 ```yml
 pages:
   thumbnail:
-    desktop: '414x177'
     desktop: '416x179'
-    desktop_large: '636x273'
     mobile: '300x129'
     scrollsnap: '240x103'
   image:

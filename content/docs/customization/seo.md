@@ -10,7 +10,7 @@ icon: binoculars
 {{< alert text="`/data/seo.yml`" state="light" >}}
 
 ```yml
-color: "#000000" # theme-color, msapplication-TileColor, mask-icon
+color: "#000000" # theme-color, omitted when empty
 title: "" # Global meta title
 description: "" # Global meta description
 slogan: "" # Slogan of the organization, in the structured data

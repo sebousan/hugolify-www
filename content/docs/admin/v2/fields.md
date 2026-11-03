@@ -92,27 +92,29 @@ params:
         buttons: "['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']"
 ```
 
-- `minimal` — `true` keeps the editor compact: Sveltia CMS caps it at 240 px and scrolls past that, Decap CMS shrinks it to the smallest height. `false` lets it grow with the content.
-- `modes` — `rich_text`, `raw`, or both. With both, the toolbar shows a switch, and the editor opens in the first mode listed.
-- `buttons` — the formatting buttons of the rich text toolbar. See the {{< blank_link link="https://sveltiacms.app/en/docs/fields/richtext" text="Sveltia CMS" >}} and {{< blank_link link="https://decapcms.org/docs/widgets/#markdown" text="Decap CMS" >}} documentation for the names.
+- `minimal`: `true` keeps the editor compact: Sveltia CMS caps it at 240 px and scrolls past that, Decap CMS shrinks it to the smallest height. `false` lets it grow with the content.
+- `modes`: `rich_text`, `raw`, or both. With both, the toolbar shows a switch, and the editor opens in the first mode listed.
+- `buttons`: the formatting buttons of the rich text toolbar. See the {{< blank_link link="https://sveltiacms.app/en/docs/fields/richtext" text="Sveltia CMS" >}} and {{< blank_link link="https://decapcms.org/docs/widgets/#markdown" text="Decap CMS" >}} documentation for the names.
+- `editor_components`: the components the editor can insert. `body` offers them all by default, the CMS's own `image` and `code-block` plus the [enabled shortcodes](../shortcodes/#add-or-remove-shortcodes). Set, a field offers only the ones listed, so name the shortcodes too: `"['button']"` drops the image and the code block and keeps the `button` shortcode, `"[]"` removes them all.
 
-{{< alert-block title="Write `modes` and `buttons` as a quoted string" state="warning" >}}
+{{< alert-block title="Write `modes`, `buttons` and `editor_components` as a quoted string" state="warning" >}}
 The value is copied as is into the CMS config. A YAML list such as `[rich_text, raw]` comes out as a single, invalid mode named `rich_text raw`.
 {{< /alert-block >}}
 
-| Field | Used by | `minimal` | `buttons` | `modes` |
-| --- | --- | --- | --- | --- |
-| `text_markdown` | The `text` of most blocks, the *banner* and *credit* config files | `true` | `['bold', 'italic', 'link', 'bulleted-list']` | `['rich_text']` |
-| `title_markdown` | Opt-in, a title that takes bold and italic | `true` | `['bold', 'italic']` | `['rich_text']` |
-| `quote` | The *quote* and *testimonials* blocks, the `blockquote` shortcode | `true` | `['bold', 'italic', 'link']` | `['rich_text']` |
-| `credit` | Image credits, the `figure` and `video` shortcodes | `true` | `['link']` | `['rich_text']` |
-| `llms` | The body of the {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} and `llms-full.txt` files, in the *config* collection | `false` | All | `['raw']` |
-| `body` | The body of an entry | `true` | All | `['rich_text']` |
-| `contents` | The inner text of the `details` and `alert-block` shortcodes | `true` | `['bold', 'italic', 'link']` | `['rich_text']` |
+| Field | Used by | `minimal` | `buttons` | `modes` | `editor_components` |
+| --- | --- | --- | --- | --- | --- |
+| `text_markdown` | The `text` of most blocks, the *banner* and *credit* config files | `true` | `['bold', 'italic', 'link', 'bulleted-list']` | `['rich_text']` | None |
+| `title_markdown` | Opt-in, a title that takes bold and italic | `true` | `['bold', 'italic']` | `['rich_text']` | None |
+| `quote` | The *quote* and *testimonials* blocks, the `blockquote` shortcode | `true` | `['bold', 'italic', 'link']` | `['rich_text']` | None |
+| `credit` | Image credits, the `figure` and `video` shortcodes | `true` | `['link']` | `['rich_text']` | None |
+| `llms` | The body of the {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} and `llms-full.txt` files, in the *config* collection | `false` | All | `['raw']` | None |
+| `body` | The body of an entry | `true` | All | `['rich_text']` | All |
+| `contents` | The inner text of the `details` and `alert-block` shortcodes | `true` | `['bold', 'italic', 'link']` | `['rich_text']` | `['blank_link']` |
 
 | CMS | What applies |
 | --- | --- |
-| Decap CMS, Netlify CMS, Static CMS, Sveltia CMS | `minimal`, `modes` and `buttons` |
+| Decap CMS, Netlify CMS, Sveltia CMS | `minimal`, `modes`, `buttons` and `editor_components` |
+| Static CMS | `minimal`, `modes` and `buttons`. Hugolify registers no shortcodes there, so `editor_components` is left out. |
 | CloudCannon | `minimal` only: `true` gives a resizable editor 150 px high. There is no raw mode. |
 | Pages CMS | None. The rich-text editor has its own *Editor / Source* switch. |
 | TinaCMS | None. The rich-text toolbar has its own raw markdown button. |

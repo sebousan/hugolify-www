@@ -36,6 +36,22 @@ seo:
 
 {{< alert text="Not editable in Hugolify admin." state="warning" >}}
 
+## Hide a page from search engines
+
+In frontmatter of the page.
+
+```yml
+---
+noIndex: true # Not indexed, left out of the sitemap and the site search
+---
+```
+
+{{< alert text="Editable in Hugolify admin, last field of the page." state="info" >}}
+
+In production, the page gets a `noindex, nofollow` robots meta and leaves the sitemap and the site search. It stays online, reachable through its links. Each language decides for itself: a translation still indexed keeps its place in the sitemap, without an alternate link to the hidden one. Outside production, every page gets the `noindex, nofollow` meta anyway.
+
+A collection whose fields a site lists in `params.admin.collections.{collection}.fields` shows the field only once `no_index` is added to that list.
+
 ## llms.txt
 
 {{< badge text="New in v2" state="success" >}}

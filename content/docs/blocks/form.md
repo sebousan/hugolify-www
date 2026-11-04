@@ -38,7 +38,7 @@ blocks:
       align: '' # [start, center, end] (optional)
 ```
 
-A `tel`, `email`, `url`, `accept` or `pattern` field gets a matching hint paragraph, wired through `aria-describedby`. One required field anywhere in the form adds the legend explaining the asterisk.
+A `tel`, `email`, `url`, `accept` or `pattern` field gets a matching hint paragraph, wired through `aria-describedby`. One required field anywhere in the form adds the legend explaining the asterisk, above the first field: the RGAA wants it before the asterisk's first use, visually and in the source order.
 
 See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
 
@@ -53,8 +53,14 @@ params:
   form:
     netlify: false # boolean, adds the Netlify Forms attributes and a honeypot
     action: '' # url, the endpoint the form posts to
-    ajax: false # boolean, submits through js/blocks/form.js and shows a message
+    ajax: false # boolean, submits without leaving the page and shows the answer above the submit button
 ```
+
+With `ajax: true` the styling module loads its form script (`js/features/form.js`), on every page that has a form, the [Jobs](/docs/sections/jobs/) application form included. Without it, or before the script loads, the form posts natively. The fields go out as the same multipart body as a native post, files included. The answer, the `form.success` or `form.error` translation, takes the focus: on success it replaces the fields, on error they stay and the button is enabled again.
+
+{{< alert-block state="warning" >}}
+With Netlify Forms, form detection must be enabled in the Netlify UI (Forms), or every submission fails, with or without AJAX. The notifications come from a Netlify address, see [Form setup](/docs/getting-started/form/#netlify-forms).
+{{< /alert-block >}}
 
 {{< button url="https://demo.hugolify.io/blocks/form/" text="Demo visual renderer" blank="true" >}}
 
@@ -62,7 +68,7 @@ params:
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/form.html" text="HTML file — hugolify-theme" >}}
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_form.sass" text="SASS file — hugolify-theme-bootstrap" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/js/blocks/form.js" text="Javascript file" >}}
+- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/js/features/form.js" text="Javascript file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/form.md" text="Demo content file" >}}
 - {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/partials/admin/blocks/types/form.yml" text="Hugolify admin file" >}}
 

@@ -15,7 +15,7 @@ Every page publishes a schema.org graph in JSON-LD. It is built from what the si
 | Every page | The `WebSite`, a reference to the `Organization`, the page itself (`WebPage`, `CollectionPage`…) and, below the home page, its `BreadcrumbList` |
 | Home page of each language | The `Organization` in full, and the alternate names of the `WebSite` |
 | Contact page | A `ContactPage`, and an office (`LocalBusiness` or a subtype) for every place of the organization |
-| A person | A `Person`: job title, expertises and sectors, awards, languages, the office they work in |
+| A person | A `Person`: job title, expertises and sectors, awards, languages, the office they work in, and from their `education` the degrees they hold (`hasCredential`) and the schools they went to (`alumniOf`) |
 | A job | A `JobPosting`, valid until its `expiryDate` |
 | A page typed as an article | An `Article`, see [below](#articles) |
 | A video with controls | A `VideoObject`, its duration read from the MP4 file |

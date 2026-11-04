@@ -49,7 +49,7 @@ The form is sent over AJAX by `js/components/newsletter.js` of hugolify-theme-de
 | Mailchimp | `https://….list-manage.com/subscribe/post?u=…&id=…` | JSONP on `/subscribe/post-json`, Mailchimp blocking CORS on `/subscribe/post` |
 | Other | any URL | `fetch`, success read from the HTTP status |
 
-When the provider sends no message, or the request fails, the block shows the `newsletter.success` or `newsletter.error` translation. On success the fields are hidden and the focus moves to the message. The provider's message is shown as plain text, its links removed.
+When the provider sends no message, or the request fails, the block shows the `newsletter.success` or `newsletter.error` translation. On success the fields are hidden and the focus moves to the message. An error leaves the fields and the focus in place, and is announced as an alert. The provider's message is shown as plain text, its links removed.
 
 The block has no captcha: switch it off in the provider's form settings, or the provider rejects every signup.
 

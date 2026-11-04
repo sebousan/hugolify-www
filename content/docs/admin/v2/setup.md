@@ -71,6 +71,7 @@ admin:
   i18n:
     default_locale: en # master lang for an i18n website
     locales: false # "[en,fr]" for an i18n website
+    initial_locales: # Sveltia CMS: "default", "all" or "[en,fr]", locales a new entry starts with
 
   # Assets
   media:

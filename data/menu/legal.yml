@@ -2,9 +2,15 @@ links:
   - title: Legal mentions
     url: /legal-mentions/
     blank: false
+  - title: Code of conduct
+    url: https://github.com/Hugolify/.github/blob/main/CODE_OF_CONDUCT.md
+    blank: true
   - title: Sitemap
     url: /sitemap/
     blank: false
+  - title: This site is powered by Netlify
+    url: https://www.netlify.com
+    blank: true
   - title: Hugolify is developed by Un Cinq
     url: https://uncinq.dev
     blank: true

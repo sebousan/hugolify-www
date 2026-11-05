@@ -107,6 +107,7 @@ The value is copied as is into the CMS config. A YAML list such as `[rich_text, 
 | `title_markdown` | Opt-in, a title that takes bold and italic | `true` | `['bold', 'italic']` | `['rich_text']` | None |
 | `quote` | The *quote* and *testimonials* blocks, the `blockquote` shortcode | `true` | `['bold', 'italic', 'link']` | `['rich_text']` | None |
 | `credit` | Image credits, the `figure` and `video` shortcodes | `true` | `['link']` | `['rich_text']` | None |
+| `legal` | The fine print under the submit button of the *form* block, the legal notice of a real estate | `true` | `['bold', 'italic', 'link']` | `['rich_text']` | None |
 | `llms` | The body of the {{< blank_link link="https://llmstxt.org/" text="llms.txt" >}} and `llms-full.txt` files, in the *config* collection | `false` | All | `['raw']` | None |
 | `body` | The body of an entry | `true` | All | `['rich_text']` | All |
 | `contents` | The inner text of the `details` and `alert-block` shortcodes | `true` | `['bold', 'italic', 'link']` | `['rich_text']` | `['blank_link']` |

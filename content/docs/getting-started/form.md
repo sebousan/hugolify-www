@@ -21,13 +21,14 @@ The fields and the AJAX submission are documented with the [Form block](/docs/bl
 ## Netlify Forms
 
 - Form detection must be enabled in the Netlify UI (Forms), or every submission fails.
-- Notifications are sent from `formresponses@netlify.com`, which Netlify does not let you change. A mail server that only accepts known senders, common in companies and regulated professions, must allow this address, or the notifications never arrive. The submissions stay in the Netlify UI either way.
+- Notifications only go to **active members of the Netlify team**: another address is refused when the notification is saved, so invite each recipient first.
+- They are sent from `formresponses@netlify.com`. A mail server that only accepts known senders, common in companies and regulated professions, must allow this address, or the notifications never arrive. The submissions stay in the Netlify UI either way.
 - Name the email field `email`: Netlify makes it the Reply-To of the notification, so replying answers the visitor.
 - A hidden field named `subject` sets the subject of the notification.
 
 ## Services available
 
-* {{< blank_link link="https://fabform.io/" text="FabForm" >}}
-* {{< blank_link link="https://formspree.io/" text="Formspree" >}}
-* {{< blank_link link="https://kwesforms.com/" text="KwesForms" >}}
-* {{< blank_link link="https://docs.netlify.com/forms/setup/" text="Netlify forms" >}}  {{< badge state="warning" text="Default" >}}
+- {{< blank_link link="https://fabform.io/" text="FabForm" >}}
+- {{< blank_link link="https://formspree.io/" text="Formspree" >}}
+- {{< blank_link link="https://kwesforms.com/" text="KwesForms" >}}
+- {{< blank_link link="https://docs.netlify.com/forms/setup/" text="Netlify forms" >}}  {{< badge state="warning" text="Default" >}}

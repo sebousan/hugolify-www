@@ -70,6 +70,7 @@ The provider is told by the URL of the image:
 - {{< blank_link link="https://cloudinary.com/" text="Cloudinary" >}}
 - {{< blank_link link="https://uploadcare.com/" text="Uploadcare" >}}
 - {{< blank_link link="https://unsplash.com/" text="Unsplash" >}}, for the stock photos inserted by Sveltia CMS, resized on the fly by {{< blank_link link="https://docs.imgix.com/apis/rendering" text="Imgix" >}}
+- {{< blank_link link="https://picsum.photos/" text="Lorem Picsum" >}}, for the stock photos inserted by Sveltia CMS, sized through their URL and always cropped around the center
 
 {{< button url="../../../admin/v2/cms/sveltia-cms/#stock-photos" text="See stock photos in Sveltia CMS" >}}
 

@@ -202,9 +202,9 @@ Editors search and insert free photos without leaving the CMS, each one entering
 
 - **Pexels** and **Pixabay** forbid hotlinking: the photo is downloaded into the media folder, then processed by Hugo.
 - **Unsplash** is hotlinked: the field stores an `images.unsplash.com` URL, which hugolify-theme resizes, crops and converts on the fly through the Imgix parameters of Unsplash, as it does with Cloudinary and Uploadcare.
-- **Lorem Picsum** is hotlinked too, but hugolify-theme does not support it: leave it out of the list.
+- **Lorem Picsum** is hotlinked too: the field stores a `picsum.photos/id/…` URL, which hugolify-theme sizes through its path, in WebP. Picsum always crops around the center, whatever the crop anchor. Its pictures come without description: write the alternative text.
 
-Out of the box, Sveltia CMS offers all four services, Lorem Picsum included as it needs no key. Pick the ones offered, or set `false` to hide them:
+Out of the box, Sveltia CMS offers all four services, Lorem Picsum to every editor as it needs no key. Pick the ones offered, or set `false` to hide them:
 
 ```yaml
 admin:

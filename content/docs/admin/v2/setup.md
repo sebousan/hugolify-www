@@ -117,9 +117,9 @@ admin:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
       api_key: # your cloudinary api key
-      publicKey: # your uploadcare public api key
+      public_key: # your uploadcare public api key
 
-    providers: # for sveltia-cms
+    providers: # for sveltia-cms, the stock photos offered, e.g. [unsplash, pexels, pixabay], false to hide them
 
     # Conversion on upload, Sveltia CMS only
     transformations:

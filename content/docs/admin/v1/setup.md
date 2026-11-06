@@ -62,7 +62,7 @@ admin:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
       api_key: # your cloudinary api key
-      publicKey: # your uploadcare public api key
+      public_key: # your uploadcare public api key
     # Optional cloud settings [end]
 
     providers: # for sveltia-cms

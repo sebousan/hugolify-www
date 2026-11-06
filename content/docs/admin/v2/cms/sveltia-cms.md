@@ -194,6 +194,30 @@ admin:
 
 The Asset Library accepts any file a field accepts: its size limit is the largest of the `*_max_file_size`, and each field keeps its own.
 
+### Stock photos
+
+{{< badge text="New in v2" state="success" >}}
+
+Editors search and insert free photos without leaving the CMS, each one entering the API key of the service in Sveltia CMS. Hugolify displays them like any other image:
+
+- **Pexels** and **Pixabay** forbid hotlinking: the photo is downloaded into the media folder, then processed by Hugo.
+- **Unsplash** is hotlinked: the field stores an `images.unsplash.com` URL, which hugolify-theme resizes, crops and converts on the fly through the Imgix parameters of Unsplash, as it does with Cloudinary and Uploadcare.
+- **Lorem Picsum** is hotlinked too, but hugolify-theme does not support it: leave it out of the list.
+
+Out of the box, Sveltia CMS offers all four services, Lorem Picsum included as it needs no key. Pick the ones offered, or set `false` to hide them:
+
+```yaml
+admin:
+  media:
+    providers: [unsplash, pexels, pixabay]
+```
+
+{{< alert-block title="Credit the photographer" state="info" >}}
+Unsplash asks to credit the photographer, as in “Photo by … on Unsplash”. Sveltia CMS offers to copy the credit when inserting the photo: paste it into the Credit field of the image, displayed under it.
+{{< /alert-block >}}
+
+{{< button url="../../../../codes/partials/image/" text="See the image partial" >}}
+
 ### Block descriptions
 
 {{< badge text="New in v2" state="success" >}}

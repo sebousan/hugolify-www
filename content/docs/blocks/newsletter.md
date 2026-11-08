@@ -41,11 +41,11 @@ See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` refe
 
 ## Submission
 
-The form is sent over AJAX by `js/components/newsletter.js` of hugolify-theme-design-system, and the provider's answer is shown under the fields in an [alert](https://github.com/uncinq/css-components/blob/main/docs/content/alert.md), `alert-success` or `alert-danger`. The provider is read from `form.url`:
+The form is sent over AJAX by `js/components/newsletter.js` of hugolify-theme-design-system, and the provider's answer is shown under the fields in an [alert](https://github.com/uncinq/css-components/blob/main/docs/content/alert.md), `alert-success` or `alert-danger`. The provider is read from `form.url`, among the modules of `js/providers/`, shared with the [Form](/docs/blocks/form/) block:
 
 | Provider | `form.url` | Request |
 | --- | --- | --- |
-| Brevo | `https://….sibforms.com/serve/…` | `fetch`, Brevo answers JSON and allows CORS |
+| Brevo | `https://….sibforms.com/serve/…` | `fetch` to the URL with `?isAjax=1`, as Brevo's own script does: Brevo answers JSON and allows CORS |
 | Mailchimp | `https://….list-manage.com/subscribe/post?u=…&id=…` | JSONP on `/subscribe/post-json`, Mailchimp blocking CORS on `/subscribe/post` |
 | Other | any URL | `fetch`, success read from the HTTP status |
 

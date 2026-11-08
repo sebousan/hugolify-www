@@ -66,12 +66,13 @@ params:
 
 With `ajax: true` the styling module loads its form script (`js/features/form.js`), on every page that has a form, the [Jobs](/docs/sections/jobs/) application form included. Without it, or before the script loads, the form posts natively. The answer, the `form.success` or `form.error` translation, takes the focus: on success it replaces the fields, on error they stay and the button is enabled again.
 
-The script picks the provider from the hostname of the action:
+The script picks the provider from the hostname of the action, among the modules of `js/providers/`, shared with the [Newsletter](/docs/blocks/newsletter/) block:
 
-- **Brevo** (`*.sibforms.com`, the `serve` URL of a Brevo form): the fields go out urlencoded and the answer is read from Brevo's JSON. Brevo keeps one text value per attribute, so the values of checkboxes sharing a `name` are joined with ` ; `, and takes no file, so file fields are left out. Add the hidden fields of Brevo's embed code: `locale` and the `email_address_check` honeypot, empty.
+- **Brevo** (`*.sibforms.com`, the `serve` URL of a Brevo form): posted as Brevo's own script does, to the action with `?isAjax=1`, and the answer is read from Brevo's JSON. Brevo keeps one text value per attribute, so the values of checkboxes sharing a `name` are joined with ` ; `, and takes no file, so file fields are left out. Add the hidden fields of Brevo's embed code: `locale` and the `email_address_check` honeypot, empty.
+- **Mailchimp** (`*.list-manage.com`): JSONP on `/subscribe/post-json`, Mailchimp blocking CORS on `/subscribe/post`. File fields are left out.
 - **Any other endpoint**: the same multipart body as a native post, files included, judged on the HTTP status. Netlify Forms posts to the page itself; another origin (Formspree, Fabform…) is asked for JSON, so that it answers instead of redirecting to its own thank-you page.
 
-Another provider is one more entry in the `PROVIDERS` list of the script.
+Another service is one more module in `js/providers/`, listed in its `index.js`.
 
 {{< alert-block state="warning" >}}
 With Netlify Forms, form detection must be enabled in the Netlify UI (Forms), or every submission fails, with or without AJAX. The notifications come from a Netlify address, see [Form setup](/docs/getting-started/form/#netlify-forms).

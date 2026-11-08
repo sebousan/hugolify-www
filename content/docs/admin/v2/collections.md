@@ -484,6 +484,8 @@ Add `blocks` to `files` and the collection gains a file written to `/data/blocks
 
 The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value.
 
+Each section offers the layouts of its block type, as the form of the block offers them, and the carousel settings when the carousel is one of them: a default carousel is set here like a default scroll snap. Every field shows whatever the layout. In the form of a block, choosing a layout reveals the fields that override these defaults, see [Fields that depend on another](../blocks/#fields-that-depend-on-another).
+
 Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content. Decap CMS saves it keyed by the default language all the same, which the theme reads as well — see [With Decap CMS](/docs/customization/structured-data/#with-decap-cms).
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}

@@ -128,6 +128,28 @@ A look given to a whole block type belongs outside the content, in the `blocks` 
 
 {{< button url="../collections/#default-appearance-per-block-type" text="See defaults per block type" >}}
 
+### Fields that depend on another
+
+In Decap CMS and Sveltia CMS, a select hides the sibling fields that do not apply to its value. Hiding is visual only: a hidden field keeps its value, the front matter keeps its shape, and the other CMS show every field.
+
+- `layout`: the carousel settings only show with the carousel layout, the scroll snap with the grid. A block left without layout takes its look from the `blocks` file of the *config* collection and shows neither: choosing a layout reveals the fields that override that file. The `blocks` file itself shows every field, and the blocks without a layout field (*comparison*, *datas*, *informations*) always show their scroll snap.
+- `source`, in the selection blocks: the manual selection shows the items, a taxonomy filter its terms, the children of a page the parent page.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+params:
+  admin:
+    fields:
+      layout:
+        toggle:          # merged key by key with the default
+          grid: [scrollsnap, column]
+      selected_source:
+        toggle: false    # every field shown, whatever the source
+```
+
+`toggle` maps a value to the sibling fields it shows. A field listed under no value is never hidden, and the empty key stands for a field left empty. The `layout` map ships with the admin and keeps, for each block, the layouts it offers. The `selected_source` map is computed from the sources of each collection, and a map given here is laid over it. `false` shows every field. Both settings apply to every block at once.
+
 ## How to create a block
 
 ### Fields allowed

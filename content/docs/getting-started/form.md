@@ -16,7 +16,7 @@ form:
   action: false # Replace by URL from formspree, fabform, kwes…
 ```
 
-The fields and the AJAX submission are documented with the [Form block](/docs/blocks/form/).
+A form block may set its own `action`, which wins over these params: each form can post to its own endpoint, like a Brevo form per request type. The fields, the AJAX submission and the providers are documented with the [Form block](/docs/blocks/form/).
 
 ## Netlify Forms
 
@@ -26,8 +26,17 @@ The fields and the AJAX submission are documented with the [Form block](/docs/bl
 - Name the email field `email`: Netlify makes it the Reply-To of the notification, so replying answers the visitor.
 - A hidden field named `subject` sets the subject of the notification.
 
+## Brevo
+
+- In Brevo, Forms › the form › Share › Embed › HTML: copy the `action` URL of the `<form>` (`https://….sibforms.com/serve/…`) into the block's `action`, one per form. Brevo's HTML, CSS and scripts are not needed: the form script of the theme posts to Brevo and reads its answer (`params.form.ajax: true`).
+- Each field `name` is the Brevo attribute, in upper case (`EMAIL`, `NOM`…), and a choice goes out as text: its value is what Brevo stores.
+- Add the `hiddens` of Brevo's code: `locale` (`fr`, `en`…) and the `email_address_check` honeypot, empty.
+- Brevo takes no file, and keeps one value per attribute: the checkboxes sharing a `name` are joined with ` ; `.
+- A reCAPTCHA added in Brevo needs Brevo's own script, which the theme does not load.
+
 ## Services available
 
+- {{< blank_link link="https://www.brevo.com/" text="Brevo" >}}
 - {{< blank_link link="https://fabform.io/" text="FabForm" >}}
 - {{< blank_link link="https://formspree.io/" text="Formspree" >}}
 - {{< blank_link link="https://kwesforms.com/" text="KwesForms" >}}

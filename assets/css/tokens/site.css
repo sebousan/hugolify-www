@@ -18,6 +18,8 @@
     --block-bg-color: var(--color-gray-50);
     --header-color-background: var(--color-gray-50);
     --hero-color-background: var(--color-gray-50);
+    --hero-max-height: none;
+    --hero-height: auto;
 
     /* The images of this site are line illustrations on a transparent ground
        or opaque screenshots: no placeholder grey behind them. */

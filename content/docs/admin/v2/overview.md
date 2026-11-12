@@ -6,10 +6,14 @@ icon: sparkles
 ---
 
 {{< alert-block text="Feedback" state="danger" >}}
-v2 is still moving. Report anything you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
+**v2 is still moving**. Report anything you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
+
+v2 will remain in pre-release until Sveltia CMS reaches release 1.0 and Pages CMS reaches release 3.0.
+
+See the [current stable version](/docs/admin/v1/) if you are not ready to move to v2.
 {{< /alert-block >}}
 
-{{< button url="/docs/admin/v1/" text="See the current stable version (v1)" >}}
+
 
 ## The UI object
 

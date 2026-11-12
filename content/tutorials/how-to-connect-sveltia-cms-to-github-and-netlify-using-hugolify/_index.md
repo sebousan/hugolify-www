@@ -164,7 +164,7 @@ jobs:
 
 1. Open `https://your-website/admin/`.
 2. Click **Sign In with GitHub**, then **Authorize** in the GitHub window.
-3. **Option A only**: in the top right corner, open the account menu, then **Settings > Advanced**, and paste the build hook URL from step 5 in the deploy hook field.
+3. **Option A only**: in the top right corner, open the account menu, then **Settings > Developer**, and paste the build hook URL from step 5 in the **Deploy Hook** field.
 
 With option A, the URL is stored **in the browser**, not in the repository: each editor pastes it once in their own browser. Send it to them over a secure channel. With option B, editors have nothing to paste.
 

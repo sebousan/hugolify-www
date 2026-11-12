@@ -160,20 +160,7 @@ blocks:
       ctas:
         - text: "Customize your project"
           url: /docs/customization/
-  - type: editorial
-    direction: ltr
-    background: true
-    surtitle: Versions
-    title: Hugolify v2 is rolling out
-    text: "v2 moves CSS and JavaScript out of the core theme into a dedicated styling module, so you can stay on Bootstrap or bring your own design system. The GitHub template still ships v1, and the v1 documentation remains available."
-    ctas:
-      # - text: Read the migration guide
-      #   url: /docs/getting-started/migration/
-      - text: Browse the v1 documentation
-        url: https://v1.hugolify.io/
-        blank: true
-    image:
-      src: https://res.cloudinary.com/uncinq/image/upload/v1781600878/607.Team-Success_mqpapp.svg
+  
   - type: informations
     column: 3
     heading:

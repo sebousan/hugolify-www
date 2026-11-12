@@ -3,4 +3,5 @@ cta:
   text: Un Cinq
   url: https://uncinq.dev
   blank: true
+  link: true
   lang: fr

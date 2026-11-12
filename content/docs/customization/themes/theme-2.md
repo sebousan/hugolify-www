@@ -15,7 +15,7 @@ This theme has not been migrated to v2 yet — no `/v2` module path is published
 
 ## Demo
 
-{{< button url="https://theme-2--hugolify-demo.netlify.app/" text="Explore demo" blank="true" >}}
+{{< button url="https://v1-demo-theme-2--hugolify-demo.netlify.app/" text="Explore v1 demo" blank="true" >}}
 
 {{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1758204772/screenshot-hugolify-theme-2_w3wa4c.png" alt="Screenshot of Theme 2" screenshot="true" legend="Preview homepage" >}}
 

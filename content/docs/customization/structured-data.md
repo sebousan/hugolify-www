@@ -6,7 +6,7 @@ icon: diagram-3
 
 {{< badge text="New in v2" state="success" >}}
 
-Every page publishes a schema.org graph in JSON-LD. It is built from what the site already knows — its title, logo, social menu, SEO data and sections — and from two data files, both editable in Hugolify admin: the identity of the organization, and a few settings only the structured data reads.
+Every page publishes a schema.org graph in JSON-LD. It is built from what the site already knows (its title, logo, social menu, SEO data and sections) and from two data files, both editable in Hugolify admin: the identity of the organization, and a few settings only the structured data reads.
 
 ## What is published
 
@@ -23,7 +23,7 @@ Every page publishes a schema.org graph in JSON-LD. It is built from what the si
 
 Modules add their own: products, events, real estate, services…
 
-The organization is described in full once per language, on the home page, where Google looks for it. Every other page only references it — `@id`, name, URL and logo — which is what a job posting or an article needs to name its employer or publisher.
+The organization is described in full once per language, on the home page, where Google looks for it. Every other page only references it by its `@id`, name, URL and logo: what a job posting or an article needs to name its employer or publisher.
 
 ## The organization
 
@@ -56,7 +56,7 @@ tax_id: '123456789'           # the SIREN in France
 
 The file is not translated: one legal name, one head office, one set of awards. What varies with the language lives in `/data/seo.yml`: the description and the slogan of the organization are those of the site. Its name is the site title, its profiles are the links of the social menu, and what it knows about is the list of top level expertises.
 
-The head office lends its address, coordinates and contact — a page of the places section or an entry of `/data/places` alike. The other places add their address.
+The head office lends its address, coordinates and contact, whether it is a page of the places section or an entry of `/data/places`. The other places add their address.
 
 The rest of the site can read the file as well, a block listing the awards of the organization or a footer listing its places:
 
@@ -82,6 +82,24 @@ email: true                     # false keeps email addresses out of the JSON-LD
 
 An organization typed as a `LocalBusiness` subtype keeps that type on the home page, and is referenced as a plain `Organization` everywhere else: Google rejects a local business as the employer of a job posting.
 
+### Types
+
+The types offered, in the admin select as in the templates, come from `func/GetSchemaTypes.html`. The theme only lists generic ones: `Organization`, `Corporation`, `LocalBusiness`, `ProfessionalService`, `EducationalOrganization`, `NGO`, `GovernmentOrganization`, `NewsMediaOrganization`, `ResearchOrganization` and `SportsOrganization` for an organization, `Place`, `LandmarksOrHistoricalBuildings`, `TouristAttraction`, `CivicStructure`, `Accommodation` and `Residence` for a place.
+
+The types of a trade (a law firm, a clinic, a plumber) come from an optional hook, `func/GetSchemaTypesTheme.html`, defined by the theme of that trade or by the site. Each key it returns is appended to the list of the same key. A `LocalBusiness` subtype goes under both `organization` and `local_business`: only those take coordinates, and are referenced as a plain `Organization`.
+
+{{< alert text="`/layouts/_partials/func/GetSchemaTypesTheme.html`" state="light" >}}
+
+```go-html-template
+{{- $localBusiness := slice "HomeAndConstructionBusiness" "Plumber" -}}
+{{- return (dict
+  "organization" $localBusiness
+  "local_business" $localBusiness
+) -}}
+```
+
+The admin labels each type with the i18n key `admin.fields.schema_type.options.<Type>`, `admin.fields.schema_type.options.Plumber` for instance. A site that defines the hook replaces the one of its theme: it lists again the types of the theme it keeps.
+
 The identity of the organization used to sit under `organization` in this file. A key not moved to `/data/organization.yml` yet is still read from here.
 
 ### With Decap CMS
@@ -98,7 +116,7 @@ A file written by hand on a Decap site takes the same shape, or Decap opens it e
 
 ## Articles
 
-A page becomes an `Article` — or a `BlogPosting`, a `NewsArticle`… — through `schema.type`, in its front matter or for a whole section with a cascade:
+A page becomes an `Article` (or a `BlogPosting`, a `NewsArticle`…) through `schema.type`, in its front matter or for a whole section with a cascade:
 
 {{< alert text="`/config/_default/hugo.yaml`" state="light" >}}
 
@@ -113,7 +131,7 @@ cascade:
 
 ## Names of languages and countries
 
-The CMS stores languages and countries as codes, ISO 639-1 and ISO 3166-1, and the structured data publishes those codes. The pages show their names in the language of the page, as the CLDR — the Unicode reference browsers rely on — writes them:
+The CMS stores languages and countries as codes, ISO 639-1 and ISO 3166-1, and the structured data publishes those codes. The pages show their names in the language of the page, as written by the CLDR, the Unicode reference browsers rely on:
 
 ```go-html-template
 {{ partial "func/GetLanguageName.html" "de" }} → Allemand, German, Deutsch…

@@ -11,7 +11,7 @@ description: Names a language in the language of the page.
 
 Gives *Allemand* on a French page, *German* on an English one, *Deutsch* on a German one: the names of the CLDR, downloaded at build time. A locale falls back on its language (`zh-Hans` on Chinese), and a code with no name on the code itself.
 
-The codes a person or the organization stores come from the 183 of ISO 639-1, listed by `func/GetLanguageCodes.html`.
+The codes a person or the organization stores come from the 183 of ISO 639-1, listed by `admin/func/GetLanguageCodes.html` in hugolify-admin.
 
 ## Related links
 

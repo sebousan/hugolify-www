@@ -224,7 +224,7 @@ Available on `footer`, `seo`, `credit` and `banner`. Left undefined, each keeps 
 | `number_of_employees` | Headcount of the organization, a number or a range (`150-250`) |
 | `date_founded` | Founding date of the organization, a year or a full date |
 | `date_expiry` | End date of a job offer, stored as `expiryDate` |
-| `education` | Degrees of a person: `title`, `school`, `year` and `category` (`degree` or `certificate`), published as `hasCredential` and `alumniOf`. In the default fields of *persons*; the site renders it on the person page |
+| `education` | Degrees of a person: `title`, `school`, `year` and `category` (`degree` or `certificate`), published as `hasCredential` and `alumniOf`. In the default fields of *persons*; hugolify-theme-persons lists it in the sidebar of the person page |
 | `alternate_name`, `awards`, `head_office`, `other_places`, `same_as`, `schema_type`, `schema_logo`, `schema_email`, `contact_page`, `slogan`, `vat_id`, `tax_id` | The organization and its structured data, see [Structured data](/docs/customization/structured-data/) |
 
 Other additions: blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.

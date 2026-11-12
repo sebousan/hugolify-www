@@ -6,9 +6,13 @@ image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
 seo:
   description: Simplify your Sveltia CMS setup with Hugolify’s easy-to-use configuration builder.
+status:
+  text: Prefered CMS
+  state: primary
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Prefered CMS" state="primary" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Git Gateway

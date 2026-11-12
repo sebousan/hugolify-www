@@ -5,11 +5,11 @@ description: Open-source content management Git-based.
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
 status:
-  text: Deprecated
+  text: Archived
   state: warning
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Deprecated CMS" state="secondary" >}}
+{{< badge text="Archived CMS" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Cloud assets

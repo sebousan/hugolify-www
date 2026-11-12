@@ -12,7 +12,7 @@ status:
 ---
 {{< badge text="Not available in production" state="danger" >}}
 {{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Beta" state="info" >}}
+{{< badge text="Beta" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - i18n structure

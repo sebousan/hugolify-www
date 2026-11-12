@@ -8,11 +8,11 @@ seo:
   description: Simplify your Tina CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
   text: Beta
-  state: info
+  state: warning
 ---
 {{< badge text="Not available in production" state="danger" >}}
 {{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Beta" state="info" >}}
+{{< badge text="Beta" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - i18n structure

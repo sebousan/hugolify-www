@@ -9,7 +9,6 @@ seo:
 ---
 {{< badge text="Available in production" state="success" >}}
 {{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Compatibility WIP" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Cloud assets

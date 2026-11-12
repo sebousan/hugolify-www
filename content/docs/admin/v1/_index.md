@@ -14,9 +14,3 @@ status:
   text: V1
   state: warning
 ---
-
-{{< alert-block title="Pairs with hugolify-theme v1" state="info" >}}
-v1 is the current stable release of Hugolify Admin and targets **hugolify-theme v1**. It also runs against **hugolify-theme v2**, minus the `ratio` and `scrollsnap` controls, which is handy while migrating — but the pair to settle on is admin v2 with theme v2.
-{{< /alert-block >}}
-
-{{< button url="/docs/admin/v2/" text="See Hugolify Admin v2" >}}

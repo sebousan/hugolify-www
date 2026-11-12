@@ -3,7 +3,7 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify
-  title: Framework Hugo with <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
+  title: Framework Hugo  with <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website with headless CMS.
   ctas:
@@ -14,7 +14,8 @@ hero:
       blank: true
 blocks:
   - type: informations
-    column: 4
+    ui:
+      column: 4
     heading:
       surtitle: Ethical
       title: A sustainable open-source framework for websites
@@ -51,7 +52,8 @@ blocks:
       url: /docs/sections/
     direction: ltr
   - type: editorial
-    direction: rtl
+    ui:
+      direction: rtl
     surtitle: Modular
     title: +25 blocks of content available
     text: Collection of most famous components for making an exiting website.
@@ -61,9 +63,10 @@ blocks:
       text: Discover all blocks in docs
       url: /docs/blocks/
   - type: figure
-    grid: large
-    offset: center
-    background: true
+    ui:
+      grid: large
+      offset: center
+      theme: dark
     heading:
       surtitle: Headless CMS
       title: Skip the config file creation, Hugolify handles it automatically!
@@ -76,10 +79,13 @@ blocks:
     footing:
       ctas:
         - text: Hugolify Admin
-          url: /docs/admin/v1/
+          url: /docs/admin/v2/
   - type: informations
-    background: true
-    column: 4
+    ui:
+      theme: dark
+      scrollsnap: all
+      
+    column: 7
     heading:
       title: All available CMS for Hugolify
     items:
@@ -89,6 +95,7 @@ blocks:
         title: CloudCannon
         text: Content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure CloudCannon
           url: /docs/admin/v1/cms/cloudcannon/
@@ -98,6 +105,7 @@ blocks:
         title: Decap CMS
         text: Open-source content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure Decap CMS
           url: /docs/admin/v1/cms/decap-cms/
@@ -107,6 +115,7 @@ blocks:
         title: Netlify CMS
         text: Open-source content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure Netlify CMS
           url: /docs/admin/v1/cms/netlify-cms/
@@ -116,6 +125,7 @@ blocks:
         title: Pages CMS
         text: Open-source content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure Pages CMS
           url: /docs/admin/v1/cms/pages-cms/
@@ -125,6 +135,7 @@ blocks:
         title: Static CMS
         text: Open-source content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure Static CMS
           url: /docs/admin/v1/cms/static-cms/
@@ -134,6 +145,7 @@ blocks:
         title: Sveltia CMS
         text: Open-source content management Git-based.
         cta:
+          link: true
           text: Documentation
           title: How to configure Sveltia CMS
           url: /docs/admin/v1/cms/sveltia-cms/
@@ -143,11 +155,13 @@ blocks:
         title: Tina CMS
         text: Open-source content management Git-based and API driven.
         cta:
+          link: true
           text: Documentation
           title: How to configure Tina CMS
           url: /docs/admin/v1/cms/tina-cms/
   - type: selected-docs
     section: docs
+    show_more: true
     heading:
       surtitle: docs
       title: Discover how to implement easily Hugolify for your project
@@ -156,13 +170,11 @@ blocks:
       - sections
       - blocks
       - shortcodes
-    footing:
-      ctas:
-        - text: "Customize your project"
-          url: /docs/customization/
   
   - type: informations
-    column: 3
+    ui:
+      column: 3
+      theme: light
     heading:
       surtitle: How to
       title: Thanks to our tutorials
@@ -174,9 +186,9 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1768396980/597.Collaborative-Work_hdy5p5.svg
           isLogo: true
         cta:
+          link: true
           text: See tutorial
           url: /tutorials/how-to-create-your-own-design-system-using-hugolify
-
       - title: How to create a multisite with Hugo and Decap CMS using Hugolify on Netlify
         surtitle: Tutorial
         text: With common and different content.
@@ -184,6 +196,7 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758116856/303.Apps_z2apqt.svg
           isLogo: true
         cta:
+          link: true
           text: See tutorial
           url: /tutorials/how-to-create-a-multisite-with-hugo-and-decap-cms-using-hugolify
       - title: How to create a blog with Hugo and Decap CMS using Hugolify
@@ -193,28 +206,22 @@ blocks:
           src: https://res.cloudinary.com/uncinq/image/upload/v1758116874/361.Reading-The-News_h2lohi.svg
           isLogo: true
         cta:
+          link: true
           text: See tutorial
           url: /tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify
-  - type: editorial
-    surtitle: Web performance
-    title: Discover performance and carbon emissions reports
-    text: Focus on Core Web Vitals of Google PageSpeed Insights and Website carbon reports.
-    image:
-      src: https://res.cloudinary.com/uncinq/image/upload/v1758116886/384.Up-Trend_d1rcgi.svg
-    cta:
-      text: Discover reports
-      url: /web-performance/
+  
   - type: informations
-    column: 4
     heading:
       surtitle: Github
       title: 4 main repositories
       text: |-
         Hugolify is available on Github, template relies on three modules.\
         And more sixty Hugolify repositories…
-    background: true
+    ui:
+      column: 4
     items:
       - cta:
+          link: true
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-template
@@ -222,6 +229,7 @@ blocks:
         text: Github template to start your Hugolify project.
         icon: brand:git
       - cta:
+          link: true
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-theme
@@ -229,6 +237,7 @@ blocks:
         text: Agnostic core module, templates, layouts and functions.
         icon: brand:git
       - cta:
+          link: true
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-theme-bootstrap
@@ -236,6 +245,7 @@ blocks:
         text: Default styling module, Bootstrap 5 CSS and JavaScript.
         icon: brand:git
       - cta:
+          link: true
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-admin
@@ -243,7 +253,6 @@ blocks:
         text: Module Admin for Hugolify with the CMS of your choice.
         icon: brand:git
   - type: cta
-    background: true
     heading:
       surtitle: Open-source
       title: Support Us

@@ -3,7 +3,7 @@ title: Editorial
 description:
   Displays a block with content (title, text, button) on the left and image on
   the right (possible to reverse the direction). In mobile the image is first.
-icon: postcard
+icon: newspaper
 seo:
   title: Block Editorial
 ---

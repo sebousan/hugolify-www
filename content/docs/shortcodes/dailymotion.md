@@ -1,7 +1,7 @@
 ---
 title: Dailymotion
 description: Displays a dailymotion embed.
-icon: camera-reels
+icon: film
 ---
 
 ## Example

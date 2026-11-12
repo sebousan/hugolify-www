@@ -1,0 +1,7 @@
+/* site/components/logo.css */
+@layer components {
+  /* Black in the header, crimson in the footer */
+  footer .logo {
+    --logo-color: var(--color-brand);
+  }
+}

@@ -2,7 +2,7 @@
 title: Collections
 description: All sections and taxonomies.
 weight: 4
-icon: collection
+icon: gallery-vertical-end
 ---
 
 {{< alert-block title="Info" state="info" >}}

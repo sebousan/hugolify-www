@@ -36,10 +36,10 @@ blocks:
         title: SEO
         limit: 100
   - type: cta
-    cta:
-      blank: true
-      url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
-      text: Discover the report
+    ctas:
+      - blank: true
+        url: https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.hugolify.io
+        text: Discover the report
   - type: figure
     background: false
     heading:

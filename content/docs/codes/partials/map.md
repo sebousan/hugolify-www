@@ -1,7 +1,7 @@
 ---
 title: Map
 description: Displays an openstreetmap with markers.
-icon: geo-alt
+icon: map-pin
 ---
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 title: Alert block
 description: Displays an alert block with different state in your body markdown.
-icon: exclamation-octagon
+icon: octagon-exclamation-point
 ---
 
 ## Example

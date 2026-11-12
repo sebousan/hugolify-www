@@ -1,7 +1,7 @@
 ---
 title: Instagram
 description: Displays an instagram feed with your latest posts.
-icon: instagram
+icon: brand:instagram
 seo:
   title: Block Instagram
 ---

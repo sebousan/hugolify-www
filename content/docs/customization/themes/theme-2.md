@@ -3,7 +3,7 @@ isIndex: false
 title: Theme 2
 description: Second available theme
 weight: 2
-icon: 2-circle
+icon: dice-2
 status:
   text: Bootstrap
   state: primary

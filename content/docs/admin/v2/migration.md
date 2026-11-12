@@ -2,7 +2,7 @@
 title: Migration from v1
 description: Compatibility and breaking changes, admin v1 to v2
 weight: 2
-icon: arrow-up-circle
+icon: circle-arrow-up
 seo:
   title: Migration from Hugolify Admin v1 to v2
 ---

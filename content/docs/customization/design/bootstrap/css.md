@@ -1,7 +1,7 @@
 ---
 title: CSS
 description: Bootstrap variables, mixins and semantic classes
-icon: filetype-sass
+icon: brand:sass
 weight: 3
 ---
 

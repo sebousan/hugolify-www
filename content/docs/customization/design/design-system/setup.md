@@ -2,7 +2,7 @@
 title: Setup
 description: Setup hugolify-theme-design-system
 weight: 1
-icon: sliders
+icon: sliders-horizontal
 ---
 
 {{< alert-block title="hugolify-theme-design-system" state="info" >}}

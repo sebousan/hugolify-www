@@ -1,7 +1,7 @@
 ---
 title: Testimonials
 description: Displays some testimonials in grid or carousel.
-icon: chat-square-quote
+icon: message-square-quote
 seo:
   title: Block Testimonials
 ---

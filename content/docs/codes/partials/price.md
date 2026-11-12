@@ -1,7 +1,7 @@
 ---
 title: Price
 description: Displays a price with currency, discount, frequency…
-icon: currency-euro
+icon: euro
 ---
 ## Example
 

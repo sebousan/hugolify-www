@@ -1,7 +1,7 @@
 ---
 title: Persons places
 description: Taxonomy places for persons section.
-icon: geo-alt
+icon: map-pin
 ---
 
 ## Modules required

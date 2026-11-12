@@ -1,7 +1,7 @@
 ---
 title: Twitch
 description: Displays a twitch embed.
-icon: twitch
+icon: brand:twitch
 ---
 
 ## Example

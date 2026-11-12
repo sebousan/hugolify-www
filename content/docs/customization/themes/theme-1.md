@@ -3,7 +3,7 @@ isIndex: false
 title: Theme 1
 description: First available theme
 weight: 1
-icon: 1-circle
+icon: dice-1
 status:
   text: Bootstrap
   state: primary

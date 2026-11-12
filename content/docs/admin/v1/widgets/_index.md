@@ -3,9 +3,9 @@ isIndex: false
 title: Widgets
 description: Available widget partials and their parameters
 weight: 5
-icon: app
+icon: app-window
 cascade:
-  icon: app
+  icon: app-window
 ---
 
 {{< alert-block state="info" >}}

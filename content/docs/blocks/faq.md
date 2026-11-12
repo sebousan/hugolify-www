@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Displays some images cards in column. Alignment and button are available.
-icon: patch-question
+icon: badge-question-mark
 seo:
   title: Block FAQ
 ---

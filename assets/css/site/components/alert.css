@@ -1,0 +1,14 @@
+/* site/components/alert.css */
+@layer components {
+  /* Alerts read small: a caps label over a 14px message */
+  .alert {
+    :is(li, p) {
+      font-size: var(--font-size-xs);
+    }
+
+    .alert-heading {
+      font-size: var(--font-size-xs);
+      text-transform: uppercase;
+    }
+  }
+}

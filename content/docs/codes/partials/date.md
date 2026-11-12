@@ -1,7 +1,7 @@
 ---
 title: Date
 description: Displays a paragraph tag with a formating and localize date.
-icon: calendar-date
+icon: calendar-days
 ---
 ## Example
 

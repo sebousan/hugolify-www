@@ -1,7 +1,7 @@
 ---
 title: Expertises
 description: Skills of a firm or a person.
-icon: mortarboard
+icon: graduation-cap
 ---
 
 ## Modules required

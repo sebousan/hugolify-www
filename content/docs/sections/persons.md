@@ -1,7 +1,7 @@
 ---
 title: Persons
 description: Authors, concerned people and persons.
-icon: people
+icon: users
 ---
 
 ## Modules required

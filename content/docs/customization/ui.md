@@ -1,7 +1,7 @@
 ---
 title: UI
 description: Layout classes shared by blocks and hero — theme, grid, align, layout, offset
-icon: ui-checks-grid
+icon: list-checks
 weight: 2
 ---
 

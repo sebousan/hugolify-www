@@ -1,7 +1,7 @@
 ---
 title: Posts
 description: News about your business.
-icon: file-earmark-text
+icon: file-text
 ---
 
 ## Modules required

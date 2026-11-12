@@ -1,7 +1,7 @@
 ---
 title: Toc
 description: Displays a responsive table of content to your page.
-icon: list-nested
+icon: list-tree
 ---
 
 ## Usage

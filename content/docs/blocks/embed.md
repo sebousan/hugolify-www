@@ -1,7 +1,7 @@
 ---
 title: Embed
 description: Displays a centered embed
-icon: code-slash
+icon: code-xml
 seo:
   title: Block Embed
 ---

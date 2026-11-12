@@ -2,7 +2,7 @@
 isIndex: false
 title: Details
 description: Displays a details HTML markup in your body markdown.
-icon: caret-down
+icon: chevron-down
 ---
 
 ## Example

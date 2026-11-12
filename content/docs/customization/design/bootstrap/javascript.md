@@ -2,7 +2,7 @@
 title: Javascript
 description: Bootstrap and Vanilla JS
 weight: 4
-icon: filetype-js
+icon: brand:javascript
 ---
 
 {{< alert-block title="Overview" state="info" >}}

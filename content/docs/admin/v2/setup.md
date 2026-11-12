@@ -2,7 +2,7 @@
 title: Setup
 description: Install module and config
 weight: 3
-icon: sliders
+icon: sliders-horizontal
 ---
 
 {{< alert-block title="Prerelease" state="warning" >}}

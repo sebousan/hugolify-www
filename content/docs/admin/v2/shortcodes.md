@@ -3,7 +3,7 @@ isIndex: false
 title: Shortcodes
 description: Add/modify shortcodes
 weight: 8
-icon: braces-asterisk
+icon: braces
 ---
 
 {{< alert text="Available for CloudCannon, Decap CMS, Netlify CMS and Sveltia CMS" state="warning" >}}

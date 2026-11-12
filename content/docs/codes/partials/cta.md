@@ -1,7 +1,7 @@
 ---
 title: CTA
 description: Displays a call to action.
-icon: link-45deg
+icon: link-2
 ---
 ## Example
 

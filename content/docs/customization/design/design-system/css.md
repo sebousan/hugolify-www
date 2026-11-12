@@ -2,7 +2,7 @@
 title: CSS
 description: CSS custom properties and design tokens
 weight: 3
-icon: filetype-sass
+icon: brand:sass
 ---
 
 **hugolify-theme-design-system** uses **CSS custom properties** (design tokens) instead of SASS variables. Tokens are plain CSS, consumable by any tool (Figma, Tokens Studio, style dictionaries).

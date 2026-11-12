@@ -1,7 +1,7 @@
 ---
 title: Latest
 description: Displays latest items from posts, projects…
-icon: clock-history
+icon: rotate-ccw-clock
 seo:
   title: Block Latest
 ---

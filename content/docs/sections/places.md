@@ -1,7 +1,7 @@
 ---
 title: Places
 description: Places of your firm.
-icon: shop
+icon: store
 ---
 
 ## Modules required

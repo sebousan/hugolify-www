@@ -2,7 +2,7 @@
 title: Analytics
 description: Google Analytics, Meta Pixel and privacy-friendly alternatives
 weight: 7
-icon: graph-up
+icon: chart-line
 ---
 
 Hugolify ships with ten analytics services: Google Analytics and Meta Pixel, both wired to the cookie banner, and eight alternatives, most of them cookieless and loaded without consent.

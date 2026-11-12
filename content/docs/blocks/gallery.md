@@ -1,7 +1,7 @@
 ---
 title: Gallery
 description: Displays an images gallery with accessible lightbox.
-icon: grid-3x2-gap
+icon: grid-3x2
 seo:
   title: Block Gallery
 ---

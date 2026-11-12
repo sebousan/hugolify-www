@@ -1,7 +1,7 @@
 ---
 title: Posts authors
 description: Taxonomy authors for posts section.
-icon: person
+icon: user
 ---
 
 ## Modules required

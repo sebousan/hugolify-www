@@ -1,7 +1,7 @@
 ---
 title: Video
 description: Displays a video with legend and credit.
-icon: camera-video
+icon: video
 ---
 
 ## Example

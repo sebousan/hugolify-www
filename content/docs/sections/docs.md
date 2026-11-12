@@ -1,7 +1,7 @@
 ---
 title: Docs
 description: Nested documentations pages.
-icon: file-earmark-code
+icon: file-code
 ---
 
 ## Modules required

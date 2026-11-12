@@ -1,7 +1,7 @@
 ---
 title: Button
 description: Displays a button link in your body markdown.
-icon: hand-index
+icon: pointer
 ---
 
 ## Example

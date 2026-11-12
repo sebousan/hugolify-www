@@ -2,7 +2,7 @@
 title: Setup
 description: Install module and config
 weight: 1
-icon: sliders
+icon: sliders-horizontal
 ---
 
 ## Install

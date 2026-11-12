@@ -1,0 +1,27 @@
+/* site/components/doc.css */
+@layer components {
+  /* A doc with `large: true` in its front matter spans the whole row of the
+     list (see layouts/_partials/docs/item.html). */
+  .items > :has(> .doc.large) {
+    grid-column: 1 / -1;
+  }
+
+  /* The status badge (New, Beta…) of a doc or page card is pinned to the top
+     corner of the card, out of the flow of its content. hugolify-theme-docs
+     renders it without styling it in its design-system layer. */
+  :is(.doc, .page) > .status {
+    inset-block-start: var(--item-padding-block-start);
+    inset-inline-end: var(--item-padding-inline);
+    margin: 0;
+    position: absolute;
+  }
+
+  /* hugolify-theme-docs renders the status as `status badge badge-<state>`,
+     and the design system's .status paints its own neutral surface over the
+     state colours of the badge: hand them back. */
+  .status.badge {
+    --status-color-background: var(--badge-color-background);
+    --status-color-border: var(--badge-color-border);
+    --status-color-text: var(--badge-color-text);
+  }
+}

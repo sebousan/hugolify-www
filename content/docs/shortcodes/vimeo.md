@@ -1,7 +1,7 @@
 ---
 title: Vimeo
 description: Displays a vimeo embed.
-icon: vimeo
+icon: brand:vimeo
 ---
 
 ## Example

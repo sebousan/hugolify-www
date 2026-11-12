@@ -1,7 +1,7 @@
 ---
 title: Newsletter
 description: Displays a newsletter signup form.
-icon: envelope
+icon: mail
 seo:
   title: Block Newsletter
 ---

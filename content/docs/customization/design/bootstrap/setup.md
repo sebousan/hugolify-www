@@ -2,7 +2,7 @@
 title: Setup
 description: Setup hugolify-theme-bootstrap
 weight: 1
-icon: sliders
+icon: sliders-horizontal
 ---
 
 {{< alert-block title="hugolify-theme-bootstrap" state="info" >}}

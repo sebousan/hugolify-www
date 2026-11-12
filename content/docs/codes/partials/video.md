@@ -1,7 +1,7 @@
 ---
 title: Video
 description: Displays a video…
-icon: camera-video
+icon: video
 ---
 ## Example
 

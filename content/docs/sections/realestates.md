@@ -1,7 +1,7 @@
 ---
 title: Real estates
 description: Ads, auctions
-icon: house-add
+icon: house-plus
 ---
 
 ## Modules required

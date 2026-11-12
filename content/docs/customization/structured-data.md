@@ -1,7 +1,7 @@
 ---
 title: Structured data
 description: The schema.org graph every page publishes, and where it comes from.
-icon: diagram-3
+icon: network
 ---
 
 {{< badge text="New in v2" state="success" >}}

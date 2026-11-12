@@ -1,7 +1,7 @@
 ---
 title: Title
 description: Displays a heading title with surtitle and text.
-icon: type-h2
+icon: heading-2
 seo:
   title: Block Title
 ---

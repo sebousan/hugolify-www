@@ -2,7 +2,7 @@
 title: Overview
 description: What v2 changes, and why
 weight: 1
-icon: stars
+icon: sparkles
 ---
 
 {{< alert-block text="Feedback" state="danger" >}}

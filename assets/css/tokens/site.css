@@ -1,0 +1,52 @@
+/* tokens/site.css */
+/*
+ * Hugolify site tokens, on top of the Un Cinq branding of
+ * hugolify-theme-uncinqify. The design system imports this file after the
+ * theme's tokens, so every value here wins over the theme's.
+ */
+@layer tokens {
+  :root {
+    /* Brand: Hugolify crimson ($primary #A90940 of the SASS site), where the
+       Un Cinq theme is black. The text and the headings stay black. */
+    --color-brand: #a90940;
+    --color-brand-hover: oklch(from var(--color-brand) calc(l - 0.08) c h);
+    --color-brand-muted: oklch(from var(--color-brand) l c h / 0.1);
+    --color-brand-strong: oklch(from var(--color-brand) calc(l - 0.16) c h);
+
+    /* The header, the hero and the tinted blocks sit on a light grey
+       ($light #f8f9fa) */
+    --block-bg-color: var(--color-gray-50);
+    --header-color-background: var(--color-gray-50);
+    --hero-color-background: var(--color-gray-50);
+
+    /* The images of this site are line illustrations on a transparent ground
+       or opaque screenshots: no placeholder grey behind them. */
+    --color-background-media: transparent;
+
+    /* The search button reads one step darker than that grey */
+    --btn-search-color-background: var(--color-gray-200);
+    --btn-search-color-background-hover: var(--color-gray-300);
+
+    /* States: the soft tints of the SASS site ($danger, $*-bg-subtle,
+       $*-text-emphasis), mostly read in the documentation's alerts */
+    --color-danger: #a00000;
+    --color-danger-muted: rgb(244 63 94 / 0.14);
+    --color-danger-strong: #3c3c43;
+    --color-info-muted: rgb(100 108 255 / 0.14);
+    --color-info-strong: #3c3c43;
+    --color-warning-muted: rgb(234 179 8 / 0.14);
+    --color-warning-strong: #3c3c43;
+
+    /* Documentation body: its h2 reads as an h3 of the SASS site and its h3
+       as an h4 ($h3/$h4-font-size on Bootstrap's RFS curve), and a section
+       opens with a wider break ($global-spacing-semi) */
+    --content-body-h2-font-size: min(1.75rem, calc(1.3rem + 0.6vw));
+    --content-body-h2-margin-block-start: min(3rem, calc(1.425rem + 2.1vw));
+    --content-body-h3-font-size: min(1.5rem, calc(1.275rem + 0.3vw));
+
+    /* Wordmark: black, in its own case, tracked lighter than the Un Cinq one */
+    --logo-color: var(--color-text);
+    --logo-letter-spacing: 0.05em;
+    --logo-text-transform: none;
+  }
+}

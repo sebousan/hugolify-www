@@ -2,7 +2,7 @@
 isIndex: false
 title: Chart
 description: Displays a chart.
-icon: bar-chart
+icon: chart-column
 seo:
   title: Block Chart
 ---

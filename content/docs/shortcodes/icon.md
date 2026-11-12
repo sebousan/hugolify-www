@@ -1,7 +1,7 @@
 ---
 title: Icon
 description: Displays an inline icon in your body markdown.
-icon: emoji-smile
+icon: face-slightly-smiling
 ---
 
 {{< alert text="Requires hugolify-theme v2 and Hugolify Admin v2" state="warning" >}}

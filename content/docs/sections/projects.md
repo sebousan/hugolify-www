@@ -1,7 +1,7 @@
 ---
 title: Projects
 description: Your projects with image list and data list.
-icon: file-earmark-richtext
+icon: file-type
 ---
 
 {{< alert-block title="Not available in Hugolify v2" state="warning" >}}

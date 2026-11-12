@@ -1,7 +1,7 @@
 ---
 title: Publications persons
 description: Taxonomy persons for publications section.
-icon: person
+icon: user
 ---
 
 ## Modules required

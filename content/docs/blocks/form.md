@@ -1,7 +1,7 @@
 ---
 title: Form
 description: Displays a form.
-icon: input-cursor-text
+icon: text-cursor-input
 seo:
   title: Block Form
 ---

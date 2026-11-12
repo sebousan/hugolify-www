@@ -1,7 +1,7 @@
 ---
 title: Badge
 description: Displays a badge with different state in your body markdown.
-icon: patch-check
+icon: badge-check
 ---
 
 ## Example

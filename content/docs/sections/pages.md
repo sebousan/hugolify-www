@@ -1,7 +1,7 @@
 ---
 title: Pages
 description: Nested pages with blocks of content.
-icon: file-earmark
+icon: file
 ---
 
 ## Examples

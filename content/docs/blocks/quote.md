@@ -1,7 +1,7 @@
 ---
 title: Quote
 description: Displays a quote and its author
-icon: blockquote-left
+icon: text-quote
 seo:
   title: Block Quote
 ---

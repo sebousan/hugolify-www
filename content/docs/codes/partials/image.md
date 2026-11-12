@@ -1,7 +1,7 @@
 ---
 title: Image
 description: Displays a responsive image with srcset, type, retina, lazy loading…
-icon: card-image
+icon: image
 ---
 ## Example
 

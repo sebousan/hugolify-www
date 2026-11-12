@@ -2,7 +2,7 @@
 title: PostCSS
 description: The PostCSS config required by hugolify-theme-design-system
 weight: 2
-icon: filetype-js
+icon: brand:javascript
 ---
 
 {{< alert-block title="One file to create in your project" state="info" >}}

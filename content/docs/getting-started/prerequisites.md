@@ -2,7 +2,7 @@
 title: Prerequisites
 description: Required to knows
 weight: 1
-icon: check2-circle
+icon: circle-check
 ---
 
 ## Git

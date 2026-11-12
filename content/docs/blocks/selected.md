@@ -1,7 +1,7 @@
 ---
 title: Selected
 description: Displays a selection of items from a sections
-icon: check-all
+icon: check-check
 seo:
   title: Block Selected
 ---

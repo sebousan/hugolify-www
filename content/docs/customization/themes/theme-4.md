@@ -3,7 +3,7 @@ isIndex: false
 title: Theme 4
 description: Fourth available theme
 weight: 4
-icon: 4-circle
+icon: dice-4
 status:
   text: Bootstrap
   state: primary

@@ -1,7 +1,7 @@
 ---
 title: Carousel
 description: Displays a carousel.
-icon: collection
+icon: gallery-vertical-end
 ---
 ## Arguments
 

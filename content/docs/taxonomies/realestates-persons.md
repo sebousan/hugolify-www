@@ -1,7 +1,7 @@
 ---
 title: Realestates persons
 description: Taxonomy persons for realestates section.
-icon: person
+icon: user
 ---
 
 ## Modules required

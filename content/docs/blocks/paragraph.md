@@ -1,7 +1,7 @@
 ---
 title: Paragraph
 description: Displays a simple paragraph.
-icon: text-paragraph
+icon: text-align-start
 seo:
   title: Block Paragraph
 ---

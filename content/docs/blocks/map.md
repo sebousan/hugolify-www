@@ -1,7 +1,7 @@
 ---
 title: Map
 description: Displays a simple map with one marker.
-icon: geo-alt
+icon: map-pin
 seo:
   title: Block Map
 ---

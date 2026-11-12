@@ -1,7 +1,7 @@
 ---
 title: Jobs places
 description: Taxonomy places for jobs section.
-icon: geo-alt
+icon: map-pin
 ---
 
 ## Modules required

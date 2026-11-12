@@ -1,7 +1,7 @@
 ---
 title: Icons
 description: Lucide and Simple Icons with hugolify-theme-icons module
-icon: emoji-smile
+icon: face-slightly-smiling
 aliases:
   - /docs/customization/design/design-system/icons/
 ---

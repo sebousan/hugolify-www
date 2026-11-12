@@ -3,7 +3,7 @@ title: Informations
 description:
   Displays some cards informations in column. Icon, images and button are
   available
-icon: card-heading
+icon: panel-top
 seo:
   title: Block Informations
 ---

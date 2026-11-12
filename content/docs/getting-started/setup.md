@@ -2,7 +2,7 @@
 title: Setup
 description: How to add content and modules.
 weight: 4
-icon: sliders
+icon: sliders-horizontal
 ---
 
 ## Modules

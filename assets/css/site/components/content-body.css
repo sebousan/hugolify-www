@@ -1,0 +1,18 @@
+/* site/components/content-body.css */
+@layer components {
+  /* Long documentation pages: the section titles step down one level, so the
+     page title keeps the lead, and each section opens with a wider break. */
+  .content-body {
+    h2 {
+      --font-size-heading: var(--content-body-h2-font-size);
+
+      &:not(:first-child) {
+        margin-block-start: var(--content-body-h2-margin-block-start);
+      }
+    }
+
+    h3 {
+      --font-size-heading: var(--content-body-h3-font-size);
+    }
+  }
+}

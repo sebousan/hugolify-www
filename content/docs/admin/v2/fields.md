@@ -2,7 +2,7 @@
 title: Fields
 description: Add/modify fields
 weight: 6
-icon: input-cursor-text
+icon: text-cursor-input
 ---
 
 ## How to create a field

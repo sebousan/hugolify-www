@@ -1,7 +1,7 @@
 ---
 title: File
 description: Displays a file link with extention and size details.
-icon: file-earmark
+icon: file
 ---
 ## Example
 

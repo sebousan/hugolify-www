@@ -1,0 +1,10 @@
+{{- /*
+  docs/item.html: hugolify-theme-docs v2 item, plus a `large` class for the
+  pages with `large: true` in their front matter, which span the whole row of
+  the list (see assets/css/site/components/doc.css).
+*/ -}}
+<article class="item doc {{- if .Params.large }} large{{ end }}" {{- partial "func/SetAnim.html" (dict "element" "item") }}>
+  {{ partial "docs/item/content.html" . }}
+  {{ partial "docs/item/status.html" . }}
+  {{ partial "docs/item/media.html" . }}
+</article>

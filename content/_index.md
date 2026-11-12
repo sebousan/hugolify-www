@@ -233,28 +233,28 @@ blocks:
           url: https://github.com/hugolify/hugolify-template
         title: hugolify-template
         text: Github template to start your Hugolify project.
-        icon: git
+        icon: brand:git
       - cta:
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-theme
         title: hugolify-theme
         text: Agnostic core module, templates, layouts and functions.
-        icon: git
+        icon: brand:git
       - cta:
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-theme-bootstrap
         title: hugolify-theme-bootstrap
         text: Default styling module, Bootstrap 5 CSS and JavaScript.
-        icon: git
+        icon: brand:git
       - cta:
           blank: true
           text: Discover repository
           url: https://github.com/hugolify/hugolify-admin
         title: hugolify-admin
         text: Module Admin for Hugolify with the CMS of your choice.
-        icon: git
+        icon: brand:git
   - type: cta
     background: true
     heading:

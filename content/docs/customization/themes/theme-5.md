@@ -3,7 +3,7 @@ isIndex: false
 title: Theme 5
 description: Fith available theme
 weight: 5
-icon: 5-circle
+icon: dice-5
 status:
   text: Bootstrap
   state: primary

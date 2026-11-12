@@ -2,7 +2,7 @@
 isIndex: false
 title: Paragraph list
 description: Displays several paragraphs side by side, in one or two columns.
-icon: list-columns-reverse
+icon: list-start
 seo:
   title: Block Paragraph list
 ---

@@ -21,7 +21,7 @@ blocks:
       surtitle: Github
       title: Create an issue or discussion
     items:
-      - icon: github
+      - icon: brand:github
         title: Github
         text: Repositories
         cta:
@@ -37,7 +37,7 @@ blocks:
           title: Hugolify Github project
           text: Link
           url: https://github.com/orgs/Hugolify/projects/1
-      - icon: chat
+      - icon: message-circle
         title: Github
         text: Discussions
         cta:

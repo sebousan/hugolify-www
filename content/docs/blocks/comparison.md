@@ -2,7 +2,7 @@
 isIndex: false
 title: Comparison
 description: Displays comparison block.
-icon: layout-three-columns
+icon: columns-3
 aliases:
 - /docs/blocks/prices/
 seo:

@@ -2,13 +2,12 @@
 title: Contributes
 description: Help us to improve Hugolify.
 weight: 12
-icon: people
+icon: users
 ---
 
 ## Mainteners
 
 - {{< blank_link link="https://www.sebousan.com/" text="Sébastien Moulène" >}}
-- {{< blank_link link="https://arthaudproust.fr/" text="Arthaud Proust" >}}
 
 ## Publish a version
 

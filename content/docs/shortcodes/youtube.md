@@ -1,7 +1,7 @@
 ---
 title: Youtube
 description: Displays a youtube embed.
-icon: youtube
+icon: brand:youtube
 ---
 
 ## Example

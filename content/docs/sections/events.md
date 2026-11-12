@@ -1,7 +1,7 @@
 ---
 title: Events
 description: Page for an event.
-icon: calendar-event
+icon: calendar-check
 ---
 {{< badge text="Beta" state="warning" >}}
 

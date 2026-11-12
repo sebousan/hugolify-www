@@ -1,7 +1,7 @@
 ---
 title: Text
 description: Displays a formating text block.
-icon: paragraph
+icon: pilcrow
 ---
 
 ### Usage

@@ -1,7 +1,7 @@
 ---
 title: Video
 description: Displays a video element.
-icon: camera-video
+icon: video
 seo:
   title: Block Video
 ---

@@ -1,7 +1,7 @@
 ---
 title: Pushes
 description: Displays some images cards in column. Alignment and button are available
-icon: credit-card-2-front
+icon: credit-card
 seo:
   title: Block Pushes
 ---

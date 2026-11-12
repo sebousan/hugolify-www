@@ -1,7 +1,7 @@
 ---
 title: Timeline
 description: Displays a timeline element.
-icon: list-ol
+icon: list-ordered
 seo:
   title: Block Timeline
 ---

@@ -1,7 +1,7 @@
 ---
 title: Span lang
 description: Displays a span HTML with lang attribute to specifi another language.
-icon: translate
+icon: languages
 ---
 In accessibility, it is necessary to identify words corresponding to a language other than the content of the page.
 

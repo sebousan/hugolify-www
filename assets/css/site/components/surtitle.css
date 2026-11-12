@@ -1,0 +1,10 @@
+/* site/components/surtitle.css */
+@layer components {
+  /* The surtitle badge is crimson on a crimson veil, in the hero too, where the
+     design system mutes it. The Un Cinq theme tints the veil from the text
+     colour; here it is the brand's own muted tint. */
+  .surtitle {
+    --surtitle-color-background: var(--color-brand-muted);
+    --surtitle-color-text: var(--color-brand);
+  }
+}

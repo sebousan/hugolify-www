@@ -2,7 +2,7 @@
 isIndex: false
 title: Audio
 description: Displays a audio element.
-icon: soundwave
+icon: audio-waveform
 seo:
   title: Block Audio
 ---

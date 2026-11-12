@@ -1,7 +1,7 @@
 ---
 title: Blockquote
 description: Displays a blockquote in your body markdown.
-icon: blockquote-left
+icon: text-quote
 ---
 
 ## Example

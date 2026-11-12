@@ -1,7 +1,7 @@
 ---
 title: Persons statutes
 description: Taxonomy statutes for persons section.
-icon: geo-alt
+icon: map-pin
 ---
 
 ## Modules required

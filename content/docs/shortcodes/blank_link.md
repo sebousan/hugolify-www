@@ -1,7 +1,7 @@
 ---
 title: Blank link
 description: Displays a blank target link in your body markdown.
-icon: box-arrow-up-right
+icon: square-arrow-up-right
 ---
 
 ## Example

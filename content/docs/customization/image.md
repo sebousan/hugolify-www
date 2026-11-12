@@ -1,7 +1,7 @@
 ---
 title: Image
 description: Logo, retina, dimensions…
-icon: file-earmark-image
+icon: file-image
 ---
 
 ## Logo

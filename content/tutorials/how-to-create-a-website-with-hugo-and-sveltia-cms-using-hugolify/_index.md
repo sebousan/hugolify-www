@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2025-10-03T09:00:00.000Z
+date: 2026-10-03T09:00:00.000Z
 title: How to create a Website with Hugo and Sveltia CMS using Hugolify
 description: This tutorial guides you through creating a Website editable via Sveltia CMS.
 image:

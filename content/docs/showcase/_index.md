@@ -1,30 +1,26 @@
 ---
 title: Showcase
-description: Some websites work with Hugolify.
+description: Some demos websites using Hugolify.
 weight: 6
 icon: fullscreen
 ---
 
-| Name | URL | Repository |
-|----------|-|-|
-| Architectify | {{< blank_link link="https://www.architectify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/architectify-www" text="repository" >}} |
-| Biver | {{< blank_link link="https://www.jcbiver.com" text="website" >}} | |
-| Bluemax Media | {{< blank_link link="https://www.bluemaxmedia.com" text="website" >}} | |
-| Eco-conception site Web | {{< blank_link link="https://www.eco-conception-site-web.fr" text="website" >}} | {{< blank_link link="https://github.com/sebousan/eco-conception-site-web" text="repository" >}} |
-| Guilhem Granier | {{< blank_link link="https://www.guilhemgranier.fr" text="website" >}} | {{< blank_link link="https://github.com/arthaud-proust-pro/guilhemgranier.fr" text="repository" >}} |
-| Hugolify | {{< blank_link link="https://www.hugolify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/hugolify-www" text="repository" >}} |
-| Lawyerify | {{< blank_link link="https://www.lawyerify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/lawyerify-www" text="repository" >}} |
-| Le 52 | {{< blank_link link="https://www.le52-avocats.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/le52-avocats" text="repository" >}} |
-| Le Noailles | {{< blank_link link="https://www.lenoailles.fr" text="website" >}} | {{< blank_link link="https://github.com/sebousan/lenoailles" text="repository" >}} |
-| Medicalify | {{< blank_link link="https://www.medicalify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/medicalify-www" text="repository" >}} |
-| Miriam Lasserre | {{< blank_link link="https://www.miriamlasserre.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/miriamlasserre" text="repository" >}} |
-| Nicolas Gaillot | {{< blank_link link="https://www.nicolasgaillot.fr" text="website" >}} | |
-| PWRFoil | {{< blank_link link="https://www.pwrfoil.com" text="website" >}} | |
-| Quasar | {{< blank_link link="https://www.letsquasar.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/quasar" text="repository" >}} |
-| Realestatify | {{< blank_link link="https://www.realestatify.io" text="website" >}} | {{< blank_link link="https://github.com/sebousan/realestatify-www" text="repository" >}} |
-| Sébastien Moulène | {{< blank_link link="https://www.sebousan.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/sebastienmoulene" text="repository" >}} |
-| Tdesign Architecture | {{< blank_link link="https://www.tdesignarchitecture.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/tdesign-architecture" text="repository" >}} |
-| Un Cinq | {{< blank_link link="https://uncinq.dev" text="website" >}} | {{< blank_link link="https://github.com/sebousan/uncinq.dev" text="repository" >}} |
-| Un mois au Japon | {{< blank_link link="https://www.unmoisaujapon.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/unmoisaujapon" text="repository" >}} |
-| Villagers | {{< blank_link link="https://www.villagers.ch" text="website" >}} | {{< blank_link link="https://github.com/sebousan/villagers" text="repository" >}} |
-| Venn Capital | {{< blank_link link="https://venn-capital.com" text="website" >}} | {{< blank_link link="https://github.com/sebousan/venn-capital" text="repository" >}} |
+## v2
+
+| Demo | Styling module | Theme | Branch |
+| --- | --- | --- | --- | --- |
+| [Design System](https://demo.hugolify.io/) | `hugolify-theme-design-system` | | [`v2-demo`](https://github.com/hugolify/hugolify-template/tree/v2-demo) |
+| [Bootstrap](https://v2-demo-theme-bootstrap--hugolify-demo.netlify.app/) | `hugolify-theme-bootstrap` | | [`v2-demo-theme-bootstrap`](https://github.com/hugolify/hugolify-template/tree/v2-demo-theme-bootstrap) |
+| [Theme 5](https://v2-demo-theme-5--hugolify-demo.netlify.app/) | `hugolify-theme-design-system` | `hugolify-theme-5` | [`v2-demo-theme-5`](https://github.com/hugolify/hugolify-template/tree/v2-demo-theme-5) |
+
+## v1
+
+| Demo | Styling | Theme | Branch |
+| --- | --- | --- | --- | --- |
+| [Demo](https://v1-demo--hugolify-demo.netlify.app/) | `Bootstrap 5` |  | [`v1-demo`](https://github.com/hugolify/hugolify-template/tree/v1-demo) |
+| [Theme 1](https://v1-demo-theme-1--hugolify-demo.netlify.app/) | `Bootstrap 5` | `hugolify-theme-1`| [`v1-demo-theme-1`](https://github.com/hugolify/hugolify-template/tree/v1-demo-theme-1) |
+| [Theme 2](https://v1-demo-theme-2--hugolify-demo.netlify.app/) | `Bootstrap 5` | `hugolify-theme-2`| [`v1-demo-theme-2`](https://github.com/hugolify/hugolify-template/tree/v1-demo-theme-2) |
+| [Theme 3](https://v1-demo-theme-3--hugolify-demo.netlify.app/) | `Bootstrap 5` | `hugolify-theme-3`| [`v1-demo-theme-3`](https://github.com/hugolify/hugolify-template/tree/v1-demo-theme-3) |
+| [Theme 4](https://v1-demo-theme-4--hugolify-demo.netlify.app/) | `Bootstrap 5` | `hugolify-theme-4`| [`v1-demo-theme-4`](https://github.com/hugolify/hugolify-template/tree/v1-demo-theme-4) |
+| [Theme 5](https://v1-demo-theme-5--hugolify-demo.netlify.app/) | `Bootstrap 5` | `hugolify-theme-5`| [`v1-demo-theme-5`](https://github.com/hugolify/hugolify-template/tree/v1-demo-theme-5) |
+| [Products](https://v1-demo-products--hugolify-demo.netlify.app/) | `Bootstrap 5` | | [`v1-demo-products`](https://github.com/hugolify/hugolify-template/tree/v1-demo-products) |

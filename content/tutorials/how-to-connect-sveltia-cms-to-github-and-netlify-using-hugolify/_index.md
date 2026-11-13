@@ -20,6 +20,11 @@ status:
   text: V2
   state: primary
 ---
+## Video walkthrough
+
+Every step of this tutorial, from the Netlify project to the first **Publish Changes**.
+
+{{< youtube id="sDzAVUpNdx8" title="Connect Sveltia CMS to GitHub and Netlify with Hugolify" class="youtube" >}}
 
 ## Introduction
 
@@ -49,9 +54,9 @@ Content is not published on every save. Editors save as often as they want, then
 
 ## Step 1. Connect GitHub to Netlify
 
-{{< alert text="`Netlify > Add new project > Import an existing project > GitHub`" state="light" >}}
+{{< alert text="`Netlify > Add new project > Import a Git repository > GitHub`" state="light" >}}
 
-Pick the repository of the website, branch `main`, and click **Deploy**. The `netlify.toml` file of the project already holds the build command.
+Pick the organization, then the repository of the website, branch `main`, and click **Deploy**. The `netlify.toml` file of the project already holds the build command.
 
 {{< button url="/docs/getting-started/hosting/netlify/" text="Host on Netlify" >}}
 
@@ -67,18 +72,19 @@ Open the form on your account, or on your organization (*Organization > Settings
 | --- | --- |
 | Application name | A generic name, e.g. `Hugolify CMS`. Editors see it on the GitHub authorization screen. |
 | Homepage URL | Any URL, e.g. your own website. It is only displayed. |
-| Authorization callback URL | `https://api.netlify.com/auth/done` |
+| Redirect URI | `https://api.netlify.com/auth/done` |
 | Enable Device Flow | Unchecked |
+| Expire user access tokens | **Unchecked** (checked by default) |
 
-Click **Register application**, then **Generate a new client secret**. Copy the **Client ID** and the **Client secret**: the secret is displayed **only once**, so keep it in your password manager.
+Click **Register application**, then **Generate a new client secret** (GitHub asks you to confirm your access). Copy the **Client ID** and the **Client secret**: the secret is displayed **only once**, so keep it in your password manager.
 
-{{< alert-block title="OAuth App, not GitHub App" state="warning" >}}
-Create an **OAuth App**, not a **GitHub App**. If the form shows an *Expire user access tokens* checkbox, you are on the wrong one: the token would expire after 8 hours and editors would have to sign in again.
+{{< alert-block title="Uncheck Expire user access tokens" state="warning" >}}
+GitHub checks this box by default. Left checked, the token expires after 8 hours and editors have to sign in again. Also make sure you create an **OAuth App**, not a **GitHub App**.
 {{< /alert-block >}}
 
 ## Step 3. Add the OAuth App to Netlify
 
-{{< alert text="`Project configuration > Access & security > OAuth`" state="light" >}}
+{{< alert text="`Project configuration > Security > OAuth`" state="light" >}}
 
 Under **Authentication providers**, click **Install provider**, choose **GitHub**, paste the **Client ID** and the **Client secret** from step 2, and click **Install**.
 
@@ -111,7 +117,7 @@ Commit and push. Netlify builds the website with the CMS on `/admin/`.
 
 A build hook is a URL that starts a Netlify build when it is called. It is triggered when an editor clicks **Publish Changes**.
 
-{{< alert text="`Project configuration > Build & deploy > Continuous deployment > Build hooks`" state="light" >}}
+{{< alert text="`Project configuration > Developer settings > Build hooks`" state="light" >}}
 
 Click **Add build hook**, name it `Sveltia CMS`, choose the `main` branch, save, then copy the URL. It looks like `https://api.netlify.com/build_hooks/xxxxxxxx`.
 

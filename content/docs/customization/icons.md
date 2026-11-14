@@ -48,7 +48,7 @@ The brand set: over 3400 logos, solid fills with no stroke, rendered monochrome.
 
 Use the slug shown on the site, not the marketing name (`x`, not `twitter`).
 
-The prefix also disambiguates a name held by both sets: `apple` gives the Lucide fruit, `brand:apple` the Apple logo.
+The prefix also disambiguates a name held by both sets, such as `x` or `apple`: `apple` gives the Lucide fruit, `brand:apple` the Apple logo, each with a class of its own (see [Usage](#usage)).
 
 ## Install
 
@@ -75,11 +75,15 @@ Requires Hugo >= **0.128.0** (`templates.Defer`).
 
 The name **is** the filename: there is no mapping table and no alias layer. Browse the {{< blank_link link="https://lucide.dev/icons/" text="Lucide icon list" >}} to find a name.
 
-The rendered DOM is a single element, no inline SVG:
+Each call renders a single element, no inline SVG:
 
 ```html
 <i class="icon icon-map-pin" aria-hidden="true"></i>
+<i class="icon icon-solid-star" aria-hidden="true"></i>
+<i class="icon icon-brand-github" aria-hidden="true"></i>
 ```
+
+The class keeps the prefix. One stylesheet serves the whole site, so a brand and a UI icon of the same name (`icon-x`, `icon-brand-x`), or the two renderings of one icon (`icon-star`, `icon-solid-star`), never share a class.
 
 ## Solid icons
 
@@ -92,7 +96,7 @@ Lucide ships no filled icon: there is no `star-fill` to ask for. The `solid:` pr
 ```
 
 ```html
-<i class="icon icon-star icon-solid" aria-hidden="true"></i>
+<i class="icon icon-solid-star" aria-hidden="true"></i>
 ```
 
 The name stays the Lucide one: `solid:` is a rendering of that icon, not another icon. At build time, the shape the outline draws is painted, and the stroke stays on top, with its weight and round joins. The color is still `--icon-color`.
@@ -100,7 +104,7 @@ The name stays the Lucide one: `solid:` is a rendering of that icon, not another
 It works wherever a name goes through the icon partial, the [`icon` shortcode](/docs/shortcodes/icon/) included: `{{</* icon icon="solid:star" */>}}`.
 
 - It suits silhouettes, closed shapes such as `star`, `heart`, `bookmark` or `circle`: the stars of a rating, a toggled heart. On an icon drawn with inner details or open strokes, the fill covers the details: pick another icon.
-- Both renderings of an icon can sit on the same page: `.icon-star.icon-solid` outranks `.icon-star`.
+- Both renderings of an icon can sit on the same page: `icon-star` and `icon-solid-star` are two classes.
 - It changes nothing on a brand, already a solid fill.
 - It belongs to hugolify-theme-icons. Bootstrap Icons, with hugolify-theme-bootstrap, has filled icons of its own, named with `-fill` (`star-fill`).
 

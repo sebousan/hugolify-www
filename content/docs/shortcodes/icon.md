@@ -24,9 +24,11 @@ The argument is named, never positional. The admin editors parse named arguments
 
 ```html
 <i class="icon icon-phone" aria-hidden="true"></i>
+<i class="icon icon-solid-star" aria-hidden="true"></i>
+<i class="icon icon-brand-github" aria-hidden="true"></i>
 ```
 
-The markup is the same either way. What differs is who styles the class.
+A plain name gives the same markup either way. What differs is who styles the class.
 
 With **hugolify-theme-icons** the shortcode goes through `_partials/icon.html`, which registers the name and serves the glyph from the stylesheet the module builds: [Lucide](/docs/customization/icons/#lucide) for content icons, [Simple Icons](/docs/customization/icons/#simple-icons) for the `brand:` prefix, and a [filled rendering](/docs/customization/icons/#solid-icons) of a Lucide icon for the `solid:` prefix. Only the icons a page actually uses are built.
 

@@ -1,7 +1,7 @@
 ---
 title: Carousel
 description: Displays a carousel.
-icon: collection
+icon: gallery-vertical-end
 ---
 ## Arguments
 
@@ -31,6 +31,6 @@ A carousel of logos (block logos)
 
 ## Related links
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/carousel.html" text="Commons file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetGlobalParamsCarousel.html" text="GetGlobalParamsCarousel file function — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetParamsCarousel.html" text="GetParamsCarousel file function — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/carousel.html" text="Commons file (hugolify-theme)" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetGlobalParamsCarousel.html" text="GetGlobalParamsCarousel file function (hugolify-theme)" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetParamsCarousel.html" text="GetParamsCarousel file function (hugolify-theme)" >}}

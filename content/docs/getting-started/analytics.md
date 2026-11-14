@@ -2,7 +2,7 @@
 title: Analytics
 description: Google Analytics, Meta Pixel and privacy-friendly alternatives
 weight: 7
-icon: graph-up
+icon: chart-line
 ---
 
 Hugolify ships with ten analytics services: Google Analytics and Meta Pixel, both wired to the cookie banner, and eight alternatives, most of them cookieless and loaded without consent.
@@ -31,7 +31,7 @@ Self-hosting Umami, Plausible, Matomo and GoatCounter is free: you only pay for 
 - **Production only**: every service, Google Analytics and Meta Pixel included, is rendered when `hugo.IsProduction` is true. `hugo server` and `--environment staging` builds are never tracked.
 - **Consent**: Google Analytics and [Matomo](#matomo) with `cookies: true` wait for the `analytics` category of the [cookie banner](/docs/getting-started/cookie-consent/), Meta Pixel for the `marketing` category. The other services are cookieless and load without consent.
 - **Build checks**: an enabled service with a missing required parameter fails the build. A service whose banner or consent category is disabled is not loaded, and the build warns.
-- **Overrides**: each service has its own partial, `/layouts/partials/footer/analytics/<service>.html`. Override it for options the configuration does not expose (SPA mode, tags, exclusions…).
+- **Overrides**: each service has its own partial, `/layouts/_partials/footer/analytics/<service>.html`. Override it for options the configuration does not expose (SPA mode, tags, exclusions…).
 
 {{< alert text="A plain `hugo` build runs in production. On Netlify, deploy previews built with `hugo -b $DEPLOY_PRIME_URL` are tracked too, unless the service restricts the hostnames, like Umami `domains`." state="warning" >}}
 
@@ -121,7 +121,7 @@ Several services can run side by side, for example while comparing two of them.
 
 ### Migrating from `scripts.html`
 
-If you added Plausible, or any other service below, in `/layouts/partials/footer/scripts.html` following a previous version of this page, remove it when you enable the service under `analytics`. Otherwise the script loads twice.
+If you added Plausible, or any other service below, in `/layouts/_partials/footer/scripts.html` following a previous version of this page, remove it when you enable the service under `analytics`. Otherwise the script loads twice.
 
 ## Umami
 

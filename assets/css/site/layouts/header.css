@@ -1,0 +1,17 @@
+/* site/layouts/header.css */
+@layer layouts {
+  /* Once the menu is inline, the search button sits next to the logo and the
+     menu is pushed to the other end of the bar. */
+  @media (--header-expand) {
+    header[role='banner'] {
+      .logo {
+        margin-inline-end: 0;
+      }
+
+      .btn-search {
+        margin-inline-end: auto;
+        margin-inline-start: var(--spacing-md);
+      }
+    }
+  }
+}

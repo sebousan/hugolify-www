@@ -3,14 +3,14 @@ isIndex: false
 title: Theme 1
 description: First available theme
 weight: 1
-icon: 1-circle
+icon: dice-1
 status:
   text: Bootstrap
   state: primary
 ---
 
 {{< alert-block title="Not available in Hugolify v2" state="warning" >}}
-This theme has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
+This theme has not been migrated to v2 yet: no `/v2` module path is published for it. It stays available for Hugolify v1.
 {{< /alert-block >}}
 
 ## Demo

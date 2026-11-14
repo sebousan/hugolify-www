@@ -1,7 +1,7 @@
 ---
 title: Toc
 description: Displays a responsive table of content to your page.
-icon: list-nested
+icon: list-tree
 ---
 
 ## Usage
@@ -12,4 +12,4 @@ icon: list-nested
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/toc.html" text="Commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/toc.html" text="Commons file (hugolify-theme)" >}}

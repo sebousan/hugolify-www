@@ -3,7 +3,7 @@ isIndex: false
 title: Install
 description: Easy to install
 weight: 2
-icon: gear
+icon: settings
 ---
 ## Architecture
 

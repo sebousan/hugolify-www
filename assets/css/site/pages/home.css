@@ -1,0 +1,55 @@
+/* site/pages/home.css */
+/*
+ * The home hero title ends on a word that scrolls through the CMS names:
+ *
+ *   <h1>Framework Hugo with <span><span><i>CloudCannon</i>…<i>CloudCannon</i></span></span></h1>
+ *
+ * The outer span is a one-line window, the inner one a column of eight names
+ * that slides up one name every eighth of the cycle. The last name repeats the
+ * first, so the jump back to the top is invisible. Without motion, the window
+ * only ever shows the first name.
+ */
+@keyframes home-hero-cms {
+  0% { translate: 0 0; }
+  14.2857% { translate: 0 -12.5%; }
+  28.5714% { translate: 0 -25%; }
+  42.8571% { translate: 0 -37.5%; }
+  57.1429% { translate: 0 -50%; }
+  71.4286% { translate: 0 -62.5%; }
+  85.7143% { translate: 0 -75%; }
+  100% { translate: 0 -87.5%; }
+}
+
+@layer pages {
+  .home-page {
+    .hero {
+      /* 5rem from 1200px down to 1.625rem + 4.5vw, the SASS site's RFS curve.
+         Set on the h1 itself: css-base gives every h1 its own
+         --font-size-heading, which shadows the one the hero hands down. */
+      h1 {
+        --font-size-heading: min(5rem, calc(1.625rem + 4.5vw));
+      }
+
+      h1 > span {
+        display: inline-block;
+        height: 1lh;
+        overflow: hidden;
+        vertical-align: bottom;
+      }
+
+      h1 span span {
+        display: inline-flex;
+        flex-direction: column;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: home-hero-cms 8s 2s infinite;
+        }
+      }
+
+      h1 i {
+        font-style: normal;
+        text-align: start;
+      }
+    }
+  }
+}

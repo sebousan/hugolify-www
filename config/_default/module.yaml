@@ -1,4 +1,14 @@
 imports:
-  - path: github.com/sebousan/hugolify-theme-uncinqify
-  - path: github.com/hugolify/hugolify-theme-docs
-  - path: github.com/hugolify/hugolify-theme
+  # Theme
+  - path: github.com/sebousan/hugolify-theme-uncinqify/v2
+
+  # Section modules
+  - path: github.com/hugolify/hugolify-theme-docs/v2
+
+  # Core theme
+  - path: github.com/hugolify/hugolify-theme/v2 # HTML and Go Template
+  - path: github.com/hugolify/hugolify-theme-icons # Lucide and Simple Icons
+  - path: github.com/hugolify/hugolify-theme-design-system # CSS and JS
+
+  # CMS
+  - path: github.com/hugolify/hugolify-admin/v2

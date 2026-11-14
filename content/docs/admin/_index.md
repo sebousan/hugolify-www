@@ -5,6 +5,4 @@ description: Brings together multiple CMS (like Decap CMS, Pages CMS, Sveltia CM
 weight: 7
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758204585/logo-hugolify-picto_i6dlrq.svg
-params:
-  large: true
 ---

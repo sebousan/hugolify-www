@@ -5,13 +5,14 @@ go 1.21
 require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
-	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20800 // indirect
-	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-theme v1.28.0 // indirect
-	github.com/hugolify/hugolify-theme-docs v0.0.0-20260428151206-a1cc00861442 // indirect
-	github.com/midzer/tobii v3.2.0+incompatible // indirect
-	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
-	github.com/sebousan/hugolify-theme-uncinqify v0.0.0-20260616100422-81169d55dd2d // indirect
-	github.com/twbs/bootstrap v5.3.8+incompatible // indirect
-	github.com/twbs/icons v1.13.1 // indirect
+	github.com/hugolify/hugolify-admin/v2 v2.0.0-54 // indirect
+	github.com/hugolify/hugolify-theme-design-system v0.0.0-20261113094020-56100be6d715 // indirect
+	github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20261113130657-aa46c1a38290 // indirect
+	github.com/hugolify/hugolify-theme-icons v0.0.0-20261110164618-f0804c381a83 // indirect
+	github.com/hugolify/hugolify-theme/v2 v2.72.0 // indirect
+	github.com/lucide-icons/lucide v0.265.1-0.20261113150437-55782beff3a0 // indirect
+	github.com/midzer/tobii v3.2.1+incompatible // indirect
+	github.com/orestbida/cookieconsent v3.3.0+incompatible // indirect
+	github.com/sebousan/hugolify-theme-uncinqify/v2 v2.0.0 // indirect
+	github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 // indirect
 )

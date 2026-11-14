@@ -1,7 +1,7 @@
 ---
 title: Form
 description: Displays a form.
-icon: input-cursor-text
+icon: text-cursor-input
 seo:
   title: Block Form
 ---
@@ -56,12 +56,11 @@ See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` refe
 Where the forms post by default, whether they post over AJAX, and the height of their text areas. A block with its own `action` posts there, without the Netlify Forms attributes: each form can go to its own endpoint.
 
 ```yml
-params:
-  form:
-    netlify: false # boolean, adds the Netlify Forms attributes and a honeypot
-    action: '' # url, the endpoint the form posts to
-    ajax: false # boolean, submits without leaving the page and shows the answer above the submit button
-    rows: 5 # number, the visible lines of a textarea
+form:
+  netlify: false # boolean, adds the Netlify Forms attributes and a honeypot
+  action: '' # url, the endpoint the form posts to
+  ajax: false # boolean, submits without leaving the page and shows the answer above the submit button
+  rows: 5 # number, the visible lines of a textarea
 ```
 
 With `ajax: true` the styling module loads its form script (`js/features/form.js`), on every page that has a form, the [Jobs](/docs/sections/jobs/) application form included. Without it, or before the script loads, the form posts natively. The answer, the `form.success` or `form.error` translation, takes the focus: on success it replaces the fields, on error they stay and the button is enabled again.
@@ -82,23 +81,30 @@ With Netlify Forms, form detection must be enabled in the Netlify UI (Forms), or
 
 ## Files
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/form.html" text="HTML file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_form.sass" text="SASS file — hugolify-theme-bootstrap" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/js/features/form.js" text="Javascript file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/form.md" text="Demo content file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/partials/admin/blocks/types/form.yml" text="Hugolify admin file" >}}
+| Module | Files |
+| --- | --- |
+| hugolify-theme | {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/templates/form.html" text="Template" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/blocks/templates/form" text="Sub-templates" >}} |
+| hugolify-admin | {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/types/form.yml" text="Block type" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/fields/form.html" text="Fields" >}} |
+| hugolify-example-blocks | {{< blank_link link="https://github.com/Hugolify/hugolify-example-blocks/blob/main/content/docs/form.md" text="Demo content" >}} |
+
+## Styling availability
+
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_form.sass" text="SASS" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | Shared styles only |
 
 ## CMS availability
 
 | CMS | Hugolify Admin v2 |
 | --- | --- |
-| [CloudCannon](/docs/admin/v1/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
-| [Decap CMS](/docs/admin/v1/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
-| [Netlify CMS](/docs/admin/v1/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
-| [Pages CMS](/docs/admin/v1/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
-| [Static CMS](/docs/admin/v1/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
-| [Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
-| [Tina CMS](/docs/admin/v1/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
 
 {{< alert-block state="warning" >}}
 The CMS offers `checkbox`, `email`, `file`, `radio`, `select`, `tel`, `text` and `textarea` as field types. The `hidden`, `switch` and `url` types are read by the theme but have no option in the CMS: a hidden field goes in `hiddens`.

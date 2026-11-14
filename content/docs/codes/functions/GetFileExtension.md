@@ -25,4 +25,4 @@ description: Get file extension from file (string) and display correctly file ex
 
 ## Related links
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetFileExtension" text="Func file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetFileExtension.html" text="Func file" >}}

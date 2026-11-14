@@ -1,7 +1,7 @@
 ---
 title: File
 description: Displays a file link with extention and size details.
-icon: file-earmark
+icon: file
 ---
 ## Example
 
@@ -36,4 +36,4 @@ download: false // add download attribute to link, default is true
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/file.html" text="Commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/file.html" text="Commons file (hugolify-theme)" >}}

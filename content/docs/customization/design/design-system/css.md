@@ -2,7 +2,7 @@
 title: CSS
 description: CSS custom properties and design tokens
 weight: 3
-icon: filetype-sass
+icon: brand:css
 ---
 
 **hugolify-theme-design-system** uses **CSS custom properties** (design tokens) instead of SASS variables. Tokens are plain CSS, consumable by any tool (Figma, Tokens Studio, style dictionaries).
@@ -34,11 +34,11 @@ semantic/color.css       → purposeful aliases (--color-brand, --color-danger�
 components/button.css    → scoped tokens (--btn-color-background, --btn-border-radius…)
 ```
 
-Never skip two levels: a component token should reference a semantic token, not a primitive directly — unless the primitive has no semantic meaning (e.g. `--radius-none`).
+Never skip two levels: a component token should reference a semantic token, not a primitive directly, unless the primitive has no semantic meaning (e.g. `--radius-none`).
 
 ## CSS layers
 
-All tokens and styles are assigned to a named layer. The order is declared **once**, at the very top of `assets/css/main.css`, before any `@import` — CSS fixes a layer's position the first time its name is seen.
+All tokens and styles are assigned to a named layer. The order is declared **once**, at the very top of `assets/css/main.css`, before any `@import`: CSS fixes a layer's position the first time its name is seen.
 
 ```css
 @layer reset, tokens, libs, base, vendors, layouts, components, pages, utilities;
@@ -50,11 +50,11 @@ All tokens and styles are assigned to a named layer. The order is declared **onc
 | `tokens` | All custom properties (primitive, semantic, component) | `@uncinq/design-tokens`, `@uncinq/component-tokens`, module |
 | `libs` | Third-party stylesheets themselves (Leaflet, Splide, Tobii), injected at runtime | module (JS) |
 | `base` | Native element styles (body, headings, links, tables, forms…) | `@uncinq/css-base` |
-| `vendors` | Our overrides of those libraries (Leaflet, Pagefind, Splide) — above `base`, since they often undo native element styles | module |
+| `vendors` | Our overrides of those libraries (Leaflet, Pagefind, Splide), above `base` since they often undo native element styles | module |
 | `layouts` | Layout primitives (container, grid, row) + hugolify layouts | `@uncinq/css-base`, module |
 | `components` | UI components (.alert, .btn, .card…) and hugolify components | `@uncinq/css-components`, module |
 | `pages` | Page-specific rules | module |
-| `utilities` | Single-purpose classes — they win over a component's own rules | module |
+| `utilities` | Single-purpose classes, which win over a component's own rules | module |
 
 The **last layer wins**. `reset` and `tokens` come first (lowest priority) so token defaults never override base, layout or component styles.
 
@@ -77,9 +77,9 @@ Breakpoints are `@custom-media` rules from `@uncinq/css-base`, named as rungs on
 }
 ```
 
-The device names still work but are aliases kept for compatibility — prefer `--sm`/`--md`/`--lg`/`--xl` in new code.
+The device names still work but are aliases kept for compatibility: prefer `--sm`/`--md`/`--lg`/`--xl` in new code.
 
-Components that own a panel (header, filters, sidebar menu, table of contents) get their own semantic custom media, generated in `main.css` from site params — so the breakpoint and the `.panel-inline-*` classes in the markup cannot drift:
+Components that own a panel (header, filters, sidebar menu, table of contents) get their own semantic custom media, generated in `main.css` from site params, so the breakpoint and the `.panel-inline-*` classes in the markup cannot drift:
 
 ```yml
 # /config/_default/params.yaml
@@ -92,18 +92,18 @@ header:
 Heading font sizes are **fluid**: each level references a `clamp()` token from the semantic scale, so no media query is involved.
 
 ```css
-/* @uncinq/design-tokens — semantic/typography.css */
+/* @uncinq/design-tokens, semantic/typography.css */
 --font-size-fluid-xl:   clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
 --font-size-heading-01: var(--font-size-fluid-xl);
 --font-size-heading-02: var(--font-size-fluid-lg);
 ```
 
 ```css
-/* @uncinq/css-base — base/headings.css */
+/* @uncinq/css-base, base/headings.css */
 h1 { --font-size-heading: var(--font-size-heading-01); }
 ```
 
-To change a heading size, redefine the token — not the selector:
+To change a heading size, redefine the token, not the selector:
 
 ```css
 /* assets/css/tokens/site.css */
@@ -119,13 +119,13 @@ To change a heading size, redefine the token — not the selector:
 Some component tokens change at breakpoints. The breakpoint logic lives in the **component CSS**, not in the token file: token files only hold static values, and the media query just reassigns the token the component reads.
 
 ```css
-/* @uncinq/component-tokens — components/container.css — static values */
+/* @uncinq/component-tokens, components/container.css: static values */
 --container-max-width-tablet:      100%;
 --container-max-width-tablet-wide: 100%;
 --container-max-width-laptop:      100%;
 --container-max-width-desktop:     var(--size-desktop);
 
-/* @uncinq/css-base — layouts/container.css — responsive logic */
+/* @uncinq/css-base, layouts/container.css: responsive logic */
 .container {
   max-width: var(--container-max-width, var(--container-max-width-mobile));
 
@@ -209,7 +209,7 @@ Your own dark values go under the same guard, so a site switched back to light k
 
 ## Where overrides go
 
-The module ships four empty files, imported last by `main.css` in this order — tokens first, rules after, and **site after theme** in each pair:
+The module ships four empty files, imported last by `main.css` in this order: tokens first, rules after, and **site after theme** in each pair:
 
 ```text
 tokens/theme.css → tokens/site.css → theme.css → site.css
@@ -217,7 +217,7 @@ tokens/theme.css → tokens/site.css → theme.css → site.css
 
 In both pairs the split is the same, and it is about lifespan, not about size: what a second site would want too goes in the `theme` file, typically shipped as a theme module of your own; what only this project needs goes in the `site` file. A project with no shared look uses the `site` files only, and never has to touch the theme ones.
 
-The four files are empty in the module — create the one you need at the same path in your project, and Hugo's asset priority (project > theme > modules) replaces it.
+The four files are empty in the module: create the one you need at the same path in your project, and Hugo's asset priority (project > theme > modules) replaces it.
 
 ## Overriding tokens
 
@@ -225,11 +225,11 @@ Two entry points, both imported after `tokens/design-system.css`, so they cascad
 
 | File | Use for |
 | --- | --- |
-| `assets/css/tokens/theme.css` | the tokens that define a **reusable look** — brand colors, typography, radius scale |
+| `assets/css/tokens/theme.css` | the tokens that define a **reusable look**: brand colors, typography, radius scale |
 | `assets/css/tokens/site.css` | the tokens **this site alone** changes |
 
 ```css
-/* assets/css/tokens/theme.css — the look, reusable across sites */
+/* assets/css/tokens/theme.css: the look, reusable across sites */
 @layer tokens {
   :root {
     --color-brand: #e63946;
@@ -239,7 +239,7 @@ Two entry points, both imported after `tokens/design-system.css`, so they cascad
 ```
 
 ```css
-/* assets/css/tokens/site.css — this site only, wins over the theme above */
+/* assets/css/tokens/site.css: this site only, wins over the theme above */
 @layer tokens {
   :root {
     --header-height: 72px;
@@ -264,7 +264,7 @@ Same split for rules that no token covers. Write to the same layer as the rule y
 ```
 
 {{< alert-block title="Check first" state="warning" >}}
-Two things to check first: a token often covers the case (`--card-color-background`, `--hero-min-height`…), and a modifier class often exists (`.hero-center`, `.block-dark`, `.btn-ghost`…) — reach for the markup or the token before writing a rule. The block and hero classes are listed in [UI](/docs/customization/ui/).
+Two things to check first: a token often covers the case (`--card-color-background`, `--hero-min-height`…), and a modifier class often exists (`.hero-center`, `.block-dark`, `.btn-ghost`…). Reach for the markup or the token before writing a rule. The block and hero classes are listed in [UI](/docs/customization/ui/).
 {{< /alert-block >}}
 
 ## Component variants

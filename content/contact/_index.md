@@ -19,14 +19,15 @@ blocks:
     background: false
     heading:
       surtitle: Github
-      title: Create an issue or discussion
+      title: Create an issue
     items:
-      - icon: github
+      - icon: brand:github
         title: Github
         text: Repositories
         cta:
           blank: true
           title: Hugolify Github repositories
+          link: true
           text: Link
           url: https://www.github.com/hugolify/
       - icon: kanban
@@ -35,14 +36,16 @@ blocks:
         cta:
           blank: true
           title: Hugolify Github project
+          link: true
           text: Link
           url: https://github.com/orgs/Hugolify/projects/1
-      - icon: chat
-        title: Github
+      - icon: brand:discord
+        title: Discord
         text: Discussions
         cta:
           blank: true
-          title: Hugolify Github discussions
+          link: true
+          title: Hugolify Discord Server
           text: Link
-          url: https://github.com/orgs/Hugolify/discussions
+          url: https://www.hugolify.io/chat
 ---

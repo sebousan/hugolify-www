@@ -1,14 +1,14 @@
 _merge: deep
 
 # Website
-bootstrap:
-  modal: false
-  tooltip: false
+analytics:
+  plausible:
+    script_id: pa-oK23NHWTjE3Tocm0Dc0rl
 carousel: false
-map: true
+map: false
 search:
   enable: true
-  layout: offcanvas
+  layout: drawer
   showImages: false
   sort: true
 docs:
@@ -23,10 +23,10 @@ admin:
   # Cloud
   media:
     cloud:
-      name: cloudinary 
+      name: cloudinary
       cloud_name: uncinq
       api_key: 733153572642938
-  
+
   # Collections
   collections:
     docs:

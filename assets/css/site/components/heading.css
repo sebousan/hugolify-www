@@ -1,0 +1,18 @@
+/* site/components/heading.css */
+@layer components {
+  /* Block headings and footings are centred, as in the SASS site. Only them:
+     the items of the block keep their own alignment, which is why this is not
+     ui.align (that one centres the whole block). The editorial blocks keep
+     their text against their image. */
+  .block:not(.block-editorial) {
+    :is(.heading, .footing) {
+      align-items: center;
+      text-align: center;
+    }
+
+    .block-content > .cta,
+    :is(.heading, .footing) .cta {
+      justify-content: center;
+    }
+  }
+}

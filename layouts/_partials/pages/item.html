@@ -1,0 +1,6 @@
+{{- /* pages/item.html: the core v2 item, plus the docs status badge */ -}}
+<article class="item page" {{- partial "func/SetAnim.html" (dict "element" "item") }}>
+  {{ partial "pages/item/content.html" . }}
+  {{ partial "docs/item/status.html" . }}
+  {{ partial "pages/item/media.html" . }}
+</article>

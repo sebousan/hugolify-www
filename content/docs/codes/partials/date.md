@@ -1,7 +1,7 @@
 ---
 title: Date
 description: Displays a paragraph tag with a formating and localize date.
-icon: calendar-date
+icon: calendar-days
 ---
 ## Example
 
@@ -29,5 +29,5 @@ format: "" // default is ":date_full" https://gohugo.io/functions/time/format/
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/date.html" text="Date commons file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/time.html" text="Time commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/date.html" text="Date commons file (hugolify-theme)" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/time.html" text="Time commons file (hugolify-theme)" >}}

@@ -3,7 +3,7 @@ isIndex: false
 title: Best practices
 description: To lighten and make the code more semantic and readable.
 weight: 8
-icon: hand-thumbs-up
+icon: thumbs-up
 ---
 
 ## Agnostic templates

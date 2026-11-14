@@ -1,6 +1,6 @@
 ---
 title: Github Pages
-icon: github
+icon: brand:github
 ---
 
 ## Not available

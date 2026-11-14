@@ -1,7 +1,7 @@
 ---
 title: Pushes
 description: Displays some images cards in column. Alignment and button are available
-icon: credit-card-2-front
+icon: credit-card
 seo:
   title: Block Pushes
 ---
@@ -63,33 +63,39 @@ See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carous
 Mobile image width, when the default container width does not suit.
 
 ```yml
-params:
-  blocks:
-    pushes:
-      mobile: 336 # number, in pixels
+blocks:
+  pushes:
+    mobile: 336 # number, in pixels
 ```
 
 {{< button url="https://demo.hugolify.io/blocks/pushes/" text="Demo visual renderer" blank="true" >}}
 
 ## Files
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/pushes.html" text="HTML file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_pushes.sass" text="SASS file — hugolify-theme-bootstrap" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-pushes.css" text="CSS file — hugolify-theme-design-system" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/pushes.md" text="Demo content file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/partials/admin/blocks/types/pushes.yml" text="Hugolify admin file" >}}
+| Module | Files |
+| --- | --- |
+| hugolify-theme | {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/templates/pushes.html" text="Template" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/blocks/templates/pushes" text="Sub-templates" >}} |
+| hugolify-admin | {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/types/pushes.yml" text="Block type" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/fields/pushes.html" text="Fields" >}} |
+| hugolify-example-blocks | {{< blank_link link="https://github.com/Hugolify/hugolify-example-blocks/tree/main/content/docs/pushes" text="Demo content" >}} |
+
+## Styling availability
+
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_pushes.sass" text="SASS" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-pushes.css" text="CSS" >}} |
 
 ## CMS availability
 
 | CMS | Hugolify Admin v2 |
 | --- | --- |
-| [CloudCannon](/docs/admin/v1/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
-| [Decap CMS](/docs/admin/v1/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
-| [Netlify CMS](/docs/admin/v1/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
-| [Pages CMS](/docs/admin/v1/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
-| [Static CMS](/docs/admin/v1/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
-| [Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
-| [Tina CMS](/docs/admin/v1/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
 
 {{< alert-block state="warning" >}}
 The CMS writes an item's appearance at the item root, the legacy form the theme still reads. `align`, `vertical_align` and the item `video` have no field yet and are set in the front matter.

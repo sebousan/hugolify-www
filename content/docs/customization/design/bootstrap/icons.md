@@ -2,7 +2,7 @@
 title: Icons
 description: Bootstrap, Materials, Icomoon icons…
 weight: 5
-icon: emoji-smile
+icon: face-slightly-smiling
 ---
 
 {{< alert-block title="Overview" state="info" >}}

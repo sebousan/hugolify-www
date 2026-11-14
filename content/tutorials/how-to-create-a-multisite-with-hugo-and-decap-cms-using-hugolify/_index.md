@@ -332,7 +332,7 @@ Edit all your content in <http://localhost:1313/admin/>.
 
 * [Add an available Hugolify theme](/docs/customization/themes/)
 * [How to customize design](/docs/customization/)
-* [How to customize admin fields](/docs/admin/v1/fields/)
+* [How to customize admin fields](/docs/admin/fields/)
 
 ## Hosting
 

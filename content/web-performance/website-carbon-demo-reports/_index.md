@@ -25,10 +25,10 @@ blocks:
         title: Cleaner
         text: This web page is cleaner than 92% of web pages tested
   - type: cta
-    cta:
-      blank: true
-      url: https://www.websitecarbon.com/website/demo-hugolify-io/
-      text: Discovert report
+    ctas:
+      - blank: true
+        url: https://www.websitecarbon.com/website/demo-hugolify-io/
+        text: Discover the report
     background: false
   - type: figure
     heading:

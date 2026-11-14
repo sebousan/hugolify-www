@@ -1,7 +1,7 @@
 ---
 title: Favicons
 description: To replace or add favicons…
-icon: browser-chrome
+icon: brand:googlechrome
 ---
 
 ## Icons

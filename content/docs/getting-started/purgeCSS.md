@@ -2,7 +2,7 @@
 title: PurgeCSS
 description: To remove all unused CSS from Bootstrap and Hugolify, we use PurgeCSS to clean it.
 weight: 5
-icon: filetype-css
+icon: brand:css
 ---
 
 ## Setup

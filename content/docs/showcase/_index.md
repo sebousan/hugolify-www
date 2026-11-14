@@ -2,7 +2,7 @@
 title: Showcase
 description: Some demos websites using Hugolify.
 weight: 6
-icon: window-fullscreen
+icon: fullscreen
 ---
 
 ## v2

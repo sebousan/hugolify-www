@@ -1,0 +1,8 @@
+{{- /*
+  commons/logo.html: this site has no logo image, so the logo is a text
+  wordmark. It shows site.Title, as in v1, rather than the core's default, the
+  title of data/seo.yml, which here is the tagline appended to every <title>.
+*/ -}}
+<a class="logo" href="{{ site.Home.Permalink }}" title="{{ i18n "navigation.home" }}">
+  {{- site.Title -}}
+</a>

@@ -1,0 +1,26 @@
+{{- /*
+  docs/container.html: hugolify-theme-docs v2 container, plus the blocks of
+  the page between its children and its content.
+*/ -}}
+{{- if or .Pages .Content }}
+  {{- $isAside := site.Params.docs.sidebarmenu | default true -}}
+  <div class="container container-list">
+    {{- if $isAside -}}
+    <div class="grid">
+      {{ partial "docs/sidebarmenu.html" . }}
+      <div>
+    {{- end -}}
+
+    {{ partial "docs/heading.html" . }}
+    {{ partial "docs/children.html" . }}
+    {{ partial "blocks/list.html" . }}
+    {{- if .Content }}
+      {{ partial "docs/page-content.html" . }}
+    {{ end -}}
+
+    {{- if $isAside -}}
+      </div>
+    </div>
+    {{- end -}}
+  </div>
+{{ end -}}

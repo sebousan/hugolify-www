@@ -2,5 +2,5 @@
 title: Sections
 description: All sections available.
 weight: 2
-icon: collection
+icon: gallery-vertical-end
 ---

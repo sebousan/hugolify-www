@@ -2,7 +2,7 @@
 title: PostCSS
 description: The PostCSS config and PurgeCSS setup required by hugolify-theme-bootstrap
 weight: 2
-icon: filetype-js
+icon: brand:postcss
 aliases:
   - /docs/customization/purgecss/
 ---

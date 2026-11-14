@@ -32,7 +32,7 @@ The `analytics` category loads Google Analytics and [Matomo](/docs/getting-start
 
 CookieConsent runs any script marked with a category once the visitor accepts it. Add them to the script partial, rendered at the end of `body`.
 
-{{< alert text="`/layouts/partials/footer/scripts.html`" state="light" >}}
+{{< alert text="`/layouts/_partials/footer/scripts.html`" state="light" >}}
 
 ```html
 <script type="text/plain" data-category="marketing" data-service="Example">

@@ -1,7 +1,7 @@
 ---
 title: Icons
 description: Lucide and Simple Icons with hugolify-theme-icons module
-icon: emoji-smile
+icon: face-slightly-smiling
 aliases:
   - /docs/customization/design/design-system/icons/
 ---
@@ -13,7 +13,9 @@ The module is opt-in: a project that does not import it renders no icons. It shi
 {{< /alert-block >}}
 
 {{< alert-block title="Not compatible with hugolify-theme-bootstrap" state="warning" >}}
-For now the module targets **hugolify-theme-design-system** only. **hugolify-theme-bootstrap** comes with its own icons — the {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons" >}} webfont — and both define a `.icon` class: importing the two together makes them collide.
+For now the module targets **hugolify-theme-design-system** only.
+
+**hugolify-theme-bootstrap** comes with its own icons, the {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons" >}} webfont, and both define a `.icon` class: importing the two together makes them collide.
 {{< /alert-block >}}
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-theme-icons" text="hugolify-theme-icons on GitHub" >}}
@@ -31,6 +33,8 @@ The UI and content set, and the only one for that role: over 1700 outline icons,
 ```go-html-template
 {{ partial "icon" "map-pin" }}
 ```
+
+Lucide draws outlines only: the `solid:` prefix fills an icon in, see [Solid icons](#solid-icons).
 
 ### Simple Icons
 
@@ -64,8 +68,9 @@ Requires Hugo >= **0.128.0** (`templates.Defer`).
 ## Usage
 
 ```go-html-template
-{{ partial "icon" "map-pin" }}      {{/* UI icon — Lucide name, as-is */}}
-{{ partial "icon" "brand:github" }} {{/* brand icon — Simple Icons */}}
+{{ partial "icon" "map-pin" }}      {{/* UI icon: Lucide name, as-is */}}
+{{ partial "icon" "solid:star" }}   {{/* UI icon, filled in */}}
+{{ partial "icon" "brand:github" }} {{/* brand icon: Simple Icons */}}
 ```
 
 The name **is** the filename: there is no mapping table and no alias layer. Browse the {{< blank_link link="https://lucide.dev/icons/" text="Lucide icon list" >}} to find a name.
@@ -75,6 +80,29 @@ The rendered DOM is a single element, no inline SVG:
 ```html
 <i class="icon icon-map-pin" aria-hidden="true"></i>
 ```
+
+## Solid icons
+
+{{< badge text="Since hugolify-theme-icons 1.5.0" state="info" >}}
+
+Lucide ships no filled icon: there is no `star-fill` to ask for. The `solid:` prefix fills one in, the way `brand:` picks a logo:
+
+```go-html-template
+{{ partial "icon" "solid:star" }}
+```
+
+```html
+<i class="icon icon-star icon-solid" aria-hidden="true"></i>
+```
+
+The name stays the Lucide one: `solid:` is a rendering of that icon, not another icon. At build time, the shape the outline draws is painted, and the stroke stays on top, with its weight and round joins. The color is still `--icon-color`.
+
+It works wherever a name goes through the icon partial, the [`icon` shortcode](/docs/shortcodes/icon/) included: `{{</* icon icon="solid:star" */>}}`.
+
+- It suits silhouettes, closed shapes such as `star`, `heart`, `bookmark` or `circle`: the stars of a rating, a toggled heart. On an icon drawn with inner details or open strokes, the fill covers the details: pick another icon.
+- Both renderings of an icon can sit on the same page: `.icon-star.icon-solid` outranks `.icon-star`.
+- It changes nothing on a brand, already a solid fill.
+- It belongs to hugolify-theme-icons. Bootstrap Icons, with hugolify-theme-bootstrap, has filled icons of its own, named with `-fill` (`star-fill`).
 
 ## Approach
 
@@ -102,7 +130,7 @@ Size and color are overridden with the two custom properties:
 }
 ```
 
-Brand icons render **monochrome** — the norm for social rows. A colored logo needs an inline SVG instead of a mask.
+Brand icons render **monochrome**, the norm for social rows. A colored logo needs an inline SVG instead of a mask.
 
 ## Stroke weight
 
@@ -134,11 +162,11 @@ There is no project-side build step and no Node script. The subset ships nativel
 
 Nothing to run, and nothing to commit: there is no `yarn build:icons` step as with the Bootstrap Icons font, and no generated font file in the project.
 
-An unknown name logs a build warning and renders nothing — the default glyph is an empty SVG, so a missing icon is invisible rather than a solid square.
+An unknown name logs a build warning and renders nothing: the default glyph is an empty SVG, so a missing icon is invisible rather than a solid square.
 
 ## Missing brands
 
-Some brands are dropped by both Simple Icons and Lucide. The module ships curated SVGs in its own `assets/icons/brands/`, and local assets take precedence over the imported modules — so you can add a missing brand in your project at the same path:
+Some brands are dropped by both Simple Icons and Lucide. The module ships curated SVGs in its own `assets/icons/brands/`, and local assets take precedence over the imported modules, so you can add a missing brand in your project at the same path:
 
 ```txt
 assets/

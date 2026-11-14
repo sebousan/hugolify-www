@@ -1,15 +1,15 @@
 ---
 title: UI
-description: Layout classes shared by blocks and hero — theme, grid, align, layout, offset
-icon: ui-checks-grid
+description: "Layout classes shared by blocks and hero: theme, grid, align, layout, offset, scrollsnap…"
+icon: list-checks
 weight: 2
 ---
 
 {{< alert-block title="Overview" state="info" >}}
-Blocks and hero expose their layout options through a `ui` object in the front matter. **hugolify-theme** turns each value into a CSS class — it holds no style itself, so the class is only meaningful if the active styling module implements it.
+Blocks and hero expose their layout options through a `ui` object in the front matter. **hugolify-theme** turns each value into a CSS class. It holds no style itself, so the class is only meaningful if the active styling module implements it.
 {{< /alert-block >}}
 
-The value **is** the class: `theme: dark` renders `block-dark`, `grid: full` renders `block-full`. A value the module does not style renders markup with no visual effect, never an error — which is why the tables below list the coverage of each module.
+The value **is** the class: `theme: dark` renders `block-dark`, `grid: full` renders `block-full`. A value the module does not style renders markup with no visual effect, never an error, which is why the tables below list the coverage of each module.
 
 ## Blocks
 
@@ -26,21 +26,48 @@ blocks:
       layout: carousel # block-carousel
 ```
 
-The class string is built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockClasses.html" text="func/GetBlockClasses.html" >}}, always prefixed with `block-`, alongside the block's own type class (`block-editorial`).
+The class string is built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetBlockClasses.html" text="func/GetBlockClasses.html" >}}, always prefixed with `block-`, alongside the block's own type class (`block-editorial`).
 
 | Front matter | Class | Design System | Bootstrap |
 | --- | --- | --- | --- |
-| `theme` | `block-<value>` | `accent` `black` `dark` `highlight` `light` `neutral` `white` | — only the legacy `.block-bg` (`background: true`) |
-| `align` | `block-align-<value>` | `start` `center` `end` | — |
-| `layout` | `block-<value>` | `carousel` | — |
+| `theme` | `block-<value>` | `accent` `black` `dark` `highlight` `light` `neutral` `white` | Only the legacy `.block-bg` (`background: true`) |
+| `align` | `block-align-<value>` | `start` `center` `end` | None |
+| `layout` | `block-<value>` | `carousel` | None |
 | `grid` | `block-<value>` | `full` (padding), width via `col-*` | width via `col-*` |
 | `offset` | `block-<value>` | position via `offset-*` | position via `offset-*` |
 
 Available `theme` and `grid` values are declared per project in the admin config (`params.admin.fields.theme.options` and `.grid.options`, default `light` `dark` `accent` and `container` `small` `medium` `large` `full`). `align` and `offset` are always `start`, `center` or `end`.
 
+### Items, scroll snap and media
+
+The keys that only some blocks take do not become a `block-*` class: they act on the row of items, or on the media.
+
+{{< alert text="`ui` object in a block's front matter" state="light" >}}
+
+```yml
+blocks:
+  - type: informations
+    ui:
+      column: 3      # items-3 on the row of items
+      ratio: 1       # square images
+      scrollsnap: md # scrollsnap-md: a carousel below md
+```
+
+| Front matter | Output | Design System | Bootstrap |
+| --- | --- | --- | --- |
+| `column` | `items-<value>` on the row of items | `1` to `20`, from tablet up | Per block: comparison, datas, gallery, informations, logos |
+| `scrollsnap` | `scrollsnap` (every width) or `scrollsnap-<breakpoint>` on the row of items, plus `js-scrollsnap-nav` and `js-scrollsnap-pagination` for the buttons and the dots | ✓ every breakpoint, buttons and dots | Ignored: informations, latest, selected and testimonials scroll below `lg` on their own, without buttons or dots |
+| `ratio` | Images cropped to the ratio, plus `--block-figure-ratio` or `--gallery-item-ratio` for the SVGs, which are never cropped | ✓ | Cropped images only |
+| `direction` | `block-<type>-<value>`, such as `block-editorial-rtl` | ✓ | ✓ |
+| `carousel` | Options of the Splide carousel, with `layout: carousel` | ✓ | ✓ |
+
+`scrollsnap` takes a breakpoint (`sm` `md` `lg` `xl`, `all` or `none`), or an object adding the buttons and the dots. It is resolved by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/SetScrollsnap.html" text="func/SetScrollsnap.html" >}}, its classes come from `@uncinq/css-components`.
+
+{{< button url="/docs/blocks/#scrollsnap" text="See scrollsnap" >}} {{< button url="/docs/blocks/#ui" text="See the ui keys of each block" >}}
+
 ### Columns
 
-`grid` and `offset` do not size the block themselves: {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetColOffsetClass.html" text="func/GetColOffsetClass.html" >}} maps them to semantic column classes, implemented by both modules.
+`grid` and `offset` do not size the block themselves: {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetColOffsetClass.html" text="func/GetColOffsetClass.html" >}} maps them to semantic column classes, implemented by both modules.
 
 | Class | Span | Design System | Bootstrap |
 | --- | --- | --- | --- |
@@ -55,30 +82,7 @@ The spans are relative to the active column count, not hardcoded to 12: `@uncinq
 
 ### Defaults per block
 
-A `ui` value in the front matter belongs to that block alone. To give every block of a type the same look, declare it once outside the content: changing it later restyles the blocks already written, instead of leaving them behind.
-
-Two places take that declaration, and they stack.
-
-#### In the config — what the project ships
-
-{{< alert text="`/config/_default/params.yaml`" state="light" >}}
-
-```yml
-params:
-  blocks:
-    latest:
-      ui:
-        align: center
-        grid: large
-        layout: grid
-        offset: center
-```
-
-This is the developer's level. It travels with the repository and is not editable from the CMS, which is what you want for a decision the project should not drift away from.
-
-#### In the data — what the CMS can retune
-
-`/data/blocks.yml` holds the same thing in the same shape, and hugolify-admin exposes it as a **Blocks** file in the *config* collection. An integrator adjusts a block type there without touching the repository.
+A `ui` value in the front matter belongs to that block alone. To give every block of a type the same look, declare it once in `/data/blocks.yml`, outside the content: changing it later restyles the blocks already written, instead of leaving them behind.
 
 {{< alert text="`/data/blocks.yml`" state="light" >}}
 
@@ -91,24 +95,27 @@ latest:
     offset: center
 ```
 
-The form lists every block type the project enables, one collapsible section each, `selected-*` variants included. A section arrives open when it already carries a value, so the screen says at a glance which of the types the site actually styles.
+hugolify-admin exposes the file as a **Blocks** file in the *config* collection, so an editor adjusts a block type without touching the repository. The form lists every block type the project enables, one collapsible section each, `selected-*` variants included. A section arrives open when it already carries a value, so the screen says at a glance which of the types the site actually styles.
 
-Values are read key by key, so a field left empty in the CMS falls back to the config rather than erasing it. A type can therefore be split between the two: the grid fixed in `params.yaml`, the theme left open to the CMS.
+Values are read key by key, so a field left empty in the CMS is ignored rather than erasing a default.
 
 The file is not translated. How a block looks is not language content, so one `/data/blocks.yml` answers for every locale.
 
 #### The ladder
 
-{{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} resolves four levels, from the weakest to the strongest:
+{{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} resolves three levels, from the weakest to the strongest:
 
-1. `params.blocks.<type>.ui` — the look the project ships
-2. `data/blocks.yml` → `<type>.ui` — the look the CMS sets, key by key
-3. the keys at the root of the block — the legacy v1 form
-4. the keys under the block's own `ui` — **they win even when empty**, which is how one block opts out of a default
+1. `/data/blocks.yml` → `<type>.ui`: the look of the block type
+2. the keys at the root of the block: the legacy v1 form
+3. the keys under the block's own `ui`: **they win even when empty**, which is how one block opts out of a default
 
-What an editor picks on a block itself lands in the fourth level, so it always wins over both defaults.
+What an editor picks on a block itself lands in the last level, so it always wins over the default.
 
-Every key of the table above is accepted. `scrollsnap` goes in either place too, in the same order, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own — see [scrollsnap](/docs/blocks/#scrollsnap).
+Every key of the tables above is accepted. `scrollsnap` goes in the file too, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own, see [scrollsnap](/docs/blocks/#scrollsnap).
+
+{{< alert-block title="Defaults written in the params" state="info" >}}
+Before the data file, these defaults went under `params.blocks.<type>.ui`, in `/config/_default/params.yaml`. hugolify-theme still reads them, below `/data/blocks.yml`, so a project moves them at its own pace.
+{{< /alert-block >}}
 
 {{< alert-block title="Calling a block template by hand" state="info" >}}
 Each template names itself, so a partial rendering a block outside the `blocks` list of a page gets the defaults and the `block-<type>` class without passing anything. Pass `type` only to read the defaults of a more specific type, such as a `selected-*` variant rendered by `selected.html`.
@@ -142,26 +149,26 @@ hero:
     background: true      # hero-with-cover hero-with-cover-image (darken whole background)
 ```
 
-Classes are built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/hero.html" text="commons/hero.html" >}}.
+Classes are built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/hero.html" text="commons/hero.html" >}}.
 
 | Front matter | Class | Design System | Bootstrap |
 | --- | --- | --- | --- |
 | `align: center` / `end` | `hero-center` `hero-end` | ✓ | ✓ |
-| `theme` | `hero-<value>` — `accent` `black` `dark` `highlight` `light` `neutral` `white` | ✓ | ✓ |
+| `theme` | `hero-<value>`: `accent` `black` `dark` `highlight` `light` `neutral` `white` | ✓ | ✓ |
 | `image` / `video` + `background` | `hero-with-cover` + `hero-with-cover-image` / `-video` | ✓ | ✓ |
 | `image` / `video` (side media) | `hero-with-image` / `hero-with-video` | ✓ | ✓ |
 | cover darkening | `hero-cover-darken` | ✓ | ✓ |
-| `vertical_align` | `hero-vertical-<value>` | ✓ | — |
-| `darken: true` | `hero-with-darken` | ✓ | — |
+| `vertical_align` | `hero-vertical-<value>` | ✓ | No |
+| `darken: true` | `hero-with-darken` | ✓ | No |
 
 The hero themes are the one place where the two modules are explicitly kept in sync: `_hero-theme.sass` in **hugolify-theme-bootstrap** is a port of `hero-theme.css` from `@uncinq/css-components`, generated from the same seven names.
 
 ## Adding a variant
 
-A value with no CSS is inert, so a project-specific variant only needs a rule in the right layer — no template change:
+A value with no CSS is inert, so a project-specific variant only needs a rule in the right layer, with no template change:
 
 ```css
-/* assets/css/site.css — hugolify-theme-design-system */
+/* assets/css/site.css, hugolify-theme-design-system */
 @layer components {
   .block-brand {
     --block-color-background: var(--color-brand);

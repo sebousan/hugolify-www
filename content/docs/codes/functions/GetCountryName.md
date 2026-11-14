@@ -16,4 +16,4 @@ The country of an address is one of the 249 of ISO 3166-1, listed by `admin/func
 ## Related links
 
 - [Names of languages and countries](/docs/customization/structured-data/#names-of-languages-and-countries)
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetCountryName.html" text="Func file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetCountryName.html" text="Func file" >}}

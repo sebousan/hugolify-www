@@ -1,7 +1,7 @@
 ---
 title: Selected
 description: Displays a selection of items from a sections
-icon: check-all
+icon: check-check
 seo:
   title: Block Selected
 ---
@@ -32,11 +32,11 @@ blocks:
       carousel: {} # only with layout: carousel (optional)
 ```
 
-Four ways to fill the block. `source: selection` takes the pages one by one in `items`, in that order. `source: taxonomies` takes every page of the section matching **all** the taxonomy terms set on the block — an empty taxonomy is ignored — and the block then carries one field per taxonomy of that section, named after the taxonomy itself (`categories`, `tags`, `persons_statutes`…). `source: children` takes the children of the pages set in `parent`, the sub-expertises of an expertise for one. `source: toplevel` takes the first level of the section, the expertises rather than their sub-expertises, and needs no field: both follow the tree as it grows.
+Four ways to fill the block. `source: selection` takes the pages one by one in `items`, in that order. `source: taxonomies` takes every page of the section matching **all** the taxonomy terms set on the block (an empty taxonomy is ignored), and the block then carries one field per taxonomy of that section, named after the taxonomy itself (`categories`, `tags`, `persons_statutes`…). `source: children` takes the children of the pages set in `parent`, the sub-expertises of an expertise for one. `source: toplevel` takes the first level of the section, the expertises rather than their sub-expertises, and needs no field: both follow the tree as it grows.
 
-`source: children` and `source: toplevel` are offered to the sections the CMS lets you nest, those whose `nested.depth` is above 1 (see [nested collections](/docs/admin/v2/collections/#nested-collections)). Only the direct children of a parent come out: a deeper level would flatten the tree into a listing mixing an item and its own children.
+`source: children` and `source: toplevel` are offered to the sections the CMS lets you nest, those whose `nested.depth` is above 1 (see [nested collections](/docs/admin/collections/#nested-collections)). Only the direct children of a parent come out: a deeper level would flatten the tree into a listing mixing an item and its own children.
 
-With every source but `selection`, pages come out pinned first — those with a `weight` — then by date when the section has one, by title otherwise. The `persons` section keeps its own order, by status, then by `weight`, then by lastname.
+With every source but `selection`, pages come out pinned first (those with a `weight`), then by date when the section has one, by title otherwise. The `persons` section keeps its own order, by status, then by `weight`, then by lastname.
 
 `limit` caps the items shown, whatever the source: the latest posts of a category, the first sub-expertises of an expertise. Left empty, every item comes out.
 
@@ -48,20 +48,27 @@ See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carous
 
 ## Files
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/selected.html" text="HTML file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_selected.sass" text="SASS file — hugolify-theme-bootstrap" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-selected.css" text="CSS file — hugolify-theme-design-system" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/selected.md" text="Demo content file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/partials/admin/blocks/types/selected.yml" text="Hugolify admin file" >}}
+| Module | Files |
+| --- | --- |
+| hugolify-theme | {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/templates/selected.html" text="Template" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/blocks/templates/selected" text="Sub-templates" >}} |
+| hugolify-admin | {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/types/selected.yml" text="Block type" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/fields/selected.html" text="Fields" >}} |
+| hugolify-example-blocks | {{< blank_link link="https://github.com/Hugolify/hugolify-example-blocks/blob/main/content/docs/selected.md" text="Demo content" >}} |
+
+## Styling availability
+
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_selected.sass" text="SASS" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-selected.css" text="CSS" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/css/tokens/components/block-selected.css" text="Tokens" >}} |
 
 ## CMS availability
 
 | CMS | Hugolify Admin v2 |
 | --- | --- |
-| [CloudCannon](/docs/admin/v1/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
-| [Decap CMS](/docs/admin/v1/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
-| [Netlify CMS](/docs/admin/v1/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
-| [Pages CMS](/docs/admin/v1/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
-| [Static CMS](/docs/admin/v1/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
-| [Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
-| [Tina CMS](/docs/admin/v1/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |

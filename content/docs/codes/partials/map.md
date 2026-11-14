@@ -1,7 +1,7 @@
 ---
 title: Map
 description: Displays an openstreetmap with markers.
-icon: geo-alt
+icon: map-pin
 ---
 ## Example
 
@@ -31,8 +31,14 @@ marker_hidden: false // boolean (optional)
 zoom: "" // int (optional)
 ```
 
+## Styling availability
+
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/_map.sass" text="SASS" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/js/features/map.js" text="JS" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/js/features/map.js" text="JS" >}} |
+
 ## Related links
 
 - [Enable / Disable javascript](/docs/customization/design/bootstrap/javascript/#map-leaflet)
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/map.html" text="Map commons file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/features/map.js" text="Map javascript file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/map.html" text="Map commons file (hugolify-theme)" >}}

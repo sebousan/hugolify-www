@@ -14,7 +14,7 @@ These services are supported for seamless media management and optimization in c
 
 ## Setup
 
-* [Hugolify Admin](/docs/admin/v1/setup/)
+* [Hugolify Admin](/docs/admin/setup/)
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -48,5 +48,6 @@ admin:
       name: uploadcare
       public_key: # write your uploadcare public api key
       tabs: "['file', 'url', 'gdrive']" # optional
+      filename: false # optional, Sveltia CMS appends the file name to the URL unless false
 ```
 

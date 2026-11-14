@@ -28,7 +28,7 @@ Every block page below documents its own fields. These three are shared.
 
 ### heading
 
-Rendered at the top of the block by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/heading.html" text="blocks/heading.html" >}}. Blocks whose content *is* a heading — `paragraph`, `editorial`, `alert`, `quote` — carry `surtitle` / `title` / `text` at their root instead.
+Rendered at the top of the block by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/heading.html" text="blocks/heading.html" >}}. Blocks whose content *is* a heading (`paragraph`, `editorial`, `alert`, `quote`) carry `surtitle` / `title` / `text` at their root instead.
 
 ```yml
 heading: {} # (optional)
@@ -40,7 +40,7 @@ heading: {} # (optional)
 
 ### footing
 
-Rendered at the bottom of the block by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/footing.html" text="blocks/footing.html" >}}. The `title` block has no footer.
+Rendered at the bottom of the block by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/footing.html" text="blocks/footing.html" >}}. The `title` block has no footer.
 
 ```yml
 footing: {} # (optional, front matter only)
@@ -84,7 +84,7 @@ Everything about how the block looks. The value **is** the CSS class: `theme: da
 | `direction` | `ltr` `rtl` | editorial |
 | `carousel` | object, only with `layout: carousel` | gallery, logos, pushes, selected, testimonials |
 
-Any of these can be set once for a whole block type: under `params.blocks.<type>.ui` for what the project ships, or under `<type>.ui` in `/data/blocks.yml` for what the CMS can retune, the data winning key by key. A block of a page overrides both, and drops a default by writing the key under its own `ui`, even empty.
+Any of these can be set once for a whole block type, under `<type>.ui` in `/data/blocks.yml`, the **Blocks** file the CMS edits in the *config* collection. A block of a page overrides it, and drops a default by writing the key under its own `ui`, even empty.
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
 
@@ -107,26 +107,30 @@ ui:
     pagination: true # [true, false, pointer] dots
 ```
 
-Each key falls back through the params ladder, most specific first, so a block overrides one without repeating the others. In the params it goes under `ui`, the same place as in the front matter:
+Each key falls back through a ladder, most specific first, so a block overrides one without repeating the others: the block itself, its block type and every block in `/data/blocks.yml`, then the whole site in the params.
+
+{{< alert text="`/data/blocks.yml`" state="light" >}}
 
 ```yml
-params:
-  blocks:
-    datas:
-      ui:
-        grid: medium
-        scrollsnap: lg
-    scrollsnap:
-      nav: pointer
+datas:
+  ui:
+    grid: medium
+    scrollsnap: lg # the datas blocks
+ui:
   scrollsnap:
-    pagination: true
+    nav: pointer # every block
 ```
 
-The two wider levels are not tied to a block, so they carry the key on their own. Written at a block level itself rather than under its `ui` it is still read — the form the params used before — and `ui` wins when a level carries both.
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
-Each rung of the ladder is read twice, `/data/blocks.yml` before `params.blocks`, so a breakpoint set from the CMS wins over the one the config ships. The data file is rooted at `blocks`, so it answers for `blocks.<type>` and `blocks`, never for the site-wide `scrollsnap`.
+```yml
+scrollsnap:
+  pagination: true # the whole site, lists of entries included
+```
 
-Unlike the other `ui` keys, `scrollsnap` is resolved by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/func/SetScrollsnap.html" text="func/SetScrollsnap.html" >}} rather than `GetBlockUI`: it does not become a `block-*` class, it puts a utility class on the row of items.
+The site-wide level stays in the params, as it also serves the lists of entries outside the blocks. A level may write the key at the level itself rather than under its `ui`, the older form, still read, and `ui` wins when a level carries both. hugolify-theme also still reads the block levels from `params.blocks`, below the data file.
+
+Unlike the other `ui` keys, `scrollsnap` is resolved by {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/_partials/func/SetScrollsnap.html" text="func/SetScrollsnap.html" >}} rather than `GetBlockUI`: it does not become a `block-*` class, it puts a utility class on the row of items.
 
 Defaults: breakpoint `md`, `nav: false`, `pagination: false`.
 
@@ -155,7 +159,7 @@ ui:
 
 ## Legacy front matter
 
-Before v2 the `ui` keys sat flat at the root of the block, and the theme mapped `background: true` to the `bg` theme. {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} still reads that form, so v1 content keeps rendering — but `ui` wins whenever both are set, and only `ui` is documented here.
+Before v2 the `ui` keys sat flat at the root of the block, and the theme mapped `background: true` to the `bg` theme. {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetBlockUI.html" text="func/GetBlockUI.html" >}} still reads that form, so v1 content keeps rendering. `ui` wins whenever both are set, and only `ui` is documented here.
 
 ```yml
 # Legacy, still read

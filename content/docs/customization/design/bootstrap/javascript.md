@@ -2,7 +2,7 @@
 title: Javascript
 description: Bootstrap and Vanilla JS
 weight: 4
-icon: filetype-js
+icon: brand:javascript
 ---
 
 {{< alert-block title="Overview" state="info" >}}
@@ -70,7 +70,7 @@ tile: 1 # default 0, Set 1 to 11 to change tile
 ```
 
 * {{< blank_link link="https://leafletjs.com/" text="Leaflet JS" >}}
-* {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/assets/js/datas/map-tiles.js" text="List of map tiles — hugolify-theme" >}}
+* {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/js/datas/map-tiles.js" text="List of map tiles (hugolify-theme-bootstrap)" >}}
 
 ### Parallax (Rellax)
 

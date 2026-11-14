@@ -1,6 +1,6 @@
 links:
   - title: Discord
-    url: https://discord.gg/VMdQdjvFg
+    url: https://www.hugolify.io/chat
     blank: true
   - title: Github
     url: https://www.github.com/hugolify/
@@ -9,5 +9,8 @@ links:
     url: https://www.linkedin.com/products/un-cinq-hugolify/
     blank: true
   - title: X
-    url: https://x.com/hugolify/
+    url: https://x.com/hugolify
+    blank: true
+  - title: Youtube
+    url: https://www.youtube.com/@Hugolifyio
     blank: true

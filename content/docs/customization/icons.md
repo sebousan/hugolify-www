@@ -34,6 +34,8 @@ The UI and content set, and the only one for that role: over 1700 outline icons,
 {{ partial "icon" "map-pin" }}
 ```
 
+Lucide draws outlines only: the `solid:` prefix fills an icon in, see [Solid icons](#solid-icons).
+
 ### Simple Icons
 
 {{< blank_link link="https://simpleicons.org/" text="Browse the Simple Icons list" >}}
@@ -67,6 +69,7 @@ Requires Hugo >= **0.128.0** (`templates.Defer`).
 
 ```go-html-template
 {{ partial "icon" "map-pin" }}      {{/* UI icon: Lucide name, as-is */}}
+{{ partial "icon" "solid:star" }}   {{/* UI icon, filled in */}}
 {{ partial "icon" "brand:github" }} {{/* brand icon: Simple Icons */}}
 ```
 
@@ -77,6 +80,29 @@ The rendered DOM is a single element, no inline SVG:
 ```html
 <i class="icon icon-map-pin" aria-hidden="true"></i>
 ```
+
+## Solid icons
+
+{{< badge text="Since hugolify-theme-icons 1.5.0" state="info" >}}
+
+Lucide ships no filled icon: there is no `star-fill` to ask for. The `solid:` prefix fills one in, the way `brand:` picks a logo:
+
+```go-html-template
+{{ partial "icon" "solid:star" }}
+```
+
+```html
+<i class="icon icon-star icon-solid" aria-hidden="true"></i>
+```
+
+The name stays the Lucide one: `solid:` is a rendering of that icon, not another icon. At build time, the shape the outline draws is painted, and the stroke stays on top, with its weight and round joins. The color is still `--icon-color`.
+
+It works wherever a name goes through the icon partial, the [`icon` shortcode](/docs/shortcodes/icon/) included: `{{</* icon icon="solid:star" */>}}`.
+
+- It suits silhouettes, closed shapes such as `star`, `heart`, `bookmark` or `circle`: the stars of a rating, a toggled heart. On an icon drawn with inner details or open strokes, the fill covers the details: pick another icon.
+- Both renderings of an icon can sit on the same page: `.icon-star.icon-solid` outranks `.icon-star`.
+- It changes nothing on a brand, already a solid fill.
+- It belongs to hugolify-theme-icons. Bootstrap Icons, with hugolify-theme-bootstrap, has filled icons of its own, named with `-fill` (`star-fill`).
 
 ## Approach
 

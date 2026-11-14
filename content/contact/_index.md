@@ -47,5 +47,5 @@ blocks:
           link: true
           title: Hugolify Discord Server
           text: Link
-          url: https://discord.gg/VMdQdjvFg
+          url: https://www.hugolify.io/chat
 ---

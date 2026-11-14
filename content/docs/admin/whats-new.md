@@ -72,7 +72,7 @@ These params decide which controls the editor **sees**, never what they hold. No
 
 ### Default appearance per block type
 
-The *config* collection gains a `blocks` file, written to `/data/blocks.yml`, holding the default `ui` of each block type. It is the CMS-editable twin of `params.blocks.<type>.ui`: same shape, read on top of it key by key, so a field left empty falls back to the config instead of erasing it.
+The *config* collection gains a `blocks` file, written to `/data/blocks.yml`, holding the default `ui` of each block type. It has the shape a block takes in its front matter, and is read key by key, so a field left empty is ignored rather than erasing a default.
 
 Add it to the collection the way you add any config file, by listing it in `files`:
 

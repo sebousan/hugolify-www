@@ -540,7 +540,7 @@ The footer accepts blocks, not just an information text.
 
 {{< badge text="New in v2" state="success" >}}
 
-Add `blocks` to `files` and the collection gains a file written to `/data/blocks.yml`, holding the default `ui` of each block type. It is the CMS-editable twin of `params.blocks.<type>.ui`: same shape, read on top of it key by key, so a field left empty falls back to the config instead of erasing it.
+Add `blocks` to `files` and the collection gains a file written to `/data/blocks.yml`, holding the default `ui` of each block type. It has the shape a block takes in its front matter, and is read key by key, so a field left empty is ignored rather than erasing a default.
 
 The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value.
 

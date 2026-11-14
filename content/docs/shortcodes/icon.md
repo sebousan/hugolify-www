@@ -12,6 +12,7 @@ icon: face-slightly-smiling
 
 ```go-html-template
 {{</* icon icon="phone" */>}}
+{{</* icon icon="solid:star" */>}}
 {{</* icon icon="brand:github" */>}}
 ```
 
@@ -27,9 +28,9 @@ The argument is named, never positional. The admin editors parse named arguments
 
 The markup is the same either way. What differs is who styles the class.
 
-With **hugolify-theme-icons** the shortcode goes through `_partials/icon.html`, which registers the name and serves the glyph from the stylesheet the module builds: [Lucide](/docs/customization/icons/#lucide) for content icons, [Simple Icons](/docs/customization/icons/#simple-icons) for the `brand:` prefix. Only the icons a page actually uses are built.
+With **hugolify-theme-icons** the shortcode goes through `_partials/icon.html`, which registers the name and serves the glyph from the stylesheet the module builds: [Lucide](/docs/customization/icons/#lucide) for content icons, [Simple Icons](/docs/customization/icons/#simple-icons) for the `brand:` prefix, and a [filled rendering](/docs/customization/icons/#solid-icons) of a Lucide icon for the `solid:` prefix. Only the icons a page actually uses are built.
 
-Without that partial the shortcode emits the class on its own, and the theme's icon font takes over, the Bootstrap Icons webfont in **hugolify-theme-bootstrap**. The `brand:` prefix is specific to hugolify-theme-icons and has no meaning there.
+Without that partial the shortcode emits the class on its own, and the theme's icon font takes over, the Bootstrap Icons webfont in **hugolify-theme-bootstrap**. The `brand:` and `solid:` prefixes are specific to hugolify-theme-icons and have no meaning there: Bootstrap Icons names its filled icons with `-fill`, such as `star-fill`.
 
 ## Datas
 

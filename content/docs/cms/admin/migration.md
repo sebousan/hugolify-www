@@ -89,7 +89,7 @@ In v0.9, fields output raw YAML directly. In v1, every field delegates to a **wi
 {{ partial "admin/widgets/file.js" $args }}
 ```
 
-{{< button text="Available widgets" url="/docs/admin/v1/widgets/" >}}
+{{< button text="Available widgets" url="/docs/cms/admin/widgets/" >}}
 
 ## Collections config
 

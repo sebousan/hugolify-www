@@ -8,15 +8,11 @@ seo:
   description: Simplify your Decap CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Maintained CMS" state="success" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - UUID widget
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Decap CMS
 
@@ -37,11 +33,12 @@ admin:
 
 ## Documentation
 
-- {{< blank_link link="https://decapcms.org/docs/intro/" text="https://decapcms.org/docs/" >}}
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
+- {{< blank_link link="https://decapcms.org/docs/intro/" text="Decap CMS documentation" >}}
+- {{< blank_link link="https://github.com/decaporg/decap-cms" text="Decap CMS repository" >}}
 
 ## Tutorials
 
 - [How to create a multisite with Hugo and Decap CMS using Hugolify](/tutorials/how-to-create-a-multisite-with-hugo-and-decap-cms-using-hugolify/)
 - [How to create a portfolio with Hugo and Decap CMS using Hugolify](/tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify/)
 - [How to create a blog with Hugo and Decap CMS using Hugolify](/tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify/)
-

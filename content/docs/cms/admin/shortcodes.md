@@ -2,12 +2,11 @@
 isIndex: false
 title: Shortcodes
 description: Add/modify shortcodes
-weight: 5
+weight: 6
 icon: braces-asterisk
 ---
 
-{{< alert text="Available for Decap CMS and Netlify CMS" state="warning" >}}
-
+{{< alert text="Available for CloudCannon, Decap CMS, Netlify CMS and Sveltia CMS" state="warning" >}}
 
 ## Add or remove shortcodes
 
@@ -16,20 +15,19 @@ icon: braces-asterisk
 All shortcodes are available by default but if you want hide or add your shortcodes, you can do it:
 
 ```yml
-params:
-  admin:
-    shortcodes:
-      # Array of available shortcodes
-      enable:
-        - alert
-        - badge
-        - blank_link
-        - blockquote
-        - button
-        - details
-        - map
-        - twitter
-        - youtube
+admin:
+  shortcodes:
+    # Array of available shortcodes
+    enable:
+      - alert
+      - badge
+      - blank_link
+      - blockquote
+      - button
+      - details
+      - map
+      - twitter
+      - youtube
 ```
 
 
@@ -38,10 +36,9 @@ params:
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
-params:
-  admin:
-    shortcodes:
-      enable: false
+admin:
+  shortcodes:
+    enable: false
 ```
 
 
@@ -59,6 +56,8 @@ layouts/
             └── decapcms/
                 └── shortcodes/
 ```
+
+{{< alert text="Keep these files in `layouts/partials/`: hugolify-admin v1 looks for them there, not in `layouts/_partials/`." state="warning" >}}
 
 And add it in enable shortcodes: [see above](#add-or-remove-shortcodes)
 

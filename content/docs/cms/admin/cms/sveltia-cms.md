@@ -8,19 +8,14 @@ seo:
   description: Simplify your Sveltia CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Maintained CMS" state="success" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Git Gateway
-- Nested pages
-- Netlify Identify
+- Netlify Identity
 
-See [current limitations](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations) and [features not to be implemented](https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented) in Sveltia CMS documentation.
+See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations" text="Current limitations" >}} and {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented" text="features not to be implemented" >}} in Sveltia CMS documentation.
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Sveltia CMS
 
@@ -32,9 +27,9 @@ admin:
   repo: Hugolify/hugolify-template # set your repository’s URL
 ```
 
-## Additional featured
+## Additional features
 
-### Disable Netlify identify
+### Disable Netlify Identity
 
 ```yaml
 admin:
@@ -63,8 +58,9 @@ Since {{< badge text="hugolify-admin v1.0.0" state="success" >}}
 
 - {{< blank_link link="https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web" text="Material Symbols" >}}
 
-## Documentations
+## Documentation
 
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
 - {{< blank_link link="https://sveltiacms.app/en/docs/" text="Sveltia CMS documentation" >}}
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="Sveltia CMS repository" >}}
 

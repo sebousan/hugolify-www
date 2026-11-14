@@ -5,7 +5,9 @@ weight: 2
 icon: collection
 ---
 
+{{< alert-block title="Info" state="info" >}}
 Collections are automatically added based on Hugolify modules added ([Sections](/docs/sections/)) or ([Taxonomies](/docs/taxonomies/))
+{{< /alert-block >}}
 
 ## Enable or disable collections
 
@@ -163,5 +165,7 @@ layouts/
         └── collections/
             └── types/
 ```
+
+{{< alert text="Keep these files in `layouts/partials/`: hugolify-admin v1 looks for them there, not in `layouts/_partials/`." state="warning" >}}
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/collections/types" text="See examples in repository" >}}

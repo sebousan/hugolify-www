@@ -8,7 +8,7 @@ seo:
   description: Simplify your Pages CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Maintained CMS" state="success" >}}
 {{< badge text="Compatibility WIP" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
@@ -17,10 +17,6 @@ seo:
 - Map Widget
 - Nested pages
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Pages CMS
 
@@ -55,9 +51,10 @@ admin:
 
 ## Documentation
 
-- {{< blank_link link="https://pagescms.org/docs/" text="https://pagescms.org/docs/" >}}
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
+- {{< blank_link link="https://pagescms.org/docs/" text="Pages CMS documentation" >}}
+- {{< blank_link link="https://github.com/pages-cms/pages-cms" text="Pages CMS repository" >}}
 
 ## Tutorial
 
 - [How to create a Website with Hugo and Pages CMS using Hugolify](/tutorials/how-to-create-a-website-with-hugo-and-pages-cms-using-hugolify/)
-

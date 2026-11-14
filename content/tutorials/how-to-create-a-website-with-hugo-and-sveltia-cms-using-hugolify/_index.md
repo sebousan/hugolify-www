@@ -48,8 +48,8 @@ imports:
 
 #### Tutorials
 
-* [How to create a blog featuring categories and tags using Hugolify](how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify)
-* [How to create a portfolio featuring categories using Hugolify](how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify)
+* [How to create a blog featuring categories and tags using Hugolify](/tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify/)
+* [How to create a portfolio featuring categories using Hugolify](/tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify/)
 
 
 ## Configuration

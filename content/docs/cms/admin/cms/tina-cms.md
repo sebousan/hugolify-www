@@ -11,18 +11,14 @@ status:
   state: danger
 ---
 {{< badge text="Not available in production" state="danger" >}}
-{{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Compatibility WIP" state="warning" >}}
+{{< badge text="Maintained CMS" state="success" >}}
+{{< badge text="Beta" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - i18n structure
 - Map Widget
 - Shortcodes
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Tina CMS
 
@@ -43,4 +39,6 @@ yarn build:config:tinacms
 
 ## Documentation
 
-- {{< blank_link link="https://tina.io/docs/" text="https://tina.io/docs/" >}}
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
+- {{< blank_link link="https://tina.io/docs/" text="Tina CMS documentation" >}}
+- {{< blank_link link="https://github.com/tinacms/tinacms" text="Tina CMS repository" >}}

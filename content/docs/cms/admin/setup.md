@@ -22,7 +22,7 @@ imports:
 # Default params
 admin:
 
-  cms: decapcms # optional, decapcms by default, list: https://www.hugolify.io/docs/cms/admin/cms/
+  cms: decapcms # optional, decapcms by default
   branch: main # optional, default "main"
   git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
   repo: # optional, e.g "hugolify/hugolify-template"
@@ -30,7 +30,7 @@ admin:
   config:
     id: false # use ID for dir/name files and relation
   nested:
-    depth: 2 # optional, set minimum 2, not supported for Sveltia CMS
+    depth: 2 # optional, set minimum 2, overridable per collection
   preview: false
   publish_mode: simple # optional, default "simple"
 
@@ -62,7 +62,7 @@ admin:
       name: cloudinary # or uploadcare
       cloud_name: # your cloudinary cloud name
       api_key: # your cloudinary api key
-      publicKey: # your uploadcare public api key
+      public_key: # your uploadcare public api key
     # Optional cloud settings [end]
 
     providers: # for sveltia-cms

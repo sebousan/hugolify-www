@@ -11,11 +11,7 @@ status:
   state: warning
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Deprecated CMS" state="warning" >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
+{{< badge text="Archived CMS" state="warning" >}}
 
 ## Enable Netlify CMS
 
@@ -28,8 +24,9 @@ admin:
 
 ## Icon library
 
-- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstraop Icons (via CSS)" >}}
+- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons (via CSS)" >}}
 
 ## Documentation
 
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
 - {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}

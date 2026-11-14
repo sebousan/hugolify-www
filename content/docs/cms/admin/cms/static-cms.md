@@ -9,16 +9,12 @@ status:
   state: warning
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Deprecated CMS" state="warning" >}}
+{{< badge text="Archived CMS" state="warning" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Cloud assets
 - Nested pages
 {{< /alert-block >}}
-
-## Setup
-
-- [Hugolify-admin](../setup/)
 
 ## Enable Static CMS
 
@@ -31,4 +27,5 @@ admin:
 
 ## Documentation
 
+- [Hugolify Admin setup](/docs/cms/admin/setup/)
 - {{< blank_link link="https://staticjscms.netlify.app/" text="https://staticjscms.netlify.app/" >}}

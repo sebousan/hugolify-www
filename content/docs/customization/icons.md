@@ -13,7 +13,9 @@ The module is opt-in: a project that does not import it renders no icons. It shi
 {{< /alert-block >}}
 
 {{< alert-block title="Not compatible with hugolify-theme-bootstrap" state="warning" >}}
-For now the module targets **hugolify-theme-design-system** only. **hugolify-theme-bootstrap** comes with its own icons — the {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons" >}} webfont — and both define a `.icon` class: importing the two together makes them collide.
+For now the module targets **hugolify-theme-design-system** only.
+
+**hugolify-theme-bootstrap** comes with its own icons, the {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons" >}} webfont, and both define a `.icon` class: importing the two together makes them collide.
 {{< /alert-block >}}
 
 {{< blank_link link="https://github.com/Hugolify/hugolify-theme-icons" text="hugolify-theme-icons on GitHub" >}}
@@ -64,8 +66,8 @@ Requires Hugo >= **0.128.0** (`templates.Defer`).
 ## Usage
 
 ```go-html-template
-{{ partial "icon" "map-pin" }}      {{/* UI icon — Lucide name, as-is */}}
-{{ partial "icon" "brand:github" }} {{/* brand icon — Simple Icons */}}
+{{ partial "icon" "map-pin" }}      {{/* UI icon: Lucide name, as-is */}}
+{{ partial "icon" "brand:github" }} {{/* brand icon: Simple Icons */}}
 ```
 
 The name **is** the filename: there is no mapping table and no alias layer. Browse the {{< blank_link link="https://lucide.dev/icons/" text="Lucide icon list" >}} to find a name.
@@ -102,7 +104,7 @@ Size and color are overridden with the two custom properties:
 }
 ```
 
-Brand icons render **monochrome** — the norm for social rows. A colored logo needs an inline SVG instead of a mask.
+Brand icons render **monochrome**, the norm for social rows. A colored logo needs an inline SVG instead of a mask.
 
 ## Stroke weight
 
@@ -134,11 +136,11 @@ There is no project-side build step and no Node script. The subset ships nativel
 
 Nothing to run, and nothing to commit: there is no `yarn build:icons` step as with the Bootstrap Icons font, and no generated font file in the project.
 
-An unknown name logs a build warning and renders nothing — the default glyph is an empty SVG, so a missing icon is invisible rather than a solid square.
+An unknown name logs a build warning and renders nothing: the default glyph is an empty SVG, so a missing icon is invisible rather than a solid square.
 
 ## Missing brands
 
-Some brands are dropped by both Simple Icons and Lucide. The module ships curated SVGs in its own `assets/icons/brands/`, and local assets take precedence over the imported modules — so you can add a missing brand in your project at the same path:
+Some brands are dropped by both Simple Icons and Lucide. The module ships curated SVGs in its own `assets/icons/brands/`, and local assets take precedence over the imported modules, so you can add a missing brand in your project at the same path:
 
 ```txt
 assets/

@@ -16,10 +16,10 @@ description: Variable-type list field for page builder blocks.
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
 | `blocks` | array | yes | Array of block type definitions |
-| `collapsed` | boolean | — | Collapse items by default (default: `true`) |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `label_singular` | string | — | Singular label |
-| `max` | number | — | Maximum number of blocks |
-| `min` | number | — | Minimum number of blocks |
-| `required` | boolean | — | Mark as required |
+| `collapsed` | boolean | no | Collapse items by default (default: `true`) |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `label_singular` | string | no | Singular label |
+| `max` | number | no | Maximum number of blocks |
+| `min` | number | no | Minimum number of blocks |
+| `required` | boolean | no | Mark as required |

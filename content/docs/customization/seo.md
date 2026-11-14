@@ -38,6 +38,8 @@ seo:
 
 ## Hide a page from search engines
 
+{{< badge text="New in v2" state="success" >}}
+
 In frontmatter of the page.
 
 ```yml

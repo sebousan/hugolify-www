@@ -17,6 +17,7 @@ description: Map / geolocation field.
 | --- | --- | --- | --- |
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
-| `default` | string | — | Default value |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
+| `default` | string | no | Default value |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `required` | boolean | no | Mark as required |

@@ -32,4 +32,4 @@ frequency: "" // If you have subscription and you want
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/price.html" text="Commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/price.html" text="Commons file (hugolify-theme)" >}}

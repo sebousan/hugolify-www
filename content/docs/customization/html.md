@@ -8,7 +8,7 @@ The HTML files override is possible by keeping the same tree structure.
 
 ```txt
 layouts/
-└── partials/
+└── _partials/
     └── posts/
         └── item.html
 ```

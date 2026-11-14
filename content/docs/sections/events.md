@@ -5,10 +5,6 @@ icon: calendar-check
 ---
 {{< badge text="Beta" state="warning" >}}
 
-{{< alert-block title="Not available in Hugolify v2" state="warning" >}}
-This module has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
-{{< /alert-block >}}
-
 ## Modules required
 
 - {{< blank_link link="https://github.com/hugolify/hugolify-theme" text="Hugolify theme" >}}
@@ -20,36 +16,40 @@ This module has not been migrated to v2 yet — no `/v2` module path is publishe
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-events
+  - path: github.com/hugolify/hugolify-theme-events/v2
   - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 ## Taxonomies
 
-- [Categories](/docs/taxonomies/services-categories/)
-- [Persons](/docs/taxonomies/services-persons/)
+- [Categories](/docs/taxonomies/events-categories/)
+- [Persons](/docs/taxonomies/events-persons/)
 
-**Setup**
-
-{{< alert text="`/config/_default/module.yaml`" state="light" >}}
-
-```yml
-imports:
-  - path: github.com/hugolify/hugolify-theme-events-categories
-  - path: github.com/hugolify/hugolify-theme-events
-  - path: github.com/hugolify/hugolify-theme/v2
-```
+{{< alert text="The categories and persons modules have not been migrated to v2 yet: they stay available for Hugolify v1." state="warning" >}}
 
 ## Files
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/tree/main/layouts/partials/events" text="HTML partials" >}}
-- SASS Files
-  - {{< blank_link link="https://github.com/hugolify/hugolify-theme-events/blob/main/assets/sass/pages/_event.sass" text="Single page" >}}
-  - {{< blank_link link="https://github.com/hugolify/hugolify-theme-events/blob/main/assets/sass/pages/_events.sass" text="List page" >}}
-  - {{< blank_link link="https://github.com/hugolify/hugolify-theme-events/blob/main/assets/sass/components/_event.sass" text="Item component" >}}
-  - {{< blank_link link="https://github.com/hugolify/hugolify-theme-events/blob/main/assets/sass/components/_events.sass" text="Items component" >}}
+| Module | Files |
+| --- | --- |
+| hugolify-theme-events | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/tree/main/layouts/partials/events" text="Partials" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/tree/main/layouts/events" text="Page templates" >}} |
+| hugolify-admin | {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/collections/types/events.yml" text="Collection type" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/collections/fields/events.fields.default.html" text="Fields" >}} |
+| hugolify-example-site | {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/tree/main/content/events" text="Demo content" >}} |
 
+## Styling availability
 
-## CMS
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/sass/pages/_event.sass" text="Single page" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/sass/pages/_events.sass" text="List page" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/sass/components/_event.sass" text="Item" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/sass/components/_events.sass" text="Items" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/css/pages/event.css" text="Single page" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/css/pages/events.css" text="List page" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/css/components/event.css" text="Item" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/blob/main/assets/css/components/events.css" text="Items" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-events/tree/main/assets/css/tokens" text="Tokens" >}} |
 
-- [Hugolify Admin (Multiple CMS)](/docs/admin/v1/) {{< badge text="Available" state="success" >}}
+## CMS availability
+
+| CMS | Hugolify Admin v2 |
+| --- | --- |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |

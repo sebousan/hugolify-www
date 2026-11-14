@@ -30,4 +30,4 @@ format: "" // default is 2006, https://gohugo.io/functions/time/format/
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/time.html" text="Commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/time.html" text="Commons file (hugolify-theme)" >}}

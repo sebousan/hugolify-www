@@ -12,5 +12,5 @@ blocks:
     ctas:
       - text: List of common functions on repository
         blank: true
-        url: https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/
+        url: https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/func/
 ---

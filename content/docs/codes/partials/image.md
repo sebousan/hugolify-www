@@ -72,10 +72,10 @@ The provider is told by the URL of the image:
 - {{< blank_link link="https://unsplash.com/" text="Unsplash" >}}, for the stock photos inserted by Sveltia CMS, resized on the fly by {{< blank_link link="https://docs.imgix.com/apis/rendering" text="Imgix" >}}
 - {{< blank_link link="https://picsum.photos/" text="Lorem Picsum" >}}, for the stock photos inserted by Sveltia CMS, sized through their URL and always cropped around the center
 
-{{< button url="../../../admin/v2/cms/sveltia-cms/#stock-photos" text="See stock photos in Sveltia CMS" >}}
+{{< button url="/docs/admin/cms/sveltia-cms/#stock-photos" text="See stock photos in Sveltia CMS" >}}
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/image.html" text="Commons file — hugolify-theme" >}}
-  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/partials/commons/image/responsive" text="Responsive mode, a file per provider — hugolify-theme" >}}
-  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/partials/commons/image/default" text="Default mode, a file per provider — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/image.html" text="Commons file (hugolify-theme)" >}}
+  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/commons/image/responsive" text="Responsive mode, a file per provider (hugolify-theme)" >}}
+  - {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/commons/image/default" text="Default mode, a file per provider (hugolify-theme)" >}}

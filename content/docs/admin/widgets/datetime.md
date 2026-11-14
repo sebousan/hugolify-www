@@ -15,9 +15,11 @@ description: Date and time picker.
 | --- | --- | --- | --- |
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
-| `default` | date or string | — | Default value |
-| `hidden` | boolean | — | Hide from the editor |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `nameOverride` | string | — | Override the name in output |
-| `required` | boolean | — | Mark as required |
+| `default` | date or string | no | Default value |
+| `format` | string | no | Storage format in Day.js tokens, for Decap and Sveltia CMS (default: `YYYY-MM-DD[T]HH:mm:ss`, or `YYYY-MM-DD` without `time`) |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `nameOverride` | string | no | Override the name in output |
+| `required` | boolean | no | Mark as required |
+| `time` | boolean | no | `false` for a date picker alone, a day without a time of day (default: `true`) |

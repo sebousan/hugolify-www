@@ -1,13 +1,15 @@
 ---
 title: Collections
-description: All sections and taxonomies.
-weight: 4
+description: Choose the collections, their order and their options
+weight: 5
 icon: gallery-vertical-end
 ---
 
 {{< alert-block title="Info" state="info" >}}
-Collections are automatically added based on Hugolify modules added ([Sections](/docs/sections/)) or ([Taxonomies](/docs/taxonomies/))
+Collections are added automatically, one per Hugolify module the project imports: [sections](/docs/sections/) and [taxonomies](/docs/taxonomies/). The *pages*, *indexes*, *menus* and *config* collections come with the admin itself.
 {{< /alert-block >}}
+
+The options of a collection go under `admin.collections`, keyed by its name: `pages`, `posts`, `persons`, `posts_categories`…
 
 ## Options by CMS
 
@@ -19,9 +21,10 @@ An option has one name, whatever the CMS. Hugolify writes it the way each CMS re
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [`enable`](#enable-or-disable-collections) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [`create`](#enable-or-disable-file-creation) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [`fields`](#override-fields-avalaible-for-a-collection) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`fields`](#override-fields-available-for-a-collection) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [`blocks`](#blocks-of-a-collection) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [`filter`](#add-filter) | ✓ | ✓ | ✓ | ✓ | – | – | – |
-| [`exclude`](../cms/pages-cms/#exclude-files) | – | – | – | – | ✓ | – | – |
+| [`exclude`](/docs/admin/cms/pages-cms/#exclude-files) | – | – | – | – | ✓ | – | – |
 | [`path`](#add-path) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [`media_folder`](#media-folders-of-a-collection) | ✓ | ✓ | ✓ | ✓ | – | – | – |
 | [`slug`](#add-slug) | ✓ | ✓ | ✓ | ✓ | – | – | – |
@@ -35,9 +38,11 @@ An option has one name, whatever the CMS. Hugolify writes it the way each CMS re
 | [`bulk_edit`](#add-bulk-edit) | – | ✓ | – | – | – | – | – |
 | [`icon`](#collection-icon) | – | ✓ | – | – | – | ✓ | – |
 | [`nested`](#nested-collections) | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
-| [`card_preview`](../cms/cloudcannon/#card-preview-collections) | – | – | – | – | – | ✓ | – |
+| [`card_preview`](/docs/admin/cms/cloudcannon/#card-preview-collections) | – | – | – | – | – | ✓ | – |
 
 ## Enable or disable collections
+
+A collection shows as soon as its module is imported. `enable: false` hides it, the module staying in place:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -103,6 +108,8 @@ The `heading` is read by CloudCannon only. It requires one on each group, so it 
 
 ## Enable or disable file creation
 
+`create: false` removes the button that adds an entry, as for *indexes*, whose entries come with the modules:
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
@@ -114,7 +121,9 @@ admin:
 
 Pages CMS reads it as `operations.create`, CloudCannon as `disable_add`, Tina as `ui.allowedActions.create`.
 
-## Override fields avalaible for a collection
+## Override fields available for a collection
+
+Each collection ships with a list of fields. `fields` replaces it:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -130,7 +139,34 @@ admin:
         - body
 ```
 
+The default list of each collection is in its file under `collections/fields/`. A field can take options next to its name, see [Options of a select field](/docs/admin/fields/#options-of-a-select-field).
+
+{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/v2/layouts/_partials/admin/collections/fields" text="See the fields of each collection in repository" >}}
+
+## Blocks of a collection
+
+The `blocks` field of every collection offers the blocks of [`admin.blocks.enable`](/docs/admin/blocks/#enable-blocks). To offer a collection a list of its own, set `blocks` on the collection, and name the collection in its `blocks` field:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+admin:
+  collections:
+    posts:
+      blocks: [paragraph, figure, quote]
+      fields:
+        - draft
+        - title_page
+        - description
+        - body
+        - blocks: posts # reads the blocks of the posts collection
+```
+
+Left as a plain `blocks`, the field keeps offering every enabled block.
+
 ## Add filter
+
+`filter` lists only the entries whose field holds a value. This is how *pages* and *indexes* share the `content` folder: a page carries `isPage: true`, a section index `isIndex: true`, each written by a hidden field.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -143,15 +179,19 @@ admin:
           value: true
 ```
 
+Pages CMS has no filter: it leaves files out by name instead, see [`exclude`](/docs/admin/cms/pages-cms/#exclude-files).
+
 ## Add path
+
+`path` sets where a new entry is saved, inside the folder of the collection. It defaults to `{{slug}}/_index`: each entry gets a folder of its own, a Hugo branch bundle, which can hold its images and, in a [nested collection](#nested-collections), its children. Set `{{slug}}` to save the entries as single files instead:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 admin:
   collections:
-    pages:
-      path: "{{slug}}"
+    posts:
+      path: "{{slug}}" # content/posts/my-post.md rather than content/posts/my-post/_index.md
 ```
 
 ## Media folders of a collection
@@ -172,13 +212,15 @@ admin:
 
 ## Add slug
 
+`slug` names a new entry, and so its file or its folder. It defaults to `{{slug}}`, the title written for a URL, or to the ID of the entry with [`config.id: true`](/docs/admin/setup/#entry-ids). It takes the fields of the entry and the date of creation:
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 admin:
   collections:
-    pages:
-      slug: "{{id}}"
+    posts:
+      slug: "{{year}}-{{month}}-{{slug}}" # 2026-11-my-post
 ```
 
 ## Add sortable fields
@@ -216,6 +258,8 @@ Left undefined, each CMS offers its own defaults, such as the title and the date
 | CloudCannon, Tina | Nothing: CloudCannon keeps its own Sort menu |
 
 ## Add summary
+
+`summary` is the text each entry shows in the list of the collection, the title by default. It takes the fields of the entry in braces:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -260,7 +304,7 @@ Left undefined, Sveltia CMS shows the summary followed by the sortable fields, S
 | Static CMS | `summary_fields`, without labels |
 | Pages CMS | `view.fields`, with `summary` written `title`, without labels |
 | Decap CMS, Netlify CMS, Tina | Nothing: no table view |
-| CloudCannon | Nothing: see [card preview](../cms/cloudcannon/#card-preview-collections) |
+| CloudCannon | Nothing: see [card preview](/docs/admin/cms/cloudcannon/#card-preview-collections) |
 
 {{< alert-block title="Name a field of the collection" state="warning" >}}
 Sveltia CMS rejects a config whose column names no field of the collection, and shows the error instead of the CMS. Static CMS leaves the column empty, and Pages CMS drops it.
@@ -296,10 +340,12 @@ Sveltia CMS rejects a config whose `thumbnail` names no field of the collection,
 | CMS | Result |
 | --- | --- |
 | Sveltia CMS | `thumbnail` |
-| CloudCannon | the image of the card, `preview.gallery.image`. A [`card_preview`](../cms/cloudcannon/#card-preview-collections) setting it wins |
+| CloudCannon | the image of the card, `preview.gallery.image`. A [`card_preview`](/docs/admin/cms/cloudcannon/#card-preview-collections) setting it wins |
 | Other CMS | Nothing: Decap, Netlify and Static CMS guess the image from the field names, Pages CMS shows an Image field as a column of [`summary_fields`](#add-summary-fields) |
 
 ## Add view filters
+
+`view_filters` adds filters above the list: each one shows only the entries whose field matches its pattern.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -320,6 +366,8 @@ A pattern keeps its type: `true` matches a boolean field, `'2020'` a text. Stati
 
 ## Add view groups
 
+`view_groups` offers to group the list by the value of a field, or by the part of it a pattern matches, such as the year of a date.
+
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
@@ -339,6 +387,8 @@ Static CMS gets the groups in its own `{ groups }` object, each named after its 
 ## Add reorder
 
 {{< badge text="New in v2" state="success" >}} {{< badge text="Only available with Sveltia CMS" state="warning" >}}
+
+`reorder: true` lets editors order the entries by drag and drop. The order is saved in the `weight` of each entry, which Hugo sorts pages by.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -377,9 +427,9 @@ admin:
 
 ## Collection icon
 
-{{< badge text="New in v2" state="success" >}}
+{{< badge text="New in v2" state="success" >}} {{< badge text="Sveltia CMS and CloudCannon" state="warning" >}}
 
-An icon is declared per icon set, so the same collection works whichever set the CMS uses. See [Setup](../setup/#icon-sets).
+The icon shown beside the collection in the sidebar. It is declared per icon set, so the same collection works whichever set the CMS uses, see [Icon sets](/docs/admin/setup/#icon-sets).
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -399,7 +449,7 @@ admin:
 
 {{< badge text="New in v2" state="success" >}}
 
-A collection can show its entries as a folder tree and let editors organise them in subfolders. Entries are stored as Hugo branch bundles — an `_index` file in a folder of its own — so a page can carry children and page resources.
+A collection can show its entries as a folder tree and let editors organise them in subfolders. Entries are stored as Hugo branch bundles (an `_index` file in a folder of its own), so a page can carry children and page resources.
 
 Set the depth globally, or per collection when only one of them is a tree:
 
@@ -417,14 +467,16 @@ admin:
 
 The depth counts path segments below the collection folder, and is what limits how deep an editor may go.
 
+Left undefined, every collection is flat but two: *pages* is a tree five levels deep, and *indexes* two levels deep.
+
 | Depth | Result |
 | --- | --- |
-| `1` | Nothing emitted — a flat collection |
+| `1` | Nothing emitted: a flat collection |
 | `2` | Folder tree, one level of children |
 | `3` and up | Folder tree, plus a **parent** field so an editor picks where a page goes and moves it later |
 
 {{< alert-block title="Sveltia CMS" state="info" >}}
-Nested collections used to be Decap-only. **Sveltia CMS supports them now**, and fixes several long-standing problems of the Decap implementation along the way — entry paths, preview paths, media folders, folder labels and i18n.
+Nested collections used to be Decap-only. **Sveltia CMS supports them now**, and fixes several long-standing problems of the Decap implementation along the way: entry paths, preview paths, media folders, folder labels and i18n.
 
 The parent field differs between the two: Decap gets a custom Hugolify widget, Sveltia its own folder picker. Hugolify writes the Decap `widget` and `label` either way, and Sveltia accepts both for compatibility and ignores them, so the same config serves the two.
 {{< /alert-block >}}
@@ -450,10 +502,18 @@ admin:
 
 Left undefined, the collection ships `nav-header-primary`, `nav-header-secondary`, `nav-footer-primary`, `nav-footer-secondary`, `nav-legal` and `nav-social`.
 
-Header and footer menus each gain three levels, replacing the single menu of v1. Add `nav-header-tertiary` and `nav-footer-tertiary` to `files` to reach the third one.
+| File | Data file | Rendered in |
+| --- | --- | --- |
+| `nav-header-primary` | `/data/menu/header/primary.yml` | Header, with dropdowns |
+| `nav-header-secondary` | `/data/menu/header/secondary.yml` | Header |
+| `nav-footer-primary` | `/data/menu/footer/primary.yml` | Footer |
+| `nav-footer-secondary` | `/data/menu/footer/secondary.yml` | Footer |
+| `nav-legal` | `/data/menu/legal.yml` | Footer |
+| `nav-social` | `/data/menu/social.yml` | Footer, as icons |
 
-- **Header** — primary, secondary, tertiary
-- **Footer** — primary, secondary, tertiary
+A link takes a title, a URL and a new tab option. It can be highlighted as a button, and hold sub-links, which the primary header menu shows as a dropdown. The footer menus also take a title, shown above their links, and the social menu takes a `rel` instead of the highlight and the sub-links.
+
+{{< button url="/docs/customization/menu/" text="See menus" >}}
 
 {{< alert-block title="Menus listed in config" state="warning" >}}
 The menus used to be files of the *config* collection. A project that lists `nav-*` files in `config.files` moves them to `menus.files`: left there, a menu shows in both collections. A project that sets `collection_groups` names `menus` next to `config`, or the collection joins `'*'`.
@@ -461,7 +521,7 @@ The menus used to be files of the *config* collection. A project that lists `nav
 
 ## The config collection
 
-The *config* collection holds the other site files an editor may change — banner, footer, credit, organization, structured data, SEO, llms.txt. Pick which ones it shows with `files`:
+The *config* collection holds the other site files an editor may change: banner, footer, credit, organization, structured data, SEO, llms.txt. Pick which ones it shows with `files`:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -484,9 +544,9 @@ Add `blocks` to `files` and the collection gains a file written to `/data/blocks
 
 The form is generated from `admin.blocks.enable`, one collapsible section per block type, with the `selected-*` variants expanded per enabled collection exactly as the block picker expands them. A section arrives open when it already carries a value.
 
-Each section offers the layouts of its block type, as the form of the block offers them, and the carousel settings when the carousel is one of them: a default carousel is set here like a default scroll snap. Every field shows whatever the layout. In the form of a block, choosing a layout reveals the fields that override these defaults, see [Fields that depend on another](../blocks/#fields-that-depend-on-another).
+Each section offers the layouts of its block type, as the form of the block offers them, and the carousel settings when the carousel is one of them: a default carousel is set here like a default scroll snap. Every field shows whatever the layout. In the form of a block, choosing a layout reveals the fields that override these defaults, see [Fields that depend on another](/docs/admin/blocks/#fields-that-depend-on-another).
 
-Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content. Decap CMS saves it keyed by the default language all the same, which the theme reads as well — see [With Decap CMS](/docs/customization/structured-data/#with-decap-cms).
+Unlike the rest of the *config* collection, this file is not translated: how a block looks is not language content. Decap CMS saves it keyed by the default language all the same, which the theme reads as well, see [With Decap CMS](/docs/customization/structured-data/#with-decap-cms).
 
 {{< button url="/docs/customization/ui/#defaults-per-block" text="See defaults per block" >}}
 
@@ -512,18 +572,46 @@ Like `blocks`, these files are not translated: agents look for one file at the r
 
 {{< button url="/docs/customization/seo/#llmstxt" text="See llms.txt" >}}
 
+### A file of your own
+
+Each name of `files` reads the partial of the same name in `admin/datas/`. Add one to edit a data file of your own, here `/data/contact.yml`:
+
+```txt
+layouts/
+└── _partials/
+    └── admin/
+        └── datas/
+            └── contact.yml
+```
+
+```go-html-template
+{{- $fields := slice "title" "text_markdown" -}}
+{{- $fields = partial "admin/func/GetFields.html" (dict "file" "contact" "fields" $fields) -}}
+{
+  label: 'Contact',
+  name: 'contact',
+  file: 'data/contact.yml',
+  i18n: true,
+  {{- partial "admin/fields/_fields.yml" $fields -}}
+}
+```
+
+Then list it in `files`, where it should appear: `files: [banner, footer, contact, seo]`. The same goes for the *menus* collection. `GetFields` lets `admin.files.contact.fields` replace the fields, as for the files of the module, see [The fields of a config file](/docs/admin/fields/#the-fields-of-a-config-file).
+
 ## Create a collection
 
-Use params to create a collection
+### With params
+
+A collection the admin does not know takes a generic type: its entries go to `content/<name>`, each in a folder of its own, with the fields of a page. Here a *recipes* collection:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yml
 admin:
   collections:
-    new_collection:
+    recipes:
       enable: true
-      fields:
+      fields: # optional, the fields of a page by default
         - draft
         - title_page
         - description
@@ -531,26 +619,38 @@ admin:
         - body
 ```
 
-Or add a yml collection file
+Its label comes from the i18n files of the project, `admin.collections.recipes.label`, or else from its name. The site renders the section with its own templates, or the default ones of the theme.
+
+### With a file
+
+For full control, declare the collection in a file named after it:
 
 ```txt
 layouts/
-└── partials/
+└── _partials/
     └── admin/
         └── collections/
             └── types/
+                └── recipes.yml
 ```
-
-A collection file reads its options through one partial each, which writes the option for the CMS in use. The file sets its creation, preview, path and slug itself:
 
 ```go-html-template
-{{ partial "admin/collections/config/create.yml" . }}
-{{ partial "admin/collections/config/preview.yml" . }}
-{{ partial "admin/collections/config/path.yml" . }}
-{{ partial "admin/collections/config/slug.yml" . }}
+{
+  name: 'recipes',
+  folder: 'content/recipes',
+  label: '{{ i18n "admin.collections.recipes.label" 2 }}',
+  label_singular: '{{ i18n "admin.collections.recipes.label" 1 }}',
+  i18n: true,
+  {{ partial "admin/collections/config/create.yml" . }}
+  {{ partial "admin/collections/config/preview.yml" . }}
+  {{ partial "admin/collections/config/path.yml" . }}
+  {{ partial "admin/collections/config/slug.yml" . }}
+
+  {{ partial "admin/collections/types/_default.yml" . }}
+}
 ```
 
-Then `admin/collections/types/_default.yml` adds all the others, or the file picks the ones the collection needs:
+Each partial writes one option the way the CMS in use reads it, and nothing when the CMS has no equivalent. `_default.yml` adds all the other options. A file listing them itself can leave out the ones the collection does not need:
 
 ```go-html-template
 {{ partial "admin/collections/config/icon.yml" . }}
@@ -558,6 +658,7 @@ Then `admin/collections/types/_default.yml` adds all the others, or the file pic
 {{ partial "admin/collections/config/filter.yml" . }}
 {{ partial "admin/collections/config/exclude.yml" . }}
 {{ partial "admin/collections/config/reorder.yml" . }}
+{{ partial "admin/collections/config/bulk_edit.yml" . }}
 {{ partial "admin/collections/config/sortable_fields.yml" . }}
 {{ partial "admin/collections/config/summary.yml" . }}
 {{ partial "admin/collections/config/summary_fields.yml" . }}
@@ -569,6 +670,8 @@ Then `admin/collections/types/_default.yml` adds all the others, or the file pic
 {{ partial "admin/collections/config/nested.yml" . }}
 ```
 
-`view.yml` writes the `view` of Pages CMS, built from `summary_fields`, `sortable_fields` and `nested`. A partial writes nothing for a CMS without the option.
+`view.yml` writes the `view` of Pages CMS, built from `summary_fields`, `sortable_fields` and `nested`.
 
-{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/v2/layouts/partials/admin/collections/types" text="See examples in repository" >}}
+The fields come from `admin.collections.recipes.fields`, or else from a file returning the default list, `admin/collections/fields/recipes.fields.default.html`.
+
+{{< blank_link link="https://github.com/Hugolify/hugolify-admin/tree/v2/layouts/_partials/admin/collections/types" text="See examples in repository" >}}

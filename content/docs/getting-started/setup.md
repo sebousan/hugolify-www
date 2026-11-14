@@ -26,7 +26,7 @@ imports:
 - path: github.com/hugolify/hugolify-admin/v2
 ```
 
-{{< alert-block text="hugolify-theme" state="warning" >}}
+{{< alert-block title="hugolify-theme" state="warning" >}}
 Since v2, **hugolify-theme** is the agnostic core. It provides templates, functions, layouts and vendors JS. It requires a **styling module** to supply variables, vendors, and framework-specific styles. The default is **hugolify-theme-bootstrap**. See [Design customization](/docs/customization/design/) for alternatives.
 
 In v1, Bootstrap CSS and JS were bundled directly inside **hugolify-theme**.

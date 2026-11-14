@@ -58,8 +58,8 @@ imports:
 
 #### Tutorials
 
-* [How to create a blog featuring categories and tags using Hugolify](how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify)
-* [How to create a portfolio featuring categories using Hugolify](how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify)
+* [How to create a blog featuring categories and tags using Hugolify](/tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify/)
+* [How to create a portfolio featuring categories using Hugolify](/tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify/)
 
 ## Configuration
 
@@ -74,11 +74,11 @@ admin:
 
 ### More about customizations
 
-- [About Admin](/docs/admin/v1/setup/)
-- [About Pages CMS](/docs/admin/v1/cms/pages-cms/)
-- [About Collections](/docs/admin/v1/collections/)
-- [About Blocks](/docs/admin/v1/blocks/)
-- [About Fields](/docs/admin/v1/fields/)
+- [About Admin](/docs/admin/setup/)
+- [About Pages CMS](/docs/admin/cms/pages-cms/)
+- [About Collections](/docs/admin/collections/)
+- [About Blocks](/docs/admin/blocks/)
+- [About Fields](/docs/admin/fields/)
 
 
 ## Get Pages CMS config file

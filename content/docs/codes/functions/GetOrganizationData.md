@@ -18,4 +18,4 @@ The structured data publishes these values; a block or the footer can show them 
 ## Related links
 
 - [The organization](/docs/customization/structured-data/#the-organization)
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetOrganizationData.html" text="Func file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetOrganizationData.html" text="Func file" >}}

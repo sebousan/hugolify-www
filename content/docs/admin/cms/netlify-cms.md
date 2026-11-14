@@ -24,9 +24,9 @@ admin:
 
 ## Icon library
 
-- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstraop Icons (via CSS)" >}}
+- {{< blank_link link="https://icons.getbootstrap.com/" text="Bootstrap Icons (via CSS)" >}}
 
 ## Documentation
 
-- [Hugolify Admin setup](../setup/)
+- [Hugolify Admin setup](/docs/admin/setup/)
 - {{< blank_link link="https://github.com/netlify/netlify-cms-legacy" text="https://github.com/netlify/netlify-cms-legacy" >}}

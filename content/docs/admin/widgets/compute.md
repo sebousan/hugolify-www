@@ -21,9 +21,9 @@ The value is rebuilt as the other fields are typed. Every other supported CMS em
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
 | `value` | string | yes | Value template |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode (default: `true`) |
-| `required` | boolean | — | Mark as required |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode (default: `true`) |
+| `required` | boolean | no | Mark as required |
 
 ## Value template
 

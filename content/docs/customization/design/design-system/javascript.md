@@ -6,7 +6,7 @@ icon: brand:javascript
 ---
 
 {{< alert-block title="Overview" state="info" >}}
-**hugolify-theme-design-system** ships **vanilla JS** only — no Bootstrap JS, no framework. Behaviour is progressive enhancement: JS adds behaviour, it never replaces structure.
+**hugolify-theme-design-system** ships **vanilla JS** only: no Bootstrap JS, no framework. Behaviour is progressive enhancement: JS adds behaviour, it never replaces structure.
 {{< /alert-block >}}
 
 ## Structure
@@ -28,13 +28,13 @@ Always loaded, no param to enable them:
 
 | Component | Role |
 | --- | --- |
-| `dialog.js` | Modal panels — native `<dialog>` or `popover="auto"`, top layer and `::backdrop` in both cases |
+| `dialog.js` | Modal panels: native `<dialog>` or `popover="auto"`, top layer and `::backdrop` in both cases |
 | `dropdown.js` | Dropdown menus |
 | `menu.js` | Main menu |
 | `tooltip.js` | Tooltips |
 | `video.js` | Video playback controls |
 
-Panels driven by `dialog.js` (header, filters, sidebar menu, table of contents) switch between inline and overlay at the breakpoint declared in the site params — see [CSS](/docs/customization/design/design-system/css/#breakpoints).
+Panels driven by `dialog.js` (header, filters, sidebar menu, table of contents) switch between inline and overlay at the breakpoint declared in the site params, see [CSS](/docs/customization/design/design-system/css/#breakpoints).
 
 ## Features
 
@@ -87,7 +87,7 @@ assets/
 
 ## Add specific files
 
-Each layer has an extension point imported by `main.js` — add your code there rather than editing the barrels.
+Each layer has an extension point imported by `main.js`: add your code there rather than editing the barrels.
 
 | File | Loaded |
 | --- | --- |

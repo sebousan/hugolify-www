@@ -216,8 +216,8 @@ Open <http://localhost:1313/admin/>, click **Work with Local Repository** (Chrom
 
 ## Going further
 
-* [Sveltia CMS in Hugolify](/docs/admin/v2/cms/sveltia-cms/)
-* [Hugolify Admin setup](/docs/admin/v2/setup/)
+* [Sveltia CMS in Hugolify](/docs/admin/cms/sveltia-cms/)
+* [Hugolify Admin setup](/docs/admin/setup/)
 * {{< blank_link link="https://sveltiacms.app/en/docs/backends/github" text="GitHub backend in Sveltia CMS documentation" >}}
 * {{< blank_link link="https://sveltiacms.app/en/docs/deployments" text="Deployments in Sveltia CMS documentation" >}}
 * {{< blank_link link="https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/" text="OAuth provider tokens in Netlify documentation" >}}

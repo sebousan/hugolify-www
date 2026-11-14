@@ -1,79 +1,71 @@
 ---
 title: Fields
-description: Add/modify fields
-weight: 6
+description: Change the fields, or add your own
+weight: 7
 icon: text-cursor-input
 ---
 
-## How to create a field
+A field is a partial of the module, in `admin/fields/`, declaring one key of the front matter to the CMS. Collections, blocks and config files list their fields by name: `title`, `text_markdown`, `featured_image`… An object field, such as `hero` or `address`, lists the fields it holds the same way.
 
-### Create file
+{{< button text="See fields in repository" url="https://github.com/Hugolify/hugolify-admin/tree/v2/layouts/_partials/admin/fields" blank="true" >}}
 
-Add a yml field file in fields directory.
+## Change the fields of an object
 
-```txt
-layouts/
-└── partials/
-    └── admin/
-        └── fields/
-```
-
-### Simple widget
-
-```yml
-{{- $args := dict
-  "label" (i18n "admin.fields.audio.mp3.label")
-  "name" "mp3"
-  "type" "audio"
-  -}}
-{{ partial "admin/widgets/file.js" $args }}
-```
-
-### List or Object widget
-
-```yml
-{{- $pin := cond (or (eq site.Params.admin.cms "decapcms") (eq site.Params.admin.cms "sveltiacms")) "location" "coordinates" -}}
-{{- $fields := slice 
-  "street" 
-  "zipcode" 
-  "city" 
-  "country_code"
-  $pin -}}
-
-# This line allows you to modify the fields via the parameters
-{{- $fields = partial "admin/func/GetFields.html" (dict "field" . "fields" $fields) -}}
-
-{{- $args := dict 
-  "label" (i18n "admin.fields.address.label")
-  "name" "address"
-  "collapsed" true
-  "fields" $fields
-  -}}
-
-{{ partial "admin/widgets/object.js" $args }}
-```
-
-## Add or remove fields in object field
+`admin.fields.<name>.fields` replaces the fields an object holds, wherever the object is used. Here the hero keeps a title and a text, and its image only a file and an alternative text:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
-In this example, we set two fields (title and text with markdown) for the Hero field.
-
 ```yml
-params:
-  admin:
-    fields:
-      # Array of available fields for a fields
-      # e.g with hero field
-      hero:
-        fields:
-          - title
-          - text_markdown
-          # e.g with nested fields
-          - image:
-              fields:
-                - image_src
-                - image_alt
+admin:
+  fields:
+    hero:
+      fields:
+        - title
+        - text_markdown
+        - image:
+            fields:
+              - image_src
+              - image_alt
+```
+
+A field of the list takes its own settings next to its name, as `image` does here.
+
+The fields of a collection, of a block and of a config file change the same way, see [Collections](/docs/admin/collections/#override-fields-available-for-a-collection), [Blocks](/docs/admin/blocks/#change-the-fields-of-a-block) and [The fields of a config file](#the-fields-of-a-config-file).
+
+## Options of a select field
+
+`options` replaces the values a select field offers. It works on every select field, not only `grid` and `theme`: `align`, `breakpoints`, `direction`, `layout`, `offset`, `scrollsnap`, `vertical_align`…
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  fields:
+    align:
+      options: [start, center]
+```
+
+Written next to the field in a fields list, the options apply to that list only:
+
+```yaml
+admin:
+  blocks:
+    cta:
+      fields:
+        - title
+        - ui:
+            - theme: { options: [light, dark] }
+```
+
+The languages and the countries offer the whole ISO lists, which come from the theme. `options` narrows them down the same way:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  fields:
+    country_code:
+      options: [FR, BE, CH, LU]
 ```
 
 ## Markdown editor
@@ -83,19 +75,18 @@ The markdown fields below read their editor settings from params, so a project c
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
-params:
-  admin:
-    fields:
-      text_markdown:
-        minimal: false
-        modes: "['rich_text', 'raw']"
-        buttons: "['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']"
+admin:
+  fields:
+    text_markdown:
+      minimal: false
+      modes: "['rich_text', 'raw']"
+      buttons: "['bold', 'italic', 'link', 'bulleted-list', 'numbered-list']"
 ```
 
 - `minimal`: `true` keeps the editor compact: Sveltia CMS caps it at 240 px and scrolls past that, Decap CMS shrinks it to the smallest height. `false` lets it grow with the content.
 - `modes`: `rich_text`, `raw`, or both. With both, the toolbar shows a switch, and the editor opens in the first mode listed.
 - `buttons`: the formatting buttons of the rich text toolbar. See the {{< blank_link link="https://sveltiacms.app/en/docs/fields/richtext" text="Sveltia CMS" >}} and {{< blank_link link="https://decapcms.org/docs/widgets/#markdown" text="Decap CMS" >}} documentation for the names.
-- `editor_components`: the components the editor can insert. `body` offers them all by default, the CMS's own `image` and `code-block` plus the [enabled shortcodes](../shortcodes/#add-or-remove-shortcodes). Set, a field offers only the ones listed, so name the shortcodes too: `"['button']"` drops the image and the code block and keeps the `button` shortcode, `"[]"` removes them all.
+- `editor_components`: the components the editor can insert. `body` offers them all by default, the CMS's own `image` and `code-block` plus the [enabled shortcodes](/docs/admin/shortcodes/#add-or-remove-shortcodes). Set, a field offers only the ones listed, so name the shortcodes too: `"['button']"` drops the image and the code block and keeps the `button` shortcode, `"[]"` removes them all.
 
 {{< alert-block title="Write `modes`, `buttons` and `editor_components` as a quoted string" state="warning" >}}
 The value is copied as is into the CMS config. A YAML list such as `[rich_text, raw]` comes out as a single, invalid mode named `rich_text raw`.
@@ -127,85 +118,92 @@ The blocks of an entry arrive unfolded. Fold them to their summary, so a long pa
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
-params:
-  admin:
-    fields:
-      blocks:
-        collapsed: true
-```
-
-## Options of a select field
-
-`options` replaces the values a select field offers. It works on every select field, not only `grid` and `theme`: `align`, `breakpoints`, `direction`, `layout`, `offset`, `scrollsnap`, `vertical_align`…
-
-{{< alert text="`/config/_default/params.yaml`" state="light" >}}
-
-```yaml
-params:
-  admin:
-    fields:
-      align:
-        options: [start, center]
-```
-
-Written next to the field in a fields list, the options apply to that list only:
-
-```yaml
-params:
-  admin:
+admin:
+  fields:
     blocks:
-      cta:
-        fields:
-          - title
-          - ui:
-              - theme: { options: [light, dark] }
-```
-
-The languages and the countries offer the whole ISO lists, which come from the theme. `options` narrows them down the same way:
-
-{{< alert text="`/config/_default/params.yaml`" state="light" >}}
-
-```yaml
-params:
-  admin:
-    fields:
-      country_code:
-        options: [FR, BE, CH, LU]
+      collapsed: true
 ```
 
 ## Default map position
 
-The `location` field opens on Paris. Move it with a GeoJSON point — longitude first, then latitude:
+The `location` field opens on Paris. Move it with a GeoJSON point, longitude first, then latitude:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
-params:
-  admin:
-    widgets:
-      map:
-        default: '{"type": "Point", "coordinates": [4.8357, 45.7640]}'
+admin:
+  widgets:
+    map:
+      default: '{"type": "Point", "coordinates": [4.8357, 45.7640]}'
 ```
+
+## Media folder of a field
+
+An image field uploads to the folder of its collection, or else to the global one, see [Setup](/docs/admin/setup/#media-folders-per-type). Give a field folders and a size limit of its own under the name it is saved as:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  fields:
+    poster:
+      media:
+        media_folder: /assets/images/posters
+        public_folder: /images/posters
+        max_file_size: 300000
+```
+
+The name is the key of the front matter: `poster` for the poster of a video, `image` for the SEO image, `src` for the file of every image object. The folders are not written when the global `media_folder` or `public_folder` is set to `false`.
 
 ## The fields of a config file
 
 {{< badge text="New in v2" state="success" >}}
 
-Each file of the *config* collection ships its own set of fields. `admin.files.<name>.fields` replaces that set, without touching the `files` list — so changing the fields of one file no longer means restating every other:
+Each file of the *config* collection ships its own set of fields. `admin.files.<name>.fields` replaces that set, without touching the `files` list, so changing the fields of one file no longer means restating every other:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
 ```yaml
-params:
-  admin:
-    files:
-      footer:
-        fields: [newsletter, cta, blocks]
-      seo:
-        fields: [title, description, image_seo]
+admin:
+  files:
+    footer:
+      fields: [newsletter, cta, blocks]
+    seo:
+      fields: [title, description, image_seo]
 ```
 
-Available on `footer`, `seo`, `credit` and `banner`. Left undefined, each keeps the fields the module declares — respectively `title, text_area, cta, blocks`, `title, description, image_seo, twitter`, `text_markdown`, and `text_markdown, state`.
+Available on every file of the module but `schema` and `blocks`, and on [a file of your own](/docs/admin/collections/#a-file-of-your-own). Left undefined, each keeps the fields the module declares:
+
+| File | Default fields |
+| --- | --- |
+| `banner` | `text_markdown, state` |
+| `credit` | `text_markdown` |
+| `footer` | `title, text_area, cta, blocks` |
+| `seo` | `title, description, slogan, image_seo, twitter` |
+| `llms`, `llms-full` | `llms` |
+| `organization` | The identity of the organization, see [Structured data](/docs/customization/structured-data/) |
+
+## A title built from other fields
+
+{{< badge text="New in v2" state="success" >}} {{< badge text="Only available with Sveltia CMS" state="warning" >}}
+
+`title_page` reads a `compute` template and hands it to the [compute widget](/docs/admin/widgets/compute/). Left undefined, it stays the regular text input, which is also what a project running any other CMS gets.
+
+The *persons* collection does this by default: a person is named after their first and last name, so the page title is derived rather than asked for, and never typed twice.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yaml
+admin:
+  collections:
+    persons:
+      fields:
+        - draft
+        - title_page: { i18n: duplicate, compute: '{{fields.firstname}} {{fields.lastname}}' }
+        - firstname
+        - lastname
+        - body
+```
 
 ## New fields
 
@@ -245,29 +243,52 @@ If you relied on the stepped weight select, the previous behaviour is preserved 
 
 A country typed in before stays on the page as long as the address has no `country_code`.
 
-## A title built from other fields
+## Create a field
 
-{{< badge text="New in v2" state="success" >}} {{< badge text="Only available with Sveltia CMS" state="warning" >}}
+Add a file named after the field to the fields directory. It sets the label and the key of the field, and calls the [widget](/docs/admin/widgets/) of its type:
 
-`title_page` reads a `compute` template and hands it to the [compute widget](../widgets/compute/). Left undefined, it stays the regular text input, which is also what a project running any other CMS gets.
-
-The *persons* collection does this by default: a person is named after their first and last name, so the page title is derived rather than asked for, and never typed twice.
-
-{{< alert text="`/config/_default/params.yaml`" state="light" >}}
-
-```yaml
-params:
-  admin:
-    collections:
-      persons:
-        fields:
-          - draft
-          - title_page: { i18n: duplicate, compute: '{{fields.firstname}} {{fields.lastname}}' }
-          - firstname
-          - lastname
-          - body
+```txt
+layouts/
+└── _partials/
+    └── admin/
+        └── fields/
+            └── subtitle.yml
 ```
 
-## List of Hugolify fields
+```go-html-template
+{{- $args := dict
+  "label" (i18n "admin.fields.subtitle.label")
+  "name" "subtitle"
+  -}}
+{{ partial "admin/widgets/string.js" $args }}
+```
 
-{{< button text="See fields in repository" url="https://github.com/Hugolify/hugolify-admin/tree/main/layouts/partials/admin/fields" blank="true" >}}
+The label comes from the i18n files of the project, `admin.fields.subtitle.label`. Then list the field by name where it should appear: in the `fields` of a collection, of a block or of an object.
+
+### An object field
+
+An object lists its own fields, and lets the params change them through `GetFields`. Here the `address` field of the module:
+
+```go-html-template
+{{- $pin := cond (or (eq site.Params.admin.cms "decapcms") (eq site.Params.admin.cms "sveltiacms")) "location" "coordinates" -}}
+{{- $fields := slice
+  "street"
+  "zipcode"
+  "city"
+  "country_code"
+  $pin -}}
+
+{{- /* This line lets the params change the fields */ -}}
+{{- $fields = partial "admin/func/GetFields.html" (dict "field" . "fields" $fields) -}}
+
+{{- $args := dict
+  "label" (i18n "admin.fields.address.label")
+  "name" "address"
+  "collapsed" true
+  "fields" $fields
+  -}}
+
+{{ partial "admin/widgets/object.js" $args }}
+```
+
+A file named after a field of the module replaces it.

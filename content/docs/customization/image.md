@@ -52,7 +52,9 @@ navigation:
   mobile: '300x150'
 ```
 
-### Hero cover (v2)
+### Hero cover
+
+{{< badge text="New in v2" state="success" >}}
 
 The cover fills a box whose shape changes with the viewport: below 576px, the image gets its own crop, `mobile`, even without a dedicated mobile image. The home hero, taller with the design system (`--hero-home-height`), can have crops of its own.
 

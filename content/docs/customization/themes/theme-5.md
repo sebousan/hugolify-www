@@ -5,7 +5,7 @@ description: Fith available theme
 weight: 5
 icon: dice-5
 status:
-  text: Bootstrap
+  text: Design system & Bootstrap
   state: primary
 ---
 ## Demo

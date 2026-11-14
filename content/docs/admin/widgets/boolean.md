@@ -15,9 +15,9 @@ description: Toggle / checkbox field.
 | --- | --- | --- | --- |
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
-| `default` | boolean or string | — | Default value |
-| `hidden` | boolean | — | Hide from the editor |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `nameOverride` | string | — | Override the name in output |
-| `required` | boolean | — | Mark as required |
+| `default` | boolean or string | no | Default value |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `nameOverride` | string | no | Override the name in output |
+| `required` | boolean | no | Mark as required |

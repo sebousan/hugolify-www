@@ -183,7 +183,7 @@ admin:
       - faq
 ```
 
-{{< button url="/docs/admin/v2/blocks/#disable-or-enable" text="See blocks" >}}
+{{< button url="/docs/admin/blocks/#enable-blocks" text="See blocks" >}}
 
 ### Group collections
 
@@ -198,7 +198,7 @@ admin:
     - collections: [menus, config]
 ```
 
-{{< button url="/docs/admin/v2/collections/#order-and-group-collections" text="See collection groups" >}}
+{{< button url="/docs/admin/collections/#order-and-group-collections" text="See collection groups" >}}
 
 ### Filters, groups, columns and sort order
 
@@ -223,7 +223,7 @@ admin:
         - title
 ```
 
-{{< button url="/docs/admin/v2/collections/#add-view-filters" text="See list options" >}}
+{{< button url="/docs/admin/collections/#add-view-filters" text="See list options" >}}
 
 ### Bulk edit
 
@@ -236,7 +236,7 @@ admin:
       bulk_edit: [title, draft] # these columns, in this order
 ```
 
-{{< button url="/docs/admin/v2/collections/#add-bulk-edit" text="See bulk edit" >}}
+{{< button url="/docs/admin/collections/#add-bulk-edit" text="See bulk edit" >}}
 
 ### Override fields
 
@@ -251,7 +251,7 @@ admin:
         - text_markdown
 ```
 
-{{< button url="/docs/admin/v2/fields/#add-or-remove-fields-in-object-field" text="See fields" >}}
+{{< button url="/docs/admin/fields/#change-the-fields-of-an-object" text="See fields" >}}
 
 ### Hide a collection
 
@@ -262,12 +262,12 @@ admin:
       enable: false
 ```
 
-{{< button url="/docs/admin/v2/collections/#enable-or-disable-collections" text="See collections" >}}
+{{< button url="/docs/admin/collections/#enable-or-disable-collections" text="See collections" >}}
 
 ### More about customizations
 
-- [About Admin](/docs/admin/v2/setup/): languages, media folders, file size limits…
-- [About Sveltia CMS](/docs/admin/v2/cms/sveltia-cms/)
+- [About Admin](/docs/admin/setup/): languages, media folders, file size limits…
+- [About Sveltia CMS](/docs/admin/cms/sveltia-cms/)
 
 {{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1760429329/screenshot-sveltiacms-page-contact_nkxxil.png" alt="screenshot of Sveltia CMS, contact page" legend="Sveltia CMS, contact page" screenshot="true" >}}
 

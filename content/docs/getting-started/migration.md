@@ -10,7 +10,7 @@ seo:
 {{< alert-block title="Overview" state="info" >}}
 v2 turns **hugolify-theme** into an agnostic core and moves CSS and JavaScript into a separate **styling module**. With **hugolify-theme-bootstrap** the rendering is identical to v1.
 
-The theme and the admin are versioned together: a v2 project uses **hugolify-theme/v2** with **hugolify-admin/v2**. You can move the theme first and keep admin v1 for a while — it still works against the theme v2, without the `ratio` and `scrollsnap` controls — but admin v2 does not work against the theme v1.
+The theme and the admin are versioned together: a v2 project uses **hugolify-theme/v2** with **hugolify-admin/v2**. You can move the theme first and keep admin v1 for a while: it still works against the theme v2, without the `ratio` and `scrollsnap` controls. Admin v2 does not work against the theme v1.
 
 Your content, front matter and layouts are unchanged.
 {{< /alert-block >}}
@@ -65,7 +65,7 @@ postcss/
 
 If your project kept `postcss.config.js` at the root, move it into that directory. Each styling module ships an example you can copy.
 
-{{< alert-block text="PurgeCSS" state="warning" >}}
+{{< alert-block title="PurgeCSS" state="warning" >}}
 This is the step that most often breaks a v2 build: the styling module declares the path, so if no config sits there Hugo stops with `postcss config "postcss/bootstrap" not found`. It does not fall back to the project root: that fallback only applies when no path is declared at all.
 {{< /alert-block >}}
 
@@ -85,18 +85,18 @@ hugo mod tidy
 
 ## Hugolify Admin
 
-**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too. Staying on admin v1 for a transition is workable — see [Compatibility](/docs/admin/v2/migration/#compatibility).
+**hugolify-admin** moves with the theme. Each major of the admin targets the matching major of the theme, so a v2 project uses **hugolify-admin/v2** and the `/v2` suffix applies here too. Staying on admin v1 for a transition is workable, see [Compatibility](/docs/admin/migration/#compatibility).
 
 {{< alert-block title="Admin v2 is a prerelease" state="warning" >}}
-There is no stable **v2.0.0** of hugolify-admin yet, only prerelease tags. Migrating to the theme v2 therefore means running a prerelease admin. If your project cannot take that, stay on v1 for now — theme and admin both.
+There is no stable **v2.0.0** of hugolify-admin yet, only prerelease tags. Migrating to the theme v2 therefore means running a prerelease admin. If your project cannot take that, stay on v1 for now, theme and admin both.
 {{< /alert-block >}}
 
-{{< button url="/docs/admin/v2/" text="See Hugolify Admin v2" >}}
+{{< button url="/docs/admin/migration/" text="Migrate Hugolify Admin" >}}
 
 ## GitHub template
 
-{{< alert-block title="hugolify-template" state="warning" >}}
-The {{< blank_link link="https://github.com/hugolify/hugolify-template" text="GitHub template" >}} still ships **v1** (`hugolify-theme v1.28.0`, `hugolify-admin v1.0.0`). If you start a new project from it today, apply this guide to move it to v2.
+{{< alert-block title="hugolify-template" state="info" >}}
+The {{< blank_link link="https://github.com/hugolify/hugolify-template" text="GitHub template" >}} ships **v2**: hugolify-theme/v2 with hugolify-theme-design-system, hugolify-theme-icons and hugolify-admin/v2. A project started from it today needs no migration.
 {{< /alert-block >}}
 
 ## Staying on v1

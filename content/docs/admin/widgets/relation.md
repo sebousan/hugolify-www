@@ -1,6 +1,6 @@
 ---
 title: Relation
-description: Relation field — links to another collection entry.
+description: Relation field, linking to another collection entry.
 ---
 
 ## Usage
@@ -17,13 +17,14 @@ description: Relation field — links to another collection entry.
 | `name` | string | yes | Field name |
 | `collection` | string | yes | Target collection name |
 | `value_field` | string | yes | Field used as the stored value |
-| `display_fields` | array | — | Fields shown in the picker |
-| `filters` | array | — | Filter entries by field values |
-| `hidden` | boolean | — | Hide from the editor |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `label_singular` | string | — | Singular label |
-| `multiple` | boolean | — | Allow multiple relations (default: `true`) |
-| `nameOverride` | string | — | Override the name in output |
-| `required` | boolean | — | Mark as required |
-| `search_fields` | array | — | Fields to search in the picker |
+| `display_fields` | array | no | Fields shown in the picker |
+| `dropdown_threshold` | number | no | Up to this number of options, Sveltia CMS shows radio buttons or checkboxes instead of a dropdown (default: `1`) |
+| `filters` | array | no | Filter entries by field values |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `label_singular` | string | no | Singular label |
+| `multiple` | boolean | no | Allow multiple relations (default: `true`) |
+| `nameOverride` | string | no | Override the name in output |
+| `required` | boolean | no | Mark as required |
+| `search_fields` | array | no | Fields to search in the picker |

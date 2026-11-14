@@ -7,16 +7,16 @@ image:
 seo:
   description: Simplify your Sveltia CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
-  text: Prefered CMS
+  text: Preferred CMS
   state: primary
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
-{{< badge text="Prefered CMS" state="primary" >}}
+{{< badge text="Maintained CMS" state="success" >}}
+{{< badge text="Preferred CMS" state="primary" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Git Gateway
-- Netlify Identify
+- Netlify Identity
 
 See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations" text="Current limitations" >}} and {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented" text="features not to be implemented" >}} in Sveltia CMS documentation.
 {{< /alert-block >}}
@@ -28,12 +28,14 @@ See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-
 ```yaml
 admin:
   cms: sveltiacms
-  repo: Hugolify/hugolify-template # set your repository’s URL
+  repo: Hugolify/hugolify-template # your repository, owner/name
 ```
 
-## Additional featured
+## Additional features
 
-### Disable Netlify identify
+### Disable Netlify Identity
+
+Sveltia CMS signs in without Netlify Identity: stop loading its script.
 
 ```yaml
 admin:
@@ -53,9 +55,9 @@ admin:
     auth_type: pkce
 ```
 
-### Including Hugo’s special index file in a folder collection
+### Section index files
 
-Disables unnecessary indexes collection ({{< blank_link link="https://sveltiacms.app/en/docs/collections/entries#managing-hugo-s-special-index-file" text="See more about this on Sveltia’s documentation" >}}):
+Each collection also edits the `_index.md` of its section, shown at the top of its list: Hugolify writes the `index_file` option of Sveltia CMS for every collection. The *indexes* collection, which lists the same files, can then go:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -66,9 +68,15 @@ admin:
       enable: false
 ```
 
+{{< blank_link link="https://sveltiacms.app/en/docs/collections/entries#managing-hugo-s-special-index-file" text="See the index file in Sveltia CMS documentation" >}}
+
 ### Shortcodes
 
 Since {{< badge text="hugolify-admin v1.0.0" state="success" >}}
+
+The enabled shortcodes join the markdown editor, as with Decap CMS.
+
+{{< button url="/docs/admin/shortcodes/" text="See shortcodes" >}}
 
 ### Raw markdown and editor height
 
@@ -84,21 +92,21 @@ admin:
       modes: "['rich_text', 'raw']"
 ```
 
-{{< button url="../../fields/#markdown-editor" text="See markdown editor" >}}
+{{< button url="/docs/admin/fields/#markdown-editor" text="See markdown editor" >}}
 
 ### Deployments
 
 `skip_ci` is `true` by default: commits made by the CMS do not trigger a build, and editors publish with the **Publish Changes** button.
 
-{{< button url="../../setup/#deployments" text="See deployments" >}}
+{{< button url="/docs/admin/setup/#deployments" text="See deployments" >}}
 
 ### Nested collections
 
 {{< badge text="New in v2" state="success" >}}
 
-Sveltia CMS supports nested collections, and fixes several long-standing problems of the Decap implementation along the way — entry paths, preview paths, media folders, folder labels and i18n.
+Sveltia CMS supports nested collections, and fixes several long-standing problems of the Decap implementation along the way: entry paths, preview paths, media folders, folder labels and i18n.
 
-{{< button url="../../collections/#nested-collections" text="See nested collections" >}}
+{{< button url="/docs/admin/collections/#nested-collections" text="See nested collections" >}}
 
 ### Reorder
 
@@ -128,7 +136,7 @@ admin:
           label: Email
 ```
 
-{{< button url="../../collections/#add-summary-fields" text="See summary fields" >}}
+{{< button url="/docs/admin/collections/#add-summary-fields" text="See summary fields" >}}
 
 ### Thumbnails
 
@@ -143,7 +151,7 @@ admin:
       thumbnail: false
 ```
 
-{{< button url="../../collections/#add-thumbnail" text="See thumbnail" >}}
+{{< button url="/docs/admin/collections/#add-thumbnail" text="See thumbnail" >}}
 
 The lists of images, galleries, logos and testimonials show their image beside each folded item as well.
 
@@ -162,7 +170,7 @@ admin:
       bulk_edit: false
 ```
 
-{{< button url="../../collections/#add-bulk-edit" text="See bulk edit" >}}
+{{< button url="/docs/admin/collections/#add-bulk-edit" text="See bulk edit" >}}
 
 ### Publish mode
 
@@ -220,7 +228,7 @@ admin:
 Unsplash asks to credit the photographer, as in “Photo by … on Unsplash”. Sveltia CMS offers to copy the credit when inserting the photo: paste it into the Credit field of the image, displayed under it.
 {{< /alert-block >}}
 
-{{< button url="../../../../codes/partials/image/" text="See the image partial" >}}
+{{< button url="/docs/codes/partials/image/" text="See the image partial" >}}
 
 ### Block descriptions
 
@@ -243,7 +251,7 @@ admin:
     - collections: [menus, config]
 ```
 
-{{< button url="../../collections/#order-and-group-collections" text="See order and group collections" >}}
+{{< button url="/docs/admin/collections/#order-and-group-collections" text="See order and group collections" >}}
 
 ### Computed fields
 
@@ -251,15 +259,15 @@ admin:
 
 The `compute` widget builds a read-only field from the other fields of the entry, and refreshes it as they are typed. No other supported CMS ships an equivalent.
 
-{{< button url="../../widgets/compute/" text="See the compute widget" >}}
+{{< button url="/docs/admin/widgets/compute/" text="See the compute widget" >}}
 
 ## Icon library
 
-- {{< blank_link link="https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web" text="Material Symbols" >}}
+- {{< blank_link link="https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web" text="Material Symbols" >}}, by default. See [Icon sets](/docs/admin/setup/#icon-sets) for the others.
 
-## Documentations
+## Documentation
 
-- [Hugolify Admin setup](../setup/)
+- [Hugolify Admin setup](/docs/admin/setup/)
 - {{< blank_link link="https://sveltiacms.app/en/docs/" text="Sveltia CMS documentation" >}}
 - {{< blank_link link="https://github.com/sveltia/sveltia-cms" text="Sveltia CMS repository" >}}
 

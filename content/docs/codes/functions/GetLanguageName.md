@@ -16,4 +16,4 @@ The codes a person or the organization stores come from the 183 of ISO 639-1, li
 ## Related links
 
 - [Names of languages and countries](/docs/customization/structured-data/#names-of-languages-and-countries)
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetLanguageName.html" text="Func file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetLanguageName.html" text="Func file" >}}

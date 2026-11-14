@@ -27,7 +27,7 @@ admin:
 
 ## Entry list
 
-The table view shows the columns of [`summary_fields`](../../collections/#add-summary-fields). The list opens sorted by the field carrying `default_sort` in [`sortable_fields`](../../collections/#add-sortable-fields): v1 sorted every list by commit date.
+The table view shows the columns of [`summary_fields`](/docs/admin/collections/#add-summary-fields). The list opens sorted by the field carrying `default_sort` in [`sortable_fields`](/docs/admin/collections/#add-sortable-fields): v1 sorted every list by commit date.
 
 ```yaml
 admin:
@@ -42,5 +42,5 @@ admin:
 
 ## Documentation
 
-- [Hugolify Admin setup](../setup/)
+- [Hugolify Admin setup](/docs/admin/setup/)
 - {{< blank_link link="https://staticjscms.netlify.app/" text="https://staticjscms.netlify.app/" >}}

@@ -39,12 +39,18 @@ See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` refe
 
 ## Files
 
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme/blob/main/layouts/partials/blocks/templates/map.html" text="HTML file — hugolify-theme" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_map.sass" text="SASS file — hugolify-theme-bootstrap" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-map.css" text="CSS file — hugolify-theme-design-system" >}}
-- {{< blank_link link="https://github.com/hugolify/hugolify-theme-design-system/blob/main/assets/js/features/map.js" text="Javascript file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-example-site/blob/main/content/docs/map.md" text="Demo content file" >}}
-- {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/partials/admin/blocks/types/map.yml" text="Hugolify admin file" >}}
+| Module | Files |
+| --- | --- |
+| hugolify-theme | {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/blocks/templates/map.html" text="Template" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme/tree/main/layouts/_partials/blocks/templates/map" text="Sub-templates" >}} |
+| hugolify-admin | {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/types/map.yml" text="Block type" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-admin/blob/v2/layouts/_partials/admin/blocks/fields/map.html" text="Fields" >}} |
+| hugolify-example-blocks | {{< blank_link link="https://github.com/Hugolify/hugolify-example-blocks/blob/main/content/docs/map.md" text="Demo content" >}} |
+
+## Styling availability
+
+| Module | Availability | Files |
+| --- | --- | --- |
+| [hugolify-theme-bootstrap](/docs/customization/design/bootstrap/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/sass/components/blocks/_map.sass" text="SASS" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-bootstrap/blob/main/assets/js/features/map.js" text="JS" >}} |
+| [hugolify-theme-design-system](/docs/customization/design/design-system/) | {{< badge text="Available" state="success" >}} | {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/css/components/blocks/block-map.css" text="CSS" >}}, {{< blank_link link="https://github.com/Hugolify/hugolify-theme-design-system/blob/main/assets/js/features/map.js" text="JS" >}} |
 
 ## Related links
 
@@ -56,13 +62,13 @@ See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` refe
 
 | CMS | Hugolify Admin v2 |
 | --- | --- |
-| [CloudCannon](/docs/admin/v1/cms/cloudcannon/) | {{< badge text="Without the map widget" state="warning" >}} |
-| [Decap CMS](/docs/admin/v1/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
-| [Netlify CMS](/docs/admin/v1/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
-| [Pages CMS](/docs/admin/v1/cms/pages-cms/) | {{< badge text="Without the map widget" state="warning" >}} |
-| [Static CMS](/docs/admin/v1/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
-| [Sveltia CMS](/docs/admin/v1/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
-| [Tina CMS](/docs/admin/v1/cms/tina-cms/) | {{< badge text="Without the map widget" state="warning" >}} |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Without the map widget" state="warning" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Without the map widget" state="warning" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Without the map widget" state="warning" >}} |
 
 {{< alert-block state="warning" >}}
 CloudCannon, Pages CMS and Tina CMS have no map widget, so the admin gives them a `coordinates` object with `lat` and `lng` fields instead of the `location` picker. The block itself works the same.

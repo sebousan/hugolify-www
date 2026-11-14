@@ -8,7 +8,7 @@ seo:
   description: Simplify your Pages CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Maintained CMS" state="success" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Cloud assets
@@ -34,9 +34,17 @@ Build a `.pages.yml` file with Hugo and NodeJS script. This file needs to be ver
 yarn build:config:pagescms
 ```
 
+The script builds the site and copies `/public/admin/config.yml` to `.pages.yml`. It ships with the {{< blank_link link="https://github.com/hugolify/hugolify-template" text="GitHub template" >}}. Elsewhere, copy the `scripts` folder of {{< blank_link link="https://github.com/hugolify/hugolify-admin/tree/v2/scripts" text="hugolify-admin" >}} to your project and add the command to `package.json`:
+
+```json
+"scripts": {
+  "build:config:pagescms": "node scripts/build-config-pagescms.js"
+}
+```
+
 ## Enable/disable media
 
-With media from Pages CMS, you can configure how to handle files you want to upload, attach to or embed in your content.
+Pages CMS keeps the files in media libraries, one per folder. The image library is always there: turn on one more per type of file the site uses, as its fields upload there.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -44,9 +52,11 @@ With media from Pages CMS, you can configure how to handle files you want to upl
 admin:
   media:
     audio_folders: true
-    pdf_folders: true
+    document_folders: true # the PDF files
     video_folders: true
 ```
+
+{{< button url="/docs/admin/setup/#media-folders-per-type" text="See media folders per type" >}}
 
 ## Settings page
 
@@ -68,9 +78,9 @@ Hugolify builds the `view` of each collection from the options the other CMS rea
 
 | Option | `view` key |
 | --- | --- |
-| [`summary_fields`](../../collections/#add-summary-fields) | `fields`, with `summary` written `title` |
-| [`sortable_fields`](../../collections/#add-sortable-fields) | `sort`, and `default` for the field sorting by default |
-| [`nested`](../../collections/#nested-collections) of 2 and up | `layout: tree`, each `_index.md` standing for its folder |
+| [`summary_fields`](/docs/admin/collections/#add-summary-fields) | `fields`, with `summary` written `title` |
+| [`sortable_fields`](/docs/admin/collections/#add-sortable-fields) | `sort`, and `default` for the field sorting by default |
+| [`nested`](/docs/admin/collections/#nested-collections) of 2 and up | `layout: tree`, each `_index.md` standing for its folder |
 
 ```yaml
 admin:
@@ -85,7 +95,7 @@ admin:
 
 ## Exclude files
 
-Pages CMS cannot filter entries on a field value, as [`filter`](../../collections/#add-filter) does elsewhere. Leave files out of a collection by name instead:
+Pages CMS cannot filter entries on a field value, as [`filter`](/docs/admin/collections/#add-filter) does elsewhere. Leave files out of a collection by name instead:
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -96,15 +106,15 @@ admin:
       exclude: [_index.md]
 ```
 
-The name is compared at every level of the folder: in a [nested collection](../../collections/#nested-collections), whose pages are all `_index.md` files, excluding it would hide every page.
+The name is compared at every level of the folder: in a [nested collection](/docs/admin/collections/#nested-collections), whose pages are all `_index.md` files, excluding it would hide every page.
 
 ## Raw markdown
 
-The rich-text editor has its own *Editor / Source* switch, so the `minimal`, `modes` and `buttons` params of the markdown fields do not apply. See [Markdown editor](../../fields/#markdown-editor).
+The rich-text editor has its own *Editor / Source* switch, so the `minimal`, `modes` and `buttons` params of the markdown fields do not apply. See [Markdown editor](/docs/admin/fields/#markdown-editor).
 
 ## Documentation
 
-- [Hugolify Admin setup](../setup/)
+- [Hugolify Admin setup](/docs/admin/setup/)
 - {{< blank_link link="https://pagescms.org/docs/" text="Pages CMS documentation" >}}
 - {{< blank_link link="https://github.com/pages-cms/pages-cms" text="Pages CMS repository" >}}
 

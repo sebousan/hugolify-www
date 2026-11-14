@@ -35,14 +35,15 @@ education:                # education:
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
 | `fields` | array | yes, unless `field` | Array of field definitions |
-| `field` | string or map | — | A single field definition, repeated: the list stores values instead of objects (Decap, Netlify, Static and Sveltia CMS) |
-| `collapsed` | boolean | — | Collapse items by default (default: `true`) |
-| `hidden` | boolean | — | Hide from the editor |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `label_singular` | string | — | Singular label |
-| `max` | number | — | Maximum number of items |
-| `min` | number | — | Minimum number of items |
-| `nameOverride` | string | — | Override the name in output |
-| `required` | boolean | — | Mark as required |
-| `summary` | string | — | Summary template for collapsed view |
+| `field` | string or map | no | A single field definition, repeated: the list stores values instead of objects (Decap, Netlify, Static and Sveltia CMS) |
+| `collapsed` | boolean | no | Collapse items by default (default: `true`) |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `label_singular` | string | no | Singular label |
+| `max` | number | no | Maximum number of items |
+| `min` | number | no | Minimum number of items |
+| `nameOverride` | string | no | Override the name in output |
+| `required` | boolean | no | Mark as required |
+| `summary` | string | no | Summary template for collapsed view |
+| `thumbnail` | string | no | Image subfield shown beside a folded item, e.g. `src` (Sveltia CMS) |

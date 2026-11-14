@@ -8,10 +8,10 @@ seo:
   description: Simplify your Decap CMS setup with Hugolify’s easy-to-use configuration builder.
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Maintened CMS" state="success" >}}
+{{< badge text="Maintained CMS" state="success" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
-- UUID widget
+- UUID widget: Decap CMS has none. With [`config.id: true`](/docs/admin/setup/#entry-ids), Hugolify loads a community one, `netlify-cms-widget-uuid-v4`.
 {{< /alert-block >}}
 
 ## Enable Decap CMS
@@ -33,7 +33,7 @@ admin:
 
 ## Documentation
 
-- [Hugolify Admin setup](../setup/)
+- [Hugolify Admin setup](/docs/admin/setup/)
 - {{< blank_link link="https://decapcms.org/docs/intro/" text="Decap CMS documentation" >}}
 - {{< blank_link link="https://github.com/decaporg/decap-cms" text="Decap CMS repository" >}}
 

@@ -37,4 +37,4 @@ In this example, we want all people with "Lorem ipsum" as expertise (persons_exp
 
 ## Related links
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/func/GetTaxonomyPageBySlug" text="Func file" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetTaxonomyPageBySlug.html" text="Func file" >}}

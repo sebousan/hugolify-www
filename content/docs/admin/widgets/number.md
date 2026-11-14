@@ -15,12 +15,14 @@ description: Numeric input or range slider.
 | --- | --- | --- | --- |
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
-| `default` | string | — | Default value |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `max` | number | — | Maximum value |
-| `min` | number | — | Minimum value |
-| `nameOverride` | string | — | Override the name in output |
-| `range` | boolean | — | Render as a range slider |
-| `required` | boolean | — | Mark as required |
-| `step` | number | — | Step increment |
+| `default` | string | no | Default value |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `max` | number | no | Maximum value |
+| `min` | number | no | Minimum value |
+| `nameOverride` | string | no | Override the name in output |
+| `range` | boolean | no | Render as a range slider |
+| `required` | boolean | no | Mark as required |
+| `step` | number | no | Step increment |
+| `value_type` | string | no | Stored type: `int` (default) or `float` |

@@ -37,4 +37,4 @@ loop: false // to set loop video or not
 
 ## Related link
 
-- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/video.html" text="Commons file — hugolify-theme" >}}
+- {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/video.html" text="Commons file (hugolify-theme)" >}}

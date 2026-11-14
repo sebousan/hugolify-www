@@ -5,7 +5,7 @@ icon: bookmark
 ---
 
 {{< alert-block title="Not available in Hugolify v2" state="warning" >}}
-This module has not been migrated to v2 yet — no `/v2` module path is published for it. It stays available for Hugolify v1.
+This module has not been migrated to v2 yet: no `/v2` module path is published for it. It stays available for Hugolify v1.
 {{< /alert-block >}}
 
 ## Modules required
@@ -31,7 +31,15 @@ imports:
 
 - [Services](/docs/sections/services/)
 
-## CMS
+## CMS availability
 
-- [Hugolify Admin](/docs/admin/v1/) {{< badge text="Available" state="success" >}}
+| CMS | Hugolify Admin v2 |
+| --- | --- |
+| [CloudCannon](/docs/admin/cms/cloudcannon/) | {{< badge text="Available" state="success" >}} |
+| [Decap CMS](/docs/admin/cms/decap-cms/) | {{< badge text="Available" state="success" >}} |
+| [Netlify CMS](/docs/admin/cms/netlify-cms/) | {{< badge text="Available" state="success" >}} |
+| [Pages CMS](/docs/admin/cms/pages-cms/) | {{< badge text="Available" state="success" >}} |
+| [Static CMS](/docs/admin/cms/static-cms/) | {{< badge text="Available" state="success" >}} |
+| [Sveltia CMS](/docs/admin/cms/sveltia-cms/) | {{< badge text="Available" state="success" >}} |
+| [Tina CMS](/docs/admin/cms/tina-cms/) | {{< badge text="Available" state="success" >}} |
 

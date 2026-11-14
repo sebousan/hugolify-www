@@ -15,10 +15,10 @@ description: Single-line text input.
 | --- | --- | --- | --- |
 | `label` | string | yes | Field label |
 | `name` | string | yes | Field name |
-| `default` | string | — | Default value |
-| `hidden` | boolean | — | Hide from the editor |
-| `hint` | string | — | Help text |
-| `i18n` | boolean or string | — | i18n mode |
-| `nameOverride` | string | — | Override the name in output |
-| `pattern` | object | — | Validation pattern |
-| `required` | boolean | — | Mark as required |
+| `default` | string | no | Default value |
+| `hidden` | boolean | no | Hide from the editor |
+| `hint` | string | no | Help text |
+| `i18n` | boolean or string | no | i18n mode |
+| `nameOverride` | string | no | Override the name in output |
+| `pattern` | object | no | Validation pattern |
+| `required` | boolean | no | Mark as required |

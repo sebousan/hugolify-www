@@ -54,4 +54,4 @@ Object of address values: `street`, `zipcode`, `city` and `country_code`, an ISO
 
 ## Related link
 
-- [Commons file — hugolify-theme](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/partials/commons/address.html)
+- [Commons file (hugolify-theme)](https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/address.html)

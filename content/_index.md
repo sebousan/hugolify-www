@@ -66,23 +66,23 @@ blocks:
     ui:
       grid: large
       offset: center
-      theme: dark
+      theme: light
     heading:
       surtitle: Headless CMS
       title: Skip the config file creation, Hugolify handles it automatically!
       text: With the built-in configuration file builder in Hugolify Admin, you no longer need to create this file manually. Customizing fields is also simplified thanks to a dedicated parameters file.
     figure:
       screenshot: true
-      src: https://res.cloudinary.com/uncinq/image/upload/v1758126305/screenshot-hugolify-decapcms-home_ynatqv.png
+      src: https://res.cloudinary.com/uncinq/image/upload/v1794647300/screenshot-sveltiacms-home_osbpgy.png
       alt: Homepage screenshot of Hugolify Admin
-      legend: Example of content management with Decap CMS
+      legend: Example of content management with Sveltia CMS
     footing:
       ctas:
         - text: Hugolify Admin
           url: /docs/admin/v2/
   - type: informations
     ui:
-      theme: dark
+      theme: light
       scrollsnap: all
       
     column: 7

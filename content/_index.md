@@ -13,24 +13,6 @@ hero:
       text: Discover demo
       blank: true
 blocks:
-  - type: datas
-    ui:
-      column: 4
-    items:
-      - value: 7
-        title: Headless CMS
-        text: One param switches from one to another.
-      - value: 25
-        suffix: +
-        title: Blocks
-        text: From a title to a chart, all ready for the CMS.
-      - value: 66
-        suffix: +
-        title: Repositories
-        text: Open-source modules, MIT licensed.
-      - value: 21
-        title: Languages
-        text: For the labels of the admin forms.
   - type: informations
     ui:
       column: 4

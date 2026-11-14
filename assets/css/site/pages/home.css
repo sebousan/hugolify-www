@@ -28,6 +28,7 @@
          --font-size-heading, which shadows the one the hero hands down. */
       h1 {
         --font-size-heading: min(5rem, calc(1.625rem + 4.5vw));
+        --max-width-heading: 20ch;
       }
 
       h1 > span {

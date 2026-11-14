@@ -39,7 +39,7 @@ blocks:
           link: true
           text: Link
           url: https://github.com/orgs/Hugolify/projects/1
-      - icon: discord
+      - icon: brand:discord
         title: Discord
         text: Discussions
         cta:

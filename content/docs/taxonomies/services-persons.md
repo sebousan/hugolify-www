@@ -1,7 +1,7 @@
 ---
 title: Services persons
 description: Taxonomy persons for services section.
-icon: bookmark
+icon: user
 ---
 
 {{< alert-block title="Not available in Hugolify v2" state="warning" >}}

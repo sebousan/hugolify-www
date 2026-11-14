@@ -1,7 +1,7 @@
 ---
 title: Events persons
 description: Taxonomy persons for events section.
-icon: bookmark
+icon: user
 ---
 
 {{< alert-block title="Not available in Hugolify v2" state="warning" >}}

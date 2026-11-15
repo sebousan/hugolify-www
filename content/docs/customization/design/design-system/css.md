@@ -18,6 +18,10 @@ The module does not ship its own reset or token system. It composes four framewo
 | {{< blank_link link="https://github.com/uncinq/css-base" text="@uncinq/css-base" >}} | Reset, native element styles, layout primitives (container, grid, row), `@custom-media` breakpoints | `reset`, `base`, `layouts` |
 | {{< blank_link link="https://github.com/uncinq/css-components" text="@uncinq/css-components" >}} | Generic UI components (alert, badge, button, card, form, nav, panel…) | `components` |
 
+Together, the four packages are **Socle**, and they have a documentation site of their own: every token with its default value, the reset, the native element styles, the layouts and the markup of each component. This page only covers what **hugolify-theme-design-system** adds on top, and how it wires the packages into Hugolify.
+
+{{< button url="https://socle.uncinq.dev/docs/" text="Socle documentation" blank="true" >}}
+
 {{< alert text="Each package is strictly additive: no package reaches into a lower layer. They are installed by `hugo mod npm pack`, see [PostCSS](/docs/customization/design/design-system/postcss/#install-the-packages)." state="warning" >}}
 
 **hugolify-theme-design-system** itself is a Hugo module, not an npm package: it is imported through `module.yaml` and brings the Hugolify-specific layer (tokens, layouts, components, blocks, pages and utilities), writing into every layer above.
@@ -77,7 +81,7 @@ Breakpoints are `@custom-media` rules from `@uncinq/css-base`, named as rungs on
 }
 ```
 
-The device names still work but are aliases kept for compatibility: prefer `--sm`/`--md`/`--lg`/`--xl` in new code.
+The device names still work but are aliases kept for compatibility: prefer `--sm`/`--md`/`--lg`/`--xl` in new code. The scale and the build step it needs are documented on {{< blank_link link="https://socle.uncinq.dev/docs/css-base/mediaqueries/" text="Socle" >}}.
 
 Components that own a panel (header, filters, sidebar menu, table of contents) get their own semantic custom media, generated in `main.css` from site params, so the breakpoint and the `.panel-inline-*` classes in the markup cannot drift:
 
@@ -189,7 +193,7 @@ css:
 | `true` | `light dark` | none, the OS decides |
 | `false` | `only light` | `data-color-scheme="light"`, dark tokens suppressed |
 
-The dark values ship with `@uncinq/design-tokens` and reassign the semantic color tokens only: `--color-background`, `--color-text`, `--color-border`… Components follow without a single dark-specific rule.
+The dark values ship with `@uncinq/design-tokens` and reassign the semantic color tokens only: `--color-background`, `--color-text`, `--color-border`… Components follow without a single dark-specific rule. The tokens it reassigns are listed on {{< blank_link link="https://socle.uncinq.dev/docs/design-tokens/dark-mode/" text="Socle" >}}.
 
 Your own dark values go under the same guard, so a site switched back to light keeps working:
 
@@ -246,6 +250,8 @@ Two entry points, both imported after `tokens/design-system.css`, so they cascad
   }
 }
 ```
+
+Every token you can redefine, with its default value, is listed in the Socle references: {{< blank_link link="https://socle.uncinq.dev/docs/design-tokens/reference/" text="design tokens" >}} and {{< blank_link link="https://socle.uncinq.dev/docs/component-tokens/reference/" text="component tokens" >}}. The tokens the module adds for Hugolify components (`--header-*`, `--footer-*`, `--filters-*`…) are not in them: they live in its own `assets/css/tokens/`.
 
 ## Overriding CSS
 

@@ -22,7 +22,7 @@ A ready-to-run project: `hugolify-template` on its design system branch, with `c
 ## What it provides
 
 - Design tokens as CSS custom properties (primitive → semantic → component)
-- Vanilla CSS, organized in cascade layers, built on four framework-agnostic npm packages, see [CSS](/docs/customization/design/design-system/css/#css-packages)
+- Vanilla CSS, organized in cascade layers, built on the four framework-agnostic npm packages of {{< blank_link link="https://socle.uncinq.dev/" text="Socle" >}}, see [CSS](/docs/customization/design/design-system/css/#css-packages)
 - Hugolify-specific components (header, footer, hero, blocks, sections…)
 - Vanilla JS components (dialog, dropdown, menu, tooltip, video) and optional features (carousel, map, parallax, search, animation, Vimeo, YouTube)
 

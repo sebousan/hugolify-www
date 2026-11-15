@@ -72,7 +72,7 @@ hugo mod get && hugo mod npm pack && yarn install
 
 ## What you are building on
 
-The module ships no reset and no token system of its own: it composes four framework-agnostic npm packages (**@uncinq/design-tokens**, **@uncinq/component-tokens**, **@uncinq/css-base**, **@uncinq/css-components**) and adds the Hugolify layer on top.
+The module ships no reset and no token system of its own: it composes four framework-agnostic npm packages (**@uncinq/design-tokens**, **@uncinq/component-tokens**, **@uncinq/css-base**, **@uncinq/css-components**) and adds the Hugolify layer on top. Together they are {{< blank_link link="https://socle.uncinq.dev/" text="Socle" >}}, documented on a site of their own: keep it open next to this tutorial, it has every token you are about to redefine.
 
 What matters for the rest of this tutorial is the **three-level chain** your design system plugs into:
 
@@ -292,7 +292,7 @@ Once the semantic layer is set, most components are already on brand. Component 
 
 The naming is mechanical: `--{component}-{property}-{sub-property?}-{state?}`, with `color-{role}` for every color: `--btn-color-background-hover`, never `--btn-bg-hover`.
 
-{{< blank_link link="https://github.com/uncinq/component-tokens#readme" text="Full component token reference" >}}
+{{< blank_link link="https://socle.uncinq.dev/docs/component-tokens/reference/" text="Full component token reference" >}}
 
 ## Step 5. Rules no token covers
 

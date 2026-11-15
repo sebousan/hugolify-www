@@ -8,7 +8,7 @@ description: This tutorial guides you through signing in to Sveltia CMS with
 image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1781685847/634._Virtual-Assistance_cyuimh.svg
 seo:
-  image: https://res.cloudinary.com/uncinq/image/upload/v1781686050/634._Virtual-_Assistance_cqzlkq.png
+  image: https://res.cloudinary.com/uncinq/image/upload/v1794778925/share-tuto-sveltia-netlify_kszqmc.png
 hero:
   title: How to connect Sveltia CMS to GitHub and Netlify using Hugolify
   text: Sign in to Sveltia CMS with GitHub through Netlify, and publish content

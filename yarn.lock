@@ -232,9 +232,9 @@
   integrity sha512-wg4PNeaRDL3Mli515U52fpVK25kHj3VHAXbiV9/+VOyqUoDv07FteMq7TsIBHHPEYQ+aOZE7jOI4U/zYW3JdBQ==
 
 "@uncinq/css-components@^1.18.0":
-  version "1.30.0"
-  resolved "https://registry.yarnpkg.com/@uncinq/css-components/-/css-components-1.30.0.tgz#8a449458965a4143d77d359570955feafedbe9e4"
-  integrity sha512-V84dU0/UL3gjd0TpJ0HifqcikYh1L+QKa6cLVK0bFA3I4DFEx62CwZ+EGWfh5wgqsBxPLN6xC076VKBZ5xrrHQ==
+  version "1.31.1"
+  resolved "https://registry.yarnpkg.com/@uncinq/css-components/-/css-components-1.31.1.tgz#887fc6c94d4ed2107120acb3d2816764f24ffaba"
+  integrity sha512-gDC4ztv9oLPhMYSgGN+DDxXPCJufIw96SLW8QBvuBnRNe/nwNWdTU8ZxiWBEqtAWvLWpMJAO9K7m6UllMlYCJw==
 
 "@uncinq/design-tokens@^1.0.0":
   version "1.10.0"

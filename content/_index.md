@@ -112,6 +112,8 @@ blocks:
   - type: selected-pages
     section: pages
     ui:
+      grid: large
+      offset: center
       theme: light
     heading:
       title: All available CMS for Hugolify
@@ -196,62 +198,7 @@ blocks:
       - summary: My website runs Hugolify v1, what now?
         name: faq
         text: Follow the [migration guide](/docs/getting-started/migration/). The [v1 documentation](https://v1.hugolify.io/) stays online.
-  - type: informations
-    ui:
-      column: 3
-    heading:
-      surtitle: GitHub
-      title: The main repositories
-      text: The template relies on four modules, among more than sixty Hugolify repositories.
-    items:
-      - icon: brand:git
-        title: hugolify-template
-        text: GitHub template to start your Hugolify project.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-template
-      - icon: brand:git
-        title: hugolify-theme
-        text: Agnostic core module, templates, layouts and functions.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme
-      - icon: brand:git
-        title: hugolify-admin
-        text: Configuration of the CMS of your choice, from your modules.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-admin
-      - icon: brand:git
-        title: hugolify-theme-design-system
-        text: Styling module built on design tokens, CSS and JavaScript.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-design-system
-      - icon: brand:git
-        title: hugolify-theme-bootstrap
-        text: Styling module built on Bootstrap 5, SASS and JavaScript.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-bootstrap
-      - icon: brand:git
-        title: hugolify-theme-icons
-        text: Lucide and Simple Icons, for the interface and the brands.
-        cta:
-          link: true
-          blank: true
-          text: Discover repository
-          url: https://github.com/hugolify/hugolify-theme-icons
+  
   - type: cta
     ui:
       theme: accent

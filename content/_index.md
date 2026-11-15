@@ -109,70 +109,21 @@ blocks:
       ctas:
         - text: Hugolify Admin
           url: /docs/admin/
-  - type: logos
+  - type: selected-pages
+    section: pages
     ui:
-      column: 7
       theme: light
     heading:
       title: All available CMS for Hugolify
       text: The same project runs any of them, from one configuration file that Hugolify writes for you.
     items:
-      - title: Sveltia CMS
-        text: Preferred
-        src: https://res.cloudinary.com/uncinq/image/upload/v1758126005/logo-sveltia-cms_eh8ftl.png
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Sveltia CMS
-          url: /docs/admin/cms/sveltia-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758125974/logo-decap-cms_s1xnvt.svg
-        title: Decap CMS
-        text: Maintained
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Decap CMS
-          url: /docs/admin/cms/decap-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126024/logo-pages-cms_f6i6vw.svg
-        title: Pages CMS
-        text: Maintained
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Pages CMS
-          url: /docs/admin/cms/pages-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1761313828/cloudcannon_yvmrjo.svg
-        title: CloudCannon
-        text: Beta
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure CloudCannon
-          url: /docs/admin/cms/cloudcannon/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1765298678/tina-cropped_ozj5qm.svg
-        title: Tina CMS
-        text: Beta
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Tina CMS
-          url: /docs/admin/cms/tina-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126072/logo-netlify-cms_yrrarb.svg
-        title: Netlify CMS
-        text: Archived
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Netlify CMS
-          url: /docs/admin/cms/netlify-cms/
-      - src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
-        title: Static CMS
-        text: Archived
-        cta:
-          link: true
-          text: Documentation
-          title: How to configure Static CMS
-          url: /docs/admin/cms/static-cms/
+      - /docs/admin/cms/cloudcannon/
+      - /docs/admin/cms/decap-cms/
+      - /docs/admin/cms/netlify-cms/
+      - /docs/admin/cms/pages-cms/
+      - /docs/admin/cms/static-cms/
+      - /docs/admin/cms/sveltia-cms/
+      - /docs/admin/cms/tina-cms/
   - type: timeline
     ui:
       grid: medium

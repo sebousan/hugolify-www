@@ -4,12 +4,12 @@ github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 h1:TyZM0MK9+09/
 github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03/go.mod h1:CJ8UtS8LPLOSmpvwRkQJkwqOwwXaDfH5S7iG83GKAlY=
 github.com/hugolify/hugolify-admin/v2 v2.0.0-54 h1:EwNkXWtm1LHMlJC0D9Tu2CQzKeZTEGEDTaWg0/a0bFQ=
 github.com/hugolify/hugolify-admin/v2 v2.0.0-54/go.mod h1:lPDkZn5SuJ2zB96xU/kKH3gNWOovqgxutjgnBOin48M=
-github.com/hugolify/hugolify-theme-design-system v0.0.0-20261113094020-56100be6d715 h1:630xwKDEWoFwWoV9M7G+spNs2WVS/OaWHsdJ3sfUidY=
-github.com/hugolify/hugolify-theme-design-system v0.0.0-20261113094020-56100be6d715/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20261115150531-fd71a595f3e8 h1:LH22W9eO/meW/JfjfdOAlYcF16e2WQnBOsHTrsshxn4=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20261115150531-fd71a595f3e8/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20261113130657-aa46c1a38290 h1:0mmJEoh+IonMTCXE5Gg7nNDEYWJiPit5Aj3/4mVD2lA=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20261113130657-aa46c1a38290/go.mod h1:L+idmDTe/Y+zi2lxe7BakjDgywPvNJ5NISKvEb/DwrU=
-github.com/hugolify/hugolify-theme-icons v0.0.0-20261110164618-f0804c381a83 h1:H/tJ6J/RpspbSjMS0zD5zPBS8U+Fzj7+vOQTmq5PD1s=
-github.com/hugolify/hugolify-theme-icons v0.0.0-20261110164618-f0804c381a83/go.mod h1:tgu9FOg5nxqOuBWLjq/bPaK08+qruITqMrjbUq5QBQg=
+github.com/hugolify/hugolify-theme-icons v0.0.0-20261114230150-ed8657dec327 h1:v2L/WtwE2wp3owNacAs2x4UhSv23/6QMNl6qdnwnVNE=
+github.com/hugolify/hugolify-theme-icons v0.0.0-20261114230150-ed8657dec327/go.mod h1:tgu9FOg5nxqOuBWLjq/bPaK08+qruITqMrjbUq5QBQg=
 github.com/hugolify/hugolify-theme/v2 v2.72.0 h1:V0hg1ouAdwHSbGDpCZY9IFwDAxaVJxbB6zSlGRIaGps=
 github.com/hugolify/hugolify-theme/v2 v2.72.0/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
 github.com/lucide-icons/lucide v0.265.1-0.20261113150437-55782beff3a0 h1:JQ31jMhjAW0P+TvdK40oR2gdaWw2ggOzXcEpYlvZpGM=
@@ -18,7 +18,7 @@ github.com/midzer/tobii v3.2.1+incompatible h1:7OzFt5SKgpo1BROxIK6xHY99Odeg6z2pv
 github.com/midzer/tobii v3.2.1+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.3.0+incompatible h1:QmOH++JZIJizGRj5WInJbVaeiqCyPBVPpDVip4F7lhM=
 github.com/orestbida/cookieconsent v3.3.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
-github.com/sebousan/hugolify-theme-uncinqify/v2 v2.0.0 h1:DMDp4KTCSRC0pndS/nrszWqA6BpvOrByDIXQ64npNBM=
-github.com/sebousan/hugolify-theme-uncinqify/v2 v2.0.0/go.mod h1:yaQRH3lR6W9cOJm0IGFpkzHFyHi/aYaY3IvhaUEx10Q=
+github.com/sebousan/hugolify-theme-uncinqify/v2 v2.1.0 h1:D2kkYNJPJdW3ett2anxWzeJZ1N+6OyyGqDSYQaLBB2k=
+github.com/sebousan/hugolify-theme-uncinqify/v2 v2.1.0/go.mod h1:yaQRH3lR6W9cOJm0IGFpkzHFyHi/aYaY3IvhaUEx10Q=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 h1:KMtcHeiD7TpsH/GQhibbHc1Nd8SB3p2VW6S3lCYk4Vs=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=

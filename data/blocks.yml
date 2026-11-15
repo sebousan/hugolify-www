@@ -1,3 +1,21 @@
+cta:
+  ui:
+    align: center
 datas:
+  ui:
+    align: center
+informations:
+  ui:
+    align: center
+faq:
+  ui:
+    align: center
+figure:
+  ui:
+    align: center
+selected-docs:
+  ui:
+    align: center
+selected-tutorials:
   ui:
     align: center

@@ -36,6 +36,7 @@
     --color-danger-strong: #3c3c43;
     --color-info-muted: rgb(100 108 255 / 0.14);
     --color-info-strong: #3c3c43;
+    --color-light: var(--color-gray-100);
     --color-warning-muted: rgb(234 179 8 / 0.14);
     --color-warning-strong: #3c3c43;
 
@@ -50,5 +51,7 @@
     --logo-color: var(--color-text);
     --logo-letter-spacing: 0.05em;
     --logo-text-transform: none;
+
+    --block-card-color-background: white;
   }
 }

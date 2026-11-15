@@ -7,10 +7,11 @@
 
 /* Components */
 @import './site/components/alert.css';
+@import './site/components/btn.css';
 @import './site/components/content-body.css';
 @import './site/components/doc.css';
-@import './site/components/heading.css';
 @import './site/components/logo.css';
+@import './site/components/main-menu.css';
 @import './site/components/surtitle.css';
 
 /* Layouts */

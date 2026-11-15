@@ -8,10 +8,10 @@ seo:
   description: Simplify your Netlify CMS setup with Hugolify’s easy-to-use configuration builder.
 status:
   text: Archived
-  state: warning
+  state: light
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Archived CMS" state="warning" >}}
+{{< badge text="Archived CMS" state="light" >}}
 
 ## Enable Netlify CMS
 

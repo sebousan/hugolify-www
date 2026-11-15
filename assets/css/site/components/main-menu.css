@@ -1,0 +1,17 @@
+/* site/components/main-menu.css */
+@layer components {
+  .main-menu {
+    .nav-primary {
+      @media not (--header-expand) {
+        --nav-gap: var(--spacing-sm);
+        --nav-link-padding-inline: 0;
+        .dropdown-menu {
+          --nav-gap: var(--spacing-xs);
+        }
+      }
+      @media (--header-expand) {
+        align-items: center;
+      }
+    }
+  }
+}

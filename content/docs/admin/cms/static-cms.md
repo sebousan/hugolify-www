@@ -6,10 +6,10 @@ image:
   src: https://res.cloudinary.com/uncinq/image/upload/v1758126045/logo-static-cms_us9twk.svg
 status:
   text: Archived
-  state: warning
+  state: light
 ---
 {{< badge text="Available in production" state="success" >}}
-{{< badge text="Archived CMS" state="warning" >}}
+{{< badge text="Archived CMS" state="light" >}}
 
 {{< alert-block title="Warning: Not supported features" state="warning" >}}
 - Cloud assets

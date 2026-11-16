@@ -167,6 +167,8 @@ blocks:
     section: tutorials
     show_more: true
     ui:
+      grid: large
+      offset: center
       theme: light
     heading:
       surtitle: How to

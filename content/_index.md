@@ -190,10 +190,19 @@ blocks:
         text: Yes. Hugolify is open-source under the MIT license, free for personal and commercial projects.
       - summary: Which CMS should I choose?
         name: faq
-        text: '[Sveltia CMS](/docs/admin/cms/sveltia-cms/) is the preferred one, with the most features. [Decap CMS](/docs/admin/cms/decap-cms/) suits a site using Netlify Identity, [Pages CMS](/docs/admin/cms/pages-cms/) a repository on GitHub. Switching later only changes one param.'
-      - summary: Design system or Bootstrap?
+        text: '[Sveltia CMS](/docs/admin/cms/sveltia-cms/) is the preferred one, with the most features. [Decap CMS](/docs/admin/cms/decap-cms/) suits a site using Netlify Identity, [Pages CMS](/docs/admin/cms/pages-cms/) a repository on GitHub. [CloudCannon](/docs/admin/cms/cloudcannon/) and [Tina CMS](/docs/admin/cms/tina-cms/) are still in beta, without the i18n structure or the map widget yet. Switching later only changes one param.'
+      - summary: 'Which front-end framework: Tailwind, Bootstrap or design tokens?'
         name: faq
-        text: The [design system](/docs/customization/design/design-system/) is framework-free and built on design tokens, the choice of the GitHub template. [Bootstrap](/docs/customization/design/bootstrap/) keeps the rendering and the SASS variables of Hugolify v1.
+        text: 'We favor clean HTML that reads semantically, which is why Hugolify does not use Tailwind: its utility classes would fill the markup. The [design system](/docs/customization/design/design-system/) styles that HTML with framework-free CSS built on design tokens, the choice of the GitHub template. [Bootstrap](/docs/customization/design/bootstrap/) keeps the rendering and the SASS variables of Hugolify v1.'
+      - summary: Is Hugolify good for SEO?
+        name: faq
+        text: 'Yes. Every page gets its meta title and description, a canonical URL, Open Graph and Twitter cards, and hreflang links on a multilingual site, and the sitemap is built for you. The pages are fast and their HTML semantic, two things search engines reward. A page can also be [hidden from search engines](/docs/customization/seo/#hide-a-page-from-search-engines) from the CMS.'
+      - summary: Is my website ready for AI search engines (GEO)?
+        name: faq
+        text: 'Yes. The pages are static HTML, readable without JavaScript, and their semantic markup tells a model what each part of the page is. The theme also writes the [llms.txt and llms-full.txt](/docs/customization/seo/#llmstxt) files that language models look for, both edited from the CMS.'
+      - summary: Which structured data does Hugolify publish?
+        name: faq
+        text: 'A [schema.org graph](/docs/customization/structured-data/) in JSON-LD on every page: the website, the organization and the breadcrumbs, then depending on the page a person, a job posting, an article, a video or a FAQ, like this one. Modules add their own, such as products, events or real estate.'
       - summary: Where can I host my website?
         name: faq
         text: On any static host. The docs come with guides for [Netlify](/docs/getting-started/hosting/netlify/), [Cloudflare Pages](/docs/getting-started/hosting/cloudflare-pages/), [GitHub Pages](/docs/getting-started/hosting/github-pages/) and [Render](/docs/getting-started/hosting/render/).
@@ -201,17 +210,20 @@ blocks:
         name: faq
         text: Follow the [migration guide](/docs/getting-started/migration/). The [v1 documentation](https://v1.hugolify.io/) stays online.
   
-  - type: cta
+  - type: pushes
     ui:
-      theme: accent
-    heading:
-      title: Support Us
-      text: Support our work and help us improve this project by becoming a sponsor or giving us a star on our GitHub repositories.
-    ctas:
-      - text: Become a sponsor
-        url: https://github.com/sponsors/sebousan
-        blank: true
-      - text: Star on GitHub
-        url: https://github.com/Hugolify/hugolify-template
-        blank: true
+      grid: large
+      offset: center
+    items:
+      - title: Support Us
+        text: Support our work and help us improve this project by becoming a sponsor or giving us a star on our GitHub repositories.
+        cta:
+          text: Become a sponsor
+          url: https://github.com/sponsors/sebousan
+          blank: true
+        ui:
+          align: center
+          offset: center
+          background_color: '#a90940'
+          color: '#ffffff'
 ---

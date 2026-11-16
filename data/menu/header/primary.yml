@@ -22,6 +22,9 @@ links:
         url: /docs/admin/
   - title: Tutorials
     url: /tutorials/
+  - title: Demo
+    url: https://demo.hugolify.io/
+    blank: true
   - title: Use Github template
     url: https://github.com/hugolify/hugolify-template/generate
     blank: true

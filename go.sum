@@ -18,7 +18,7 @@ github.com/midzer/tobii v3.2.1+incompatible h1:7OzFt5SKgpo1BROxIK6xHY99Odeg6z2pv
 github.com/midzer/tobii v3.2.1+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.3.0+incompatible h1:QmOH++JZIJizGRj5WInJbVaeiqCyPBVPpDVip4F7lhM=
 github.com/orestbida/cookieconsent v3.3.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
-github.com/sebousan/hugolify-theme-uncinqify/v2 v2.3.0 h1:ksE06gdvDSHqyp/qtkmSazsSKaA/d4JgxMMskfJj5Oc=
-github.com/sebousan/hugolify-theme-uncinqify/v2 v2.3.0/go.mod h1:yaQRH3lR6W9cOJm0IGFpkzHFyHi/aYaY3IvhaUEx10Q=
+github.com/sebousan/hugolify-theme-uncinqify/v2 v2.3.1 h1:3Bovywyz6sd8owpHffwdUPYJbppvbTimJwPg1NsvgY8=
+github.com/sebousan/hugolify-theme-uncinqify/v2 v2.3.1/go.mod h1:yaQRH3lR6W9cOJm0IGFpkzHFyHi/aYaY3IvhaUEx10Q=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 h1:KMtcHeiD7TpsH/GQhibbHc1Nd8SB3p2VW6S3lCYk4Vs=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=

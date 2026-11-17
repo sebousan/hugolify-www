@@ -27,7 +27,7 @@ United States
 
 ## Audience measurement
 
-None
+This site uses {{< blank_link link="https://plausible.io/data-policy" text="Plausible Analytics" >}} to measure its audience. This cookieless tool collects no personal data: IP addresses are not stored, statistics are aggregated and anonymous, and data is hosted in the European Union.
 
 ## Cookie
 

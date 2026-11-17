@@ -1,4 +1,4 @@
-/chat   https://discord.gg/hBGyx8sCz4 301
+/chat   https://discord.gg/8CR8eEqFJk 301
 
 
 # Hugolify v1 URLs -> their v2 equivalent on this site
@@ -48,3 +48,6 @@
 
 # Hugolify Admin v1, archived to the v1 documentation site
 /docs/admin/v1/*                        https://v1.hugolify.io/docs/cms/admin/:splat    301
+
+# Browsers and crawlers still request /favicon.ico at the root
+/favicon.ico  /assets/images/favicons/favicon.ico  200

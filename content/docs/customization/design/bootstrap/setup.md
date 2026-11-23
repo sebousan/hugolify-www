@@ -20,9 +20,9 @@ It provides Bootstrap 5:
 
 ## Example project
 
-A ready-to-run project: `hugolify-template` on its Bootstrap branch, with `config/_default/module.yaml` and `postcss/bootstrap/postcss.config.js` (PurgeCSS included) already in place.
+Start from `hugolify-template` and swap its styling module for this one in `config/_default/module.yaml`, see [Install](#install). The module provides its PostCSS config (PurgeCSS included), see [PostCSS](/docs/customization/design/bootstrap/postcss/).
 
-{{< button url="https://github.com/Hugolify/hugolify-template/tree/hugolify-theme-bootstrap" text="hugolify-template (Bootstrap branch)" blank="true" >}}
+{{< button url="https://github.com/Hugolify/hugolify-template" text="hugolify-template" blank="true" >}}
 
 ## What it provides
 

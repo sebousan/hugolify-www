@@ -15,9 +15,9 @@ It is a drop-in replacement for **hugolify-theme-bootstrap**: switching is a one
 
 ## Example project
 
-A ready-to-run project: `hugolify-template` on its design system branch, with `config/_default/module.yaml` and `postcss/design-system/postcss.config.js` already in place.
+A ready-to-run project: `hugolify-template` ships this module, with `config/_default/module.yaml` already in place.
 
-{{< button url="https://github.com/Hugolify/hugolify-template/tree/hugolify-theme-design-system" text="hugolify-template (design system branch)" blank="true" >}}
+{{< button url="https://github.com/Hugolify/hugolify-template" text="hugolify-template" blank="true" >}}
 
 ## What it provides
 
@@ -44,7 +44,7 @@ imports:
 
 ### PostCSS
 
-The CSS pipeline needs a PostCSS config in your project. The module declares the directory (`postcss/design-system`), the file has to exist there.
+The module provides the PostCSS config of the CSS pipeline: there is nothing to copy, only the npm packages to install (below).
 
 {{< button url="/docs/customization/design/design-system/postcss/" text="PostCSS setup" >}}
 
@@ -59,6 +59,7 @@ Run it again after every `hugo mod get -u`: a module can add or bump an npm depe
 ## Requirements
 
 - {{< blank_link link="https://gohugo.io/installation/" text="Hugo extended" >}} >= 0.158.0
+- {{< blank_link link="https://nodejs.org/" text="Node.js" >}} >= 24.5 (or >= 22.20 on Node 22), see [Prerequisites](/docs/getting-started/prerequisites/#nodejs)
 
 ## Switching from hugolify-theme-bootstrap
 

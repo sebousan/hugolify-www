@@ -6,17 +6,15 @@ icon: brand:css
 
 ## PostCSS
 
-{{< alert text="`/config/default/params.yaml`" state="light" >}}
-
-Each design module defines a directory where Hugo looks for **postcss.config.js**. This value is set in the theme's own **hugo.yaml**, you don't need to override it in your project params:
+Each styling module ships its own PostCSS config and points Hugo at it in its **hugo.yaml**. There is nothing to copy, and nothing to declare in your project params:
 
 ```yaml
-# Set by the theme (e.g. hugolify-theme-bootstrap/hugo.yaml)
+# Set by the styling module (e.g. hugolify-theme-design-system/hugo.yaml)
 css:
-  postcss: "postcss/bootstrap"       # hugolify-theme-bootstrap
+  postcss: "postcss.config.cjs"
 ```
 
-The config file must exist at that path in your project (e.g. **postcss/bootstrap/postcss.config.js**). Each styling module ships the file at its root, ready to copy. A declared path with no file there is a build error. The fallback to **postcss.config.js** at the project root only applies when no path is declared at all.
+A **postcss.config.cjs** at the root of your project replaces the module's. The PostCSS pipeline needs Node.js 24.5 or later (22.20 on Node 22), see [Prerequisites](/docs/getting-started/prerequisites/#nodejs).
 
 * [PostCSS for hugolify-theme-bootstrap](/docs/customization/design/bootstrap/postcss/)
 * [PostCSS for hugolify-theme-design-system](/docs/customization/design/design-system/postcss/)

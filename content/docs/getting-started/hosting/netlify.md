@@ -11,6 +11,7 @@ image:
 
 - Form: Netlify form
 - [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
+- [Auth: Sveltia CMS Additions](/docs/getting-started/auth/sveltia-cms-additions/)
 
 ## Documentation
 

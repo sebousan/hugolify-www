@@ -22,7 +22,7 @@ Your content, front matter and layouts are unchanged.
 | Core theme | `hugolify-theme` | `hugolify-theme/v2` |
 | Bootstrap CSS + JS | bundled in the core | separate module |
 | Styling | fixed | `hugolify-theme-bootstrap` or `hugolify-theme-design-system` |
-| PostCSS config | project root | path defined by the styling module |
+| PostCSS config | project root | provided by the styling module |
 
 ## 1. Update the modules
 
@@ -53,21 +53,15 @@ Keep your content modules (`hugolify-theme-posts`, `hugolify-theme-projects`…)
 
 {{< button url="/docs/customization/design/" text="Compare both design modules" >}}
 
-## 3. Move your PostCSS config
+## 3. Delete your PostCSS config
 
-Each styling module declares the directory where Hugo looks for `postcss.config.js`, through the `css.postcss` param set in the module's own `hugo.yaml`. With **hugolify-theme-bootstrap** that path is `postcss/bootstrap`.
-
-```
-postcss/
-  bootstrap/
-    postcss.config.js
-```
-
-If your project kept `postcss.config.js` at the root, move it into that directory. Each styling module ships an example you can copy.
+Each styling module ships its own `postcss.config.cjs` and points Hugo at it, through the `css.postcss` param set in the module's own `hugo.yaml`. The `postcss.config.js` at the root of your project is no longer read: delete it.
 
 {{< alert-block title="PurgeCSS" state="warning" >}}
-This is the step that most often breaks a v2 build: the styling module declares the path, so if no config sits there Hugo stops with `postcss config "postcss/bootstrap" not found`. It does not fall back to the project root: that fallback only applies when no path is declared at all.
+With **hugolify-theme-bootstrap**, the module's config keeps the v1 PurgeCSS setup. If your own config had safelist entries of its own, keep them in a `postcss.config.cjs` at the project root, which replaces the module's. See [PostCSS](/docs/customization/design/bootstrap/postcss/#override-the-config).
 {{< /alert-block >}}
+
+The PostCSS pipeline needs Node.js 24.5 or later (22.20 on Node 22), see [Prerequisites](/docs/getting-started/prerequisites/#nodejs).
 
 ## 4. Fetch the modules
 

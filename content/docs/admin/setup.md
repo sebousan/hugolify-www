@@ -63,10 +63,10 @@ admin:
   # Auth
   auth:
     app_id: # The Client ID provided by Gitea/GitLab
-    auth_type: # pkce for GitLab with app_id, Decap and Sveltia CMS
+    auth_type: # pkce for GitLab with app_id, Decap and Sveltia CMS; additions for Sveltia CMS Additions
     api_root: # API URL of your Gitea/GitLab instance
     auth_endpoint: # Auth endpoint of your Gitea/GitLab instance
-    base_url: # Root URL of your Gitea/GitLab instance
+    base_url: # Root URL of your Gitea/GitLab instance, or URL of your Sveltia CMS Additions Worker
     netlify_identity: true # loads Netlify Identity, the sign-in of Git Gateway
 
   # Languages
@@ -222,9 +222,9 @@ Pages CMS, CloudCannon and TinaCMS have no i18n structure: see their pages under
 
 ## Authentication
 
-`git` picks the Git backend, and `auth` its sign-in. Netlify Identity with Git Gateway is the default of Decap CMS.
+`git` picks the Git backend, and `auth` its sign-in. Netlify Identity with Git Gateway is the default of Decap CMS. With Sveltia CMS, Sveltia CMS Additions gives editors their own accounts, without GitHub.
 
-{{< button url="/docs/getting-started/auth/" text="See authentication" >}} {{< button url="/docs/admin/cms/sveltia-cms/#gitlab-with-pkce" text="See GitLab with PKCE" >}}
+{{< button url="/docs/getting-started/auth/" text="See authentication" >}} {{< button url="/docs/getting-started/auth/sveltia-cms-additions/" text="See Sveltia CMS Additions" >}} {{< button url="/docs/admin/cms/sveltia-cms/#gitlab-with-pkce" text="See GitLab with PKCE" >}}
 
 ## CMS version
 

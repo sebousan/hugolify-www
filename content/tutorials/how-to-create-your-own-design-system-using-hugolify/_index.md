@@ -37,9 +37,9 @@ You will not fork the module, you will not copy its CSS into your project, and y
 * {{< blank_link link="https://gohugo.io/installation/" text="Hugo extended" >}} >= **0.158.0**, required by the styling module
 * A Hugolify **v2** project - [See the migration guide](/docs/getting-started/migration/)
 
-{{< alert text="The template's `hugolify-theme-design-system` branch is a ready-to-run v2 project with the module list and the PostCSS config already in place." state="info" >}}
+{{< alert text="The template is a ready-to-run v2 project with this module list already in place." state="info" >}}
 
-{{< button url="https://github.com/Hugolify/hugolify-template/tree/hugolify-theme-design-system" text="hugolify-template on its design system branch" blank="true" >}}
+{{< button url="https://github.com/Hugolify/hugolify-template" text="hugolify-template" blank="true" >}}
 
 ## Install the modules
 
@@ -60,7 +60,7 @@ imports:
 
 ## PostCSS and packages
 
-The CSS pipeline needs a PostCSS config, at the path the module declares (`postcss/design-system`). It has to exist in your project: a module cannot provide it.
+The module provides the PostCSS config of the CSS pipeline: there is nothing to copy. It runs on Node.js 24.5 or later (22.20 on Node 22).
 
 {{< button url="/docs/customization/design/design-system/postcss/" text="PostCSS setup" >}}
 
@@ -420,7 +420,7 @@ yarn watch
 
 See your website in <http://localhost:1313/>.
 
-{{< alert text="Build failing on `postcss config \"postcss/design-system\" not found`? The file is missing: the module declares the path, and Hugo does not look anywhere else. See [Troubleshooting](/docs/customization/design/design-system/postcss/#troubleshooting)." state="warning" >}}
+{{< alert text="Build failing, or hanging, on the CSS? Check your Node.js version first, then the module version. See [Troubleshooting](/docs/customization/design/design-system/postcss/#troubleshooting)." state="warning" >}}
 
 ## What the module also gives you
 

@@ -160,6 +160,6 @@ Badge classes are generated from Bootstrap's `$theme-colors` map:
 
 ## PostCSS and PurgeCSS
 
-Bootstrap generates a large stylesheet; PurgeCSS removes the classes your site never renders. Both live in the PostCSS config of your project.
+Bootstrap generates a large stylesheet; PurgeCSS removes the classes your site never renders. Both live in the PostCSS config the module provides.
 
 {{< button url="/docs/customization/design/bootstrap/postcss/" text="PostCSS and PurgeCSS setup" >}}

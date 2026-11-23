@@ -11,6 +11,10 @@ aliases:
 * Form: Netlify form
 * [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
 
+## Available
+
+* [Auth: Sveltia CMS Additions](/docs/getting-started/auth/sveltia-cms-additions/)
+
 ## Use a specific Hugo version
 
 higher of `0.141.0` and `extended`

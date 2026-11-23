@@ -11,13 +11,24 @@ icon: face-slightly-smiling
 
 ## Optimize
 
-To strip unused icons from the font, run:
+The full Bootstrap Icons font is served by default. To serve only the icons your site uses, a script of the module scans the SASS of every module and of your project, then writes a subset of the font and its SASS map into your project:
 
-```bash
-yarn build:icons:bootstrap
+- `static/assets/fonts/bootstrap-icons/`
+- `assets/scss/bootstrap-icons/bootstrap-icons.scss`
+
+The script ships with the module, in the Hugo module cache. A module cannot add npm scripts, so add this one to the `package.json` of your project: it asks Hugo where the module is, runs the script from there, then builds the site.
+
+{{< alert text="`/package.json`" state="light" >}}
+
+```json
+"build:icons": "node \"$(hugo config mounts | grep -o '\"dir\": *\"[^\"]*hugolify-theme-bootstrap[^\"]*\"' | head -1 | cut -d'\"' -f4)/scripts/build-icons.mjs\" && yarn build"
 ```
 
-This script parses templates and SASS to detect which icons are actually used and rebuilds the icon font with only those.
+```bash
+yarn build:icons
+```
+
+Its dependencies (`subset-font`, `js-yaml`) come with the module, through `hugo mod npm pack && yarn install`. Run it again whenever the site uses a new icon, and commit the generated files.
 
 ## Custom icon sets
 

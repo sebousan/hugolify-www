@@ -29,6 +29,8 @@ yarn build:search
 
 ### PostCSS
 
+With **hugolify-theme-bootstrap**, add this entry to the PurgeCSS safelist of your own config, see [Override the config](/docs/customization/design/bootstrap/postcss/#override-the-config).
+
 ```js
 safelist: {
   deep: [/^pagefind-ui/]

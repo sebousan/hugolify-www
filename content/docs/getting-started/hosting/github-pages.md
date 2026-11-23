@@ -8,6 +8,10 @@ icon: brand:github
 - Form: Netlify form
 - [Auth: Netlify identify](/docs/getting-started/auth/netlify/)
 
+## Available
+
+- [Auth: Sveltia CMS Additions](/docs/getting-started/auth/sveltia-cms-additions/)
+
 ## Documentation
 
 A complete documentation of how to host is available on Hugo website.

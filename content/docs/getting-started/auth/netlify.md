@@ -9,6 +9,10 @@ aliases:
 ---
 {{< alert text="Only for Decap/Netlify/Static CMS" state="warning" >}}
 
+{{< alert-block state="info" >}}
+With Sveltia CMS, [Sveltia CMS Additions](/docs/getting-started/auth/sveltia-cms-additions/) gives editors their own accounts instead.
+{{< /alert-block >}}
+
 ## Identity
 
 To create user accounts for Netlify CMS you must activate the Identify Netlify.

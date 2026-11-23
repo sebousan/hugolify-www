@@ -19,6 +19,8 @@ status:
 - Netlify Identity
 
 See {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#current-limitations" text="Current limitations" >}} and {{< blank_link link="https://sveltiacms.app/en/docs/migration/netlify-decap-cms#features-not-to-be-implemented" text="features not to be implemented" >}} in Sveltia CMS documentation.
+
+For editors without a GitHub account, use [Sveltia CMS Additions](/docs/getting-started/auth/sveltia-cms-additions/) instead.
 {{< /alert-block >}}
 
 ## Enable Sveltia CMS
@@ -42,6 +44,19 @@ admin:
   auth:
     netlify_identity: false
 ```
+
+### Sveltia CMS Additions
+
+Accounts with roles, without GitHub, entry locks and comments on entries, from a free service deployed to your Cloudflare account:
+
+```yaml
+admin:
+  auth:
+    auth_type: additions
+    base_url: https://sveltia-cms-additions.example.workers.dev
+```
+
+{{< button url="/docs/getting-started/auth/sveltia-cms-additions/" text="See Sveltia CMS Additions" >}}
 
 ### GitLab with PKCE
 

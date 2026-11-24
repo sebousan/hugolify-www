@@ -1,7 +1,7 @@
 ---
 title: CSS
-description: Preload CSS or add print CSS
-icon: brand:css
+description: PostCSS, preload CSS and print CSS
+icon: layers
 ---
 
 ## PostCSS

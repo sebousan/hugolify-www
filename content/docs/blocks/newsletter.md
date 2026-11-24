@@ -37,7 +37,7 @@ The email input, its label, the default button label and the fallback messages c
 
 `checkboxes` are shown under the email field and sent only when checked, typically the consent a provider requires: `OPT_IN` with the value `1` for Brevo, `gdpr[ID]` with the value `Y` for Mailchimp. Their `name` is the provider's own and is sent as written.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Submission
 

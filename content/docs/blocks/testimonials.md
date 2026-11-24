@@ -37,7 +37,7 @@ blocks:
 
 Each item is the same component as the [quote](/docs/blocks/quote/) block.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/testimonials/" text="Demo visual renderer" blank="true" >}}
 

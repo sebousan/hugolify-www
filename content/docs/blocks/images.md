@@ -32,7 +32,7 @@ blocks:
 
 Images flow one per row at full width; `half: true` puts two side by side, and the rendered width is computed accordingly.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/images/" text="Demo visual renderer" blank="true" >}}
 

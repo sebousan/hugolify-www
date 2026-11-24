@@ -31,7 +31,7 @@ blocks:
 
 Two or more `ctas` are wrapped in a `role="group"` container.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/call-to-action/" text="Demo visual renderer" blank="true" >}}
 

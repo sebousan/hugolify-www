@@ -47,7 +47,7 @@ A field `name` goes out as written, upper case included, as some services expect
 
 A `tel`, `email`, `url`, `accept` or `pattern` field gets a matching hint paragraph, wired through `aria-describedby`. One required field anywhere in the form adds the legend explaining the asterisk, above the first field: the RGAA wants it before the asterisk's first use, visually and in the source order.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Params
 

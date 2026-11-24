@@ -32,7 +32,7 @@ blocks:
 
 The image is sized from the block's own `ui.grid`: it spans the full grid width on desktop and goes edge to edge on mobile.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Params
 

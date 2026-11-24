@@ -35,7 +35,7 @@ blocks:
 
 Thumbnails are cropped to `ratio` and sized from `ui.grid` divided by `ui.column`, so the widths stay right whatever the block's grid. Clicking one opens the accessible lightbox.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
 
 ## Params
 

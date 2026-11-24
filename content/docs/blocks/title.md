@@ -24,7 +24,7 @@ blocks:
 
 This block is the heading on its own: it renders no body and no footer, so `footing` has no effect here.
 
-See [Common keys](/docs/blocks/) for `heading` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/title/" text="Demo visual renderer" blank="true" >}}
 

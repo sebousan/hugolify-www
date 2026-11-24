@@ -25,7 +25,7 @@ blocks:
 
 The message sits at the root as `text`, not inside a `heading`, though a `heading` above it is still rendered if you add one. Available `state` values are declared per project in `params.admin.fields.state.options`.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/alert/" text="Demo visual renderer" blank="true" >}}
 

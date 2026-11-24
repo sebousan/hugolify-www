@@ -40,7 +40,7 @@ The [paragraph](/docs/blocks/paragraph/) block, repeated: each item takes the sa
 
 An item's title drops to `h3` as soon as the block `heading` takes the `h2`. A single `cta` object is accepted in place of `ctas`.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Files
 

@@ -28,7 +28,7 @@ blocks:
 
 The quote is a `<figure>` holding a `<blockquote>` and a `<figcaption>`; the author portrait is cropped from the top, which keeps faces in frame.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/quote/" text="Demo visual renderer" blank="true" >}}
 

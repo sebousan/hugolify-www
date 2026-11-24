@@ -37,7 +37,7 @@ blocks:
 
 Filling `items` also renders a `<table>` alternative inside a `<details>`, which is what the canvas points to through `aria-describedby`. A chart built from `data.json` alone has no such fallback.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Params
 

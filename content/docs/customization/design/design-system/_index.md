@@ -1,10 +1,9 @@
 ---
 title: Design System
-description: Framework-free design system module for hugolify-theme with hugolify-theme-design-system module.
+description: Framework-free styling module for hugolify-theme, built on the design tokens and vanilla CSS of Socle.
 weight: 2
-large: true
 icon: palette
 status:
-  text: New
-  state: info
+  text: Preferred styling module
+  state: primary
 ---

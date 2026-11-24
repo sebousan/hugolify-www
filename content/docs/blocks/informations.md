@@ -43,7 +43,7 @@ blocks:
 
 An item shows an icon, an image or a logo, in that order of precedence. Only a real image is cropped to `ratio`; a logo keeps its own proportions.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
 
 ## Params
 

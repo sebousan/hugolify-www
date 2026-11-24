@@ -33,7 +33,7 @@ blocks:
 
 \* Pick one: `location` (the CMS map widget), `coordinates` (an object with `lat` and `lng`), or `show_places` (one marker per page of your places section). `show_places` wins over the other two.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/map/" text="Demo visual renderer" blank="true" >}}
 

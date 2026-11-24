@@ -43,7 +43,7 @@ The editorial block *is* its content, so it carries `surtitle` / `title` / `text
 
 `notes` adds numbered footnotes under the text. Mark each call site in `text` with `[*]`: the markers are numbered in the order they appear and matched to the `notes` entries in that same order.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/editorial/" blank="true" text="Demo visual renderer" >}}
 

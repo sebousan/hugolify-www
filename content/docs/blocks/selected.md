@@ -42,7 +42,7 @@ With every source but `selection`, pages come out pinned first (those with a `we
 
 The block class carries the section, `block-selected-posts`, so a section can be styled on its own.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/selected/" text="Demo visual renderer" blank="true" >}}
 

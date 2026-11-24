@@ -35,7 +35,7 @@ blocks:
 
 `limit` is only read when `show_gauge` is on: it is the value the gauge fills up to.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/datas/" text="Demo visual renderer" blank="true" >}}
 

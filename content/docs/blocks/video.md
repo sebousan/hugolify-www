@@ -38,7 +38,7 @@ blocks:
 
 An autoplaying video with no `controls` gets a play/pause button of its own, which is what WCAG asks for. The sources are lazy-loaded, and a `*_mobile` source is swapped in on small screens.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/video/" text="Demo visual renderer" blank="true" >}}
 

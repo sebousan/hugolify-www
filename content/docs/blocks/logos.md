@@ -32,7 +32,7 @@ blocks:
 
 An item with no `src` falls back to its `title` rendered as text, which keeps a logo wall readable while the images are still being gathered.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/logos/" text="Demo visual renderer" blank="true" >}}
 

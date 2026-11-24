@@ -1,7 +1,7 @@
 ---
 title: Favicons
 description: To replace or add favicons…
-icon: brand:googlechrome
+icon: circle-star
 ---
 
 ## Icons

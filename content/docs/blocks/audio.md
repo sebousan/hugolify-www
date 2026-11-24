@@ -31,7 +31,7 @@ blocks:
 
 The sources are lazy-loaded: `js/blocks/audio.js` swaps `data-src` for `src` on first interaction.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/audio/" text="Demo visual renderer" blank="true" >}}
 

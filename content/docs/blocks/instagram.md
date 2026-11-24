@@ -34,7 +34,7 @@ blocks:
 
 The feed is fetched in the browser by `js/blocks/instagram.js`, so the posts are never part of the build output. `ctas` is rendered in the block footer.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/instagram/" text="Demo visual renderer" blank="true" >}}
 

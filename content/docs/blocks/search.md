@@ -24,7 +24,7 @@ blocks:
 
 The search is powered by Pagefind, which indexes the site after the build. The block renders nothing unless `params.search.enable` is on.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 ## Params
 

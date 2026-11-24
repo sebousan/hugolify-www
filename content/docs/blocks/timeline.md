@@ -28,7 +28,7 @@ blocks:
 
 The steps are rendered as an ordered list, so the sequence survives without the CSS.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/timeline/" text="Demo visual renderer" blank="true" >}}
 

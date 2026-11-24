@@ -33,7 +33,7 @@ Pages are ordered pinned first (those with a `weight`), then by date when the se
 
 The block class carries the section, `block-latest-posts`, so a section can be styled on its own.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/latest/" text="Demo visual renderer" blank="true" >}}
 

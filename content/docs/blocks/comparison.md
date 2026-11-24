@@ -45,7 +45,7 @@ blocks:
       scrollsnap: '' # [none, sm, md, lg, xl, all] or object (optional)
 ```
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/comparison/" text="Demo visual renderer" blank="true" >}}
 

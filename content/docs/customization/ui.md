@@ -63,7 +63,7 @@ blocks:
 
 `scrollsnap` takes a breakpoint (`sm` `md` `lg` `xl`, `all` or `none`), or an object adding the buttons and the dots. It is resolved by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/SetScrollsnap.html" text="func/SetScrollsnap.html" >}}, its classes come from `@uncinq/css-components`.
 
-{{< button url="/docs/blocks/#scrollsnap" text="See scrollsnap" >}} {{< button url="/docs/blocks/#ui" text="See the ui keys of each block" >}}
+{{< button url="/docs/blocks/overview/#scrollsnap" text="See scrollsnap" >}} {{< button url="/docs/blocks/overview/#ui" text="See the ui keys of each block" >}}
 
 ### Columns
 
@@ -111,7 +111,7 @@ The file is not translated. How a block looks is not language content, so one `/
 
 What an editor picks on a block itself lands in the last level, so it always wins over the default.
 
-Every key of the tables above is accepted. `scrollsnap` goes in the file too, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own, see [scrollsnap](/docs/blocks/#scrollsnap).
+Every key of the tables above is accepted. `scrollsnap` goes in the file too, though it is resolved by `SetScrollsnap` rather than `GetBlockUI` and keeps a ladder of its own, see [scrollsnap](/docs/blocks/overview/#scrollsnap).
 
 {{< alert-block title="Defaults written in the params" state="info" >}}
 Before the data file, these defaults went under `params.blocks.<type>.ui`, in `/config/_default/params.yaml`. hugolify-theme still reads them, below `/data/blocks.yml`, so a project moves them at its own pace.

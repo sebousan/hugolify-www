@@ -30,7 +30,7 @@ blocks:
 
 Each item is a native `<details>`. Giving several items the same `name` turns them into an accordion, where opening one closes the others, with no JavaScript.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/faq/" text="Demo visual renderer" blank="true" >}}
 

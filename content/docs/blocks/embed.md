@@ -26,7 +26,7 @@ blocks:
 
 The theme patches the pasted markup for you: an `<iframe>` with no `loading` attribute gets `loading="lazy"`, and one with no `title` gets the block's `title`.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing` and the full `ui` reference.
 
 {{< button url="https://demo.hugolify.io/blocks/embed/" text="Demo visual renderer" blank="true" >}}
 

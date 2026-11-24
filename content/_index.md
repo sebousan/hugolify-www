@@ -3,7 +3,7 @@ isIndex: true
 title: Home
 hero:
   surtitle: Hugolify v2
-  title: Framework Hugo  with <span><span><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
+  title: Framework Hugo  with <span><span><i>Headless CMS</i><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>
   align: center
   text: Open-source Jamstack solution for building easily a fast, as accessible as possible and low carbon website, edited with the headless CMS of your choice.
   ctas:
@@ -42,6 +42,8 @@ blocks:
           isLogo: true
   - type: editorial
     ui:
+      offset: center
+      grid: large
       direction: ltr
     surtitle: Content
     title: +10 types of content available
@@ -53,6 +55,8 @@ blocks:
       url: /docs/sections/
   - type: editorial
     ui:
+      offset: center
+      grid: large
       direction: rtl
     surtitle: Modular
     title: +25 blocks of content available
@@ -77,13 +81,13 @@ blocks:
           link: true
           text: Discover the design system
           url: /docs/customization/design/design-system/
-      - icon: brand:bootstrap
-        title: Bootstrap
-        text: Bootstrap 5, its SASS variables and JavaScript components, with the rendering of v1.
-        cta:
-          link: true
-          text: Discover Bootstrap
-          url: /docs/customization/design/bootstrap/
+      # - icon: brand:bootstrap
+      #   title: Bootstrap
+      #   text: Bootstrap 5, its SASS variables and JavaScript components, with the rendering of v1.
+      #   cta:
+      #     link: true
+      #     text: Discover Bootstrap
+      #     url: /docs/customization/design/bootstrap/
       - icon: shapes
         title: Icons
         text: Lucide and Simple Icons, built into one stylesheet holding only the icons a page uses.
@@ -128,7 +132,7 @@ blocks:
       - /docs/admin/cms/tina-cms/
   - type: timeline
     ui:
-      grid: medium
+      grid: small
       offset: center
     heading:
       surtitle: Getting started

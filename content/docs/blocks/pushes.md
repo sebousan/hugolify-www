@@ -54,7 +54,7 @@ Each item carries its own `ui` object, the same way the block does. The keys at 
 
 A single item is rendered on its own, without the items grid.
 
-See [Common keys](/docs/blocks/) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
+See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap`, `carousel` and the full `ui` reference.
 
 ## Params
 

@@ -1,6 +1,8 @@
 ---
 isIndex: true
 title: Home
+seo:
+  title: Hugolify v2, modular Hugo framework with headless CMS
 hero:
   surtitle: Hugolify v2
   title: Framework Hugo  with <span><span><i>Headless CMS</i><i>CloudCannon</i><i>Decap CMS</i><i>Netlify CMS</i><i>Pages CMS</i><i>Static CMS</i><i>Sveltia CMS</i><i>Tina CMS</i><i>CloudCannon</i></span></span>

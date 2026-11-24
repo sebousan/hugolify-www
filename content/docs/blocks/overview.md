@@ -3,6 +3,7 @@ title: Overview
 description: How a page builds its content from blocks, and the keys they share
 weight: 1
 icon: book
+large: true
 seo:
   title: Hugolify blocks overview
 ---
@@ -97,7 +98,7 @@ Below a breakpoint, a row of items becomes a horizontal carousel with snap point
 
 ```yml
 ui:
-  scrollsnap: md # shorthand for breakpoint: md
+  scrollsnap: md # shorthand for breakpoint md
 ```
 
 ```yml

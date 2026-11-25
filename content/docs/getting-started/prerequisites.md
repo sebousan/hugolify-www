@@ -15,7 +15,7 @@ icon: circle-check
 
 ## Hugo
 
-{{< alert text="Minimum version 0.141" state="warning" >}}
+{{< alert text="Minimum version 0.158.0" state="warning" >}}
 
 **Example in macOS with brew**
 

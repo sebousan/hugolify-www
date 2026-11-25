@@ -17,12 +17,12 @@ aliases:
 
 ## Use a specific Hugo version
 
-higher of `0.141.0` and `extended`
+higher of `0.158.0` and `extended`
 
 {{< alert text="`Pages project > Settings > Variables and Secrets`" state="light" >}}
 
 ```bash
-HUGO_VERSION 0.146.4
+HUGO_VERSION 0.158.0
 ```
 
 ## Documentation

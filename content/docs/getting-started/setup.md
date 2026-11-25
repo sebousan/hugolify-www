@@ -20,14 +20,15 @@ imports:
 - path: github.com/hugolify/hugolify-theme/v2
 
 # Styling layer
-- path: github.com/hugolify/hugolify-theme-bootstrap
+- path: github.com/hugolify/hugolify-theme-design-system
+- path: github.com/hugolify/hugolify-theme-icons
 
 # Headless CMS
 - path: github.com/hugolify/hugolify-admin/v2
 ```
 
 {{< alert-block title="hugolify-theme" state="warning" >}}
-Since v2, **hugolify-theme** is the agnostic core. It provides templates, functions, layouts and vendors JS. It requires a **styling module** to supply variables, vendors, and framework-specific styles. The default is **hugolify-theme-bootstrap**. See [Design customization](/docs/customization/design/) for alternatives.
+Since v2, **hugolify-theme** is the agnostic core. It provides templates, functions, layouts and vendors JS. It requires a **styling module** to supply variables, vendors, and framework-specific styles. The default is **hugolify-theme-design-system**, with its icons from **hugolify-theme-icons**. **hugolify-theme-bootstrap** keeps the rendering of v1. See [Styling modules](/docs/customization/design/) to compare them, or to build your own.
 
 In v1, Bootstrap CSS and JS were bundled directly inside **hugolify-theme**.
 {{< /alert-block >}}
@@ -44,7 +45,7 @@ In this example, I have a website with a blog and portfolio to show my projects.
 imports:
 
 # Content
-- path: github.com/hugolify/hugolify-theme-projects
+- path: github.com/hugolify/hugolify-theme-projects/v2
 - path: github.com/hugolify/hugolify-theme-posts-categories/v2
 - path: github.com/hugolify/hugolify-theme-posts/v2
 
@@ -52,7 +53,8 @@ imports:
 - path: github.com/hugolify/hugolify-theme/v2
 
 # Styling layer
-- path: github.com/hugolify/hugolify-theme-bootstrap
+- path: github.com/hugolify/hugolify-theme-design-system
+- path: github.com/hugolify/hugolify-theme-icons
 
 # CMS
 - path: github.com/hugolify/hugolify-admin/v2
@@ -66,14 +68,15 @@ In this example, I have a website for to propose services and I would like to sh
 imports:
 
 # Content
-- path: github.com/hugolify/hugolify-theme-services
+- path: github.com/hugolify/hugolify-theme-services/v2
 - path: github.com/hugolify/hugolify-theme-publications/v2
 
 # Core theme
 - path: github.com/hugolify/hugolify-theme/v2
 
 # Styling layer
-- path: github.com/hugolify/hugolify-theme-bootstrap
+- path: github.com/hugolify/hugolify-theme-design-system
+- path: github.com/hugolify/hugolify-theme-icons
 
 # CMS
 - path: github.com/hugolify/hugolify-admin/v2

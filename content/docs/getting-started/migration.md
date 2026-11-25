@@ -47,11 +47,11 @@ Keep your content modules (`hugolify-theme-posts`, `hugolify-theme-projects`…)
 
 ## 2. Choose a styling module
 
-**hugolify-theme-bootstrap** is the default and a drop-in replacement for what v1 bundled: Bootstrap 5, Bootstrap Icons, SASS variables and the Bootstrap JS components. No template or content change is required.
+**hugolify-theme-bootstrap** is the drop-in replacement for what v1 bundled: Bootstrap 5, Bootstrap Icons, SASS variables and the Bootstrap JS components. No template or content change is required, which makes it the shortest way to migrate.
 
-**hugolify-theme-design-system** is the framework-free alternative, built on CSS custom properties and a lightweight icon system. Switching between the two is a one-line change in `module.yaml`.
+**hugolify-theme-design-system** is the default styling module of v2, framework-free, built on CSS custom properties, with its icons from **hugolify-theme-icons**. Switching from Bootstrap is a change in `module.yaml`, see [Switching from hugolify-theme-bootstrap](/docs/customization/design/design-system/setup/#switching-from-hugolify-theme-bootstrap).
 
-{{< button url="/docs/customization/design/" text="Compare both design modules" >}}
+{{< button url="/docs/customization/design/" text="Compare the styling modules" >}}
 
 ## 3. Delete your PostCSS config
 

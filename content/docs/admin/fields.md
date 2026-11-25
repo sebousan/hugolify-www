@@ -180,7 +180,8 @@ Available on every file of the module but `schema` and `blocks`, and on [a file 
 | `credit` | `text_markdown` |
 | `footer` | `title, text_area, cta, blocks` |
 | `seo` | `title, description, slogan, image_seo, twitter` |
-| `llms`, `llms-full` | `llms` |
+| `llms` | `llms` |
+| `llms-full` | `llms, llms_sections` |
 | `organization` | The identity of the organization, see [Structured data](/docs/customization/structured-data/) |
 
 ## A title built from other fields

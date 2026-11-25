@@ -1,0 +1,72 @@
+body: |
+  # Hugolify
+
+  > Hugolify is an open-source Jamstack solution for building fast, accessible and low-carbon websites. It builds on the Hugo framework as a set of composable modules, and ships native configuration for 7 headless CMS (CloudCannon, Decap, Netlify, Pages, Static, Sveltia and Tina).
+
+  Since v2, hugolify-theme is an agnostic core (templates, layouts, functions and vendored JS), and the styling lives in a separate module: hugolify-theme-design-system by default (framework-free, CSS custom properties and design tokens, icons from hugolify-theme-icons), hugolify-theme-bootstrap (Bootstrap 5, the rendering of v1) or a module of your own. In v1, Bootstrap CSS and JS were bundled inside hugolify-theme.
+
+  This site documents v2. The v1 documentation is archived at https://v1.hugolify.io/
+
+  ## Getting started
+
+  - [Getting Started](https://www.hugolify.io/docs/getting-started/): Prerequisites, installation, setup, modules and commands
+  - [Setup](https://www.hugolify.io/docs/getting-started/setup/): Declaring modules in config/_default/module.yaml
+  - [Modules](https://www.hugolify.io/docs/getting-started/modules/): List of Hugolify modules
+  - [Hosting](https://www.hugolify.io/docs/getting-started/hosting/): Netlify, Cloudflare Pages, GitHub Pages and Render
+  - [Auth](https://www.hugolify.io/docs/getting-started/auth/): Signing in to the CMS: Sveltia CMS Additions (accounts, roles, entry locks, comments) or Netlify Identity
+  - [Migration from v1](https://www.hugolify.io/docs/getting-started/migration/): Breaking changes from v1 to v2 and the steps to upgrade
+
+  ## Customization
+
+  - [Customization](https://www.hugolify.io/docs/customization/): CSS, HTML, images, icons, menu, SEO, structured data, favicons and themes
+  - [Styling modules](https://www.hugolify.io/docs/customization/design/): The styling layer: the design system, Bootstrap or your own module
+  - [Design System module](https://www.hugolify.io/docs/customization/design/design-system/): hugolify-theme-design-system, the default: framework-free styling built on the design tokens and vanilla CSS of Socle
+  - [Bootstrap module](https://www.hugolify.io/docs/customization/design/bootstrap/): hugolify-theme-bootstrap: Bootstrap 5 CSS, SASS variables, Bootstrap Icons and JS components, the rendering of v1
+  - [Your own module](https://www.hugolify.io/docs/customization/design/your-own/): Build a styling module on another CSS framework: Bulma, Foundation, UIkit, Pico CSS
+  - [Icons](https://www.hugolify.io/docs/customization/icons/): Lucide and Simple Icons with the hugolify-theme-icons module
+  - [UI](https://www.hugolify.io/docs/customization/ui/): Layout classes shared by blocks and hero: theme, grid, align, layout, offset, scrollsnap
+
+  ## Content and components
+
+  - [Blocks](https://www.hugolify.io/docs/blocks/): Catalog and reference for the 25+ modular blocks (hero, grids, FAQ, gallery…)
+  - [Blocks overview](https://www.hugolify.io/docs/blocks/overview/): How a page builds its content from blocks, and the keys they share
+  - [Shortcodes](https://www.hugolify.io/docs/shortcodes/): Shortcodes included in the framework (buttons, figures, alerts, icons, videos…)
+  - [Content Types (Sections)](https://www.hugolify.io/docs/sections/): Available content types: posts, projects, persons, services, publications and more
+  - [Taxonomies](https://www.hugolify.io/docs/taxonomies/): Available taxonomies: categories, tags, authors, types…
+  - [Partials](https://www.hugolify.io/docs/codes/partials/): Common partials (carousel, image, CTA, date, map, price…)
+  - [Functions](https://www.hugolify.io/docs/codes/functions/): Common functions (PrepareHTML, CorrectPunctuation, GetOrganizationData, GetTaxonomyPageBySlug…)
+
+  ## Headless CMS
+
+  - [Hugolify Admin](https://www.hugolify.io/docs/admin/): Builds the CMS configuration file for the supported headless CMS. Documents hugolify-admin v2, a prerelease that pairs with hugolify-theme v2
+  - [Migration from Hugolify Admin v1](https://www.hugolify.io/docs/admin/migration/): Compatibility matrix and breaking changes, admin v1 to v2
+  - [Hugolify Admin v1](https://v1.hugolify.io/docs/cms/admin/): Archived documentation of v1, which pairs with hugolify-theme v1
+
+  ## Tutorials
+
+  - [Create a website with Sveltia CMS](https://www.hugolify.io/tutorials/how-to-create-a-website-with-hugo-and-sveltia-cms-using-hugolify/): A website editable via Sveltia CMS
+  - [Connect Sveltia CMS to GitHub and Netlify](https://www.hugolify.io/tutorials/how-to-connect-sveltia-cms-to-github-and-netlify-using-hugolify/): Signing in to Sveltia CMS with GitHub through Netlify, and publishing on demand with a build hook
+  - [Create your own design system](https://www.hugolify.io/tutorials/how-to-create-your-own-design-system-using-hugolify/): A framework-free design system on top of hugolify-theme-design-system, shipped as a reusable Hugo module
+  - [Create a website with Pages CMS](https://www.hugolify.io/tutorials/how-to-create-a-website-with-hugo-and-pages-cms-using-hugolify/): A website editable via Pages CMS
+  - [Create a blog with Decap CMS](https://www.hugolify.io/tutorials/how-to-create-a-blog-with-hugo-and-decap-cms-using-hugolify/): A blog with categories and tags
+  - [Create a portfolio with Decap CMS](https://www.hugolify.io/tutorials/how-to-create-a-portfolio-with-hugo-and-decap-cms-using-hugolify/): A portfolio of projects with categories
+  - [Create a multisite with Decap CMS](https://www.hugolify.io/tutorials/how-to-create-a-multisite-with-hugo-and-decap-cms-using-hugolify/): Several sites sharing common content, on Netlify
+
+  ## Showcase
+
+  - [Showcase](https://www.hugolify.io/docs/showcase/): A selection of websites built with Hugolify
+
+  ## Source code
+
+  - [GitHub](https://github.com/hugolify/): All repositories of the Hugolify project
+  - [hugolify-template](https://github.com/hugolify/hugolify-template): Starter repository for a new Hugolify project, with the design system
+  - [hugolify-theme](https://github.com/hugolify/hugolify-theme): Agnostic core theme. The v2 module path is github.com/hugolify/hugolify-theme/v2
+  - [hugolify-theme-design-system](https://github.com/hugolify/hugolify-theme-design-system): Default styling module, framework-free
+  - [hugolify-theme-icons](https://github.com/hugolify/hugolify-theme-icons): Lucide and Simple Icons, to pair with the design system (not with Bootstrap, which brings its own icons)
+  - [hugolify-theme-bootstrap](https://github.com/hugolify/hugolify-theme-bootstrap): Bootstrap 5 styling module
+  - [hugolify-admin](https://github.com/hugolify/hugolify-admin): Headless CMS configuration builder
+
+  ## Optional
+
+  - [Full documentation](https://www.hugolify.io/llms-full.txt): Every documentation and tutorial page, inlined as Markdown
+  - [Hugolify v1 documentation](https://v1.hugolify.io/): Archived, no longer updated

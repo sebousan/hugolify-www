@@ -85,3 +85,25 @@ There is one file for every language, at the root, where agents look for it, eve
 There is nothing else to set up: the theme publishes both files straight from the data, with no page or output format to turn on.
 
 A site that serves its own `/static/llms.txt`, or builds one with an output format of its own, leaves the matching data file empty.
+
+### Full text from sections
+
+`/data/llms-full.yml` can also list `sections`: the pages of each one follow the body, so the full text keeps in step with the pages instead of being written twice. A documentation site uses it this way:
+
+{{< alert text="`/data/llms-full.yml`" state="light" >}}
+
+```yml
+body: |
+  # Site name
+
+  > Short description of the site.
+
+  This file inlines every documentation page as its Markdown source.
+sections:
+  - docs
+  - tutorials
+```
+
+Each page gives its title, its URL, its description and its Markdown source, the shortcodes left as written. Pages follow the sidebar: a section before its children, in the order of `weight`. A page without Markdown of its own, such as a section whose prose lives in an overview page, gives only its children, and so does a page the sitemap leaves out (`noIndex`, `sitemap.disable`). A page built from blocks only has no Markdown and gives nothing. On a multilingual site, the pages are those of the default language.
+
+In the CMS, `sections` is picked among the top-level sections of the site.

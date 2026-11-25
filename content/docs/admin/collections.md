@@ -566,7 +566,7 @@ Like `blocks`, neither file is translated. The slogan of the organization, trans
 
 {{< badge text="New in v2" state="success" >}}
 
-`llms` and `llms-full` edit `/data/llms.yml` and `/data/llms-full.yml`, the bodies of the `/llms.txt` and `/llms-full.txt` files the theme writes at the root of the site. A body left empty publishes no file.
+`llms` and `llms-full` edit `/data/llms.yml` and `/data/llms-full.yml`, the bodies of the `/llms.txt` and `/llms-full.txt` files the theme writes at the root of the site. A body left empty publishes no file. `llms-full` also picks the `sections` whose pages follow its body.
 
 Like `blocks`, these files are not translated: agents look for one file at the root, so every language goes in it.
 

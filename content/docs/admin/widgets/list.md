@@ -43,7 +43,8 @@ education:                # education:
 | `label_singular` | string | no | Singular label |
 | `max` | number | no | Maximum number of items |
 | `min` | number | no | Minimum number of items |
+| `minimize_collapsed` | boolean | no | Fold the whole list rather than each of its items (default: `true`). The `items` of the blocks set it to `false` in Sveltia CMS, which then opens the list on folded items (Decap, Netlify, Static and Sveltia CMS) |
 | `nameOverride` | string | no | Override the name in output |
 | `required` | boolean | no | Mark as required |
-| `summary` | string | no | Summary template for collapsed view |
+| `summary` | string | no | Summary template for collapsed view. In Sveltia CMS a tag may nest another in `default()`, e.g. `{{title \| default('{{text}}')}}` |
 | `thumbnail` | string | no | Image subfield shown beside a folded item, e.g. `src` (Sveltia CMS) |

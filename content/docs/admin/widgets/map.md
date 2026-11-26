@@ -1,6 +1,7 @@
 ---
 title: Map
 description: Map / geolocation field.
+icon: map-pin
 ---
 
 {{< badge text="Not available with CloudCannon, Pages and TinaCMS" state="warning" >}}

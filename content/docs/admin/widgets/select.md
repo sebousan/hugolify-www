@@ -1,6 +1,7 @@
 ---
 title: Select
 description: Dropdown select field.
+icon: chevrons-up-down
 ---
 
 ## Usage

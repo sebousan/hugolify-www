@@ -1,6 +1,7 @@
 ---
 title: List
 description: Repeatable list of fields (an array of objects), or of a single field (an array of values).
+icon: list
 ---
 
 ## Usage

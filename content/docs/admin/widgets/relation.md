@@ -1,6 +1,7 @@
 ---
 title: Relation
 description: Relation field, linking to another collection entry.
+icon: link-2
 ---
 
 ## Usage

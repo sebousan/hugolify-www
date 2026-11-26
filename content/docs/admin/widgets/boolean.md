@@ -1,6 +1,7 @@
 ---
 title: Boolean
 description: Toggle / checkbox field.
+icon: toggle-right
 ---
 
 ## Usage

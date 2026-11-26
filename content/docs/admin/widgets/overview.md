@@ -3,6 +3,7 @@ title: Overview
 description: How to call a widget partial
 weight: 1
 icon: book
+large: true
 seo:
   title: Hugolify Admin widgets overview
 ---

@@ -1,6 +1,7 @@
 ---
 title: Compute
 description: Read-only field derived from the other fields of the entry.
+icon: merge
 ---
 
 {{< badge text="New in v2" state="success" >}}

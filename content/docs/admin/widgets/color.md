@@ -1,6 +1,7 @@
 ---
 title: Color
 description: Color picker.
+icon: palette
 ---
 
 ## Usage

@@ -1,6 +1,7 @@
 ---
 title: Code
 description: Code editor field with optional syntax highlighting.
+icon: file-code
 ---
 
 ## Usage

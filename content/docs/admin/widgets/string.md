@@ -1,6 +1,7 @@
 ---
 title: String
 description: Single-line text input.
+icon: type
 ---
 
 ## Usage

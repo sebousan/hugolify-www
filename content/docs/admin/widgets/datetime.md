@@ -1,6 +1,7 @@
 ---
 title: Datetime
 description: Date and time picker.
+icon: calendar-clock
 ---
 
 ## Usage

@@ -1,6 +1,7 @@
 ---
 title: Object
 description: Groups multiple fields into a collapsible object.
+icon: box
 ---
 
 ## Usage

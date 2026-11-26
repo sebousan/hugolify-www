@@ -1,6 +1,7 @@
 ---
 title: Text
 description: Multi-line plain text input.
+icon: text-align-start
 ---
 
 ## Usage

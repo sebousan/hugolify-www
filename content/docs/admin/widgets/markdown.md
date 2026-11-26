@@ -1,6 +1,7 @@
 ---
 title: Markdown
 description: Rich text / markdown editor.
+icon: pilcrow
 ---
 
 ## Usage

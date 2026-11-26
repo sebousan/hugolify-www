@@ -1,6 +1,7 @@
 ---
 title: Blocks
 description: Variable-type list field for page builder blocks.
+icon: puzzle
 ---
 
 ## Usage

@@ -1,6 +1,7 @@
 ---
 title: File
 description: File upload field. Use type to restrict to a specific media category.
+icon: file-up
 ---
 
 ## Usage

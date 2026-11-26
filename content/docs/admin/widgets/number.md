@@ -1,6 +1,7 @@
 ---
 title: Number
 description: Numeric input or range slider.
+icon: hash
 ---
 
 ## Usage

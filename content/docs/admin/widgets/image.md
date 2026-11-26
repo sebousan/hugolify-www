@@ -1,6 +1,7 @@
 ---
 title: Image
 description: Image upload field.
+icon: image
 ---
 
 ## Usage

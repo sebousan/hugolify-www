@@ -188,6 +188,29 @@ hero:
 
 With `hero.fallback.enable`, every page opens on a hero. A page whose hero has no title gets one built from its own title, with its description as text and its `image` where the hero has none, placed by the `hero > image` keys set under `fallback.image`. A taxonomy term takes the title of the page it stands for. The hero then carries the h1, so the in-page heading is not rendered.
 
+### Back link
+
+{{< badge text="New in v2" state="success" >}}
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+hero:
+  back:
+    enable: true # default false
+```
+
+The hero then opens on a link back to its parent page, labelled by the `back` translation (Back, Retour…). It shows only on pages nested below a section: not on the home page, not on a top-level page, and not when the parent has no page of its own, such as a headless section. The link points at the parent's permalink, so a dated permalink (`/2026/my-post/`) or a folder without `_index.md` still leads to a page that exists.
+
+That behaviour needs **hugolify-theme v2.81.1** or later, earlier versions point the link at `../`. The single pages of persons and places draw their own hero and show the link from **hugolify-theme-persons v2.16.0** and **hugolify-theme-places v2.9.0** on.
+
+The link is rendered by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/hero/back.html" text="commons/hero/back.html" >}} and its markup by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/back.html" text="commons/back.html" >}} as `<a class="back">`, which the styling modules place differently:
+
+| Module | Position of `.back` |
+| --- | --- |
+| Design System | Pinned to the top corner of the hero, out of the flow. The hero keeps room for it above its content (hugolify-theme-design-system 1.50.1 or later) |
+| Bootstrap | In the flow, above the title |
+
 ## Adding a variant
 
 A value with no CSS is inert, so a project-specific variant only needs a rule in the right layer, with no template change:

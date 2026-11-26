@@ -149,7 +149,7 @@ hero:
     background: true      # hero-with-cover hero-with-cover-image (darken whole background)
 ```
 
-Classes are built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/commons/hero.html" text="commons/hero.html" >}}.
+Classes are built by {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetHeroClasses.html" text="func/GetHeroClasses.html" >}} from the params that {{< blank_link link="https://github.com/Hugolify/hugolify-theme/blob/main/layouts/_partials/func/GetHero.html" text="func/GetHero.html" >}} returns: the front matter's, completed by the [site defaults](#site-defaults).
 
 | Front matter | Class | Design System | Bootstrap |
 | --- | --- | --- | --- |
@@ -162,6 +162,31 @@ Classes are built by {{< blank_link link="https://github.com/Hugolify/hugolify-t
 | `darken: true` | `hero-with-darken` | ✓ | No |
 
 The hero themes are the one place where the two modules are explicitly kept in sync: `_hero-theme.sass` in **hugolify-theme-bootstrap** is a port of `hero-theme.css` from `@uncinq/css-components`, generated from the same seven names.
+
+### Site defaults
+
+{{< badge text="New in v2" state="success" >}}
+
+Two site params complete the hero of every page. They need **hugolify-theme v2.81.0** or later.
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+hero:
+  # Defaults of every hero's ui, for what its front matter leaves empty
+  ui:
+    theme: dark
+  # A hero for the pages whose front matter has none
+  fallback:
+    enable: true
+    image:
+      background: true # lay the page's image behind the text, as a cover
+      darken: true # darken that cover, the text turns light
+```
+
+`hero.ui` takes the keys of the front matter's `ui`: `align`, `vertical_align`, `theme` and `darken`. A value set on the page wins, and an empty one, as a CMS saves a cleared select, counts as unset. The heroes drawn without front matter take these defaults too: the 404 page, and the single pages of persons and places from **hugolify-theme-persons v2.15.0** and **hugolify-theme-places v2.8.0** on.
+
+With `hero.fallback.enable`, every page opens on a hero. A page whose hero has no title gets one built from its own title, with its description as text and its `image` where the hero has none, placed by the `hero > image` keys set under `fallback.image`. A taxonomy term takes the title of the page it stands for. The hero then carries the h1, so the in-page heading is not rendered.
 
 ## Adding a variant
 

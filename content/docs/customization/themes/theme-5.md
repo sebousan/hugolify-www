@@ -1,7 +1,7 @@
 ---
 isIndex: false
 title: Theme 5
-description: Fith available theme
+description: Fifth available theme
 weight: 5
 icon: dice-5
 status:
@@ -22,10 +22,22 @@ status:
 
 ```yml
 imports:
-  - path: github.com/hugolify/hugolify-theme-5/v2
+  - path: github.com/hugolify/hugolify-theme-5/v2 # First, before the section modules
   - path: github.com/hugolify/hugolify-theme/v2 # Core theme
   - path: github.com/hugolify/hugolify-theme-icons # Icons
   - path: github.com/hugolify/hugolify-theme-design-system # CSS + JS
+```
+
+Theme 5 opens every page on a dark hero through the core's [hero site defaults](/docs/customization/ui/#site-defaults). It needs **hugolify-theme v2.81.0** or later, and **hugolify-theme-persons v2.15.0** and **hugolify-theme-places v2.8.0** or later when the site imports them: older versions keep the hero's default colours on those pages.
+
+The site's own params win over the theme's, so a project picks another look in its params file:
+
+{{< alert text="`/config/_default/params.yaml`" state="light" >}}
+
+```yml
+hero:
+  ui:
+    theme: light
 ```
 
 ## Setup v1

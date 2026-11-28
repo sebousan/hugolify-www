@@ -19,6 +19,49 @@ imports:
   - path: github.com/hugolify/hugolify-theme/v2
 ```
 
+The module adds a `products` section: the list at `/products/`, each product at `/products/:slug/`, and its collection in the CMS.
+
+## Frontmatter
+
+```yml
+title: '' # string
+description: '' # string (optional)
+draft: false # boolean (optional)
+date: '' # date (optional)
+brand: '' # string (optional)
+sku: '' # string, the seller's reference, shown on the page (optional)
+gtin: '' # string, the barcode: EAN or UPC (optional)
+mpn: '' # string, the manufacturer's part number (optional)
+offer: {} # (optional)
+  price: 0 # number
+  discount: '' # string, an amount or a percentage: 10 or 10% (optional)
+  price_valid_until: '' # date, the last day of the price (optional)
+  hide_price: false # boolean (optional)
+  availability: '' # [InStock, LimitedAvailability, MadeToOrder, PreOrder, PreSale, BackOrder, OutOfStock, SoldOut, Discontinued] (optional)
+  availability_starts: '' # date, for PreOrder, PreSale and BackOrder (optional)
+  condition: '' # [NewCondition, RefurbishedCondition, UsedCondition, DamagedCondition] (optional)
+  text: '' # string (optional)
+datas: [] # list of title and text, the spec sheet (optional)
+image: {} # the featured image (optional)
+images: [] # list of src, alt, credit, legend (optional)
+products_categories: [] # with hugolify-theme-products-categories (optional)
+products_tags: [] # with hugolify-theme-products-tags (optional)
+blocks: [] # (optional)
+```
+
+On the page, the discount is applied to the price, shown next to the price before it, struck through. The last day of the price is shown under it until that day has passed.
+
+## Structured data
+
+Each product page publishes a schema.org `Product` with its `Offer`, built from the front matter:
+
+- `brand`, `sku`, `gtin` and `mpn` identify the product. Left empty, none of them is made up. A GTIN must hold 8, 12, 13 or 14 digits, spaces allowed: anything else is left out.
+- The offer carries the discounted price, the availability, `InStock` by default, the condition when picked, and the last day of the price until that day has passed.
+- A hidden price stays hidden: the offer is still published, without a price.
+- The categories are published as `category`, the tags as `keywords`, the spec sheet and the images with the rest.
+
+The currency is `EUR` by default: set `currency` in the site params to change it.
+
 ## Taxonomies
 
 - [Categories](/docs/taxonomies/products-categories/)

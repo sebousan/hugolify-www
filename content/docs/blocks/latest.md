@@ -6,6 +6,8 @@ seo:
   title: Block Latest
 ---
 
+The Latest block lists the most recent entries of a section on any page: the last posts on the home page, the last projects under a case study, the products of the moment… The list updates itself on each build, with nothing to pick by hand. To choose the entries one by one, use the [Selected block](/docs/blocks/selected/) instead.
+
 ## Frontmatter
 
 ```yml
@@ -32,6 +34,22 @@ Pages are ordered pinned first (those with a `weight`), then by date when the se
 `limit` was called `count` before: a block written with `count` still works.
 
 The block class carries the section, `block-latest-posts`, so a section can be styled on its own.
+
+## Example
+
+The three last posts on a grid, with a link to the blog:
+
+```yml
+blocks:
+  - type: latest
+    heading:
+      title: Latest news
+    section: posts
+    limit: 3
+    show_more: true
+    ui:
+      layout: grid
+```
 
 See [Common keys](/docs/blocks/overview/#common-keys) for `heading`, `footing`, `scrollsnap` and the full `ui` reference.
 

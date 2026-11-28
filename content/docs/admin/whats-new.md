@@ -10,7 +10,7 @@ seo:
 {{< alert-block title="Feedback" state="danger" >}}
 **v2 is still moving**. Report anything you hit on {{< blank_link link="https://github.com/hugolify/hugolify-admin/issues" text="the issue tracker" >}}.
 
-v2 will remain in pre-release until Sveltia CMS reaches release 1.0 and Pages CMS reaches release 3.0.
+v2 will remain in pre-release until Pages CMS reaches release 3.0. Sveltia CMS, the other condition, left beta with its release 5.0.
 
 See the {{< blank_link link="https://v1.hugolify.io/docs/cms/admin/" text="v1 documentation" >}} if you are not ready to move to v2, and the [migration guide](/docs/admin/migration/) when you are.
 {{< /alert-block >}}
@@ -164,6 +164,8 @@ The parent field differs between the two: Decap gets a custom Hugolify widget, S
 Other additions: a reorder configuration for collections (Sveltia CMS), the [columns of the table view](/docs/admin/collections/#add-summary-fields) (Sveltia CMS, Static CMS and Pages CMS), a [default sort](/docs/admin/collections/#add-sortable-fields) for the entry list, the [image of each entry](/docs/admin/collections/#add-thumbnail) in the list (Sveltia CMS, CloudCannon), collection options written for [every CMS that has an equivalent](/docs/admin/collections/#options-by-cms), a chosen [order for the collections](/docs/admin/collections/#order-and-group-collections), with dividers between groups in Sveltia CMS, blocks on the *persons* and *products* collections, *firstname* and *lastname* on *persons*, a `file` input for form fields, and an optional `format` on the datetime widget for Decap and Sveltia storage.
 
 An [`icon` shortcode](/docs/shortcodes/icon/) joins the markdown editor as well, for CloudCannon, Decap, Netlify and Sveltia CMS.
+
+Pages CMS 3 edits [multilingual sites](/docs/admin/cms/pages-cms/#multilingual-site), with the same files as Decap and Sveltia CMS.
 
 ## Computed values
 

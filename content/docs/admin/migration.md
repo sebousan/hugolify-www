@@ -94,6 +94,7 @@ The params renamed or reshaped in v2 are the ones a project is most likely to ha
 | `admin.collections.config.files` | The `nav-*` files move to [`admin.collections.menus.files`](/docs/admin/collections/#the-menus-collection). Left in `config`, a menu shows in both collections |
 | `admin.collections.<name>.sortable` | Replaced by [`sortable_fields`](/docs/admin/collections/#add-sortable-fields), a list instead of a string, which can set the default sort |
 | `admin.collections.<name>.view` | Removed. Pages CMS builds its `view` from [`summary_fields`](/docs/admin/collections/#add-summary-fields), [`sortable_fields`](/docs/admin/collections/#add-sortable-fields) and [`nested`](/docs/admin/collections/#nested-collections), the options the other CMS read too |
+| `admin.automatic_deployments` | No longer read: Sveltia CMS 5.0 removed the option. Set [`skip_ci`](/docs/admin/setup/#deployments) instead, `false` to build on every commit, `true` (the default) otherwise |
 
 The build warns about a `sortable` or a `view` left in the params, then ignores it.
 

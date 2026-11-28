@@ -74,6 +74,7 @@ admin:
     default_locale: en # master lang for an i18n website
     locales: false # "[en,fr]" for an i18n website
     initial_locales: # Sveltia CMS: "default", "all" or "[en,fr]", locales a new entry starts with
+    omit_default_locale_from_file_path: false # Sveltia and Pages CMS: true when the default language has no code, _index.md next to _index.fr.md
 
   # Assets
   media:
@@ -185,7 +186,7 @@ admin:
     icon: material_symbols
 ```
 
-Available sets: `bootstrap_icons`, `iconoir`, `lucide`, `material_icons`, `material_symbols`.
+Available sets: `bootstrap_icons`, `iconoir`, `lucide`, `material_icons`, `material_symbols`. Pages CMS 3 has one set, `hugeicons`, so it needs no setting.
 
 ## CMS language
 
@@ -212,13 +213,15 @@ admin:
     default_locale: en
     locales: "[en,fr]"
     initial_locales: default # Sveltia CMS only: default, all or "[en,fr]"
+    omit_default_locale_from_file_path: false # Sveltia and Pages CMS
 ```
 
 - An entry is stored as one file per language, such as `my-post.en.md` and `my-post.fr.md`, the way Hugo pairs translations.
+- `omit_default_locale_from_file_path: true` leaves the code out for the default language, `my-post.md` next to `my-post.fr.md`, as Hugo reads a file without code in the default language. Turn it on for a site already stored that way, otherwise Sveltia and Pages CMS do not see those files. Decap CMS always writes the code.
 - The files of the *menus* and *config* collections hold every language in one file, keyed by language. The `blocks`, `organization`, `schema` and `llms` files are not translated.
 - `initial_locales` sets the languages a new entry starts with in Sveltia CMS. The editor enables the others later, from the menu of the entry.
 
-Pages CMS, CloudCannon and TinaCMS have no i18n structure: see their pages under [CMS](/docs/admin/cms/).
+Pages CMS reads the same files from version 3, see [its page](/docs/admin/cms/pages-cms/#multilingual-site). CloudCannon and TinaCMS have no i18n structure: see their pages under [CMS](/docs/admin/cms/).
 
 ## Authentication
 
@@ -234,7 +237,7 @@ The CMS script is loaded from unpkg. Set `version` to pin it, for instance while
 
 ```yml
 admin:
-  version: 0.237.0 # a Sveltia CMS release
+  version: 5.0.2 # a Sveltia CMS release
 ```
 
 | CMS | Default |
@@ -242,7 +245,9 @@ admin:
 | Decap CMS | `^3.0.0` |
 | Netlify CMS | `^2.0.0` |
 | Static CMS | `^4.0.0` |
-| Sveltia CMS | The latest release |
+| Sveltia CMS | `^5` |
+
+Sveltia CMS follows semantic versioning since its release 5.0: `^5` takes every 5.x release, and a major release, which may remove options, waits until `version` asks for it.
 
 ## Deployments
 
@@ -260,7 +265,6 @@ These keys are still read, but prefer the new ones:
 | --- | --- |
 | `name` | `git` |
 | `netlify.identity` | `auth.netlify_identity` |
-| `automatic_deployments: true` | `skip_ci: false` |
 
 ## Repository
 

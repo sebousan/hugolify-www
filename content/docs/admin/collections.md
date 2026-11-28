@@ -427,9 +427,9 @@ admin:
 
 ## Collection icon
 
-{{< badge text="New in v2" state="success" >}} {{< badge text="Sveltia CMS and CloudCannon" state="warning" >}}
+{{< badge text="New in v2" state="success" >}} {{< badge text="Sveltia CMS, Pages CMS and CloudCannon" state="warning" >}}
 
-The icon shown beside the collection in the sidebar. It is declared per icon set, so the same collection works whichever set the CMS uses, see [Icon sets](/docs/admin/setup/#icon-sets).
+The icon shown beside the collection in the sidebar. It is declared per icon set, so the same collection works whichever set the CMS uses, see [Icon sets](/docs/admin/setup/#icon-sets). Pages CMS 3 always reads `hugeicons`, a {{< blank_link link="https://hugeicons.com/icons" text="Hugeicons" >}} name in PascalCase.
 
 {{< alert text="`/config/_default/params.yaml`" state="light" >}}
 
@@ -439,6 +439,7 @@ admin:
     pages:
       icon:
         bootstrap_icons: file-earmark
+        hugeicons: File01
         iconoir: page
         lucide: file
         material_icons: description
